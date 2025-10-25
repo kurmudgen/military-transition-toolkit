@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Landing() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -19,9 +21,9 @@ export default function Landing() {
         </p>
 
         <div className="flex gap-4 justify-center mb-12">
-          <a href="/app" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-colors">
+          <Link to="/app" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-colors">
             Start Planning Free →
-          </a>
+          </Link>
           <a href="#features" className="px-8 py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-lg transition-colors">
             Learn More
           </a>
@@ -222,9 +224,9 @@ export default function Landing() {
               <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Appointment tracking</span></li>
               <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Resource library</span></li>
             </ul>
-            <a href="/app" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-center transition-colors">
+            <Link to="/app" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-center transition-colors">
               Start Free
-            </a>
+            </Link>
           </div>
 
           {/* Premium Tier */}
@@ -245,9 +247,9 @@ export default function Landing() {
               <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">PDF exports</span></li>
               <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Priority support</span></li>
             </ul>
-            <a href="/app" className="block w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors">
+            <Link to="/app" className="block w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors">
               Get Premium
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -260,9 +262,9 @@ export default function Landing() {
         <p className="text-xl text-slate-300 mb-8">
           Join thousands of service members successfully transitioning with our free tools
         </p>
-        <a href="/app" className="inline-block px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-lg transition-colors">
+        <Link to="/app" className="inline-block px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-lg transition-colors">
           Get Started Free →
-        </a>
+        </Link>
         <p className="text-slate-400 text-sm mt-4">
           No credit card required • No account needed • Start in 30 seconds
         </p>
@@ -275,25 +277,25 @@ export default function Landing() {
             <div>
               <h4 className="font-semibold text-white mb-3">Product</h4>
               <ul className="space-y-2 text-slate-400 text-sm">
-                <li><a href="/app" className="hover:text-white">Checklists</a></li>
-                <li><a href="/app" className="hover:text-white">Calculators</a></li>
-                <li><a href="/app" className="hover:text-white">VA Claims</a></li>
-                <li><a href="/app" className="hover:text-white">State Comparison</a></li>
+                <li><Link to="/app" className="hover:text-white">Checklists</Link></li>
+                <li><Link to="/app" className="hover:text-white">Calculators</Link></li>
+                <li><Link to="/app" className="hover:text-white">VA Claims</Link></li>
+                <li><Link to="/app" className="hover:text-white">State Comparison</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-white mb-3">Company</h4>
               <ul className="space-y-2 text-slate-400 text-sm">
-                <li><a href="/app/about" className="hover:text-white">About</a></li>
-                <li><a href="/app/faq" className="hover:text-white">FAQ</a></li>
+                <li><Link to="/app/about" className="hover:text-white">About</Link></li>
+                <li><Link to="/app/faq" className="hover:text-white">FAQ</Link></li>
                 <li><a href="mailto:support@militarytransitiontoolkit.com" className="hover:text-white">Contact</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold text-white mb-3">Legal</h4>
               <ul className="space-y-2 text-slate-400 text-sm">
-                <li><a href="/terms" className="hover:text-white">Terms of Service</a></li>
-                <li><a href="/privacy" className="hover:text-white">Privacy Policy</a></li>
+                <li><Link to="/terms" className="hover:text-white">Terms of Service</Link></li>
+                <li><Link to="/privacy" className="hover:text-white">Privacy Policy</Link></li>
               </ul>
             </div>
             <div>
