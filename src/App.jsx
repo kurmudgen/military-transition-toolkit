@@ -13,6 +13,7 @@ import VAClaimsBuilder from './pages/VAClaimsBuilder'
 import RetirementCalculator from './pages/RetirementCalculator'
 import AppointmentsTracking from './pages/AppointmentsTracking'
 import Profile from './pages/Profile'
+import Settings from './pages/Settings'
 import FAQ from './pages/FAQ'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
@@ -37,6 +38,7 @@ function App() {
         <Route path="retirement-calculator" element={<RetirementCalculator />} />
         <Route path="appointments" element={<AppointmentsTracking />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="settings" element={<Settings />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="about" element={<About />} />
       </Route>
