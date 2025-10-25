@@ -5,7 +5,13 @@
       "Bash(npm install)",
       "Bash(npm run dev)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Military Transition Toolkit - Complete privacy-first transition planning app\n\nFeatures implemented:\n- Interactive transition checklists (Retirement, MedBoard, Separation <20 years)\n- Retirement pay calculator with High-3 and BRS support\n- VA disability claims builder with evidence tracking\n- State benefits comparison tool\n- Appointments and condition tracking\n- Comprehensive resources and FAQ sections\n- Marketing landing page with pricing\n- Terms of Service and Privacy Policy pages\n- SEO optimization with Open Graph and Twitter Card tags\n- Google Analytics integration\n- Privacy-first architecture with local storage only\n- Responsive design with Tailwind CSS\n- Keyboard shortcuts and accessibility features\n- Confirmation dialogs for destructive actions\n- Progress indicators and tooltips\n- Enhanced navigation highlighting\n\nTech stack: React 18, Vite, Tailwind CSS, React Router\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
