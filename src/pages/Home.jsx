@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { trackPageView, trackButtonClick } from '../utils/analytics'
 
 // Tips that rotate
 const TIPS = [
@@ -36,9 +37,10 @@ export default function Home() {
     }
   }, [])
 
-  // Set page title
+  // Set page title and track page view
   useEffect(() => {
     document.title = 'Military Transition Toolkit - Plan Your Transition'
+    trackPageView('Home Dashboard')
   }, [])
 
   // Rotate tips every 10 seconds

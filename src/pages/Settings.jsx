@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react'
+import AnalyticsDashboard from '../components/AnalyticsDashboard'
+import { trackPageView } from '../utils/analytics'
 
 export default function Settings() {
   const [importStatus, setImportStatus] = useState('')
   const [importError, setImportError] = useState('')
+  const [showAnalytics, setShowAnalytics] = useState(false)
 
   useEffect(() => {
     document.title = 'Settings - Military Transition Toolkit'
+    trackPageView('Settings')
   }, [])
 
   const exportAllData = () => {
@@ -162,6 +166,29 @@ export default function Settings() {
         )}
 
         <div className="space-y-6">
+          {/* Analytics Dashboard */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-2xl font-semibold text-white">📈 Analytics Dashboard</h2>
+              <button
+                onClick={() => setShowAnalytics(!showAnalytics)}
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all shadow-md hover:shadow-lg"
+              >
+                {showAnalytics ? 'Hide Analytics' : 'View Analytics'}
+              </button>
+            </div>
+
+            {showAnalytics ? (
+              <div className="mt-6">
+                <AnalyticsDashboard />
+              </div>
+            ) : (
+              <p className="text-slate-300">
+                Track your app usage, most visited pages, and feature interactions. All data is stored locally on your device.
+              </p>
+            )}
+          </div>
+
           {/* Data Storage Info */}
           <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-2xl font-semibold text-white mb-4">📊 Data Storage</h2>
