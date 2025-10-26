@@ -31,6 +31,7 @@ export default function Layout() {
   const navLinks = [
     { to: '/app', label: 'Home' },
     { to: '/app/progress', label: 'Progress Dashboard' },
+    { to: '/app/reminders', label: 'Reminders' },
     { to: '/app/resources', label: 'Resources' },
     { to: '/app/retirement', label: '20+ Year Retirement' },
     { to: '/app/medboard', label: 'MedBoard' },

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
+import RemindersWidget from '../components/RemindersWidget'
 
 // Tips that rotate
 const TIPS = [
@@ -741,6 +742,9 @@ export default function Home() {
               <p className="text-gray-600">Great job! You're on track with your transition.</p>
             )}
           </div>
+
+          {/* Reminders Widget */}
+          <RemindersWidget />
 
           {/* Upcoming Schedule */}
           <div className="bg-white rounded-lg shadow p-6">
