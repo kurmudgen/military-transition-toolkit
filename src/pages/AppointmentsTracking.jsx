@@ -741,13 +741,25 @@ export default function AppointmentsTracking() {
               </div>
             </div>
 
-            <div className="text-center py-12 bg-gray-50 rounded-lg">
-              <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              <h3 className="mt-2 text-sm font-medium text-gray-900">Track Your Medical Records</h3>
-              <p className="mt-1 text-sm text-gray-500">Keep track of requested, received, and submitted documents</p>
-              <p className="mt-1 text-xs text-gray-400">Feature coming soon - Add record tracking functionality</p>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+              <h3 className="font-semibold text-gray-900 mb-3">📋 How to Obtain Your Medical Records:</h3>
+              <div className="space-y-3 text-sm text-gray-700">
+                <div>
+                  <strong>Service Treatment Records (STRs):</strong>
+                  <p className="ml-4 mt-1">Request through TRICARE or your base medical records office. Can also request via VA.gov or eB enefits.</p>
+                </div>
+                <div>
+                  <strong>Civilian Medical Records:</strong>
+                  <p className="ml-4 mt-1">Contact each healthcare provider directly. Many providers now have patient portals for easy access.</p>
+                </div>
+                <div>
+                  <strong>VA Medical Records:</strong>
+                  <p className="ml-4 mt-1">Access through MyHealtheVet (www.myhealth.va.gov) or request at your local VA Medical Center.</p>
+                </div>
+                <div className="mt-4 p-3 bg-blue-100 rounded">
+                  <strong>💡 Pro Tip:</strong> Start requesting records 6-12 months before your separation date. Some facilities may take several weeks to process requests.
+                </div>
+              </div>
             </div>
           </div>
         )}
