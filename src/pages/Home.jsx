@@ -411,7 +411,7 @@ export default function Home() {
         </div>
         <button
           onClick={() => setShowSetup(true)}
-          className="px-4 py-2 text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-lg transition-colors min-h-[44px] flex items-center gap-2"
+          className="px-4 py-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-white hover:bg-blue-600 dark:hover:bg-blue-500 border-2 border-blue-600 dark:border-blue-500 rounded-lg transition-all min-h-[44px] flex items-center gap-2 shadow-sm hover:shadow-md"
           aria-label="Open settings"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -423,76 +423,82 @@ export default function Home() {
       </div>
 
       {/* User Type Selector - Prominent */}
-      <div className="bg-slate-800 rounded-lg shadow-xl p-6 mb-6 border border-slate-700">
-        <h2 className="text-xl font-semibold text-white mb-4">What brings you here?</h2>
+      <div className="bg-gradient-to-br from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black rounded-xl shadow-2xl p-6 sm:p-8 mb-8 border border-slate-700 dark:border-slate-600">
+        <h2 className="text-xl sm:text-2xl font-bold text-white mb-6">What brings you here?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <button
             onClick={() => handleSetup('retirement')}
-            className={`p-4 rounded-lg border-2 ${
-              userSetup === 'retirement' ? 'border-blue-500 bg-slate-700' : 'border-slate-600 hover:border-blue-500 hover:bg-slate-700'
-            } transition-all text-left`}
+            className={`p-5 rounded-xl border-2 ${
+              userSetup === 'retirement'
+                ? 'border-blue-500 bg-slate-700/80 shadow-lg shadow-blue-500/20'
+                : 'border-slate-600 hover:border-blue-400 hover:bg-slate-700/60 hover:shadow-lg'
+            } transition-all duration-200 text-left group`}
           >
-            <div className="text-2xl mb-2">🎖️</div>
-            <h3 className="font-semibold text-white mb-1">20+ Year Retirement</h3>
-            <p className="text-sm text-slate-400">Planning standard military retirement</p>
+            <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">🎖️</div>
+            <h3 className="font-bold text-white mb-2">20+ Year Retirement</h3>
+            <p className="text-sm text-slate-300">Planning standard military retirement</p>
           </button>
           <button
             onClick={() => handleSetup('medboard')}
-            className={`p-4 rounded-lg border-2 ${
-              userSetup === 'medboard' ? 'border-blue-500 bg-slate-700' : 'border-slate-600 hover:border-blue-500 hover:bg-slate-700'
-            } transition-all text-left`}
+            className={`p-5 rounded-xl border-2 ${
+              userSetup === 'medboard'
+                ? 'border-blue-500 bg-slate-700/80 shadow-lg shadow-blue-500/20'
+                : 'border-slate-600 hover:border-blue-400 hover:bg-slate-700/60 hover:shadow-lg'
+            } transition-all duration-200 text-left group`}
           >
-            <div className="text-2xl mb-2">🏥</div>
-            <h3 className="font-semibold text-white mb-1">MedBoard / Medical Separation</h3>
-            <p className="text-sm text-slate-400">Going through IDES process</p>
+            <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">🏥</div>
+            <h3 className="font-bold text-white mb-2">MedBoard / Medical Separation</h3>
+            <p className="text-sm text-slate-300">Going through IDES process</p>
           </button>
           <button
             onClick={() => handleSetup('separation')}
-            className={`p-4 rounded-lg border-2 ${
-              userSetup === 'separation' ? 'border-blue-500 bg-slate-700' : 'border-slate-600 hover:border-blue-500 hover:bg-slate-700'
-            } transition-all text-left`}
+            className={`p-5 rounded-xl border-2 ${
+              userSetup === 'separation'
+                ? 'border-blue-500 bg-slate-700/80 shadow-lg shadow-blue-500/20'
+                : 'border-slate-600 hover:border-blue-400 hover:bg-slate-700/60 hover:shadow-lg'
+            } transition-all duration-200 text-left group`}
           >
-            <div className="text-2xl mb-2">📋</div>
-            <h3 className="font-semibold text-white mb-1">Separation (Under 20 Years)</h3>
-            <p className="text-sm text-slate-400">ETS or voluntary separation</p>
+            <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">📋</div>
+            <h3 className="font-bold text-white mb-2">Separation (Under 20 Years)</h3>
+            <p className="text-sm text-slate-300">ETS or voluntary separation</p>
           </button>
         </div>
-        <p className="text-slate-400 text-sm mt-4">
+        <p className="text-slate-400 text-sm mt-6 leading-relaxed">
           Your selection helps us show you the most relevant tools and checklists. You can change this anytime in Settings.
         </p>
       </div>
 
       {/* Settings Modal */}
       {showSetup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg p-6 max-w-md w-full">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Dashboard Settings</h3>
-            <div className="space-y-4">
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 max-w-md w-full border border-gray-200 dark:border-gray-700">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Dashboard Settings</h3>
+            <div className="space-y-5">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Your Name (optional)</label>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Your Name (optional)</label>
                 <input
                   type="text"
                   value={userName}
                   onChange={(e) => setUserName(e.target.value)}
                   placeholder="Enter your name"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Separation/Retirement Date</label>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Separation/Retirement Date</label>
                 <input
                   type="date"
                   value={separationDate}
                   onChange={(e) => setSeparationDate(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Transition Type</label>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Transition Type</label>
                 <select
                   value={userSetup}
                   onChange={(e) => setUserSetup(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
                 >
                   <option value="retirement">20+ Year Retirement</option>
                   <option value="separation">Separation (&lt;20 Years)</option>
@@ -501,20 +507,20 @@ export default function Home() {
                 </select>
               </div>
             </div>
-            <div className="mt-6 flex gap-3">
+            <div className="mt-8 flex gap-3">
               <button
                 onClick={() => {
                   const setup = { situation: userSetup, separationDate, name: userName }
                   localStorage.setItem('userSetup', JSON.stringify(setup))
                   setShowSetup(false)
                 }}
-                className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                className="flex-1 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all"
               >
                 Save
               </button>
               <button
                 onClick={() => setShowSetup(false)}
-                className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50"
+                className="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
               >
                 Cancel
               </button>
@@ -524,28 +530,28 @@ export default function Home() {
       )}
 
       {/* Hero Card - Countdown & Progress */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg shadow-lg p-6 sm:p-8 text-white mb-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 rounded-2xl shadow-2xl p-8 sm:p-10 text-white mb-8 border border-blue-500/20">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
           <div className="flex-1 text-center sm:text-left">
             {daysUntil !== null && daysUntil > 0 ? (
               <>
-                <h2 className="text-4xl sm:text-5xl font-bold mb-2">{daysUntil} Days</h2>
-                <p className="text-lg sm:text-xl text-blue-100">Until Separation/Retirement</p>
-                <p className="text-sm text-blue-200 mt-2">
+                <h2 className="text-5xl sm:text-6xl font-extrabold mb-3 tracking-tight">{daysUntil} <span className="text-blue-200">Days</span></h2>
+                <p className="text-xl sm:text-2xl text-blue-100 font-medium mb-2">Until Separation/Retirement</p>
+                <p className="text-base text-blue-200/90 mt-3 font-light">
                   {separationDate && new Date(separationDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                 </p>
               </>
             ) : daysUntil !== null && daysUntil <= 0 ? (
               <>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-2">Separation Date Passed</h2>
-                <p className="text-lg sm:text-xl text-blue-100">Focus on post-transition planning</p>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-3">Separation Date Passed</h2>
+                <p className="text-xl sm:text-2xl text-blue-100">Focus on post-transition planning</p>
               </>
             ) : (
               <>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-2">Ready to start planning?</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to start planning?</h2>
                 <button
                   onClick={() => setShowSetup(true)}
-                  className="mt-2 text-sm bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 min-h-[44px] transition-colors"
+                  className="mt-3 text-base font-semibold bg-white text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 hover:shadow-lg min-h-[48px] transition-all"
                 >
                   Set your separation date
                 </button>
@@ -553,14 +559,14 @@ export default function Home() {
             )}
           </div>
           <div className="flex-shrink-0">
-            <div className="relative w-32 h-32 sm:w-40 sm:h-40">
-              <svg className="transform -rotate-90 w-full h-full" viewBox="0 0 160 160">
+            <div className="relative w-36 h-36 sm:w-44 sm:h-44">
+              <svg className="transform -rotate-90 w-full h-full drop-shadow-lg" viewBox="0 0 160 160">
                 <circle
                   cx="80"
                   cy="80"
                   r="70"
-                  stroke="rgba(255,255,255,0.2)"
-                  strokeWidth="12"
+                  stroke="rgba(255,255,255,0.15)"
+                  strokeWidth="14"
                   fill="none"
                 />
                 <circle
@@ -568,16 +574,17 @@ export default function Home() {
                   cy="80"
                   r="70"
                   stroke="white"
-                  strokeWidth="12"
+                  strokeWidth="14"
                   fill="none"
                   strokeDasharray={`${overallProgress * 4.4} 440`}
                   strokeLinecap="round"
+                  className="drop-shadow-md"
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-3xl sm:text-4xl font-bold">{overallProgress}%</div>
-                  <div className="text-xs text-blue-100">Complete</div>
+                  <div className="text-4xl sm:text-5xl font-extrabold drop-shadow-md">{overallProgress}%</div>
+                  <div className="text-sm text-blue-100 font-medium mt-1">Complete</div>
                 </div>
               </div>
             </div>

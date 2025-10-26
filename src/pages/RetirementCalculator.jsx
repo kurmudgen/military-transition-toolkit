@@ -276,25 +276,25 @@ export default function RetirementCalculator() {
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      <div className="bg-white rounded-lg shadow p-6">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-3">
           Military Retirement Pay Calculator
         </h1>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
           Calculate your estimated retirement pay, VA disability compensation, and total income
         </p>
 
         {/* Common Scenarios */}
-        <div className="mb-6 p-4 bg-blue-50 rounded-lg">
-          <h3 className="font-semibold text-gray-900 mb-3">Quick Start - Common Scenarios:</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="mb-8 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border-2 border-blue-200 dark:border-blue-800 shadow-lg">
+          <h3 className="font-bold text-gray-900 dark:text-white mb-4 text-lg">Quick Start - Common Scenarios:</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {COMMON_SCENARIOS.map((scenario, idx) => (
               <button
                 key={idx}
                 onClick={() => loadScenario(scenario)}
-                className="p-3 bg-white border border-blue-300 rounded-lg hover:bg-blue-50 text-left text-sm"
+                className="p-4 bg-white dark:bg-gray-800 border-2 border-blue-300 dark:border-blue-700 rounded-xl hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:border-blue-500 transition-all text-left shadow-md hover:shadow-lg"
               >
-                <div className="font-medium text-gray-900">{scenario.name}</div>
+                <div className="font-semibold text-gray-900 dark:text-white">{scenario.name}</div>
               </button>
             ))}
           </div>
@@ -918,22 +918,22 @@ export default function RetirementCalculator() {
         )}
 
         {/* Navigation Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:justify-between mt-8 pt-6 border-t border-gray-300">
+        <div className="flex flex-col sm:flex-row gap-4 sm:justify-between mt-10 pt-8 border-t-2 border-gray-300 dark:border-gray-700">
           {currentStep > 1 && (
             <button
               onClick={() => setCurrentStep(currentStep - 1)}
-              className="px-6 py-3 bg-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-400 transition-colors min-h-[48px]"
+              className="px-8 py-4 bg-gradient-to-r from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-600 text-gray-800 dark:text-gray-200 font-bold rounded-xl hover:from-gray-400 hover:to-gray-500 dark:hover:from-gray-600 dark:hover:to-gray-500 transition-all min-h-[52px] shadow-md hover:shadow-lg"
             >
-              Previous
+              ← Previous
             </button>
           )}
           <div className={currentStep > 1 ? 'sm:ml-auto' : 'ml-auto'}>
             {currentStep < 7 && (
               <button
                 onClick={() => setCurrentStep(currentStep + 1)}
-                className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors min-h-[48px]"
+                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all min-h-[52px] shadow-lg hover:shadow-xl"
               >
-                Next Step
+                Next Step →
               </button>
             )}
           </div>

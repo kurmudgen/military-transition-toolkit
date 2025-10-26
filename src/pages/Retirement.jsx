@@ -277,31 +277,31 @@ export default function Retirement() {
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      <div className="bg-white rounded-lg shadow p-6">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-3">
           20+ Year Retirement Timeline
         </h1>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
           Track your progress through each phase of your retirement journey
         </p>
 
         {/* Collapse/Expand All Buttons */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
           <div className="flex gap-3">
             <button
               onClick={collapseAll}
-              className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors text-sm font-medium"
+              className="px-5 py-2.5 bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white rounded-xl transition-all text-sm font-semibold shadow-md hover:shadow-lg"
             >
               Collapse All
             </button>
             <button
               onClick={expandAll}
-              className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors text-sm font-medium"
+              className="px-5 py-2.5 bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white rounded-xl transition-all text-sm font-semibold shadow-md hover:shadow-lg"
             >
               Expand All
             </button>
           </div>
-          <div className="flex items-center gap-2 text-xs text-gray-500">
+          <div className="hidden lg:flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-xl">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -310,54 +310,54 @@ export default function Retirement() {
         </div>
 
         {/* Overall Progress */}
-        <div className="mb-8 p-4 bg-blue-50 rounded-lg">
-          <div className="flex justify-between items-center mb-2">
-            <h2 className="text-lg font-semibold text-gray-900">Overall Progress</h2>
-            <span className="text-sm font-medium text-gray-700">
-              {overall.completed} of {overall.total} tasks completed ({overall.percentage}%)
+        <div className="mb-10 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border-2 border-blue-200 dark:border-blue-800 shadow-lg">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white">Overall Progress</h2>
+            <span className="text-base font-semibold text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow">
+              {overall.completed} of {overall.total} tasks ({overall.percentage}%)
             </span>
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-3">
+          <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-4 shadow-inner">
             <div
-              className="bg-blue-600 h-3 rounded-full transition-all duration-300"
+              className="bg-gradient-to-r from-blue-600 to-indigo-600 h-4 rounded-full transition-all duration-500 shadow-lg"
               style={{ width: `${overall.percentage}%` }}
             />
           </div>
         </div>
 
         {/* Timeline Sections */}
-        <div className="space-y-4">
+        <div className="space-y-5">
           {TIMELINE_DATA.map(section => {
             const progress = getSectionProgress(section.id)
             const isExpanded = expandedSections[section.id]
 
             return (
-              <div key={section.id} className="border rounded-lg overflow-hidden">
+              <div key={section.id} className="border-2 border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 {/* Section Header */}
                 <button
                   onClick={() => toggleSection(section.id)}
-                  className="w-full px-6 py-4 bg-gray-50 hover:bg-gray-100 transition-colors flex items-center justify-between text-left"
+                  className="w-full px-6 py-5 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-750 hover:from-gray-100 hover:to-gray-150 dark:hover:from-gray-750 dark:hover:to-gray-700 transition-all flex items-center justify-between text-left group"
                 >
-                  <div className="flex items-center flex-1">
+                  <div className="flex items-center flex-1 gap-4">
                     <svg
-                      className={`w-5 h-5 mr-3 transition-transform ${isExpanded ? 'rotate-90' : ''}`}
+                      className={`w-6 h-6 text-gray-600 dark:text-gray-400 transition-transform duration-300 ${isExpanded ? 'rotate-90' : ''}`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                     </svg>
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-gray-900">{section.title}</h3>
-                      <div className="flex items-center mt-1">
-                        <div className="w-32 bg-gray-200 rounded-full h-2 mr-3">
+                      <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">{section.title}</h3>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <div className="w-full sm:w-40 bg-gray-300 dark:bg-gray-600 rounded-full h-2.5 shadow-inner">
                           <div
-                            className="bg-green-500 h-2 rounded-full transition-all duration-300"
+                            className="bg-gradient-to-r from-green-500 to-emerald-600 h-2.5 rounded-full transition-all duration-500 shadow-sm"
                             style={{ width: `${progress.percentage}%` }}
                           />
                         </div>
-                        <span className="text-sm text-gray-600">
-                          {progress.completed}/{progress.total}
+                        <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 px-3 py-1 rounded-lg shadow-sm">
+                          {progress.completed}/{progress.total} tasks
                         </span>
                       </div>
                     </div>
@@ -366,22 +366,22 @@ export default function Retirement() {
 
                 {/* Section Content */}
                 {isExpanded && (
-                  <div className="px-6 py-4 space-y-3">
+                  <div className="px-6 py-5 space-y-3 bg-white dark:bg-gray-800">
                     {section.items.map((item, idx) => {
                       const isCompleted = isItemCompleted(section.id, idx)
                       return (
-                        <div key={idx} className="flex items-start">
+                        <div key={idx} className="flex items-start p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors">
                           <input
                             type="checkbox"
                             id={`${section.id}-${idx}`}
                             checked={isCompleted}
                             onChange={() => toggleItem(section.id, idx)}
-                            className="mt-1 h-5 w-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500 cursor-pointer flex-shrink-0"
+                            className="mt-1 h-5 w-5 text-blue-600 rounded-md border-2 border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0 transition-all"
                           />
                           <label
                             htmlFor={`${section.id}-${idx}`}
-                            className={`ml-3 cursor-pointer select-none ${
-                              isCompleted ? 'line-through text-gray-400' : 'text-gray-700'
+                            className={`ml-4 cursor-pointer select-none leading-relaxed ${
+                              isCompleted ? 'line-through text-gray-400 dark:text-gray-500' : 'text-gray-700 dark:text-gray-300'
                             }`}
                           >
                             {item}
@@ -401,22 +401,22 @@ export default function Retirement() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50"
+          className="fixed bottom-8 right-8 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white p-4 rounded-2xl shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 z-50 group"
           aria-label="Scroll to top"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 10l7-7m0 0l7 7m-7-7v18" />
           </svg>
         </button>
       )}
 
       {/* Success Toast */}
       {showToast && (
-        <div className="fixed top-6 right-6 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 flex items-center gap-2 animate-fade-in">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+        <div className="fixed top-8 right-8 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-4 rounded-2xl shadow-2xl z-50 flex items-center gap-3 animate-fade-in border border-green-500/20">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
           </svg>
-          <span className="font-medium">Progress saved!</span>
+          <span className="font-semibold text-lg">Progress saved!</span>
         </div>
       )}
     </div>
