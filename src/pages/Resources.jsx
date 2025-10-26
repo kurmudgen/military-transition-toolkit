@@ -1,358 +1,438 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { trackPageView, trackButtonClick } from '../utils/analytics'
+
+// Default curated resources
+const DEFAULT_RESOURCES = [
+  // Career & Employment
+  { id: 'career-1', category: 'career', title: 'CareerOneStop for Veterans', url: 'https://www.careeronestop.org/Veterans/', description: 'DOL employment resources - job search, training, career exploration', official: true },
+  { id: 'career-2', category: 'career', title: 'SkillBridge', url: 'https://www.skillbridge.osd.mil', description: 'Industry training opportunities during final 180 days of service', official: true },
+  { id: 'career-3', category: 'career', title: 'LinkedIn for Veterans', url: 'https://www.linkedinforgood.linkedin.com/programs/veterans', description: 'Free premium LinkedIn access for transitioning service members', official: true },
+  { id: 'career-4', category: 'career', title: 'USAJOBS Veterans', url: 'https://www.usajobs.gov/Veterans/', description: 'Federal job opportunities with veterans preference', official: true },
+  { id: 'career-5', category: 'career', title: 'My Next Move for Veterans', url: 'https://www.mynextmove.org/vets', description: 'Career exploration tool matching military skills to civilian careers', official: true },
+
+  // Education
+  { id: 'edu-1', category: 'education', title: 'GI Bill Overview', url: 'https://www.va.gov/education/', description: 'Complete guide to GI Bill benefits - Post-9/11, Montgomery, and more', official: true },
+  { id: 'edu-2', category: 'education', title: 'GI Bill Comparison Tool', url: 'https://www.benefits.va.gov/gibill/comparison_tool.asp', description: 'Compare education benefits and school costs across institutions', official: true },
+  { id: 'edu-3', category: 'education', title: 'COOL - Credentialing', url: 'https://www.cool.osd.mil', description: 'Civilian credentialing opportunities based on military training', official: true },
+
+  // VA Benefits
+  { id: 'benefits-1', category: 'benefits', title: 'VA.gov', url: 'https://www.va.gov', description: 'Main VA benefits portal - healthcare, disability, pensions, and more', official: true },
+  { id: 'benefits-2', category: 'benefits', title: 'eBenefits', url: 'https://www.ebenefits.va.gov', description: 'Manage your VA benefits online - claims, letters, dependents', official: true },
+  { id: 'benefits-3', category: 'benefits', title: 'VA Disability Compensation', url: 'https://www.benefits.va.gov/compensation/', description: 'Information about disability ratings, benefits, and compensation', official: true },
+  { id: 'benefits-4', category: 'benefits', title: 'My HealtheVet', url: 'https://www.myhealth.va.gov', description: 'Access VA health records, appointments, prescriptions, and messaging', official: true },
+
+  // Mental Health
+  { id: 'mental-1', category: 'mental', title: 'Veterans Crisis Line', url: 'https://www.veteranscrisisline.net', description: '24/7 confidential support - call 988 then press 1', official: true },
+  { id: 'mental-2', category: 'mental', title: 'Military OneSource', url: 'https://www.militaryonesource.mil', description: '24/7 support for service members and families - free counseling, resources', official: true },
+  { id: 'mental-3', category: 'mental', title: 'VA Mental Health Services', url: 'https://www.mentalhealth.va.gov', description: 'Comprehensive mental health care and support services', official: true },
+
+  // Housing & Financial
+  { id: 'housing-1', category: 'housing', title: 'VA Home Loans', url: 'https://www.benefits.va.gov/homeloans/', description: 'VA-backed home loans with no down payment requirement', official: true },
+  { id: 'housing-2', category: 'housing', title: 'Thrift Savings Plan (TSP)', url: 'https://www.tsp.gov', description: 'Manage your TSP account, contributions, and retirement planning', official: true },
+  { id: 'housing-3', category: 'housing', title: 'Military OneSource Financial', url: 'https://www.militaryonesource.mil/financial-legal/', description: 'Free financial counseling and planning services', official: true },
+]
+
+const RESOURCE_CATEGORIES = {
+  career: { name: 'Career & Employment', icon: '💼', color: 'blue' },
+  education: { name: 'Education & Training', icon: '🎓', color: 'green' },
+  benefits: { name: 'VA Benefits & Healthcare', icon: '🏥', color: 'red' },
+  mental: { name: 'Mental Health & Wellness', icon: '❤️', color: 'pink' },
+  housing: { name: 'Housing & Financial', icon: '🏠', color: 'purple' }
+}
 
 export default function Resources() {
+  const [resources, setResources] = useState([])
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('all')
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [editingResource, setEditingResource] = useState(null)
+  const [formData, setFormData] = useState({
+    title: '',
+    url: '',
+    description: '',
+    category: 'career'
+  })
+
   useEffect(() => {
-    document.title = 'Transition Resources - Military Transition Toolkit'
+    document.title = 'Resource Library - Military Transition Toolkit'
+    trackPageView('Resources Library')
+    loadResources()
   }, [])
 
-  const ResourceCard = ({ href, title, description }) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-4 bg-slate-700 hover:bg-slate-600 rounded-lg transition-colors group"
-    >
-      <h3 className="font-semibold text-white mb-1">{title}</h3>
-      <p className="text-slate-300 text-sm mb-2">{description}</p>
-      <span className="text-blue-400 text-sm group-hover:text-blue-300">
-        Visit site →
-      </span>
-    </a>
-  )
+  const loadResources = () => {
+    const stored = localStorage.getItem('transitionResources')
+    if (stored) {
+      try {
+        setResources(JSON.parse(stored))
+      } catch (e) {
+        setResources(DEFAULT_RESOURCES)
+        localStorage.setItem('transitionResources', JSON.stringify(DEFAULT_RESOURCES))
+      }
+    } else {
+      setResources(DEFAULT_RESOURCES)
+      localStorage.setItem('transitionResources', JSON.stringify(DEFAULT_RESOURCES))
+    }
+  }
+
+  const saveResources = (updatedResources) => {
+    setResources(updatedResources)
+    localStorage.setItem('transitionResources', JSON.stringify(updatedResources))
+  }
+
+  const handleAddResource = () => {
+    if (!formData.title || !formData.url) return
+
+    const newResource = {
+      id: `custom-${Date.now()}`,
+      ...formData,
+      official: false
+    }
+
+    const updated = [...resources, newResource]
+    saveResources(updated)
+    trackButtonClick('Add Custom Resource')
+    closeModal()
+  }
+
+  const handleUpdateResource = () => {
+    if (!editingResource || !formData.title || !formData.url) return
+
+    const updated = resources.map(r =>
+      r.id === editingResource.id ? { ...r, ...formData } : r
+    )
+    saveResources(updated)
+    trackButtonClick('Update Resource')
+    closeModal()
+  }
+
+  const handleDeleteResource = (resourceId) => {
+    if (confirm('Are you sure you want to delete this resource?')) {
+      const updated = resources.filter(r => r.id !== resourceId)
+      saveResources(updated)
+      trackButtonClick('Delete Resource')
+    }
+  }
+
+  const openAddModal = () => {
+    setFormData({ title: '', url: '', description: '', category: 'career' })
+    setEditingResource(null)
+    setShowAddModal(true)
+  }
+
+  const openEditModal = (resource) => {
+    setFormData({
+      title: resource.title,
+      url: resource.url,
+      description: resource.description,
+      category: resource.category
+    })
+    setEditingResource(resource)
+    setShowAddModal(true)
+  }
+
+  const closeModal = () => {
+    setShowAddModal(false)
+    setEditingResource(null)
+    setFormData({ title: '', url: '', description: '', category: 'career' })
+  }
+
+  // Filter resources
+  let filteredResources = resources
+
+  // Filter by search query
+  if (searchQuery) {
+    const query = searchQuery.toLowerCase()
+    filteredResources = filteredResources.filter(r =>
+      r.title.toLowerCase().includes(query) ||
+      r.description.toLowerCase().includes(query)
+    )
+  }
+
+  // Filter by category
+  if (selectedCategory !== 'all') {
+    filteredResources = filteredResources.filter(r => r.category === selectedCategory)
+  }
+
+  // Group by category for display
+  const groupedResources = {}
+  filteredResources.forEach(resource => {
+    if (!groupedResources[resource.category]) {
+      groupedResources[resource.category] = []
+    }
+    groupedResources[resource.category].push(resource)
+  })
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-3">Transition Resources</h1>
-          <p className="text-slate-300 text-lg">
-            Comprehensive directory of official resources to support your military transition
-          </p>
+    <div className="px-4 py-6 sm:px-0 max-w-7xl mx-auto">
+      {/* Header */}
+      <div className="mb-8">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+          Resource Library
+        </h1>
+        <p className="text-gray-600 dark:text-gray-400 text-lg">
+          Curated veteran transition resources with search and filter
+        </p>
+      </div>
+
+      {/* Search and Filter Bar */}
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border-2 border-gray-200 dark:border-gray-700 p-6 mb-8">
+        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between mb-4">
+          {/* Search */}
+          <div className="flex-1 w-full md:max-w-md">
+            <div className="relative">
+              <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search resources..."
+                className="w-full pl-10 pr-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+              />
+            </div>
+          </div>
+
+          {/* Add Resource Button */}
+          <button
+            onClick={openAddModal}
+            className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold rounded-lg transition-all shadow-md hover:shadow-xl flex items-center gap-2"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+            </svg>
+            Add Resource
+          </button>
         </div>
 
-        <div className="space-y-6">
-          {/* TAP & Transition Programs */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-semibold text-white mb-4">🎓 TAP & Transition Programs</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ResourceCard
-                href="https://www.dodtap.mil"
-                title="DOD TAP"
-                description="Official Transition Assistance Program site - comprehensive transition planning and workshops"
-              />
-
-              <ResourceCard
-                href="https://www.skillbridge.osd.mil"
-                title="SkillBridge"
-                description="Industry training opportunities during final 180 days of service"
-              />
-
-              <ResourceCard
-                href="https://www.militaryonesource.mil"
-                title="Military OneSource"
-                description="24/7 support for service members and families - free counseling, resources, tools"
-              />
-
-              <ResourceCard
-                href="https://www.acap.army.mil"
-                title="Army ACAP"
-                description="Army Career and Alumni Program - transition services for soldiers"
-              />
-
-              <ResourceCard
-                href="https://www.navy.mil/Resources/Transition/"
-                title="Navy FFSC"
-                description="Navy Fleet and Family Support - transition assistance and counseling"
-              />
-
-              <ResourceCard
-                href="https://www.usmc-mccs.org/services/career/transition-readiness/"
-                title="Marine Corps TAMP"
-                description="Marine Corps Transition and Employment Assistance Program"
-              />
-            </div>
-          </div>
-
-          {/* VA Benefits */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-semibold text-white mb-4">🏥 VA Benefits & Healthcare</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ResourceCard
-                href="https://www.va.gov"
-                title="VA.gov"
-                description="Main VA benefits portal - healthcare, disability, pensions, and more"
-              />
-
-              <ResourceCard
-                href="https://www.ebenefits.va.gov"
-                title="eBenefits"
-                description="Manage your VA benefits online - claims, letters, dependents"
-              />
-
-              <ResourceCard
-                href="https://www.myhealth.va.gov"
-                title="My HealtheVet"
-                description="Access VA health records, appointments, prescriptions, and messaging"
-              />
-
-              <ResourceCard
-                href="https://www.benefits.va.gov/compensation/"
-                title="VA Disability Compensation"
-                description="Information about disability ratings, benefits, and compensation"
-              />
-
-              <ResourceCard
-                href="https://www.benefits.va.gov/vocrehab/"
-                title="VR&E"
-                description="Vocational Rehabilitation & Employment - education and career counseling"
-              />
-
-              <ResourceCard
-                href="https://www.va.gov/health-care/eligibility/"
-                title="VA Healthcare Enrollment"
-                description="Learn about VA healthcare eligibility and how to enroll"
-              />
-            </div>
-          </div>
-
-          {/* Education & GI Bill */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-semibold text-white mb-4">📚 Education & GI Bill</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ResourceCard
-                href="https://www.va.gov/education/"
-                title="GI Bill Overview"
-                description="Complete guide to GI Bill benefits - Post-9/11, Montgomery, and more"
-              />
-
-              <ResourceCard
-                href="https://www.benefits.va.gov/gibill/comparison_tool.asp"
-                title="GI Bill Comparison Tool"
-                description="Compare education benefits and school costs across institutions"
-              />
-
-              <ResourceCard
-                href="https://www.gibill.va.gov"
-                title="GI Bill Website"
-                description="Official GI Bill information, applications, and support"
-              />
-
-              <ResourceCard
-                href="https://www.veteransaidbenefit.org"
-                title="Federal Student Aid for Veterans"
-                description="Additional financial aid options beyond GI Bill benefits"
-              />
-
-              <ResourceCard
-                href="https://www.cool.osd.mil"
-                title="COOL - Credentialing"
-                description="Civilian credentialing opportunities based on military training"
-              />
-
-              <ResourceCard
-                href="https://www.onlinelearning.va.gov"
-                title="VA Education Benefits Portal"
-                description="Apply for education benefits and track your status online"
-              />
-            </div>
-          </div>
-
-          {/* Employment */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-semibold text-white mb-4">💼 Employment & Careers</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ResourceCard
-                href="https://www.careeronestop.org/Veterans/"
-                title="CareerOneStop for Veterans"
-                description="DOL employment resources - job search, training, career exploration"
-              />
-
-              <ResourceCard
-                href="https://www.hirevets.gov"
-                title="Hire Vets Medallion"
-                description="Find employers committed to hiring veterans"
-              />
-
-              <ResourceCard
-                href="https://www.usajobs.gov/Veterans/"
-                title="USAJOBS Veterans"
-                description="Federal job opportunities with veterans preference"
-              />
-
-              <ResourceCard
-                href="https://www.dol.gov/agencies/vets"
-                title="DOL Veterans Employment"
-                description="Department of Labor veteran employment and training services"
-              />
-
-              <ResourceCard
-                href="https://www.linkedinforgood.linkedin.com/programs/veterans"
-                title="LinkedIn for Veterans"
-                description="Free premium LinkedIn access for transitioning service members"
-              />
-
-              <ResourceCard
-                href="https://www.mynextmove.org/vets"
-                title="My Next Move for Veterans"
-                description="Career exploration tool matching military skills to civilian careers"
-              />
-            </div>
-          </div>
-
-          {/* Financial Planning */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-semibold text-white mb-4">💰 Financial Planning</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ResourceCard
-                href="https://www.tsp.gov"
-                title="Thrift Savings Plan (TSP)"
-                description="Manage your TSP account, contributions, and retirement planning"
-              />
-
-              <ResourceCard
-                href="https://www.dfas.mil"
-                title="DFAS"
-                description="Defense Finance and Accounting Service - pay, retirement, benefits"
-              />
-
-              <ResourceCard
-                href="https://www.militaryonesource.mil/financial-legal/"
-                title="Military OneSource Financial"
-                description="Free financial counseling and planning services"
-              />
-
-              <ResourceCard
-                href="https://www.mypay.dfas.mil"
-                title="myPay"
-                description="Access pay statements, W-2s, 1099-Rs, and update direct deposit"
-              />
-
-              <ResourceCard
-                href="https://www.consumer.ftc.gov/military"
-                title="FTC Military Consumer"
-                description="Consumer protection and financial education resources"
-              />
-
-              <ResourceCard
-                href="https://www.finred.usalearning.gov"
-                title="Financial Readiness"
-                description="DOD financial literacy and education programs"
-              />
-            </div>
-          </div>
-
-          {/* VSO Finder */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-semibold text-white mb-4">🤝 Veteran Service Organizations</h2>
-            <p className="text-slate-300 mb-4">
-              Find local VSOs that can help with your transition and claims. These organizations provide free assistance:
-            </p>
-            <div className="grid md:grid-cols-3 gap-4">
-              <ResourceCard
-                href="https://www.dav.org"
-                title="DAV"
-                description="Disabled American Veterans - free claims assistance"
-              />
-
-              <ResourceCard
-                href="https://www.vfw.org"
-                title="VFW"
-                description="Veterans of Foreign Wars - service officers and support"
-              />
-
-              <ResourceCard
-                href="https://www.legion.org"
-                title="American Legion"
-                description="Advocacy, benefits assistance, and community"
-              />
-
-              <ResourceCard
-                href="https://www.woundedwarriorproject.org"
-                title="Wounded Warrior Project"
-                description="Programs for wounded veterans and their families"
-              />
-
-              <ResourceCard
-                href="https://www.teamrubicon.org"
-                title="Team Rubicon"
-                description="Disaster response and veteran community"
-              />
-
-              <ResourceCard
-                href="https://www.iava.org"
-                title="IAVA"
-                description="Iraq and Afghanistan Veterans of America"
-              />
-
-              <ResourceCard
-                href="https://www.veteranscrisisline.net"
-                title="Veterans Crisis Line"
-                description="24/7 confidential support - call 988 then press 1"
-              />
-
-              <ResourceCard
-                href="https://www.va.gov/vso/"
-                title="VA Accredited VSOs"
-                description="Directory of all VA-accredited organizations"
-              />
-
-              <ResourceCard
-                href="https://www.uso.org"
-                title="USO"
-                description="United Service Organizations - support programs"
-              />
-            </div>
-          </div>
-
-          {/* Additional Resources */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-semibold text-white mb-4">🔗 Additional Resources</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <ResourceCard
-                href="https://www.tricare.mil"
-                title="TRICARE"
-                description="Healthcare coverage for service members, retirees, and families"
-              />
-
-              <ResourceCard
-                href="https://www.dmdc.osd.mil/milconnect"
-                title="MilConnect"
-                description="Manage DEERS, ID cards, and benefits eligibility"
-              />
-
-              <ResourceCard
-                href="https://www.archives.gov/veterans"
-                title="National Archives Veterans"
-                description="Request military records and DD-214"
-              />
-
-              <ResourceCard
-                href="https://www.sba.gov/veterans"
-                title="SBA Veterans Programs"
-                description="Small Business Administration support for veteran entrepreneurs"
-              />
-            </div>
-          </div>
-
-          {/* Contact Help */}
-          <div className="bg-blue-900/20 border border-blue-500 rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-white mb-3">Need Help?</h3>
-            <div className="grid md:grid-cols-2 gap-4 text-slate-300">
-              <div>
-                <p className="font-semibold text-white mb-2">Veterans Crisis Line</p>
-                <p className="mb-1">Call: <a href="tel:988" className="text-blue-400 hover:underline">988 then press 1</a></p>
-                <p className="mb-1">Text: <a href="sms:838255" className="text-blue-400 hover:underline">838255</a></p>
-                <p>Chat: <a href="https://www.veteranscrisisline.net/get-help/chat" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">VeteransCrisisLine.net</a></p>
-              </div>
-              <div>
-                <p className="font-semibold text-white mb-2">VA Benefits Hotline</p>
-                <p className="mb-1">Call: <a href="tel:1-800-827-1000" className="text-blue-400 hover:underline">1-800-827-1000</a></p>
-                <p className="text-sm text-slate-400">Mon-Fri, 8am-9pm ET</p>
-              </div>
-            </div>
-          </div>
+        {/* Category Filter */}
+        <div className="flex flex-wrap gap-2">
+          <button
+            onClick={() => setSelectedCategory('all')}
+            className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+              selectedCategory === 'all'
+                ? 'bg-blue-600 text-white shadow-md'
+                : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+            }`}
+          >
+            All Categories
+          </button>
+          {Object.entries(RESOURCE_CATEGORIES).map(([key, cat]) => (
+            <button
+              key={key}
+              onClick={() => setSelectedCategory(key)}
+              className={`px-4 py-2 rounded-lg font-semibold transition-all flex items-center gap-2 ${
+                selectedCategory === key
+                  ? 'bg-blue-600 text-white shadow-md'
+                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+              }`}
+            >
+              <span>{cat.icon}</span>
+              <span>{cat.name}</span>
+            </button>
+          ))}
         </div>
       </div>
+
+      {/* Results Count */}
+      <div className="mb-4 text-gray-600 dark:text-gray-400">
+        Showing {filteredResources.length} {filteredResources.length === 1 ? 'resource' : 'resources'}
+        {searchQuery && ` for "${searchQuery}"`}
+      </div>
+
+      {/* Resources by Category */}
+      {Object.keys(groupedResources).length === 0 ? (
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border-2 border-gray-200 dark:border-gray-700 p-12 text-center">
+          <div className="text-7xl mb-4">🔍</div>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            No resources found
+          </h3>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            Try adjusting your search or filters
+          </p>
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery('')}
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-md hover:shadow-lg"
+            >
+              Clear Search
+            </button>
+          )}
+        </div>
+      ) : (
+        <div className="space-y-8">
+          {Object.entries(groupedResources).map(([categoryKey, categoryResources]) => {
+            const category = RESOURCE_CATEGORIES[categoryKey]
+            return (
+              <div key={categoryKey} className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border-2 border-gray-200 dark:border-gray-700 p-6">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+                  <span className="text-4xl">{category.icon}</span>
+                  {category.name}
+                  <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
+                    ({categoryResources.length})
+                  </span>
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {categoryResources.map(resource => (
+                    <div
+                      key={resource.id}
+                      className="bg-gray-50 dark:bg-gray-750 rounded-xl border-2 border-gray-200 dark:border-gray-700 p-5 hover:border-blue-500 dark:hover:border-blue-500 transition-all group"
+                    >
+                      <div className="flex items-start justify-between mb-3">
+                        <h3 className="font-bold text-gray-900 dark:text-white text-lg flex-1">
+                          {resource.title}
+                        </h3>
+                        {resource.official && (
+                          <span className="ml-2 px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold rounded-full flex-shrink-0">
+                            Official
+                          </span>
+                        )}
+                      </div>
+
+                      <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                        {resource.description}
+                      </p>
+
+                      <div className="flex gap-2">
+                        <a
+                          href={resource.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => trackButtonClick('Open Resource Link')}
+                          className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold rounded-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2"
+                        >
+                          Visit Site
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+
+                        {!resource.official && (
+                          <div className="flex gap-1">
+                            <button
+                              onClick={() => openEditModal(resource)}
+                              className="p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg transition-all"
+                              aria-label="Edit resource"
+                            >
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                              </svg>
+                            </button>
+                            <button
+                              onClick={() => handleDeleteResource(resource.id)}
+                              className="p-2 bg-red-100 dark:bg-red-900/30 hover:bg-red-200 dark:hover:bg-red-900/50 text-red-700 dark:text-red-400 rounded-lg transition-all"
+                              aria-label="Delete resource"
+                            >
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                              </svg>
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      )}
+
+      {/* Add/Edit Resource Modal */}
+      {showAddModal && (
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto animate-bounce-in">
+            <div className="p-6 border-b-2 border-gray-200 dark:border-gray-700">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                {editingResource ? 'Edit Resource' : 'Add Custom Resource'}
+              </h2>
+            </div>
+
+            <div className="p-6 space-y-4">
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                  Title *
+                </label>
+                <input
+                  type="text"
+                  value={formData.title}
+                  onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+                  placeholder="e.g., Veteran Job Board"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                  URL *
+                </label>
+                <input
+                  type="url"
+                  value={formData.url}
+                  onChange={(e) => setFormData({ ...formData, url: e.target.value })}
+                  placeholder="https://example.com"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                  Description
+                </label>
+                <textarea
+                  value={formData.description}
+                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  placeholder="Brief description of this resource..."
+                  rows={3}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                  Category
+                </label>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {Object.entries(RESOURCE_CATEGORIES).map(([key, cat]) => (
+                    <button
+                      key={key}
+                      onClick={() => setFormData({ ...formData, category: key })}
+                      className={`p-3 rounded-lg border-2 transition-all ${
+                        formData.category === key
+                          ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/30'
+                          : 'border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
+                      }`}
+                    >
+                      <div className="text-2xl mb-1">{cat.icon}</div>
+                      <div className="text-xs font-semibold text-gray-700 dark:text-gray-300">
+                        {cat.name}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 border-t-2 border-gray-200 dark:border-gray-700 flex gap-3">
+              <button
+                onClick={closeModal}
+                className="flex-1 px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-bold rounded-lg transition-all"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={editingResource ? handleUpdateResource : handleAddResource}
+                disabled={!formData.title || !formData.url}
+                className="flex-1 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold rounded-lg transition-all shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {editingResource ? 'Update Resource' : 'Add Resource'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
