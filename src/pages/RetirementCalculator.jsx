@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import UseProfileButton from '../components/UseProfileButton'
+import { getProfileData, getServiceInfo, getLocationInfo } from '../utils/profileAutoFill'
 
 // 2025 Base Pay Data (simplified - showing E-7 through O-5 for key ranks)
 const BASE_PAY_2025 = {
@@ -355,7 +357,21 @@ export default function RetirementCalculator() {
         {/* Step 1: Basic Information */}
         {currentStep === 1 && (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Step 1: Basic Information</h2>
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Step 1: Basic Information</h2>
+              <UseProfileButton
+                onUseProfile={() => {
+                  const serviceInfo = getServiceInfo()
+                  const locationInfo = getLocationInfo()
+
+                  if (serviceInfo.branch) updateFormData('branch', serviceInfo.branch)
+                  if (serviceInfo.rank) updateFormData('rank', serviceInfo.rank)
+                  if (serviceInfo.yearsOfService) updateFormData('yearsOfService', parseInt(serviceInfo.yearsOfService) || 20)
+                  if (locationInfo.targetLocation) updateFormData('selectedState', locationInfo.targetLocation)
+                }}
+                label="Fill from Profile"
+              />
+            </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Service Branch</label>
