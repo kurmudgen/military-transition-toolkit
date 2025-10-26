@@ -4,6 +4,7 @@ import Landing from './pages/Landing'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 import Home from './pages/Home'
+import Progress from './pages/Progress'
 import Resources from './pages/Resources'
 import Retirement from './pages/Retirement'
 import MedBoard from './pages/MedBoard'
@@ -29,6 +30,7 @@ function App() {
       {/* Application routes with Layout */}
       <Route path="/app" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="progress" element={<Progress />} />
         <Route path="resources" element={<Resources />} />
         <Route path="retirement" element={<Retirement />} />
         <Route path="medboard" element={<MedBoard />} />
