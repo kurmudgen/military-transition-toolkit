@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import AnalyticsDashboard from '../components/AnalyticsDashboard'
-import { trackPageView } from '../utils/analytics'
+import { trackPageView, trackButtonClick } from '../utils/analytics'
+import { generateTransitionPlanPDF } from '../utils/pdfExport'
 
 export default function Settings() {
   const [importStatus, setImportStatus] = useState('')
@@ -142,6 +143,19 @@ export default function Settings() {
     return (totalSize / 1024).toFixed(2) // Convert to KB
   }
 
+  const handleExportPDF = () => {
+    try {
+      trackButtonClick('Export Transition Plan PDF')
+      const fileName = generateTransitionPlanPDF()
+      setImportStatus(`✓ PDF generated successfully! Download: ${fileName}`)
+      setTimeout(() => setImportStatus(''), 5000)
+    } catch (error) {
+      console.error('PDF export error:', error)
+      setImportError('Failed to generate PDF. Please try again.')
+      setTimeout(() => setImportError(''), 5000)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
       <div className="max-w-4xl mx-auto px-4">
@@ -237,6 +251,38 @@ export default function Settings() {
                 <li>State benefits comparisons</li>
                 <li>All user preferences</li>
               </ul>
+            </div>
+          </div>
+
+          {/* Export Transition Plan PDF */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <h2 className="text-2xl font-semibold text-white mb-4">📄 Export Transition Plan (PDF)</h2>
+            <p className="text-slate-300 mb-4">
+              Generate a professional PDF document of your complete transition plan, including progress, reminders, VA claims, and timeline.
+            </p>
+
+            <button
+              onClick={handleExportPDF}
+              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-bold rounded-lg transition-all shadow-md hover:shadow-xl"
+            >
+              📄 Generate PDF Report
+            </button>
+
+            <div className="mt-4 text-sm text-slate-400">
+              <p className="font-semibold text-slate-300 mb-2">PDF includes:</p>
+              <ul className="list-disc list-inside space-y-1 ml-4">
+                <li>Personal information and timeline</li>
+                <li>Overall progress summary with charts</li>
+                <li>Detailed checklist with completion status</li>
+                <li>Upcoming reminders and important dates</li>
+                <li>VA disability claims list</li>
+                <li>Professional formatting for sharing or printing</li>
+              </ul>
+              <div className="mt-3 p-3 bg-purple-900/20 border border-purple-500 rounded-lg">
+                <p className="text-purple-400 text-sm">
+                  💡 Perfect for sharing with VSOs, family, or keeping offline records!
+                </p>
+              </div>
             </div>
           </div>
 
