@@ -876,12 +876,12 @@ export default function Home() {
               <Link to="/resources" className="block text-blue-600 hover:text-blue-800 text-sm">
                 Resource Library →
               </Link>
-              <Link to="/appointments" className="block text-blue-600 hover:text-blue-800 text-sm">
+              <Link to="/app/appointments" className="block text-blue-600 hover:text-blue-800 text-sm">
                 Contact Directory →
               </Link>
-              <a href="#" className="block text-blue-600 hover:text-blue-800 text-sm">
+              <Link to="/app/faq" className="block text-blue-600 hover:text-blue-800 text-sm">
                 FAQ & Guides →
-              </a>
+              </Link>
             </div>
           </div>
 
