@@ -6,7 +6,18 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'wave': 'wave 0.5s ease-in-out infinite',
+      },
+      keyframes: {
+        wave: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(20deg)' },
+          '75%': { transform: 'rotate(-20deg)' },
+        }
+      }
+    },
   },
   plugins: [],
 }

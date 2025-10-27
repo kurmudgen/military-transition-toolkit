@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
+import AIAssistant from './AIAssistant'
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -202,6 +203,9 @@ export default function Layout() {
           </div>
         </div>
       </footer>
+
+      {/* AI Assistant - Available on all pages */}
+      <AIAssistant />
     </div>
   )
 }
