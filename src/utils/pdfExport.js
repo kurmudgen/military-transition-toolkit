@@ -325,9 +325,367 @@ export const generateTransitionPlanPDF = () => {
   doc.text('https://militarytransitiontoolkit.com', pageWidth / 2, footerY + 4, { align: 'center' })
   doc.text('100% Privacy-First • All Data Stored Locally', pageWidth / 2, footerY + 8, { align: 'center' })
 
+  // SECTION 6: Resume & Career Preparation
+  const resumeData = JSON.parse(localStorage.getItem('resumeData') || '{}')
+
+  if (resumeData && Object.keys(resumeData).length > 0) {
+    checkPageBreak(30)
+    doc.setFontSize(16)
+    doc.setFont(undefined, 'bold')
+    doc.text('Resume & Career Preparation', margin, yPosition)
+    yPosition += 8
+
+    doc.setFontSize(10)
+    doc.setFont(undefined, 'normal')
+
+    if (resumeData.contactInfo) {
+      doc.text('Resume Created: Yes', margin + 5, yPosition)
+      yPosition += 5
+    }
+
+    if (resumeData.experience && resumeData.experience.length > 0) {
+      doc.text(`Work Experience Entries: ${resumeData.experience.length}`, margin + 5, yPosition)
+      yPosition += 5
+    }
+
+    if (resumeData.education && resumeData.education.length > 0) {
+      doc.text(`Education Entries: ${resumeData.education.length}`, margin + 5, yPosition)
+      yPosition += 5
+    }
+
+    if (resumeData.skills && resumeData.skills.length > 0) {
+      doc.text(`Skills Listed: ${resumeData.skills.length}`, margin + 5, yPosition)
+      yPosition += 5
+    }
+
+    doc.setTextColor(100)
+    doc.text('Use Resume Builder to view full details', margin + 5, yPosition)
+    doc.setTextColor(0)
+    yPosition += 10
+  }
+
+  // SECTION 7: Job Search Activity
+  const savedJobs = JSON.parse(localStorage.getItem('savedJobs') || '[]')
+  const applications = JSON.parse(localStorage.getItem('jobApplications') || '[]')
+
+  if (savedJobs.length > 0 || applications.length > 0) {
+    checkPageBreak(30)
+    doc.setFontSize(16)
+    doc.setFont(undefined, 'bold')
+    doc.text('Job Search Activity', margin, yPosition)
+    yPosition += 8
+
+    doc.setFontSize(10)
+    doc.setFont(undefined, 'normal')
+    doc.text(`Saved Jobs: ${savedJobs.length}`, margin + 5, yPosition)
+    yPosition += 5
+    doc.text(`Applications Submitted: ${applications.length}`, margin + 5, yPosition)
+    yPosition += 10
+
+    if (applications.length > 0) {
+      const statusCounts = {}
+      applications.forEach(app => {
+        statusCounts[app.status] = (statusCounts[app.status] || 0) + 1
+      })
+
+      doc.setFont(undefined, 'bold')
+      doc.text('Application Status:', margin + 5, yPosition)
+      doc.setFont(undefined, 'normal')
+      yPosition += 5
+
+      Object.entries(statusCounts).forEach(([status, count]) => {
+        doc.text(`${status}: ${count}`, margin + 10, yPosition)
+        yPosition += 5
+      })
+      yPosition += 5
+    }
+  }
+
+  // SECTION 8: State Benefits Research
+  const stateComparison = JSON.parse(localStorage.getItem('stateComparison') || '[]')
+
+  if (stateComparison.length > 0) {
+    checkPageBreak(20)
+    doc.setFontSize(16)
+    doc.setFont(undefined, 'bold')
+    doc.text('State Benefits Research', margin, yPosition)
+    yPosition += 8
+
+    doc.setFontSize(10)
+    doc.setFont(undefined, 'normal')
+    doc.text(`States Researched: ${stateComparison.join(', ')}`, margin + 5, yPosition)
+    yPosition += 5
+    doc.setTextColor(100)
+    doc.text('See State Benefits Comparison tool for full details', margin + 5, yPosition)
+    doc.setTextColor(0)
+    yPosition += 10
+  }
+
+  // SECTION 9: Next Steps
+  checkPageBreak(30)
+  doc.setFontSize(16)
+  doc.setFont(undefined, 'bold')
+  doc.text('Recommended Next Steps', margin, yPosition)
+  yPosition += 8
+
+  doc.setFontSize(10)
+  doc.setFont(undefined, 'normal')
+
+  // Generate recommendations
+  const recommendations = []
+
+  if (stats.overallProgress < 50) {
+    recommendations.push('Continue working through your transition checklist')
+  }
+
+  if (!resumeData || Object.keys(resumeData).length === 0) {
+    recommendations.push('Complete your resume using the Resume Builder')
+  }
+
+  if (applications.length === 0) {
+    recommendations.push('Start searching and applying for jobs')
+  }
+
+  if (vaConditions.length === 0) {
+    recommendations.push('Document your conditions in VA Claims Builder')
+  }
+
+  if (stateComparison.length === 0) {
+    recommendations.push('Research state benefits for your target location')
+  }
+
+  if (recommendations.length > 0) {
+    recommendations.forEach((rec, idx) => {
+      checkPageBreak(8)
+      doc.text(`${idx + 1}. ${rec}`, margin + 5, yPosition)
+      yPosition += 6
+    })
+  } else {
+    doc.text('Great progress! Keep executing your transition plan.', margin + 5, yPosition)
+    yPosition += 6
+  }
+
+  yPosition += 10
+
+  // Important Resources
+  checkPageBreak(40)
+  doc.setFontSize(14)
+  doc.setFont(undefined, 'bold')
+  doc.text('Important Resources', margin, yPosition)
+  yPosition += 8
+
+  doc.setFontSize(9)
+  doc.setFont(undefined, 'normal')
+
+  const resources = [
+    'Veterans Crisis Line: 988, then press 1',
+    'VA Benefits: https://www.va.gov',
+    'eBenefits: https://www.ebenefits.va.gov',
+    'Military OneSource: https://www.militaryonesource.mil',
+    'USAJOBS: https://www.usajobs.gov/Veterans/',
+    'CareerOneStop: https://www.careeronestop.org/Veterans/'
+  ]
+
+  resources.forEach(resource => {
+    checkPageBreak(6)
+    doc.text(resource, margin + 5, yPosition)
+    yPosition += 5
+  })
+
+  // Footer on last page
+  doc.setFontSize(8)
+  doc.setTextColor(150)
+  const footerY = pageHeight - 10
+  doc.text('Generated by Military Transition Toolkit', pageWidth / 2, footerY, { align: 'center' })
+  doc.text('https://militarytransitiontoolkit.com', pageWidth / 2, footerY + 4, { align: 'center' })
+  doc.text('100% Privacy-First • All Data Stored Locally', pageWidth / 2, footerY + 8, { align: 'center' })
+
   // Save the PDF
   const fileName = `Military_Transition_Plan_${new Date().toISOString().split('T')[0]}.pdf`
   doc.save(fileName)
 
+  return fileName
+}
+
+/**
+ * Export Resume as PDF
+ */
+export const generateResumePDF = (resumeData) => {
+  const doc = new jsPDF()
+  const pageWidth = doc.internal.pageSize.getWidth()
+  const pageHeight = doc.internal.pageSize.getHeight()
+  const margin = 20
+  let yPosition = margin
+
+  const checkPageBreak = (space = 20) => {
+    if (yPosition + space > pageHeight - margin) {
+      doc.addPage()
+      yPosition = margin
+      return true
+    }
+    return false
+  }
+
+  // Header - Contact Info
+  if (resumeData.contactInfo) {
+    const c = resumeData.contactInfo
+    doc.setFontSize(20)
+    doc.setFont(undefined, 'bold')
+    doc.text(`${c.firstName || ''} ${c.lastName || ''}`, pageWidth / 2, yPosition, { align: 'center' })
+    yPosition += 8
+
+    doc.setFontSize(10)
+    doc.setFont(undefined, 'normal')
+    const contactLine = [c.email, c.phone].filter(Boolean).join(' | ')
+    doc.text(contactLine, pageWidth / 2, yPosition, { align: 'center' })
+    yPosition += 5
+
+    const locationLine = [c.city, c.state].filter(Boolean).join(', ')
+    if (locationLine) {
+      doc.text(locationLine, pageWidth / 2, yPosition, { align: 'center' })
+      yPosition += 5
+    }
+
+    if (c.linkedIn) {
+      doc.text(`LinkedIn: ${c.linkedIn}`, pageWidth / 2, yPosition, { align: 'center' })
+      yPosition += 5
+    }
+
+    yPosition += 5
+    doc.line(margin, yPosition, pageWidth - margin, yPosition)
+    yPosition += 8
+  }
+
+  // Professional Summary
+  if (resumeData.summary) {
+    checkPageBreak(30)
+    doc.setFontSize(14)
+    doc.setFont(undefined, 'bold')
+    doc.text('PROFESSIONAL SUMMARY', margin, yPosition)
+    yPosition += 7
+
+    doc.setFontSize(10)
+    doc.setFont(undefined, 'normal')
+    const summaryLines = doc.splitTextToSize(resumeData.summary, pageWidth - 2 * margin)
+    summaryLines.forEach(line => {
+      checkPageBreak()
+      doc.text(line, margin, yPosition)
+      yPosition += 5
+    })
+    yPosition += 5
+  }
+
+  // Work Experience
+  if (resumeData.experience && resumeData.experience.length > 0) {
+    checkPageBreak(30)
+    doc.setFontSize(14)
+    doc.setFont(undefined, 'bold')
+    doc.text('PROFESSIONAL EXPERIENCE', margin, yPosition)
+    yPosition += 7
+
+    resumeData.experience.forEach((exp, idx) => {
+      checkPageBreak(20)
+      doc.setFontSize(12)
+      doc.setFont(undefined, 'bold')
+      doc.text(exp.title || '', margin, yPosition)
+      yPosition += 6
+
+      doc.setFontSize(10)
+      doc.setFont(undefined, 'normal')
+      doc.text(exp.organization || '', margin, yPosition)
+      doc.text(`${exp.startDate || ''} - ${exp.current ? 'Present' : exp.endDate || ''}`, pageWidth - margin, yPosition, { align: 'right' })
+      yPosition += 6
+
+      if (exp.accomplishments && exp.accomplishments.length > 0) {
+        exp.accomplishments.forEach(acc => {
+          checkPageBreak(8)
+          const bullet = '•  ' + (acc.description || '')
+          const lines = doc.splitTextToSize(bullet, pageWidth - 2 * margin - 5)
+          lines.forEach(line => {
+            doc.text(line, margin + 3, yPosition)
+            yPosition += 5
+          })
+        })
+      }
+      yPosition += 3
+    })
+    yPosition += 3
+  }
+
+  // Education
+  if (resumeData.education && resumeData.education.length > 0) {
+    checkPageBreak(30)
+    doc.setFontSize(14)
+    doc.setFont(undefined, 'bold')
+    doc.text('EDUCATION', margin, yPosition)
+    yPosition += 7
+
+    resumeData.education.forEach(edu => {
+      checkPageBreak(15)
+      doc.setFontSize(11)
+      doc.setFont(undefined, 'bold')
+      doc.text(edu.degree || '', margin, yPosition)
+      yPosition += 5
+
+      doc.setFontSize(10)
+      doc.setFont(undefined, 'normal')
+      doc.text(edu.school || '', margin, yPosition)
+      doc.text(edu.graduationDate || '', pageWidth - margin, yPosition, { align: 'right' })
+      yPosition += 5
+
+      if (edu.gpa) {
+        doc.text(`GPA: ${edu.gpa}`, margin, yPosition)
+        yPosition += 5
+      }
+      yPosition += 2
+    })
+    yPosition += 3
+  }
+
+  // Skills
+  if (resumeData.skills && resumeData.skills.length > 0) {
+    checkPageBreak(20)
+    doc.setFontSize(14)
+    doc.setFont(undefined, 'bold')
+    doc.text('SKILLS', margin, yPosition)
+    yPosition += 7
+
+    doc.setFontSize(10)
+    doc.setFont(undefined, 'normal')
+    const skillsText = resumeData.skills.join(' • ')
+    const skillsLines = doc.splitTextToSize(skillsText, pageWidth - 2 * margin)
+    skillsLines.forEach(line => {
+      checkPageBreak()
+      doc.text(line, margin, yPosition)
+      yPosition += 5
+    })
+    yPosition += 3
+  }
+
+  // Certifications
+  if (resumeData.certifications && resumeData.certifications.length > 0) {
+    checkPageBreak(20)
+    doc.setFontSize(14)
+    doc.setFont(undefined, 'bold')
+    doc.text('CERTIFICATIONS', margin, yPosition)
+    yPosition += 7
+
+    doc.setFontSize(10)
+    doc.setFont(undefined, 'normal')
+    resumeData.certifications.forEach(cert => {
+      checkPageBreak(8)
+      doc.text(`${cert.name || ''} - ${cert.issuer || ''}`, margin, yPosition)
+      yPosition += 5
+      doc.setFontSize(9)
+      doc.setTextColor(100)
+      doc.text(`Issued: ${cert.dateObtained || ''}${cert.expirationDate ? ` | Expires: ${cert.expirationDate}` : ''}`, margin, yPosition)
+      doc.setTextColor(0)
+      doc.setFontSize(10)
+      yPosition += 6
+    })
+  }
+
+  const fileName = `Resume_${new Date().toISOString().split('T')[0]}.pdf`
+  doc.save(fileName)
   return fileName
 }
