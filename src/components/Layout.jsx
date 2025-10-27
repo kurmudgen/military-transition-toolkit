@@ -44,6 +44,7 @@ export default function Layout() {
     { to: '/app/retirement-calculator', label: 'Pay Calculator' },
     { to: '/app/appointments', label: 'Appointments & Tracking' },
     { to: '/app/resume-builder', label: 'Resume Builder' },
+    { to: '/app/job-search', label: 'Job Search' },
     { to: '/app/profile', label: 'Profile' },
     { to: '/app/settings', label: 'Settings' },
     { to: '/app/faq', label: 'FAQ' },
