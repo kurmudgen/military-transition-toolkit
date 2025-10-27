@@ -4,33 +4,40 @@ const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 
 if (!supabaseUrl || !supabaseAnonKey) {
-  console.error('Missing Supabase environment variables. Please check your .env file.')
+  console.warn('⚠️ Supabase credentials not configured. Running in development mode.')
+  console.warn('Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to .env file to enable authentication.')
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-  auth: {
-    autoRefreshToken: true,
-    persistSession: true,
-    detectSessionInUrl: true,
-    storage: window.localStorage,
-    flowType: 'pkce'
-  }
-})
+// Create Supabase client with fallback for development mode
+export const supabase = supabaseUrl && supabaseAnonKey
+  ? createClient(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        autoRefreshToken: true,
+        persistSession: true,
+        detectSessionInUrl: true,
+        storage: window.localStorage,
+        flowType: 'pkce'
+      }
+    })
+  : null // Return null if credentials are missing (development mode)
 
 // Helper function to check if user is authenticated
 export const isAuthenticated = async () => {
+  if (!supabase) return false
   const { data: { session } } = await supabase.auth.getSession()
   return !!session
 }
 
 // Helper function to get current user
 export const getCurrentUser = async () => {
+  if (!supabase) return null
   const { data: { user } } = await supabase.auth.getUser()
   return user
 }
 
 // Helper function to check if user is premium
 export const isPremiumUser = async () => {
+  if (!supabase) return false
   const user = await getCurrentUser()
   if (!user) return false
 
@@ -46,6 +53,7 @@ export const isPremiumUser = async () => {
 
 // Helper function to get user's subscription details
 export const getUserSubscription = async () => {
+  if (!supabase) return null
   const user = await getCurrentUser()
   if (!user) return null
 

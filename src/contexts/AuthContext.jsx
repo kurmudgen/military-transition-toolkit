@@ -20,6 +20,12 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate()
 
   useEffect(() => {
+    // Skip authentication if Supabase is not configured (development mode)
+    if (!supabase) {
+      setLoading(false)
+      return
+    }
+
     // Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session)
@@ -60,6 +66,7 @@ export const AuthProvider = ({ children }) => {
     user,
     loading,
     signUp: async (email, password, metadata = {}) => {
+      if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
@@ -70,6 +77,7 @@ export const AuthProvider = ({ children }) => {
       return { data, error }
     },
     signIn: async (email, password) => {
+      if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password
@@ -77,6 +85,7 @@ export const AuthProvider = ({ children }) => {
       return { data, error }
     },
     signInWithGoogle: async () => {
+      if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
@@ -86,6 +95,7 @@ export const AuthProvider = ({ children }) => {
       return { data, error }
     },
     signInWithApple: async () => {
+      if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'apple',
         options: {
@@ -95,6 +105,10 @@ export const AuthProvider = ({ children }) => {
       return { data, error }
     },
     signOut: async () => {
+      if (!supabase) {
+        navigate('/login')
+        return { error: null }
+      }
       const { error } = await supabase.auth.signOut()
       if (!error) {
         navigate('/login')
@@ -102,12 +116,14 @@ export const AuthProvider = ({ children }) => {
       return { error }
     },
     resetPassword: async (email) => {
+      if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
       const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: `${window.location.origin}/auth/reset-password`
       })
       return { data, error }
     },
     updatePassword: async (newPassword) => {
+      if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
       const { data, error } = await supabase.auth.updateUser({
         password: newPassword
       })
