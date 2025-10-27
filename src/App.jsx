@@ -7,6 +7,7 @@ import Layout from './components/Layout'
 import Landing from './pages/Landing'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
+import Pricing from './pages/Pricing'
 
 // Auth pages
 import Login from './pages/auth/Login'
@@ -31,6 +32,7 @@ import ResumeBuilder from './pages/ResumeBuilder'
 import JobSearch from './pages/JobSearch'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import Account from './pages/Account'
 import FAQ from './pages/FAQ'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
@@ -43,6 +45,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/pricing" element={<Pricing />} />
 
         {/* Auth pages */}
         <Route path="/login" element={<Login />} />
@@ -75,6 +78,7 @@ function App() {
           <Route path="job-search" element={<JobSearch />} />
           <Route path="profile" element={<Profile />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="account" element={<Account />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="about" element={<About />} />
         </Route>
