@@ -14,6 +14,7 @@ import StateBenefits from './pages/StateBenefits'
 import VAClaimsBuilder from './pages/VAClaimsBuilder'
 import RetirementCalculator from './pages/RetirementCalculator'
 import AppointmentsTracking from './pages/AppointmentsTracking'
+import ResumeBuilder from './pages/ResumeBuilder'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
 import FAQ from './pages/FAQ'
@@ -41,6 +42,7 @@ function App() {
         <Route path="va-claims-builder" element={<VAClaimsBuilder />} />
         <Route path="retirement-calculator" element={<RetirementCalculator />} />
         <Route path="appointments" element={<AppointmentsTracking />} />
+        <Route path="resume-builder" element={<ResumeBuilder />} />
         <Route path="profile" element={<Profile />} />
         <Route path="settings" element={<Settings />} />
         <Route path="faq" element={<FAQ />} />
