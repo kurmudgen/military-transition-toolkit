@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
 import { useNavigate } from 'react-router-dom'
+import { migrateAllDataToSupabase } from '../utils/dataMigration'
 
 const AuthContext = createContext({})
 
@@ -24,15 +25,31 @@ export const AuthProvider = ({ children }) => {
       setSession(session)
       setUser(session?.user ?? null)
       setLoading(false)
+
+      // Run migration if user is logged in
+      if (session?.user) {
+        migrateAllDataToSupabase().catch(err => {
+          console.error('Migration failed:', err)
+        })
+      }
     })
 
     // Listen for auth changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    } = supabase.auth.onAuthStateChange(async (_event, session) => {
       setSession(session)
       setUser(session?.user ?? null)
       setLoading(false)
+
+      // Run migration on sign in
+      if (_event === 'SIGNED_IN' && session?.user) {
+        try {
+          await migrateAllDataToSupabase()
+        } catch (err) {
+          console.error('Migration failed:', err)
+        }
+      }
     })
 
     return () => subscription.unsubscribe()
