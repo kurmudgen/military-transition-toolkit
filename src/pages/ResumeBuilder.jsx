@@ -11,8 +11,17 @@ import {
   ACTION_VERBS,
   EXAMPLE_BULLETS
 } from '../utils/militaryTranslation'
+import { useFeatureAccess, useUsageLimits } from '../hooks/useFeatureAccess'
+import { FEATURES } from '../utils/featureGating'
+import UpgradePrompt, { PremiumBadge } from '../components/UpgradePrompt'
 
 export default function ResumeBuilder() {
+  // Feature gating hooks
+  const { hasAccess: canExport, upgradeMessage: exportMessage } = useFeatureAccess(FEATURES.RESUME_EXPORT)
+  const { checkLimit } = useUsageLimits()
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false)
+  const [upgradeModalMessage, setUpgradeModalMessage] = useState('')
+
   const [currentStep, setCurrentStep] = useState(1)
   const [template, setTemplate] = useState('chronological')
   const [resumeData, setResumeData] = useState({
@@ -258,7 +267,17 @@ export default function ResumeBuilder() {
     }))
   }
 
-  const saveResume = () => {
+  const saveResume = async () => {
+    // Check if user has reached resume limit (free tier = 1 resume max)
+    const reachedLimit = await checkLimit('resumes', savedResumes.length)
+
+    if (reachedLimit) {
+      setUpgradeModalMessage('Free users can only create 1 resume. Upgrade to Premium for unlimited resumes and exports!')
+      setShowUpgradeModal(true)
+      trackButtonClick('Resume Builder - Save Resume Blocked')
+      return
+    }
+
     const name = resumeName || `Resume ${new Date().toLocaleDateString()}`
     const resume = {
       id: Date.now(),
@@ -293,6 +312,14 @@ export default function ResumeBuilder() {
   }
 
   const exportToPDF = () => {
+    // Check if user has export permission (free tier = no exports)
+    if (!canExport) {
+      setUpgradeModalMessage(exportMessage)
+      setShowUpgradeModal(true)
+      trackButtonClick('Resume Builder - Export PDF Blocked')
+      return
+    }
+
     // This would integrate with a PDF library like jsPDF
     trackButtonClick('Resume Builder - Export PDF')
     alert('PDF export coming soon! For now, use print preview (Ctrl/Cmd+P) and save as PDF.')
@@ -1285,9 +1312,10 @@ export default function ResumeBuilder() {
                     </button>
                     <button
                       onClick={exportToPDF}
-                      className="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition"
+                      className="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition flex items-center gap-2"
                     >
                       📄 Export PDF
+                      {!canExport && <PremiumBadge size="sm" />}
                     </button>
                   </div>
                 </div>
@@ -1330,9 +1358,10 @@ export default function ResumeBuilder() {
 
                 <button
                   onClick={exportToPDF}
-                  className="w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition"
+                  className="w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition flex items-center justify-center gap-2"
                 >
                   📄 Export PDF
+                  {!canExport && <PremiumBadge size="sm" />}
                 </button>
 
                 <button
@@ -1386,6 +1415,16 @@ export default function ResumeBuilder() {
           </div>
         </div>
       </div>
+
+      {/* Upgrade Modal */}
+      {showUpgradeModal && (
+        <UpgradePrompt
+          variant="modal"
+          title="Upgrade to Premium"
+          message={upgradeModalMessage}
+          onClose={() => setShowUpgradeModal(false)}
+        />
+      )}
     </div>
   )
 }

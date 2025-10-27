@@ -1,7 +1,14 @@
 import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
+import { useUsageLimits } from '../hooks/useFeatureAccess'
+import UpgradePrompt from '../components/UpgradePrompt'
 
 export default function JobSearch() {
+  // Feature gating
+  const { checkLimit } = useUsageLimits()
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false)
+
+
   const [searchParams, setSearchParams] = useState({
     keywords: '',
     location: '',
@@ -142,11 +149,24 @@ export default function JobSearch() {
     }, 1000)
   }
 
-  const saveJob = (job) => {
+  const saveJob = async (job) => {
     trackButtonClick('Save Job')
-    if (!savedJobs.find(j => j.id === job.id)) {
-      setSavedJobs([...savedJobs, { ...job, savedDate: new Date().toISOString() }])
+
+    // Check if already saved
+    if (savedJobs.find(j => j.id === job.id)) {
+      return
     }
+
+    // Check if user has reached job limit (free tier = 5 saved jobs max)
+    const reachedLimit = await checkLimit('savedJobs', savedJobs.length)
+
+    if (reachedLimit) {
+      setShowUpgradeModal(true)
+      trackButtonClick('Save Job Blocked')
+      return
+    }
+
+    setSavedJobs([...savedJobs, { ...job, savedDate: new Date().toISOString() }])
   }
 
   const unsaveJob = (jobId) => {
@@ -467,6 +487,16 @@ export default function JobSearch() {
             setSelectedJob(null)
           }}
           onSubmit={submitApplication}
+        />
+      )}
+
+      {/* Upgrade Modal */}
+      {showUpgradeModal && (
+        <UpgradePrompt
+          variant="modal"
+          title="Upgrade to Premium"
+          message="Free users can save up to 5 jobs. Upgrade to Premium for unlimited saved jobs and applications!"
+          onClose={() => setShowUpgradeModal(false)}
         />
       )}
     </div>
