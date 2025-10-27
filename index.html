@@ -32,6 +32,17 @@
     <meta name="twitter:title" content="Military Transition Toolkit | Complete Transition Planning" />
     <meta name="twitter:description" content="Privacy-first transition planning. Track checklists, calculate retirement, build VA claims - all stored locally." />
     <meta name="twitter:image" content="https://militarytransitiontoolkit.com/twitter-card.jpg" />
+
+    <!-- Dark Mode Script - Prevents flash of wrong theme -->
+    <script>
+      // Check localStorage and apply dark mode class before page renders
+      (function() {
+        const darkMode = localStorage.getItem('darkMode') === 'true';
+        if (darkMode) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

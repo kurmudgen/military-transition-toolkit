@@ -2,31 +2,33 @@ import { useState, useEffect } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
 import AIAssistant from './AIAssistant'
 
+// Initialize dark mode from localStorage before component mounts
+const getInitialDarkMode = () => {
+  const savedMode = localStorage.getItem('darkMode')
+  return savedMode === 'true'
+}
+
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(getInitialDarkMode)
   const location = useLocation()
 
-  // Load dark mode preference from localStorage
+  // Apply dark mode class on mount and when darkMode changes
   useEffect(() => {
-    const savedMode = localStorage.getItem('darkMode')
-    const isDark = savedMode === 'true'
-    setDarkMode(isDark)
-    if (isDark) {
-      document.documentElement.classList.add('dark')
-    }
-  }, [])
-
-  // Toggle dark mode
-  const toggleDarkMode = () => {
-    const newMode = !darkMode
-    setDarkMode(newMode)
-    localStorage.setItem('darkMode', String(newMode))
-    if (newMode) {
+    if (darkMode) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
     }
+  }, [darkMode])
+
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(prevMode => {
+      const newMode = !prevMode
+      localStorage.setItem('darkMode', String(newMode))
+      return newMode
+    })
   }
 
   const navLinks = [
