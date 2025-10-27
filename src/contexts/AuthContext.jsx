@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
     // Skip authentication if Supabase is not configured (development mode)
     if (!supabase) {
       setLoading(false)
-      return
+      return // No cleanup needed when skipping auth
     }
 
     // Get initial session
@@ -58,7 +58,12 @@ export const AuthProvider = ({ children }) => {
       }
     })
 
-    return () => subscription.unsubscribe()
+    // Cleanup: only unsubscribe if we created a subscription
+    return () => {
+      if (subscription) {
+        subscription.unsubscribe()
+      }
+    }
   }, [])
 
   const value = {
