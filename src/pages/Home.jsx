@@ -178,11 +178,114 @@ export default function Home() {
     }
   }
 
+  // NEW: Load Resume Builder data
+  const getResumeData = () => {
+    const saved = localStorage.getItem('resumeData')
+    if (!saved) return null
+    try {
+      const data = JSON.parse(saved)
+      const hasContactInfo = data.contactInfo && Object.keys(data.contactInfo).length > 0
+      const experienceCount = data.experience?.length || 0
+      const educationCount = data.education?.length || 0
+      const skillsCount = data.skills?.technical?.length + data.skills?.leadership?.length + data.skills?.other?.length || 0
+
+      return {
+        hasResume: hasContactInfo || experienceCount > 0,
+        experienceCount,
+        educationCount,
+        skillsCount,
+        completeness: hasContactInfo && experienceCount > 0 && educationCount > 0 && skillsCount > 0 ? 100 :
+                      hasContactInfo && experienceCount > 0 ? 60 :
+                      hasContactInfo ? 30 : 0
+      }
+    } catch (e) {
+      return null
+    }
+  }
+
+  // NEW: Load Job Search data
+  const getJobSearchData = () => {
+    try {
+      const savedJobs = JSON.parse(localStorage.getItem('savedJobs') || '[]')
+      const applications = JSON.parse(localStorage.getItem('jobApplications') || '[]')
+
+      const statusCounts = {
+        applied: 0,
+        interview: 0,
+        offer: 0,
+        rejected: 0
+      }
+
+      applications.forEach(app => {
+        if (statusCounts.hasOwnProperty(app.status)) {
+          statusCounts[app.status]++
+        }
+      })
+
+      return {
+        savedCount: savedJobs.length,
+        applicationsCount: applications.length,
+        ...statusCounts
+      }
+    } catch (e) {
+      return { savedCount: 0, applicationsCount: 0, applied: 0, interview: 0, offer: 0, rejected: 0 }
+    }
+  }
+
+  // NEW: Load State Benefits data
+  const getStateBenefitsData = () => {
+    try {
+      const comparison = localStorage.getItem('stateComparison')
+      const notes = localStorage.getItem('stateBenefitsNotes')
+
+      return {
+        hasComparison: !!comparison,
+        statesCompared: comparison ? JSON.parse(comparison).length : 0,
+        hasNotes: !!notes
+      }
+    } catch (e) {
+      return { hasComparison: false, statesCompared: 0, hasNotes: false }
+    }
+  }
+
+  // NEW: Get career readiness score (0-100)
+  const getCareerReadinessScore = () => {
+    const resume = getResumeData()
+    const jobSearch = getJobSearchData()
+    const stateBenefits = getStateBenefitsData()
+
+    let score = 0
+
+    // Resume contributes 40 points
+    if (resume?.hasResume) {
+      score += resume.completeness * 0.4
+    }
+
+    // Job search activity contributes 30 points
+    if (jobSearch.savedCount > 0) score += 10
+    if (jobSearch.applicationsCount > 0) score += 10
+    if (jobSearch.interview > 0) score += 10
+
+    // State research contributes 20 points
+    if (stateBenefits.hasComparison) score += 20
+
+    // VA claims contributes 10 points
+    if (getVAConditionsCount() > 0) score += 10
+
+    return Math.round(score)
+  }
+
   const daysUntil = getDaysUntil()
   const overallProgress = getOverallProgress()
   const upcomingAppointments = getUpcomingAppointments()
   const vaConditions = getVAConditionsCount()
   const evidenceProgress = getEvidenceProgress()
+
+  // NEW: Load new feature data
+  const resumeData = getResumeData()
+  const jobSearchData = getJobSearchData()
+  const stateBenefitsData = getStateBenefitsData()
+  const careerReadiness = getCareerReadinessScore()
 
   // Active checklists based on user situation
   const getActiveChecklists = () => {
@@ -252,6 +355,44 @@ export default function Home() {
       })
     }
 
+    // NEW: Resume Builder recommendation
+    if (!resumeData?.hasResume && daysUntil !== null && daysUntil < 365) {
+      actions.push({
+        task: 'Build your civilian resume',
+        source: 'Career Prep',
+        action: 'Start Resume',
+        link: '/resume-builder',
+        urgent: true
+      })
+    } else if (resumeData?.hasResume && resumeData.completeness < 100) {
+      actions.push({
+        task: 'Complete your resume with education and skills',
+        source: 'Career Prep',
+        action: 'Finish Resume',
+        link: '/resume-builder',
+        urgent: false
+      })
+    }
+
+    // NEW: Job Search recommendation
+    if (resumeData?.completeness >= 60 && jobSearchData.savedCount === 0 && daysUntil !== null && daysUntil < 180) {
+      actions.push({
+        task: 'Start researching job opportunities',
+        source: 'Job Search',
+        action: 'Search Jobs',
+        link: '/job-search',
+        urgent: false
+      })
+    } else if (jobSearchData.savedCount > 0 && jobSearchData.applicationsCount === 0) {
+      actions.push({
+        task: 'Apply to your saved jobs',
+        source: 'Job Search',
+        action: 'Apply Now',
+        link: '/job-search',
+        urgent: true
+      })
+    }
+
     // Appointment reminders
     if (upcomingAppointments.length === 0 && daysUntil !== null && daysUntil < 365) {
       actions.push({
@@ -282,10 +423,10 @@ export default function Home() {
       })
     }
 
-    // State benefits
-    if (!localStorage.getItem('stateComparison')) {
+    // NEW: State benefits recommendation
+    if (!stateBenefitsData.hasComparison && daysUntil !== null && daysUntil < 365) {
       actions.push({
-        task: 'Research veteran-friendly states',
+        task: 'Research veteran-friendly states for relocation',
         source: 'Relocation',
         action: 'Compare states',
         link: '/state-benefits',
@@ -293,7 +434,7 @@ export default function Home() {
       })
     }
 
-    return actions.slice(0, 5)
+    return actions.slice(0, 6)
   }
 
   const priorityActions = getPriorityActions()
@@ -595,116 +736,195 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Quick Stats Row */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-        <div className="bg-white rounded-lg shadow p-6">
-          <div className="flex items-center">
-            <div className="flex-1">
-              <p className="text-sm text-gray-600 mb-2">Checklist Progress</p>
-              <p className="text-lg font-bold text-gray-900 mb-2">
-                {activeChecklists.reduce((sum, cl) => sum + cl.completed, 0)}/
-                {activeChecklists.reduce((sum, cl) => sum + cl.total, 0)} tasks
-              </p>
-              <div className="relative w-20 h-20">
-                <svg className="transform -rotate-90 w-20 h-20">
-                  <circle
-                    cx="40"
-                    cy="40"
-                    r="32"
-                    stroke="currentColor"
-                    strokeWidth="6"
-                    fill="transparent"
-                    className="text-gray-200"
-                  />
-                  <circle
-                    cx="40"
-                    cy="40"
-                    r="32"
-                    stroke="currentColor"
-                    strokeWidth="6"
-                    fill="transparent"
-                    strokeDasharray={`${2 * Math.PI * 32}`}
-                    strokeDashoffset={`${2 * Math.PI * 32 * (1 - overallProgress / 100)}`}
-                    className="text-blue-600 transition-all duration-500"
-                  />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-xl font-bold text-blue-600">{overallProgress}%</span>
-                </div>
-              </div>
+      {/* Quick Stats Row - Enhanced with New Features */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        {/* Career Readiness - NEW */}
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg shadow-md p-6 border-2 border-purple-200 dark:border-purple-700">
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-sm font-semibold text-purple-800 dark:text-purple-300">Career Readiness</p>
+            <div className="text-3xl">💼</div>
+          </div>
+          <div className="relative w-24 h-24 mx-auto mb-2">
+            <svg className="transform -rotate-90 w-24 h-24">
+              <circle
+                cx="48"
+                cy="48"
+                r="40"
+                stroke="currentColor"
+                strokeWidth="8"
+                fill="transparent"
+                className="text-purple-200 dark:text-purple-900"
+              />
+              <circle
+                cx="48"
+                cy="48"
+                r="40"
+                stroke="currentColor"
+                strokeWidth="8"
+                fill="transparent"
+                strokeDasharray={`${2 * Math.PI * 40}`}
+                strokeDashoffset={`${2 * Math.PI * 40 * (1 - careerReadiness / 100)}`}
+                className="text-purple-600 dark:text-purple-400 transition-all duration-500"
+              />
+            </svg>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-2xl font-bold text-purple-700 dark:text-purple-300">{careerReadiness}%</span>
             </div>
           </div>
+          <p className="text-xs text-center text-purple-700 dark:text-purple-400">
+            Resume • Jobs • Research
+          </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow p-6">
-          <div className="flex items-center">
-            <div className="flex-1">
-              <p className="text-sm text-gray-600">Appointments</p>
-              <p className="text-2xl font-bold text-gray-900">
-                {upcomingAppointments.length > 0 ? (
-                  <>
-                    Next in {Math.ceil((new Date(upcomingAppointments[0].date) - new Date()) / (1000 * 60 * 60 * 24))} days
-                  </>
-                ) : (
-                  'None scheduled'
-                )}
-              </p>
-            </div>
-            <div className="text-3xl">📅</div>
+        {/* Checklist Progress */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">Checklist Progress</p>
+            <div className="text-3xl">✅</div>
           </div>
+          <p className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            {activeChecklists.reduce((sum, cl) => sum + cl.completed, 0)}/
+            {activeChecklists.reduce((sum, cl) => sum + cl.total, 0)}
+          </p>
+          <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mb-1">
+            <div
+              className="bg-blue-600 dark:bg-blue-500 h-2.5 rounded-full transition-all duration-500"
+              style={{ width: `${overallProgress}%` }}
+            />
+          </div>
+          <p className="text-xs text-gray-600 dark:text-gray-400">{overallProgress}% complete</p>
         </div>
 
-        <div className="bg-white rounded-lg shadow p-6">
-          <div className="flex items-center">
-            <div className="flex-1">
-              <p className="text-sm text-gray-600 mb-2">Evidence Tracking</p>
-              {vaConditions > 0 ? (
-                <>
-                  <p className="text-lg font-bold text-gray-900 mb-2">{vaConditions} conditions</p>
-                  <div className="relative w-20 h-20">
-                    <svg className="transform -rotate-90 w-20 h-20">
-                      <circle
-                        cx="40"
-                        cy="40"
-                        r="32"
-                        stroke="currentColor"
-                        strokeWidth="6"
-                        fill="transparent"
-                        className="text-gray-200"
-                      />
-                      <circle
-                        cx="40"
-                        cy="40"
-                        r="32"
-                        stroke="currentColor"
-                        strokeWidth="6"
-                        fill="transparent"
-                        strokeDasharray={`${2 * Math.PI * 32}`}
-                        strokeDashoffset={`${2 * Math.PI * 32 * (1 - evidenceProgress / 100)}`}
-                        className="text-green-600 transition-all duration-500"
-                      />
-                    </svg>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-xl font-bold text-green-600">{evidenceProgress}%</span>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <p className="text-lg text-gray-500">Not started</p>
+        {/* Job Search Activity - NEW */}
+        <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg shadow-md p-6 border-2 border-green-200 dark:border-green-700">
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-sm font-semibold text-green-800 dark:text-green-300">Job Search</p>
+            <div className="text-3xl">🎯</div>
+          </div>
+          {jobSearchData.applicationsCount > 0 ? (
+            <>
+              <p className="text-2xl font-bold text-green-900 dark:text-green-100 mb-2">
+                {jobSearchData.applicationsCount}
+              </p>
+              <p className="text-xs text-green-700 dark:text-green-400 mb-1">
+                Applications • {jobSearchData.interview} interviews
+              </p>
+              {jobSearchData.offer > 0 && (
+                <p className="text-sm font-bold text-green-600 dark:text-green-300">
+                  🎉 {jobSearchData.offer} offer{jobSearchData.offer > 1 ? 's' : ''}!
+                </p>
               )}
-            </div>
-          </div>
+            </>
+          ) : jobSearchData.savedCount > 0 ? (
+            <>
+              <p className="text-2xl font-bold text-green-900 dark:text-green-100 mb-2">
+                {jobSearchData.savedCount}
+              </p>
+              <p className="text-xs text-green-700 dark:text-green-400">Jobs saved • Ready to apply</p>
+            </>
+          ) : (
+            <p className="text-lg text-green-600 dark:text-green-400">Not started</p>
+          )}
         </div>
 
-        <div className="bg-white rounded-lg shadow p-6">
-          <div className="flex items-center">
-            <div className="flex-1">
-              <p className="text-sm text-gray-600">VA Conditions</p>
-              <p className="text-2xl font-bold text-gray-900">{vaConditions}</p>
-            </div>
+        {/* VA Claims Progress */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">VA Claims</p>
             <div className="text-3xl">🏥</div>
           </div>
+          {vaConditions > 0 ? (
+            <>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{vaConditions}</p>
+              <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mb-1">
+                <div
+                  className="bg-green-600 dark:bg-green-500 h-2.5 rounded-full transition-all duration-500"
+                  style={{ width: `${evidenceProgress}%` }}
+                />
+              </div>
+              <p className="text-xs text-gray-600 dark:text-gray-400">
+                Conditions • {evidenceProgress}% evidence
+              </p>
+            </>
+          ) : (
+            <p className="text-lg text-gray-500 dark:text-gray-400">Not started</p>
+          )}
         </div>
+      </div>
+
+      {/* NEW: Career Progress Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        {/* Resume Status */}
+        <Link to="/resume-builder" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="font-bold text-gray-900 dark:text-white">Resume Builder</h3>
+            <span className="text-2xl">📄</span>
+          </div>
+          {resumeData?.hasResume ? (
+            <div>
+              <div className="mb-2">
+                <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-1">
+                  <div
+                    className="bg-blue-600 dark:bg-blue-500 h-2 rounded-full transition-all"
+                    style={{ width: `${resumeData.completeness}%` }}
+                  />
+                </div>
+                <p className="text-xs text-gray-600 dark:text-gray-400">{resumeData.completeness}% complete</p>
+              </div>
+              <p className="text-sm text-gray-700 dark:text-gray-300">
+                {resumeData.experienceCount} jobs • {resumeData.educationCount} education • {resumeData.skillsCount} skills
+              </p>
+            </div>
+          ) : (
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Create your military-to-civilian resume →
+            </p>
+          )}
+        </Link>
+
+        {/* Appointments */}
+        <Link to="/appointments" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="font-bold text-gray-900 dark:text-white">Appointments</h3>
+            <span className="text-2xl">📅</span>
+          </div>
+          {upcomingAppointments.length > 0 ? (
+            <div>
+              <p className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-1">
+                {Math.ceil((new Date(upcomingAppointments[0].date) - new Date()) / (1000 * 60 * 60 * 24))} days
+              </p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">
+                {upcomingAppointments[0].title}
+              </p>
+            </div>
+          ) : (
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Schedule your transition appointments →
+            </p>
+          )}
+        </Link>
+
+        {/* State Benefits */}
+        <Link to="/state-benefits" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="font-bold text-gray-900 dark:text-white">State Benefits</h3>
+            <span className="text-2xl">🗺️</span>
+          </div>
+          {stateBenefitsData.hasComparison ? (
+            <div>
+              <p className="text-xl font-bold text-green-600 dark:text-green-400 mb-1">
+                {stateBenefitsData.statesCompared}
+              </p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">
+                States compared • {stateBenefitsData.hasNotes ? 'Notes saved' : 'View comparison'}
+              </p>
+            </div>
+          ) : (
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Compare veteran benefits by state →
+            </p>
+          )}
+        </Link>
       </div>
 
       {/* Two Column Layout */}
@@ -833,71 +1053,104 @@ export default function Home() {
 
         {/* Right Column (1/3 width) */}
         <div className="space-y-8">
-          {/* Tools & Calculators */}
-          <div className="bg-white rounded-lg shadow p-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">🧮 Planning Tools</h2>
+          {/* Tools & Calculators - Enhanced */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">🧮 Planning Tools</h2>
             <div className="space-y-3">
               <Link
-                to="/retirement-calculator"
-                className="block p-4 bg-blue-50 rounded-lg border border-blue-200 hover:bg-blue-100 transition-colors"
+                to="/resume-builder"
+                className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-700 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors"
               >
-                <h3 className="font-semibold text-gray-900 mb-1">Retirement Calculator</h3>
-                <p className="text-sm text-gray-600">Calculate your monthly retirement pay</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Resume Builder</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Create civilian resume</p>
+              </Link>
+
+              <Link
+                to="/job-search"
+                className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-700 hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors"
+              >
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Job Search</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Find and track opportunities</p>
+              </Link>
+
+              <Link
+                to="/retirement-calculator"
+                className="block p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-700 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
+              >
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Retirement Calculator</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Calculate retirement pay</p>
               </Link>
 
               <Link
                 to="/state-benefits"
-                className="block p-4 bg-green-50 rounded-lg border border-green-200 hover:bg-green-100 transition-colors"
+                className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-700 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors"
               >
-                <h3 className="font-semibold text-gray-900 mb-1">State Benefits Comparison</h3>
-                <p className="text-sm text-gray-600">Find the best state for your situation</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">State Benefits</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Compare states for relocation</p>
               </Link>
 
               <Link
                 to="/va-claims-builder"
-                className="block p-4 bg-purple-50 rounded-lg border border-purple-200 hover:bg-purple-100 transition-colors"
+                className="block p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-700 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors"
               >
-                <h3 className="font-semibold text-gray-900 mb-1">VA Claims Builder</h3>
-                <p className="text-sm text-gray-600">Build your disability claim</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">VA Claims Builder</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Build disability claim</p>
+              </Link>
+
+              <Link
+                to="/resources"
+                className="block p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-700 hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-colors"
+              >
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Resources Library</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">60+ curated resources</p>
               </Link>
             </div>
           </div>
 
-          {/* Tip of the Day */}
-          <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-6">
-            <h2 className="text-lg font-bold text-gray-900 mb-2">💡 Tip of the Day</h2>
-            <p className="text-sm text-gray-700">{TIPS[currentTip]}</p>
+          {/* Tip of the Day - Enhanced */}
+          <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 border-2 border-yellow-200 dark:border-yellow-700 rounded-lg p-6 shadow-md">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+              <span>💡</span>
+              <span>Tip of the Day</span>
+            </h2>
+            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{TIPS[currentTip]}</p>
           </div>
 
-          {/* Resources & Support */}
-          <div className="bg-white rounded-lg shadow p-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">📚 Resources</h2>
+          {/* Resources & Support - Enhanced */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">📚 Quick Links</h2>
             <div className="space-y-2">
-              <Link to="/resources" className="block text-blue-600 hover:text-blue-800 text-sm">
-                Resource Library →
+              <Link to="/resources" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
+                Resource Library (60+ resources) →
               </Link>
-              <Link to="/app/appointments" className="block text-blue-600 hover:text-blue-800 text-sm">
-                Contact Directory →
+              <Link to="/appointments" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
+                Appointments & Tracking →
               </Link>
-              <Link to="/app/faq" className="block text-blue-600 hover:text-blue-800 text-sm">
+              <Link to="/app/faq" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
                 FAQ & Guides →
               </Link>
+              <Link to="/progress" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
+                View Full Progress Report →
+              </Link>
             </div>
           </div>
 
-          {/* Premium Upsell */}
-          <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg shadow-lg p-6 text-white">
-            <div className="text-2xl mb-2">⭐</div>
-            <h2 className="text-lg font-bold mb-2">Upgrade to Premium</h2>
-            <ul className="text-sm space-y-1 mb-4 text-purple-100">
-              <li>• Appointment reminders</li>
-              <li>• Advanced calculators</li>
-              <li>• Unlimited PDF exports</li>
-              <li>• Priority support</li>
-            </ul>
-            <button className="w-full px-4 py-2 bg-white text-purple-600 rounded-lg hover:bg-purple-50 font-semibold">
-              See Premium Features
-            </button>
+          {/* NEW: Quick Action - Export PDF */}
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border-2 border-blue-200 dark:border-blue-700 rounded-lg p-6 shadow-md">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+              <span>📄</span>
+              <span>Export Your Progress</span>
+            </h2>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Download a comprehensive PDF of your transition plan, checklist progress, VA claims, and more.
+            </p>
+            <Link
+              to="/progress"
+              onClick={() => trackButtonClick('Dashboard - Export PDF Link')}
+              className="block w-full px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white text-center rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 font-semibold transition-colors"
+            >
+              Go to Progress Page
+            </Link>
           </div>
         </div>
       </div>
