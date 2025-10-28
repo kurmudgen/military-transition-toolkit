@@ -294,7 +294,7 @@ export default function Home() {
       const progress = getChecklistProgress('retirementChecklist')
       checklists.push({
         name: '20+ Year Retirement',
-        link: '/retirement',
+        link: '/app/retirement',
         ...progress,
         color: 'blue'
       })
@@ -303,7 +303,7 @@ export default function Home() {
       const progress = getChecklistProgress('medBoardChecklist')
       checklists.push({
         name: 'MedBoard / IDES',
-        link: '/medboard',
+        link: '/app/medboard',
         ...progress,
         color: 'red'
       })
@@ -312,7 +312,7 @@ export default function Home() {
       const progress = getChecklistProgress('separationUnder20Checklist')
       checklists.push({
         name: 'Separation (<20 Years)',
-        link: '/separation',
+        link: '/app/separation',
         ...progress,
         color: 'green'
       })
@@ -361,7 +361,7 @@ export default function Home() {
         task: 'Build your civilian resume',
         source: 'Career Prep',
         action: 'Start Resume',
-        link: '/resume-builder',
+        link: '/app/resume-builder',
         urgent: true
       })
     } else if (resumeData?.hasResume && resumeData.completeness < 100) {
@@ -369,7 +369,7 @@ export default function Home() {
         task: 'Complete your resume with education and skills',
         source: 'Career Prep',
         action: 'Finish Resume',
-        link: '/resume-builder',
+        link: '/app/resume-builder',
         urgent: false
       })
     }
@@ -380,7 +380,7 @@ export default function Home() {
         task: 'Start researching job opportunities',
         source: 'Job Search',
         action: 'Search Jobs',
-        link: '/job-search',
+        link: '/app/job-search',
         urgent: false
       })
     } else if (jobSearchData.savedCount > 0 && jobSearchData.applicationsCount === 0) {
@@ -388,7 +388,7 @@ export default function Home() {
         task: 'Apply to your saved jobs',
         source: 'Job Search',
         action: 'Apply Now',
-        link: '/job-search',
+        link: '/app/job-search',
         urgent: true
       })
     }
@@ -399,7 +399,7 @@ export default function Home() {
         task: 'Schedule your initial PEBLO/TAP meeting',
         source: 'Appointments',
         action: 'Add appointment',
-        link: '/appointments',
+        link: '/app/appointments',
         urgent: false
       })
     }
@@ -410,7 +410,7 @@ export default function Home() {
         task: 'Start documenting your medical conditions',
         source: 'VA Claims',
         action: 'Build claim',
-        link: '/va-claims-builder',
+        link: '/app/va-claims-builder',
         urgent: true
       })
     } else if (vaConditions > 0 && evidenceProgress < 50) {
@@ -418,7 +418,7 @@ export default function Home() {
         task: 'Gather evidence for your VA claims',
         source: 'Evidence Tracker',
         action: 'Track evidence',
-        link: '/va-claims-builder',
+        link: '/app/va-claims-builder',
         urgent: true
       })
     }
@@ -429,7 +429,7 @@ export default function Home() {
         task: 'Research veteran-friendly states for relocation',
         source: 'Relocation',
         action: 'Compare states',
-        link: '/state-benefits',
+        link: '/app/state-benefits',
         urgent: false
       })
     }
@@ -855,7 +855,7 @@ export default function Home() {
       {/* NEW: Career Progress Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {/* Resume Status */}
-        <Link to="/resume-builder" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
+        <Link to="/app/resume-builder" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
           <div className="flex items-center justify-between mb-3">
             <h3 className="font-bold text-gray-900 dark:text-white">Resume Builder</h3>
             <span className="text-2xl">📄</span>
@@ -883,7 +883,7 @@ export default function Home() {
         </Link>
 
         {/* Appointments */}
-        <Link to="/appointments" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
+        <Link to="/app/appointments" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
           <div className="flex items-center justify-between mb-3">
             <h3 className="font-bold text-gray-900 dark:text-white">Appointments</h3>
             <span className="text-2xl">📅</span>
@@ -905,7 +905,7 @@ export default function Home() {
         </Link>
 
         {/* State Benefits */}
-        <Link to="/state-benefits" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
+        <Link to="/app/state-benefits" className="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500">
           <div className="flex items-center justify-between mb-3">
             <h3 className="font-bold text-gray-900 dark:text-white">State Benefits</h3>
             <span className="text-2xl">🗺️</span>
@@ -995,7 +995,7 @@ export default function Home() {
                   </div>
                 ))}
                 <Link
-                  to="/appointments"
+                  to="/app/appointments"
                   className="inline-block text-blue-600 hover:text-blue-800 text-sm font-medium"
                 >
                   View Full Calendar →
@@ -1005,7 +1005,7 @@ export default function Home() {
               <div className="text-center py-8">
                 <p className="text-gray-600 mb-4">No appointments scheduled</p>
                 <Link
-                  to="/appointments"
+                  to="/app/appointments"
                   className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
                 >
                   Add your first appointment →
@@ -1058,7 +1058,7 @@ export default function Home() {
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">🧮 Planning Tools</h2>
             <div className="space-y-3">
               <Link
-                to="/resume-builder"
+                to="/app/resume-builder"
                 className="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-700 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors"
               >
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Resume Builder</h3>
@@ -1066,7 +1066,7 @@ export default function Home() {
               </Link>
 
               <Link
-                to="/job-search"
+                to="/app/job-search"
                 className="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-700 hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors"
               >
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Job Search</h3>
@@ -1074,7 +1074,7 @@ export default function Home() {
               </Link>
 
               <Link
-                to="/retirement-calculator"
+                to="/app/retirement-calculator"
                 className="block p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-700 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
               >
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Retirement Calculator</h3>
@@ -1082,7 +1082,7 @@ export default function Home() {
               </Link>
 
               <Link
-                to="/state-benefits"
+                to="/app/state-benefits"
                 className="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-700 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors"
               >
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">State Benefits</h3>
@@ -1090,7 +1090,7 @@ export default function Home() {
               </Link>
 
               <Link
-                to="/va-claims-builder"
+                to="/app/va-claims-builder"
                 className="block p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-700 hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors"
               >
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">VA Claims Builder</h3>
@@ -1098,7 +1098,7 @@ export default function Home() {
               </Link>
 
               <Link
-                to="/resources"
+                to="/app/resources"
                 className="block p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-700 hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-colors"
               >
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Resources Library</h3>
@@ -1120,16 +1120,16 @@ export default function Home() {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">📚 Quick Links</h2>
             <div className="space-y-2">
-              <Link to="/resources" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
+              <Link to="/app/resources" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
                 Resource Library (60+ resources) →
               </Link>
-              <Link to="/appointments" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
+              <Link to="/app/appointments" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
                 Appointments & Tracking →
               </Link>
               <Link to="/app/faq" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
                 FAQ & Guides →
               </Link>
-              <Link to="/progress" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
+              <Link to="/app/progress" className="block text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">
                 View Full Progress Report →
               </Link>
             </div>
@@ -1145,7 +1145,7 @@ export default function Home() {
               Download a comprehensive PDF of your transition plan, checklist progress, VA claims, and more.
             </p>
             <Link
-              to="/progress"
+              to="/app/progress"
               onClick={() => trackButtonClick('Dashboard - Export PDF Link')}
               className="block w-full px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white text-center rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 font-semibold transition-colors"
             >

@@ -31,6 +31,7 @@ export default function Layout() {
     })
   }
 
+  // All navigation links for mobile menu
   const navLinks = [
     { to: '/app', label: 'Home' },
     { to: '/app/progress', label: 'Progress Dashboard' },
@@ -51,6 +52,14 @@ export default function Layout() {
     { to: '/app/about', label: 'About' }
   ]
 
+  // Simplified desktop navigation - only essential items
+  const desktopNavLinks = [
+    { to: '/app', label: 'Home' },
+    { to: '/app/progress', label: 'Progress' },
+    { to: '/app/resources', label: 'Resources' },
+    { to: '/app/settings', label: 'Settings' }
+  ]
+
   const isActive = (path) => location.pathname === path
 
   return (
@@ -68,9 +77,9 @@ export default function Layout() {
               </Link>
             </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex lg:space-x-4 lg:items-center">
-              {navLinks.map((link) => (
+            {/* Desktop Navigation - Simplified */}
+            <div className="hidden lg:flex lg:space-x-6 lg:items-center">
+              {desktopNavLinks.map((link) => (
                 <Link
                   key={link.to}
                   to={link.to}
@@ -78,7 +87,7 @@ export default function Layout() {
                     isActive(link.to)
                       ? 'border-blue-500 text-blue-700 bg-blue-50 dark:bg-blue-900 dark:text-blue-300'
                       : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-700'
-                  } inline-flex items-center px-3 pt-1 border-b-2 text-sm font-semibold transition-colors rounded-t-md`}
+                  } inline-flex items-center px-4 py-2 border-b-2 text-sm font-semibold transition-colors rounded-t-md`}
                 >
                   {link.label}
                 </Link>
