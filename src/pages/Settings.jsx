@@ -198,7 +198,7 @@ export default function Settings() {
               </div>
             ) : (
               <p className="text-slate-300">
-                Track your app usage, most visited pages, and feature interactions. All data is stored locally on your device.
+                Track your app usage, most visited pages, and feature interactions. Free tier: data stored locally. Premium: securely synced to cloud.
               </p>
             )}
           </div>
@@ -222,7 +222,7 @@ export default function Settings() {
             </div>
             <div className="mt-4 p-4 bg-blue-900/20 border border-blue-500 rounded-lg">
               <p className="text-blue-400 text-sm">
-                🔒 Your data is stored locally on your device. We have zero access to your information.
+                🔒 Free tier: Data stored locally. Premium: End-to-end encrypted cloud storage with zero-knowledge architecture.
               </p>
             </div>
           </div>
@@ -320,16 +320,24 @@ export default function Settings() {
               <div className="flex gap-3">
                 <span className="text-green-400 flex-shrink-0">✓</span>
                 <div>
-                  <strong className="text-white">100% Local Storage:</strong>
-                  <span className="text-sm block">All your data stays on your device. Nothing is sent to our servers.</span>
+                  <strong className="text-white">Free Tier - Local Storage:</strong>
+                  <span className="text-sm block">Your data stays on your device. Nothing is sent to servers.</span>
                 </div>
               </div>
 
               <div className="flex gap-3">
                 <span className="text-green-400 flex-shrink-0">✓</span>
                 <div>
-                  <strong className="text-white">Zero Access:</strong>
-                  <span className="text-sm block">We cannot see, access, or recover your data even if you lose it.</span>
+                  <strong className="text-white">Premium - Encrypted Cloud:</strong>
+                  <span className="text-sm block">End-to-end encrypted with zero-knowledge architecture. We mathematically cannot decrypt your data.</span>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <span className="text-green-400 flex-shrink-0">✓</span>
+                <div>
+                  <strong className="text-white">Military-Grade Security:</strong>
+                  <span className="text-sm block">AES-256 encryption protects your data at rest and in transit.</span>
                 </div>
               </div>
 

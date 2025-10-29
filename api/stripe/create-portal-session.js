@@ -14,11 +14,29 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { userId } = req.body
-
-    if (!userId) {
-      return res.status(400).json({ error: 'Missing userId' })
+    // ============================================
+    // SECURITY: Verify JWT token from Authorization header
+    // ============================================
+    const authHeader = req.headers.authorization
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(401).json({ error: 'Unauthorized - No token provided' })
     }
+
+    const token = authHeader.split(' ')[1]
+
+    // Verify JWT with Supabase
+    const { data: { user }, error: authError } = await supabase.auth.getUser(token)
+
+    if (authError || !user) {
+      console.error('Authentication failed:', authError)
+      return res.status(401).json({ error: 'Unauthorized - Invalid token' })
+    }
+
+    // ============================================
+    // Use ONLY verified user ID from token
+    // DO NOT accept userId from request body
+    // ============================================
+    const userId = user.id
 
     // Get customer ID from subscription
     const { data: subscription, error } = await supabase

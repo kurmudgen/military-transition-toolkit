@@ -16,55 +16,71 @@ export default function Privacy() {
             <section className="bg-blue-900/20 border-l-4 border-blue-500 rounded p-6">
               <h2 className="text-2xl font-bold text-white mb-4">🔒 Our Core Privacy Promise</h2>
               <p className="text-lg mb-4">
-                <strong className="text-white">We don't collect, store, or have access to your personal data.</strong>
+                <strong className="text-white">Your privacy is our foundation.</strong>
               </p>
               <p>
-                Military Transition Toolkit is built with privacy as the foundation. All your data stays on your device, stored in your browser's local storage. We literally cannot see your information even if we wanted to.
+                Military Transition Toolkit is built with military-grade security and end-to-end encryption. We use zero-knowledge architecture, which means we cannot read your data even if we wanted to. Your information is encrypted on your device before it reaches our servers, and only you have the decryption keys.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">1. What Data We Don't Collect</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">1. How We Store Your Data</h2>
               <p className="mb-4">
-                Unlike most web applications, we do NOT collect, process, or store:
+                We offer two storage options depending on your account tier:
               </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Personal information (name, email, address, phone number)</li>
-                <li>Military service records or details</li>
-                <li>Financial information or calculations you perform</li>
-                <li>VA disability claim information</li>
-                <li>Checklist progress or completion status</li>
-                <li>Appointment or calendar data</li>
-                <li>Any information you enter into forms or calculators</li>
-                <li>Device identifiers or precise location data</li>
-              </ul>
+
+              <div className="bg-slate-900/50 rounded-lg p-4 mb-4">
+                <h3 className="text-lg font-semibold text-white mb-2">Free Tier: Local Browser Storage</h3>
+                <p className="text-sm mb-2">
+                  Your data is stored in your browser's local storage on your device. It never leaves your computer, tablet, or phone. We have no access to this data.
+                </p>
+                <ul className="text-sm space-y-1 ml-4 list-disc">
+                  <li>Data stays on your device only</li>
+                  <li>No server backups or cloud storage</li>
+                  <li>Use Export to manually back up your data</li>
+                  <li>Cleared when you clear browser data</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-900/50 rounded-lg p-4 mb-4">
+                <h3 className="text-lg font-semibold text-white mb-2">Premium Tier: Encrypted Cloud Storage</h3>
+                <p className="text-sm mb-2">
+                  Your data is encrypted on your device with end-to-end encryption, then securely stored in the cloud. This enables syncing across all your devices while maintaining complete privacy.
+                </p>
+                <ul className="text-sm space-y-1 ml-4 list-disc">
+                  <li>End-to-end encryption (encrypted before leaving your device)</li>
+                  <li>Zero-knowledge architecture (we can't decrypt your data)</li>
+                  <li>Automatic cloud backup and sync</li>
+                  <li>Military-grade AES-256 encryption</li>
+                  <li>Only you have the decryption keys</li>
+                </ul>
+              </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">2. How Local Storage Works</h2>
-              <p className="mb-4">
-                All your data is stored using your browser's localStorage feature. This means:
-              </p>
+              <h2 className="text-2xl font-bold text-white mb-4">2. What Data We Collect</h2>
 
-              <div className="bg-slate-900/50 rounded-lg p-4 mb-4">
-                <h3 className="text-lg font-semibold text-white mb-2">✓ Your Data Stays on Your Device</h3>
-                <p className="text-sm">
-                  Information never leaves your computer, tablet, or phone. It's stored in your web browser, just like browser bookmarks or history.
-                </p>
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-white mb-3">Personal Information (Premium Users Only)</h3>
+                <p className="mb-2">For Premium accounts, we collect minimal information necessary to provide cloud services:</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li><strong className="text-white">Email address:</strong> For account creation, login, and service communications</li>
+                  <li><strong className="text-white">Payment information:</strong> Processed securely through Stripe (we never store credit card numbers)</li>
+                  <li><strong className="text-white">Encrypted user data:</strong> Your transition planning data, encrypted with your keys before storage</li>
+                </ul>
               </div>
 
-              <div className="bg-slate-900/50 rounded-lg p-4 mb-4">
-                <h3 className="text-lg font-semibold text-white mb-2">✓ We Have Zero Access</h3>
-                <p className="text-sm">
-                  We don't have servers collecting your data. We don't have databases with your information. We can't see what you're planning or calculating.
-                </p>
-              </div>
-
-              <div className="bg-slate-900/50 rounded-lg p-4 mb-4">
-                <h3 className="text-lg font-semibold text-white mb-2">✓ You Have Complete Control</h3>
-                <p className="text-sm">
-                  You can export your data at any time. You can clear it from your browser settings. You can use the app in private/incognito mode and no data will persist.
-                </p>
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-white mb-3">What We DON'T Collect</h3>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Your decrypted personal data (we mathematically cannot access it)</li>
+                  <li>Detailed military service records</li>
+                  <li>Financial calculations or amounts</li>
+                  <li>Content of your disability claims or medical information</li>
+                  <li>Specific appointment details or calendar entries</li>
+                  <li>Device identifiers or precise location data</li>
+                  <li>Behavioral tracking across other websites</li>
+                </ul>
               </div>
             </section>
 
@@ -92,39 +108,129 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">4. Cookies and Similar Technologies</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">4. Data Security</h2>
               <p className="mb-4">
-                We use minimal cookies:
+                We implement industry-leading security practices to protect your information:
               </p>
 
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-semibold text-white">Essential Cookies (Required)</h3>
-                  <p className="text-sm">
-                    These are necessary for the site to function. They remember your preferences (like which checklist you're using) but only on your device.
-                  </p>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <span className="text-green-400 flex-shrink-0">✓</span>
+                  <div>
+                    <strong className="text-white">End-to-End Encryption (Premium):</strong>
+                    <span className="text-sm block">Your data is encrypted on your device using AES-256 encryption before being sent to our servers. We never have access to your unencrypted data.</span>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="font-semibold text-white">Analytics Cookies (Optional)</h3>
-                  <p className="text-sm">
-                    Google Analytics cookies track anonymous usage patterns. You can disable these with browser settings or privacy extensions.
-                  </p>
+                <div className="flex gap-3">
+                  <span className="text-green-400 flex-shrink-0">✓</span>
+                  <div>
+                    <strong className="text-white">Zero-Knowledge Architecture:</strong>
+                    <span className="text-sm block">Your encryption keys are derived from your password and never leave your device. We cannot decrypt your data even if compelled by law enforcement.</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3">
+                  <span className="text-green-400 flex-shrink-0">✓</span>
+                  <div>
+                    <strong className="text-white">HTTPS/TLS Encryption:</strong>
+                    <span className="text-sm block">All connections use SSL/TLS encryption to prevent eavesdropping during transmission.</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3">
+                  <span className="text-green-400 flex-shrink-0">✓</span>
+                  <div>
+                    <strong className="text-white">Secure Cloud Storage:</strong>
+                    <span className="text-sm block">Encrypted data is stored in SOC 2 compliant data centers with physical and network security.</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3">
+                  <span className="text-green-400 flex-shrink-0">✓</span>
+                  <div>
+                    <strong className="text-white">Regular Security Audits:</strong>
+                    <span className="text-sm block">We conduct regular security reviews and promptly apply security updates.</span>
+                  </div>
                 </div>
               </div>
-
-              <p className="mt-4 text-sm">
-                We do NOT use cookies for: advertising, tracking across websites, selling data, or identifying individual users.
-              </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">5. Third-Party Services</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">5. Data Retention</h2>
+
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-white mb-2">Free Tier Users</h3>
+                <p className="mb-2">Your locally stored data remains on your device until:</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>You manually clear your browser data/cache</li>
+                  <li>You use the app's "Clear All Data" feature</li>
+                  <li>You uninstall your web browser</li>
+                  <li>You use private/incognito browsing (data clears when you close the browser)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-2">Premium Users</h3>
+                <p className="mb-2">Your encrypted data is retained in the cloud:</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>As long as your account is active and in good standing</li>
+                  <li>For 90 days after account cancellation (grace period for reactivation)</li>
+                  <li>Permanently deleted upon your request or after the grace period</li>
+                  <li>You can export your data at any time before deletion</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-white mb-4">6. Your Privacy Rights</h2>
+              <p className="mb-4">
+                You have complete control over your data:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-slate-900/50 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">Right to Access</h3>
+                  <p className="text-sm">Export your data in multiple formats at any time from your account settings</p>
+                </div>
+
+                <div className="bg-slate-900/50 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">Right to Delete</h3>
+                  <p className="text-sm">Request immediate account and data deletion from settings or by contacting support</p>
+                </div>
+
+                <div className="bg-slate-900/50 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">Right to Portability</h3>
+                  <p className="text-sm">Export your data in standard formats (JSON, PDF, CSV) to use elsewhere</p>
+                </div>
+
+                <div className="bg-slate-900/50 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">Right to Privacy</h3>
+                  <p className="text-sm">Free tier: use in incognito mode. Premium: zero-knowledge encryption ensures privacy</p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-white mb-4">7. Third-Party Services</h2>
               <p className="mb-4">
                 We use these external services:
               </p>
 
               <div className="space-y-4">
+                <div className="bg-slate-900/50 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">Stripe (Payment Processing)</h3>
+                  <p className="text-sm mb-2">
+                    Purpose: Process Premium subscriptions securely
+                  </p>
+                  <p className="text-sm mb-2">
+                    Privacy Policy: <a href="https://stripe.com/privacy" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Stripe Privacy Policy</a>
+                  </p>
+                  <p className="text-sm">
+                    What they collect: Payment card information (we never see or store this)
+                  </p>
+                </div>
+
                 <div className="bg-slate-900/50 rounded-lg p-4">
                   <h3 className="font-semibold text-white mb-2">Google Analytics</h3>
                   <p className="text-sm mb-2">
@@ -139,12 +245,12 @@ export default function Privacy() {
                 </div>
 
                 <div className="bg-slate-900/50 rounded-lg p-4">
-                  <h3 className="font-semibold text-white mb-2">Hosting Provider</h3>
+                  <h3 className="font-semibold text-white mb-2">Cloud Storage Provider</h3>
                   <p className="text-sm mb-2">
-                    Purpose: Serving the website files
+                    Purpose: Store encrypted Premium user data
                   </p>
                   <p className="text-sm">
-                    What they collect: Standard server logs (IP address, timestamp, page requested) - automatically deleted after 30 days
+                    What they store: Your encrypted data (unreadable without your keys), account metadata
                   </p>
                 </div>
               </div>
@@ -155,121 +261,71 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">6. Data Retention</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">8. Cookies and Similar Technologies</h2>
               <p className="mb-4">
-                Since we don't collect your data, there's nothing for us to retain or delete. Your locally stored data remains on your device until:
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>You manually clear your browser data/cache</li>
-                <li>You use the app's "Clear All Data" or export/delete features</li>
-                <li>You uninstall your web browser</li>
-                <li>You use private/incognito browsing (data clears when you close the browser)</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-white mb-4">7. Data Security</h2>
-              <p className="mb-4">
-                Your data security is maximized through our privacy-first architecture:
+                We use minimal cookies:
               </p>
 
-              <div className="space-y-3">
-                <div className="flex gap-3">
-                  <span className="text-green-400 flex-shrink-0">✓</span>
-                  <div>
-                    <strong className="text-white">No Server Breaches Possible:</strong>
-                    <span className="text-sm block">We don't store your data on servers, so hackers can't breach our databases to steal your information.</span>
-                  </div>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-white">Essential Cookies (Required)</h3>
+                  <p className="text-sm">
+                    Necessary for the site to function, including authentication for Premium users and preference storage.
+                  </p>
                 </div>
 
-                <div className="flex gap-3">
-                  <span className="text-green-400 flex-shrink-0">✓</span>
-                  <div>
-                    <strong className="text-white">HTTPS Encryption:</strong>
-                    <span className="text-sm block">All connections to our site use SSL/TLS encryption to prevent eavesdropping.</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-3">
-                  <span className="text-green-400 flex-shrink-0">✓</span>
-                  <div>
-                    <strong className="text-white">Browser Security:</strong>
-                    <span className="text-sm block">Your data benefits from your browser's built-in security features and sandboxing.</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-3">
-                  <span className="text-green-400 flex-shrink-0">✓</span>
-                  <div>
-                    <strong className="text-white">Export for Backup:</strong>
-                    <span className="text-sm block">Use the export feature to back up your data to encrypted storage under your control.</span>
-                  </div>
+                <div>
+                  <h3 className="font-semibold text-white">Analytics Cookies (Optional)</h3>
+                  <p className="text-sm">
+                    Google Analytics cookies track anonymous usage patterns. You can disable these with browser settings or privacy extensions.
+                  </p>
                 </div>
               </div>
-            </section>
 
-            <section>
-              <h2 className="text-2xl font-bold text-white mb-4">8. Your Privacy Rights</h2>
-              <p className="mb-4">
-                You have complete control over your data:
+              <p className="mt-4 text-sm">
+                We do NOT use cookies for: advertising, tracking across websites, selling data, or identifying individual users beyond necessary authentication.
               </p>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-slate-900/50 rounded-lg p-4">
-                  <h3 className="font-semibold text-white mb-2">Right to Access</h3>
-                  <p className="text-sm">All your data is accessible through the app's export feature</p>
-                </div>
-
-                <div className="bg-slate-900/50 rounded-lg p-4">
-                  <h3 className="font-semibold text-white mb-2">Right to Delete</h3>
-                  <p className="text-sm">Clear your browser data or use app's clear data features</p>
-                </div>
-
-                <div className="bg-slate-900/50 rounded-lg p-4">
-                  <h3 className="font-semibold text-white mb-2">Right to Portability</h3>
-                  <p className="text-sm">Export your data in JSON format anytime</p>
-                </div>
-
-                <div className="bg-slate-900/50 rounded-lg p-4">
-                  <h3 className="font-semibold text-white mb-2">Right to Privacy</h3>
-                  <p className="text-sm">Use in incognito mode for zero data persistence</p>
-                </div>
-              </div>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">9. Children's Privacy</h2>
               <p>
-                Our service is not directed to individuals under 18. We do not knowingly collect information from children. Since we don't collect any personal information at all, this is not a concern for our service.
+                Our service is not directed to individuals under 18. We do not knowingly collect information from children. If you believe a child has provided us with personal information, please contact us immediately.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">10. Changes to Privacy Policy</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">10. International Users</h2>
               <p className="mb-4">
-                We may update this Privacy Policy occasionally. Changes will be posted on this page with an updated "Last Updated" date.
-              </p>
-              <p>
-                Material changes will be announced on the home page. Your continued use of the service after changes constitutes acceptance of the updated policy.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-white mb-4">11. International Users</h2>
-              <p className="mb-4">
-                Our privacy-first approach makes compliance simple:
+                Our security-first approach ensures compliance with major privacy regulations:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li><strong className="text-white">GDPR (European Union):</strong> We don't process personal data, so GDPR requirements are minimal</li>
-                <li><strong className="text-white">CCPA (California):</strong> We don't sell personal information because we don't have it</li>
-                <li><strong className="text-white">Other Jurisdictions:</strong> Our local-storage model exceeds most privacy requirements globally</li>
+                <li><strong className="text-white">GDPR (European Union):</strong> We use privacy-by-design principles and provide full data control rights</li>
+                <li><strong className="text-white">CCPA (California):</strong> We don't sell personal information and provide full transparency</li>
+                <li><strong className="text-white">Other Jurisdictions:</strong> Our end-to-end encryption model exceeds most privacy requirements globally</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">12. Do Not Track</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">11. Data Breach Notification</h2>
+              <p className="mb-4">
+                In the unlikely event of a security breach affecting Premium user accounts:
+              </p>
+              <ul className="list-disc list-inside space-y-2 ml-4">
+                <li>We will notify affected users within 72 hours</li>
+                <li>Your encrypted data remains protected by your encryption keys</li>
+                <li>We will provide clear guidance on any necessary actions</li>
+                <li>Free tier users are not affected as data is stored locally only</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-white mb-4">12. Changes to Privacy Policy</h2>
+              <p className="mb-4">
+                We may update this Privacy Policy occasionally. Changes will be posted on this page with an updated "Last Updated" date.
+              </p>
               <p>
-                We respect Do Not Track (DNT) browser settings. If your browser sends a DNT signal, we honor it by not loading Google Analytics. The core functionality of the app works identically with or without analytics.
+                Material changes will be announced on the home page and via email to Premium users. Your continued use of the service after changes constitutes acceptance of the updated policy.
               </p>
             </section>
 
@@ -293,12 +349,13 @@ export default function Privacy() {
                   <strong className="text-white">In Plain English:</strong>
                 </p>
                 <ul className="space-y-2 text-sm">
-                  <li>✓ Your data never leaves your device</li>
-                  <li>✓ We can't see what you enter, save, or calculate</li>
+                  <li>✓ <strong>Free tier:</strong> Your data stays on your device, we never see it</li>
+                  <li>✓ <strong>Premium:</strong> End-to-end encrypted cloud storage - we mathematically cannot decrypt your data</li>
+                  <li>✓ Zero-knowledge architecture protects your privacy</li>
                   <li>✓ We only track anonymous page views for site improvement</li>
-                  <li>✓ No accounts, no emails, no tracking across sites</li>
                   <li>✓ You have complete control over your information</li>
-                  <li>✓ We'll never sell your data (because we don't have it)</li>
+                  <li>✓ We'll never sell your data - our business model is Premium subscriptions, not data</li>
+                  <li>✓ Military-grade security protects your transition planning</li>
                 </ul>
               </div>
             </section>

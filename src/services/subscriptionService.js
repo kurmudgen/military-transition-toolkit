@@ -34,23 +34,31 @@ export const createCheckoutSession = async (priceId) => {
     const user = await getCurrentUser()
     if (!user) throw new Error('No authenticated user')
 
-    // Call your backend API to create checkout session
-    // This should be implemented in your backend/edge function
+    // Get session token for Authorization header
+    const session = await supabase.auth.getSession()
+    const token = session.data.session?.access_token
+
+    if (!token) {
+      throw new Error('No valid session token')
+    }
+
+    // Call backend API to create checkout session
+    // Backend will extract userId and email from verified JWT token
     const response = await fetch('/api/stripe/create-checkout-session', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${(await supabase.auth.getSession()).data.session?.access_token}`
+        'Authorization': `Bearer ${token}`
       },
       body: JSON.stringify({
-        priceId,
-        userId: user.id,
-        email: user.email
+        priceId
+        // userId and email are extracted from JWT token on backend
       })
     })
 
     if (!response.ok) {
-      throw new Error('Failed to create checkout session')
+      const errorData = await response.json()
+      throw new Error(errorData.error || 'Failed to create checkout session')
     }
 
     const { sessionId } = await response.json()
@@ -69,19 +77,30 @@ export const createCustomerPortalSession = async () => {
     const user = await getCurrentUser()
     if (!user) throw new Error('No authenticated user')
 
+    // Get session token for Authorization header
+    const session = await supabase.auth.getSession()
+    const token = session.data.session?.access_token
+
+    if (!token) {
+      throw new Error('No valid session token')
+    }
+
+    // Call backend API to create portal session
+    // Backend will extract userId from verified JWT token
     const response = await fetch('/api/stripe/create-portal-session', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${(await supabase.auth.getSession()).data.session?.access_token}`
+        'Authorization': `Bearer ${token}`
       },
       body: JSON.stringify({
-        userId: user.id
+        // userId is extracted from JWT token on backend
       })
     })
 
     if (!response.ok) {
-      throw new Error('Failed to create portal session')
+      const errorData = await response.json()
+      throw new Error(errorData.error || 'Failed to create portal session')
     }
 
     const { url } = await response.json()

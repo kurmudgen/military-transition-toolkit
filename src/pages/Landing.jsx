@@ -92,7 +92,7 @@ export default function Landing() {
               <ul className="text-slate-300 space-y-2">
                 <li>✓ Personalized timeline based on your situation</li>
                 <li>✓ Track completion progress</li>
-                <li>✓ Save your checklist locally</li>
+                <li>✓ Secure cloud sync across devices (Premium)</li>
               </ul>
             </div>
             <div className="flex-1 bg-slate-700 rounded-lg p-6 text-center">
@@ -177,24 +177,24 @@ export default function Landing() {
         <div className="bg-slate-800 rounded-lg p-8 border border-slate-700 text-center">
           <div className="text-5xl mb-4">🔒</div>
           <h2 className="text-2xl font-bold text-white mb-4">
-            Your Data Stays Private
+            Military-Grade Privacy & Security
           </h2>
           <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
-            Everything is stored locally on your device only. We don't have servers,
-            we can't see your data, and we'll never sell your information.
+            Your data is protected with end-to-end encryption and zero-knowledge architecture.
+            We mathematically cannot access your information - only you hold the keys.
           </p>
           <div className="grid md:grid-cols-3 gap-4 text-left max-w-2xl mx-auto">
             <div className="flex gap-2">
               <span className="text-green-400">✓</span>
-              <span className="text-slate-300 text-sm">No account required</span>
+              <span className="text-slate-300 text-sm">End-to-end encryption</span>
             </div>
             <div className="flex gap-2">
               <span className="text-green-400">✓</span>
-              <span className="text-slate-300 text-sm">No data uploaded</span>
+              <span className="text-slate-300 text-sm">Zero-knowledge security</span>
             </div>
             <div className="flex gap-2">
               <span className="text-green-400">✓</span>
-              <span className="text-slate-300 text-sm">100% private</span>
+              <span className="text-slate-300 text-sm">Never sell your data</span>
             </div>
           </div>
         </div>

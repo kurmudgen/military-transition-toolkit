@@ -7,6 +7,7 @@ import Layout from './components/Layout'
 import Landing from './pages/Landing'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
+import RefundPolicy from './pages/RefundPolicy'
 import Pricing from './pages/Pricing'
 
 // Auth pages
@@ -45,6 +46,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/pricing" element={<Pricing />} />
 
         {/* Auth pages */}

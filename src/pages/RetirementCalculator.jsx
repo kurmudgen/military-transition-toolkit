@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import UseProfileButton from '../components/UseProfileButton'
 import { getProfileData, getServiceInfo, getLocationInfo } from '../utils/profileAutoFill'
+import { isPromoActive } from '../utils/promoConfig'
 
 // 2025 Base Pay Data (simplified - showing E-7 through O-5 for key ranks)
 const BASE_PAY_2025 = {
@@ -279,9 +280,16 @@ export default function RetirementCalculator() {
   return (
     <div className="px-4 py-6 sm:px-0">
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-          Military Retirement Pay Calculator
-        </h1>
+        <div className="flex flex-wrap items-center gap-3 mb-3">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+            Military Retirement Pay Calculator
+          </h1>
+          {isPromoActive() && (
+            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
+              🎖️ Launch Special - FREE
+            </span>
+          )}
+        </div>
         <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
           Calculate your estimated retirement pay, VA disability compensation, and total income
         </p>
@@ -316,7 +324,7 @@ export default function RetirementCalculator() {
                   {currentStep > idx + 1 ? '✓' : idx + 1}
                 </div>
                 <div className={`text-sm ${
-                  currentStep === idx + 1 ? 'text-gray-900 font-semibold' : 'text-gray-600'
+                  currentStep === idx + 1 ? 'text-gray-900 dark:text-white font-semibold' : 'text-gray-600 dark:text-gray-400'
                 }`}>
                   {step}
                 </div>
@@ -374,11 +382,11 @@ export default function RetirementCalculator() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Service Branch</label>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Service Branch</label>
               <select
                 value={formData.branch}
                 onChange={(e) => updateFormData('branch', e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
               >
                 <option>Army</option>
                 <option>Navy</option>
@@ -390,11 +398,11 @@ export default function RetirementCalculator() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Rank at Retirement</label>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Rank at Retirement</label>
               <select
                 value={formData.rank}
                 onChange={(e) => updateFormData('rank', e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
               >
                 <optgroup label="Enlisted">
                   <option>E-1</option>
@@ -423,7 +431,7 @@ export default function RetirementCalculator() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Years of Service: {formData.yearsOfService} years
               </label>
               <input
@@ -437,7 +445,7 @@ export default function RetirementCalculator() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Months of Service: {formData.monthsOfService} months
               </label>
               <input
@@ -451,9 +459,9 @@ export default function RetirementCalculator() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Retirement System</label>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Retirement System</label>
               <div className="space-y-2">
-                <label className="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                <label className="flex items-center p-3 border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700">
                   <input
                     type="radio"
                     name="retirementSystem"
@@ -463,13 +471,13 @@ export default function RetirementCalculator() {
                     className="h-4 w-4 text-blue-600"
                   />
                   <div className="ml-3">
-                    <div className="font-medium text-gray-900">
+                    <div className="font-medium text-gray-900 dark:text-white">
                       <span className="underline decoration-dotted cursor-help" title="High-3: Your retirement pay is calculated using the average of your highest 36 months of basic pay">High-3</span> (Legacy System)
                     </div>
-                    <div className="text-sm text-gray-600">Entered service before 2018 - 2.5% per year multiplier</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Entered service before 2018 - 2.5% per year multiplier</div>
                   </div>
                 </label>
-                <label className="flex items-center p-3 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+                <label className="flex items-center p-3 border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700">
                   <input
                     type="radio"
                     name="retirementSystem"
@@ -479,10 +487,10 @@ export default function RetirementCalculator() {
                     className="h-4 w-4 text-blue-600"
                   />
                   <div className="ml-3">
-                    <div className="font-medium text-gray-900">
+                    <div className="font-medium text-gray-900 dark:text-white">
                       <span className="underline decoration-dotted cursor-help" title="BRS: Blended Retirement System combines a reduced pension (2.0% per year) with government TSP matching contributions">BRS</span> (Blended Retirement System)
                     </div>
-                    <div className="text-sm text-gray-600">Entered service after 2018 - 2.0% per year multiplier + <span className="underline decoration-dotted cursor-help" title="TSP: Thrift Savings Plan - Similar to a 401(k), the government matches up to 5% of your contributions">TSP match</span></div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Entered service after 2018 - 2.0% per year multiplier + <span className="underline decoration-dotted cursor-help" title="TSP: Thrift Savings Plan - Similar to a 401(k), the government matches up to 5% of your contributions">TSP match</span></div>
                   </div>
                 </label>
               </div>
@@ -493,27 +501,27 @@ export default function RetirementCalculator() {
         {/* Step 2: Retirement Pay Calculation */}
         {currentStep === 2 && (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Step 2: Retirement Pay Calculation</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Step 2: Retirement Pay Calculation</h2>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 High-3 Average Monthly Pay
               </label>
               <input
                 type="number"
                 value={formData.high3Pay}
                 onChange={(e) => updateFormData('high3Pay', parseFloat(e.target.value))}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
                 placeholder="Enter your high-3 average monthly pay"
               />
-              <p className="text-sm text-gray-600 mt-1">
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                 This is the average of your highest 36 months of basic pay
               </p>
             </div>
 
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-3">Calculation Formula:</h3>
-              <div className="space-y-2 text-sm">
+            <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Calculation Formula:</h3>
+              <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 <div>
                   Years of Service: <span className="font-medium">{formData.yearsOfService}.{(formData.monthsOfService / 12 * 10).toFixed(0)} years</span>
                 </div>
@@ -523,11 +531,11 @@ export default function RetirementCalculator() {
                 <div>
                   Percentage: <span className="font-medium">{((formData.yearsOfService + formData.monthsOfService / 12) * (formData.retirementSystem === 'high3' ? 2.5 : 2.0)).toFixed(1)}%</span>
                 </div>
-                <div className="pt-2 border-t border-blue-300">
-                  <div className="text-lg font-bold text-blue-900">
+                <div className="pt-2 border-t border-blue-300 dark:border-blue-700">
+                  <div className="text-lg font-bold text-blue-900 dark:text-blue-200">
                     Monthly Retirement Pay: ${calculateRetirement().toFixed(2)}
                   </div>
-                  <div className="text-lg font-bold text-blue-900">
+                  <div className="text-lg font-bold text-blue-900 dark:text-blue-200">
                     Annual Retirement Pay: ${(calculateRetirement() * 12).toFixed(2)}
                   </div>
                 </div>
@@ -535,9 +543,9 @@ export default function RetirementCalculator() {
             </div>
 
             {formData.retirementSystem === 'brs' && (
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                <h3 className="font-semibold text-gray-900 mb-2">BRS Additional Benefits:</h3>
-                <ul className="text-sm space-y-1 text-gray-700">
+              <div className="bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg p-4">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">BRS Additional Benefits:</h3>
+                <ul className="text-sm space-y-1 text-gray-700 dark:text-gray-300">
                   <li>• TSP match: Up to 5% of base pay (approximately ${(formData.high3Pay * 0.05).toFixed(2)}/month)</li>
                   <li>• Continuation pay at 12 years of service</li>
                   <li>• Lower retirement multiplier (2.0% vs 2.5%) but you keep TSP contributions</li>
@@ -550,14 +558,14 @@ export default function RetirementCalculator() {
         {/* Step 3: VA Disability */}
         {currentStep === 3 && (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Step 3: VA Disability Compensation</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Step 3: VA Disability Compensation</h2>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">VA Disability Rating</label>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">VA Disability Rating</label>
               <select
                 value={formData.vaRating}
                 onChange={(e) => updateFormData('vaRating', e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
               >
                 {Object.keys(VA_DISABILITY_RATES).map(rating => (
                   <option key={rating} value={rating}>{rating}</option>
@@ -566,39 +574,39 @@ export default function RetirementCalculator() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Number of Dependents</label>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Number of Dependents</label>
               <input
                 type="number"
                 min="0"
                 value={formData.dependents}
                 onChange={(e) => updateFormData('dependents', parseInt(e.target.value))}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
               />
-              <p className="text-sm text-gray-600 mt-1">
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                 Dependents can increase your VA compensation (spouse, children)
               </p>
             </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-3">VA Disability Compensation:</h3>
-              <div className="text-2xl font-bold text-green-900">
+            <div className="bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-3">VA Disability Compensation:</h3>
+              <div className="text-2xl font-bold text-green-900 dark:text-green-200">
                 ${calculateVACompensation().toFixed(2)}/month
               </div>
-              <div className="text-lg font-bold text-green-900">
+              <div className="text-lg font-bold text-green-900 dark:text-green-200">
                 ${(calculateVACompensation() * 12).toFixed(2)}/year
               </div>
-              <p className="text-sm text-gray-700 mt-2">
+              <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
                 VA disability compensation is tax-free
               </p>
             </div>
 
             {formData.yearsOfService >= 20 && parseInt(formData.vaRating) >= 50 && (
-              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                <h3 className="font-semibold text-gray-900 mb-2">✓ You Qualify for <span className="underline decoration-dotted cursor-help" title="CRDP: Concurrent Retirement Disability Pay - Allows you to receive both retirement pay and VA compensation without reduction">CRDP</span>!</h3>
-                <p className="text-sm text-gray-700">
+              <div className="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">✓ You Qualify for <span className="underline decoration-dotted cursor-help" title="CRDP: Concurrent Retirement Disability Pay - Allows you to receive both retirement pay and VA compensation without reduction">CRDP</span>!</h3>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
                   <strong>Concurrent Retirement Disability Pay (CRDP)</strong> allows you to receive both full military retirement pay AND full VA disability compensation without offset.
                 </p>
-                <p className="text-sm text-gray-700 mt-2">
+                <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
                   Requirements: 20+ years of service AND 50%+ VA rating
                 </p>
               </div>
@@ -609,14 +617,14 @@ export default function RetirementCalculator() {
         {/* Step 4: State Taxes */}
         {currentStep === 4 && (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Step 4: State Tax Impact</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Step 4: State Tax Impact</h2>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Select Your State</label>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Select Your State</label>
               <select
                 value={formData.selectedState}
                 onChange={(e) => updateFormData('selectedState', e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
               >
                 {Object.keys(STATE_TAX_DATA).sort().map(state => (
                   <option key={state} value={state}>{state}</option>
@@ -624,9 +632,9 @@ export default function RetirementCalculator() {
               </select>
             </div>
 
-            <div className="bg-gray-50 border border-gray-300 rounded-lg p-4">
+            <div className="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg p-4">
               <div className="flex items-center justify-between mb-3">
-                <h3 className="font-semibold text-gray-900">Tax Treatment in {formData.selectedState}:</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-white">Tax Treatment in {formData.selectedState}:</h3>
                 <span className={`px-3 py-1 rounded-full text-sm font-medium ${getTaxBadgeColor(STATE_TAX_DATA[formData.selectedState].treatment)}`}>
                   {STATE_TAX_DATA[formData.selectedState].description}
                 </span>
@@ -634,19 +642,19 @@ export default function RetirementCalculator() {
 
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-700">Monthly Retirement Pay:</span>
-                  <span className="font-medium">${calculateRetirement().toFixed(2)}</span>
+                  <span className="text-gray-700 dark:text-gray-300">Monthly Retirement Pay:</span>
+                  <span className="font-medium text-gray-900 dark:text-white">${calculateRetirement().toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-700">Estimated State Tax:</span>
-                  <span className="font-medium text-red-600">-${calculateStateTax(formData.selectedState, calculateRetirement()).toFixed(2)}</span>
+                  <span className="text-gray-700 dark:text-gray-300">Estimated State Tax:</span>
+                  <span className="font-medium text-red-600 dark:text-red-400">-${calculateStateTax(formData.selectedState, calculateRetirement()).toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-700">Monthly VA Disability (Tax-Free):</span>
-                  <span className="font-medium text-green-600">+${calculateVACompensation().toFixed(2)}</span>
+                  <span className="text-gray-700 dark:text-gray-300">Monthly VA Disability (Tax-Free):</span>
+                  <span className="font-medium text-green-600 dark:text-green-400">+${calculateVACompensation().toFixed(2)}</span>
                 </div>
-                <div className="pt-2 border-t border-gray-300">
-                  <div className="flex justify-between font-bold">
+                <div className="pt-2 border-t border-gray-300 dark:border-gray-600">
+                  <div className="flex justify-between font-bold text-gray-900 dark:text-white">
                     <span>Net Monthly Income:</span>
                     <span>${(calculateRetirement() - calculateStateTax(formData.selectedState, calculateRetirement()) + calculateVACompensation()).toFixed(2)}</span>
                   </div>
@@ -659,10 +667,10 @@ export default function RetirementCalculator() {
         {/* Step 5: State Comparison */}
         {currentStep === 5 && (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Step 5: Compare States Side-by-Side</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Step 5: Compare States Side-by-Side</h2>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Add States to Compare (up to 3)</label>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Add States to Compare (up to 3)</label>
               <select
                 onChange={(e) => {
                   if (e.target.value) {
@@ -670,7 +678,7 @@ export default function RetirementCalculator() {
                     e.target.value = ''
                   }
                 }}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
               >
                 <option value="">Select a state to compare...</option>
                 {Object.keys(STATE_TAX_DATA).sort().map(state => (
@@ -685,15 +693,15 @@ export default function RetirementCalculator() {
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Category</th>
-                      <th className="border border-gray-300 px-4 py-2 text-center font-semibold">{formData.selectedState}</th>
+                    <tr className="bg-gray-100 dark:bg-gray-700">
+                      <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left font-semibold text-gray-900 dark:text-white">Category</th>
+                      <th className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center font-semibold text-gray-900 dark:text-white">{formData.selectedState}</th>
                       {formData.comparisonStates.map(state => (
-                        <th key={state} className="border border-gray-300 px-4 py-2 text-center font-semibold">
+                        <th key={state} className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center font-semibold text-gray-900 dark:text-white">
                           {state}
                           <button
                             onClick={() => removeComparisonState(state)}
-                            className="ml-2 text-red-600 hover:text-red-800"
+                            className="ml-2 text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300"
                           >
                             ×
                           </button>
@@ -703,14 +711,14 @@ export default function RetirementCalculator() {
                   </thead>
                   <tbody className="text-sm">
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2 font-medium">Tax Treatment</td>
-                      <td className="border border-gray-300 px-4 py-2 text-center">
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-900 dark:text-white">Tax Treatment</td>
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center">
                         <span className={`px-2 py-1 rounded-full text-xs ${getTaxBadgeColor(STATE_TAX_DATA[formData.selectedState].treatment)}`}>
                           {STATE_TAX_DATA[formData.selectedState].description}
                         </span>
                       </td>
                       {formData.comparisonStates.map(state => (
-                        <td key={state} className="border border-gray-300 px-4 py-2 text-center">
+                        <td key={state} className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center">
                           <span className={`px-2 py-1 rounded-full text-xs ${getTaxBadgeColor(STATE_TAX_DATA[state].treatment)}`}>
                             {STATE_TAX_DATA[state].description}
                           </span>
@@ -718,41 +726,41 @@ export default function RetirementCalculator() {
                       ))}
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2 font-medium">Retirement Pay</td>
-                      <td className="border border-gray-300 px-4 py-2 text-center">${calculateRetirement().toFixed(2)}</td>
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-900 dark:text-white">Retirement Pay</td>
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-gray-900 dark:text-gray-300">${calculateRetirement().toFixed(2)}</td>
                       {formData.comparisonStates.map(state => (
-                        <td key={state} className="border border-gray-300 px-4 py-2 text-center">${calculateRetirement().toFixed(2)}</td>
+                        <td key={state} className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-gray-900 dark:text-gray-300">${calculateRetirement().toFixed(2)}</td>
                       ))}
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2 font-medium">State Tax</td>
-                      <td className="border border-gray-300 px-4 py-2 text-center text-red-600">
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-900 dark:text-white">State Tax</td>
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-red-600 dark:text-red-400">
                         -${calculateStateTax(formData.selectedState, calculateRetirement()).toFixed(2)}
                       </td>
                       {formData.comparisonStates.map(state => (
-                        <td key={state} className="border border-gray-300 px-4 py-2 text-center text-red-600">
+                        <td key={state} className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-red-600 dark:text-red-400">
                           -${calculateStateTax(state, calculateRetirement()).toFixed(2)}
                         </td>
                       ))}
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2 font-medium">VA Disability (Tax-Free)</td>
-                      <td className="border border-gray-300 px-4 py-2 text-center text-green-600">
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 font-medium text-gray-900 dark:text-white">VA Disability (Tax-Free)</td>
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-green-600 dark:text-green-400">
                         ${calculateVACompensation().toFixed(2)}
                       </td>
                       {formData.comparisonStates.map(state => (
-                        <td key={state} className="border border-gray-300 px-4 py-2 text-center text-green-600">
+                        <td key={state} className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-green-600 dark:text-green-400">
                           ${calculateVACompensation().toFixed(2)}
                         </td>
                       ))}
                     </tr>
-                    <tr className="bg-gray-50 font-bold">
-                      <td className="border border-gray-300 px-4 py-2">Net Monthly Income</td>
-                      <td className="border border-gray-300 px-4 py-2 text-center">
+                    <tr className="bg-gray-50 dark:bg-gray-700 font-bold">
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-gray-900 dark:text-white">Net Monthly Income</td>
+                      <td className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-gray-900 dark:text-white">
                         ${(calculateRetirement() - calculateStateTax(formData.selectedState, calculateRetirement()) + calculateVACompensation()).toFixed(2)}
                       </td>
                       {formData.comparisonStates.map(state => (
-                        <td key={state} className="border border-gray-300 px-4 py-2 text-center">
+                        <td key={state} className="border border-gray-300 dark:border-gray-600 px-4 py-2 text-center text-gray-900 dark:text-white">
                           ${(calculateRetirement() - calculateStateTax(state, calculateRetirement()) + calculateVACompensation()).toFixed(2)}
                         </td>
                       ))}
@@ -767,17 +775,17 @@ export default function RetirementCalculator() {
         {/* Step 6: SBP */}
         {currentStep === 6 && (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Step 6: Survivor Benefit Plan (SBP)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Step 6: Survivor Benefit Plan (SBP)</h2>
 
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">What is SBP?</h3>
-              <p className="text-sm text-gray-700">
+            <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">What is SBP?</h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300">
                 The Survivor Benefit Plan (SBP) provides a monthly income to your surviving spouse if you die.
                 Your spouse will receive 55% of your retirement pay for the rest of their life.
               </p>
             </div>
 
-            <label className="flex items-center p-4 border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50">
+            <label className="flex items-center p-4 border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700">
               <input
                 type="checkbox"
                 checked={formData.electSBP}
@@ -785,8 +793,8 @@ export default function RetirementCalculator() {
                 className="h-5 w-5 text-blue-600 rounded"
               />
               <div className="ml-3">
-                <div className="font-medium text-gray-900">Elect SBP Coverage</div>
-                <div className="text-sm text-gray-600">
+                <div className="font-medium text-gray-900 dark:text-white">Elect SBP Coverage</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
                   Cost: 6.5% of gross retirement pay (${(calculateRetirement() * 0.065).toFixed(2)}/month)
                 </div>
               </div>
@@ -794,33 +802,33 @@ export default function RetirementCalculator() {
 
             {formData.electSBP && (
               <div className="space-y-4">
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-3">SBP Benefits:</h3>
+                <div className="bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg p-4">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">SBP Benefits:</h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-gray-700">Your Monthly Retirement Pay:</span>
-                      <span className="font-medium">${calculateRetirement().toFixed(2)}</span>
+                      <span className="text-gray-700 dark:text-gray-300">Your Monthly Retirement Pay:</span>
+                      <span className="font-medium text-gray-900 dark:text-white">${calculateRetirement().toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-700">SBP Cost (6.5%):</span>
-                      <span className="font-medium text-red-600">-${calculateSBP(calculateRetirement()).toFixed(2)}</span>
+                      <span className="text-gray-700 dark:text-gray-300">SBP Cost (6.5%):</span>
+                      <span className="font-medium text-red-600 dark:text-red-400">-${calculateSBP(calculateRetirement()).toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-700">Your Net Pay with SBP:</span>
-                      <span className="font-medium">${(calculateRetirement() - calculateSBP(calculateRetirement())).toFixed(2)}</span>
+                      <span className="text-gray-700 dark:text-gray-300">Your Net Pay with SBP:</span>
+                      <span className="font-medium text-gray-900 dark:text-white">${(calculateRetirement() - calculateSBP(calculateRetirement())).toFixed(2)}</span>
                     </div>
-                    <div className="pt-2 border-t border-green-300">
+                    <div className="pt-2 border-t border-green-300 dark:border-green-700">
                       <div className="flex justify-between font-bold">
-                        <span>Spouse Monthly Benefit (55%):</span>
-                        <span className="text-green-700">${(calculateRetirement() * 0.55).toFixed(2)}</span>
+                        <span className="text-gray-900 dark:text-white">Spouse Monthly Benefit (55%):</span>
+                        <span className="text-green-700 dark:text-green-300">${(calculateRetirement() * 0.55).toFixed(2)}</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">Important Considerations:</h3>
-                  <ul className="text-sm space-y-1 text-gray-700">
+                <div className="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Important Considerations:</h3>
+                  <ul className="text-sm space-y-1 text-gray-700 dark:text-gray-300">
                     <li>• SBP coverage ends at age 70 or after 360 payments (30 years)</li>
                     <li>• DIC offset may reduce SBP if you die from service-connected condition</li>
                     <li>• Must elect at retirement - cannot add later</li>
@@ -835,38 +843,38 @@ export default function RetirementCalculator() {
         {/* Step 7: Results */}
         {currentStep === 7 && (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Your Retirement Calculation Results</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Your Retirement Calculation Results</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <div className="text-sm text-gray-600 mb-1">Monthly Retirement Pay</div>
-                <div className="text-2xl font-bold text-blue-900">${results.monthlyRetirement.toFixed(2)}</div>
+              <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">Monthly Retirement Pay</div>
+                <div className="text-2xl font-bold text-blue-900 dark:text-blue-200">${results.monthlyRetirement.toFixed(2)}</div>
               </div>
 
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                <div className="text-sm text-gray-600 mb-1">Monthly VA Disability</div>
-                <div className="text-2xl font-bold text-green-900">${results.monthlyVA.toFixed(2)}</div>
+              <div className="bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg p-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">Monthly VA Disability</div>
+                <div className="text-2xl font-bold text-green-900 dark:text-green-200">${results.monthlyVA.toFixed(2)}</div>
               </div>
 
-              <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-                <div className="text-sm text-gray-600 mb-1">Total Monthly Income</div>
-                <div className="text-2xl font-bold text-purple-900">${results.totalMonthly.toFixed(2)}</div>
+              <div className="bg-purple-50 dark:bg-purple-900/30 border border-purple-200 dark:border-purple-800 rounded-lg p-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">Total Monthly Income</div>
+                <div className="text-2xl font-bold text-purple-900 dark:text-purple-200">${results.totalMonthly.toFixed(2)}</div>
               </div>
 
-              <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
-                <div className="text-sm text-gray-600 mb-1">Annual Income</div>
-                <div className="text-2xl font-bold text-indigo-900">${results.annualIncome.toFixed(2)}</div>
+              <div className="bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-lg p-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">Annual Income</div>
+                <div className="text-2xl font-bold text-indigo-900 dark:text-indigo-200">${results.annualIncome.toFixed(2)}</div>
               </div>
 
-              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                <div className="text-sm text-gray-600 mb-1">State Tax Impact ({formData.selectedState})</div>
-                <div className="text-2xl font-bold text-red-900">-${results.stateTax.toFixed(2)}/mo</div>
+              <div className="bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">State Tax Impact ({formData.selectedState})</div>
+                <div className="text-2xl font-bold text-red-900 dark:text-red-200">-${results.stateTax.toFixed(2)}/mo</div>
               </div>
 
               {formData.electSBP && (
-                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                  <div className="text-sm text-gray-600 mb-1">SBP Cost</div>
-                  <div className="text-2xl font-bold text-yellow-900">-${results.sbpCost.toFixed(2)}/mo</div>
+                <div className="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+                  <div className="text-sm text-gray-600 dark:text-gray-400 mb-1">SBP Cost</div>
+                  <div className="text-2xl font-bold text-yellow-900 dark:text-yellow-200">-${results.sbpCost.toFixed(2)}/mo</div>
                 </div>
               )}
 
@@ -904,14 +912,14 @@ export default function RetirementCalculator() {
             {/* Saved Calculations */}
             {savedCalculations.length > 0 && (
               <div className="mt-8">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Saved Calculations</h3>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Saved Calculations</h3>
                 <div className="space-y-2">
                   {savedCalculations.map((calc, idx) => (
-                    <div key={idx} className="p-4 border border-gray-300 rounded-lg">
+                    <div key={idx} className="p-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700">
                       <div className="flex items-center justify-between">
                         <div>
-                          <div className="font-medium text-gray-900">{calc.name}</div>
-                          <div className="text-sm text-gray-600">
+                          <div className="font-medium text-gray-900 dark:text-white">{calc.name}</div>
+                          <div className="text-sm text-gray-600 dark:text-gray-400">
                             {calc.data.rank} • {calc.data.yearsOfService} years • Net: ${calc.results.netMonthly.toFixed(2)}/mo
                           </div>
                         </div>
@@ -920,7 +928,7 @@ export default function RetirementCalculator() {
                             setFormData(calc.data)
                             setCurrentStep(7)
                           }}
-                          className="text-sm text-blue-600 hover:text-blue-800"
+                          className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
                         >
                           Load
                         </button>

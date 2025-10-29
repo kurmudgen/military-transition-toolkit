@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { isPromoActive } from '../utils/promoConfig'
 
 // Condition categories and their conditions
 const CONDITION_CATEGORIES = {
@@ -476,9 +477,16 @@ export default function VAClaimsBuilder() {
   return (
     <div className="px-4 py-6 sm:px-0">
       <div className="bg-white rounded-lg shadow p-6">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          VA Claims Builder
-        </h1>
+        <div className="flex items-center gap-3 mb-2">
+          <h1 className="text-3xl font-bold text-gray-900">
+            VA Claims Builder
+          </h1>
+          {isPromoActive() && (
+            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
+              🎖️ Launch Special - FREE
+            </span>
+          )}
+        </div>
         <p className="text-gray-600 mb-6">
           Build comprehensive claim statements and track evidence for your VA disability application
         </p>
@@ -492,11 +500,11 @@ export default function VAClaimsBuilder() {
               </svg>
             </div>
             <div className="ml-3">
-              <h3 className="text-sm font-medium text-blue-800">Privacy Notice</h3>
+              <h3 className="text-sm font-medium text-blue-800">Privacy & Security Notice</h3>
               <div className="mt-2 text-sm text-blue-700">
                 <p>
-                  This page contains sensitive medical and personal information. All data is stored locally on your device only - we cannot see or access your information.
-                  Be sure to export your claims regularly as backup.
+                  This page contains sensitive medical and personal information. <strong>Free tier:</strong> Data stored locally on your device. <strong>Premium:</strong> End-to-end encrypted cloud storage with zero-knowledge architecture - we cannot decrypt or access your information.
+                  Export your claims regularly as backup.
                 </p>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { isPromoActive } from '../utils/promoConfig'
 
 const APPOINTMENT_TYPES = [
   { id: 'medical', name: 'Medical Appointment', color: 'blue' },
@@ -201,9 +202,16 @@ export default function AppointmentsTracking() {
       <div className="bg-white rounded-lg shadow p-6">
         <div className="flex items-center justify-between mb-6">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              Appointments & Medical Tracking
-            </h1>
+            <div className="flex items-center gap-3 mb-2">
+              <h1 className="text-3xl font-bold text-gray-900">
+                Appointments & Medical Tracking
+              </h1>
+              {isPromoActive() && (
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
+                  🎖️ Launch Special - FREE
+                </span>
+              )}
+            </div>
             <p className="text-gray-600">
               Organize appointments, track conditions, and manage medical records
             </p>
@@ -225,11 +233,11 @@ export default function AppointmentsTracking() {
               </svg>
             </div>
             <div className="ml-3">
-              <h3 className="text-sm font-medium text-blue-800">Privacy Notice</h3>
+              <h3 className="text-sm font-medium text-blue-800">Privacy & Security Notice</h3>
               <div className="mt-2 text-sm text-blue-700">
                 <p>
-                  This page tracks sensitive medical appointments and health information. All data is stored locally on your device only - we cannot see or access your information.
-                  Use "Export All Data" regularly to back up your information.
+                  This page tracks sensitive medical appointments and health information. <strong>Free tier:</strong> Data stored locally on your device. <strong>Premium:</strong> Securely synced to cloud with end-to-end encryption - we cannot decrypt or access your information.
+                  Use "Export All Data" to create backups.
                 </p>
               </div>
             </div>

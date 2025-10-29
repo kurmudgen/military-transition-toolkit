@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { getProfileData } from '../utils/profileAutoFill'
 import UseProfileButton from '../components/UseProfileButton'
+import { isPromoActive } from '../utils/promoConfig'
 import {
   SKILL_TRANSLATIONS,
   MOS_TRANSLATIONS,
@@ -320,9 +321,18 @@ export default function ResumeBuilder() {
       return
     }
 
-    // This would integrate with a PDF library like jsPDF
+    // Generate and download PDF
     trackButtonClick('Resume Builder - Export PDF')
-    alert('PDF export coming soon! For now, use print preview (Ctrl/Cmd+P) and save as PDF.')
+    try {
+      const { generateResumePDF } = require('../utils/pdfExport')
+      const fileName = generateResumePDF(resumeData, template)
+
+      // Show success message
+      alert(`✅ Resume exported successfully as ${fileName}`)
+    } catch (error) {
+      console.error('Error exporting PDF:', error)
+      alert('Error exporting PDF. Please try again.')
+    }
   }
 
   const steps = [
@@ -345,7 +355,14 @@ export default function ResumeBuilder() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">Resume Builder</h1>
+          <div className="flex items-center gap-3 mb-3">
+            <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Resume Builder</h1>
+            {isPromoActive() && (
+              <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
+                🎖️ Launch Special - FREE
+              </span>
+            )}
+          </div>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
             Create a professional civilian resume with military-to-civilian translation
           </p>

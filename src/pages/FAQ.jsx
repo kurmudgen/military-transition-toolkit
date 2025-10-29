@@ -20,62 +20,49 @@ export default function FAQ() {
 
             <details className="border-t border-slate-700 group">
               <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: Why can't I sync my data across devices?</span>
+                <span className="font-semibold text-blue-400">Q: Can I sync my data across devices?</span>
                 <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                <p><strong>Short answer:</strong> Doing it securely requires infrastructure we can't afford yet.</p>
-                <p className="mt-2"><strong>Long answer:</strong> We chose to prioritize your privacy and launch an affordable tool NOW rather than wait years to build enterprise-grade cloud infrastructure. Use Export/Import to move data between devices for now.</p>
+                <p><strong>Yes!</strong> Premium users get automatic cloud sync across all their devices.</p>
+                <p className="mt-2">Free tier users can use Export/Import to manually move data between devices. Upgrade to Premium for automatic syncing with end-to-end encryption.</p>
               </div>
             </details>
 
             <details className="border-t border-slate-700 group">
               <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: Will you add cloud backup eventually?</span>
+                <span className="font-semibold text-blue-400">Q: Is cloud backup available?</span>
                 <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                Yes, if the app generates enough revenue to build it properly with zero-knowledge encryption. We will NEVER add cloud features that compromise your privacy. It'll be done right or not at all.
+                Yes! Premium users get secure cloud backup with end-to-end encryption. Your data is automatically backed up and protected with military-grade security. Only you can access your information - even we can't read your encrypted data.
               </div>
             </details>
 
             <details className="border-t border-slate-700 group">
               <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: Why not just use Google Drive or Dropbox integration?</span>
+                <span className="font-semibold text-blue-400">Q: How do you store my data securely?</span>
                 <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                Great question! This is actually on our roadmap for Phase 2. It would let YOU control where your data lives (your own Google Drive) while we just facilitate access. This requires development time and integration costs, but it's a solid option we're considering.
-              </div>
-            </details>
-
-            <details className="border-t border-slate-700 group">
-              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: Can't you just store my data on AWS like everyone else?</span>
-                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="p-4 pt-0 text-slate-300">
-                <p>We could, but then:</p>
+                <p>We use industry-standard security practices:</p>
                 <ul className="list-disc list-inside mt-2 space-y-1">
-                  <li>We'd need HIPAA compliance (expensive)</li>
-                  <li>We'd need security audits (expensive)</li>
-                  <li>We'd need lawyers (expensive)</li>
-                  <li>We'd have liability if breached (risky)</li>
-                  <li>We'd need to pass those costs to you (expensive for you)</li>
+                  <li>End-to-end encryption (your data is encrypted before it leaves your device)</li>
+                  <li>Encrypted at rest in secure cloud storage</li>
+                  <li>HTTPS/TLS encryption in transit</li>
+                  <li>Zero-knowledge architecture (we can't read your data)</li>
+                  <li>Regular security audits and updates</li>
                 </ul>
-                <p className="mt-2">By keeping it local-only, we keep it FREE or very cheap while protecting your privacy completely.</p>
+                <p className="mt-2">Free tier users have data stored locally in their browser, protected by their device security.</p>
               </div>
             </details>
 
@@ -88,7 +75,8 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                Browser localStorage is not encrypted by default. Data is protected by your device password. For maximum security, enable full-device encryption and export sensitive documents to encrypted storage.
+                <strong>Premium users:</strong> Yes, with end-to-end encryption. Your data is encrypted on your device before being sent to the cloud, and only you have the keys to decrypt it.
+                <p className="mt-2"><strong>Free tier users:</strong> Data is stored in browser local storage, protected by your device password. For maximum security, enable full-device encryption.</p>
               </div>
             </details>
 
@@ -101,58 +89,8 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                No. Since we don't store anything on servers, we cannot recover data. Export important information regularly.
-              </div>
-            </details>
-          </div>
-
-          {/* Development & Features */}
-          <div className="bg-slate-800/50 rounded-lg border border-slate-700 overflow-hidden">
-            <h2 className="text-2xl font-bold text-white p-6 pb-4">🚀 Development & Features</h2>
-
-            <details className="border-t border-slate-700 group">
-              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: When will advanced features be added?</span>
-                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="p-4 pt-0 text-slate-300">
-                <p>Honest answer: When enough veterans find this valuable and support it (through Premium or donations). We need sustainable revenue to invest in infrastructure.</p>
-                <p className="mt-2"><strong>Current pace:</strong></p>
-                <ul className="list-disc list-inside mt-2 space-y-1">
-                  <li>100 Premium users = Can add text reminders</li>
-                  <li>500 Premium users = Can add encrypted cloud backup</li>
-                  <li>2,000 Premium users = Can add full mobile apps</li>
-                  <li>10,000 Premium users = Can add everything</li>
-                </ul>
-              </div>
-            </details>
-
-            <details className="border-t border-slate-700 group">
-              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: Is this because you're lazy or cheap?</span>
-                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="p-4 pt-0 text-slate-300">
-                Neither - it's deliberate design for YOUR benefit. We're a small veteran-owned team building a tool for transitioning veterans. We chose to launch a secure, private, affordable tool quickly rather than spend 2 years and $200k building enterprise infrastructure.
-              </div>
-            </details>
-
-            <details className="border-t border-slate-700 group">
-              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: What if you shut down?</span>
-                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
-                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="p-4 pt-0 text-slate-300">
-                Since everything is local-only, you're not dependent on us staying online. Export your data and it's yours forever. If we shut down, the tool still works in your browser (just no updates).
+                <strong>Premium users:</strong> Your data is automatically backed up to the cloud. Sign in from any device to restore your information.
+                <p className="mt-2"><strong>Free tier users:</strong> No, we cannot recover locally stored data. Export your data regularly to create backups.</p>
               </div>
             </details>
 
@@ -165,7 +103,77 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                Data doesn't sync between devices automatically. Use Export/Import to move data, or use different devices for different purposes. Cloud sync is planned for the future with proper security.
+                <strong>Premium users:</strong> Yes! Your data automatically syncs across all devices (phone, tablet, computer).
+                <p className="mt-2"><strong>Free tier users:</strong> Data doesn't sync automatically. Use Export/Import to move data between devices, or use different devices for different purposes.</p>
+              </div>
+            </details>
+          </div>
+
+          {/* Development & Features */}
+          <div className="bg-slate-800/50 rounded-lg border border-slate-700 overflow-hidden">
+            <h2 className="text-2xl font-bold text-white p-6 pb-4">🚀 Development & Features</h2>
+
+            <details className="border-t border-slate-700 group">
+              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
+                <span className="font-semibold text-blue-400">Q: What's the difference between Free and Premium?</span>
+                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="p-4 pt-0 text-slate-300">
+                <p><strong>Free Forever tier includes:</strong></p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Basic transition checklists</li>
+                  <li>Essential resources and links</li>
+                  <li>State benefits comparison</li>
+                  <li>Basic retirement calculator</li>
+                  <li>Local data storage only</li>
+                </ul>
+                <p className="mt-3"><strong>Premium adds:</strong></p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Advanced retirement calculator (BRS & High-3)</li>
+                  <li>VA disability claims builder</li>
+                  <li>Cloud storage & sync across devices</li>
+                  <li>Automated reminders</li>
+                  <li>Priority support</li>
+                  <li>All future premium features</li>
+                </ul>
+              </div>
+            </details>
+
+            <details className="border-t border-slate-700 group">
+              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
+                <span className="font-semibold text-blue-400">Q: When will new features be added?</span>
+                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="p-4 pt-0 text-slate-300">
+                <p>We're actively developing new features based on veteran feedback and Premium subscription support. Upcoming features include:</p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Native mobile apps (iOS & Android)</li>
+                  <li>Enhanced smart notifications</li>
+                  <li>AI-powered document automation</li>
+                  <li>Partnerships with VSOs and TAP programs</li>
+                </ul>
+                <p className="mt-2">Premium members get early access to all new features.</p>
+              </div>
+            </details>
+
+            <details className="border-t border-slate-700 group">
+              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
+                <span className="font-semibold text-blue-400">Q: What if you shut down?</span>
+                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="p-4 pt-0 text-slate-300">
+                <strong>Premium users:</strong> You'll receive 90 days advance notice and full data export in multiple formats. Your encrypted data is yours to keep.
+                <p className="mt-2"><strong>Free tier users:</strong> Export your data anytime and it's yours forever. The free tier tool works in your browser even offline.</p>
+                <p className="mt-2">We're committed to serving veterans long-term, but we believe in data portability and your right to own your information.</p>
               </div>
             </details>
           </div>
@@ -176,14 +184,14 @@ export default function FAQ() {
 
             <details className="border-t border-slate-700 group">
               <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: Why should I trust you with this?</span>
+                <span className="font-semibold text-blue-400">Q: Why should I trust you with my data?</span>
                 <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                You shouldn't trust us - that's the point! We designed it so you DON'T have to trust us. We literally cannot see your data. It never leaves your device. The only trust needed is: "Will this app help me transition successfully?" Try the free version and decide for yourself.
+                We use end-to-end encryption with zero-knowledge architecture, which means we literally cannot read your data even if we wanted to. Your data is encrypted on your device before it reaches our servers, and only you have the decryption keys. Start with the free version to test it yourself before committing to Premium.
               </div>
             </details>
 
@@ -196,7 +204,20 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                We're trying to make a LIVING helping veterans, not making money OFF veterans. The free tier is fully functional. Premium is optional and cheaper than one appointment with a career counselor. If this helps you successfully transition and you find it worth $29, that supports development that helps more veterans.
+                We're trying to make a LIVING helping veterans, not making money OFF veterans. The free tier is fully functional for basic transition planning. Premium ($7/month or $199 lifetime) provides advanced features and cloud services that require infrastructure costs. If this helps you successfully transition and you find it valuable, supporting via Premium helps us serve more veterans.
+              </div>
+            </details>
+
+            <details className="border-t border-slate-700 group">
+              <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
+                <span className="font-semibold text-blue-400">Q: What's the Veterans Day launch special?</span>
+                <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="p-4 pt-0 text-slate-300">
+                To honor our fellow veterans, <strong>all premium features are FREE through Veterans Day (November 11, 2025)</strong>. This gives you time to explore everything before deciding. Plus, you can lock in Founding Member lifetime pricing at $199 (50% off the future $399 price) before the launch special ends.
               </div>
             </details>
 
@@ -209,7 +230,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                We're a small veteran-owned team. The founder is currently going through their own MedBoard transition right now. This tool was built out of personal necessity - experiencing the same confusion and overwhelm you're facing. We're using AI development tools to build quickly and affordably so we can help transitioning service members NOW rather than years from now.
+                We're a veteran-owned team. The founder is currently going through their own MedBoard transition right now. This tool was built out of personal necessity - experiencing the same confusion and overwhelm you're facing. We're using modern AI development tools to build quickly and affordably so we can help transitioning service members NOW rather than years from now.
               </div>
             </details>
 
@@ -222,7 +243,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                This app is a planning tool, not a medical records system. It is not HIPAA compliant and should not be used to store protected health information. Keep detailed medical records in secure, encrypted storage designed for that purpose.
+                This app is a planning and organizational tool, not a medical records system. While we use strong encryption and security practices, it is not HIPAA compliant and should not be used to store detailed protected health information. Keep comprehensive medical records in secure, HIPAA-compliant systems designed for that purpose.
               </div>
             </details>
           </div>

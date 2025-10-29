@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { useUsageLimits } from '../hooks/useFeatureAccess'
 import UpgradePrompt from '../components/UpgradePrompt'
+import { isPromoActive } from '../utils/promoConfig'
 
 export default function JobSearch() {
   // Feature gating
@@ -214,7 +215,14 @@ export default function JobSearch() {
     <div className="space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Job Search</h1>
+        <div className="flex items-center gap-3">
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Job Search</h1>
+          {isPromoActive() && (
+            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
+              🎖️ Launch Special - FREE
+            </span>
+          )}
+        </div>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
           Find veteran-friendly job opportunities and track your applications
         </p>

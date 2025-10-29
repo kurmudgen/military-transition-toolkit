@@ -14,16 +14,36 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { priceId, userId, email } = req.body
-
-    if (!priceId || !userId || !email) {
-      return res.status(400).json({ error: 'Missing required fields' })
+    // ============================================
+    // SECURITY: Verify JWT token from Authorization header
+    // ============================================
+    const authHeader = req.headers.authorization
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(401).json({ error: 'Unauthorized - No token provided' })
     }
 
-    // Verify the user exists
-    const { data: user, error: userError } = await supabase.auth.admin.getUserById(userId)
-    if (userError || !user) {
-      return res.status(404).json({ error: 'User not found' })
+    const token = authHeader.split(' ')[1]
+
+    // Verify JWT with Supabase
+    const { data: { user }, error: authError } = await supabase.auth.getUser(token)
+
+    if (authError || !user) {
+      console.error('Authentication failed:', authError)
+      return res.status(401).json({ error: 'Unauthorized - Invalid token' })
+    }
+
+    // ============================================
+    // Use ONLY verified user ID and email from token
+    // DO NOT accept userId or email from request body
+    // ============================================
+    const userId = user.id
+    const email = user.email
+
+    // Only accept priceId from request body
+    const { priceId } = req.body
+
+    if (!priceId) {
+      return res.status(400).json({ error: 'Missing priceId' })
     }
 
     // Check if customer already exists

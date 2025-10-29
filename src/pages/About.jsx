@@ -47,17 +47,17 @@ export default function About() {
             </p>
           </div>
 
-          {/* Honest About Limitations */}
+          {/* What We Offer */}
           <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-bold text-white mb-4">📊 Honest About the Limitations</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">✨ What We Offer</h2>
             <p className="text-slate-300 mb-4">
-              This is a bootstrap operation:
+              Built for veterans, by veterans:
             </p>
             <ul className="list-disc list-inside text-slate-300 space-y-2 mb-4">
               <li>Small veteran-owned team building with AI assistance</li>
               <li>No venture capital, no huge budget</li>
               <li>Focused on core value over fancy features</li>
-              <li>Local-only storage to protect your privacy AND keep costs down</li>
+              <li>End-to-end encrypted cloud storage for complete privacy and security</li>
               <li>Launched fast to help veterans NOW, not in 2 years</li>
             </ul>
 
@@ -65,19 +65,21 @@ export default function About() {
               <div>
                 <h3 className="text-lg font-semibold text-green-400 mb-2">What You Get:</h3>
                 <ul className="text-slate-300 space-y-1">
-                  <li>✓ Complete privacy (local-only = truly secure)</li>
-                  <li>✓ Low/no cost (no server bills)</li>
+                  <li>✓ Complete privacy with military-grade encryption</li>
+                  <li>✓ Secure cloud backup & sync across devices</li>
                   <li>✓ Built by veterans going through it NOW</li>
                   <li>✓ Features prioritized by veteran need</li>
+                  <li>✓ Access your data from anywhere</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-yellow-400 mb-2">What's Missing (For Now):</h3>
+                <h3 className="text-lg font-semibold text-blue-400 mb-2">Premium Features:</h3>
                 <ul className="text-slate-300 space-y-1">
-                  <li>✗ No cloud sync (yet)</li>
-                  <li>✗ No cross-device access (yet)</li>
-                  <li>✗ No automated reminders (yet)</li>
-                  <li>✗ Must export/backup yourself</li>
+                  <li>✓ Advanced retirement calculator</li>
+                  <li>✓ VA disability claims builder</li>
+                  <li>✓ Cloud storage & device sync</li>
+                  <li>✓ Automated reminders</li>
+                  <li>✓ Priority support</li>
                 </ul>
               </div>
             </div>
@@ -87,24 +89,24 @@ export default function About() {
           <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
             <h2 className="text-2xl font-bold text-white mb-4">🗺️ The Roadmap</h2>
             <p className="text-slate-300 mb-4">
-              If enough veterans find this valuable:
+              We're committed to continuous improvement:
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <span className="text-blue-400 font-bold">Phase 1:</span>
-                <span className="text-slate-300">Core tools FREE with optional Premium ($29-49)</span>
+                <span className="text-green-400 font-bold">✓ Phase 1:</span>
+                <span className="text-slate-300">Launched with core tools & end-to-end encrypted cloud storage</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-blue-400 font-bold">Phase 2:</span>
-                <span className="text-slate-300">Add encrypted cloud backup and sync</span>
+                <span className="text-slate-300">Native mobile apps (iOS & Android)</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-blue-400 font-bold">Phase 3:</span>
-                <span className="text-slate-300">Native mobile apps</span>
+                <span className="text-slate-300">Enhanced automated reminders and smart notifications</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-blue-400 font-bold">Phase 4:</span>
-                <span className="text-slate-300">Automated reminders and advanced features</span>
+                <span className="text-slate-300">AI-powered transition assistant and document automation</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-blue-400 font-bold">Phase 5:</span>
@@ -112,7 +114,7 @@ export default function About() {
               </div>
             </div>
             <p className="text-slate-300 mt-4 italic">
-              Every Premium purchase directly funds these improvements.
+              Every Premium purchase directly funds these improvements and keeps this tool veteran-focused.
             </p>
           </div>
 
@@ -162,6 +164,36 @@ export default function About() {
                 support@militarytransitiontoolkit.com
               </a>
             </p>
+          </div>
+
+          {/* DoD Disclaimer */}
+          <div className="bg-slate-700 rounded-lg shadow-lg p-6 border border-slate-600">
+            <h2 className="text-xl font-bold text-slate-200 mb-3">⚠️ Important Disclaimer</h2>
+            <div className="space-y-3 text-slate-300 text-sm">
+              <p className="font-semibold">
+                Military Transition Toolkit is NOT affiliated with, endorsed by, or officially connected to:
+              </p>
+              <ul className="list-disc list-inside space-y-1 ml-4">
+                <li>The U.S. Department of Defense (DoD)</li>
+                <li>Any branch of the U.S. Armed Forces</li>
+                <li>The Department of Veterans Affairs (VA)</li>
+                <li>Any federal, state, or local government agency</li>
+              </ul>
+              <p>
+                This is an <strong>independent, privately-owned tool</strong> created by a transitioning service member
+                to help fellow veterans navigate the military separation process. All information provided is for
+                educational and planning purposes only.
+              </p>
+              <p>
+                <strong>Official Information:</strong> Always verify critical information with official government sources,
+                your command, your transition assistance office, or the VA. While we strive for accuracy, this tool does
+                not replace official guidance from your chain of command or government agencies.
+              </p>
+              <p className="text-slate-400 italic">
+                The views expressed on this website are those of the creator and do not reflect the official policy
+                or position of the Department of Defense, any military service, or the U.S. Government.
+              </p>
+            </div>
           </div>
         </div>
       </div>

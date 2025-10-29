@@ -14,6 +14,11 @@ export default function StateBenefits() {
   const [filterCategory, setFilterCategory] = useState('all')
   const [minRating, setMinRating] = useState(0)
   const [showExportModal, setShowExportModal] = useState(false)
+  const [selectedCategories, setSelectedCategories] = useState([])
+  const [vetPopRange, setVetPopRange] = useState('all')
+  const [noIncomeTax, setNoIncomeTax] = useState(false)
+  const [fullPropertyTaxExemption, setFullPropertyTaxExemption] = useState(false)
+  const [freeHunting, setFreeHunting] = useState(false)
 
   useEffect(() => {
     trackPageView('/app/state-benefits')
@@ -78,6 +83,40 @@ export default function StateBenefits() {
     return stars
   }
 
+  // Parse veteran population string to number
+  const parseVetPop = (vetPopString) => {
+    return parseInt(vetPopString.replace(/,/g, ''))
+  }
+
+  // Check if state has no income tax
+  const hasNoIncomeTax = (state) => {
+    const description = state.benefits.incomeTax.description.toLowerCase()
+    return description.includes('no state income tax') || description.includes('no income tax')
+  }
+
+  // Check if state has full property tax exemption
+  const hasFullPropertyTaxExemption = (state) => {
+    const description = state.benefits.propertyTax.description.toLowerCase()
+    return description.includes('full') && description.includes('exemption')
+  }
+
+  // Check if state has free hunting/fishing
+  const hasFreeHunting = (state) => {
+    const description = state.benefits.hunting.description.toLowerCase()
+    return description.includes('free') && state.benefits.hunting.available
+  }
+
+  // Toggle category selection
+  const toggleCategory = (categoryId) => {
+    setSelectedCategories(prev => {
+      if (prev.includes(categoryId)) {
+        return prev.filter(id => id !== categoryId)
+      } else {
+        return [...prev, categoryId]
+      }
+    })
+  }
+
   // Filter and search states
   const getFilteredStates = () => {
     const allStates = getAllStates()
@@ -94,8 +133,41 @@ export default function StateBenefits() {
         return false
       }
 
-      // Category filter
+      // Category filter (legacy single category)
       if (filterCategory !== 'all' && !state.benefits[filterCategory]?.available) {
+        return false
+      }
+
+      // Multiple categories filter (all selected categories must be available)
+      if (selectedCategories.length > 0) {
+        const hasAllCategories = selectedCategories.every(catId =>
+          state.benefits[catId]?.available
+        )
+        if (!hasAllCategories) {
+          return false
+        }
+      }
+
+      // Veteran population range filter
+      if (vetPopRange !== 'all') {
+        const vetPop = parseVetPop(state.vetPopulation)
+        if (vetPopRange === 'small' && vetPop >= 100000) return false
+        if (vetPopRange === 'medium' && (vetPop < 100000 || vetPop >= 500000)) return false
+        if (vetPopRange === 'large' && vetPop < 500000) return false
+      }
+
+      // No income tax filter
+      if (noIncomeTax && !hasNoIncomeTax(state)) {
+        return false
+      }
+
+      // Full property tax exemption filter
+      if (fullPropertyTaxExemption && !hasFullPropertyTaxExemption(state)) {
+        return false
+      }
+
+      // Free hunting/fishing filter
+      if (freeHunting && !hasFreeHunting(state)) {
         return false
       }
 
@@ -169,7 +241,8 @@ export default function StateBenefits() {
       <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
         <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Search & Filter</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Row 1: Basic Filters */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
           {/* Search */}
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -182,25 +255,6 @@ export default function StateBenefits() {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
             />
-          </div>
-
-          {/* Benefit Category Filter */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Benefit Category
-            </label>
-            <select
-              value={filterCategory}
-              onChange={(e) => setFilterCategory(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-            >
-              <option value="all">All Benefits</option>
-              {BENEFIT_CATEGORIES.map(cat => (
-                <option key={cat.id} value={cat.id}>
-                  {cat.icon} {cat.label}
-                </option>
-              ))}
-            </select>
           </div>
 
           {/* Minimum Rating Filter */}
@@ -220,23 +274,139 @@ export default function StateBenefits() {
             </select>
           </div>
 
+          {/* Veteran Population Range */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              Veteran Population
+            </label>
+            <select
+              value={vetPopRange}
+              onChange={(e) => setVetPopRange(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+            >
+              <option value="all">All Sizes</option>
+              <option value="small">Small (&lt;100k)</option>
+              <option value="medium">Medium (100k-500k)</option>
+              <option value="large">Large (500k+)</option>
+            </select>
+          </div>
+
+          {/* Legacy Category Filter */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              Single Benefit
+            </label>
+            <select
+              value={filterCategory}
+              onChange={(e) => setFilterCategory(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+            >
+              <option value="all">Any Benefit</option>
+              {BENEFIT_CATEGORIES.map(cat => (
+                <option key={cat.id} value={cat.id}>
+                  {cat.icon} {cat.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/* Row 2: Multiple Categories */}
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Must Have ALL Selected Benefits (Multi-select)
+          </label>
+          <div className="flex flex-wrap gap-2">
+            {BENEFIT_CATEGORIES.map(cat => (
+              <button
+                key={cat.id}
+                onClick={() => toggleCategory(cat.id)}
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  selectedCategories.includes(cat.id)
+                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                }`}
+              >
+                {cat.icon} {cat.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Row 3: Special Filters */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          {/* No Income Tax */}
+          <div>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={noIncomeTax}
+                onChange={(e) => setNoIncomeTax(e.target.checked)}
+                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                💰 No State Income Tax
+              </span>
+            </label>
+          </div>
+
+          {/* Full Property Tax Exemption */}
+          <div>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={fullPropertyTaxExemption}
+                onChange={(e) => setFullPropertyTaxExemption(e.target.checked)}
+                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                🏠 Full Property Tax Exemption
+              </span>
+            </label>
+          </div>
+
+          {/* Free Hunting/Fishing */}
+          <div>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={freeHunting}
+                onChange={(e) => setFreeHunting(e.target.checked)}
+                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                🎣 Free Hunting & Fishing
+              </span>
+            </label>
+          </div>
+
           {/* Reset Button */}
-          <div className="flex items-end">
+          <div className="flex items-start">
             <button
               onClick={() => {
                 setSearchTerm('')
                 setFilterCategory('all')
                 setMinRating(0)
+                setSelectedCategories([])
+                setVetPopRange('all')
+                setNoIncomeTax(false)
+                setFullPropertyTaxExemption(false)
+                setFreeHunting(false)
               }}
               className="w-full px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg transition-colors"
             >
-              Reset Filters
+              Reset All Filters
             </button>
           </div>
         </div>
 
-        <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-          Showing {filteredStates.length} of 51 states/territories
+        <div className="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
+          <span>Showing {filteredStates.length} of 51 states/territories</span>
+          {(selectedCategories.length > 0 || noIncomeTax || fullPropertyTaxExemption || freeHunting) && (
+            <span className="text-blue-600 dark:text-blue-400 font-medium">
+              {selectedCategories.length + (noIncomeTax ? 1 : 0) + (fullPropertyTaxExemption ? 1 : 0) + (freeHunting ? 1 : 0)} active filter(s)
+            </span>
+          )}
         </div>
       </div>
 

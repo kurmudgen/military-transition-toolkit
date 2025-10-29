@@ -500,15 +500,17 @@ export const generateTransitionPlanPDF = () => {
 }
 
 /**
- * Export Resume as PDF
+ * Export Resume as PDF - Professional Format
  */
-export const generateResumePDF = (resumeData) => {
+export const generateResumePDF = (resumeData, template = 'chronological') => {
   const doc = new jsPDF()
   const pageWidth = doc.internal.pageSize.getWidth()
   const pageHeight = doc.internal.pageSize.getHeight()
   const margin = 20
+  const contentWidth = pageWidth - (2 * margin)
   let yPosition = margin
 
+  // Helper: Check if we need a new page
   const checkPageBreak = (space = 20) => {
     if (yPosition + space > pageHeight - margin) {
       doc.addPage()
@@ -518,166 +520,311 @@ export const generateResumePDF = (resumeData) => {
     return false
   }
 
-  // Header - Contact Info
+  // Helper: Add section header with underline
+  const addSectionHeader = (title) => {
+    checkPageBreak(15)
+    doc.setFontSize(14)
+    doc.setFont(undefined, 'bold')
+    doc.setTextColor(30, 70, 120) // Professional blue
+    doc.text(title.toUpperCase(), margin, yPosition)
+    yPosition += 2
+
+    // Underline
+    doc.setDrawColor(30, 70, 120)
+    doc.setLineWidth(0.5)
+    doc.line(margin, yPosition, pageWidth - margin, yPosition)
+    doc.setTextColor(0, 0, 0) // Reset to black
+    yPosition += 6
+  }
+
+  // Helper: Add bullet point
+  const addBullet = (text, indent = 5) => {
+    checkPageBreak(10)
+    const lines = doc.splitTextToSize(text, contentWidth - indent - 5)
+
+    // Draw bullet
+    doc.circle(margin + indent, yPosition - 1.5, 0.8, 'F')
+
+    // Add text
+    lines.forEach((line, idx) => {
+      if (idx > 0) checkPageBreak(6)
+      doc.text(line, margin + indent + 4, yPosition)
+      yPosition += 5
+    })
+  }
+
+  // ==================== HEADER - NAME & CONTACT ====================
   if (resumeData.contactInfo) {
     const c = resumeData.contactInfo
-    doc.setFontSize(20)
-    doc.setFont(undefined, 'bold')
-    doc.text(`${c.firstName || ''} ${c.lastName || ''}`, pageWidth / 2, yPosition, { align: 'center' })
-    yPosition += 8
+    const fullName = `${c.firstName || ''} ${c.lastName || ''}`.trim()
 
+    if (fullName) {
+      doc.setFontSize(24)
+      doc.setFont(undefined, 'bold')
+      doc.setTextColor(0, 0, 0)
+      doc.text(fullName, pageWidth / 2, yPosition, { align: 'center' })
+      yPosition += 7
+    }
+
+    // Contact info line 1: Email | Phone | Location
     doc.setFontSize(10)
     doc.setFont(undefined, 'normal')
-    const contactLine = [c.email, c.phone].filter(Boolean).join(' | ')
-    doc.text(contactLine, pageWidth / 2, yPosition, { align: 'center' })
-    yPosition += 5
-
+    const contactLine1 = [c.email, c.phone].filter(Boolean)
     const locationLine = [c.city, c.state].filter(Boolean).join(', ')
-    if (locationLine) {
-      doc.text(locationLine, pageWidth / 2, yPosition, { align: 'center' })
+    if (locationLine) contactLine1.push(locationLine)
+
+    if (contactLine1.length > 0) {
+      doc.text(contactLine1.join(' | '), pageWidth / 2, yPosition, { align: 'center' })
       yPosition += 5
     }
 
-    if (c.linkedIn) {
-      doc.text(`LinkedIn: ${c.linkedIn}`, pageWidth / 2, yPosition, { align: 'center' })
+    // Contact info line 2: LinkedIn | Website
+    const contactLine2 = []
+    if (c.linkedIn) contactLine2.push(c.linkedIn)
+    if (c.website) contactLine2.push(c.website)
+
+    if (contactLine2.length > 0) {
+      doc.setTextColor(30, 70, 120) // Blue for links
+      doc.text(contactLine2.join(' | '), pageWidth / 2, yPosition, { align: 'center' })
+      doc.setTextColor(0, 0, 0) // Reset to black
       yPosition += 5
     }
 
-    yPosition += 5
+    yPosition += 3
+    doc.setDrawColor(180, 180, 180)
+    doc.setLineWidth(0.5)
     doc.line(margin, yPosition, pageWidth - margin, yPosition)
     yPosition += 8
   }
 
-  // Professional Summary
-  if (resumeData.summary) {
-    checkPageBreak(30)
-    doc.setFontSize(14)
-    doc.setFont(undefined, 'bold')
-    doc.text('PROFESSIONAL SUMMARY', margin, yPosition)
-    yPosition += 7
+  // ==================== PROFESSIONAL SUMMARY ====================
+  if (resumeData.summary && resumeData.summary.trim()) {
+    addSectionHeader('Professional Summary')
 
     doc.setFontSize(10)
     doc.setFont(undefined, 'normal')
-    const summaryLines = doc.splitTextToSize(resumeData.summary, pageWidth - 2 * margin)
+    const summaryLines = doc.splitTextToSize(resumeData.summary.trim(), contentWidth)
     summaryLines.forEach(line => {
-      checkPageBreak()
+      checkPageBreak(6)
       doc.text(line, margin, yPosition)
       yPosition += 5
     })
     yPosition += 5
   }
 
-  // Work Experience
-  if (resumeData.experience && resumeData.experience.length > 0) {
-    checkPageBreak(30)
-    doc.setFontSize(14)
-    doc.setFont(undefined, 'bold')
-    doc.text('PROFESSIONAL EXPERIENCE', margin, yPosition)
-    yPosition += 7
+  // ==================== MILITARY SERVICE ====================
+  if (resumeData.militaryService) {
+    const ms = resumeData.militaryService
+    if (ms.branch || ms.rank || ms.mos) {
+      addSectionHeader('Military Service')
 
-    resumeData.experience.forEach((exp, idx) => {
-      checkPageBreak(20)
-      doc.setFontSize(12)
+      doc.setFontSize(11)
       doc.setFont(undefined, 'bold')
-      doc.text(exp.title || '', margin, yPosition)
-      yPosition += 6
+      const serviceHeader = [ms.branch, ms.rank].filter(Boolean).join(', ')
+      if (serviceHeader) {
+        doc.text(serviceHeader, margin, yPosition)
+        yPosition += 5
+      }
 
       doc.setFontSize(10)
       doc.setFont(undefined, 'normal')
-      doc.text(exp.organization || '', margin, yPosition)
-      doc.text(`${exp.startDate || ''} - ${exp.current ? 'Present' : exp.endDate || ''}`, pageWidth - margin, yPosition, { align: 'right' })
-      yPosition += 6
+      const serviceDetails = []
+      if (ms.mos) serviceDetails.push(`MOS: ${ms.mos}`)
+      if (ms.yearsOfService) serviceDetails.push(`${ms.yearsOfService} years of service`)
 
-      if (exp.accomplishments && exp.accomplishments.length > 0) {
-        exp.accomplishments.forEach(acc => {
-          checkPageBreak(8)
-          const bullet = '•  ' + (acc.description || '')
-          const lines = doc.splitTextToSize(bullet, pageWidth - 2 * margin - 5)
-          lines.forEach(line => {
-            doc.text(line, margin + 3, yPosition)
-            yPosition += 5
-          })
-        })
+      if (serviceDetails.length > 0) {
+        doc.text(serviceDetails.join(' | '), margin, yPosition)
+        yPosition += 5
       }
+
+      if (ms.honorableDischarge) {
+        doc.setFont(undefined, 'italic')
+        doc.text('Honorable Discharge', margin, yPosition)
+        doc.setFont(undefined, 'normal')
+        yPosition += 5
+      }
+
       yPosition += 3
-    })
-    yPosition += 3
+    }
   }
 
-  // Education
-  if (resumeData.education && resumeData.education.length > 0) {
-    checkPageBreak(30)
-    doc.setFontSize(14)
-    doc.setFont(undefined, 'bold')
-    doc.text('EDUCATION', margin, yPosition)
-    yPosition += 7
+  // ==================== PROFESSIONAL EXPERIENCE ====================
+  if (resumeData.experience && resumeData.experience.length > 0) {
+    addSectionHeader('Professional Experience')
 
-    resumeData.education.forEach(edu => {
-      checkPageBreak(15)
-      doc.setFontSize(11)
+    resumeData.experience.forEach((exp, idx) => {
+      checkPageBreak(25)
+
+      // Job title (bold, slightly larger)
+      doc.setFontSize(12)
       doc.setFont(undefined, 'bold')
-      doc.text(edu.degree || '', margin, yPosition)
+      doc.text(exp.title || 'Position Title', margin, yPosition)
+      yPosition += 6
+
+      // Company and dates
+      doc.setFontSize(10)
+      doc.setFont(undefined, 'normal')
+      const company = exp.organization || exp.company || ''
+      const location = exp.location || ''
+      const dateRange = `${exp.startDate || ''} - ${exp.current ? 'Present' : exp.endDate || ''}`
+
+      if (company) {
+        doc.setFont(undefined, 'bold')
+        doc.text(company, margin, yPosition)
+        doc.setFont(undefined, 'normal')
+      }
+
+      if (location || dateRange) {
+        doc.setTextColor(80, 80, 80) // Gray for dates
+        doc.text(dateRange, pageWidth - margin, yPosition, { align: 'right' })
+        doc.setTextColor(0, 0, 0)
+      }
       yPosition += 5
 
+      if (location) {
+        doc.setTextColor(80, 80, 80)
+        doc.setFont(undefined, 'italic')
+        doc.text(location, margin, yPosition)
+        doc.setFont(undefined, 'normal')
+        doc.setTextColor(0, 0, 0)
+        yPosition += 5
+      }
+
+      // Accomplishments/Responsibilities
+      if (exp.accomplishments && exp.accomplishments.length > 0) {
+        yPosition += 2
+        exp.accomplishments.forEach(acc => {
+          const accomplishmentText = typeof acc === 'string' ? acc : (acc.description || '')
+          if (accomplishmentText.trim()) {
+            addBullet(accomplishmentText.trim(), 3)
+          }
+        })
+      }
+
+      // Space between jobs
+      if (idx < resumeData.experience.length - 1) {
+        yPosition += 4
+      }
+    })
+    yPosition += 5
+  }
+
+  // ==================== EDUCATION ====================
+  if (resumeData.education && resumeData.education.length > 0) {
+    addSectionHeader('Education')
+
+    resumeData.education.forEach((edu, idx) => {
+      checkPageBreak(20)
+
+      // Degree
+      doc.setFontSize(11)
+      doc.setFont(undefined, 'bold')
+      doc.text(edu.degree || 'Degree', margin, yPosition)
+      yPosition += 5
+
+      // School and date
       doc.setFontSize(10)
       doc.setFont(undefined, 'normal')
       doc.text(edu.school || '', margin, yPosition)
-      doc.text(edu.graduationDate || '', pageWidth - margin, yPosition, { align: 'right' })
+
+      const gradDate = edu.graduationDate || edu.graduationYear || ''
+      if (gradDate) {
+        doc.text(gradDate, pageWidth - margin, yPosition, { align: 'right' })
+      }
       yPosition += 5
 
-      if (edu.gpa) {
-        doc.text(`GPA: ${edu.gpa}`, margin, yPosition)
+      // Location
+      if (edu.location) {
+        doc.setTextColor(80, 80, 80)
+        doc.setFont(undefined, 'italic')
+        doc.text(edu.location, margin, yPosition)
+        doc.setFont(undefined, 'normal')
+        doc.setTextColor(0, 0, 0)
         yPosition += 5
       }
-      yPosition += 2
+
+      // GPA / Honors
+      const extras = []
+      if (edu.gpa) extras.push(`GPA: ${edu.gpa}`)
+      if (edu.honors) extras.push(edu.honors)
+
+      if (extras.length > 0) {
+        doc.text(extras.join(' | '), margin, yPosition)
+        yPosition += 5
+      }
+
+      if (idx < resumeData.education.length - 1) {
+        yPosition += 3
+      }
     })
-    yPosition += 3
+    yPosition += 5
   }
 
-  // Skills
+  // ==================== SKILLS ====================
   if (resumeData.skills && resumeData.skills.length > 0) {
-    checkPageBreak(20)
-    doc.setFontSize(14)
-    doc.setFont(undefined, 'bold')
-    doc.text('SKILLS', margin, yPosition)
-    yPosition += 7
+    addSectionHeader('Skills')
 
     doc.setFontSize(10)
     doc.setFont(undefined, 'normal')
     const skillsText = resumeData.skills.join(' • ')
-    const skillsLines = doc.splitTextToSize(skillsText, pageWidth - 2 * margin)
+    const skillsLines = doc.splitTextToSize(skillsText, contentWidth)
     skillsLines.forEach(line => {
-      checkPageBreak()
+      checkPageBreak(6)
       doc.text(line, margin, yPosition)
       yPosition += 5
     })
-    yPosition += 3
+    yPosition += 5
   }
 
-  // Certifications
+  // ==================== CERTIFICATIONS ====================
   if (resumeData.certifications && resumeData.certifications.length > 0) {
-    checkPageBreak(20)
-    doc.setFontSize(14)
-    doc.setFont(undefined, 'bold')
-    doc.text('CERTIFICATIONS', margin, yPosition)
-    yPosition += 7
+    addSectionHeader('Certifications')
 
     doc.setFontSize(10)
     doc.setFont(undefined, 'normal')
+
     resumeData.certifications.forEach(cert => {
-      checkPageBreak(8)
-      doc.text(`${cert.name || ''} - ${cert.issuer || ''}`, margin, yPosition)
-      yPosition += 5
-      doc.setFontSize(9)
-      doc.setTextColor(100)
-      doc.text(`Issued: ${cert.dateObtained || ''}${cert.expirationDate ? ` | Expires: ${cert.expirationDate}` : ''}`, margin, yPosition)
-      doc.setTextColor(0)
-      doc.setFontSize(10)
-      yPosition += 6
+      checkPageBreak(12)
+
+      // Certification name and issuer
+      const certLine = [cert.name, cert.issuer].filter(Boolean).join(' - ')
+      if (certLine) {
+        doc.setFont(undefined, 'bold')
+        doc.text(certLine, margin, yPosition)
+        doc.setFont(undefined, 'normal')
+        yPosition += 5
+      }
+
+      // Date info
+      const dates = []
+      if (cert.date) dates.push(`Issued: ${cert.date}`)
+      if (cert.expirationDate) dates.push(`Expires: ${cert.expirationDate}`)
+
+      if (dates.length > 0) {
+        doc.setFontSize(9)
+        doc.setTextColor(80, 80, 80)
+        doc.text(dates.join(' | '), margin, yPosition)
+        doc.setTextColor(0, 0, 0)
+        doc.setFontSize(10)
+        yPosition += 5
+      }
+
+      yPosition += 2
     })
   }
 
-  const fileName = `Resume_${new Date().toISOString().split('T')[0]}.pdf`
+  // ==================== GENERATE FILENAME ====================
+  let fileName = 'Resume.pdf'
+  if (resumeData.contactInfo) {
+    const firstName = (resumeData.contactInfo.firstName || '').trim()
+    const lastName = (resumeData.contactInfo.lastName || '').trim()
+
+    if (firstName || lastName) {
+      fileName = `${firstName}_${lastName}_Resume.pdf`.replace(/\s+/g, '_')
+    }
+  }
+
+  // Save the PDF
   doc.save(fileName)
   return fileName
 }

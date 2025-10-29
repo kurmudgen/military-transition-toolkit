@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
 import AIAssistant from './AIAssistant'
+import PromoBanner from './PromoBanner'
 
 // Initialize dark mode from localStorage before component mounts
 const getInitialDarkMode = () => {
@@ -172,6 +173,9 @@ export default function Layout() {
         </div>
       </nav>
 
+      {/* Veterans Day Promo Banner */}
+      <PromoBanner />
+
       <main className="flex-1 max-w-7xl w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <Outlet />
       </main>
@@ -181,10 +185,10 @@ export default function Layout() {
           <div className="text-center mb-4">
             <p className="text-slate-300 text-sm mb-2 flex items-center justify-center gap-2 flex-wrap">
               <span className="text-lg">🔒</span>
-              <strong>Your Privacy:</strong> All data stored locally on your device only
+              <strong>Your Privacy:</strong> End-to-end encrypted cloud storage
             </p>
             <p className="text-slate-400 text-xs">
-              No servers • No tracking • No accounts • No cloud storage
+              Military-grade encryption • Secure cloud backup • Access from any device
             </p>
           </div>
 
@@ -201,6 +205,9 @@ export default function Layout() {
             <Link to="/privacy" className="text-slate-400 hover:text-white transition-colors">
               Privacy Policy
             </Link>
+            <Link to="/refund-policy" className="text-slate-400 hover:text-white transition-colors">
+              Refund Policy
+            </Link>
             <a
               href="mailto:support@militarytransitiontoolkit.com"
               className="text-slate-400 hover:text-white transition-colors"
@@ -209,9 +216,12 @@ export default function Layout() {
             </a>
           </div>
 
-          <div className="text-center">
+          <div className="text-center space-y-2">
             <p className="text-slate-500 text-xs">
               Built by veterans, for veterans • 100% privacy-focused • Open and honest
+            </p>
+            <p className="text-slate-500 text-xs">
+              © 2025 Military Transition Toolkit | Not affiliated with or endorsed by the U.S. Department of Defense
             </p>
           </div>
         </div>
