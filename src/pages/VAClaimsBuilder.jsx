@@ -386,59 +386,79 @@ export default function VAClaimsBuilder() {
   }
 
   const exportEvidenceChecklist = () => {
-    let text = 'VA CLAIMS EVIDENCE TRACKER\n'
-    text += '='.repeat(80) + '\n\n'
+    try {
+      let text = 'VA CLAIMS EVIDENCE TRACKER\n'
+      text += '='.repeat(80) + '\n\n'
 
-    selectedConditions.forEach((condition, idx) => {
-      const evidence = evidenceTracking[condition]
-      if (!evidence) return
+      selectedConditions.forEach((condition, idx) => {
+        const evidence = evidenceTracking[condition]
+        if (!evidence) return
 
-      text += `${idx + 1}. ${condition.toUpperCase()}\n`
-      text += `   Progress: ${getEvidenceProgress(condition)}% complete\n\n`
+        text += `${idx + 1}. ${condition.toUpperCase()}\n`
+        text += `   Progress: ${getEvidenceProgress(condition)}% complete\n\n`
 
-      text += '   REQUIRED EVIDENCE:\n'
-      text += `   ☐ STRs - Status: ${evidence.required.strs.status}\n`
-      if (evidence.required.strs.notes) text += `      Notes: ${evidence.required.strs.notes}\n`
-      text += `   ☐ Diagnosis - Status: ${evidence.required.diagnosis.status}\n`
-      if (evidence.required.diagnosis.doctor) text += `      Doctor: ${evidence.required.diagnosis.doctor}\n`
-      text += `   ☐ Nexus Letter - Status: ${evidence.required.nexus.status}\n`
-      if (evidence.required.nexus.doctor) text += `      Doctor: ${evidence.required.nexus.doctor}\n`
+        text += '   REQUIRED EVIDENCE:\n'
+        text += `   ☐ STRs - Status: ${evidence.required.strs.status}\n`
+        if (evidence.required.strs.notes) text += `      Notes: ${evidence.required.strs.notes}\n`
+        text += `   ☐ Diagnosis - Status: ${evidence.required.diagnosis.status}\n`
+        if (evidence.required.diagnosis.doctor) text += `      Doctor: ${evidence.required.diagnosis.doctor}\n`
+        text += `   ☐ Nexus Letter - Status: ${evidence.required.nexus.status}\n`
+        if (evidence.required.nexus.doctor) text += `      Doctor: ${evidence.required.nexus.doctor}\n`
 
-      text += '\n   RECOMMENDED EVIDENCE:\n'
-      text += `   ☐ Buddy Statements - Count: ${evidence.recommended.buddyStatements.count}\n`
-      text += `   ☐ Commander Statement - Status: ${evidence.recommended.commanderStatement.status}\n`
-      text += `   ☐ Photos/Videos - Has: ${evidence.recommended.photos.has ? 'Yes' : 'No'}\n`
-      text += `   ☐ Prescriptions - ${evidence.recommended.prescriptions.medications || 'Not documented'}\n`
-      text += `   ☐ Appointment History - ${evidence.recommended.appointments.count || 'Not tracked'}\n`
-      text += `   ☐ DBQ - Status: ${evidence.recommended.dbq.status}\n`
+        text += '\n   RECOMMENDED EVIDENCE:\n'
+        text += `   ☐ Buddy Statements - Count: ${evidence.recommended.buddyStatements.count}\n`
+        text += `   ☐ Commander Statement - Status: ${evidence.recommended.commanderStatement.status}\n`
+        text += `   ☐ Photos/Videos - Has: ${evidence.recommended.photos.has ? 'Yes' : 'No'}\n`
+        text += `   ☐ Prescriptions - ${evidence.recommended.prescriptions.medications || 'Not documented'}\n`
+        text += `   ☐ Appointment History - ${evidence.recommended.appointments.count || 'Not tracked'}\n`
+        text += `   ☐ DBQ - Status: ${evidence.recommended.dbq.status}\n`
 
-      text += '\n' + '-'.repeat(80) + '\n\n'
-    })
+        text += '\n' + '-'.repeat(80) + '\n\n'
+      })
 
-    const blob = new Blob([text], { type: 'text/plain' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = 'va-claims-evidence-tracker.txt'
-    a.click()
+      const blob = new Blob([text], { type: 'text/plain' })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = 'va-claims-evidence-tracker.txt'
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+
+      // Clean up the URL object
+      setTimeout(() => URL.revokeObjectURL(url), 100)
+    } catch (error) {
+      console.error('Error exporting evidence checklist:', error)
+      alert('Error exporting file. Please try again.')
+    }
   }
 
   const exportAsText = () => {
     if (!generatedStatements) return
 
-    let text = 'VA DISABILITY CLAIM STATEMENTS\n\n'
-    text += '='.repeat(60) + '\n\n'
+    try {
+      let text = 'VA DISABILITY CLAIM STATEMENTS\n\n'
+      text += '='.repeat(60) + '\n\n'
 
-    Object.entries(generatedStatements).forEach(([condition, statement], idx) => {
-      text += `${idx + 1}. ${statement}\n\n`
-    })
+      Object.entries(generatedStatements).forEach(([condition, statement], idx) => {
+        text += `${idx + 1}. ${statement}\n\n`
+      })
 
-    const blob = new Blob([text], { type: 'text/plain' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = 'va-claim-statements.txt'
-    a.click()
+      const blob = new Blob([text], { type: 'text/plain' })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = 'va-claim-statements.txt'
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+
+      // Clean up the URL object
+      setTimeout(() => URL.revokeObjectURL(url), 100)
+    } catch (error) {
+      console.error('Error exporting claim statements:', error)
+      alert('Error exporting file. Please try again.')
+    }
   }
 
   const copyToClipboard = () => {

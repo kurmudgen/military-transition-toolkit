@@ -106,7 +106,7 @@ export default function Pricing() {
   )
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="max-w-7xl mx-auto px-4 py-12 bg-white dark:bg-gray-900 min-h-screen transition-colors">
       {/* Veterans Day Promo Header */}
       {promoActive && (
         <div className="mb-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
@@ -225,28 +225,28 @@ export default function Pricing() {
               </tr>
               <tr>
                 <td className="py-4 px-6 text-gray-700 dark:text-gray-300">Advanced retirement calculator (BRS & High-3)</td>
-                <td className="text-center py-4 px-6 text-gray-400">Basic only</td>
+                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">Basic only</td>
                 <td className="text-center py-4 px-6">
                   <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
                 </td>
               </tr>
               <tr>
                 <td className="py-4 px-6 text-gray-700 dark:text-gray-300">VA disability claims builder</td>
-                <td className="text-center py-4 px-6 text-gray-400">—</td>
+                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">—</td>
                 <td className="text-center py-4 px-6">
                   <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
                 </td>
               </tr>
               <tr>
                 <td className="py-4 px-6 text-gray-700 dark:text-gray-300">Cloud storage & device sync</td>
-                <td className="text-center py-4 px-6 text-gray-400">—</td>
+                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">—</td>
                 <td className="text-center py-4 px-6">
                   <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
                 </td>
               </tr>
               <tr>
                 <td className="py-4 px-6 text-gray-700 dark:text-gray-300">Priority support</td>
-                <td className="text-center py-4 px-6 text-gray-400">—</td>
+                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">—</td>
                 <td className="text-center py-4 px-6">
                   <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
                 </td>

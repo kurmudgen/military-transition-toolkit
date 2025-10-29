@@ -37,6 +37,9 @@ export default function JobSearch() {
 
     const apps = localStorage.getItem('jobApplications')
     if (apps) setApplications(JSON.parse(apps))
+
+    // Run initial search to show jobs by default
+    handleSearch()
   }, [])
 
   // Save to localStorage when data changes
