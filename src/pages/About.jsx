@@ -160,8 +160,8 @@ export default function About() {
             </p>
             <p className="text-slate-400 mt-4 text-sm">
               Questions or feedback?<br/>
-              <a href="mailto:support@formationlabs.com" className="text-blue-400 hover:text-blue-300">
-                support@formationlabs.com
+              <a href="mailto:support@formationlabs.net" className="text-blue-400 hover:text-blue-300">
+                support@formationlabs.net
               </a>
             </p>
           </div>

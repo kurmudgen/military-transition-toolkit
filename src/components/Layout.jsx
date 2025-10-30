@@ -209,7 +209,7 @@ export default function Layout() {
               Refund Policy
             </Link>
             <a
-              href="mailto:support@formationlabs.com"
+              href="mailto:support@formationlabs.net"
               className="text-slate-400 hover:text-white transition-colors"
             >
               Contact Support

@@ -200,7 +200,7 @@ export default function Terms() {
                 For questions about these Terms, please contact us at:
               </p>
               <p className="text-blue-400">
-                support@formationlabs.com
+                support@formationlabs.net
               </p>
             </section>
 

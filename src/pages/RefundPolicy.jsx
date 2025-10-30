@@ -39,10 +39,10 @@ export default function RefundPolicy() {
                 <p className="ml-4">
                   <strong>Email:</strong>{' '}
                   <a
-                    href="mailto:support@formationlabs.com"
+                    href="mailto:support@formationlabs.net"
                     className="text-blue-400 hover:text-blue-300"
                   >
-                    support@formationlabs.com
+                    support@formationlabs.net
                   </a>
                 </p>
               </div>
@@ -139,10 +139,10 @@ export default function RefundPolicy() {
               <p className="text-slate-300">
                 <strong>Email:</strong>{' '}
                 <a
-                  href="mailto:support@formationlabs.com"
+                  href="mailto:support@formationlabs.net"
                   className="text-blue-400 hover:text-blue-300"
                 >
-                  support@formationlabs.com
+                  support@formationlabs.net
                 </a>
               </p>
               <p className="text-slate-400 text-sm mt-4">

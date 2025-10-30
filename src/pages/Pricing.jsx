@@ -80,7 +80,7 @@ export default function Pricing() {
       window.location.href = checkoutUrl
     } catch (error) {
       console.error('Checkout error:', error)
-      alert(`Error starting checkout: ${error.message}. Please try again or contact support@formationlabs.com`)
+      alert(`Error starting checkout: ${error.message}. Please try again or contact support@formationlabs.net`)
       setLoading(false)
     }
   }

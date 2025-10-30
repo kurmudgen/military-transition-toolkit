@@ -288,7 +288,7 @@ export default function Landing() {
               <ul className="space-y-2 text-slate-400 text-sm">
                 <li><Link to="/app/about" className="hover:text-white">About</Link></li>
                 <li><Link to="/app/faq" className="hover:text-white">FAQ</Link></li>
-                <li><a href="mailto:support@formationlabs.com" className="hover:text-white">Contact</a></li>
+                <li><a href="mailto:support@formationlabs.net" className="hover:text-white">Contact</a></li>
               </ul>
             </div>
             <div>

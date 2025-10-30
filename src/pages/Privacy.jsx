@@ -335,7 +335,7 @@ export default function Privacy() {
                 If you have questions about this Privacy Policy or our privacy practices, contact us at:
               </p>
               <p className="text-blue-400 mb-4">
-                support@formationlabs.com
+                support@formationlabs.net
               </p>
               <p className="text-sm">
                 We aim to respond to all privacy inquiries within 48 hours.
