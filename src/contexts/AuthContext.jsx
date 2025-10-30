@@ -91,23 +91,79 @@ export const AuthProvider = ({ children }) => {
     },
     signInWithGoogle: async () => {
       if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
-      const { data, error } = await supabase.auth.signInWithOAuth({
-        provider: 'google',
-        options: {
-          redirectTo: `${window.location.origin}/auth/callback`
+
+      try {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+          provider: 'google',
+          options: {
+            redirectTo: `${window.location.origin}/auth/callback`
+          }
+        })
+
+        if (error) {
+          console.error('Google OAuth error:', error)
+
+          // Provide helpful error messages
+          if (error.message?.includes('provider')) {
+            return {
+              data: null,
+              error: {
+                message: 'Google sign-in is not configured yet. Please use email/password sign-in for now, or contact support@formationlabs.net'
+              }
+            }
+          }
+
+          return { data, error }
         }
-      })
-      return { data, error }
+
+        return { data, error }
+      } catch (err) {
+        console.error('Unexpected Google OAuth error:', err)
+        return {
+          data: null,
+          error: {
+            message: 'Google sign-in is temporarily unavailable. Please use email/password sign-in.'
+          }
+        }
+      }
     },
     signInWithApple: async () => {
       if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
-      const { data, error } = await supabase.auth.signInWithOAuth({
-        provider: 'apple',
-        options: {
-          redirectTo: `${window.location.origin}/auth/callback`
+
+      try {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+          provider: 'apple',
+          options: {
+            redirectTo: `${window.location.origin}/auth/callback`
+          }
+        })
+
+        if (error) {
+          console.error('Apple OAuth error:', error)
+
+          // Provide helpful error messages
+          if (error.message?.includes('provider')) {
+            return {
+              data: null,
+              error: {
+                message: 'Apple sign-in is not configured yet. Please use email/password sign-in for now, or contact support@formationlabs.net'
+              }
+            }
+          }
+
+          return { data, error }
         }
-      })
-      return { data, error }
+
+        return { data, error }
+      } catch (err) {
+        console.error('Unexpected Apple OAuth error:', err)
+        return {
+          data: null,
+          error: {
+            message: 'Apple sign-in is temporarily unavailable. Please use email/password sign-in.'
+          }
+        }
+      }
     },
     signOut: async () => {
       if (!supabase) {
