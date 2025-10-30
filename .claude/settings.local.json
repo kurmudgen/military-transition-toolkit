@@ -15,7 +15,9 @@
       "Bash(vercel --prod)",
       "Bash(npx vercel:*)",
       "Bash(npm install:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm test)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

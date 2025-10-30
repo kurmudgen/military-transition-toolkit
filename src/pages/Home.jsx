@@ -22,6 +22,7 @@ export default function Home() {
   const [showSetup, setShowSetup] = useState(false)
   const [currentTip, setCurrentTip] = useState(0)
   const [isEditingDate, setIsEditingDate] = useState(false)
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
 
   // Load user setup from localStorage
   useEffect(() => {
@@ -42,6 +43,17 @@ export default function Home() {
   useEffect(() => {
     document.title = 'Military Transition Toolkit - Plan Your Transition'
     trackPageView('Home Dashboard')
+
+    // Check for successful upgrade
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('upgrade') === 'success') {
+      setShowSuccessMessage(true)
+      // Clear the URL parameter
+      window.history.replaceState({}, '', '/app')
+
+      // Auto-hide message after 8 seconds
+      setTimeout(() => setShowSuccessMessage(false), 8000)
+    }
   }, [])
 
   // Rotate tips every 10 seconds
@@ -540,6 +552,27 @@ export default function Home() {
   // Main Dashboard View
   return (
     <div className="px-4 py-6 sm:px-0 max-w-7xl mx-auto">
+      {/* Success Message */}
+      {showSuccessMessage && (
+        <div className="mb-6 bg-green-50 dark:bg-green-900/20 border-2 border-green-500 dark:border-green-600 rounded-xl p-6 text-center shadow-lg">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <span className="text-3xl">🎉</span>
+            <p className="text-green-800 dark:text-green-200 font-bold text-xl">
+              Welcome to Premium!
+            </p>
+          </div>
+          <p className="text-green-700 dark:text-green-300 text-sm">
+            Your payment was successful. All premium features are now unlocked!
+          </p>
+          <button
+            onClick={() => setShowSuccessMessage(false)}
+            className="mt-4 text-green-700 dark:text-green-300 text-sm underline hover:no-underline"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
       {/* Header with settings */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-3">
         <div className="flex-1">

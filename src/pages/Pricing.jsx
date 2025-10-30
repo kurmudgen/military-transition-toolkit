@@ -2,13 +2,28 @@ import { useState, useEffect } from 'react'
 import { CheckCircleIcon, SparklesIcon, RocketLaunchIcon } from '@heroicons/react/24/outline'
 import { isPromoActive, getTimeRemaining, PRICING } from '../utils/promoConfig'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
+import { createCheckoutSession } from '../services/subscriptionService'
+import { getCurrentUser } from '../lib/supabase'
 
 export default function Pricing() {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining())
+  const [loading, setLoading] = useState(false)
+  const [showCancelMessage, setShowCancelMessage] = useState(false)
   const promoActive = isPromoActive()
 
   useEffect(() => {
     trackPageView('/pricing')
+
+    // Check for upgrade cancellation
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('upgrade') === 'cancelled') {
+      setShowCancelMessage(true)
+      // Clear the URL parameter
+      window.history.replaceState({}, '', '/pricing')
+
+      // Auto-hide message after 5 seconds
+      setTimeout(() => setShowCancelMessage(false), 5000)
+    }
 
     // Update countdown every minute
     const timer = setInterval(() => {
@@ -18,11 +33,56 @@ export default function Pricing() {
     return () => clearInterval(timer)
   }, [])
 
-  const handleSelectPlan = (planId) => {
+  // Stripe Price IDs (from user's requirements)
+  const STRIPE_PRICE_IDS = {
+    monthly: 'price_1SN6AIFYTG8L7VE24zbGbW20',
+    annual: 'price_1SN681FYTG8L7VE2OWYjWMYj',
+    lifetime: 'price_1SN6AtFYTG8L7VE2oe4lv86r'
+  }
+
+  const handleSelectPlan = async (planId) => {
     trackButtonClick(`Select Plan - ${planId}`)
-    // For now, just scroll to contact or show message
-    // In production, this would integrate with payment processing
-    alert('Thank you for your interest! Payment integration coming soon. For early access, please contact support@formationlabs.com')
+
+    // Free plan doesn't need Stripe
+    if (planId === 'free') {
+      const user = await getCurrentUser()
+      if (!user) {
+        // Redirect to signup
+        window.location.href = '/signup'
+      } else {
+        // Already have free access, go to dashboard
+        window.location.href = '/app'
+      }
+      return
+    }
+
+    // Paid plans need authentication first
+    const user = await getCurrentUser()
+    if (!user) {
+      // Save intended plan and redirect to signup
+      sessionStorage.setItem('intendedPlan', planId)
+      window.location.href = '/signup'
+      return
+    }
+
+    // Create Stripe checkout session
+    try {
+      setLoading(true)
+      const priceId = STRIPE_PRICE_IDS[planId]
+
+      if (!priceId) {
+        throw new Error('Invalid plan selected')
+      }
+
+      const checkoutUrl = await createCheckoutSession(priceId)
+
+      // Redirect to Stripe checkout
+      window.location.href = checkoutUrl
+    } catch (error) {
+      console.error('Checkout error:', error)
+      alert(`Error starting checkout: ${error.message}. Please try again or contact support@formationlabs.com`)
+      setLoading(false)
+    }
   }
 
   const PlanCard = ({ plan, planId, featured = false }) => (
@@ -93,7 +153,8 @@ export default function Pricing() {
 
       <button
         onClick={() => handleSelectPlan(planId)}
-        className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors mt-auto ${
+        disabled={loading}
+        className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors mt-auto disabled:opacity-50 disabled:cursor-not-allowed ${
           featured
             ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg'
             : planId === 'free'
@@ -101,13 +162,25 @@ export default function Pricing() {
             : 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600'
         }`}
       >
-        {planId === 'free' ? 'Get Started Free' : 'Upgrade Now'}
+        {loading ? 'Processing...' : (planId === 'free' ? 'Get Started Free' : 'Upgrade Now')}
       </button>
     </div>
   )
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 bg-white dark:bg-gray-900 min-h-screen transition-colors">
+      {/* Cancel Message */}
+      {showCancelMessage && (
+        <div className="mb-8 bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-400 dark:border-yellow-600 rounded-xl p-6 text-center">
+          <p className="text-yellow-800 dark:text-yellow-200 font-semibold mb-2">
+            No charge was made to your card
+          </p>
+          <p className="text-yellow-700 dark:text-yellow-300 text-sm">
+            You can try again anytime. We're here to help if you have questions!
+          </p>
+        </div>
+      )}
+
       {/* Veterans Day Promo Header */}
       {promoActive && (
         <div className="mb-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">

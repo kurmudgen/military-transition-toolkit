@@ -77,8 +77,8 @@ export default async function handler(req, res) {
           quantity: 1
         }
       ],
-      success_url: `${process.env.VITE_APP_URL || req.headers.origin}/app/account?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.VITE_APP_URL || req.headers.origin}/pricing`,
+      success_url: `${process.env.VITE_APP_URL || req.headers.origin}/app?upgrade=success&session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.VITE_APP_URL || req.headers.origin}/pricing?upgrade=cancelled`,
       metadata: {
         supabase_user_id: userId
       },
@@ -89,7 +89,7 @@ export default async function handler(req, res) {
       }
     })
 
-    return res.status(200).json({ sessionId: session.id })
+    return res.status(200).json({ url: session.url })
   } catch (error) {
     console.error('Checkout session creation error:', error)
     return res.status(500).json({ error: error.message })

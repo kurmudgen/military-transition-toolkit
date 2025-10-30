@@ -61,8 +61,8 @@ export const createCheckoutSession = async (priceId) => {
       throw new Error(errorData.error || 'Failed to create checkout session')
     }
 
-    const { sessionId } = await response.json()
-    return sessionId
+    const { url } = await response.json()
+    return url
   } catch (error) {
     console.error('Error creating checkout session:', error)
     throw error
