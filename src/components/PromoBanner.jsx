@@ -61,7 +61,7 @@ export default function PromoBanner() {
                 Veterans Day Launch Special: All Premium Features FREE
               </p>
               <p className="text-xs sm:text-sm text-blue-100">
-                Lock in Founding Member pricing ($199 lifetime) before it increases to $399 on {formattedDate}
+                Lock in Founding Member pricing ($249 lifetime) before it increases to $399 on {formattedDate}
               </p>
             </div>
           </div>

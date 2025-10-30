@@ -138,7 +138,7 @@ export default function Pricing() {
 
           <p className="text-blue-100 max-w-2xl mx-auto">
             Explore everything risk-free, then choose your plan. Lock in <strong>Founding Member</strong> pricing
-            ($199 lifetime) before it increases to $399 after Veterans Day.
+            ($249 lifetime) before it increases to $399 after Veterans Day.
           </p>
         </div>
       )}

@@ -15,6 +15,7 @@ import {
 import { useFeatureAccess, useUsageLimits } from '../hooks/useFeatureAccess'
 import { FEATURES } from '../utils/featureGating'
 import UpgradePrompt, { PremiumBadge } from '../components/UpgradePrompt'
+import { generateResumePDF } from '../utils/pdfExport'
 
 export default function ResumeBuilder() {
   // Feature gating hooks
@@ -325,14 +326,13 @@ export default function ResumeBuilder() {
     // Generate and download PDF
     trackButtonClick('Resume Builder - Export PDF')
     try {
-      const { generateResumePDF } = require('../utils/pdfExport')
       const fileName = generateResumePDF(resumeData, template)
 
       // Show success message
       alert(`✅ Resume exported successfully as ${fileName}`)
     } catch (error) {
       console.error('Error exporting PDF:', error)
-      alert('Error exporting PDF. Please try again.')
+      alert('❌ Error exporting PDF. Please try again.')
     }
   }
 

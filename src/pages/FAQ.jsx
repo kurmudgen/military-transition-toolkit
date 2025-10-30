@@ -204,7 +204,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                We're trying to make a LIVING helping veterans, not making money OFF veterans. The free tier is fully functional for basic transition planning. Premium ($7/month or $199 lifetime) provides advanced features and cloud services that require infrastructure costs. If this helps you successfully transition and you find it valuable, supporting via Premium helps us serve more veterans.
+                We're trying to make a LIVING helping veterans, not making money OFF veterans. The free tier is fully functional for basic transition planning. Premium ($7/month or $249 lifetime) provides advanced features and cloud services that require infrastructure costs. If this helps you successfully transition and you find it valuable, supporting via Premium helps us serve more veterans.
               </div>
             </details>
 

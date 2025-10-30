@@ -88,7 +88,7 @@ export const PRICING = {
   },
   LIFETIME: {
     name: 'Founding Member',
-    price: 199,
+    price: 249,
     originalPrice: 399,
     description: 'Lock in lifetime access at launch price',
     badge: 'Limited Time',
