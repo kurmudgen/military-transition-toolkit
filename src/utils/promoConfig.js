@@ -48,26 +48,29 @@ export const getTimeRemaining = () => {
 // Pricing tiers
 export const PRICING = {
   FREE: {
-    name: 'Free Forever',
+    name: 'Free',
     price: 0,
     features: [
-      'Basic transition checklists',
-      'Essential resources and links',
+      '1 resume limit',
+      '5 saved jobs',
+      'Basic transition tools',
       'State benefits comparison',
-      'Retirement calculator (basic)',
-      'Local data storage only'
+      'Resource library access'
     ]
   },
   MONTHLY: {
     name: 'Premium Monthly',
     price: 7,
+    description: 'Advanced features for comprehensive planning',
     features: [
-      'All Free features',
-      'Advanced retirement calculator (BRS & High-3)',
-      'VA disability claims builder',
-      'Document tracking',
-      'Appointments manager',
-      'Cloud storage & sync',
+      'All Free tier features',
+      'Unlimited resumes',
+      'Unlimited saved jobs',
+      'PDF exports',
+      'Advanced calculators',
+      'VA claims builder',
+      'Statement generators',
+      'Evidence tracker',
       'Priority support'
     ]
   },
@@ -76,6 +79,7 @@ export const PRICING = {
     price: 49,
     priceMonthly: 4.08,
     savings: 35,
+    badge: 'Best Value',
     features: [
       'All Premium Monthly features',
       'Save $35 vs monthly',
@@ -86,15 +90,16 @@ export const PRICING = {
     name: 'Founding Member',
     price: 199,
     originalPrice: 399,
+    description: 'Lock in lifetime access at launch price',
+    badge: 'Limited Time',
     features: [
-      'All Premium features',
-      'Lifetime access - pay once, use forever',
-      'Lock in launch pricing (50% off)',
-      'Priority support forever',
+      'All Premium features forever',
+      'Pay once, use forever - no recurring fees',
       'All future premium features included',
+      'Priority support forever',
+      'Will increase to $399 after Veterans Day',
       'Support veteran-built software'
-    ],
-    badge: 'Best Value'
+    ]
   }
 }
 

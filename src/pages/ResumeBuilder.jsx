@@ -300,6 +300,7 @@ export default function ResumeBuilder() {
     setResumeData(resume.data)
     setTemplate(resume.template)
     setResumeName(resume.name)
+    setCurrentStep(8) // Jump to review step to see the loaded resume
     trackButtonClick('Resume Builder - Load Resume')
   }
 
