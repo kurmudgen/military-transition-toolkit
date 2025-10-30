@@ -1,6 +1,17 @@
 import Stripe from 'stripe'
 import { createClient } from '@supabase/supabase-js'
 
+// Verify required environment variables
+if (!process.env.STRIPE_SECRET_KEY) {
+  console.error('CRITICAL: STRIPE_SECRET_KEY is not set')
+}
+if (!process.env.VITE_SUPABASE_URL) {
+  console.error('CRITICAL: VITE_SUPABASE_URL is not set')
+}
+if (!process.env.SUPABASE_SERVICE_ROLE_KEY) {
+  console.error('CRITICAL: SUPABASE_SERVICE_ROLE_KEY is not set')
+}
+
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const supabase = createClient(
   process.env.VITE_SUPABASE_URL,
@@ -8,12 +19,23 @@ const supabase = createClient(
 )
 
 export default async function handler(req, res) {
+  // Set CORS headers
+  res.setHeader('Content-Type', 'application/json')
+
   // Only allow POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
   try {
+    // Check environment variables
+    if (!process.env.STRIPE_SECRET_KEY) {
+      console.error('STRIPE_SECRET_KEY not configured')
+      return res.status(500).json({
+        error: 'Server configuration error',
+        details: 'Payment system not configured'
+      })
+    }
     // ============================================
     // SECURITY: Verify JWT token from Authorization header
     // ============================================
@@ -42,8 +64,19 @@ export default async function handler(req, res) {
     // Only accept priceId from request body
     const { priceId } = req.body
 
+    console.log('Checkout session request:', { userId, email, priceId })
+
     if (!priceId) {
       return res.status(400).json({ error: 'Missing priceId' })
+    }
+
+    // Validate priceId format
+    if (!priceId.startsWith('price_')) {
+      console.error('Invalid priceId format:', priceId)
+      return res.status(400).json({
+        error: 'Invalid price ID',
+        details: 'Price ID must start with "price_"'
+      })
     }
 
     // Check if customer already exists
@@ -67,6 +100,7 @@ export default async function handler(req, res) {
     }
 
     // Create checkout session
+    console.log('Creating checkout session for customer:', customerId)
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'subscription',
@@ -89,9 +123,25 @@ export default async function handler(req, res) {
       }
     })
 
+    console.log('Checkout session created successfully:', session.id)
     return res.status(200).json({ url: session.url })
   } catch (error) {
     console.error('Checkout session creation error:', error)
-    return res.status(500).json({ error: error.message })
+
+    // Return detailed error in development, generic in production
+    const errorResponse = {
+      error: 'Failed to create checkout session',
+      details: error.message || 'Unknown error occurred'
+    }
+
+    // Add Stripe-specific error details if available
+    if (error.type) {
+      errorResponse.type = error.type
+    }
+    if (error.code) {
+      errorResponse.code = error.code
+    }
+
+    return res.status(500).json(errorResponse)
   }
 }

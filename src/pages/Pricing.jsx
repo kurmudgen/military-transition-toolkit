@@ -158,8 +158,8 @@ export default function Pricing() {
           featured
             ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg'
             : planId === 'free'
-            ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg'
-            : 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600'
+            ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md'
+            : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-2 border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 shadow-sm'
         }`}
       >
         {loading ? 'Processing...' : (planId === 'free' ? 'Get Started Free' : 'Upgrade Now')}
