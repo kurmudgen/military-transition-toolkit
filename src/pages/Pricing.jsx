@@ -25,9 +25,9 @@ export default function Pricing() {
     alert('Thank you for your interest! Payment integration coming soon. For early access, please contact support@formationlabs.com')
   }
 
-  const PlanCard = ({ plan, planId, featured = false, showPromo = false }) => (
+  const PlanCard = ({ plan, planId, featured = false }) => (
     <div
-      className={`relative rounded-2xl border-2 p-8 h-full flex flex-col ${
+      className={`relative rounded-2xl border-2 p-8 h-full flex flex-col bg-white dark:bg-gray-800 ${
         featured
           ? 'border-blue-600 dark:border-blue-500 shadow-2xl scale-105'
           : 'border-gray-200 dark:border-gray-700 shadow-lg'
@@ -42,14 +42,6 @@ export default function Pricing() {
           } text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1`}>
             <SparklesIcon className="h-4 w-4" />
             {plan.badge}
-          </div>
-        </div>
-      )}
-
-      {showPromo && promoActive && (
-        <div className="absolute -top-4 right-4">
-          <div className="bg-gradient-to-r from-green-600 to-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
-            🎖️ Launch Special
           </div>
         </div>
       )}
@@ -105,8 +97,8 @@ export default function Pricing() {
           featured
             ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg'
             : planId === 'free'
-            ? 'bg-gray-600 hover:bg-gray-700 text-white'
-            : 'bg-gray-800 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-100'
+            ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg'
+            : 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600'
         }`}
       >
         {planId === 'free' ? 'Get Started Free' : 'Upgrade Now'}
@@ -157,42 +149,44 @@ export default function Pricing() {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 items-stretch">
         <PlanCard plan={PRICING.FREE} planId="free" />
-        <PlanCard plan={PRICING.MONTHLY} planId="monthly" showPromo />
-        <PlanCard plan={PRICING.ANNUAL} planId="annual" showPromo />
-        <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured showPromo />
+        <PlanCard plan={PRICING.MONTHLY} planId="monthly" />
+        <PlanCard plan={PRICING.ANNUAL} planId="annual" />
+        <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured />
       </div>
 
       {/* Launch Special Callout */}
       {promoActive && (
-        <div className="mb-16 bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-400 dark:border-yellow-600 rounded-xl p-8">
-          <div className="flex items-start gap-4">
-            <span className="text-4xl" role="img" aria-label="Medal">🎖️</span>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+        <div className="mb-16 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border-2 border-yellow-400 dark:border-yellow-600 rounded-2xl p-8 shadow-lg">
+          <div className="flex flex-col md:flex-row items-start gap-4">
+            <div className="flex-shrink-0">
+              <span className="text-4xl" role="img" aria-label="Medal">🎖️</span>
+            </div>
+            <div className="flex-1 w-full">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                 Founding Member Launch Special
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
+              <p className="text-gray-800 dark:text-gray-200 mb-4">
                 Lock in lifetime access at <strong>50% off</strong> the regular price. This is a one-time opportunity
                 to become a Founding Member and support veteran-built software.
               </p>
-              <ul className="space-y-2 mb-4">
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400" />
-                  Pay once, use forever - no recurring fees
+              <ul className="space-y-3 mb-4">
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Pay once, use forever - no recurring fees</span>
                 </li>
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400" />
-                  All future premium features included at no extra cost
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>All future premium features included at no extra cost</span>
                 </li>
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400" />
-                  Price increases to $399 on November 11, 2025
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Price increases to $399 on November 11, 2025</span>
                 </li>
               </ul>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                {timeRemaining.days} days remaining to lock in this price
+              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 bg-white/50 dark:bg-gray-800/50 inline-block px-4 py-2 rounded-lg">
+                ⏰ {timeRemaining.days} days remaining to lock in this price
               </p>
             </div>
           </div>
