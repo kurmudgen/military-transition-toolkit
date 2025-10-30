@@ -209,7 +209,7 @@ export default function Layout() {
               Refund Policy
             </Link>
             <a
-              href="mailto:support@militarytransitiontoolkit.com"
+              href="mailto:support@formationlabs.com"
               className="text-slate-400 hover:text-white transition-colors"
             >
               Contact Support

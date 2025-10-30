@@ -254,7 +254,7 @@ export default function FAQ() {
             <p className="text-slate-300 mb-4">
               We read and respond to every message personally.
             </p>
-            <a href="mailto:support@militarytransitiontoolkit.com" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+            <a href="mailto:support@formationlabs.com" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
               Contact Us
             </a>
           </div>

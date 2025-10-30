@@ -22,7 +22,7 @@ export default function Pricing() {
     trackButtonClick(`Select Plan - ${planId}`)
     // For now, just scroll to contact or show message
     // In production, this would integrate with payment processing
-    alert('Thank you for your interest! Payment integration coming soon. For early access, please contact support@militarytransitiontoolkit.com')
+    alert('Thank you for your interest! Payment integration coming soon. For early access, please contact support@formationlabs.com')
   }
 
   const PlanCard = ({ plan, planId, featured = false, showPromo = false }) => (
