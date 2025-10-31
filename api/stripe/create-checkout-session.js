@@ -24,8 +24,16 @@ module.exports = async function handler(req, res) {
 
   // Wrap entire function in try-catch to ensure JSON responses
   try {
-    console.log('=== CHECKOUT SESSION API CALLED ===')
+    console.log('=== STRIPE CHECKOUT DEBUG ===')
     console.log('Timestamp:', new Date().toISOString())
+    console.log('Environment variables check:', {
+      hasStripeSecret: !!process.env.STRIPE_SECRET_KEY,
+      hasSupabaseUrl: !!process.env.SUPABASE_URL,
+      hasServiceRole: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+      hasAppUrl: !!process.env.APP_URL,
+      stripeKeyPrefix: process.env.STRIPE_SECRET_KEY?.substring(0, 7),
+      supabaseUrlPrefix: process.env.SUPABASE_URL?.substring(0, 20)
+    })
     console.log('Request method:', req.method)
     console.log('Request headers:', JSON.stringify(req.headers, null, 2))
 
@@ -255,16 +263,18 @@ module.exports = async function handler(req, res) {
 
   } catch (error) {
     // CRITICAL: Catch ALL errors and return JSON
-    console.error('=== ERROR IN CHECKOUT SESSION CREATION ===')
-    console.error('Error type:', error.constructor.name)
-    console.error('Error message:', error.message)
-    console.error('Error stack:', error.stack)
+    console.error('=== CHECKOUT ERROR ===')
+    console.error('Error type:', error.constructor?.name || 'Unknown')
+    console.error('Error message:', error.message || 'No message')
+    console.error('Error stack:', error.stack || 'No stack trace')
+    console.error('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error), 2))
 
-    // Build detailed error response
+    // Build detailed error response with ALL information
     const errorResponse = {
       error: 'Failed to create checkout session',
       details: error.message || 'Unknown error occurred',
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
+      stack: error.stack || 'No stack trace available'
     }
 
     // Add Stripe-specific error details if available
@@ -277,9 +287,13 @@ module.exports = async function handler(req, res) {
     if (error.statusCode) {
       errorResponse.statusCode = error.statusCode
     }
+    if (error.raw) {
+      errorResponse.stripeRawError = error.raw
+    }
 
-    console.error('Error response:', JSON.stringify(errorResponse, null, 2))
+    console.error('Returning error response:', JSON.stringify(errorResponse, null, 2))
 
+    // ALWAYS return JSON with proper status code
     return res.status(500).json(errorResponse)
   }
 }

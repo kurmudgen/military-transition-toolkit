@@ -24,8 +24,16 @@ module.exports = async function handler(req, res) {
 
   // Wrap entire function in try-catch to ensure JSON responses
   try {
-    console.log('=== PORTAL SESSION API CALLED ===')
+    console.log('=== STRIPE PORTAL DEBUG ===')
     console.log('Timestamp:', new Date().toISOString())
+    console.log('Environment variables check:', {
+      hasStripeSecret: !!process.env.STRIPE_SECRET_KEY,
+      hasSupabaseUrl: !!process.env.SUPABASE_URL,
+      hasServiceRole: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+      hasAppUrl: !!process.env.APP_URL,
+      stripeKeyPrefix: process.env.STRIPE_SECRET_KEY?.substring(0, 7),
+      supabaseUrlPrefix: process.env.SUPABASE_URL?.substring(0, 20)
+    })
 
     // Load dependencies inside try-catch
     console.log('Loading dependencies...')
@@ -169,21 +177,38 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ url: session.url })
 
   } catch (error) {
-    console.error('Portal session creation error:', error)
+    // CRITICAL: Catch ALL errors and return JSON
+    console.error('=== PORTAL ERROR ===')
+    console.error('Error type:', error.constructor?.name || 'Unknown')
+    console.error('Error message:', error.message || 'No message')
+    console.error('Error stack:', error.stack || 'No stack trace')
+    console.error('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error), 2))
 
-    // Build error response
+    // Build detailed error response with ALL information
     const errorResponse = {
       error: 'Failed to create portal session',
-      details: error.message || 'Unknown error occurred'
+      details: error.message || 'Unknown error occurred',
+      timestamp: new Date().toISOString(),
+      stack: error.stack || 'No stack trace available'
     }
 
+    // Add Stripe-specific error details if available
     if (error.type) {
       errorResponse.stripeErrorType = error.type
     }
     if (error.code) {
       errorResponse.stripeErrorCode = error.code
     }
+    if (error.statusCode) {
+      errorResponse.statusCode = error.statusCode
+    }
+    if (error.raw) {
+      errorResponse.stripeRawError = error.raw
+    }
 
+    console.error('Returning error response:', JSON.stringify(errorResponse, null, 2))
+
+    // ALWAYS return JSON with proper status code
     return res.status(500).json(errorResponse)
   }
 }
