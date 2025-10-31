@@ -1,8 +1,9 @@
-// Use CommonJS for Vercel serverless functions
-// NOTE: Requires are moved inside function to ensure errors return JSON
+// ES6 modules for Vercel serverless functions
+import Stripe from 'stripe'
+import { createClient } from '@supabase/supabase-js'
 
 // Serverless function handler
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   // CRITICAL: Set Content-Type header FIRST before any processing
   res.setHeader('Content-Type', 'application/json')
 
@@ -34,35 +35,6 @@ module.exports = async function handler(req, res) {
       stripeKeyPrefix: process.env.STRIPE_SECRET_KEY?.substring(0, 7),
       supabaseUrlPrefix: process.env.SUPABASE_URL?.substring(0, 20)
     })
-
-    // Load dependencies inside try-catch
-    console.log('Loading dependencies...')
-    let Stripe, createClient
-
-    try {
-      Stripe = require('stripe')
-      console.log('✓ Stripe module loaded')
-    } catch (err) {
-      console.error('✗ Failed to load Stripe module:', err.message)
-      return res.status(500).json({
-        error: 'Server dependency error',
-        details: 'Failed to load Stripe module',
-        message: err.message
-      })
-    }
-
-    try {
-      const supabaseLib = require('@supabase/supabase-js')
-      createClient = supabaseLib.createClient
-      console.log('✓ Supabase module loaded')
-    } catch (err) {
-      console.error('✗ Failed to load Supabase module:', err.message)
-      return res.status(500).json({
-        error: 'Server dependency error',
-        details: 'Failed to load Supabase module',
-        message: err.message
-      })
-    }
 
     // Validate environment variables
     console.log('Validating environment variables...')

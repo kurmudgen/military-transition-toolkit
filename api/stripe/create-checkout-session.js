@@ -1,8 +1,9 @@
-// Use CommonJS for Vercel serverless functions
-// NOTE: Requires are moved inside function to ensure errors return JSON
+// ES6 modules for Vercel serverless functions
+import Stripe from 'stripe'
+import { createClient } from '@supabase/supabase-js'
 
 // Serverless function handler
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   // CRITICAL: Set Content-Type header FIRST before any processing
   res.setHeader('Content-Type', 'application/json')
 
@@ -38,38 +39,7 @@ module.exports = async function handler(req, res) {
     console.log('Request headers:', JSON.stringify(req.headers, null, 2))
 
     // ============================================
-    // STEP 1: Load dependencies inside try-catch
-    // ============================================
-    console.log('Loading dependencies...')
-    let Stripe, createClient
-
-    try {
-      Stripe = require('stripe')
-      console.log('✓ Stripe module loaded')
-    } catch (err) {
-      console.error('✗ Failed to load Stripe module:', err.message)
-      return res.status(500).json({
-        error: 'Server dependency error',
-        details: 'Failed to load Stripe module',
-        message: err.message
-      })
-    }
-
-    try {
-      const supabaseLib = require('@supabase/supabase-js')
-      createClient = supabaseLib.createClient
-      console.log('✓ Supabase module loaded')
-    } catch (err) {
-      console.error('✗ Failed to load Supabase module:', err.message)
-      return res.status(500).json({
-        error: 'Server dependency error',
-        details: 'Failed to load Supabase module',
-        message: err.message
-      })
-    }
-
-    // ============================================
-    // STEP 2: Validate environment variables
+    // STEP 1: Validate environment variables
     // ============================================
     console.log('Validating environment variables...')
     const envVars = {
@@ -110,7 +80,7 @@ module.exports = async function handler(req, res) {
     console.log('✓ All environment variables present')
 
     // ============================================
-    // STEP 3: Initialize Stripe and Supabase
+    // STEP 2: Initialize Stripe and Supabase
     // ============================================
     console.log('Initializing Stripe and Supabase...')
     let stripe, supabase
@@ -141,7 +111,7 @@ module.exports = async function handler(req, res) {
     }
 
     // ============================================
-    // STEP 4: Verify JWT token from Authorization header
+    // STEP 3: Verify JWT token from Authorization header
     // ============================================
     console.log('Verifying authorization...')
     const authHeader = req.headers.authorization
@@ -171,7 +141,7 @@ module.exports = async function handler(req, res) {
     console.log('✓ User authenticated:', user.id)
 
     // ============================================
-    // STEP 5: Extract and validate request data
+    // STEP 4: Extract and validate request data
     // ============================================
     console.log('Extracting request data...')
     const userId = user.id
@@ -197,7 +167,7 @@ module.exports = async function handler(req, res) {
     }
 
     // ============================================
-    // STEP 6: Get or create Stripe customer
+    // STEP 5: Get or create Stripe customer
     // ============================================
     console.log('Checking for existing customer...')
     const { data: existingSub, error: subError } = await supabase
@@ -227,7 +197,7 @@ module.exports = async function handler(req, res) {
     }
 
     // ============================================
-    // STEP 7: Create Stripe checkout session
+    // STEP 6: Create Stripe checkout session
     // ============================================
     console.log('Creating checkout session...')
     const session = await stripe.checkout.sessions.create({
