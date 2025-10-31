@@ -33,11 +33,11 @@ export default function Pricing() {
     return () => clearInterval(timer)
   }, [])
 
-  // Stripe Price IDs (from user's requirements)
+  // Stripe Price IDs (from environment variables)
   const STRIPE_PRICE_IDS = {
-    monthly: 'price_1SN6AIFYTG8L7VE24zbGbW20',
-    annual: 'price_1SN681FYTG8L7VE2OWYjWMYj',
-    lifetime: 'price_1SN6AtFYTG8L7VE2oe4lv86r'
+    monthly: import.meta.env.VITE_STRIPE_PRICE_MONTHLY,
+    annual: import.meta.env.VITE_STRIPE_PRICE_ANNUAL,
+    lifetime: import.meta.env.VITE_STRIPE_PRICE_LIFETIME
   }
 
   const handleSelectPlan = async (planId) => {
