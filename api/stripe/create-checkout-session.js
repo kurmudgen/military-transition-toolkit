@@ -7,9 +7,19 @@ export default async function handler(req, res) {
   // CRITICAL: Set Content-Type header FIRST before any processing
   res.setHeader('Content-Type', 'application/json')
 
-  // Add CORS headers
-  res.setHeader('Access-Control-Allow-Credentials', 'true')
-  res.setHeader('Access-Control-Allow-Origin', '*')
+  // ✅ IMPROVED: Restrict CORS to your domain only
+  const allowedOrigins = [
+    process.env.APP_URL,
+    'https://militarytransitiontoolkit.com',
+    'https://www.militarytransitiontoolkit.com'
+  ]
+  
+  const origin = req.headers.origin
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin)
+    res.setHeader('Access-Control-Allow-Credentials', 'true')
+  }
+  
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type')
 
@@ -36,7 +46,7 @@ export default async function handler(req, res) {
       supabaseUrlPrefix: process.env.SUPABASE_URL?.substring(0, 20)
     })
     console.log('Request method:', req.method)
-    console.log('Request headers:', JSON.stringify(req.headers, null, 2))
+    console.log('Request origin:', req.headers.origin)
 
     // ============================================
     // STEP 1: Validate environment variables
@@ -126,7 +136,7 @@ export default async function handler(req, res) {
 
     const token = authHeader.split(' ')[1]
 
-    // Verify JWT with Supabase
+    // ✅ CRITICAL: Verify JWT with Supabase to prevent fake users
     console.log('Verifying JWT token...')
     const { data: { user }, error: authError } = await supabase.auth.getUser(token)
 
@@ -244,7 +254,7 @@ export default async function handler(req, res) {
       error: 'Failed to create checkout session',
       details: error.message || 'Unknown error occurred',
       timestamp: new Date().toISOString(),
-      stack: error.stack || 'No stack trace available'
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     }
 
     // Add Stripe-specific error details if available
@@ -256,9 +266,6 @@ export default async function handler(req, res) {
     }
     if (error.statusCode) {
       errorResponse.statusCode = error.statusCode
-    }
-    if (error.raw) {
-      errorResponse.stripeRawError = error.raw
     }
 
     console.error('Returning error response:', JSON.stringify(errorResponse, null, 2))

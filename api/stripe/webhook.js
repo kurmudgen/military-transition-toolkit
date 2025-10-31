@@ -3,16 +3,19 @@ import { createClient } from '@supabase/supabase-js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const supabase = createClient(
-  process.env.VITE_SUPABASE_URL,
+  process.env.SUPABASE_URL,  // ✅ FIXED: Use SUPABASE_URL not VITE_SUPABASE_URL
   process.env.SUPABASE_SERVICE_ROLE_KEY
 )
 
 // Helper to map Stripe price ID to plan ID
 const getPlanIdFromPriceId = (priceId) => {
-  if (priceId === process.env.VITE_STRIPE_PRICE_MONTHLY) {
+  // ✅ FIXED: Use backend environment variables
+  if (priceId === process.env.STRIPE_PRICE_MONTHLY) {
     return 'premium_monthly'
-  } else if (priceId === process.env.VITE_STRIPE_PRICE_ANNUAL) {
+  } else if (priceId === process.env.STRIPE_PRICE_ANNUAL) {
     return 'premium_annual'
+  } else if (priceId === process.env.STRIPE_PRICE_LIFETIME) {
+    return 'premium_lifetime'
   }
   return 'free'
 }
@@ -47,14 +50,14 @@ export default async function handler(req, res) {
     const rawBody = await getRawBody(req)
     const signature = req.headers['stripe-signature']
 
-    // Verify webhook signature
+    // ✅ CRITICAL: Verify webhook signature to prevent fake payments
     event = stripe.webhooks.constructEvent(
       rawBody,
       signature,
       process.env.STRIPE_WEBHOOK_SECRET
     )
   } catch (err) {
-    console.error('Webhook signature verification failed:', err.message)
+    console.error('❌ Webhook signature verification failed:', err.message)
     return res.status(400).json({ error: `Webhook Error: ${err.message}` })
   }
 
@@ -76,7 +79,7 @@ export default async function handler(req, res) {
         const planId = getPlanIdFromPriceId(priceId)
 
         // Update or create user subscription
-        await supabase
+        const { error } = await supabase
           .from('user_subscriptions')
           .upsert({
             user_id: userId,
@@ -89,13 +92,17 @@ export default async function handler(req, res) {
             cancel_at_period_end: false
           })
 
-        console.log(`✓ Subscription created for user ${userId}`)
+        if (error) {
+          console.error('❌ Database error:', error)
+        } else {
+          console.log(`✅ Subscription created for user ${userId}`)
+        }
         break
       }
 
       case 'customer.subscription.updated': {
         const subscription = event.data.object
-        const userId = subscription.metadata.supabase_user_id
+        let userId = subscription.metadata.supabase_user_id
 
         if (!userId) {
           // Try to find user by customer ID
@@ -109,13 +116,15 @@ export default async function handler(req, res) {
             console.error('No user found for subscription update')
             break
           }
+          
+          userId = existingSub.user_id
         }
 
         const priceId = subscription.items.data[0].price.id
         const planId = getPlanIdFromPriceId(priceId)
 
         // Update subscription
-        await supabase
+        const { error } = await supabase
           .from('user_subscriptions')
           .update({
             plan_id: planId,
@@ -126,7 +135,11 @@ export default async function handler(req, res) {
           })
           .eq('stripe_subscription_id', subscription.id)
 
-        console.log(`✓ Subscription updated: ${subscription.id}`)
+        if (error) {
+          console.error('❌ Database error:', error)
+        } else {
+          console.log(`✅ Subscription updated: ${subscription.id}`)
+        }
         break
       }
 
@@ -134,7 +147,7 @@ export default async function handler(req, res) {
         const subscription = event.data.object
 
         // Update subscription to cancelled
-        await supabase
+        const { error } = await supabase
           .from('user_subscriptions')
           .update({
             status: 'cancelled',
@@ -142,15 +155,17 @@ export default async function handler(req, res) {
           })
           .eq('stripe_subscription_id', subscription.id)
 
-        console.log(`✓ Subscription cancelled: ${subscription.id}`)
+        if (error) {
+          console.error('❌ Database error:', error)
+        } else {
+          console.log(`✅ Subscription cancelled: ${subscription.id}`)
+        }
         break
       }
 
       case 'invoice.payment_succeeded': {
         const invoice = event.data.object
-
-        // Log successful payment (optional)
-        console.log(`✓ Payment succeeded for invoice: ${invoice.id}`)
+        console.log(`✅ Payment succeeded for invoice: ${invoice.id}`)
         break
       }
 
@@ -158,14 +173,18 @@ export default async function handler(req, res) {
         const invoice = event.data.object
 
         // Update subscription status
-        await supabase
+        const { error } = await supabase
           .from('user_subscriptions')
           .update({
             status: 'past_due'
           })
           .eq('stripe_customer_id', invoice.customer)
 
-        console.log(`✗ Payment failed for invoice: ${invoice.id}`)
+        if (error) {
+          console.error('❌ Database error:', error)
+        } else {
+          console.log(`❌ Payment failed for invoice: ${invoice.id}`)
+        }
         break
       }
 
