@@ -7,19 +7,9 @@ export default async function handler(req, res) {
   // CRITICAL: Set Content-Type header FIRST before any processing
   res.setHeader('Content-Type', 'application/json')
 
-  // ✅ IMPROVED: Restrict CORS to your domain only
-  const allowedOrigins = [
-    process.env.APP_URL,
-    'https://militarytransitiontoolkit.com',
-    'https://www.militarytransitiontoolkit.com'
-  ]
-  
-  const origin = req.headers.origin
-  if (allowedOrigins.includes(origin)) {
-    res.setHeader('Access-Control-Allow-Origin', origin)
-    res.setHeader('Access-Control-Allow-Credentials', 'true')
-  }
-  
+  // Add CORS headers
+  res.setHeader('Access-Control-Allow-Credentials', 'true')
+  res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type')
 
@@ -46,7 +36,7 @@ export default async function handler(req, res) {
       supabaseUrlPrefix: process.env.SUPABASE_URL?.substring(0, 20)
     })
     console.log('Request method:', req.method)
-    console.log('Request origin:', req.headers.origin)
+    console.log('Request headers:', JSON.stringify(req.headers, null, 2))
 
     // ============================================
     // STEP 1: Validate environment variables
@@ -136,7 +126,7 @@ export default async function handler(req, res) {
 
     const token = authHeader.split(' ')[1]
 
-    // ✅ CRITICAL: Verify JWT with Supabase to prevent fake users
+    // Verify JWT with Supabase
     console.log('Verifying JWT token...')
     const { data: { user }, error: authError } = await supabase.auth.getUser(token)
 
@@ -149,6 +139,29 @@ export default async function handler(req, res) {
     }
 
     console.log('✓ User authenticated:', user.id)
+
+    // ============================================
+    // STEP 3.5: Check if user already has active subscription
+    // ============================================
+    console.log('Checking for existing subscription...')
+    const { data: existingSubscription, error: checkSubError } = await supabase
+      .from('user_subscriptions')
+      .select('status, plan_id')
+      .eq('user_id', user.id)
+      .single()
+
+    if (checkSubError && checkSubError.code !== 'PGRST116') {
+      console.error('Error checking subscription:', checkSubError.message)
+    }
+
+    // Block checkout if user already has active subscription
+    if (existingSubscription && existingSubscription.status === 'active') {
+      console.log('❌ User already has active subscription:', existingSubscription.plan_id)
+      return res.status(400).json({
+        error: 'Already subscribed',
+        details: 'You already have an active premium subscription. Visit your account settings to manage your subscription.'
+      })
+    }
 
     // ============================================
     // STEP 4: Extract and validate request data
@@ -254,7 +267,7 @@ export default async function handler(req, res) {
       error: 'Failed to create checkout session',
       details: error.message || 'Unknown error occurred',
       timestamp: new Date().toISOString(),
-      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
+      stack: error.stack || 'No stack trace available'
     }
 
     // Add Stripe-specific error details if available
@@ -266,6 +279,9 @@ export default async function handler(req, res) {
     }
     if (error.statusCode) {
       errorResponse.statusCode = error.statusCode
+    }
+    if (error.raw) {
+      errorResponse.stripeRawError = error.raw
     }
 
     console.error('Returning error response:', JSON.stringify(errorResponse, null, 2))

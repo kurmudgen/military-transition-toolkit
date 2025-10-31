@@ -1,11 +1,25 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { isPromoActive, getTimeRemaining, PROMO_END_DATE } from '../utils/promoConfig'
+import { getUserSubscription } from '../services/subscriptionService'
 
 export default function PromoBanner() {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining())
   const [isVisible, setIsVisible] = useState(true)
   const [dismissed, setDismissed] = useState(false)
+  const [hasPremium, setHasPremium] = useState(false)
+
+  // Check subscription status
+  useEffect(() => {
+    const checkSubscription = async () => {
+      const subscription = await getUserSubscription()
+      if (subscription && subscription.status === 'active') {
+        setHasPremium(true)
+        setIsVisible(false) // Hide banner for premium users
+      }
+    }
+    checkSubscription()
+  }, [])
 
   // Update countdown every minute
   useEffect(() => {
@@ -36,8 +50,8 @@ export default function PromoBanner() {
     sessionStorage.setItem('promoBannerDismissed', 'true')
   }
 
-  // Don't show if promo is not active or user dismissed it
-  if (!isPromoActive() || !isVisible || dismissed) {
+  // Don't show if promo is not active, user dismissed it, or user has premium
+  if (!isPromoActive() || !isVisible || dismissed || hasPremium) {
     return null
   }
 
