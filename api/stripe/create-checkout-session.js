@@ -1,13 +1,12 @@
 // Use CommonJS for Vercel serverless functions
-const Stripe = require('stripe')
-const { createClient } = require('@supabase/supabase-js')
+// NOTE: Requires are moved inside function to ensure errors return JSON
 
 // Serverless function handler
 module.exports = async function handler(req, res) {
-  // CRITICAL: Set Content-Type header first
+  // CRITICAL: Set Content-Type header FIRST before any processing
   res.setHeader('Content-Type', 'application/json')
 
-  // Add CORS headers if needed
+  // Add CORS headers
   res.setHeader('Access-Control-Allow-Credentials', 'true')
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
@@ -25,48 +24,118 @@ module.exports = async function handler(req, res) {
 
   // Wrap entire function in try-catch to ensure JSON responses
   try {
+    console.log('=== CHECKOUT SESSION API CALLED ===')
+    console.log('Timestamp:', new Date().toISOString())
+    console.log('Request method:', req.method)
+    console.log('Request headers:', JSON.stringify(req.headers, null, 2))
+
     // ============================================
-    // STEP 1: Validate environment variables
+    // STEP 1: Load dependencies inside try-catch
     // ============================================
-    console.log('Environment check:')
-    console.log('- STRIPE_SECRET_KEY exists:', !!process.env.STRIPE_SECRET_KEY)
-    console.log('- SUPABASE_URL exists:', !!process.env.SUPABASE_URL)
-    console.log('- SUPABASE_SERVICE_ROLE_KEY exists:', !!process.env.SUPABASE_SERVICE_ROLE_KEY)
+    console.log('Loading dependencies...')
+    let Stripe, createClient
+
+    try {
+      Stripe = require('stripe')
+      console.log('✓ Stripe module loaded')
+    } catch (err) {
+      console.error('✗ Failed to load Stripe module:', err.message)
+      return res.status(500).json({
+        error: 'Server dependency error',
+        details: 'Failed to load Stripe module',
+        message: err.message
+      })
+    }
+
+    try {
+      const supabaseLib = require('@supabase/supabase-js')
+      createClient = supabaseLib.createClient
+      console.log('✓ Supabase module loaded')
+    } catch (err) {
+      console.error('✗ Failed to load Supabase module:', err.message)
+      return res.status(500).json({
+        error: 'Server dependency error',
+        details: 'Failed to load Supabase module',
+        message: err.message
+      })
+    }
+
+    // ============================================
+    // STEP 2: Validate environment variables
+    // ============================================
+    console.log('Validating environment variables...')
+    const envVars = {
+      STRIPE_SECRET_KEY: !!process.env.STRIPE_SECRET_KEY,
+      SUPABASE_URL: !!process.env.SUPABASE_URL,
+      SUPABASE_SERVICE_ROLE_KEY: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
+      APP_URL: !!process.env.APP_URL
+    }
+    console.log('Environment variables:', envVars)
 
     if (!process.env.STRIPE_SECRET_KEY) {
-      console.error('CRITICAL: STRIPE_SECRET_KEY is not set')
+      console.error('✗ STRIPE_SECRET_KEY not set')
       return res.status(500).json({
         error: 'Server configuration error',
-        details: 'STRIPE_SECRET_KEY not configured'
+        details: 'STRIPE_SECRET_KEY not configured',
+        envVars
       })
     }
 
     if (!process.env.SUPABASE_URL) {
-      console.error('CRITICAL: SUPABASE_URL is not set')
+      console.error('✗ SUPABASE_URL not set')
       return res.status(500).json({
         error: 'Server configuration error',
-        details: 'SUPABASE_URL not configured'
+        details: 'SUPABASE_URL not configured',
+        envVars
       })
     }
 
     if (!process.env.SUPABASE_SERVICE_ROLE_KEY) {
-      console.error('CRITICAL: SUPABASE_SERVICE_ROLE_KEY is not set')
+      console.error('✗ SUPABASE_SERVICE_ROLE_KEY not set')
       return res.status(500).json({
         error: 'Server configuration error',
-        details: 'SUPABASE_SERVICE_ROLE_KEY not configured'
+        details: 'SUPABASE_SERVICE_ROLE_KEY not configured',
+        envVars
       })
     }
 
-    // Initialize Stripe and Supabase AFTER validation
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
-    const supabase = createClient(
-      process.env.SUPABASE_URL,
-      process.env.SUPABASE_SERVICE_ROLE_KEY
-    )
+    console.log('✓ All environment variables present')
 
     // ============================================
-    // STEP 2: Verify JWT token from Authorization header
+    // STEP 3: Initialize Stripe and Supabase
     // ============================================
+    console.log('Initializing Stripe and Supabase...')
+    let stripe, supabase
+
+    try {
+      stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
+      console.log('✓ Stripe initialized')
+    } catch (err) {
+      console.error('✗ Failed to initialize Stripe:', err.message)
+      return res.status(500).json({
+        error: 'Stripe initialization error',
+        details: err.message
+      })
+    }
+
+    try {
+      supabase = createClient(
+        process.env.SUPABASE_URL,
+        process.env.SUPABASE_SERVICE_ROLE_KEY
+      )
+      console.log('✓ Supabase initialized')
+    } catch (err) {
+      console.error('✗ Failed to initialize Supabase:', err.message)
+      return res.status(500).json({
+        error: 'Supabase initialization error',
+        details: err.message
+      })
+    }
+
+    // ============================================
+    // STEP 4: Verify JWT token from Authorization header
+    // ============================================
+    console.log('Verifying authorization...')
     const authHeader = req.headers.authorization
     console.log('Authorization header present:', !!authHeader)
 
@@ -91,11 +160,12 @@ module.exports = async function handler(req, res) {
       })
     }
 
-    console.log('User authenticated:', user.id)
+    console.log('✓ User authenticated:', user.id)
 
     // ============================================
-    // STEP 3: Extract and validate request data
+    // STEP 5: Extract and validate request data
     // ============================================
+    console.log('Extracting request data...')
     const userId = user.id
     const email = user.email
     const { priceId } = req.body
@@ -119,7 +189,7 @@ module.exports = async function handler(req, res) {
     }
 
     // ============================================
-    // STEP 4: Get or create Stripe customer
+    // STEP 6: Get or create Stripe customer
     // ============================================
     console.log('Checking for existing customer...')
     const { data: existingSub, error: subError } = await supabase
@@ -149,7 +219,7 @@ module.exports = async function handler(req, res) {
     }
 
     // ============================================
-    // STEP 5: Create Stripe checkout session
+    // STEP 7: Create Stripe checkout session
     // ============================================
     console.log('Creating checkout session...')
     const session = await stripe.checkout.sessions.create({
