@@ -30,7 +30,7 @@ export default function Landing() {
         </div>
 
         <p className="text-slate-400 text-sm">
-          No account required • 100% private • Works on all devices
+          100% private • Works on all devices
         </p>
       </div>
 
