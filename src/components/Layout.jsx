@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Outlet, Link, useLocation } from 'react-router-dom'
+import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 import AIAssistant from './AIAssistant'
 import PromoBanner from './PromoBanner'
 
@@ -13,6 +14,8 @@ export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(getInitialDarkMode)
   const location = useLocation()
+  const navigate = useNavigate()
+  const { signOut } = useAuth()
 
   // Apply dark mode class on mount and when darkMode changes
   useEffect(() => {
@@ -30,6 +33,12 @@ export default function Layout() {
       localStorage.setItem('darkMode', String(newMode))
       return newMode
     })
+  }
+
+  // Handle logout
+  const handleLogout = async () => {
+    await signOut()
+    navigate('/login')
   }
 
   // All navigation links for mobile menu
@@ -110,6 +119,15 @@ export default function Layout() {
                   </svg>
                 )}
               </button>
+
+              {/* Logout Button */}
+              <button
+                onClick={handleLogout}
+                className="ml-2 px-4 py-2 rounded-lg text-gray-600 hover:text-red-600 hover:bg-red-50 dark:text-gray-300 dark:hover:text-red-400 dark:hover:bg-red-900/20 transition-colors font-medium"
+                aria-label="Log out"
+              >
+                Logout
+              </button>
             </div>
 
             {/* Mobile controls: dark mode toggle + menu button */}
@@ -169,6 +187,14 @@ export default function Layout() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Logout Button - Mobile */}
+            <button
+              onClick={handleLogout}
+              className="w-full text-left pl-3 pr-4 py-3 border-l-4 border-transparent text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 hover:border-red-300 text-base font-medium transition-colors"
+            >
+              Logout
+            </button>
           </div>
         </div>
       </nav>

@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 import AnalyticsDashboard from '../components/AnalyticsDashboard'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { generateTransitionPlanPDF } from '../utils/pdfExport'
@@ -7,6 +9,8 @@ export default function Settings() {
   const [importStatus, setImportStatus] = useState('')
   const [importError, setImportError] = useState('')
   const [showAnalytics, setShowAnalytics] = useState(false)
+  const navigate = useNavigate()
+  const { signOut } = useAuth()
 
   useEffect(() => {
     document.title = 'Settings - Military Transition Toolkit'
@@ -154,6 +158,11 @@ export default function Settings() {
       setImportError('Failed to generate PDF. Please try again.')
       setTimeout(() => setImportError(''), 5000)
     }
+  }
+
+  const handleLogout = async () => {
+    await signOut()
+    navigate('/login')
   }
 
   return (
@@ -357,6 +366,21 @@ export default function Settings() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Account Management */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <h2 className="text-2xl font-semibold text-white mb-4">🔐 Account Management</h2>
+            <p className="text-slate-300 mb-4">
+              Sign out of your account on this device.
+            </p>
+
+            <button
+              onClick={handleLogout}
+              className="px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-lg font-bold rounded-lg transition-all shadow-md hover:shadow-xl"
+            >
+              🚪 Logout
+            </button>
           </div>
 
           {/* Danger Zone */}
