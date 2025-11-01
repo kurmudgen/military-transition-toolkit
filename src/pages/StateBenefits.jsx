@@ -528,78 +528,89 @@ export default function StateBenefits() {
         })}
       </div>
 
-      {/* Selected State Detail View */}
+      {/* State Detail Modal */}
       {selectedState && (
-        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                {STATE_BENEFITS_DATABASE[selectedState].name}
-              </h2>
-              <div className="flex items-center mt-2">
-                <span className="text-lg">
-                  {getRatingStars(STATE_BENEFITS_DATABASE[selectedState].rating)}
-                </span>
-                <span className="ml-2 text-gray-600 dark:text-gray-400">
-                  {STATE_BENEFITS_DATABASE[selectedState].rating.toFixed(1)} out of 5.0
-                </span>
-              </div>
-            </div>
-            <button
-              onClick={() => setSelectedState(null)}
-              className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {BENEFIT_CATEGORIES.map(category => {
-              const benefit = STATE_BENEFITS_DATABASE[selectedState].benefits[category.id]
-              if (!benefit) return null
-
-              return (
-                <div
-                  key={category.id}
-                  className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg"
-                >
-                  <div className="flex items-center mb-3">
-                    <span className="text-2xl mr-2">{category.icon}</span>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                      {category.label}
-                    </h3>
-                  </div>
-
-                  {benefit.available ? (
-                    <div className="space-y-2">
-                      <p className="text-sm text-gray-700 dark:text-gray-300">
-                        {benefit.description}
-                      </p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">
-                        <strong>Details:</strong> {benefit.details}
-                      </p>
-                    </div>
-                  ) : (
-                    <p className="text-sm text-gray-500 dark:text-gray-400 italic">
-                      {benefit.description || 'Not available'}
-                    </p>
-                  )}
-                </div>
-              )
-            })}
-          </div>
-
-          <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-            <div className="flex items-center justify-between">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fadeIn"
+          onClick={() => setSelectedState(null)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 shadow-2xl rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto animate-slideUp"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4 flex items-center justify-between z-10">
               <div>
-                <p className="text-sm font-medium text-gray-900 dark:text-white">
-                  Veteran Population: {STATE_BENEFITS_DATABASE[selectedState].vetPopulation}
-                </p>
-                <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-                  Total veterans living in {STATE_BENEFITS_DATABASE[selectedState].name}
-                </p>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  {STATE_BENEFITS_DATABASE[selectedState].name}
+                </h2>
+                <div className="flex items-center mt-2">
+                  <span className="text-lg">
+                    {getRatingStars(STATE_BENEFITS_DATABASE[selectedState].rating)}
+                  </span>
+                  <span className="ml-2 text-gray-600 dark:text-gray-400">
+                    {STATE_BENEFITS_DATABASE[selectedState].rating.toFixed(1)} out of 5.0
+                  </span>
+                </div>
+              </div>
+              <button
+                onClick={() => setSelectedState(null)}
+                className="p-2 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-300 dark:hover:bg-gray-700 transition-colors"
+                aria-label="Close modal"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <div className="p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                {BENEFIT_CATEGORIES.map(category => {
+                  const benefit = STATE_BENEFITS_DATABASE[selectedState].benefits[category.id]
+                  if (!benefit) return null
+
+                  return (
+                    <div
+                      key={category.id}
+                      className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg"
+                    >
+                      <div className="flex items-center mb-3">
+                        <span className="text-2xl mr-2">{category.icon}</span>
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                          {category.label}
+                        </h3>
+                      </div>
+
+                      {benefit.available ? (
+                        <div className="space-y-2">
+                          <p className="text-sm text-gray-700 dark:text-gray-300">
+                            {benefit.description}
+                          </p>
+                          <p className="text-xs text-gray-500 dark:text-gray-400">
+                            <strong>Details:</strong> {benefit.details}
+                          </p>
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-500 dark:text-gray-400 italic">
+                          {benefit.description || 'Not available'}
+                        </p>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">
+                      Veteran Population: {STATE_BENEFITS_DATABASE[selectedState].vetPopulation}
+                    </p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                      Total veterans living in {STATE_BENEFITS_DATABASE[selectedState].name}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

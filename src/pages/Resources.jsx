@@ -13,6 +13,7 @@ export default function Resources() {
   const [showAddModal, setShowAddModal] = useState(false)
   const [editingResource, setEditingResource] = useState(null)
   const [userRatings, setUserRatings] = useState({})
+  const [expandedCategories, setExpandedCategories] = useState({})
   const [formData, setFormData] = useState({
     title: '',
     url: '',
@@ -160,6 +161,18 @@ export default function Resources() {
     } else {
       setFormData({ ...formData, tags: [...formData.tags, tag] })
     }
+  }
+
+  const toggleCategory = (categoryKey) => {
+    setExpandedCategories(prev => ({
+      ...prev,
+      [categoryKey]: !prev[categoryKey]
+    }))
+  }
+
+  const isCategoryExpanded = (categoryKey) => {
+    // First time loading, all categories are collapsed
+    return expandedCategories[categoryKey] === true
   }
 
   // Filter resources
@@ -416,20 +429,31 @@ export default function Resources() {
           </button>
         </div>
       ) : (
-        <div className="space-y-6">
+        <div className="space-y-4">
           {Object.entries(groupedResources).map(([categoryKey, categoryResources]) => {
             const category = RESOURCE_CATEGORIES[categoryKey]
+            const isExpanded = isCategoryExpanded(categoryKey)
             return (
-              <div key={categoryKey} className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-                  <span className="text-3xl">{category.icon}</span>
-                  {category.name}
-                  <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                    ({categoryResources.length})
-                  </span>
-                </h2>
+              <div key={categoryKey} className="bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden">
+                <button
+                  onClick={() => toggleCategory(categoryKey)}
+                  className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">{isExpanded ? '▼' : '▶'}</span>
+                    <span className="text-3xl">{category.icon}</span>
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                      {category.name}
+                    </h2>
+                    <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
+                      ({categoryResources.length})
+                    </span>
+                  </div>
+                </button>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {isExpanded && (
+                  <div className="px-6 pb-6 animate-fadeIn">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
                   {categoryResources.map(resource => {
                     const resourceType = RESOURCE_TYPES[resource.type || 'website']
                     const displayRating = getDisplayRating(resource)
@@ -553,9 +577,11 @@ export default function Resources() {
                           )}
                         </div>
                       </div>
-                    )
-                  })}
-                </div>
+                      )
+                    })}
+                    </div>
+                  </div>
+                )}
               </div>
             )
           })}

@@ -10,21 +10,9 @@ export default function JobSearch() {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false)
 
 
-  const [searchParams, setSearchParams] = useState({
-    keywords: '',
-    location: '',
-    distance: '25',
-    jobType: 'all',
-    experienceLevel: 'all',
-    salary: '',
-    remote: false
-  })
-
-  const [jobs, setJobs] = useState([])
   const [savedJobs, setSavedJobs] = useState([])
   const [applications, setApplications] = useState([])
-  const [loading, setLoading] = useState(false)
-  const [activeTab, setActiveTab] = useState('search') // search, saved, applications
+  const [activeTab, setActiveTab] = useState('boards') // boards, saved, applications
   const [selectedJob, setSelectedJob] = useState(null)
   const [showApplicationModal, setShowApplicationModal] = useState(false)
 
@@ -37,9 +25,6 @@ export default function JobSearch() {
 
     const apps = localStorage.getItem('jobApplications')
     if (apps) setApplications(JSON.parse(apps))
-
-    // Run initial search to show jobs by default
-    handleSearch()
   }, [])
 
   // Save to localStorage when data changes
@@ -51,107 +36,58 @@ export default function JobSearch() {
     localStorage.setItem('jobApplications', JSON.stringify(applications))
   }, [applications])
 
-  // Mock job data (in production, this would call Indeed/USAJobs APIs)
-  const mockJobSearch = () => {
-    return [
-      {
-        id: 'job-1',
-        title: 'Project Manager',
-        company: 'Tech Solutions Inc',
-        location: 'Remote',
-        salary: '$75,000 - $95,000',
-        type: 'Full-time',
-        posted: '2 days ago',
-        description: 'Leading cross-functional teams in delivering complex technical projects. Military leadership experience highly valued.',
-        requirements: ['5+ years project management', 'PMP certification preferred', 'Strong leadership skills', 'Excellent communication'],
-        veteranFriendly: true,
-        source: 'Indeed'
-      },
-      {
-        id: 'job-2',
-        title: 'Network Administrator',
-        company: 'Federal Cybersecurity',
-        location: 'Washington, DC',
-        salary: '$80,000 - $110,000',
-        type: 'Full-time',
-        posted: '1 week ago',
-        description: 'Manage and secure network infrastructure for federal agency. Security clearance required.',
-        requirements: ['Active Secret clearance', 'Network+ or CCNA', '3+ years experience', 'Military IT experience preferred'],
-        veteranFriendly: true,
-        source: 'USAJobs'
-      },
-      {
-        id: 'job-3',
-        title: 'Operations Manager',
-        company: 'Logistics Global',
-        location: 'Fort Worth, TX',
-        salary: '$70,000 - $90,000',
-        type: 'Full-time',
-        posted: '3 days ago',
-        description: 'Oversee daily operations of logistics warehouse. Veterans encouraged to apply.',
-        requirements: ['Supply chain management', 'Team leadership', 'Process improvement', 'Military logistics background a plus'],
-        veteranFriendly: true,
-        source: 'Indeed'
-      },
-      {
-        id: 'job-4',
-        title: 'Security Specialist',
-        company: 'Corporate Security Solutions',
-        location: 'Multiple Locations',
-        salary: '$60,000 - $85,000',
-        type: 'Full-time',
-        posted: '5 days ago',
-        description: 'Develop and implement security protocols for corporate facilities.',
-        requirements: ['Security experience', 'Crisis management', 'Law enforcement or military background', 'Strong analytical skills'],
-        veteranFriendly: true,
-        source: 'Indeed'
-      },
-      {
-        id: 'job-5',
-        title: 'Healthcare Administrator',
-        company: 'Veterans Medical Center',
-        location: 'San Diego, CA',
-        salary: '$65,000 - $85,000',
-        type: 'Full-time',
-        posted: '1 day ago',
-        description: 'Manage administrative operations for VA medical facility.',
-        requirements: ['Healthcare administration', 'Electronic health records', 'Budget management', 'Veterans preference'],
-        veteranFriendly: true,
-        source: 'USAJobs'
-      }
-    ]
-  }
-
-  const handleSearch = () => {
-    trackButtonClick('Search Jobs')
-    setLoading(true)
-
-    // Simulate API call
-    setTimeout(() => {
-      const results = mockJobSearch()
-
-      // Filter based on search params
-      const filtered = results.filter(job => {
-        const matchesKeywords = !searchParams.keywords ||
-          job.title.toLowerCase().includes(searchParams.keywords.toLowerCase()) ||
-          job.description.toLowerCase().includes(searchParams.keywords.toLowerCase())
-
-        const matchesLocation = !searchParams.location ||
-          job.location.toLowerCase().includes(searchParams.location.toLowerCase()) ||
-          job.location === 'Remote'
-
-        const matchesType = searchParams.jobType === 'all' ||
-          job.type.toLowerCase().includes(searchParams.jobType.toLowerCase())
-
-        const matchesRemote = !searchParams.remote || job.location === 'Remote'
-
-        return matchesKeywords && matchesLocation && matchesType && matchesRemote
-      })
-
-      setJobs(filtered)
-      setLoading(false)
-    }, 1000)
-  }
+  // Veteran-friendly job boards
+  const jobBoards = [
+    {
+      name: 'Hire Heroes USA',
+      url: 'https://hireherosusa.org/jobs',
+      description: 'Free job search assistance and career coaching specifically for military members, veterans, and military spouses.',
+      icon: '🎖️',
+      featured: true
+    },
+    {
+      name: 'USAJOBS',
+      url: 'https://www.usajobs.gov',
+      description: 'Official federal government job board. Veterans receive preference points on federal applications.',
+      icon: '🏛️',
+      featured: true
+    },
+    {
+      name: 'RecruitMilitary',
+      url: 'https://recruitmilitary.com/jobs',
+      description: 'Largest military-to-civilian job board with thousands of veteran-friendly employers.',
+      icon: '🪖',
+      featured: true
+    },
+    {
+      name: 'LinkedIn Veterans Jobs',
+      url: 'https://www.linkedin.com/jobs/veteran-jobs',
+      description: 'LinkedIn job search filtered for veteran-friendly positions and military skills translation.',
+      icon: '💼',
+      featured: false
+    },
+    {
+      name: 'Indeed (Veteran Filter)',
+      url: 'https://www.indeed.com/q-Veteran-jobs.html',
+      description: 'World\'s largest job site with built-in veteran and military-friendly job filters.',
+      icon: '🔍',
+      featured: false
+    },
+    {
+      name: 'Corporate Fellows',
+      url: 'https://corpfellows.com',
+      description: 'Connects transitioning officers with top companies through fellowships and direct hire positions.',
+      icon: '🎯',
+      featured: false
+    },
+    {
+      name: 'FourBlock',
+      url: 'https://fourblock.org/jobs',
+      description: 'Career readiness program helping veterans and military spouses transition to meaningful civilian careers.',
+      icon: '📚',
+      featured: false
+    }
+  ]
 
   const saveJob = async (job) => {
     trackButtonClick('Save Job')
@@ -235,14 +171,14 @@ export default function JobSearch() {
       <div className="border-b border-gray-200 dark:border-gray-700">
         <nav className="-mb-px flex space-x-8">
           <button
-            onClick={() => setActiveTab('search')}
+            onClick={() => setActiveTab('boards')}
             className={`${
-              activeTab === 'search'
+              activeTab === 'boards'
                 ? 'border-blue-500 text-blue-600 dark:text-blue-400'
                 : 'border-transparent text-gray-500 dark:text-gray-400 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-300'
             } whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium transition-colors`}
           >
-            Search Jobs
+            Job Boards
           </button>
           <button
             onClick={() => setActiveTab('saved')}
@@ -267,148 +203,108 @@ export default function JobSearch() {
         </nav>
       </div>
 
-      {/* Search Tab */}
-      {activeTab === 'search' && (
+      {/* Job Boards Tab */}
+      {activeTab === 'boards' && (
         <div className="space-y-6">
-          {/* Search Form */}
-          <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Search Filters</h2>
+          {/* Info Banner */}
+          <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+            <h3 className="font-semibold text-blue-900 dark:text-blue-300 mb-2">
+              External Job Resources
+            </h3>
+            <p className="text-sm text-blue-800 dark:text-blue-400">
+              These are trusted external job boards that specialize in veteran-friendly employment. When you find a job you like on these sites, come back here to save it and track your application progress.
+            </p>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Keywords */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Keywords
-                </label>
-                <input
-                  type="text"
-                  value={searchParams.keywords}
-                  onChange={(e) => setSearchParams({ ...searchParams, keywords: e.target.value })}
-                  placeholder="Job title, skills, company..."
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-                />
-              </div>
-
-              {/* Location */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Location
-                </label>
-                <input
-                  type="text"
-                  value={searchParams.location}
-                  onChange={(e) => setSearchParams({ ...searchParams, location: e.target.value })}
-                  placeholder="City, state, or zip code"
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-                />
-              </div>
-
-              {/* Job Type */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Job Type
-                </label>
-                <select
-                  value={searchParams.jobType}
-                  onChange={(e) => setSearchParams({ ...searchParams, jobType: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+          {/* Featured Job Boards */}
+          <div>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              ⭐ Featured Veteran Job Boards
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {jobBoards.filter(board => board.featured).map((board) => (
+                <a
+                  key={board.name}
+                  href={board.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackButtonClick(`Job Board - ${board.name}`)}
+                  className="bg-white dark:bg-gray-800 border-2 border-blue-200 dark:border-blue-700 rounded-lg p-6 hover:shadow-lg hover:border-blue-400 dark:hover:border-blue-500 transition-all group"
                 >
-                  <option value="all">All Types</option>
-                  <option value="full-time">Full-time</option>
-                  <option value="part-time">Part-time</option>
-                  <option value="contract">Contract</option>
-                  <option value="temporary">Temporary</option>
-                </select>
-              </div>
-
-              {/* Experience Level */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Experience Level
-                </label>
-                <select
-                  value={searchParams.experienceLevel}
-                  onChange={(e) => setSearchParams({ ...searchParams, experienceLevel: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-                >
-                  <option value="all">All Levels</option>
-                  <option value="entry">Entry Level</option>
-                  <option value="mid">Mid Level</option>
-                  <option value="senior">Senior Level</option>
-                  <option value="executive">Executive</option>
-                </select>
-              </div>
-
-              {/* Salary Range */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Minimum Salary
-                </label>
-                <input
-                  type="text"
-                  value={searchParams.salary}
-                  onChange={(e) => setSearchParams({ ...searchParams, salary: e.target.value })}
-                  placeholder="e.g., $60,000"
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-                />
-              </div>
-
-              {/* Remote Option */}
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="remote"
-                  checked={searchParams.remote}
-                  onChange={(e) => setSearchParams({ ...searchParams, remote: e.target.checked })}
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                />
-                <label htmlFor="remote" className="ml-2 block text-sm text-gray-700 dark:text-gray-300">
-                  Remote jobs only
-                </label>
-              </div>
-            </div>
-
-            <div className="mt-6 flex gap-4">
-              <button
-                onClick={handleSearch}
-                disabled={loading}
-                className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors disabled:opacity-50"
-              >
-                {loading ? 'Searching...' : 'Search Jobs'}
-              </button>
-              <button
-                onClick={() => setSearchParams({
-                  keywords: '',
-                  location: '',
-                  distance: '25',
-                  jobType: 'all',
-                  experienceLevel: 'all',
-                  salary: '',
-                  remote: false
-                })}
-                className="px-6 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg transition-colors"
-              >
-                Clear Filters
-              </button>
+                  <div className="flex items-start gap-3 mb-3">
+                    <span className="text-4xl">{board.icon}</span>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                        {board.name}
+                      </h3>
+                    </div>
+                    <svg className="w-5 h-5 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {board.description}
+                  </p>
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Job Results */}
-          <div className="space-y-4">
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
-              {jobs.length > 0 ? `${jobs.length} Jobs Found` : 'Search for jobs to see results'}
+          {/* Additional Job Boards */}
+          <div>
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              More Veteran-Friendly Job Boards
             </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {jobBoards.filter(board => !board.featured).map((board) => (
+                <a
+                  key={board.name}
+                  href={board.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackButtonClick(`Job Board - ${board.name}`)}
+                  className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:shadow-lg hover:border-blue-300 dark:hover:border-blue-600 transition-all group"
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="text-3xl">{board.icon}</span>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-2">
+                        <h3 className="text-base font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                          {board.name}
+                        </h3>
+                        <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {board.description}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
 
-            {jobs.map((job) => (
-              <JobCard
-                key={job.id}
-                job={job}
-                isSaved={isJobSaved(job.id)}
-                onSave={() => saveJob(job)}
-                onUnsave={() => unsaveJob(job.id)}
-                onApply={() => openApplicationModal(job)}
-              />
-            ))}
+          {/* How to Use Section */}
+          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              💡 How to Use This Page
+            </h3>
+            <ol className="space-y-3 text-gray-700 dark:text-gray-300">
+              <li className="flex gap-3">
+                <span className="font-bold text-blue-600 dark:text-blue-400">1.</span>
+                <span>Visit one of the job boards above to search for veteran-friendly positions</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="font-bold text-blue-600 dark:text-blue-400">2.</span>
+                <span>When you find interesting jobs, come back here and use the "Saved Jobs" tab to track them</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="font-bold text-blue-600 dark:text-blue-400">3.</span>
+                <span>After applying, use the "Applications" tab to track your progress and follow-ups</span>
+              </li>
+            </ol>
           </div>
         </div>
       )}
