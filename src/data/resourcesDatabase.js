@@ -671,6 +671,63 @@ export const RESOURCE_DATABASE = [
     official: false,
     tags: ['grief-support', 'family-assistance', 'bereaved-families'],
     avgRating: 4.9
+  },
+
+  // International Resources (5 resources)
+  {
+    id: 'international-1',
+    category: 'international',
+    type: 'website',
+    title: 'VA Benefits for Veterans Living Abroad',
+    url: 'https://www.va.gov/resources/helpful-va-phone-numbers/#if-youre-outside-the-u-s',
+    description: 'Official VA guidance on accessing benefits from overseas. Includes international contact numbers and service availability.',
+    official: true,
+    tags: ['living-abroad', 'benefits', 'healthcare', 'international'],
+    avgRating: 4.5
+  },
+  {
+    id: 'international-2',
+    category: 'international',
+    type: 'website',
+    title: 'VFW International Resources',
+    url: 'https://www.vfw.org/',
+    description: 'Connect with veteran communities worldwide. VFW posts located internationally provide support and camaraderie.',
+    official: false,
+    tags: ['living-abroad', 'community', 'networking', 'international'],
+    avgRating: 4.4
+  },
+  {
+    id: 'international-3',
+    category: 'international',
+    type: 'website',
+    title: 'State Department Country Information',
+    url: 'https://travel.state.gov/content/travel/en/international-travel.html',
+    description: 'Essential information about living abroad: safety alerts, visa requirements, country guides, and embassy locations.',
+    official: true,
+    tags: ['living-abroad', 'travel', 'safety', 'international'],
+    avgRating: 4.6
+  },
+  {
+    id: 'international-4',
+    category: 'international',
+    type: 'website',
+    title: 'Social Security International Payments',
+    url: 'https://www.ssa.gov/international/',
+    description: 'How to receive Social Security and retirement benefits while living overseas. Country-specific payment information.',
+    official: true,
+    tags: ['living-abroad', 'retirement', 'financial-planning', 'international'],
+    avgRating: 4.7
+  },
+  {
+    id: 'international-5',
+    category: 'international',
+    type: 'website',
+    title: 'FATCA Tax Information for Expats',
+    url: 'https://www.irs.gov/businesses/corporations/foreign-account-tax-compliance-act-fatca',
+    description: 'IRS requirements for Americans living abroad. Important: Consult a tax professional before moving overseas.',
+    official: true,
+    tags: ['living-abroad', 'taxes', 'legal-assistance', 'expat'],
+    avgRating: 4.3
   }
 ]
 
@@ -680,7 +737,8 @@ export const RESOURCE_CATEGORIES = {
   benefits: { name: 'VA Benefits & Healthcare', icon: '🏥', color: 'red' },
   mental: { name: 'Mental Health & Wellness', icon: '❤️', color: 'pink' },
   housing: { name: 'Housing & Financial', icon: '🏠', color: 'purple' },
-  legal: { name: 'Legal & Family Support', icon: '⚖️', color: 'indigo' }
+  legal: { name: 'Legal & Family Support', icon: '⚖️', color: 'indigo' },
+  international: { name: 'Living Abroad as a Veteran', icon: '🌍', color: 'teal' }
 }
 
 export const RESOURCE_TYPES = {
@@ -698,5 +756,6 @@ export const AVAILABLE_TAGS = [
   'coding', 'technology', 'disability', 'healthcare', 'claims',
   'mental-health', 'ptsd', 'counseling', 'crisis-support',
   'home-loans', 'financial-planning', 'retirement', 'legal-assistance',
-  'family-support', 'transition', 'mentorship'
+  'family-support', 'transition', 'mentorship', 'living-abroad', 'expat',
+  'international', 'taxes', 'travel'
 ]
