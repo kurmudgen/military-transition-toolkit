@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
+import { getUserProfile, updateUserProfile } from '../services/userService'
 
 const BRANCHES = ['Army', 'Navy', 'Air Force', 'Marine Corps', 'Coast Guard', 'Space Force']
 const RANKS = {
@@ -14,6 +15,9 @@ const RANKS = {
 export default function Profile() {
   const [isEditing, setIsEditing] = useState(false)
   const [saveMessage, setSaveMessage] = useState('')
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState(null)
   const [profileData, setProfileData] = useState({
     // Personal Information
     firstName: '',
@@ -53,23 +57,66 @@ export default function Profile() {
     loadProfile()
   }, [])
 
-  const loadProfile = () => {
-    const saved = localStorage.getItem('userProfile')
-    if (saved) {
-      try {
-        setProfileData(JSON.parse(saved))
-      } catch (e) {
-        console.error('Error loading profile:', e)
+  const loadProfile = async () => {
+    try {
+      setLoading(true)
+      setError(null)
+
+      const profile = await getUserProfile()
+      if (profile) {
+        setProfileData(prev => ({
+          ...prev,
+          firstName: profile.first_name || '',
+          lastName: profile.last_name || '',
+          email: profile.email || '',
+          phone: profile.phone || '',
+          branch: profile.branch || '',
+          rank: profile.rank || '',
+          mos: profile.mos || '',
+          yearsOfService: profile.years_of_service || '',
+          separationDate: profile.separation_date || '',
+          currentLocation: profile.current_location || ''
+        }))
       }
+
+      console.log('✓ Profile loaded from database')
+    } catch (err) {
+      console.error('Error loading profile:', err)
+      setError('Failed to load profile.')
+    } finally {
+      setLoading(false)
     }
   }
 
-  const handleSave = () => {
-    localStorage.setItem('userProfile', JSON.stringify(profileData))
-    trackButtonClick('Save Profile')
-    setIsEditing(false)
-    setSaveMessage('✓ Profile saved successfully!')
-    setTimeout(() => setSaveMessage(''), 3000)
+  const handleSave = async () => {
+    try {
+      setSaving(true)
+      setError(null)
+
+      await updateUserProfile({
+        first_name: profileData.firstName,
+        last_name: profileData.lastName,
+        phone: profileData.phone,
+        branch: profileData.branch,
+        rank: profileData.rank,
+        mos: profileData.mos,
+        years_of_service: profileData.yearsOfService,
+        separation_date: profileData.separationDate,
+        current_location: profileData.currentLocation
+      })
+
+      trackButtonClick('Save Profile')
+      setIsEditing(false)
+      setSaveMessage('✓ Profile saved successfully!')
+      setTimeout(() => setSaveMessage(''), 3000)
+      console.log('✓ Profile saved to database')
+    } catch (err) {
+      console.error('Error saving profile:', err)
+      setError('Failed to save profile.')
+      setSaveMessage('')
+    } finally {
+      setSaving(false)
+    }
   }
 
   const handleCancel = () => {
