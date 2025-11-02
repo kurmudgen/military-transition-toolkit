@@ -171,7 +171,7 @@ const TIMELINE_DATA = [
   }
 ]
 
-export default function Retirement() {
+export default function Retirement({ publicMode = false, sampleMode = false }) {
   const [completedItems, setCompletedItems] = useState({})
   const [expandedSections, setExpandedSections] = useState({
     '24mo': true,
@@ -190,8 +190,13 @@ export default function Retirement() {
     document.title = 'Transition Checklist - 20+ Year Retirement'
   }, [])
 
-  // Load completed items from localStorage on mount
+  // Load completed items from localStorage on mount (skip in public mode)
   useEffect(() => {
+    if (publicMode || sampleMode) {
+      setIsInitialLoad(false)
+      return
+    }
+
     const saved = localStorage.getItem('retirementChecklist')
     if (saved) {
       try {
@@ -201,16 +206,16 @@ export default function Retirement() {
       }
     }
     setIsInitialLoad(false)
-  }, [])
+  }, [publicMode, sampleMode])
 
-  // Save to localStorage whenever completedItems changes
+  // Save to localStorage whenever completedItems changes (skip in public mode)
   useEffect(() => {
-    if (!isInitialLoad) {
-      localStorage.setItem('retirementChecklist', JSON.stringify(completedItems))
-      setShowToast(true)
-      setTimeout(() => setShowToast(false), 2000)
-    }
-  }, [completedItems, isInitialLoad])
+    if (publicMode || sampleMode || isInitialLoad) return
+
+    localStorage.setItem('retirementChecklist', JSON.stringify(completedItems))
+    setShowToast(true)
+    setTimeout(() => setShowToast(false), 2000)
+  }, [completedItems, isInitialLoad, publicMode, sampleMode])
 
   // Track scroll position for scroll-to-top button
   useEffect(() => {
@@ -275,6 +280,109 @@ export default function Retirement() {
 
   const overall = getOverallProgress()
 
+  // PUBLIC MODE / SAMPLE MODE: Show read-only preview checklist
+  if (publicMode || sampleMode) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Signup CTA Banner */}
+          <div className="mb-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
+            <h2 className="text-3xl font-bold mb-4">Sample Transition Checklist</h2>
+            <p className="text-xl text-blue-100 mb-6">
+              Preview our comprehensive 20+ year retirement checklist below. Sign up for free to track your progress, save your work, and access all transition paths!
+            </p>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <a
+                href="/signup"
+                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
+              >
+                Sign Up Free - Track Your Progress
+              </a>
+              <a
+                href="/login"
+                className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
+              >
+                Log In
+              </a>
+            </div>
+          </div>
+
+          {/* Header */}
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl shadow-xl p-8 mb-8">
+            <h1 className="text-4xl font-bold text-white mb-3">
+              20+ Year Retirement Timeline (Preview)
+            </h1>
+            <p className="text-slate-300 text-lg mb-6">
+              Comprehensive checklist for service members retiring with 20+ years of service
+            </p>
+            <div className="p-4 bg-yellow-900/30 border border-yellow-600 rounded-lg">
+              <p className="text-yellow-300 text-sm">
+                ℹ️ This is a read-only preview. Sign up for a free account to check off items, track your progress, and save your work!
+              </p>
+            </div>
+          </div>
+
+          {/* Timeline Sections */}
+          <div className="space-y-6">
+            {TIMELINE_DATA.map((section) => (
+              <div
+                key={section.id}
+                className="bg-slate-800 border border-slate-700 rounded-xl shadow-lg overflow-hidden"
+              >
+                {/* Section Header */}
+                <div className="p-6 bg-gradient-to-r from-blue-900/50 to-slate-800">
+                  <h2 className="text-2xl font-bold text-white mb-2">{section.title}</h2>
+                  <p className="text-slate-400 text-sm">{section.items.length} action items</p>
+                </div>
+
+                {/* Section Items */}
+                <div className="p-6 space-y-3">
+                  {section.items.map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-start gap-3 p-3 bg-slate-700/50 rounded-lg hover:bg-slate-700 transition-colors"
+                    >
+                      <input
+                        type="checkbox"
+                        disabled
+                        className="mt-1 w-5 h-5 rounded border-slate-500 text-blue-600 opacity-50 cursor-not-allowed"
+                      />
+                      <span className="flex-1 text-slate-200">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">Ready to plan your transition?</h3>
+            <p className="text-lg text-blue-100 mb-6">
+              Sign up free to access interactive checklists for all transition paths, track your progress, and get personalized guidance
+            </p>
+            <div className="space-y-3 mb-6">
+              <p className="text-sm text-blue-200">Also includes:</p>
+              <ul className="text-sm text-blue-100 space-y-1 max-w-xl mx-auto">
+                <li>✓ MedBoard transition checklist</li>
+                <li>✓ Under 20 years separation checklist</li>
+                <li>✓ Retirement calculator & state benefits comparison</li>
+                <li>✓ VA claims builder & resource library</li>
+              </ul>
+            </div>
+            <a
+              href="/signup"
+              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl inline-block"
+            >
+              Create Free Account
+            </a>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // AUTHENTICATED MODE: Show full interactive checklist
   return (
     <div className="px-4 py-6 sm:px-0">
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
