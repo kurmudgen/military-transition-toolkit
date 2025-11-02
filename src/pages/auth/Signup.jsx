@@ -8,6 +8,7 @@ export default function Signup() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [fullName, setFullName] = useState('')
+  const [separationStatus, setSeparationStatus] = useState('') // New field
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
@@ -34,6 +35,10 @@ export default function Signup() {
     setSuccessMessage('')
 
     // Validation
+    if (!separationStatus) {
+      return setError('Please select what brings you here')
+    }
+
     if (password !== confirmPassword) {
       return setError('Passwords do not match')
     }
@@ -51,13 +56,14 @@ export default function Signup() {
 
     try {
       const { error } = await signUp(email, password, {
-        full_name: fullName.trim()
+        full_name: fullName.trim(),
+        separation_status: separationStatus
       })
 
       if (error) {
         setError(error.message)
       } else {
-        trackButtonClick('Signup - Email/Password')
+        trackButtonClick(`Signup - ${separationStatus}`)
         setSuccessMessage(
           'Success! Please check your email to verify your account.'
         )
@@ -116,6 +122,60 @@ export default function Signup() {
 
           {/* Email/Password Form */}
           <form className="space-y-4" onSubmit={handleSubmit}>
+            {/* Separation Status - NEW */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+                What brings you here?
+              </label>
+              <div className="space-y-3">
+                <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                  separationStatus === 'transitioning'
+                    ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                    : 'border-gray-300 dark:border-gray-600 hover:border-blue-300 dark:hover:border-blue-500'
+                }`}>
+                  <input
+                    type="radio"
+                    name="separationStatus"
+                    value="transitioning"
+                    checked={separationStatus === 'transitioning'}
+                    onChange={(e) => setSeparationStatus(e.target.value)}
+                    className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                  />
+                  <div className="ml-3">
+                    <span className="block text-sm font-semibold text-gray-900 dark:text-white">
+                      I'm currently transitioning out
+                    </span>
+                    <span className="block text-xs text-gray-600 dark:text-gray-400 mt-1">
+                      Active duty planning separation/retirement
+                    </span>
+                  </div>
+                </label>
+
+                <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                  separationStatus === 'separated'
+                    ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                    : 'border-gray-300 dark:border-gray-600 hover:border-blue-300 dark:hover:border-blue-500'
+                }`}>
+                  <input
+                    type="radio"
+                    name="separationStatus"
+                    value="separated"
+                    checked={separationStatus === 'separated'}
+                    onChange={(e) => setSeparationStatus(e.target.value)}
+                    className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                  />
+                  <div className="ml-3">
+                    <span className="block text-sm font-semibold text-gray-900 dark:text-white">
+                      I'm already out and need help with VA claims
+                    </span>
+                    <span className="block text-xs text-gray-600 dark:text-gray-400 mt-1">
+                      Separated/retired veteran needing claims assistance
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
             <div>
               <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                 Full Name

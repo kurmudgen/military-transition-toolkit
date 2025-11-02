@@ -19,6 +19,7 @@ export default function Home() {
   const [userSetup, setUserSetup] = useState(null)
   const [separationDate, setSeparationDate] = useState('')
   const [userName, setUserName] = useState('')
+  const [separationStatus, setSeparationStatus] = useState('transitioning') // NEW: Default to transitioning
   const [showSetup, setShowSetup] = useState(false)
   const [currentTip, setCurrentTip] = useState(0)
   const [isEditingDate, setIsEditingDate] = useState(false)
@@ -33,6 +34,7 @@ export default function Home() {
         setUserSetup(parsed.situation)
         setSeparationDate(parsed.separationDate || '')
         setUserName(parsed.name || '')
+        setSeparationStatus(parsed.separation_status || 'transitioning') // NEW: Load separation status
       } catch (e) {
         console.error('Error loading user setup:', e)
       }
@@ -573,19 +575,147 @@ export default function Home() {
         </div>
       )}
 
-      {/* Header with settings */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-3">
-        <div className="flex-1">
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
-            {userName ? `Welcome back, ${userName}!` : 'Your Transition Dashboard'}
-          </h1>
-          <p className="text-gray-600 mt-1 text-sm sm:text-base">
-            {userSetup === 'retirement' && '20+ Year Retirement Track'}
-            {userSetup === 'medboard' && 'MedBoard/IDES Track'}
-            {userSetup === 'separation' && 'Separation (<20 Years) Track'}
-            {userSetup === 'planning' && 'Post-Separation Planning'}
-          </p>
+      {/* NEW: Claims-Focused Dashboard for Already-Separated Veterans */}
+      {separationStatus === 'separated' ? (
+        <div>
+          {/* Header */}
+          <div className="mb-8">
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+              {userName ? `Welcome back, ${userName}!` : 'Welcome Back, Veteran!'}
+            </h1>
+            <p className="text-gray-600 dark:text-gray-400 text-lg">
+              Let's get your VA claims filed and approved.
+            </p>
+          </div>
+
+          {/* Tip of the Day */}
+          <div className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-l-4 border-blue-500 dark:border-blue-400 p-6 rounded-lg shadow-sm">
+            <div className="flex items-start gap-3">
+              <div className="text-2xl">💡</div>
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Tip of the Day</h3>
+                <p className="text-gray-700 dark:text-gray-300 text-sm">{TIPS[currentTip]}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Action Cards - Claims Focused */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* VA Claims Builder - HERO */}
+            <Link
+              to="/app/va-claims-builder"
+              onClick={() => trackButtonClick('Dashboard - VA Claims Builder')}
+              className="col-span-1 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="text-5xl">📋</div>
+                <div>
+                  <h3 className="text-2xl font-bold">VA Claims Builder</h3>
+                  <p className="text-blue-100 text-sm mt-1">Build your claim step-by-step</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-between mt-6">
+                <span className="text-white/90">
+                  {vaConditions > 0 ? `${vaConditions} conditions tracked` : 'Get started →'}
+                </span>
+                {evidenceProgress > 0 && (
+                  <span className="bg-white/20 px-3 py-1 rounded-full text-sm font-semibold">
+                    {evidenceProgress}% complete
+                  </span>
+                )}
+              </div>
+            </Link>
+
+            {/* State Benefits */}
+            <Link
+              to="/app/state-benefits"
+              onClick={() => trackButtonClick('Dashboard - State Benefits')}
+              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all border border-gray-200 dark:border-gray-700"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="text-4xl">🗺️</div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">State Benefits</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                Compare veteran benefits by state
+              </p>
+              {stateBenefitsData.statesCompared > 0 && (
+                <div className="text-blue-600 dark:text-blue-400 font-semibold">
+                  {stateBenefitsData.statesCompared} states compared
+                </div>
+              )}
+            </Link>
+
+            {/* Resources */}
+            <Link
+              to="/app/resources"
+              onClick={() => trackButtonClick('Dashboard - Resources')}
+              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all border border-gray-200 dark:border-gray-700"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="text-4xl">📚</div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">Resources</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                VA forms, guides, and helpful links
+              </p>
+              <div className="text-blue-600 dark:text-blue-400 font-semibold">
+                Browse library →
+              </div>
+            </Link>
+          </div>
+
+          {/* Quick Links Section */}
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Quick Links</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <Link
+                to="/app/va-claims-builder"
+                className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              >
+                <span className="text-2xl">📄</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">File a Claim</span>
+              </Link>
+              <Link
+                to="/app/appointments"
+                className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              >
+                <span className="text-2xl">🏥</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">Track Appointments</span>
+              </Link>
+              <Link
+                to="/app/state-benefits"
+                className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              >
+                <span className="text-2xl">💰</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">State Benefits</span>
+              </Link>
+              <Link
+                to="/app/resources"
+                className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              >
+                <span className="text-2xl">📖</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">VA Resources</span>
+              </Link>
+            </div>
+          </div>
         </div>
+      ) : (
+        /* Original Full Dashboard for Transitioning Service Members */
+        <div>
+          {/* Header with settings */}
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-3">
+            <div className="flex-1">
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                {userName ? `Welcome back, ${userName}!` : 'Your Transition Dashboard'}
+              </h1>
+              <p className="text-gray-600 mt-1 text-sm sm:text-base">
+                {userSetup === 'retirement' && '20+ Year Retirement Track'}
+                {userSetup === 'medboard' && 'MedBoard/IDES Track'}
+                {userSetup === 'separation' && 'Separation (<20 Years) Track'}
+                {userSetup === 'planning' && 'Post-Separation Planning'}
+              </p>
+            </div>
         <button
           onClick={() => setShowSetup(true)}
           className="px-4 py-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-white hover:bg-blue-600 dark:hover:bg-blue-500 border-2 border-blue-600 dark:border-blue-500 rounded-lg transition-all min-h-[44px] flex items-center gap-2 shadow-sm hover:shadow-md"
@@ -1187,6 +1317,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+        </div>
+      )}
     </div>
   )
 }
