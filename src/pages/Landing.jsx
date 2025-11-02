@@ -254,6 +254,76 @@ export default function Landing() {
         </div>
       </div>
 
+      {/* Try Our Tools Section */}
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Try Our Tools - No Signup Required
+          </h2>
+          <p className="text-xl text-slate-300">
+            Explore our toolkit with these free previews
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* State Benefits */}
+          <Link to="/public/state-benefits" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">🗺️</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              State Benefits Comparison
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Browse veteran benefits across all 50 states. See tax advantages, education benefits, and more.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              Explore States →
+            </span>
+          </Link>
+
+          {/* Retirement Calculator */}
+          <Link to="/public/retirement-calculator" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">💰</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Retirement Pay Calculator
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Calculate your estimated retirement pay. Try our basic calculator with High-3 and BRS systems.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              Calculate Pay →
+            </span>
+          </Link>
+
+          {/* Resource Library */}
+          <Link to="/public/resources" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">📚</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Resource Library
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Access 60+ curated resources for career planning, VA benefits, education, and more.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              Browse Resources →
+            </span>
+          </Link>
+
+          {/* Sample Checklist */}
+          <Link to="/public/sample-checklist" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">✅</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Sample Transition Checklist
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Preview our comprehensive 20+ year retirement timeline with detailed action items.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              View Checklist →
+            </span>
+          </Link>
+        </div>
+      </div>
+
       {/* CTA Section */}
       <div className="max-w-4xl mx-auto px-4 py-16 text-center">
         <h2 className="text-4xl font-bold text-white mb-6">
@@ -262,11 +332,11 @@ export default function Landing() {
         <p className="text-xl text-slate-300 mb-8">
           Join thousands of service members successfully transitioning with our free tools
         </p>
-        <Link to="/app" className="inline-block px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-lg transition-colors">
+        <Link to="/signup" className="inline-block px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-lg transition-colors">
           Get Started Free →
         </Link>
         <p className="text-slate-400 text-sm mt-4">
-          No credit card required • No account needed • Start in 30 seconds
+          No credit card required • Start in 30 seconds
         </p>
       </div>
 
