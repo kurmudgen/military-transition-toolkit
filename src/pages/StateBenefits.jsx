@@ -7,7 +7,7 @@ import {
   compareStates
 } from '../data/stateBenefitsDatabase'
 
-export default function StateBenefits() {
+export default function StateBenefits({ publicMode = false }) {
   const [selectedState, setSelectedState] = useState(null)
   const [comparisonStates, setComparisonStates] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
@@ -225,6 +225,127 @@ export default function StateBenefits() {
 
   const filteredStates = getFilteredStates()
 
+  // PUBLIC MODE: Show simplified view with signup CTA
+  if (publicMode) {
+    const allStates = getAllStates()
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Signup CTA Banner */}
+          <div className="mb-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
+            <h2 className="text-3xl font-bold mb-4">Explore State Veteran Benefits</h2>
+            <p className="text-xl text-blue-100 mb-6">
+              See basic state information below. Sign up for free to access advanced comparison tools, filtering, and detailed benefit breakdowns!
+            </p>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <a
+                href="/signup"
+                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
+              >
+                Sign Up Free - Compare States
+              </a>
+              <a
+                href="/login"
+                className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
+              >
+                Log In
+              </a>
+            </div>
+          </div>
+
+          {/* Header */}
+          <div className="mb-6">
+            <h1 className="text-4xl font-bold text-white mb-3">
+              State Veteran Benefits Preview
+            </h1>
+            <p className="text-slate-300 text-lg">
+              Browse all 50 states + DC. Create a free account to compare benefits, filter by category, and export your analysis.
+            </p>
+          </div>
+
+          {/* Simple State Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {allStates.map(stateCode => {
+              const state = STATE_BENEFITS_DATABASE[stateCode]
+              return (
+                <div
+                  key={stateCode}
+                  className="bg-slate-800 border border-slate-700 rounded-lg p-5 hover:shadow-lg transition-shadow"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-white">{state.name}</h3>
+                      <div className="flex items-center mt-1">
+                        <span className="text-sm text-slate-400">
+                          Rating: {state.rating.toFixed(1)}/5.0
+                        </span>
+                      </div>
+                    </div>
+                    <div className={`w-12 h-12 rounded-full ${state.rating >= 4.5 ? 'bg-green-500' : state.rating >= 4.0 ? 'bg-yellow-500' : 'bg-orange-500'} flex items-center justify-center text-white font-bold`}>
+                      {state.rating.toFixed(1)}
+                    </div>
+                  </div>
+
+                  <div className="text-sm text-slate-300 mb-4">
+                    <p>Veteran Population: {state.vetPopulation}</p>
+                  </div>
+
+                  <div className="pt-4 border-t border-slate-700">
+                    <p className="text-sm text-slate-400 mb-3">
+                      Sign up to see detailed benefits for:
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {state.benefits.propertyTax.available && (
+                        <span className="px-2 py-1 bg-blue-900/50 text-blue-300 rounded text-xs">
+                          Property Tax
+                        </span>
+                      )}
+                      {state.benefits.incomeTax.available && (
+                        <span className="px-2 py-1 bg-green-900/50 text-green-300 rounded text-xs">
+                          Income Tax
+                        </span>
+                      )}
+                      {state.benefits.education.available && (
+                        <span className="px-2 py-1 bg-purple-900/50 text-purple-300 rounded text-xs">
+                          Education
+                        </span>
+                      )}
+                      {state.benefits.vehicleRegistration.available && (
+                        <span className="px-2 py-1 bg-yellow-900/50 text-yellow-300 rounded text-xs">
+                          Vehicle
+                        </span>
+                      )}
+                      {state.benefits.hunting.available && (
+                        <span className="px-2 py-1 bg-red-900/50 text-red-300 rounded text-xs">
+                          Hunting/Fishing
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">Ready to find your perfect state?</h3>
+            <p className="text-lg text-blue-100 mb-6">
+              Sign up free to unlock comparison tools, advanced filtering, and personalized recommendations
+            </p>
+            <a
+              href="/signup"
+              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl inline-block"
+            >
+              Create Free Account
+            </a>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // AUTHENTICATED MODE: Show full comparison tool
   return (
     <div className="space-y-6">
       {/* Header */}
