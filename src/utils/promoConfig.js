@@ -1,6 +1,13 @@
 // Government Shutdown Support Promotion Configuration
 // Extended from original Veterans Day promotion to support military families during shutdown
 
+// PROMO MODE FEATURE FLAG
+// When VITE_PROMO_MODE=true, all authenticated users get free premium access
+// This prevents accidental charges during promotional periods
+export const isPromoModeActive = () => {
+  return import.meta.env.VITE_PROMO_MODE === 'true'
+}
+
 // Promotion end date: November 11, 2025 (or until shutdown ends, whichever is later)
 export const PROMO_END_DATE = new Date('2025-11-11T23:59:59')
 
@@ -104,13 +111,24 @@ export const PRICING = {
   }
 }
 
-// Check if user has premium access (during promo, everyone does)
+// Check if user has premium access
+// Priority: 1) Promo Mode (highest), 2) Time-based promo, 3) Actual subscription
 export const hasPremiumAccess = (userTier = 'free') => {
-  // During promo, everyone gets premium features
+  // First check: Promo mode feature flag (prevents charges)
+  if (isPromoModeActive()) {
+    return true
+  }
+
+  // Second check: Time-based promotion (legacy)
   if (isPromoActive()) {
     return true
   }
 
-  // After promo, check actual tier
+  // Final check: Actual subscription tier
   return ['monthly', 'annual', 'lifetime'].includes(userTier?.toLowerCase())
+}
+
+// Check if payment UI should be hidden
+export const shouldHidePaymentUI = () => {
+  return isPromoModeActive()
 }

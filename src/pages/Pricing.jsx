@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { CheckCircleIcon, SparklesIcon, RocketLaunchIcon } from '@heroicons/react/24/outline'
-import { isPromoActive, getTimeRemaining, PRICING } from '../utils/promoConfig'
+import { isPromoActive, getTimeRemaining, PRICING, shouldHidePaymentUI } from '../utils/promoConfig'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { createCheckoutSession } from '../services/subscriptionService'
 import { getCurrentUser } from '../lib/supabase'
@@ -10,6 +10,7 @@ export default function Pricing() {
   const [loading, setLoading] = useState(false)
   const [showCancelMessage, setShowCancelMessage] = useState(false)
   const promoActive = isPromoActive()
+  const paymentUIHidden = shouldHidePaymentUI()
 
   useEffect(() => {
     trackPageView('/pricing')
@@ -42,6 +43,12 @@ export default function Pricing() {
 
   const handleSelectPlan = async (planId) => {
     trackButtonClick(`Select Plan - ${planId}`)
+
+    // PROMO MODE: Block all paid plan selections when promo mode active
+    if (paymentUIHidden && planId !== 'free') {
+      alert('All premium features are currently FREE during our government shutdown support promotion. Simply sign up for a free account to get full access!')
+      return
+    }
 
     // Free plan doesn't need Stripe
     if (planId === 'free') {
@@ -222,13 +229,64 @@ export default function Pricing() {
         </p>
       </div>
 
-      {/* Pricing Cards */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 items-stretch">
-        <PlanCard plan={PRICING.FREE} planId="free" />
-        <PlanCard plan={PRICING.MONTHLY} planId="monthly" />
-        <PlanCard plan={PRICING.ANNUAL} planId="annual" />
-        <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured />
-      </div>
+      {/* Pricing Cards - Hidden during promo mode */}
+      {!paymentUIHidden && (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 items-stretch">
+          <PlanCard plan={PRICING.FREE} planId="free" />
+          <PlanCard plan={PRICING.MONTHLY} planId="monthly" />
+          <PlanCard plan={PRICING.ANNUAL} planId="annual" />
+          <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured />
+        </div>
+      )}
+
+      {/* Promo Mode Message - Show when payment UI is hidden */}
+      {paymentUIHidden && (
+        <div className="mb-16 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border-2 border-green-500 dark:border-green-600 rounded-2xl p-12 text-center shadow-2xl">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-6xl mb-6">🎉</div>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              All Premium Features Are FREE
+            </h2>
+            <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">
+              During our government shutdown support promotion, every feature of Military Transition Toolkit
+              is completely free. No credit card required. No payment needed.
+            </p>
+            <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-6 mb-6">
+              <ul className="space-y-3 text-left">
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Unlimited resumes and job applications</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>VA disability claims builder with evidence tracking</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Advanced retirement calculator (BRS & High-3)</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Cloud storage and device sync</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
+                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Priority support</span>
+                </li>
+              </ul>
+            </div>
+            <button
+              onClick={() => window.location.href = '/signup'}
+              className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
+            >
+              Get Started Free - No Payment Required
+            </button>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
+              Paid plans will be available when the promotion ends
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Launch Special Callout */}
       {promoActive && (

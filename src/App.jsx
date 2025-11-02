@@ -56,6 +56,12 @@ function App() {
         <Route path="/auth/reset-password" element={<ResetPassword />} />
         <Route path="/auth/callback" element={<AuthCallback />} />
 
+        {/* Public access pages (no login required) */}
+        <Route path="/public/state-benefits" element={<StateBenefits publicMode />} />
+        <Route path="/public/retirement-calculator" element={<RetirementCalculator publicMode />} />
+        <Route path="/public/resources" element={<Resources publicMode />} />
+        <Route path="/public/sample-checklist" element={<Retirement publicMode sampleMode />} />
+
         {/* Protected application routes with Layout */}
         <Route
           path="/app"
