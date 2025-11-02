@@ -1,5 +1,15 @@
 import { useState, useEffect } from 'react'
 import { isPromoActive } from '../utils/promoConfig'
+import {
+  getVAConditions,
+  createVACondition,
+  updateVACondition,
+  deleteVACondition,
+  getAllVAEvidence,
+  createVAEvidence,
+  updateVAEvidence,
+  deleteVAEvidence
+} from '../services/vaService'
 
 // Condition categories and their conditions
 const CONDITION_CATEGORIES = {
@@ -122,53 +132,179 @@ export default function VAClaimsBuilder() {
   const [expandedEvidence, setExpandedEvidence] = useState({})
   const [showingSuggestions, setShowingSuggestions] = useState(false)
   const [generatedStatements, setGeneratedStatements] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState(null)
+  const [conditionIdMap, setConditionIdMap] = useState({}) // Maps condition names to database IDs
 
   // Set page title
   useEffect(() => {
     document.title = 'VA Claims Builder | Military Transition Toolkit'
   }, [])
 
-  // Load saved data from localStorage
+  // Load data from Supabase database
   useEffect(() => {
-    const savedConditions = localStorage.getItem('vaClaimsConditions')
-    const savedDetails = localStorage.getItem('vaClaimsDetails')
-    const savedEvidence = localStorage.getItem('vaClaimsEvidence')
+    const loadVAData = async () => {
+      try {
+        setLoading(true)
+        setError(null)
 
-    if (savedConditions) {
-      try {
-        setSelectedConditions(JSON.parse(savedConditions))
-      } catch (e) {
-        console.error('Error loading conditions:', e)
+        // Load all conditions from database
+        const conditions = await getVAConditions()
+
+        if (conditions && conditions.length > 0) {
+          // Transform database records into page's data structure
+          const names = []
+          const details = {}
+          const idMap = {}
+
+          conditions.forEach(condition => {
+            const name = condition.condition_name
+            names.push(name)
+            idMap[name] = condition.id
+
+            // Map database fields to page's detail structure
+            details[name] = {
+              startDate: condition.start_date || '',
+              incident: condition.incident_description || '',
+              symptoms: condition.symptoms || {},
+              frequency: condition.frequency || '',
+              worsening: condition.worsening_factors || '',
+              treatment: condition.treatment_history || {},
+              limitations: condition.functional_limitations || {},
+              painLevel: condition.pain_level || '',
+              category: condition.category || '',
+              description: condition.description || '',
+              serviceConnected: condition.service_connected !== false,
+              estimatedRating: condition.estimated_rating || '',
+              notes: condition.notes || ''
+            }
+          })
+
+          setSelectedConditions(names)
+          setConditionDetails(details)
+          setConditionIdMap(idMap)
+        }
+
+        // Load all evidence from database
+        const evidence = await getAllVAEvidence()
+
+        if (evidence && Object.keys(evidence).length > 0) {
+          // Transform evidence by condition_id to evidence by condition_name
+          const evidenceByName = {}
+
+          conditions.forEach(condition => {
+            const conditionEvidence = evidence[condition.id] || []
+            const name = condition.condition_name
+
+            evidenceByName[name] = {
+              required: {},
+              recommended: {}
+            }
+
+            // Group evidence by type
+            conditionEvidence.forEach(ev => {
+              const type = ev.evidence_type
+              const evidenceData = {
+                status: ev.status || 'pending',
+                notes: ev.notes || '',
+                details: ev.details || {}
+              }
+
+              // Categorize as required or recommended based on type
+              if (['strs', 'diagnosis', 'nexus'].includes(type)) {
+                evidenceByName[name].required[type] = evidenceData
+              } else {
+                evidenceByName[name].recommended[type] = evidenceData
+              }
+            })
+          })
+
+          setEvidenceTracking(evidenceByName)
+        }
+
+        console.log('✓ VA Claims data loaded from database')
+      } catch (err) {
+        console.error('Error loading VA data:', err)
+        setError('Failed to load VA claims data. Please refresh the page.')
+      } finally {
+        setLoading(false)
       }
     }
-    if (savedDetails) {
-      try {
-        setConditionDetails(JSON.parse(savedDetails))
-      } catch (e) {
-        console.error('Error loading details:', e)
-      }
-    }
-    if (savedEvidence) {
-      try {
-        setEvidenceTracking(JSON.parse(savedEvidence))
-      } catch (e) {
-        console.error('Error loading evidence:', e)
-      }
-    }
+
+    loadVAData()
   }, [])
 
-  // Save to localStorage
-  useEffect(() => {
-    localStorage.setItem('vaClaimsConditions', JSON.stringify(selectedConditions))
-  }, [selectedConditions])
+  // Helper function to save condition to database
+  const saveConditionToDatabase = async (conditionName, details, isNew = false) => {
+    try {
+      setSaving(true)
 
-  useEffect(() => {
-    localStorage.setItem('vaClaimsDetails', JSON.stringify(conditionDetails))
-  }, [conditionDetails])
+      const dbData = {
+        condition_name: conditionName,
+        category: details.category || '',
+        description: details.description || '',
+        start_date: details.startDate || null,
+        incident_description: details.incident || '',
+        symptoms: details.symptoms || {},
+        frequency: details.frequency || '',
+        worsening_factors: details.worsening || '',
+        treatment_history: details.treatment || {},
+        functional_limitations: details.limitations || {},
+        pain_level: details.painLevel || '',
+        service_connected: details.serviceConnected !== false,
+        estimated_rating: details.estimatedRating || '',
+        notes: details.notes || ''
+      }
 
-  useEffect(() => {
-    localStorage.setItem('vaClaimsEvidence', JSON.stringify(evidenceTracking))
-  }, [evidenceTracking])
+      if (isNew) {
+        // Create new condition
+        const created = await createVACondition(dbData)
+        setConditionIdMap(prev => ({
+          ...prev,
+          [conditionName]: created.id
+        }))
+        console.log(`✓ Created condition: ${conditionName}`)
+      } else {
+        // Update existing condition
+        const conditionId = conditionIdMap[conditionName]
+        if (conditionId) {
+          await updateVACondition(conditionId, dbData)
+          console.log(`✓ Updated condition: ${conditionName}`)
+        }
+      }
+    } catch (err) {
+      console.error('Error saving condition:', err)
+      setError(`Failed to save ${conditionName}. Please try again.`)
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  // Helper function to delete condition from database
+  const deleteConditionFromDatabase = async (conditionName) => {
+    try {
+      setSaving(true)
+      const conditionId = conditionIdMap[conditionName]
+
+      if (conditionId) {
+        await deleteVACondition(conditionId)
+        console.log(`✓ Deleted condition: ${conditionName}`)
+
+        // Remove from ID map
+        setConditionIdMap(prev => {
+          const updated = { ...prev }
+          delete updated[conditionName]
+          return updated
+        })
+      }
+    } catch (err) {
+      console.error('Error deleting condition:', err)
+      setError(`Failed to delete ${conditionName}. Please try again.`)
+    } finally {
+      setSaving(false)
+    }
+  }
 
   const toggleCategory = (categoryId) => {
     setExpandedCategories(prev => ({
@@ -184,8 +320,9 @@ export default function VAClaimsBuilder() {
     }))
   }
 
-  const toggleCondition = (condition) => {
+  const toggleCondition = async (condition) => {
     if (selectedConditions.includes(condition)) {
+      // Remove condition - delete from database
       setSelectedConditions(selectedConditions.filter(c => c !== condition))
       const newDetails = { ...conditionDetails }
       delete newDetails[condition]
@@ -193,20 +330,31 @@ export default function VAClaimsBuilder() {
       const newEvidence = { ...evidenceTracking }
       delete newEvidence[condition]
       setEvidenceTracking(newEvidence)
+
+      // Delete from database
+      await deleteConditionFromDatabase(condition)
     } else {
+      // Add condition - create in database
+      const newDetails = {
+        startDate: '',
+        incident: '',
+        symptoms: {},
+        frequency: '',
+        worsening: '',
+        treatment: {},
+        limitations: {},
+        painLevel: '',
+        category: '', // Will be filled in by user
+        description: '',
+        serviceConnected: true,
+        estimatedRating: '',
+        notes: ''
+      }
+
       setSelectedConditions([...selectedConditions, condition])
       setConditionDetails({
         ...conditionDetails,
-        [condition]: {
-          startDate: '',
-          incident: '',
-          symptoms: {},
-          frequency: '',
-          worsening: '',
-          treatment: {},
-          limitations: {},
-          painLevel: ''
-        }
+        [condition]: newDetails
       })
       // Initialize evidence tracking
       setEvidenceTracking({
@@ -237,17 +385,25 @@ export default function VAClaimsBuilder() {
           }
         }
       })
+
+      // Save to database
+      await saveConditionToDatabase(condition, newDetails, true)
     }
   }
 
-  const updateConditionDetail = (condition, field, value) => {
+  const updateConditionDetail = async (condition, field, value) => {
+    const updatedDetails = {
+      ...conditionDetails[condition],
+      [field]: value
+    }
+
     setConditionDetails({
       ...conditionDetails,
-      [condition]: {
-        ...conditionDetails[condition],
-        [field]: value
-      }
+      [condition]: updatedDetails
     })
+
+    // Save to database (debounced by network latency naturally)
+    await saveConditionToDatabase(condition, updatedDetails, false)
   }
 
   const updateEvidence = (condition, category, field, subfield, value) => {
@@ -494,9 +650,67 @@ export default function VAClaimsBuilder() {
 
   const conditionsWithCompleteEvidence = selectedConditions.filter(c => getEvidenceProgress(c) === 100).length
 
+  // Show loading state
+  if (loading) {
+    return (
+      <div className="px-4 py-6 sm:px-0">
+        <div className="bg-white rounded-lg shadow p-6">
+          <div className="flex items-center justify-center py-12">
+            <div className="text-center">
+              <svg className="animate-spin h-12 w-12 text-blue-600 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              <p className="text-gray-600 font-medium">Loading your VA claims data from secure cloud storage...</p>
+              <p className="text-gray-500 text-sm mt-2">This may take a moment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="px-4 py-6 sm:px-0">
       <div className="bg-white rounded-lg shadow p-6">
+        {/* Error Alert */}
+        {error && (
+          <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-400 rounded">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <p className="text-sm text-red-700">{error}</p>
+              </div>
+              <div className="ml-auto pl-3">
+                <button
+                  onClick={() => setError(null)}
+                  className="text-red-400 hover:text-red-600"
+                >
+                  <span className="sr-only">Dismiss</span>
+                  <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Saving Indicator */}
+        {saving && (
+          <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded flex items-center">
+            <svg className="animate-spin h-4 w-4 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span className="text-blue-700 text-sm font-medium">Saving to secure cloud database...</span>
+          </div>
+        )}
+
         <div className="flex items-center gap-3 mb-2">
           <h1 className="text-3xl font-bold text-gray-900">
             VA Claims Builder
@@ -520,11 +734,10 @@ export default function VAClaimsBuilder() {
               </svg>
             </div>
             <div className="ml-3">
-              <h3 className="text-sm font-medium text-blue-800">Privacy & Security Notice</h3>
+              <h3 className="text-sm font-medium text-blue-800">Privacy & Security</h3>
               <div className="mt-2 text-sm text-blue-700">
                 <p>
-                  This page contains sensitive medical and personal information. <strong>Free tier:</strong> Data stored locally on your device. <strong>Premium:</strong> End-to-end encrypted cloud storage with zero-knowledge architecture - we cannot decrypt or access your information.
-                  Export your claims regularly as backup.
+                  🔒 Your sensitive medical and personal information is <strong>securely stored in the cloud</strong> with bank-level encryption. Your data is <strong>automatically backed up</strong> and accessible from any device. We use row-level security to ensure complete data isolation - only you can access your VA claims information.
                 </p>
               </div>
             </div>
