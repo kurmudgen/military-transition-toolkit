@@ -181,29 +181,30 @@ export default function Pricing() {
         </div>
       )}
 
-      {/* Veterans Day Promo Header */}
+      {/* Government Shutdown Support Header */}
       {promoActive && (
         <div className="mb-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <RocketLaunchIcon className="h-8 w-8" />
-            <h2 className="text-3xl font-bold">Veterans Day Launch Celebration</h2>
+            <span className="text-5xl" role="img" aria-label="US Flag">🇺🇸</span>
+            <h2 className="text-3xl font-bold">Supporting Veterans During Government Shutdown</h2>
           </div>
 
           <p className="text-xl mb-4 text-blue-100">
-            To honor our fellow veterans, <strong>all premium features are FREE</strong> through Veterans Day
+            <strong>All premium features remain FREE</strong> until federal operations resume
           </p>
 
-          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 max-w-md mx-auto mb-4">
-            <p className="text-sm text-blue-100 mb-2">Promotion ends in:</p>
-            <p className="text-3xl font-bold">
-              {timeRemaining.days} days, {timeRemaining.hours} hours
+          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 max-w-3xl mx-auto mb-4">
+            <p className="text-base text-blue-50 leading-relaxed mb-3">
+              We had planned to offer free access through Veterans Day, but with veterans potentially impacted by the government shutdown, we're extending free premium access until the shutdown ends.
             </p>
-            <p className="text-sm text-blue-100 mt-2">November 11, 2025</p>
+            <p className="text-base text-blue-100 font-medium">
+              Active duty, veterans, and military families - you have enough to worry about. Focus on your transition, we've got the rest covered.
+            </p>
           </div>
 
           <p className="text-blue-100 max-w-2xl mx-auto">
             Explore everything risk-free, then choose your plan. Lock in <strong>Founding Member</strong> pricing
-            ($249 lifetime) before it increases to $399 after Veterans Day.
+            ($249 lifetime) before it increases to $399 when the promotion ends.
           </p>
         </div>
       )}
@@ -215,7 +216,7 @@ export default function Pricing() {
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
           {promoActive
-            ? 'All premium features unlocked until November 11, 2025. Sign up now to try everything before deciding.'
+            ? 'All premium features unlocked until the government shutdown ends. Sign up now to try everything before deciding.'
             : 'Start free and upgrade when you\'re ready. All premium features unlock immediately.'
           }
         </p>
@@ -255,7 +256,7 @@ export default function Pricing() {
                 </li>
                 <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
                   <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Price increases to $399 on November 11, 2025</span>
+                  <span>Price increases to $399 when promotion ends</span>
                 </li>
               </ul>
               <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 bg-white/50 dark:bg-gray-800/50 inline-block px-4 py-2 rounded-lg">
@@ -341,10 +342,12 @@ export default function Pricing() {
           {promoActive && (
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                What happens after November 11, 2025?
+                What happens when the promotion ends?
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                After Veterans Day, premium features will require a paid plan. Free tier users will still have access
+                In response to the government shutdown affecting military families, we've extended our free premium access period.
+                Originally planned through Veterans Day, all features will remain free until federal operations resume.
+                When the promotion ends, premium features will require a paid plan. Free tier users will still have access
                 to core transition planning tools, but advanced features like the VA claims builder and cloud sync
                 will require an upgrade. Lock in Founding Member pricing now to keep full access forever.
               </p>
@@ -389,7 +392,7 @@ export default function Pricing() {
         </h2>
         <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
           {promoActive
-            ? 'Start using all premium features free until Veterans Day. Lock in Founding Member pricing before it\'s too late.'
+            ? 'Start using all premium features free during the government shutdown. Lock in Founding Member pricing before it\'s too late.'
             : 'Join thousands of transitioning service members who trust our platform.'
           }
         </p>

@@ -1,6 +1,7 @@
-// Veterans Day Launch Promotion Configuration
+// Government Shutdown Support Promotion Configuration
+// Extended from original Veterans Day promotion to support military families during shutdown
 
-// Promotion end date: November 11, 2025
+// Promotion end date: November 11, 2025 (or until shutdown ends, whichever is later)
 export const PROMO_END_DATE = new Date('2025-11-11T23:59:59')
 
 // Check if promotion is currently active
@@ -97,7 +98,7 @@ export const PRICING = {
       'Pay once, use forever - no recurring fees',
       'All future premium features included',
       'Priority support forever',
-      'Will increase to $399 after Veterans Day',
+      'Will increase to $399 after promotion ends',
       'Support veteran-built software'
     ]
   }

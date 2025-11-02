@@ -64,31 +64,26 @@ export default function PromoBanner() {
 
   return (
     <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-        <div className="flex items-center justify-between flex-wrap gap-2">
-          <div className="flex items-center gap-3 flex-1 min-w-0">
-            <span className="text-2xl flex-shrink-0" role="img" aria-label="Military Medal">
-              🎖️
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex items-start justify-between flex-wrap gap-3">
+          <div className="flex items-start gap-3 flex-1 min-w-0">
+            <span className="text-2xl flex-shrink-0 mt-1" role="img" aria-label="US Flag">
+              🇺🇸
             </span>
             <div className="flex-1 min-w-0">
-              <p className="font-bold text-sm sm:text-base mb-1">
-                Veterans Day Launch Special: All Premium Features FREE
+              <p className="font-bold text-sm sm:text-base mb-2">
+                Supporting Veterans During Government Shutdown: All Premium Features FREE Until Shutdown Ends
               </p>
-              <p className="text-xs sm:text-sm text-blue-100">
-                Lock in Founding Member pricing ($249 lifetime) before it increases to $399 on {formattedDate}
+              <p className="text-xs sm:text-sm text-blue-100 mb-1.5 leading-relaxed">
+                We had planned to offer free access through Veterans Day, but with veterans potentially impacted by the government shutdown, we're extending free premium access until federal operations resume.
+              </p>
+              <p className="text-xs sm:text-sm text-blue-50 font-medium">
+                Active duty, veterans, and military families - you have enough to worry about. Focus on your transition, we've got the rest covered.
               </p>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
-            {/* Countdown */}
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1.5 text-center hidden sm:block">
-              <div className="text-xs text-blue-100 mb-0.5">Time Remaining</div>
-              <div className="font-bold text-sm">
-                {days}d {hours}h
-              </div>
-            </div>
-
             {/* CTA Button */}
             <Link
               to="/pricing"
@@ -117,14 +112,6 @@ export default function PromoBanner() {
                 />
               </svg>
             </button>
-          </div>
-        </div>
-
-        {/* Mobile countdown */}
-        <div className="mt-2 sm:hidden text-center">
-          <div className="inline-block bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1">
-            <span className="text-xs text-blue-100">Time Remaining: </span>
-            <span className="font-bold text-sm">{days}d {hours}h</span>
           </div>
         </div>
       </div>

@@ -199,7 +199,7 @@ export default function Layout() {
         </div>
       </nav>
 
-      {/* Veterans Day Promo Banner */}
+      {/* Government Shutdown Support Banner */}
       <PromoBanner />
 
       <main className="flex-1 max-w-7xl w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">

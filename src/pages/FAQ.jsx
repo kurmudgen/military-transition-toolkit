@@ -210,14 +210,14 @@ export default function FAQ() {
 
             <details className="border-t border-slate-700 group">
               <summary className="p-4 cursor-pointer hover:bg-slate-700/50 transition-colors flex justify-between items-center list-none">
-                <span className="font-semibold text-blue-400">Q: What's the Veterans Day launch special?</span>
+                <span className="font-semibold text-blue-400">Q: Why are all premium features free right now?</span>
                 <svg className="w-5 h-5 text-slate-400 transform group-open:rotate-180 transition-transform"
                      fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                To honor our fellow veterans, <strong>all premium features are FREE through Veterans Day (November 11, 2025)</strong>. This gives you time to explore everything before deciding. Plus, you can lock in Founding Member lifetime pricing at $199 (50% off the future $399 price) before the launch special ends.
+                <strong>All premium features are FREE until the government shutdown ends</strong>. We had planned to offer free access through Veterans Day, but with veterans potentially impacted by the shutdown, we're extending free premium access until federal operations resume. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered. You can still lock in Founding Member lifetime pricing at $249 (save $150 off the future $399 price).
               </div>
             </details>
 
