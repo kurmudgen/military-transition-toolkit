@@ -1,4 +1,5 @@
 import { supabase, getCurrentUser } from '../lib/supabase'
+import { auditService } from './auditService'
 
 /**
  * Appointment Service
@@ -67,6 +68,12 @@ export const createAppointment = async (appointmentData) => {
     throw error
   }
 
+  // Audit log
+  await auditService.log('appointment_created', 'appointment', data.id, {
+    title: appointmentData.title,
+    type: appointmentData.type
+  })
+
   return data
 }
 
@@ -91,6 +98,11 @@ export const updateAppointment = async (id, updates) => {
     throw error
   }
 
+  // Audit log
+  await auditService.log('appointment_updated', 'appointment', id, {
+    title: data.title
+  })
+
   return data
 }
 
@@ -109,6 +121,9 @@ export const deleteAppointment = async (id) => {
     console.error('Error deleting appointment:', error)
     throw error
   }
+
+  // Audit log
+  await auditService.log('appointment_deleted', 'appointment', id)
 
   return true
 }

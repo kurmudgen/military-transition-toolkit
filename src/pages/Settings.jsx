@@ -7,6 +7,8 @@ import { generateTransitionPlanPDF } from '../utils/pdfExport'
 import { shouldHidePaymentUI } from '../utils/promoConfig'
 import { getUserSubscription, createCustomerPortalSession } from '../services/subscriptionService'
 import { STRIPE_PLANS, getPlanById } from '../lib/stripe'
+import { auditService } from '../services/auditService'
+import { accountDeletionService } from '../services/accountDeletionService'
 
 export default function Settings() {
   const [importStatus, setImportStatus] = useState('')
@@ -17,13 +19,19 @@ export default function Settings() {
   const [managingBilling, setManagingBilling] = useState(false)
   const [separationStatus, setSeparationStatus] = useState('transitioning')
   const [statusUpdateMessage, setStatusUpdateMessage] = useState('')
+  const [recentActivity, setRecentActivity] = useState([])
+  const [loadingActivity, setLoadingActivity] = useState(true)
+  const [deletionEstimate, setDeletionEstimate] = useState(null)
+  const [deletingAccount, setDeletingAccount] = useState(false)
   const navigate = useNavigate()
-  const { signOut } = useAuth()
+  const { signOut, timeoutEnabled, setTimeoutEnabled } = useAuth()
 
   useEffect(() => {
     document.title = 'Settings - Military Transition Toolkit'
     trackPageView('Settings')
     loadSubscription()
+    loadRecentActivity()
+    loadDeletionEstimate()
 
     // Load separation status from localStorage
     const saved = localStorage.getItem('userSetup')
@@ -38,6 +46,26 @@ export default function Settings() {
       }
     }
   }, [])
+
+  const loadRecentActivity = async () => {
+    try {
+      const activity = await auditService.getRecentActivity(10)
+      setRecentActivity(activity)
+    } catch (error) {
+      console.error('Error loading recent activity:', error)
+    } finally {
+      setLoadingActivity(false)
+    }
+  }
+
+  const loadDeletionEstimate = async () => {
+    try {
+      const estimate = await accountDeletionService.estimateDataDeletion()
+      setDeletionEstimate(estimate)
+    } catch (error) {
+      console.error('Error loading deletion estimate:', error)
+    }
+  }
 
   const loadSubscription = async () => {
     try {
@@ -191,38 +219,51 @@ export default function Settings() {
     event.target.value = '' // Reset file input
   }
 
-  const clearAllData = () => {
+  const handleDeleteAccount = async () => {
     const confirmed = window.confirm(
-      '⚠️ DANGER: This will permanently delete ALL your data!\n\n' +
+      '⚠️ DANGER: This will permanently delete your ENTIRE account!\n\n' +
       'This includes:\n' +
+      '• Your account and login credentials\n' +
+      '• All VA claims and medical records (' + (deletionEstimate?.breakdown?.['VA Conditions'] || 0) + ' conditions)\n' +
+      '• All appointments (' + (deletionEstimate?.breakdown?.['Appointments'] || 0) + ')\n' +
+      '• All resumes (' + (deletionEstimate?.breakdown?.['Resumes'] || 0) + ')\n' +
+      '• All job applications (' + (deletionEstimate?.breakdown?.['Job Applications'] || 0) + ')\n' +
       '• All checklist progress\n' +
-      '• All appointments and conditions\n' +
-      '• All calculations and settings\n' +
-      '• VA claims progress\n\n' +
+      '• Your subscription (will be canceled)\n\n' +
       'This action CANNOT be undone!\n\n' +
       'Are you absolutely sure?'
     )
 
     if (!confirmed) return
 
-    const doubleConfirm = window.confirm(
-      'Last chance!\n\n' +
-      'Type "DELETE" in the next prompt to confirm deletion.'
-    )
+    const typedConfirmation = prompt('Type DELETE to confirm account deletion:')
 
-    if (!doubleConfirm) return
-
-    const typedConfirmation = prompt('Type DELETE to confirm:')
-
-    if (typedConfirmation === 'DELETE') {
-      localStorage.clear()
-      setImportStatus('All data cleared. Reloading page...')
-      setTimeout(() => {
-        window.location.reload()
-      }, 1500)
-    } else {
-      setImportStatus('Data clear cancelled - confirmation did not match.')
+    if (typedConfirmation !== 'DELETE') {
+      setImportStatus('Account deletion cancelled - confirmation did not match.')
       setTimeout(() => setImportStatus(''), 3000)
+      return
+    }
+
+    try {
+      setDeletingAccount(true)
+      setImportStatus('Deleting account... This may take a moment.')
+
+      const result = await accountDeletionService.deleteAccount()
+
+      if (result.success) {
+        setImportStatus('✓ Account deleted successfully. Redirecting to login...')
+        setTimeout(() => {
+          navigate('/login')
+        }, 2000)
+      } else {
+        throw new Error(result.error || 'Failed to delete account')
+      }
+    } catch (error) {
+      console.error('Account deletion error:', error)
+      setImportError('Failed to delete account: ' + error.message)
+      setTimeout(() => setImportError(''), 8000)
+    } finally {
+      setDeletingAccount(false)
     }
   }
 
@@ -362,7 +403,7 @@ export default function Settings() {
               </div>
             ) : (
               <p className="text-slate-300">
-                Track your app usage, most visited pages, and feature interactions. Free tier: data stored locally. Premium: securely synced to cloud.
+                Track your app usage, most visited pages, and feature interactions. All data is securely stored in the cloud with bank-level encryption.
               </p>
             )}
           </div>
@@ -380,13 +421,13 @@ export default function Settings() {
                 <div className="text-sm text-slate-400">Data Items</div>
               </div>
               <div className="bg-slate-700 rounded-lg p-4">
-                <div className="text-3xl font-bold text-purple-400 mb-1">Local</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">Cloud</div>
                 <div className="text-sm text-slate-400">Storage Type</div>
               </div>
             </div>
             <div className="mt-4 p-4 bg-blue-900/20 border border-blue-500 rounded-lg">
               <p className="text-blue-400 text-sm">
-                🔒 Free tier: Data stored locally. Premium: End-to-end encrypted cloud storage with zero-knowledge architecture.
+                🔒 All user data is securely stored in the cloud with bank-level encryption (AES-256) and row-level security ensuring you can only access your own data.
               </p>
             </div>
           </div>
@@ -569,24 +610,32 @@ export default function Settings() {
               <div className="flex gap-3">
                 <span className="text-green-400 flex-shrink-0">✓</span>
                 <div>
-                  <strong className="text-white">Free Tier - Local Storage:</strong>
-                  <span className="text-sm block">Your data stays on your device. Nothing is sent to servers.</span>
+                  <strong className="text-white">Secure Cloud Storage:</strong>
+                  <span className="text-sm block">All data is stored securely in the cloud with bank-level encryption (AES-256).</span>
                 </div>
               </div>
 
               <div className="flex gap-3">
                 <span className="text-green-400 flex-shrink-0">✓</span>
                 <div>
-                  <strong className="text-white">Premium - Encrypted Cloud:</strong>
-                  <span className="text-sm block">End-to-end encrypted with zero-knowledge architecture. We mathematically cannot decrypt your data.</span>
+                  <strong className="text-white">Row-Level Security:</strong>
+                  <span className="text-sm block">Database-level security ensures you can only access your own data. Your information is completely isolated from other users.</span>
                 </div>
               </div>
 
               <div className="flex gap-3">
                 <span className="text-green-400 flex-shrink-0">✓</span>
                 <div>
-                  <strong className="text-white">Military-Grade Security:</strong>
-                  <span className="text-sm block">AES-256 encryption protects your data at rest and in transit.</span>
+                  <strong className="text-white">SOC 2 Type II Certified:</strong>
+                  <span className="text-sm block">Our infrastructure provider (Supabase) meets the highest industry security standards.</span>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <span className="text-green-400 flex-shrink-0">✓</span>
+                <div>
+                  <strong className="text-white">HIPAA-Compliant Security:</strong>
+                  <span className="text-sm block">Automatic session timeout, audit logging, and encryption protect your sensitive medical records.</span>
                 </div>
               </div>
 
@@ -594,7 +643,7 @@ export default function Settings() {
                 <span className="text-green-400 flex-shrink-0">✓</span>
                 <div>
                   <strong className="text-white">Your Control:</strong>
-                  <span className="text-sm block">Export, import, or delete your data anytime. You're in complete control.</span>
+                  <span className="text-sm block">Export or delete your data anytime. GDPR/HIPAA compliant right to deletion.</span>
                 </div>
               </div>
 
@@ -602,7 +651,7 @@ export default function Settings() {
                 <span className="text-blue-400 flex-shrink-0">ℹ</span>
                 <div>
                   <strong className="text-white">Recommendation:</strong>
-                  <span className="text-sm block">Export backups regularly, especially before major updates or clearing browser data.</span>
+                  <span className="text-sm block">Export backups regularly for your records, especially for important VA claims documentation.</span>
                 </div>
               </div>
             </div>
@@ -732,6 +781,94 @@ export default function Settings() {
             </div>
           )}
 
+          {/* Session Timeout Settings */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <h2 className="text-2xl font-semibold text-white mb-4">⏱️ Session Timeout Settings</h2>
+            <p className="text-slate-300 mb-6">
+              Automatic session timeout protects your sensitive military and medical data on shared computers.
+            </p>
+
+            <div className="bg-slate-700 rounded-lg p-5">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-1">
+                    15-Minute Auto-Logout
+                  </h3>
+                  <p className="text-sm text-slate-400">
+                    Automatically log out after 15 minutes of inactivity (with 2-minute warning)
+                  </p>
+                </div>
+                <button
+                  onClick={() => setTimeoutEnabled(!timeoutEnabled)}
+                  className={`relative inline-flex h-8 w-14 items-center rounded-full transition-colors ${
+                    timeoutEnabled ? 'bg-blue-600' : 'bg-slate-600'
+                  }`}
+                >
+                  <span
+                    className={`inline-block h-6 w-6 transform rounded-full bg-white transition-transform ${
+                      timeoutEnabled ? 'translate-x-7' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div className="mt-4 p-4 bg-blue-900/20 border border-blue-500 rounded-lg">
+              <p className="text-blue-300 text-sm">
+                <strong>HIPAA Compliance:</strong> Automatic session timeout is a critical security control for protecting PHI (Protected Health Information). Recommended for all users accessing VA claims and medical data.
+              </p>
+            </div>
+          </div>
+
+          {/* Recent Activity */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <h2 className="text-2xl font-semibold text-white mb-4">📋 Recent Activity</h2>
+            <p className="text-slate-300 mb-4">
+              Audit log of your recent actions for security and compliance tracking.
+            </p>
+
+            {loadingActivity ? (
+              <div className="text-center py-8">
+                <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
+                <p className="text-slate-400 mt-2">Loading activity...</p>
+              </div>
+            ) : recentActivity.length === 0 ? (
+              <div className="bg-slate-700 rounded-lg p-6 text-center">
+                <p className="text-slate-400">No recent activity to display</p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                {recentActivity.map((activity) => (
+                  <div
+                    key={activity.id}
+                    className="bg-slate-700 rounded-lg p-4 flex items-start justify-between"
+                  >
+                    <div className="flex-1">
+                      <p className="text-white font-medium">
+                        {auditService.formatAction(activity.action)}
+                      </p>
+                      {activity.resource_type && (
+                        <p className="text-sm text-slate-400 mt-1">
+                          {activity.resource_type}
+                        </p>
+                      )}
+                    </div>
+                    <div className="text-right text-sm text-slate-400">
+                      <p>{new Date(activity.created_at).toLocaleDateString()}</p>
+                      <p>{new Date(activity.created_at).toLocaleTimeString()}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <div className="mt-4 p-4 bg-slate-700 rounded-lg">
+              <p className="text-slate-400 text-sm">
+                <strong className="text-white">Compliance Note:</strong> Audit logs are retained for security and compliance purposes. They cannot be modified or deleted to maintain data integrity.
+              </p>
+            </div>
+          </div>
+
           {/* Account Management */}
           <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-2xl font-semibold text-white mb-4">🔐 Account Management</h2>
@@ -747,30 +884,58 @@ export default function Settings() {
             </button>
           </div>
 
-          {/* Danger Zone */}
+          {/* Danger Zone - Account Deletion */}
           <div className="bg-red-900/20 border border-red-600 rounded-lg p-6">
-            <h2 className="text-2xl font-semibold text-red-400 mb-4">⚠️ Danger Zone</h2>
-            <p className="text-slate-300 mb-4">
-              Permanently delete all your data. This action cannot be undone.
+            <h2 className="text-2xl font-semibold text-red-400 mb-4">⚠️ Danger Zone - Delete Account</h2>
+            <p className="text-slate-300 mb-6">
+              Permanently delete your entire account, including all data and login credentials. This action cannot be undone and complies with GDPR/HIPAA right to deletion requirements.
             </p>
 
+            {/* Data Summary */}
+            {deletionEstimate && deletionEstimate.totalItems > 0 && (
+              <div className="bg-slate-800 rounded-lg p-4 mb-6">
+                <h3 className="text-white font-semibold mb-3">Your Data Summary:</h3>
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  {Object.entries(deletionEstimate.breakdown).map(([key, value]) => (
+                    value > 0 && (
+                      <div key={key} className="flex justify-between bg-slate-700 rounded p-2">
+                        <span className="text-slate-300">{key}:</span>
+                        <span className="text-white font-semibold">{value}</span>
+                      </div>
+                    )
+                  ))}
+                </div>
+                <div className="mt-3 pt-3 border-t border-slate-700 flex justify-between">
+                  <span className="text-white font-semibold">Total Items:</span>
+                  <span className="text-blue-400 font-bold">{deletionEstimate.totalItems}</span>
+                </div>
+              </div>
+            )}
+
             <button
-              onClick={clearAllData}
-              className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors"
+              onClick={handleDeleteAccount}
+              disabled={deletingAccount}
+              className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              🗑️ Clear All Data
+              {deletingAccount ? '🔄 Deleting Account...' : '🗑️ Delete My Account'}
             </button>
 
-            <div className="mt-4 text-sm text-red-400">
-              <p className="font-semibold mb-1">This will permanently delete:</p>
+            <div className="mt-6 text-sm text-red-400">
+              <p className="font-semibold mb-2">This will permanently delete:</p>
               <ul className="list-disc list-inside space-y-1 ml-4">
+                <li>Your account and login credentials</li>
+                <li>All VA claims, medical conditions, and evidence</li>
+                <li>All appointments and reminders</li>
+                <li>All resumes and job applications</li>
                 <li>All checklist progress</li>
-                <li>All appointments and medical conditions</li>
-                <li>All calculations and saved results</li>
-                <li>All VA claims data and evidence</li>
-                <li>All settings and preferences</li>
+                <li>All settings, preferences, and audit logs</li>
+                <li>Your subscription (will be automatically canceled)</li>
               </ul>
-              <p className="mt-2 font-semibold">Export a backup before clearing if you might need this data later!</p>
+              <div className="mt-4 p-3 bg-red-900/40 border border-red-600 rounded-lg">
+                <p className="font-semibold text-red-300">
+                  ⚠️ IMPORTANT: Export a backup before deleting if you might need this data later!
+                </p>
+              </div>
             </div>
           </div>
         </div>

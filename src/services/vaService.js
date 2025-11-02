@@ -1,4 +1,5 @@
 import { supabase, getCurrentUser } from '../lib/supabase'
+import { auditService } from './auditService'
 
 /**
  * VA Service
@@ -47,6 +48,11 @@ export const createVACondition = async (conditionData) => {
     throw error
   }
 
+  // Audit log
+  await auditService.log('va_condition_created', 'va_condition', data.id, {
+    condition_name: conditionData.condition_name
+  })
+
   return data
 }
 
@@ -71,6 +77,11 @@ export const updateVACondition = async (id, updates) => {
     throw error
   }
 
+  // Audit log
+  await auditService.log('va_condition_updated', 'va_condition', id, {
+    condition_name: data.condition_name
+  })
+
   return data
 }
 
@@ -89,6 +100,9 @@ export const deleteVACondition = async (id) => {
     console.error('Error deleting VA condition:', error)
     throw error
   }
+
+  // Audit log
+  await auditService.log('va_condition_deleted', 'va_condition', id)
 
   return true
 }

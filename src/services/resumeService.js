@@ -1,4 +1,5 @@
 import { supabase, getCurrentUser, isPremiumUser } from '../lib/supabase'
+import { auditService } from './auditService'
 
 /**
  * Resume Service
@@ -101,6 +102,11 @@ export const createResume = async (resumeData) => {
     throw error
   }
 
+  // Audit log
+  await auditService.log('resume_created', 'resume', data.id, {
+    resume_name: resumeData.resume_name
+  })
+
   return data
 }
 
@@ -125,6 +131,11 @@ export const updateResume = async (id, updates) => {
     throw error
   }
 
+  // Audit log
+  await auditService.log('resume_updated', 'resume', id, {
+    resume_name: data.resume_name
+  })
+
   return data
 }
 
@@ -143,6 +154,9 @@ export const deleteResume = async (id) => {
     console.error('Error deleting resume:', error)
     throw error
   }
+
+  // Audit log
+  await auditService.log('resume_deleted', 'resume', id)
 
   return true
 }

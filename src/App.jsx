@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
 import Layout from './components/Layout'
+import SessionTimeoutWarning from './components/SessionTimeoutWarning'
 
 // Marketing pages
 import Landing from './pages/Landing'
@@ -41,6 +42,7 @@ import NotFound from './pages/NotFound'
 function App() {
   return (
     <AuthProvider>
+      <SessionTimeoutWarning />
       <Routes>
         {/* Marketing pages without auth */}
         <Route path="/" element={<Landing />} />

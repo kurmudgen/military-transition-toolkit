@@ -1,7 +1,8 @@
-import { createContext, useContext, useState, useEffect } from 'react'
+import { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react'
 import { supabase } from '../lib/supabase'
 import { useNavigate } from 'react-router-dom'
 import { migrateAllDataToSupabase } from '../utils/dataMigration'
+import { auditService } from '../services/auditService'
 
 const AuthContext = createContext({})
 
@@ -17,7 +18,87 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
   const [session, setSession] = useState(null)
+  const [showTimeoutWarning, setShowTimeoutWarning] = useState(false)
+  const [timeoutEnabled, setTimeoutEnabled] = useState(true) // User preference
   const navigate = useNavigate()
+
+  // Timeout configuration (in milliseconds)
+  const TIMEOUT_DURATION = 15 * 60 * 1000 // 15 minutes
+  const WARNING_DURATION = 13 * 60 * 1000 // 13 minutes (2 min warning)
+
+  // Refs for timers
+  const timeoutTimer = useRef(null)
+  const warningTimer = useRef(null)
+  const lastActivity = useRef(Date.now())
+
+  // Handle session timeout
+  const handleTimeout = useCallback(async () => {
+    if (!user || !timeoutEnabled || !supabase) return
+
+    // Log timeout event
+    await auditService.log('session_timeout')
+
+    // Clear timers and warning
+    setShowTimeoutWarning(false)
+    if (timeoutTimer.current) clearTimeout(timeoutTimer.current)
+    if (warningTimer.current) clearTimeout(warningTimer.current)
+
+    // Perform logout
+    await supabase.auth.signOut()
+    localStorage.clear()
+    sessionStorage.clear()
+    navigate('/login')
+  }, [user, timeoutEnabled, navigate])
+
+  // Reset activity timer
+  const resetActivityTimer = useCallback(() => {
+    if (!user || !timeoutEnabled) return
+
+    lastActivity.current = Date.now()
+    setShowTimeoutWarning(false)
+
+    // Clear existing timers
+    if (timeoutTimer.current) clearTimeout(timeoutTimer.current)
+    if (warningTimer.current) clearTimeout(warningTimer.current)
+
+    // Set warning timer (13 minutes)
+    warningTimer.current = setTimeout(() => {
+      setShowTimeoutWarning(true)
+    }, WARNING_DURATION)
+
+    // Set timeout timer (15 minutes)
+    timeoutTimer.current = setTimeout(() => {
+      handleTimeout()
+    }, TIMEOUT_DURATION)
+  }, [user, timeoutEnabled, handleTimeout, WARNING_DURATION, TIMEOUT_DURATION])
+
+  // Set up activity listeners
+  useEffect(() => {
+    if (!user || !timeoutEnabled) return
+
+    const activityEvents = ['mousemove', 'keypress', 'click', 'scroll', 'touchstart']
+
+    const handleActivity = () => {
+      resetActivityTimer()
+    }
+
+    // Add event listeners
+    activityEvents.forEach(event => {
+      window.addEventListener(event, handleActivity)
+    })
+
+    // Start initial timer
+    resetActivityTimer()
+
+    // Cleanup
+    return () => {
+      activityEvents.forEach(event => {
+        window.removeEventListener(event, handleActivity)
+      })
+      if (timeoutTimer.current) clearTimeout(timeoutTimer.current)
+      if (warningTimer.current) clearTimeout(warningTimer.current)
+    }
+  }, [user, timeoutEnabled, resetActivityTimer])
 
   useEffect(() => {
     // Skip authentication if Supabase is not configured (development mode)
@@ -70,6 +151,10 @@ export const AuthProvider = ({ children }) => {
     session,
     user,
     loading,
+    showTimeoutWarning,
+    timeoutEnabled,
+    setTimeoutEnabled,
+    resetActivityTimer,
     signUp: async (email, password, metadata = {}) => {
       if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
       const { data, error } = await supabase.auth.signUp({
@@ -87,6 +172,14 @@ export const AuthProvider = ({ children }) => {
         email,
         password
       })
+
+      // Log successful login
+      if (!error && data?.user) {
+        await auditService.log('login_success')
+      } else if (error) {
+        await auditService.log('login_failed', null, null, { error: error.message })
+      }
+
       return { data, error }
     },
     signInWithGoogle: async () => {
@@ -166,6 +259,9 @@ export const AuthProvider = ({ children }) => {
       }
     },
     signOut: async () => {
+      // Log logout
+      await auditService.log('logout')
+
       if (!supabase) {
         // ✅ SECURITY FIX: Clear ALL localStorage before navigating
         localStorage.clear()
@@ -182,6 +278,11 @@ export const AuthProvider = ({ children }) => {
         // from the device to prevent access on shared computers
         localStorage.clear()
         sessionStorage.clear()
+
+        // Clear timeout timers
+        if (timeoutTimer.current) clearTimeout(timeoutTimer.current)
+        if (warningTimer.current) clearTimeout(warningTimer.current)
+        setShowTimeoutWarning(false)
 
         navigate('/login')
       }
