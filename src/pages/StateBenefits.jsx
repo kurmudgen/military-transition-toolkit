@@ -6,10 +6,14 @@ import {
   getAllStates,
   compareStates
 } from '../data/stateBenefitsDatabase'
+import { getStateComparison, saveStateComparison } from '../services/stateBenefitsService'
 
 export default function StateBenefits({ publicMode = false }) {
   const [selectedState, setSelectedState] = useState(null)
   const [comparisonStates, setComparisonStates] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState(null)
   const [searchTerm, setSearchTerm] = useState('')
   const [filterCategory, setFilterCategory] = useState('all')
   const [minRating, setMinRating] = useState(0)
@@ -22,24 +26,52 @@ export default function StateBenefits({ publicMode = false }) {
 
   useEffect(() => {
     trackPageView('/app/state-benefits')
-  }, [])
+    loadComparison()
+  }, [publicMode])
 
-  // Load comparison states from localStorage
+  // Load comparison states from database
+  const loadComparison = async () => {
+    if (publicMode) {
+      setLoading(false)
+      return
+    }
+
+    try {
+      setLoading(true)
+      setError(null)
+
+      const comparison = await getStateComparison()
+      if (comparison && comparison.states) {
+        setComparisonStates(comparison.states)
+      }
+
+      console.log('✓ State comparison loaded from database')
+    } catch (err) {
+      console.error('Error loading comparison:', err)
+      setError('Failed to load state comparison.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  // Save comparison states to database
   useEffect(() => {
-    const saved = localStorage.getItem('stateComparison')
-    if (saved) {
+    const saveComparison = async () => {
+      if (publicMode || loading) return
+
       try {
-        setComparisonStates(JSON.parse(saved))
-      } catch (e) {
-        console.error('Error loading comparison:', e)
+        setSaving(true)
+        await saveStateComparison(comparisonStates)
+        console.log('✓ State comparison saved to database')
+      } catch (err) {
+        console.error('Error saving comparison:', err)
+      } finally {
+        setSaving(false)
       }
     }
-  }, [])
 
-  // Save comparison states to localStorage
-  useEffect(() => {
-    localStorage.setItem('stateComparison', JSON.stringify(comparisonStates))
-  }, [comparisonStates])
+    saveComparison()
+  }, [comparisonStates, loading, publicMode])
 
   const handleStateClick = (stateCode) => {
     trackButtonClick(`View State - ${stateCode}`)
