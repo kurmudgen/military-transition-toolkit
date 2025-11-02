@@ -1,6 +1,14 @@
 import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { RESOURCE_DATABASE, RESOURCE_CATEGORIES, RESOURCE_TYPES, AVAILABLE_TAGS } from '../data/resourcesDatabase'
+import {
+  getResourceRatings,
+  saveResourceRating as saveRatingDB,
+  getCustomResources,
+  createCustomResource,
+  updateCustomResource,
+  deleteCustomResource
+} from '../services/resourceService'
 
 export default function Resources({ publicMode = false }) {
   const [resources, setResources] = useState([])
@@ -23,97 +31,145 @@ export default function Resources({ publicMode = false }) {
     tags: []
   })
 
+  // Database loading/saving states
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState(null)
+
   useEffect(() => {
     trackPageView('/app/resources')
     loadResources()
-    if (!publicMode) {
-      loadUserRatings()
-    }
   }, [publicMode])
 
-  const loadResources = () => {
+  const loadResources = async () => {
     // PUBLIC MODE: Only show official database resources
     if (publicMode) {
       setResources(RESOURCE_DATABASE)
+      setLoading(false)
       return
     }
 
-    // AUTHENTICATED MODE: Merge custom resources
-    const stored = localStorage.getItem('transitionResources')
-    if (stored) {
-      try {
-        const customResources = JSON.parse(stored)
-        // Merge default database with custom resources
-        setResources([...RESOURCE_DATABASE, ...customResources])
-      } catch (e) {
-        setResources(RESOURCE_DATABASE)
-      }
-    } else {
+    // AUTHENTICATED MODE: Load from database
+    try {
+      setLoading(true)
+      setError(null)
+
+      const [customResources, ratings] = await Promise.all([
+        getCustomResources(),
+        getResourceRatings()
+      ])
+
+      // Merge official database with custom resources from database
+      setResources([...RESOURCE_DATABASE, ...(customResources || [])])
+      setUserRatings(ratings || {})
+
+      console.log('✓ Resources loaded from database')
+    } catch (err) {
+      console.error('Error loading resources:', err)
+      setError('Failed to load resources. Please refresh the page.')
       setResources(RESOURCE_DATABASE)
+    } finally {
+      setLoading(false)
     }
   }
 
-  const loadUserRatings = () => {
-    const stored = localStorage.getItem('resourceRatings')
-    if (stored) {
-      try {
-        setUserRatings(JSON.parse(stored))
-      } catch (e) {
-        setUserRatings({})
-      }
+  const saveUserRating = async (resourceId, rating) => {
+    try {
+      setSaving(true)
+      setError(null)
+
+      await saveRatingDB(resourceId, rating)
+      setUserRatings({ ...userRatings, [resourceId]: rating })
+
+      trackButtonClick('Rate Resource')
+      console.log('✓ Rating saved to database')
+    } catch (err) {
+      console.error('Error saving rating:', err)
+      setError('Failed to save rating.')
+    } finally {
+      setSaving(false)
     }
   }
 
-  const saveCustomResources = (customResources) => {
-    localStorage.setItem('transitionResources', JSON.stringify(customResources))
-  }
-
-  const saveUserRating = (resourceId, rating) => {
-    const updated = { ...userRatings, [resourceId]: rating }
-    setUserRatings(updated)
-    localStorage.setItem('resourceRatings', JSON.stringify(updated))
-    trackButtonClick('Rate Resource')
-  }
-
-  const handleAddResource = () => {
+  const handleAddResource = async () => {
     if (!formData.title || !formData.url) return
 
-    const newResource = {
-      id: `custom-${Date.now()}`,
-      ...formData,
-      official: false,
-      avgRating: 0
-    }
+    try {
+      setSaving(true)
+      setError(null)
 
-    const customResources = resources.filter(r => r.id.startsWith('custom-'))
-    const updatedCustom = [...customResources, newResource]
-    saveCustomResources(updatedCustom)
-    setResources([...RESOURCE_DATABASE, ...updatedCustom])
-    trackButtonClick('Add Custom Resource')
-    closeModal()
+      const newResource = await createCustomResource({
+        title: formData.title,
+        url: formData.url,
+        description: formData.description,
+        category: formData.category,
+        type: formData.type,
+        tags: formData.tags
+      })
+
+      setResources([...resources, { ...newResource, official: false, avgRating: 0 }])
+      trackButtonClick('Add Custom Resource')
+      closeModal()
+
+      console.log('✓ Custom resource added to database')
+    } catch (err) {
+      console.error('Error adding resource:', err)
+      setError('Failed to add resource.')
+    } finally {
+      setSaving(false)
+    }
   }
 
-  const handleUpdateResource = () => {
+  const handleUpdateResource = async () => {
     if (!editingResource || !formData.title || !formData.url) return
 
-    const updated = resources.map(r =>
-      r.id === editingResource.id ? { ...r, ...formData } : r
-    )
+    try {
+      setSaving(true)
+      setError(null)
 
-    const customResources = updated.filter(r => r.id.startsWith('custom-'))
-    saveCustomResources(customResources)
-    setResources(updated)
-    trackButtonClick('Update Resource')
-    closeModal()
+      await updateCustomResource(editingResource.id, {
+        title: formData.title,
+        url: formData.url,
+        description: formData.description,
+        category: formData.category,
+        type: formData.type,
+        tags: formData.tags
+      })
+
+      const updated = resources.map(r =>
+        r.id === editingResource.id ? { ...r, ...formData } : r
+      )
+
+      setResources(updated)
+      trackButtonClick('Update Resource')
+      closeModal()
+
+      console.log('✓ Custom resource updated in database')
+    } catch (err) {
+      console.error('Error updating resource:', err)
+      setError('Failed to update resource.')
+    } finally {
+      setSaving(false)
+    }
   }
 
-  const handleDeleteResource = (resourceId) => {
-    if (confirm('Are you sure you want to delete this resource?')) {
-      const updated = resources.filter(r => r.id !== resourceId)
-      const customResources = updated.filter(r => r.id.startsWith('custom-'))
-      saveCustomResources(customResources)
-      setResources(updated)
+  const handleDeleteResource = async (resourceId) => {
+    if (!window.confirm('Are you sure you want to delete this resource?')) return
+
+    try {
+      setSaving(true)
+      setError(null)
+
+      await deleteCustomResource(resourceId)
+      setResources(resources.filter(r => r.id !== resourceId))
+
       trackButtonClick('Delete Resource')
+      console.log('✓ Custom resource deleted from database')
+    } catch (err) {
+      console.error('Error deleting resource:', err)
+      setError('Failed to delete resource.')
+    } finally {
+      setSaving(false)
     }
   }
 
