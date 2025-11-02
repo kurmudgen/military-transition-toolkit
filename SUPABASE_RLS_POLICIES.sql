@@ -12,7 +12,7 @@
 --
 -- RUN THIS IN SUPABASE SQL EDITOR IMMEDIATELY
 --
--- Tables covered (12 total):
+-- Tables covered (13 total):
 -- 1. user_profiles
 -- 2. va_conditions (HIPAA-sensitive)
 -- 3. va_evidence (HIPAA-sensitive)
@@ -25,6 +25,7 @@
 -- 10. custom_resources
 -- 11. state_comparisons
 -- 12. user_subscriptions (payment data)
+-- 13. audit_logs (compliance tracking - CRITICAL)
 -- ============================================
 
 -- ============================================
@@ -43,6 +44,7 @@ ALTER TABLE resource_ratings ENABLE ROW LEVEL SECURITY;
 ALTER TABLE custom_resources ENABLE ROW LEVEL SECURITY;
 ALTER TABLE state_comparisons ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_subscriptions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE audit_logs ENABLE ROW LEVEL SECURITY;
 
 -- ============================================
 -- STEP 2: USER PROFILES
@@ -284,6 +286,24 @@ CREATE POLICY "Users can update own subscription"
 -- so users cannot create their own subscriptions
 
 -- ============================================
+-- STEP 13: AUDIT LOGS (COMPLIANCE TRACKING)
+-- ============================================
+-- CRITICAL: Audit logs must be immutable for compliance
+-- Users can only view and insert their own logs
+-- NO UPDATE or DELETE allowed to maintain audit trail integrity
+
+CREATE POLICY "Users can view own audit logs"
+  ON audit_logs FOR SELECT
+  USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own audit logs"
+  ON audit_logs FOR INSERT
+  WITH CHECK (auth.uid() = user_id);
+
+-- NOTE: No UPDATE or DELETE policies - audit logs are immutable
+-- This ensures compliance with HIPAA audit trail requirements
+
+-- ============================================
 -- VERIFICATION: Check RLS is enabled
 -- ============================================
 
@@ -302,11 +322,12 @@ WHERE schemaname = 'public'
     'resource_ratings',
     'custom_resources',
     'state_comparisons',
-    'user_subscriptions'
+    'user_subscriptions',
+    'audit_logs'
   )
 ORDER BY tablename;
 
--- All tables should show rowsecurity = true
+-- All 13 tables should show rowsecurity = true
 
 -- ============================================
 -- DONE!

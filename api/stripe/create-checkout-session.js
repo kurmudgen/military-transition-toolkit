@@ -204,6 +204,24 @@ export default async function handler(req, res) {
       })
     }
 
+    // ✅ SECURITY: Whitelist validation - only allow approved price IDs
+    const ALLOWED_PRICE_IDS = [
+      process.env.STRIPE_PRICE_MONTHLY,
+      process.env.STRIPE_PRICE_ANNUAL,
+      process.env.STRIPE_PRICE_LIFETIME
+    ].filter(Boolean) // Remove undefined values
+
+    if (!ALLOWED_PRICE_IDS.includes(priceId)) {
+      console.error('Unauthorized price ID attempted:', priceId)
+      console.error('Allowed price IDs:', ALLOWED_PRICE_IDS)
+      return res.status(400).json({
+        error: 'Bad request',
+        details: 'Invalid price ID - not recognized'
+      })
+    }
+
+    console.log('✓ Price ID validated against whitelist')
+
     // ============================================
     // STEP 5: Get or create Stripe customer
     // ============================================
@@ -277,12 +295,16 @@ export default async function handler(req, res) {
     console.error('Error stack:', error.stack || 'No stack trace')
     console.error('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error), 2))
 
-    // Build detailed error response with ALL information
+    // Build error response (exclude sensitive info in production)
     const errorResponse = {
       error: 'Failed to create checkout session',
       details: error.message || 'Unknown error occurred',
-      timestamp: new Date().toISOString(),
-      stack: error.stack || 'No stack trace available'
+      timestamp: new Date().toISOString()
+    }
+
+    // ✅ SECURITY: Only include stack trace in development
+    if (process.env.NODE_ENV === 'development') {
+      errorResponse.stack = error.stack || 'No stack trace available'
     }
 
     // Add Stripe-specific error details if available

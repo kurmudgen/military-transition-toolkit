@@ -171,12 +171,16 @@ export default async function handler(req, res) {
     console.error('Error stack:', error.stack || 'No stack trace')
     console.error('Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error), 2))
 
-    // Build detailed error response with ALL information
+    // Build error response (exclude sensitive info in production)
     const errorResponse = {
       error: 'Failed to create portal session',
       details: error.message || 'Unknown error occurred',
-      timestamp: new Date().toISOString(),
-      stack: error.stack || 'No stack trace available'
+      timestamp: new Date().toISOString()
+    }
+
+    // ✅ SECURITY: Only include stack trace in development
+    if (process.env.NODE_ENV === 'development') {
+      errorResponse.stack = error.stack || 'No stack trace available'
     }
 
     // Add Stripe-specific error details if available

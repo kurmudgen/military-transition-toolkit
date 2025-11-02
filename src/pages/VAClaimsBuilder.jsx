@@ -264,13 +264,13 @@ export default function VAClaimsBuilder() {
           ...prev,
           [conditionName]: created.id
         }))
-        console.log(`✓ Created condition: ${conditionName}`)
+        console.log('✓ VA condition created successfully')
       } else {
         // Update existing condition
         const conditionId = conditionIdMap[conditionName]
         if (conditionId) {
           await updateVACondition(conditionId, dbData)
-          console.log(`✓ Updated condition: ${conditionName}`)
+          console.log('✓ VA condition updated successfully')
         }
       }
     } catch (err) {
@@ -289,7 +289,7 @@ export default function VAClaimsBuilder() {
 
       if (conditionId) {
         await deleteVACondition(conditionId)
-        console.log(`✓ Deleted condition: ${conditionName}`)
+        console.log('✓ VA condition deleted successfully')
 
         // Remove from ID map
         setConditionIdMap(prev => {
