@@ -243,12 +243,32 @@ export default function Settings() {
     try {
       setManagingBilling(true)
       trackButtonClick('Manage Subscription')
+
+      console.log('Creating customer portal session...')
       const portalUrl = await createCustomerPortalSession()
+      console.log('Portal URL received:', portalUrl)
+
+      if (!portalUrl) {
+        throw new Error('No portal URL returned')
+      }
+
+      // Redirect to Stripe Customer Portal
       window.location.href = portalUrl
     } catch (error) {
       console.error('Error opening billing portal:', error)
-      setImportError('Failed to open billing portal. Please try again.')
-      setTimeout(() => setImportError(''), 5000)
+
+      // Show user-friendly error message
+      let errorMessage = 'Failed to open billing portal. '
+      if (error.message?.includes('No subscription found')) {
+        errorMessage += 'No active subscription found. Please contact support if you believe this is an error.'
+      } else if (error.message?.includes('Unauthorized')) {
+        errorMessage += 'Authentication failed. Please try logging out and back in.'
+      } else {
+        errorMessage += error.message || 'Please try again or contact support.'
+      }
+
+      setImportError(errorMessage)
+      setTimeout(() => setImportError(''), 8000)
     } finally {
       setManagingBilling(false)
     }
@@ -551,7 +571,7 @@ export default function Settings() {
 
                 {/* Action buttons */}
                 <div className="pt-4 border-t border-slate-700">
-                  {subscription && subscription.plan_id !== 'free' && subscription.plan_id !== 'founding_member' ? (
+                  {subscription && subscription.plan_id !== 'free' && subscription.plan_id !== 'founding_member' && subscription.stripe_customer_id ? (
                     <button
                       onClick={handleManageBilling}
                       disabled={managingBilling}

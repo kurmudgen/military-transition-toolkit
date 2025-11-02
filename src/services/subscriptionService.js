@@ -85,6 +85,8 @@ export const createCustomerPortalSession = async () => {
       throw new Error('No valid session token')
     }
 
+    console.log('Calling create-portal-session API...')
+
     // Call backend API to create portal session
     // Backend will extract userId from verified JWT token
     const response = await fetch('/api/stripe/create-portal-session', {
@@ -98,12 +100,21 @@ export const createCustomerPortalSession = async () => {
       })
     })
 
+    console.log('API response status:', response.status)
+
     if (!response.ok) {
       const errorData = await response.json()
-      throw new Error(errorData.error || 'Failed to create portal session')
+      console.error('API error response:', errorData)
+      throw new Error(errorData.details || errorData.error || 'Failed to create portal session')
     }
 
     const { url } = await response.json()
+    console.log('Portal URL received:', url ? 'Yes' : 'No')
+
+    if (!url) {
+      throw new Error('No portal URL returned from API')
+    }
+
     return url
   } catch (error) {
     console.error('Error creating portal session:', error)
