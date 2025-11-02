@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { RESOURCE_DATABASE, RESOURCE_CATEGORIES, RESOURCE_TYPES, AVAILABLE_TAGS } from '../data/resourcesDatabase'
 
-export default function Resources() {
+export default function Resources({ publicMode = false }) {
   const [resources, setResources] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -26,10 +26,19 @@ export default function Resources() {
   useEffect(() => {
     trackPageView('/app/resources')
     loadResources()
-    loadUserRatings()
-  }, [])
+    if (!publicMode) {
+      loadUserRatings()
+    }
+  }, [publicMode])
 
   const loadResources = () => {
+    // PUBLIC MODE: Only show official database resources
+    if (publicMode) {
+      setResources(RESOURCE_DATABASE)
+      return
+    }
+
+    // AUTHENTICATED MODE: Merge custom resources
     const stored = localStorage.getItem('transitionResources')
     if (stored) {
       try {
@@ -243,10 +252,36 @@ export default function Resources() {
 
   return (
     <div className="space-y-6">
+      {/* PUBLIC MODE: Signup CTA Banner */}
+      {publicMode && (
+        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white shadow-2xl">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">Access Our Full Resource Library</h2>
+            <p className="text-xl text-blue-100 mb-6">
+              Browse 60+ curated resources below. Sign up for free to rate resources, bookmark favorites, add custom resources, and track which ones you've used!
+            </p>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <a
+                href="/signup"
+                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
+              >
+                Sign Up Free - Personalize Library
+              </a>
+              <a
+                href="/login"
+                className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
+              >
+                Log In
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-          Resource Library
+          Resource Library {publicMode && <span className="text-lg font-normal text-gray-500 dark:text-gray-400">(Preview)</span>}
         </h1>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
           60+ curated veteran transition resources with advanced filtering and ratings
@@ -378,12 +413,14 @@ export default function Resources() {
 
         {/* Action Buttons */}
         <div className="mt-6 flex gap-4">
-          <button
-            onClick={openAddModal}
-            className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
-          >
-            + Add Custom Resource
-          </button>
+          {!publicMode && (
+            <button
+              onClick={openAddModal}
+              className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+            >
+              + Add Custom Resource
+            </button>
+          )}
           <button
             onClick={() => {
               setSearchQuery('')
@@ -397,6 +434,14 @@ export default function Resources() {
           >
             Reset All Filters
           </button>
+          {publicMode && (
+            <a
+              href="/signup"
+              className="px-6 py-2 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors"
+            >
+              Sign Up to Add & Rate Resources
+            </a>
+          )}
         </div>
 
         <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">

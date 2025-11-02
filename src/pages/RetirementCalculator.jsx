@@ -152,7 +152,7 @@ const COMMON_SCENARIOS = [
   }
 ]
 
-export default function RetirementCalculator() {
+export default function RetirementCalculator({ publicMode = false }) {
   const [currentStep, setCurrentStep] = useState(1)
   const [formData, setFormData] = useState({
     branch: 'Army',
@@ -299,6 +299,182 @@ export default function RetirementCalculator() {
     'Results'
   ]
 
+  // PUBLIC MODE: Show simplified basic calculator only
+  if (publicMode) {
+    const basicResults = calculateRetirement()
+
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
+        <div className="max-w-4xl mx-auto px-4">
+          {/* Signup CTA Banner */}
+          <div className="mb-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
+            <h2 className="text-3xl font-bold mb-4">Try Our Retirement Calculator</h2>
+            <p className="text-xl text-blue-100 mb-6">
+              Get a basic estimate below. Sign up for free to access advanced features like state tax comparisons, BAH/BAS calculations, PDF exports, and saved scenarios!
+            </p>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <a
+                href="/signup"
+                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
+              >
+                Sign Up Free - Full Calculator
+              </a>
+              <a
+                href="/login"
+                className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
+              >
+                Log In
+              </a>
+            </div>
+          </div>
+
+          {/* Simple Calculator Card */}
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl shadow-xl p-8">
+            <h1 className="text-3xl font-bold text-white mb-3">
+              Basic Retirement Pay Calculator
+            </h1>
+            <p className="text-slate-300 mb-8 text-lg">
+              Calculate your estimated base retirement pay
+            </p>
+
+            <div className="space-y-6">
+              {/* Rank Selection */}
+              <div>
+                <label className="block text-sm font-semibold text-slate-300 mb-2">
+                  Rank at Retirement
+                </label>
+                <select
+                  value={formData.rank}
+                  onChange={(e) => {
+                    const newRank = e.target.value
+                    updateFormData('rank', newRank)
+                    const payData = BASE_PAY_2025[newRank]
+                    if (payData) {
+                      const years = formData.yearsOfService.toString()
+                      const closestYear = Object.keys(payData).reduce((prev, curr) =>
+                        Math.abs(parseInt(curr) - formData.yearsOfService) < Math.abs(parseInt(prev) - formData.yearsOfService) ? curr : prev
+                      )
+                      updateFormData('high3Pay', payData[closestYear])
+                    }
+                  }}
+                  className="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white"
+                >
+                  <optgroup label="Enlisted">
+                    <option>E-7</option>
+                    <option>E-8</option>
+                    <option>E-9</option>
+                  </optgroup>
+                  <optgroup label="Warrant Officers">
+                    <option>W-1</option>
+                    <option>W-2</option>
+                    <option>W-3</option>
+                    <option>W-4</option>
+                    <option>W-5</option>
+                  </optgroup>
+                  <optgroup label="Officers">
+                    <option>O-3</option>
+                    <option>O-4</option>
+                    <option>O-5</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              {/* Years of Service */}
+              <div>
+                <label className="block text-sm font-semibold text-slate-300 mb-2">
+                  Years of Service
+                </label>
+                <input
+                  type="number"
+                  min="20"
+                  max="40"
+                  value={formData.yearsOfService}
+                  onChange={(e) => {
+                    const years = parseInt(e.target.value)
+                    updateFormData('yearsOfService', years)
+                    const payData = BASE_PAY_2025[formData.rank]
+                    if (payData) {
+                      const closestYear = Object.keys(payData).reduce((prev, curr) =>
+                        Math.abs(parseInt(curr) - years) < Math.abs(parseInt(prev) - years) ? curr : prev
+                      )
+                      updateFormData('high3Pay', payData[closestYear])
+                    }
+                  }}
+                  className="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white"
+                />
+              </div>
+
+              {/* Retirement System */}
+              <div>
+                <label className="block text-sm font-semibold text-slate-300 mb-2">
+                  Retirement System
+                </label>
+                <select
+                  value={formData.retirementSystem}
+                  onChange={(e) => updateFormData('retirementSystem', e.target.value)}
+                  className="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white"
+                >
+                  <option value="high3">High-3 (2.5% per year)</option>
+                  <option value="brs">BRS (2.0% per year)</option>
+                </select>
+              </div>
+
+              {/* Calculate Button */}
+              <button
+                onClick={() => setShowResults(true)}
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white py-4 rounded-lg font-bold text-lg transition-colors shadow-lg"
+              >
+                Calculate Retirement Pay
+              </button>
+
+              {/* Basic Results */}
+              {showResults && (
+                <div className="mt-6 p-6 bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-xl">
+                  <h3 className="text-2xl font-bold text-white mb-4">Estimated Monthly Retirement Pay</h3>
+                  <div className="text-5xl font-bold text-green-400 mb-2">
+                    ${basicResults.toLocaleString()}
+                  </div>
+                  <p className="text-slate-300 text-sm">
+                    Based on {formData.rank} with {formData.yearsOfService} years under {formData.retirementSystem === 'high3' ? 'High-3' : 'BRS'} system
+                  </p>
+
+                  <div className="mt-6 p-4 bg-blue-900/30 border border-blue-600 rounded-lg">
+                    <p className="text-blue-300 text-sm font-semibold mb-2">
+                      🔒 Sign up for free to access:
+                    </p>
+                    <ul className="text-slate-300 text-sm space-y-1 list-disc list-inside">
+                      <li>State-specific tax calculations for all 50 states</li>
+                      <li>VA disability compensation estimates (0%-100%)</li>
+                      <li>BAH and BAS allowances by location</li>
+                      <li>Survivor Benefit Plan (SBP) cost analysis</li>
+                      <li>PDF export and unlimited saved scenarios</li>
+                      <li>Side-by-side state tax comparisons</li>
+                    </ul>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">Get the Complete Picture</h3>
+            <p className="text-lg text-blue-100 mb-6">
+              Sign up free to access our full retirement calculator with state tax analysis, VA disability integration, and comprehensive planning tools
+            </p>
+            <a
+              href="/signup"
+              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl inline-block"
+            >
+              Create Free Account
+            </a>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // AUTHENTICATED MODE: Show full calculator
   return (
     <div className="px-4 py-6 sm:px-0">
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
