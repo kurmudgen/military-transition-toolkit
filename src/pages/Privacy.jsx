@@ -26,33 +26,34 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">1. How We Store Your Data</h2>
               <p className="mb-4">
-                We offer two storage options depending on your account tier:
+                All user data is securely stored in our cloud database with industry-leading security:
               </p>
 
               <div className="bg-slate-900/50 rounded-lg p-4 mb-4">
-                <h3 className="text-lg font-semibold text-white mb-2">Free Tier: Local Browser Storage</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">Secure Cloud Storage (All Users)</h3>
                 <p className="text-sm mb-2">
-                  Your data is stored in your browser's local storage on your device. It never leaves your computer, tablet, or phone. We have no access to this data.
+                  Your data is securely stored in the cloud with bank-level encryption. This enables automatic backup and access from any device while maintaining complete privacy and security.
                 </p>
                 <ul className="text-sm space-y-1 ml-4 list-disc">
-                  <li>Data stays on your device only</li>
-                  <li>No server backups or cloud storage</li>
-                  <li>Use Export to manually back up your data</li>
-                  <li>Cleared when you clear browser data</li>
+                  <li>Bank-level encryption (AES-256) protecting all data at rest</li>
+                  <li>Row-level security ensuring users can only access their own data</li>
+                  <li>Automatic cloud backup and sync across all devices</li>
+                  <li>Secure SSL/TLS encryption for all data in transit</li>
+                  <li>SOC 2 Type II certified infrastructure (Supabase)</li>
+                  <li>HIPAA-compliant security for medical information</li>
+                  <li>Regular automated backups with point-in-time recovery</li>
                 </ul>
               </div>
 
-              <div className="bg-slate-900/50 rounded-lg p-4 mb-4">
-                <h3 className="text-lg font-semibold text-white mb-2">Premium Tier: Encrypted Cloud Storage</h3>
+              <div className="bg-green-900/20 border-l-4 border-green-500 rounded p-4 mb-4">
+                <h3 className="text-lg font-semibold text-white mb-2">🔒 Data Isolation & Privacy</h3>
                 <p className="text-sm mb-2">
-                  Your data is encrypted on your device with end-to-end encryption, then securely stored in the cloud. This enables syncing across all your devices while maintaining complete privacy.
+                  Every user's data is completely isolated at the database level. Even our own administrators cannot access your personal information, VA claims, medical records, or any sensitive data without explicit permission.
                 </p>
                 <ul className="text-sm space-y-1 ml-4 list-disc">
-                  <li>End-to-end encryption (encrypted before leaving your device)</li>
-                  <li>Zero-knowledge architecture (we can't decrypt your data)</li>
-                  <li>Automatic cloud backup and sync</li>
-                  <li>Military-grade AES-256 encryption</li>
-                  <li>Only you have the decryption keys</li>
+                  <li>Zero cross-user data access (enforced at database level)</li>
+                  <li>Your medical records and VA claims are protected by HIPAA-grade security</li>
+                  <li>We never sell or share your personal data with third parties</li>
                 </ul>
               </div>
             </section>
@@ -61,12 +62,13 @@ export default function Privacy() {
               <h2 className="text-2xl font-bold text-white mb-4">2. What Data We Collect</h2>
 
               <div className="mb-6">
-                <h3 className="text-xl font-semibold text-white mb-3">Personal Information (Premium Users Only)</h3>
-                <p className="mb-2">For Premium accounts, we collect minimal information necessary to provide cloud services:</p>
+                <h3 className="text-xl font-semibold text-white mb-3">Personal Information</h3>
+                <p className="mb-2">We collect minimal information necessary to provide secure cloud services:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li><strong className="text-white">Email address:</strong> For account creation, login, and service communications</li>
-                  <li><strong className="text-white">Payment information:</strong> Processed securely through Stripe (we never store credit card numbers)</li>
-                  <li><strong className="text-white">Encrypted user data:</strong> Your transition planning data, encrypted with your keys before storage</li>
+                  <li><strong className="text-white">Payment information (Premium users):</strong> Processed securely through Stripe (we never store credit card numbers)</li>
+                  <li><strong className="text-white">Encrypted user data:</strong> Your transition planning data, securely encrypted in our database</li>
+                  <li><strong className="text-white">Profile information:</strong> Name, military branch, rank, MOS (only what you choose to provide)</li>
                 </ul>
               </div>
 

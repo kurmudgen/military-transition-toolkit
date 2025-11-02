@@ -76,7 +76,7 @@ export default function FAQ() {
               </summary>
               <div className="p-4 pt-0 text-slate-300">
                 <strong>Premium users:</strong> Yes, with end-to-end encryption. Your data is encrypted on your device before being sent to the cloud, and only you have the keys to decrypt it.
-                <p className="mt-2"><strong>Free tier users:</strong> Data is stored in browser local storage, protected by your device password. For maximum security, enable full-device encryption.</p>
+                <p className="mt-2"><strong>All users:</strong> Data is stored in our secure cloud database with bank-level encryption (AES-256). Your data is protected by row-level security, ensuring only you can access your information.</p>
               </div>
             </details>
 

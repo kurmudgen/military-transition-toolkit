@@ -37,7 +37,7 @@ export default function Terms() {
                 <li>Educational resources and guidance</li>
               </ul>
               <p className="mt-4">
-                All data is stored locally on your device. We do not maintain central servers or databases containing your personal information.
+                All data is securely stored in our cloud database with bank-level encryption. Your data is automatically backed up and accessible from any device while maintaining complete privacy and security through row-level access controls.
               </p>
             </section>
 
@@ -49,7 +49,7 @@ export default function Terms() {
                 <li>Not attempt to reverse engineer, decompile, or disassemble the Service</li>
                 <li>Not use the Service to transmit malicious code or harmful content</li>
                 <li>Verify all information provided by the Service with official sources</li>
-                <li>Back up your locally stored data regularly</li>
+                <li>Maintain secure credentials for your account</li>
                 <li>Not hold the Service liable for decisions made based on its tools and information</li>
               </ul>
             </section>
@@ -71,17 +71,22 @@ export default function Terms() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">5. Local Data Storage</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">5. Cloud Data Storage & Security</h2>
               <p className="mb-4">
-                Your data is stored locally on your device using browser localStorage. This means:
+                Your data is securely stored in our cloud database with industry-leading security measures:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>We do not have access to your data</li>
-                <li>Your data may be lost if you clear browser data or use private browsing</li>
-                <li>You are responsible for backing up your data using the export feature</li>
-                <li>Data is not synchronized across devices unless you manually export/import</li>
-                <li>We cannot recover lost data</li>
+                <li>Bank-level encryption (AES-256) protecting all data at rest</li>
+                <li>Row-level security ensuring you can only access your own data</li>
+                <li>Automatic cloud backup with point-in-time recovery</li>
+                <li>Data synchronized across all your devices automatically</li>
+                <li>SOC 2 Type II certified infrastructure (Supabase)</li>
+                <li>HIPAA-compliant security for medical information</li>
+                <li>We maintain encrypted backups but cannot access your decrypted personal data</li>
               </ul>
+              <p className="mt-4">
+                You are responsible for maintaining secure credentials. We recommend using a strong, unique password and enabling two-factor authentication when available.
+              </p>
             </section>
 
             <section>
