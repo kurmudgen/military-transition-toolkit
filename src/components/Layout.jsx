@@ -213,8 +213,9 @@ export default function Layout() {
       </main>
 
       <footer className="bg-slate-800 dark:bg-slate-900 border-t border-slate-700 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="text-center mb-4">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          {/* Privacy Banner */}
+          <div className="text-center mb-8">
             <p className="text-slate-300 text-sm mb-2 flex items-center justify-center gap-2 flex-wrap">
               <span className="text-lg">🔒</span>
               <strong>Your Privacy:</strong> End-to-end encrypted cloud storage
@@ -224,31 +225,101 @@ export default function Layout() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm mb-4">
-            <Link to="/app/about" className="text-slate-400 hover:text-white transition-colors">
-              About This Project
-            </Link>
-            <Link to="/app/faq" className="text-slate-400 hover:text-white transition-colors">
-              FAQ
-            </Link>
-            <Link to="/terms" className="text-slate-400 hover:text-white transition-colors">
-              Terms of Service
-            </Link>
-            <Link to="/privacy" className="text-slate-400 hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link to="/refund-policy" className="text-slate-400 hover:text-white transition-colors">
-              Refund Policy
-            </Link>
-            <a
-              href="mailto:support@formationlabs.net"
-              className="text-slate-400 hover:text-white transition-colors"
-            >
-              Contact Support
-            </a>
+          {/* Footer Navigation - Three Columns */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 max-w-4xl mx-auto">
+            {/* Company Column */}
+            <div>
+              <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+                Company
+              </h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link to="/app/about" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="mailto:support@formationlabs.net"
+                    className="text-slate-400 hover:text-white transition-colors text-sm"
+                  >
+                    Contact Support
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Product Column */}
+            <div>
+              <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+                Product
+              </h3>
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="#roadmap"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-400 hover:text-white transition-colors text-sm"
+                  >
+                    Roadmap
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#changelog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-400 hover:text-white transition-colors text-sm"
+                  >
+                    Changelog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#feedback"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-400 hover:text-white transition-colors text-sm"
+                  >
+                    Give Feedback
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal Column */}
+            <div>
+              <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+                Legal
+              </h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link to="/terms" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    Terms of Service
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/refund-policy" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    Refund Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/app/faq" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    FAQ
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div className="text-center space-y-2">
+          {/* Footer Bottom */}
+          <div className="text-center space-y-2 pt-6 border-t border-slate-700">
             <p className="text-slate-400 text-xs flex items-center justify-center gap-2 flex-wrap">
               <span>Available on web now</span>
               <span>•</span>
