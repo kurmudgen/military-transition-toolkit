@@ -16,8 +16,7 @@ export default function Landing() {
         </h1>
 
         <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-          Everything you need to successfully transition from military to civilian life.
-          Comprehensive planning tools, calculators, and guidance - all in one place.
+          For transitioning service members AND current veterans. Plan your transition, file VA claims, compare states, and access comprehensive resources - all in one place.
         </p>
 
         <div className="flex gap-4 justify-center mb-12">
@@ -62,6 +61,58 @@ export default function Landing() {
             <div className="text-3xl mb-3">🤔</div>
             <h3 className="text-xl font-semibold text-white mb-2">Poor Planning</h3>
             <p className="text-slate-300">Where to live? What job? How much money? Too many unknowns</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Already Separated Section */}
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 md:p-12 border-2 border-blue-600">
+          <div className="text-center mb-8">
+            <div className="inline-block px-4 py-2 bg-blue-600/30 text-blue-200 rounded-full text-sm font-semibold mb-4">
+              Already Out?
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Already Separated? We've Got You Covered
+            </h2>
+            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+              Current veterans can use our tools to file VA claims, compare state benefits, and access resources - no transition planning needed.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 border border-blue-400/30">
+              <div className="text-4xl mb-3">🏥</div>
+              <h3 className="text-xl font-semibold text-white mb-2">VA Claims Builder</h3>
+              <p className="text-blue-100 text-sm">
+                Build comprehensive claims with evidence tracking, personal statement generators, and buddy statement templates. Get every dollar you earned.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 border border-blue-400/30">
+              <div className="text-4xl mb-3">🗺️</div>
+              <h3 className="text-xl font-semibold text-white mb-2">State Benefits Comparison</h3>
+              <p className="text-blue-100 text-sm">
+                Compare veteran benefits across all 50 states. Find the best place to live based on tax breaks, healthcare, education benefits, and more.
+              </p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur rounded-lg p-6 border border-blue-400/30">
+              <div className="text-4xl mb-3">📚</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Resource Library</h3>
+              <p className="text-blue-100 text-sm">
+                Access 60+ curated resources for VA benefits, healthcare, education, employment rights, and veteran-specific support services.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link to="/signup" className="inline-block px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg text-lg hover:bg-blue-50 transition-colors">
+              Get Started - It's Free →
+            </Link>
+            <p className="text-blue-200 text-sm mt-3">
+              Sign up takes 30 seconds • No credit card required
+            </p>
           </div>
         </div>
       </div>

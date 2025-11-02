@@ -15,6 +15,8 @@ export default function Settings() {
   const [subscription, setSubscription] = useState(null)
   const [loadingSubscription, setLoadingSubscription] = useState(true)
   const [managingBilling, setManagingBilling] = useState(false)
+  const [separationStatus, setSeparationStatus] = useState('transitioning')
+  const [statusUpdateMessage, setStatusUpdateMessage] = useState('')
   const navigate = useNavigate()
   const { signOut } = useAuth()
 
@@ -22,6 +24,19 @@ export default function Settings() {
     document.title = 'Settings - Military Transition Toolkit'
     trackPageView('Settings')
     loadSubscription()
+
+    // Load separation status from localStorage
+    const saved = localStorage.getItem('userSetup')
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved)
+        if (parsed.separation_status) {
+          setSeparationStatus(parsed.separation_status)
+        }
+      } catch (error) {
+        console.error('Error loading separation status:', error)
+      }
+    }
   }, [])
 
   const loadSubscription = async () => {
@@ -239,6 +254,31 @@ export default function Settings() {
     navigate('/login')
   }
 
+  const handleSeparationStatusUpdate = (newStatus) => {
+    setSeparationStatus(newStatus)
+
+    // Save to localStorage
+    const saved = localStorage.getItem('userSetup')
+    let userSetup = {}
+
+    if (saved) {
+      try {
+        userSetup = JSON.parse(saved)
+      } catch (error) {
+        console.error('Error parsing userSetup:', error)
+      }
+    }
+
+    userSetup.separation_status = newStatus
+    localStorage.setItem('userSetup', JSON.stringify(userSetup))
+
+    // Show success message
+    setStatusUpdateMessage('✓ Separation status updated successfully! Reload the page to see changes in your dashboard.')
+    setTimeout(() => setStatusUpdateMessage(''), 5000)
+
+    trackButtonClick(`Update Separation Status - ${newStatus}`)
+  }
+
   const handleManageBilling = async () => {
     try {
       setManagingBilling(true)
@@ -297,6 +337,12 @@ export default function Settings() {
           </div>
         )}
 
+        {statusUpdateMessage && (
+          <div className="mb-6 p-4 bg-green-900/20 border border-green-500 rounded-lg">
+            <p className="text-green-400">{statusUpdateMessage}</p>
+          </div>
+        )}
+
         <div className="space-y-6">
           {/* Analytics Dashboard */}
           <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
@@ -341,6 +387,91 @@ export default function Settings() {
             <div className="mt-4 p-4 bg-blue-900/20 border border-blue-500 rounded-lg">
               <p className="text-blue-400 text-sm">
                 🔒 Free tier: Data stored locally. Premium: End-to-end encrypted cloud storage with zero-knowledge architecture.
+              </p>
+            </div>
+          </div>
+
+          {/* Separation Status */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <h2 className="text-2xl font-semibold text-white mb-4">🎖️ Separation Status</h2>
+            <p className="text-slate-300 mb-4">
+              Update your status to customize your dashboard and features. Your selection affects which tools and checklists are shown.
+            </p>
+
+            <div className="space-y-3">
+              <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                separationStatus === 'transitioning'
+                  ? 'border-blue-500 bg-blue-900/20'
+                  : 'border-slate-600 hover:border-blue-400'
+              }`}>
+                <input
+                  type="radio"
+                  name="separationStatus"
+                  value="transitioning"
+                  checked={separationStatus === 'transitioning'}
+                  onChange={(e) => handleSeparationStatusUpdate(e.target.value)}
+                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                />
+                <div className="ml-3">
+                  <span className="block text-base font-semibold text-white">
+                    🚀 Currently Transitioning Out
+                  </span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    Active duty planning separation/retirement - show full transition toolkit with checklists, job search, and planning tools
+                  </span>
+                </div>
+              </label>
+
+              <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                separationStatus === 'separated'
+                  ? 'border-blue-500 bg-blue-900/20'
+                  : 'border-slate-600 hover:border-blue-400'
+              }`}>
+                <input
+                  type="radio"
+                  name="separationStatus"
+                  value="separated"
+                  checked={separationStatus === 'separated'}
+                  onChange={(e) => handleSeparationStatusUpdate(e.target.value)}
+                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                />
+                <div className="ml-3">
+                  <span className="block text-base font-semibold text-white">
+                    🏥 Already Separated - Need VA Claims Help
+                  </span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    Separated/retired veteran - show streamlined dashboard focused on VA claims, state benefits, and resources
+                  </span>
+                </div>
+              </label>
+
+              <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                separationStatus === 'reserve_guard'
+                  ? 'border-blue-500 bg-blue-900/20'
+                  : 'border-slate-600 hover:border-blue-400'
+              }`}>
+                <input
+                  type="radio"
+                  name="separationStatus"
+                  value="reserve_guard"
+                  checked={separationStatus === 'reserve_guard'}
+                  onChange={(e) => handleSeparationStatusUpdate(e.target.value)}
+                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                />
+                <div className="ml-3">
+                  <span className="block text-base font-semibold text-white">
+                    🎖️ Reserve/Guard
+                  </span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    Reserve or National Guard member - show mixed features for both active duty planning and veteran benefits
+                  </span>
+                </div>
+              </label>
+            </div>
+
+            <div className="mt-4 p-4 bg-blue-900/20 border border-blue-500 rounded-lg">
+              <p className="text-blue-400 text-sm">
+                💡 Your dashboard will automatically update to show the most relevant features for your status. Reload the page after changing to see the updated view.
               </p>
             </div>
           </div>

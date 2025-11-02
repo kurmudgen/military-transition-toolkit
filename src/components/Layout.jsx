@@ -67,6 +67,7 @@ export default function Layout() {
     { to: '/app', label: 'Home' },
     { to: '/app/progress', label: 'Progress' },
     { to: '/app/resources', label: 'Resources' },
+    { to: '/app/va-claims-builder', label: 'VA Claims', highlighted: true }, // Highlighted for separated veterans
     { to: '/app/settings', label: 'Settings' }
   ]
 
@@ -94,11 +95,16 @@ export default function Layout() {
                   key={link.to}
                   to={link.to}
                   className={`${
-                    isActive(link.to)
-                      ? 'border-blue-500 text-blue-700 bg-blue-50 dark:bg-blue-900 dark:text-blue-300'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-700'
+                    link.highlighted
+                      ? isActive(link.to)
+                        ? 'border-green-500 text-green-700 bg-green-50 dark:bg-green-900 dark:text-green-300 font-bold'
+                        : 'border-transparent text-green-600 hover:border-green-400 hover:text-green-700 hover:bg-green-50 dark:text-green-400 dark:hover:bg-green-900/20 font-bold'
+                      : isActive(link.to)
+                        ? 'border-blue-500 text-blue-700 bg-blue-50 dark:bg-blue-900 dark:text-blue-300'
+                        : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-700'
                   } inline-flex items-center px-4 py-2 border-b-2 text-sm font-semibold transition-colors rounded-t-md`}
                 >
+                  {link.highlighted && <span className="mr-1">🏥</span>}
                   {link.label}
                 </Link>
               ))}
