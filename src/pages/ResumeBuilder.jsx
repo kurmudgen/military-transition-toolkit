@@ -16,6 +16,12 @@ import { useFeatureAccess, useUsageLimits } from '../hooks/useFeatureAccess'
 import { FEATURES } from '../utils/featureGating'
 import UpgradePrompt, { PremiumBadge } from '../components/UpgradePrompt'
 import { generateResumePDF } from '../utils/pdfExport'
+import {
+  getAllResumes,
+  createResume,
+  updateResume,
+  deleteResume as deleteResumeDB
+} from '../services/resumeService'
 
 export default function ResumeBuilder() {
   // Feature gating hooks
@@ -23,6 +29,11 @@ export default function ResumeBuilder() {
   const { checkLimit } = useUsageLimits()
   const [showUpgradeModal, setShowUpgradeModal] = useState(false)
   const [upgradeModalMessage, setUpgradeModalMessage] = useState('')
+
+  // Database loading/saving states
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState(null)
 
   const [currentStep, setCurrentStep] = useState(1)
   const [template, setTemplate] = useState('chronological')
@@ -51,6 +62,7 @@ export default function ResumeBuilder() {
     }
   })
   const [savedResumes, setSavedResumes] = useState([])
+  const [currentResumeId, setCurrentResumeId] = useState(null) // Track which resume is loaded
   const [resumeName, setResumeName] = useState('')
   const [showTranslationHelper, setShowTranslationHelper] = useState(false)
   const [searchMOS, setSearchMOS] = useState('')
@@ -61,14 +73,57 @@ export default function ResumeBuilder() {
     loadSavedResumes()
   }, [])
 
-  const loadSavedResumes = () => {
-    const saved = localStorage.getItem('savedResumes')
-    if (saved) {
-      try {
-        setSavedResumes(JSON.parse(saved))
-      } catch (e) {
-        console.error('Error loading saved resumes:', e)
+  const loadSavedResumes = async () => {
+    try {
+      setLoading(true)
+      setError(null)
+
+      // Load all resumes from database
+      const resumes = await getAllResumes()
+
+      if (resumes && resumes.length > 0) {
+        // Transform database records to page format
+        const formattedResumes = resumes.map(resume => ({
+          id: resume.id,
+          name: resume.name || `Resume ${new Date(resume.created_at).toLocaleDateString()}`,
+          template: resume.template || 'chronological',
+          data: {
+            contactInfo: resume.contact_info || {
+              firstName: '',
+              lastName: '',
+              email: '',
+              phone: '',
+              city: '',
+              state: '',
+              linkedIn: '',
+              website: ''
+            },
+            summary: resume.professional_summary || '',
+            experience: resume.experience || [],
+            education: resume.education || [],
+            skills: Array.isArray(resume.skills) ? resume.skills : [],
+            certifications: resume.certifications || [],
+            militaryService: resume.military_service || {
+              branch: '',
+              rank: '',
+              mos: '',
+              yearsOfService: '',
+              honorableDischarge: true
+            }
+          },
+          createdAt: resume.created_at,
+          updatedAt: resume.updated_at
+        }))
+
+        setSavedResumes(formattedResumes)
       }
+
+      console.log('✓ Resumes loaded from database')
+    } catch (err) {
+      console.error('Error loading resumes:', err)
+      setError('Failed to load resumes. Please refresh the page.')
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -270,47 +325,95 @@ export default function ResumeBuilder() {
   }
 
   const saveResume = async () => {
-    // Check if user has reached resume limit (free tier = 1 resume max)
-    const reachedLimit = await checkLimit('resumes', savedResumes.length)
+    try {
+      setSaving(true)
+      setError(null)
 
-    if (reachedLimit) {
-      setUpgradeModalMessage('Free users can only create 1 resume. Upgrade to Premium for unlimited resumes and exports!')
-      setShowUpgradeModal(true)
-      trackButtonClick('Resume Builder - Save Resume Blocked')
-      return
+      const name = resumeName || `Resume ${new Date().toLocaleDateString()}`
+
+      // Transform to database format
+      const dbData = {
+        name,
+        template,
+        contact_info: resumeData.contactInfo,
+        professional_summary: resumeData.summary,
+        experience: resumeData.experience,
+        education: resumeData.education,
+        skills: resumeData.skills,
+        certifications: resumeData.certifications,
+        military_service: resumeData.militaryService
+      }
+
+      let savedResume
+
+      if (currentResumeId) {
+        // Update existing resume
+        savedResume = await updateResume(currentResumeId, dbData)
+        trackButtonClick('Resume Builder - Update Resume')
+      } else {
+        // Create new resume - the service handles free tier limits
+        try {
+          savedResume = await createResume(dbData)
+          setCurrentResumeId(savedResume.id)
+          trackButtonClick('Resume Builder - Save Resume')
+        } catch (err) {
+          if (err.message.includes('Free tier')) {
+            setUpgradeModalMessage('Free users can only create 1 resume. Upgrade to Premium for unlimited resumes and exports!')
+            setShowUpgradeModal(true)
+            trackButtonClick('Resume Builder - Save Resume Blocked')
+            return
+          }
+          throw err
+        }
+      }
+
+      // Reload resumes list to reflect changes
+      await loadSavedResumes()
+
+      alert(`Resume "${name}" saved successfully!`)
+      console.log('✓ Resume saved to database')
+    } catch (err) {
+      console.error('Error saving resume:', err)
+      setError('Failed to save resume. Please try again.')
+    } finally {
+      setSaving(false)
     }
-
-    const name = resumeName || `Resume ${new Date().toLocaleDateString()}`
-    const resume = {
-      id: Date.now(),
-      name,
-      template,
-      data: resumeData,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString()
-    }
-
-    const updated = [...savedResumes, resume]
-    setSavedResumes(updated)
-    localStorage.setItem('savedResumes', JSON.stringify(updated))
-    trackButtonClick('Resume Builder - Save Resume')
-    alert(`Resume "${name}" saved successfully!`)
   }
 
   const loadResume = (resume) => {
     setResumeData(resume.data)
     setTemplate(resume.template)
     setResumeName(resume.name)
+    setCurrentResumeId(resume.id) // Track which resume is loaded for updates
     setCurrentStep(8) // Jump to review step to see the loaded resume
     trackButtonClick('Resume Builder - Load Resume')
   }
 
-  const deleteResume = (id) => {
-    if (confirm('Delete this resume? This cannot be undone.')) {
-      const updated = savedResumes.filter(r => r.id !== id)
-      setSavedResumes(updated)
-      localStorage.setItem('savedResumes', JSON.stringify(updated))
-      trackButtonClick('Resume Builder - Delete Resume')
+  const deleteResume = async (id) => {
+    if (window.confirm('Delete this resume? This action cannot be undone.')) {
+      try {
+        setSaving(true)
+        setError(null)
+
+        await deleteResumeDB(id)
+
+        // If we deleted the currently loaded resume, clear the current resume ID
+        if (currentResumeId === id) {
+          setCurrentResumeId(null)
+          setResumeName('')
+        }
+
+        // Reload resumes list
+        await loadSavedResumes()
+
+        trackButtonClick('Resume Builder - Delete Resume')
+        console.log('✓ Resume deleted from database')
+      } catch (err) {
+        console.error('Error deleting resume:', err)
+        setError('Failed to delete resume. Please try again.')
+      } finally {
+        setSaving(false)
+      }
     }
   }
 
@@ -352,6 +455,26 @@ export default function ResumeBuilder() {
     return MOS_TRANSLATIONS[mos] || null
   }
 
+  // Loading state
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+            <div className="flex flex-col items-center justify-center">
+              <svg className="animate-spin h-16 w-16 text-blue-600 dark:text-blue-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              <p className="text-gray-700 dark:text-gray-300 font-medium text-lg">Loading your resumes from secure cloud storage...</p>
+              <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">This may take a moment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-7xl mx-auto px-4">
@@ -367,7 +490,44 @@ export default function ResumeBuilder() {
           <p className="text-gray-600 dark:text-gray-400 text-lg">
             Create a professional civilian resume with military-to-civilian translation
           </p>
+          <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
+            🔒 Your resumes are <strong>securely stored in the cloud</strong> with bank-level encryption. Accessible from any device.
+          </p>
         </div>
+
+        {/* Error Alert */}
+        {error && (
+          <div className="mb-6 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+            <div className="flex items-start">
+              <svg className="w-6 h-6 text-red-600 dark:text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div className="flex-1">
+                <h3 className="text-red-800 dark:text-red-200 font-semibold">Error</h3>
+                <p className="text-red-700 dark:text-red-300 text-sm mt-1">{error}</p>
+              </div>
+              <button
+                onClick={() => setError(null)}
+                className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-200"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Saving Indicator */}
+        {saving && (
+          <div className="mb-6 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+            <div className="flex items-center">
+              <svg className="animate-spin h-5 w-5 text-blue-600 dark:text-blue-400 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              <span className="text-blue-700 dark:text-blue-300 font-medium">Saving to secure cloud storage...</span>
+            </div>
+          </div>
+        )}
 
         {/* Progress Indicator */}
         <div className="mb-8 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
