@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { getChecklistProgress, updateChecklistProgress } from '../services/checklistService'
 
 const TIMELINE_DATA = [
   {
@@ -153,32 +154,65 @@ export default function SeparationUnder20() {
   const [showToast, setShowToast] = useState(false)
   const [isInitialLoad, setIsInitialLoad] = useState(true)
 
+  // Database loading/saving states
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState(null)
+
   // Set page title
   useEffect(() => {
     document.title = 'Transition Checklist - Separation Under 20 Years'
   }, [])
 
-  // Load completed items from localStorage on mount
+  // Load completed items from database on mount
   useEffect(() => {
-    const saved = localStorage.getItem('separationUnder20Checklist')
-    if (saved) {
+    const loadProgress = async () => {
       try {
-        setCompletedItems(JSON.parse(saved))
-      } catch (e) {
-        console.error('Error loading checklist data:', e)
+        setLoading(true)
+        setError(null)
+
+        // Load progress from database
+        const progress = await getChecklistProgress('separation')
+        setCompletedItems(progress || {})
+
+        console.log('✓ Separation checklist loaded from database')
+      } catch (err) {
+        console.error('Error loading checklist:', err)
+        setError('Failed to load checklist progress. Please refresh the page.')
+      } finally {
+        setLoading(false)
+        setIsInitialLoad(false)
       }
     }
-    setIsInitialLoad(false)
+
+    loadProgress()
   }, [])
 
-  // Save to localStorage whenever completedItems changes
+  // Save to database whenever completedItems changes
   useEffect(() => {
-    if (!isInitialLoad) {
-      localStorage.setItem('separationUnder20Checklist', JSON.stringify(completedItems))
-      setShowToast(true)
-      setTimeout(() => setShowToast(false), 2000)
+    const saveProgress = async () => {
+      if (isInitialLoad || loading) return
+
+      try {
+        setSaving(true)
+
+        // Save progress to database
+        await updateChecklistProgress('separation', completedItems)
+
+        setShowToast(true)
+        setTimeout(() => setShowToast(false), 2000)
+
+        console.log('✓ Separation checklist saved to database')
+      } catch (err) {
+        console.error('Error saving checklist:', err)
+        setError('Failed to save progress. Please try again.')
+      } finally {
+        setSaving(false)
+      }
     }
-  }, [completedItems, isInitialLoad])
+
+    saveProgress()
+  }, [completedItems, isInitialLoad, loading])
 
   // Track scroll position for scroll-to-top button
   useEffect(() => {
@@ -243,15 +277,57 @@ export default function SeparationUnder20() {
 
   const overall = getOverallProgress()
 
+  // Loading state
+  if (loading) {
+    return (
+      <div className="px-4 py-6 sm:px-0">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-12">
+          <div className="flex flex-col items-center justify-center">
+            <svg className="animate-spin h-16 w-16 text-blue-600 dark:text-blue-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <p className="text-gray-700 dark:text-gray-300 font-medium text-lg">Loading your checklist from secure cloud storage...</p>
+            <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">This may take a moment</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="px-4 py-6 sm:px-0">
-      <div className="bg-white rounded-lg shadow p-6">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
           Separation Timeline (Under 20 Years)
         </h1>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 dark:text-gray-400 mb-6">
           Track your transition from military service to civilian life
         </p>
+        <p className="text-gray-500 dark:text-gray-500 text-sm mb-6">
+          🔒 Your checklist progress is <strong>securely stored in the cloud</strong> and accessible from any device.
+        </p>
+
+        {/* Error Alert */}
+        {error && (
+          <div className="mb-6 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+            <div className="flex items-start">
+              <svg className="w-6 h-6 text-red-600 dark:text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div className="flex-1">
+                <h3 className="text-red-800 dark:text-red-200 font-semibold">Error</h3>
+                <p className="text-red-700 dark:text-red-300 text-sm mt-1">{error}</p>
+              </div>
+              <button
+                onClick={() => setError(null)}
+                className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-200"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+        )}
 
         {/* Collapse/Expand All Buttons */}
         <div className="flex items-center justify-between mb-6">
