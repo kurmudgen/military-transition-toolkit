@@ -288,6 +288,77 @@ export default function Pricing() {
         </div>
       )}
 
+      {/* Optional Donation Section - Promo Mode Only */}
+      {paymentUIHidden && (
+        <div className="mb-16 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300 dark:border-purple-700 rounded-2xl p-12 shadow-2xl">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="text-5xl mb-6">☕</div>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              Love This Tool? Buy Me a Coffee!
+            </h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
+              This tool is <strong>100% free</strong> during the government shutdown. No payment required, ever.
+            </p>
+            <p className="text-base text-gray-600 dark:text-gray-400 mb-8">
+              If you find it valuable and want to support continued development, consider buying me a coffee. It's completely optional and genuinely appreciated! 🙏
+            </p>
+
+            {/* Donation Options */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              <a
+                href="https://donate.stripe.com/test_aEU5kU4xm8vt5gI000"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackButtonClick('Donation - $5')}
+                className="block p-6 bg-white dark:bg-gray-800 border-2 border-purple-300 dark:border-purple-600 hover:border-purple-500 dark:hover:border-purple-400 rounded-xl transition-all hover:shadow-lg group"
+              >
+                <div className="text-4xl mb-2">☕</div>
+                <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">$5</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300">Coffee</div>
+              </a>
+
+              <a
+                href="https://donate.stripe.com/test_aEU5kU4xm8vt5gI000"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackButtonClick('Donation - $10')}
+                className="block p-6 bg-white dark:bg-gray-800 border-2 border-purple-300 dark:border-purple-600 hover:border-purple-500 dark:hover:border-purple-400 rounded-xl transition-all hover:shadow-lg group"
+              >
+                <div className="text-4xl mb-2">🍔</div>
+                <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">$10</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300">Lunch</div>
+              </a>
+
+              <a
+                href="https://donate.stripe.com/test_aEU5kU4xm8vt5gI000"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackButtonClick('Donation - $25')}
+                className="block p-6 bg-white dark:bg-gray-800 border-2 border-purple-300 dark:border-purple-600 hover:border-purple-500 dark:hover:border-purple-400 rounded-xl transition-all hover:shadow-lg group"
+              >
+                <div className="text-4xl mb-2">⛽</div>
+                <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">$25</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300">Tank of Gas</div>
+              </a>
+            </div>
+
+            <a
+              href="https://donate.stripe.com/test_aEU5kU4xm8vt5gI000"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackButtonClick('Donation - Custom')}
+              className="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-lg transition-colors shadow-lg"
+            >
+              💝 Custom Amount
+            </a>
+
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-6">
+              Donations are processed securely through Stripe. 100% optional, 100% appreciated.
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Launch Special Callout */}
       {promoActive && (
         <div className="mb-16 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border-2 border-yellow-400 dark:border-yellow-600 rounded-2xl p-8 shadow-lg">
