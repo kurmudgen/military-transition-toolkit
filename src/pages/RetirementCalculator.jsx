@@ -3,11 +3,18 @@ import UseProfileButton from '../components/UseProfileButton'
 import { getProfileData, getServiceInfo, getLocationInfo } from '../utils/profileAutoFill'
 import { isPromoActive } from '../utils/promoConfig'
 
-// 2025 Base Pay Data (simplified - showing E-7 through O-5 for key ranks)
+// 2025 Base Pay Data (showing E-7 through O-5 for key ranks + Warrant Officers)
 const BASE_PAY_2025 = {
   'E-7': { '20': 4480, '22': 4642, '24': 4805, '26': 4968, '30': 5460 },
   'E-8': { '20': 5157, '22': 5349, '24': 5542, '26': 5735, '30': 6300 },
   'E-9': { '20': 6370, '22': 6605, '24': 6840, '26': 7075, '30': 7770 },
+  // Warrant Officers
+  'W-1': { '2': 3398.10, '4': 4665.00, '6': 5086.50, '8': 5571.90, '10': 5997.90, '12': 6296.70, '14': 6596.10, '16': 6896.10, '18': 7195.50, '20': 7494.90, '22': 7494.90 },
+  'W-2': { '2': 4376.40, '4': 4953.60, '6': 5386.50, '8': 5889.00, '10': 6296.70, '12': 6596.10, '14': 6896.10, '16': 7195.50, '18': 7494.90, '20': 7853.70, '22': 8153.10, '24': 8452.50 },
+  'W-3': { '2': 4836.00, '4': 5242.20, '6': 5675.70, '8': 6108.60, '10': 6596.10, '12': 6896.10, '14': 7195.50, '16': 7494.90, '18': 7853.70, '20': 8212.50, '22': 8571.30, '24': 8929.50, '26': 9288.30 },
+  'W-4': { '2': 5242.20, '4': 5675.70, '6': 6108.60, '8': 6596.10, '10': 7023.60, '12': 7494.90, '14': 7853.70, '16': 8212.50, '18': 8571.30, '20': 8929.50, '22': 9288.30, '24': 9647.10, '26': 10005.30, '28': 10364.10 },
+  'W-5': { '2': 6596.10, '4': 7195.50, '6': 7494.90, '8': 7853.70, '10': 8212.50, '12': 8571.30, '14': 8929.50, '16': 9288.30, '18': 9647.10, '20': 10005.30, '22': 10364.10, '24': 10722.30, '26': 11080.50, '28': 11438.70 },
+  // Officers
   'O-3': { '10': 6159, '12': 6752, '14': 7103, '16': 7103, '20': 7103 },
   'O-4': { '10': 7278, '12': 7968, '14': 8423, '16': 8733, '20': 9105 },
   'O-5': { '16': 9668, '18': 10058, '20': 10448, '22': 10838, '26': 11418 },
@@ -96,6 +103,21 @@ const COMMON_SCENARIOS = [
       dependents: 0,
       selectedState: 'Texas',
       electSBP: false
+    }
+  },
+  {
+    name: 'W-4 with 24 years, 40% VA rating',
+    data: {
+      branch: 'Army',
+      rank: 'W-4',
+      yearsOfService: 24,
+      monthsOfService: 0,
+      retirementSystem: 'high3',
+      high3Pay: 9647.10,
+      vaRating: '40%',
+      dependents: 1,
+      selectedState: 'Virginia',
+      electSBP: true
     }
   },
   {
@@ -414,6 +436,13 @@ export default function RetirementCalculator() {
                   <option>E-7</option>
                   <option>E-8</option>
                   <option>E-9</option>
+                </optgroup>
+                <optgroup label="Warrant Officers">
+                  <option>W-1</option>
+                  <option>W-2</option>
+                  <option>W-3</option>
+                  <option>W-4</option>
+                  <option>W-5</option>
                 </optgroup>
                 <optgroup label="Officers">
                   <option>O-1</option>
