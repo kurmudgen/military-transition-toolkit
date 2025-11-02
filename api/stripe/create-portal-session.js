@@ -7,9 +7,24 @@ export default async function handler(req, res) {
   // CRITICAL: Set Content-Type header FIRST before any processing
   res.setHeader('Content-Type', 'application/json')
 
-  // Add CORS headers
+  // ✅ SECURITY FIX: Restrict CORS to only your domains
+  const allowedOrigins = [
+    'https://military-transition-toolkit.vercel.app',
+    'https://www.military-transition-toolkit.vercel.app',
+    ...(process.env.NODE_ENV === 'development' || process.env.VERCEL_ENV === 'preview'
+      ? ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:4173']
+      : [])
+  ]
+
+  const origin = req.headers.origin
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin)
+  } else {
+    // Fallback to main domain
+    res.setHeader('Access-Control-Allow-Origin', allowedOrigins[0])
+  }
+
   res.setHeader('Access-Control-Allow-Credentials', 'true')
-  res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type')
 

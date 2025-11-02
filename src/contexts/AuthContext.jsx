@@ -167,13 +167,25 @@ export const AuthProvider = ({ children }) => {
     },
     signOut: async () => {
       if (!supabase) {
+        // ✅ SECURITY FIX: Clear ALL localStorage before navigating
+        localStorage.clear()
+        sessionStorage.clear()
         navigate('/login')
         return { error: null }
       }
+
       const { error } = await supabase.auth.signOut()
+
       if (!error) {
+        // ✅ CRITICAL SECURITY: Clear ALL localStorage on logout
+        // This removes VA claims, medical conditions, resumes, and other PII
+        // from the device to prevent access on shared computers
+        localStorage.clear()
+        sessionStorage.clear()
+
         navigate('/login')
       }
+
       return { error }
     },
     resetPassword: async (email) => {
