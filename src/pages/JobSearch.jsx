@@ -3,12 +3,25 @@ import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { useUsageLimits } from '../hooks/useFeatureAccess'
 import UpgradePrompt from '../components/UpgradePrompt'
 import { isPromoActive } from '../utils/promoConfig'
+import {
+  getSavedJobs,
+  saveJob as saveJobDB,
+  deleteSavedJob,
+  getJobApplications,
+  createJobApplication,
+  updateJobApplication,
+  deleteJobApplication
+} from '../services/jobService'
 
 export default function JobSearch() {
   // Feature gating
   const { checkLimit } = useUsageLimits()
   const [showUpgradeModal, setShowUpgradeModal] = useState(false)
 
+  // Database loading/saving states
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState(null)
 
   const [savedJobs, setSavedJobs] = useState([])
   const [applications, setApplications] = useState([])
@@ -16,25 +29,35 @@ export default function JobSearch() {
   const [selectedJob, setSelectedJob] = useState(null)
   const [showApplicationModal, setShowApplicationModal] = useState(false)
 
-  // Load saved data from localStorage
+  // Load saved data from database
   useEffect(() => {
     trackPageView('/app/job-search')
 
-    const saved = localStorage.getItem('savedJobs')
-    if (saved) setSavedJobs(JSON.parse(saved))
+    const loadData = async () => {
+      try {
+        setLoading(true)
+        setError(null)
 
-    const apps = localStorage.getItem('jobApplications')
-    if (apps) setApplications(JSON.parse(apps))
+        // Load saved jobs and applications from database
+        const [jobs, apps] = await Promise.all([
+          getSavedJobs(),
+          getJobApplications()
+        ])
+
+        setSavedJobs(jobs || [])
+        setApplications(apps || [])
+
+        console.log('✓ Job data loaded from database')
+      } catch (err) {
+        console.error('Error loading job data:', err)
+        setError('Failed to load job data. Please refresh the page.')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadData()
   }, [])
-
-  // Save to localStorage when data changes
-  useEffect(() => {
-    localStorage.setItem('savedJobs', JSON.stringify(savedJobs))
-  }, [savedJobs])
-
-  useEffect(() => {
-    localStorage.setItem('jobApplications', JSON.stringify(applications))
-  }, [applications])
 
   // Veteran-friendly job boards
   const jobBoards = [
@@ -97,20 +120,50 @@ export default function JobSearch() {
       return
     }
 
-    // Check if user has reached job limit (free tier = 5 saved jobs max)
-    const reachedLimit = await checkLimit('savedJobs', savedJobs.length)
+    try {
+      setSaving(true)
+      setError(null)
 
-    if (reachedLimit) {
-      setShowUpgradeModal(true)
-      trackButtonClick('Save Job Blocked')
-      return
+      // Service layer handles free tier limits
+      const savedJob = await saveJobDB({
+        job_title: job.title,
+        company: job.company,
+        url: job.url,
+        location: job.location,
+        description: job.description
+      })
+
+      setSavedJobs([...savedJobs, savedJob])
+      trackButtonClick('Save Job Success')
+      console.log('✓ Job saved to database')
+    } catch (err) {
+      console.error('Error saving job:', err)
+      if (err.message.includes('Free tier')) {
+        setShowUpgradeModal(true)
+        trackButtonClick('Save Job Blocked')
+      } else {
+        setError('Failed to save job. Please try again.')
+      }
+    } finally {
+      setSaving(false)
     }
-
-    setSavedJobs([...savedJobs, { ...job, savedDate: new Date().toISOString() }])
   }
 
-  const unsaveJob = (jobId) => {
-    setSavedJobs(savedJobs.filter(j => j.id !== jobId))
+  const unsaveJob = async (jobId) => {
+    try {
+      setSaving(true)
+      setError(null)
+
+      await deleteSavedJob(jobId)
+      setSavedJobs(savedJobs.filter(j => j.id !== jobId))
+
+      console.log('✓ Job removed from database')
+    } catch (err) {
+      console.error('Error removing job:', err)
+      setError('Failed to remove job. Please try again.')
+    } finally {
+      setSaving(false)
+    }
   }
 
   const isJobSaved = (jobId) => {
@@ -122,32 +175,93 @@ export default function JobSearch() {
     setShowApplicationModal(true)
   }
 
-  const submitApplication = (applicationData) => {
+  const submitApplication = async (applicationData) => {
     trackButtonClick('Submit Application')
-    const newApplication = {
-      id: `app-${Date.now()}`,
-      jobId: selectedJob.id,
-      jobTitle: selectedJob.title,
-      company: selectedJob.company,
-      appliedDate: new Date().toISOString(),
-      status: 'Applied',
-      ...applicationData
+
+    try {
+      setSaving(true)
+      setError(null)
+
+      const newApplication = await createJobApplication({
+        job_title: selectedJob.title,
+        company: selectedJob.company,
+        job_url: selectedJob.url,
+        status: 'Applied',
+        notes: applicationData.notes || '',
+        resume_used: applicationData.resumeUsed || '',
+        cover_letter: applicationData.coverLetter || ''
+      })
+
+      setApplications([...applications, newApplication])
+      setShowApplicationModal(false)
+      setSelectedJob(null)
+      setActiveTab('applications')
+
+      console.log('✓ Application saved to database')
+    } catch (err) {
+      console.error('Error submitting application:', err)
+      setError('Failed to save application. Please try again.')
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const updateApplicationStatus = async (appId, newStatus) => {
+    try {
+      setSaving(true)
+      setError(null)
+
+      await updateJobApplication(appId, { status: newStatus })
+      setApplications(applications.map(app =>
+        app.id === appId ? { ...app, status: newStatus } : app
+      ))
+
+      console.log('✓ Application status updated')
+    } catch (err) {
+      console.error('Error updating application:', err)
+      setError('Failed to update application status.')
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const deleteApplication = async (appId) => {
+    if (!window.confirm('Delete this application? This action cannot be undone.')) {
+      return
     }
 
-    setApplications([...applications, newApplication])
-    setShowApplicationModal(false)
-    setSelectedJob(null)
-    setActiveTab('applications')
+    try {
+      setSaving(true)
+      setError(null)
+
+      await deleteJobApplication(appId)
+      setApplications(applications.filter(app => app.id !== appId))
+
+      console.log('✓ Application deleted from database')
+    } catch (err) {
+      console.error('Error deleting application:', err)
+      setError('Failed to delete application.')
+    } finally {
+      setSaving(false)
+    }
   }
 
-  const updateApplicationStatus = (appId, newStatus) => {
-    setApplications(applications.map(app =>
-      app.id === appId ? { ...app, status: newStatus } : app
-    ))
-  }
-
-  const deleteApplication = (appId) => {
-    setApplications(applications.filter(app => app.id !== appId))
+  // Loading state
+  if (loading) {
+    return (
+      <div className="space-y-6">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-12">
+          <div className="flex flex-col items-center justify-center">
+            <svg className="animate-spin h-16 w-16 text-blue-600 dark:text-blue-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <p className="text-gray-700 dark:text-gray-300 font-medium text-lg">Loading your job data from secure cloud storage...</p>
+            <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">This may take a moment</p>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -165,7 +279,44 @@ export default function JobSearch() {
         <p className="mt-2 text-gray-600 dark:text-gray-300">
           Find veteran-friendly job opportunities and track your applications
         </p>
+        <p className="mt-1 text-gray-500 dark:text-gray-500 text-sm">
+          🔒 Your saved jobs and applications are <strong>securely stored in the cloud</strong> and accessible from any device.
+        </p>
       </div>
+
+      {/* Error Alert */}
+      {error && (
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+          <div className="flex items-start">
+            <svg className="w-6 h-6 text-red-600 dark:text-red-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div className="flex-1">
+              <h3 className="text-red-800 dark:text-red-200 font-semibold">Error</h3>
+              <p className="text-red-700 dark:text-red-300 text-sm mt-1">{error}</p>
+            </div>
+            <button
+              onClick={() => setError(null)}
+              className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-200"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Saving Indicator */}
+      {saving && (
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+          <div className="flex items-center">
+            <svg className="animate-spin h-5 w-5 text-blue-600 dark:text-blue-400 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span className="text-blue-700 dark:text-blue-300 font-medium">Saving to secure cloud storage...</span>
+          </div>
+        </div>
+      )}
 
       {/* Tabs */}
       <div className="border-b border-gray-200 dark:border-gray-700">
