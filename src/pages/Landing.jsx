@@ -3,6 +3,24 @@ import { Link } from 'react-router-dom'
 export default function Landing() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Government Shutdown Promo Banner */}
+      <div className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 border-b-4 border-yellow-600">
+        <div className="max-w-6xl mx-auto px-4 py-4 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+            <span className="text-2xl md:text-3xl">🇺🇸</span>
+            <div className="text-slate-900">
+              <p className="text-lg md:text-xl font-bold">
+                FREE Premium Access During Government Shutdown
+              </p>
+              <p className="text-sm md:text-base font-semibold">
+                Sign up by Nov 11 → Become a <span className="underline">Founding Member</span> → Keep lifetime free access
+              </p>
+            </div>
+            <span className="text-2xl md:text-3xl">🎖️</span>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 py-16 text-center">
         <div className="mb-8">
@@ -255,51 +273,135 @@ export default function Landing() {
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Simple, Honest Pricing
+            Simple, Transparent Pricing
           </h2>
-          <p className="text-slate-300 text-lg">
-            Core features free forever. Optional premium for power users.
+          <p className="text-slate-300 text-lg mb-4">
+            Core features free forever. Premium options available.
           </p>
+          <div className="inline-block px-6 py-3 bg-yellow-500/20 border-2 border-yellow-500 rounded-lg">
+            <p className="text-yellow-400 font-bold text-sm md:text-base">
+              🎖️ Sign up before Nov 11 to become a Founding Member with lifetime free access!
+            </p>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {/* Free Tier */}
-          <div className="bg-slate-800 rounded-lg p-8 border-2 border-slate-700">
-            <h3 className="text-2xl font-bold text-white mb-2">Free</h3>
-            <p className="text-slate-400 mb-6">Everything you need to transition successfully</p>
-            <div className="text-4xl font-bold text-white mb-6">$0<span className="text-lg text-slate-400">/forever</span></div>
-            <ul className="space-y-3 mb-8">
+          <div className="bg-slate-800 rounded-lg p-6 border-2 border-slate-700">
+            <h3 className="text-xl font-bold text-white mb-2">Free</h3>
+            <p className="text-slate-400 text-sm mb-4">Core transition features</p>
+            <div className="text-3xl font-bold text-white mb-6">
+              $0<span className="text-base text-slate-400">/forever</span>
+            </div>
+            <ul className="space-y-2 mb-6 text-sm">
               <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">All transition checklists</span></li>
               <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Basic calculators</span></li>
               <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">State comparison</span></li>
               <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Appointment tracking</span></li>
               <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Resource library</span></li>
             </ul>
-            <Link to="/app" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-center transition-colors">
+            <Link to="/app" className="block w-full py-2.5 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-center transition-colors text-sm">
               Start Free
             </Link>
           </div>
 
-          {/* Premium Tier */}
-          <div className="bg-slate-800 rounded-lg p-8 border-2 border-blue-600 relative">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-blue-600 text-white text-sm font-semibold rounded-full">
-              Best Value
+          {/* Monthly */}
+          <div className="bg-slate-800 rounded-lg p-6 border-2 border-slate-600">
+            <h3 className="text-xl font-bold text-white mb-2">Monthly</h3>
+            <p className="text-slate-400 text-sm mb-4">Pay as you go</p>
+            <div className="text-3xl font-bold text-white mb-6">
+              $7<span className="text-base text-slate-400">/month</span>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2">Premium</h3>
-            <p className="text-slate-400 mb-6">Advanced features for comprehensive planning</p>
-            <div className="text-4xl font-bold text-white mb-2">$29<span className="text-lg text-slate-400">/one-time</span></div>
-            <p className="text-sm text-slate-400 mb-6">or $4.99/month</p>
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-2 mb-6 text-sm">
               <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Everything in Free</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Advanced calculators</span></li>
               <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">VA claims builder</span></li>
               <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Statement generators</span></li>
               <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Evidence tracker</span></li>
               <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">PDF exports</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Priority support</span></li>
             </ul>
-            <Link to="/app" className="block w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors">
-              Get Premium
+            <Link to="/pricing" className="block w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors text-sm">
+              Subscribe Monthly
+            </Link>
+          </div>
+
+          {/* Annual - Best Value */}
+          <div className="bg-slate-800 rounded-lg p-6 border-2 border-blue-500 relative transform md:scale-105 shadow-xl">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-blue-500 text-white text-xs font-bold rounded-full">
+              BEST VALUE
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Annual</h3>
+            <p className="text-slate-400 text-sm mb-4">Save $35/year</p>
+            <div className="text-3xl font-bold text-white mb-1">
+              $49<span className="text-base text-slate-400">/year</span>
+            </div>
+            <p className="text-green-400 text-xs font-semibold mb-4">Save 42% vs Monthly</p>
+            <ul className="space-y-2 mb-6 text-sm">
+              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Everything in Free</span></li>
+              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">VA claims builder</span></li>
+              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Statement generators</span></li>
+              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Evidence tracker</span></li>
+              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">PDF exports</span></li>
+            </ul>
+            <Link to="/pricing" className="block w-full py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold rounded-lg text-center transition-colors text-sm shadow-lg">
+              Subscribe Annual
+            </Link>
+          </div>
+
+          {/* Lifetime - Founding Member */}
+          <div className="bg-gradient-to-br from-yellow-900/40 to-amber-900/40 rounded-lg p-6 border-2 border-yellow-500 relative">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-yellow-500 to-amber-500 text-slate-900 text-xs font-bold rounded-full">
+              FOUNDING MEMBER
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Lifetime</h3>
+            <p className="text-yellow-400 text-sm mb-4">One-time payment</p>
+            <div className="text-3xl font-bold text-white mb-1">
+              $249<span className="text-base text-slate-400">/lifetime</span>
+            </div>
+            <p className="text-green-400 text-xs font-semibold mb-4">Limited-time offer</p>
+            <ul className="space-y-2 mb-6 text-sm">
+              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Everything in Premium</span></li>
+              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Lifetime access</span></li>
+              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">All future features</span></li>
+              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Founding Member badge</span></li>
+              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Priority support</span></li>
+            </ul>
+            <Link to="/pricing" className="block w-full py-2.5 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-slate-900 font-bold rounded-lg text-center transition-colors text-sm shadow-lg">
+              Become Founding Member
+            </Link>
+          </div>
+        </div>
+
+        {/* Shutdown Promo Notice */}
+        <div className="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-2 border-yellow-500 rounded-xl p-6">
+          <div className="text-center">
+            <h3 className="text-xl font-bold text-yellow-400 mb-3">
+              🎖️ Government Shutdown Support Program
+            </h3>
+            <p className="text-slate-300 mb-4">
+              All premium features are <strong className="text-white">completely FREE</strong> during the government shutdown. Sign up before <strong className="text-yellow-400">November 11, 2025</strong> to lock in lifetime free access as a <strong className="text-white">Founding Member</strong>.
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 text-sm text-left">
+              <div className="bg-slate-800/50 rounded-lg p-4">
+                <p className="text-yellow-400 font-semibold mb-2">✓ What You Get NOW (Free):</p>
+                <ul className="text-slate-300 space-y-1 text-xs">
+                  <li>• Complete VA Claims Builder</li>
+                  <li>• All Premium Features Unlocked</li>
+                  <li>• Unlimited PDF Exports</li>
+                  <li>• Priority Support</li>
+                </ul>
+              </div>
+              <div className="bg-slate-800/50 rounded-lg p-4">
+                <p className="text-yellow-400 font-semibold mb-2">✓ What Happens After Shutdown:</p>
+                <ul className="text-slate-300 space-y-1 text-xs">
+                  <li>• Keep ALL premium features forever</li>
+                  <li>• Founding Member badge & recognition</li>
+                  <li>• Never pay a subscription fee</li>
+                  <li>• Access to all future updates</li>
+                </ul>
+              </div>
+            </div>
+            <Link to="/app" className="inline-block mt-6 px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg">
+              Claim Your Founding Member Status →
             </Link>
           </div>
         </div>
