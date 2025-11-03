@@ -658,8 +658,9 @@ export default function Settings() {
           </div>
 
           {/* Optional Donation - Promo Mode Only */}
+          {/* TODO: Wire up donation checkout after soft launch */}
           {shouldHidePaymentUI() && (
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300 dark:border-purple-700 rounded-lg p-6">
+            <div className="hidden bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300 dark:border-purple-700 rounded-lg p-6">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
                 ☕ Love This Tool?
               </h2>

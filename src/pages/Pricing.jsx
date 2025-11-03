@@ -289,8 +289,9 @@ export default function Pricing() {
       )}
 
       {/* Optional Donation Section - Promo Mode Only */}
+      {/* TODO: Wire up donation checkout after soft launch */}
       {paymentUIHidden && (
-        <div className="mb-16 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300 dark:border-purple-700 rounded-2xl p-12 shadow-2xl">
+        <div className="hidden mb-16 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300 dark:border-purple-700 rounded-2xl p-12 shadow-2xl">
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-5xl mb-6">☕</div>
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
