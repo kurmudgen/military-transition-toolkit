@@ -6,6 +6,7 @@ import SessionTimeoutWarning from './components/SessionTimeoutWarning'
 
 // Marketing pages
 import Landing from './pages/Landing'
+import GettingStarted from './pages/GettingStarted'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 import RefundPolicy from './pages/RefundPolicy'
@@ -46,6 +47,7 @@ function App() {
       <Routes>
         {/* Marketing pages without auth */}
         <Route path="/" element={<Landing />} />
+        <Route path="/getting-started" element={<GettingStarted />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />

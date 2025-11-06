@@ -38,7 +38,7 @@ export default function Landing() {
         </p>
 
         <div className="flex gap-4 justify-center mb-12">
-          <Link to="/app" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-colors">
+          <Link to="/getting-started" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-colors">
             Start Planning Free →
           </Link>
           <a href="#features" className="px-8 py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-lg transition-colors">
