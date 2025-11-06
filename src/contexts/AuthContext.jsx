@@ -3,6 +3,7 @@ import { supabase } from '../lib/supabase'
 import { useNavigate } from 'react-router-dom'
 import { migrateAllDataToSupabase } from '../utils/dataMigration'
 import { auditService } from '../services/auditService'
+import { getUserSubscription } from '../services/subscriptionService'
 
 const AuthContext = createContext({})
 
@@ -100,6 +101,47 @@ export const AuthProvider = ({ children }) => {
     }
   }, [user, timeoutEnabled, resetActivityTimer])
 
+  // Fetch subscription data and merge with user object
+  const fetchSubscriptionData = useCallback(async (baseUser) => {
+    if (!baseUser) return null
+
+    try {
+      const subscription = await getUserSubscription()
+
+      // Map subscription data to user object properties
+      const subscriptionData = {
+        subscription_status: subscription?.status || 'inactive',
+        subscription_tier: mapPlanIdToTier(subscription?.plan_id),
+        subscription_expires_at: subscription?.current_period_end || null
+      }
+
+      return {
+        ...baseUser,
+        ...subscriptionData
+      }
+    } catch (error) {
+      console.error('Error fetching subscription data:', error)
+      // Return user with default free tier if subscription fetch fails
+      return {
+        ...baseUser,
+        subscription_status: 'inactive',
+        subscription_tier: 'free',
+        subscription_expires_at: null
+      }
+    }
+  }, [])
+
+  // Map Stripe plan_id to subscription tier
+  const mapPlanIdToTier = (planId) => {
+    if (!planId) return 'free'
+
+    if (planId.includes('monthly')) return 'monthly'
+    if (planId.includes('annual')) return 'annual'
+    if (planId.includes('lifetime')) return 'lifetime'
+
+    return 'free'
+  }
+
   useEffect(() => {
     // Skip authentication if Supabase is not configured (development mode)
     if (!supabase) {
@@ -145,7 +187,9 @@ export const AuthProvider = ({ children }) => {
         } else {
           console.log('✅ Valid session found:', session.user?.id)
           setSession(session)
-          setUser(session?.user ?? null)
+          // Fetch subscription data and merge with user
+          const userWithSubscription = await fetchSubscriptionData(session.user)
+          setUser(userWithSubscription)
         }
       } else {
         setSession(null)
@@ -177,7 +221,14 @@ export const AuthProvider = ({ children }) => {
       console.log(`🔄 Auth state change: ${_event}`, session?.user?.id)
 
       setSession(session)
-      setUser(session?.user ?? null)
+
+      // Fetch subscription data for signed-in users
+      if (_event === 'SIGNED_IN' && session?.user) {
+        const userWithSubscription = await fetchSubscriptionData(session.user)
+        setUser(userWithSubscription)
+      } else {
+        setUser(session?.user ?? null)
+      }
 
       // Always set loading to false when auth state changes
       // This handles the code exchange completion
@@ -212,7 +263,7 @@ export const AuthProvider = ({ children }) => {
         clearTimeout(timeoutId)
       }
     }
-  }, [])
+  }, [fetchSubscriptionData])
 
   const value = {
     session,

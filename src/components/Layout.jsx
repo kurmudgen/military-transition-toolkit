@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { hasActiveSubscription, SUBSCRIPTION_FEATURES } from '../utils/subscriptionCheck'
+import { LockClosedIcon } from '@heroicons/react/24/outline'
 import AIAssistant from './AIAssistant'
 import PromoBanner from './PromoBanner'
 
@@ -15,7 +17,10 @@ export default function Layout() {
   const [darkMode, setDarkMode] = useState(getInitialDarkMode)
   const location = useLocation()
   const navigate = useNavigate()
-  const { signOut } = useAuth()
+  const { signOut, user } = useAuth()
+
+  // Check if user has active premium subscription
+  const isPremium = hasActiveSubscription(user)
 
   // Apply dark mode class on mount and when darkMode changes
   useEffect(() => {
@@ -43,32 +48,32 @@ export default function Layout() {
 
   // All navigation links for mobile menu
   const navLinks = [
-    { to: '/app', label: 'Home' },
-    { to: '/app/progress', label: 'Progress Dashboard' },
-    { to: '/app/reminders', label: 'Reminders' },
-    { to: '/app/resources', label: 'Resources' },
-    { to: '/app/retirement', label: '20+ Year Retirement' },
-    { to: '/app/medboard', label: 'MedBoard' },
-    { to: '/app/separation', label: 'Separation (<20 Yrs)' },
-    { to: '/app/state-benefits', label: 'State Benefits' },
-    { to: '/app/va-claims-builder', label: 'VA Claims Builder' },
-    { to: '/app/retirement-calculator', label: 'Pay Calculator' },
-    { to: '/app/appointments', label: 'Appointments & Tracking' },
-    { to: '/app/resume-builder', label: 'Resume Builder' },
-    { to: '/app/job-search', label: 'Job Search' },
-    { to: '/app/profile', label: 'Profile' },
-    { to: '/app/settings', label: 'Settings' },
-    { to: '/app/faq', label: 'FAQ' },
-    { to: '/app/about', label: 'About' }
+    { to: '/app', label: 'Home', feature: null, premium: false },
+    { to: '/app/progress', label: 'Progress Dashboard', feature: 'progress_tracking', premium: true },
+    { to: '/app/reminders', label: 'Reminders', feature: 'reminders', premium: true },
+    { to: '/app/resources', label: 'Resources', feature: 'resources', premium: false },
+    { to: '/app/retirement', label: '20+ Year Retirement', feature: 'retirement', premium: true },
+    { to: '/app/medboard', label: 'MedBoard', feature: 'medboard', premium: true },
+    { to: '/app/separation', label: 'Separation (<20 Yrs)', feature: 'separation', premium: true },
+    { to: '/app/state-benefits', label: 'State Benefits', feature: 'state_benefits', premium: false },
+    { to: '/app/va-claims-builder', label: 'VA Claims Builder', feature: 'claims_builder', premium: true },
+    { to: '/app/retirement-calculator', label: 'Pay Calculator', feature: 'retirement_calculator', premium: false },
+    { to: '/app/appointments', label: 'Appointments & Tracking', feature: 'appointments', premium: true },
+    { to: '/app/resume-builder', label: 'Resume Builder', feature: 'resume_builder', premium: true },
+    { to: '/app/job-search', label: 'Job Search', feature: 'job_tracker', premium: true },
+    { to: '/app/profile', label: 'Profile', feature: null, premium: false },
+    { to: '/app/settings', label: 'Settings', feature: null, premium: false },
+    { to: '/app/faq', label: 'FAQ', feature: null, premium: false },
+    { to: '/app/about', label: 'About', feature: null, premium: false }
   ]
 
   // Simplified desktop navigation - only essential items
   const desktopNavLinks = [
-    { to: '/app', label: 'Home' },
-    { to: '/app/progress', label: 'Progress' },
-    { to: '/app/resources', label: 'Resources' },
-    { to: '/app/va-claims-builder', label: 'VA Claims', highlighted: true }, // Highlighted for separated veterans
-    { to: '/app/settings', label: 'Settings' }
+    { to: '/app', label: 'Home', feature: null, premium: false },
+    { to: '/app/progress', label: 'Progress', feature: 'progress_tracking', premium: true },
+    { to: '/app/resources', label: 'Resources', feature: 'resources', premium: false },
+    { to: '/app/va-claims-builder', label: 'VA Claims', feature: 'claims_builder', premium: true, highlighted: true }, // Highlighted for separated veterans
+    { to: '/app/settings', label: 'Settings', feature: null, premium: false }
   ]
 
   const isActive = (path) => location.pathname === path
@@ -90,24 +95,28 @@ export default function Layout() {
 
             {/* Desktop Navigation - Simplified */}
             <div className="hidden lg:flex lg:space-x-6 lg:items-center">
-              {desktopNavLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`${
-                    link.highlighted
-                      ? isActive(link.to)
-                        ? 'border-green-500 text-green-700 bg-green-50 dark:bg-green-900 dark:text-green-300 font-bold'
-                        : 'border-transparent text-green-600 hover:border-green-400 hover:text-green-700 hover:bg-green-50 dark:text-green-400 dark:hover:bg-green-900/20 font-bold'
-                      : isActive(link.to)
-                        ? 'border-blue-500 text-blue-700 bg-blue-50 dark:bg-blue-900 dark:text-blue-300'
-                        : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-700'
-                  } inline-flex items-center px-4 py-2 border-b-2 text-sm font-semibold transition-colors rounded-t-md`}
-                >
-                  {link.highlighted && <span className="mr-1">🏥</span>}
-                  {link.label}
-                </Link>
-              ))}
+              {desktopNavLinks.map((link) => {
+                const showLock = link.premium && !isPremium
+                return (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className={`${
+                      link.highlighted
+                        ? isActive(link.to)
+                          ? 'border-green-500 text-green-700 bg-green-50 dark:bg-green-900 dark:text-green-300 font-bold'
+                          : 'border-transparent text-green-600 hover:border-green-400 hover:text-green-700 hover:bg-green-50 dark:text-green-400 dark:hover:bg-green-900/20 font-bold'
+                        : isActive(link.to)
+                          ? 'border-blue-500 text-blue-700 bg-blue-50 dark:bg-blue-900 dark:text-blue-300'
+                          : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-700'
+                    } inline-flex items-center gap-1.5 px-4 py-2 border-b-2 text-sm font-semibold transition-colors rounded-t-md`}
+                  >
+                    {link.highlighted && <span>🏥</span>}
+                    {showLock && <LockClosedIcon className="w-4 h-4" />}
+                    {link.label}
+                  </Link>
+                )
+              })}
 
               {/* Dark Mode Toggle */}
               <button
@@ -179,20 +188,24 @@ export default function Layout() {
         {/* Mobile menu */}
         <div className={`lg:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
           <div className="pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 max-h-[70vh] overflow-y-auto">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`${
-                  isActive(link.to)
-                    ? 'bg-blue-100 dark:bg-blue-900 border-blue-600 text-blue-700 dark:text-blue-300 font-semibold'
-                    : 'border-transparent text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 hover:text-gray-700 dark:hover:text-white'
-                } block pl-3 pr-4 py-3 border-l-4 text-base font-medium transition-colors`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const showLock = link.premium && !isPremium
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`${
+                    isActive(link.to)
+                      ? 'bg-blue-100 dark:bg-blue-900 border-blue-600 text-blue-700 dark:text-blue-300 font-semibold'
+                      : 'border-transparent text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 hover:text-gray-700 dark:hover:text-white'
+                  } flex items-center gap-2 pl-3 pr-4 py-3 border-l-4 text-base font-medium transition-colors`}
+                >
+                  {showLock && <LockClosedIcon className="w-4 h-4" />}
+                  {link.label}
+                </Link>
+              )
+            })}
 
             {/* Logout Button - Mobile */}
             <button

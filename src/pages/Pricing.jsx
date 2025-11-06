@@ -213,6 +213,123 @@ export default function Pricing() {
         </p>
       </div>
 
+      {/* 3-Tier Model Explanation - Only show when payment UI is visible */}
+      {!paymentUIHidden && (
+        <div className="mb-16 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-800">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            What's Free Forever
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Tier 1: Public Features */}
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+              <div className="text-center mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 dark:bg-green-900/40 rounded-full mb-3">
+                  <CheckCircleIcon className="w-6 h-6 text-green-600 dark:text-green-400" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Always Free
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">No login required</p>
+              </div>
+              <ul className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>State benefits comparison tool</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Basic retirement calculator</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Resources and links</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Sample checklists</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Tier 2: Preview Features */}
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+              <div className="text-center mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-full mb-3">
+                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Try Before You Buy
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">View-only preview mode</p>
+              </div>
+              <ul className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>See the VA Claims Builder UI</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>Preview resume builder templates</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>Explore all premium tools</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>No credit card needed</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Tier 3: Premium Features */}
+            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl p-6 shadow-lg text-white">
+              <div className="text-center mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
+                  <RocketLaunchIcon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">
+                  Premium Access
+                </h3>
+                <p className="text-sm text-blue-100">Full features + cloud storage</p>
+              </div>
+              <ul className="space-y-3 text-sm text-blue-50">
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
+                  <span>Save and track everything</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
+                  <span>Unlimited claims, resumes, jobs</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
+                  <span>Cloud sync across devices</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
+                  <span>Priority support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-center text-gray-600 dark:text-gray-400 mt-8 text-sm">
+            <strong>No pressure:</strong> Try premium features in preview mode before deciding to upgrade
+          </p>
+        </div>
+      )}
+
       {/* Pricing Cards - Hidden during promo mode */}
       {!paymentUIHidden && (
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 items-stretch">

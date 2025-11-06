@@ -58,11 +58,21 @@ function App() {
         <Route path="/auth/reset-password" element={<ResetPassword />} />
         <Route path="/auth/callback" element={<AuthCallback />} />
 
-        {/* Public access pages (no login required) */}
+        {/* Tier 1: Public access pages (no login required, fully functional) */}
         <Route path="/public/state-benefits" element={<StateBenefits publicMode />} />
         <Route path="/public/retirement-calculator" element={<RetirementCalculator publicMode />} />
         <Route path="/public/resources" element={<Resources publicMode />} />
         <Route path="/public/sample-checklist" element={<Retirement publicMode sampleMode />} />
+
+        {/* Tier 2: Preview mode pages (no login required, view-only with upgrade overlay) */}
+        <Route path="/preview/va-claims-builder" element={<VAClaimsBuilder previewMode />} />
+        <Route path="/preview/resume-builder" element={<ResumeBuilder previewMode />} />
+        <Route path="/preview/appointments" element={<AppointmentsTracking previewMode />} />
+        <Route path="/preview/job-search" element={<JobSearch previewMode />} />
+        <Route path="/preview/medboard" element={<MedBoard previewMode />} />
+        <Route path="/preview/separation" element={<SeparationUnder20 previewMode />} />
+        <Route path="/preview/progress" element={<Progress previewMode />} />
+        <Route path="/preview/reminders" element={<Reminders previewMode />} />
 
         {/* Protected application routes with Layout */}
         <Route
