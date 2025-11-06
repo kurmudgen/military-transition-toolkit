@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { getProfileData } from '../utils/profileAutoFill'
 import UseProfileButton from '../components/UseProfileButton'
-import { isPromoActive } from '../utils/promoConfig'
+import { isPromoModeActive } from '../utils/promoConfig'
 import {
   SKILL_TRANSLATIONS,
   MOS_TRANSLATIONS,
@@ -481,7 +481,7 @@ export default function ResumeBuilder() {
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-3">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Resume Builder</h1>
-            {isPromoActive() && (
+            {isPromoModeActive() && (
               <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
                 🎖️ Launch Special - FREE
               </span>

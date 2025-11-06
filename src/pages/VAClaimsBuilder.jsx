@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { isPromoActive } from '../utils/promoConfig'
+import { isPromoModeActive } from '../utils/promoConfig'
 import {
   getVAConditions,
   createVACondition,
@@ -715,7 +715,7 @@ export default function VAClaimsBuilder() {
           <h1 className="text-3xl font-bold text-gray-900">
             VA Claims Builder
           </h1>
-          {isPromoActive() && (
+          {isPromoModeActive() && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
               🎖️ Launch Special - FREE
             </span>

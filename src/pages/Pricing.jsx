@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react'
 import { CheckCircleIcon, SparklesIcon, RocketLaunchIcon } from '@heroicons/react/24/outline'
-import { isPromoActive, getTimeRemaining, PRICING, shouldHidePaymentUI } from '../utils/promoConfig'
+import { PRICING, shouldHidePaymentUI } from '../utils/promoConfig'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { createCheckoutSession } from '../services/subscriptionService'
 import { getCurrentUser } from '../lib/supabase'
 
 export default function Pricing() {
-  const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining())
   const [loading, setLoading] = useState(false)
   const [showCancelMessage, setShowCancelMessage] = useState(false)
-  const promoActive = isPromoActive()
   const paymentUIHidden = shouldHidePaymentUI()
 
   useEffect(() => {
@@ -25,13 +23,6 @@ export default function Pricing() {
       // Auto-hide message after 5 seconds
       setTimeout(() => setShowCancelMessage(false), 5000)
     }
-
-    // Update countdown every minute
-    const timer = setInterval(() => {
-      setTimeRemaining(getTimeRemaining())
-    }, 60000)
-
-    return () => clearInterval(timer)
   }, [])
 
   // Stripe Price IDs (from environment variables)
@@ -189,7 +180,7 @@ export default function Pricing() {
       )}
 
       {/* Government Shutdown Support Header */}
-      {promoActive && (
+      {paymentUIHidden && (
         <div className="mb-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
           <div className="flex items-center justify-center gap-2 mb-4">
             <span className="text-5xl" role="img" aria-label="US Flag">🇺🇸</span>
@@ -201,17 +192,13 @@ export default function Pricing() {
           </p>
 
           <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 max-w-3xl mx-auto mb-4">
-            <p className="text-base text-blue-50 leading-relaxed mb-3">
-              We had planned to offer free access through Veterans Day, but with veterans potentially impacted by the government shutdown, we're extending free premium access until the shutdown ends.
-            </p>
             <p className="text-base text-blue-100 font-medium">
               Active duty, veterans, and military families - you have enough to worry about. Focus on your transition, we've got the rest covered.
             </p>
           </div>
 
           <p className="text-blue-100 max-w-2xl mx-auto">
-            Explore everything risk-free, then choose your plan. Lock in <strong>Founding Member</strong> pricing
-            ($249 lifetime) before it increases to $399 when the promotion ends.
+            All premium features are free until the government shutdown ends. Sign up to get full access now.
           </p>
         </div>
       )}
@@ -219,13 +206,10 @@ export default function Pricing() {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          {promoActive ? 'Try Everything Free, Then Choose' : 'Choose Your Plan'}
+          Simple, Transparent Pricing
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          {promoActive
-            ? 'All premium features unlocked until the government shutdown ends. Sign up now to try everything before deciding.'
-            : 'Start free and upgrade when you\'re ready. All premium features unlock immediately.'
-          }
+          Start free and upgrade when you're ready. No tricks, no time limits, no pressure.
         </p>
       </div>
 
@@ -360,42 +344,6 @@ export default function Pricing() {
         </div>
       )}
 
-      {/* Launch Special Callout */}
-      {promoActive && (
-        <div className="mb-16 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border-2 border-yellow-400 dark:border-yellow-600 rounded-2xl p-8 shadow-lg">
-          <div className="flex flex-col md:flex-row items-start gap-4">
-            <div className="flex-shrink-0">
-              <span className="text-4xl" role="img" aria-label="Medal">🎖️</span>
-            </div>
-            <div className="flex-1 w-full">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                Founding Member Launch Special
-              </h3>
-              <p className="text-gray-800 dark:text-gray-200 mb-4">
-                Lock in lifetime access at <strong>50% off</strong> the regular price. This is a one-time opportunity
-                to become a Founding Member and support veteran-built software.
-              </p>
-              <ul className="space-y-3 mb-4">
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Pay once, use forever - no recurring fees</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>All future premium features included at no extra cost</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Price increases to $399 when promotion ends</span>
-                </li>
-              </ul>
-              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 bg-white/50 dark:bg-gray-800/50 inline-block px-4 py-2 rounded-lg">
-                ⏰ {timeRemaining.days} days remaining to lock in this price
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Feature Comparison */}
       <div className="mb-16">
@@ -469,17 +417,16 @@ export default function Pricing() {
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">
-          {promoActive && (
+          {paymentUIHidden && (
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
               <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                What happens when the promotion ends?
+                What happens when the government shutdown ends?
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                In response to the government shutdown affecting military families, we've extended our free premium access period.
-                Originally planned through Veterans Day, all features will remain free until federal operations resume.
-                When the promotion ends, premium features will require a paid plan. Free tier users will still have access
+                In response to the government shutdown affecting military families, all premium features are currently free.
+                When federal operations resume, premium features will require a paid plan. Free tier users will still have access
                 to core transition planning tools, but advanced features like the VA claims builder and cloud sync
-                will require an upgrade. Lock in Founding Member pricing now to keep full access forever.
+                will require an upgrade.
               </p>
             </div>
           )}
@@ -499,17 +446,17 @@ export default function Pricing() {
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
               Absolutely. Monthly and annual plans can be cancelled at any time. You'll keep premium access until
-              the end of your billing period. Founding Member lifetime access never expires and has no recurring fees.
+              the end of your billing period. Lifetime access never expires and has no recurring fees.
             </p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
             <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-              What's included with Founding Member?
+              What's included with Lifetime Access?
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Founding Members get lifetime access to ALL premium features, forever. This includes all future
-              features we add - no additional charges, ever. Plus, you get priority support and help shape the
-              future of the platform with early access to new features.
+              Lifetime Access gives you ALL premium features, forever. This includes all future
+              features we add - no additional charges, ever. Plus, you get priority support and one-time
+              payment means no recurring bills.
             </p>
           </div>
         </div>
@@ -521,16 +468,13 @@ export default function Pricing() {
           Ready to take control of your transition?
         </h2>
         <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          {promoActive
-            ? 'Start using all premium features free during the government shutdown. Lock in Founding Member pricing before it\'s too late.'
-            : 'Join thousands of transitioning service members who trust our platform.'
-          }
+          Join thousands of transitioning service members who trust our platform.
         </p>
         <button
-          onClick={() => handleSelectPlan('lifetime')}
+          onClick={() => handleSelectPlan('free')}
           className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
         >
-          Get Started Now
+          Get Started Free
         </button>
       </div>
     </div>

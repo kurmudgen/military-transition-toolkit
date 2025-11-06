@@ -1,56 +1,11 @@
-// Government Shutdown Support Promotion Configuration
-// Extended from original Veterans Day promotion to support military families during shutdown
+// Government Shutdown Support Configuration
+// When government shutdown is active, all premium features are free for military families
 
 // PROMO MODE FEATURE FLAG
 // When VITE_PROMO_MODE=true, all authenticated users get free premium access
-// This prevents accidental charges during promotional periods
+// This prevents accidental charges during government shutdowns or other support periods
 export const isPromoModeActive = () => {
   return import.meta.env.VITE_PROMO_MODE === 'true'
-}
-
-// Promotion end date: November 11, 2025 (or until shutdown ends, whichever is later)
-export const PROMO_END_DATE = new Date('2025-11-11T23:59:59')
-
-// Check if promotion is currently active
-export const isPromoActive = () => {
-  const now = new Date()
-  return now < PROMO_END_DATE
-}
-
-// Get days remaining in promotion
-export const getDaysRemaining = () => {
-  const now = new Date()
-  const timeDiff = PROMO_END_DATE - now
-
-  if (timeDiff <= 0) return 0
-
-  return Math.ceil(timeDiff / (1000 * 60 * 60 * 24))
-}
-
-// Get hours remaining in promotion
-export const getHoursRemaining = () => {
-  const now = new Date()
-  const timeDiff = PROMO_END_DATE - now
-
-  if (timeDiff <= 0) return 0
-
-  return Math.ceil(timeDiff / (1000 * 60 * 60))
-}
-
-// Get time remaining as formatted string
-export const getTimeRemaining = () => {
-  const now = new Date()
-  const timeDiff = PROMO_END_DATE - now
-
-  if (timeDiff <= 0) {
-    return { days: 0, hours: 0, minutes: 0, expired: true }
-  }
-
-  const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
-  const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60))
-
-  return { days, hours, minutes, expired: false }
 }
 
 // Pricing tiers
@@ -95,36 +50,30 @@ export const PRICING = {
     ]
   },
   LIFETIME: {
-    name: 'Founding Member',
-    price: 249,
-    originalPrice: 399,
-    description: 'Lock in lifetime access at launch price',
-    badge: 'Limited Time',
+    name: 'Lifetime Access',
+    price: 250,
+    description: 'Pay once, use forever',
+    badge: 'Best for Career Changers',
     features: [
       'All Premium features forever',
       'Pay once, use forever - no recurring fees',
       'All future premium features included',
       'Priority support forever',
-      'Will increase to $399 after promotion ends',
+      'No subscriptions, no renewals',
       'Support veteran-built software'
     ]
   }
 }
 
 // Check if user has premium access
-// Priority: 1) Promo Mode (highest), 2) Time-based promo, 3) Actual subscription
+// Priority: 1) Promo Mode (government shutdown support), 2) Actual subscription
 export const hasPremiumAccess = (userTier = 'free') => {
-  // First check: Promo mode feature flag (prevents charges)
+  // First check: Promo mode feature flag (e.g., government shutdown support)
   if (isPromoModeActive()) {
     return true
   }
 
-  // Second check: Time-based promotion (legacy)
-  if (isPromoActive()) {
-    return true
-  }
-
-  // Final check: Actual subscription tier
+  // Check actual subscription tier
   return ['monthly', 'annual', 'lifetime'].includes(userTier?.toLowerCase())
 }
 

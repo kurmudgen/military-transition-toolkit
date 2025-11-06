@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { isPromoActive, getTimeRemaining, PROMO_END_DATE } from '../utils/promoConfig'
+import { isPromoModeActive } from '../utils/promoConfig'
 import { getUserSubscription } from '../services/subscriptionService'
 
 export default function PromoBanner() {
-  const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining())
   const [isVisible, setIsVisible] = useState(true)
   const [dismissed, setDismissed] = useState(false)
   const [hasPremium, setHasPremium] = useState(false)
@@ -21,27 +20,13 @@ export default function PromoBanner() {
     checkSubscription()
   }, [])
 
-  // Update countdown every minute
+  // Check if user dismissed banner in this session
   useEffect(() => {
-    // Check if user dismissed banner in this session
     const wasDismissed = sessionStorage.getItem('promoBannerDismissed')
     if (wasDismissed === 'true') {
       setDismissed(true)
       setIsVisible(false)
-      return
     }
-
-    const timer = setInterval(() => {
-      const remaining = getTimeRemaining()
-      setTimeRemaining(remaining)
-
-      // Hide banner if promo expired
-      if (remaining.expired) {
-        setIsVisible(false)
-      }
-    }, 60000) // Update every minute
-
-    return () => clearInterval(timer)
   }, [])
 
   const handleDismiss = () => {
@@ -50,17 +35,10 @@ export default function PromoBanner() {
     sessionStorage.setItem('promoBannerDismissed', 'true')
   }
 
-  // Don't show if promo is not active, user dismissed it, or user has premium
-  if (!isPromoActive() || !isVisible || dismissed || hasPremium) {
+  // Don't show if promo mode is not active, user dismissed it, or user has premium
+  if (!isPromoModeActive() || !isVisible || dismissed || hasPremium) {
     return null
   }
-
-  const { days, hours } = timeRemaining
-  const formattedDate = PROMO_END_DATE.toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-  })
 
   return (
     <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg">
@@ -73,9 +51,6 @@ export default function PromoBanner() {
             <div className="flex-1 min-w-0">
               <p className="font-bold text-sm sm:text-base mb-2">
                 Supporting Veterans During Government Shutdown: All Premium Features FREE Until Shutdown Ends
-              </p>
-              <p className="text-xs sm:text-sm text-blue-100 mb-1.5 leading-relaxed">
-                We had planned to offer free access through Veterans Day, but with veterans potentially impacted by the government shutdown, we're extending free premium access until federal operations resume.
               </p>
               <p className="text-xs sm:text-sm text-blue-50 font-medium">
                 Active duty, veterans, and military families - you have enough to worry about. Focus on your transition, we've got the rest covered.

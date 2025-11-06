@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { useUsageLimits } from '../hooks/useFeatureAccess'
 import UpgradePrompt from '../components/UpgradePrompt'
-import { isPromoActive } from '../utils/promoConfig'
+import { isPromoModeActive } from '../utils/promoConfig'
 import {
   getSavedJobs,
   saveJob as saveJobDB,
@@ -270,7 +270,7 @@ export default function JobSearch() {
       <div>
         <div className="flex items-center gap-3">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Job Search</h1>
-          {isPromoActive() && (
+          {isPromoModeActive() && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
               🎖️ Launch Special - FREE
             </span>

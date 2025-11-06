@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Landing() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      {/* Government Shutdown Promo Banner */}
+      {/* Government Shutdown Support Banner */}
       <div className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 border-b-4 border-yellow-600">
         <div className="max-w-6xl mx-auto px-4 py-4 text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
@@ -13,7 +13,7 @@ export default function Landing() {
                 FREE Premium Access During Government Shutdown
               </p>
               <p className="text-sm md:text-base font-semibold">
-                Sign up by Nov 11 → Become a <span className="underline">Founding Member</span> → Keep lifetime free access
+                All premium features free until federal operations resume
               </p>
             </div>
             <span className="text-2xl md:text-3xl">🎖️</span>
@@ -280,7 +280,7 @@ export default function Landing() {
           </p>
           <div className="inline-block px-6 py-3 bg-yellow-500/20 border-2 border-yellow-500 rounded-lg">
             <p className="text-yellow-400 font-bold text-sm md:text-base">
-              🎖️ Sign up before Nov 11 to become a Founding Member with lifetime free access!
+              🎖️ All premium features FREE during government shutdown - Sign up now!
             </p>
           </div>
         </div>
@@ -347,38 +347,38 @@ export default function Landing() {
             </Link>
           </div>
 
-          {/* Lifetime - Founding Member */}
-          <div className="bg-gradient-to-br from-yellow-900/40 to-amber-900/40 rounded-lg p-6 border-2 border-yellow-500 relative">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-yellow-500 to-amber-500 text-slate-900 text-xs font-bold rounded-full">
-              FOUNDING MEMBER
+          {/* Lifetime Access */}
+          <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-6 border-2 border-purple-500 relative">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-xs font-bold rounded-full">
+              BEST FOR CAREER CHANGERS
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Lifetime</h3>
-            <p className="text-yellow-400 text-sm mb-4">One-time payment</p>
+            <p className="text-purple-400 text-sm mb-4">Pay once, use forever</p>
             <div className="text-3xl font-bold text-white mb-1">
-              $249<span className="text-base text-slate-400">/lifetime</span>
+              $250<span className="text-base text-slate-400">/lifetime</span>
             </div>
-            <p className="text-green-400 text-xs font-semibold mb-4">Limited-time offer</p>
+            <p className="text-purple-400 text-xs font-semibold mb-4">No subscriptions, no renewals</p>
             <ul className="space-y-2 mb-6 text-sm">
-              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Everything in Premium</span></li>
-              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Lifetime access</span></li>
-              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">All future features</span></li>
-              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Founding Member badge</span></li>
-              <li className="flex gap-2"><span className="text-yellow-400">✓</span><span className="text-slate-300">Priority support</span></li>
+              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">Everything in Premium</span></li>
+              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">Lifetime access</span></li>
+              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">All future features</span></li>
+              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">No recurring fees</span></li>
+              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">Priority support</span></li>
             </ul>
-            <Link to="/pricing" className="block w-full py-2.5 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-slate-900 font-bold rounded-lg text-center transition-colors text-sm shadow-lg">
-              Become Founding Member
+            <Link to="/pricing" className="block w-full py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold rounded-lg text-center transition-colors text-sm shadow-lg">
+              Get Lifetime Access
             </Link>
           </div>
         </div>
 
-        {/* Shutdown Promo Notice */}
+        {/* Shutdown Support Notice */}
         <div className="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-2 border-yellow-500 rounded-xl p-6">
           <div className="text-center">
             <h3 className="text-xl font-bold text-yellow-400 mb-3">
               🎖️ Government Shutdown Support Program
             </h3>
             <p className="text-slate-300 mb-4">
-              All premium features are <strong className="text-white">completely FREE</strong> during the government shutdown. Sign up before <strong className="text-yellow-400">November 11, 2025</strong> to lock in lifetime free access as a <strong className="text-white">Founding Member</strong>.
+              All premium features are <strong className="text-white">completely FREE</strong> during the government shutdown. Sign up now to get full access.
             </p>
             <div className="grid md:grid-cols-2 gap-4 text-sm text-left">
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -391,17 +391,17 @@ export default function Landing() {
                 </ul>
               </div>
               <div className="bg-slate-800/50 rounded-lg p-4">
-                <p className="text-yellow-400 font-semibold mb-2">✓ What Happens After Shutdown:</p>
+                <p className="text-yellow-400 font-semibold mb-2">✓ After Federal Operations Resume:</p>
                 <ul className="text-slate-300 space-y-1 text-xs">
-                  <li>• Keep ALL premium features forever</li>
-                  <li>• Founding Member badge & recognition</li>
-                  <li>• Never pay a subscription fee</li>
-                  <li>• Access to all future updates</li>
+                  <li>• Free tier remains available</li>
+                  <li>• Upgrade options for premium features</li>
+                  <li>• Lifetime access available for $250</li>
+                  <li>• All your data stays safe</li>
                 </ul>
               </div>
             </div>
-            <Link to="/app" className="inline-block mt-6 px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg">
-              Claim Your Founding Member Status →
+            <Link to="/signup" className="inline-block mt-6 px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg">
+              Sign Up Free →
             </Link>
           </div>
         </div>
