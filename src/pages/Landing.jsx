@@ -125,11 +125,11 @@ export default function Landing() {
           </div>
 
           <div className="text-center">
-            <Link to="/signup" className="inline-block px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg text-lg hover:bg-blue-50 transition-colors">
-              Get Started - It's Free →
+            <Link to="/getting-started" className="inline-block px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg text-lg hover:bg-blue-50 transition-colors">
+              Explore Free Tools →
             </Link>
             <p className="text-blue-200 text-sm mt-3">
-              Sign up takes 30 seconds • No credit card required
+              Start with free tools • Upgrade for premium features
             </p>
           </div>
         </div>

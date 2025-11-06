@@ -3,8 +3,10 @@ import UseProfileButton from '../components/UseProfileButton'
 import { getProfileData, getServiceInfo, getLocationInfo } from '../utils/profileAutoFill'
 import { isPromoModeActive } from '../utils/promoConfig'
 
-// 2025 Base Pay Data (showing E-7 through O-5 for key ranks + Warrant Officers)
+// 2025 Base Pay Data (E-5 through O-5 for key ranks + Warrant Officers)
 const BASE_PAY_2025 = {
+  'E-5': { '20': 3541, '22': 3541, '24': 3541, '26': 3541, '30': 3541 },
+  'E-6': { '20': 3866, '22': 4007, '24': 4149, '26': 4290, '30': 4290 },
   'E-7': { '20': 4480, '22': 4642, '24': 4805, '26': 4968, '30': 5460 },
   'E-8': { '20': 5157, '22': 5349, '24': 5542, '26': 5735, '30': 6300 },
   'E-9': { '20': 6370, '22': 6605, '24': 6840, '26': 7075, '30': 7770 },
@@ -360,6 +362,8 @@ export default function RetirementCalculator({ publicMode = false }) {
                   className="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white"
                 >
                   <optgroup label="Enlisted">
+                    <option>E-5</option>
+                    <option>E-6</option>
                     <option>E-7</option>
                     <option>E-8</option>
                     <option>E-9</option>

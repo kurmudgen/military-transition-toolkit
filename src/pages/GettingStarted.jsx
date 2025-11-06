@@ -130,23 +130,17 @@ export default function GettingStarted() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              to="/signup"
-              className="px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 font-bold rounded-lg text-lg transition-colors shadow-xl"
-            >
-              Create Free Account
-            </Link>
+          <div className="text-center">
             <Link
               to="/pricing"
-              className="px-8 py-4 bg-blue-500 hover:bg-blue-400 text-white font-semibold rounded-lg text-lg transition-colors"
+              className="inline-block px-10 py-4 bg-white text-blue-600 hover:bg-blue-50 font-bold rounded-lg text-lg transition-colors shadow-xl"
             >
-              View Pricing
+              View Premium Plans
             </Link>
           </div>
 
           <p className="text-blue-200 text-sm mt-4">
-            Start free, upgrade when ready • From $7/month or $250 lifetime
+            From $7/month or $250 lifetime • All features included
           </p>
         </div>
       </div>
