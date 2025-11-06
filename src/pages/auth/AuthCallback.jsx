@@ -66,40 +66,47 @@ export default function AuthCallback() {
           return
         }
 
-        if (session) {
-          // Check auth event type from URL
-          const type = searchParams.get('type') || hashParams.get('type')
+        // Check auth event type from URL
+        const type = searchParams.get('type') || hashParams.get('type')
 
+        // Handle password recovery separately
+        if (type === 'recovery' || type === 'password_recovery') {
           setStatus('success')
+          setMessage('Password reset verified! Redirecting...')
+          setTimeout(() => navigate('/auth/reset-password', { replace: true }), 2000)
+          return
+        }
 
-          if (type === 'signup' || type === 'email_confirmation') {
-            setMessage('Email confirmed successfully! Redirecting to your dashboard...')
-          } else if (type === 'recovery' || type === 'password_recovery') {
-            setMessage('Password reset verified! Redirecting...')
-            // Redirect to password reset page instead of app
-            setTimeout(() => navigate('/auth/reset-password', { replace: true }), 2000)
-            return
-          } else {
-            setMessage('Sign in successful! Redirecting to your dashboard...')
+        // For email confirmation: Always redirect to login page with success indicator
+        // This ensures users explicitly log in with their credentials after confirmation
+        // Prevents stale session issues and ensures clean authentication state
+        if (type === 'signup' || type === 'email_confirmation') {
+          setStatus('success')
+          setMessage('Email confirmed successfully! Redirecting to login...')
+
+          // Sign out any existing sessions to prevent conflicts
+          if (supabase) {
+            await supabase.auth.signOut()
           }
 
-          // Redirect to app
+          setTimeout(() => {
+            navigate('/login?confirmed=true', { replace: true })
+          }, 2000)
+          return
+        }
+
+        // For any other flow, check if session exists
+        if (session) {
+          setStatus('success')
+          setMessage('Sign in successful! Redirecting to your dashboard...')
           setTimeout(() => {
             navigate('/app', { replace: true })
           }, 2000)
         } else {
-          // No session found - might be a password recovery or other flow
-          const type = searchParams.get('type') || hashParams.get('type')
-
-          if (type === 'recovery' || type === 'password_recovery') {
-            // For password recovery, redirect even without session
-            navigate('/auth/reset-password', { replace: true })
-          } else {
-            // No session and not recovery - go to login
-            setStatus('error')
-            setMessage('No active session found. Please try signing in again.')
-            setTimeout(() => navigate('/login', { replace: true }), 3000)
-          }
+          // No session - redirect to login
+          setStatus('error')
+          setMessage('No active session found. Please try signing in again.')
+          setTimeout(() => navigate('/login', { replace: true }), 3000)
         }
       } catch (error) {
         console.error('Unexpected error in auth callback:', error)

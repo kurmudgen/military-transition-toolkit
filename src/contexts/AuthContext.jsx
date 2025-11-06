@@ -112,14 +112,45 @@ export const AuthProvider = ({ children }) => {
     const urlParams = new URLSearchParams(window.location.search)
     const hasAuthCode = urlParams.has('code')
 
-    if (hasAuthCode) {
-      console.log('🔐 Auth code detected in URL - waiting for PKCE exchange to complete')
-    }
+    const initAuth = async () => {
+      if (hasAuthCode) {
+        console.log('🔐 Auth code detected in URL - clearing stale sessions and waiting for PKCE exchange')
 
-    // Get initial session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session)
-      setUser(session?.user ?? null)
+        // CRITICAL FIX: Clear any stale sessions before code exchange
+        // This prevents old sessions from interfering with new email confirmation flows
+        try {
+          await supabase.auth.signOut({ scope: 'local' })
+          console.log('✅ Cleared stale session before code exchange')
+        } catch (err) {
+          console.warn('⚠️ Could not clear stale session:', err)
+        }
+      }
+
+      // Get initial session
+      const { data: { session }, error: sessionError } = await supabase.auth.getSession()
+
+      if (sessionError) {
+        console.error('❌ Session error:', sessionError)
+      }
+
+      // Validate session if it exists
+      if (session) {
+        const isExpired = session.expires_at ? Date.now() / 1000 > session.expires_at : false
+
+        if (isExpired) {
+          console.warn('⚠️ Session expired - clearing it')
+          await supabase.auth.signOut()
+          setSession(null)
+          setUser(null)
+        } else {
+          console.log('✅ Valid session found:', session.user?.id)
+          setSession(session)
+          setUser(session?.user ?? null)
+        }
+      } else {
+        setSession(null)
+        setUser(null)
+      }
 
       // Only set loading to false if we're NOT waiting for code exchange
       // If there's a code in URL, wait for onAuthStateChange to fire with the new session
@@ -129,13 +160,15 @@ export const AuthProvider = ({ children }) => {
         console.log('⏳ Keeping loading state - waiting for code exchange')
       }
 
-      // Run migration if user is logged in
-      if (session?.user && !hasAuthCode) {
+      // Run migration if user is logged in and not waiting for code exchange
+      if (session?.user && !hasAuthCode && !sessionError) {
         migrateAllDataToSupabase().catch(err => {
           console.error('Migration failed:', err)
         })
       }
-    })
+    }
+
+    initAuth()
 
     // Listen for auth changes
     const {
