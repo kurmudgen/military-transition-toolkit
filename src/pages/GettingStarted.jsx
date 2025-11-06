@@ -3,11 +3,11 @@ import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
 
 export default function GettingStarted() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       {/* Header */}
-      <div className="bg-slate-800 border-b border-slate-700">
+      <div className="bg-white dark:bg-slate-800 border-b border-gray-200 dark:border-slate-700">
         <div className="max-w-6xl mx-auto px-4 py-4">
-          <Link to="/" className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
+          <Link to="/" className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
             ← Back to Home
           </Link>
         </div>
@@ -21,11 +21,11 @@ export default function GettingStarted() {
           </span>
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
           Start Using These Tools Right Now
         </h1>
 
-        <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-700 dark:text-slate-300 mb-12 max-w-3xl mx-auto">
           Access powerful transition planning tools instantly. No account needed, no credit card required.
         </p>
 
@@ -87,17 +87,17 @@ export default function GettingStarted() {
         </div>
 
         {/* Sample Checklist */}
-        <div className="bg-slate-800 rounded-xl p-8 border border-slate-700 mb-16">
+        <div className="bg-white dark:bg-slate-800 rounded-xl p-8 border border-gray-200 dark:border-slate-700 shadow-lg mb-16">
           <div className="text-5xl mb-4">📋</div>
-          <h3 className="text-2xl font-bold text-white mb-3">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
             Preview: Transition Checklists
           </h3>
-          <p className="text-slate-300 mb-6">
+          <p className="text-gray-700 dark:text-slate-300 mb-6">
             See what our comprehensive transition checklists look like
           </p>
           <Link
             to="/public/sample-checklist"
-            className="inline-block px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg transition-colors"
+            className="inline-block px-6 py-3 bg-gray-200 dark:bg-slate-700 hover:bg-gray-300 dark:hover:bg-slate-600 text-gray-900 dark:text-white font-semibold rounded-lg transition-colors"
           >
             View Sample Checklist
           </Link>
@@ -146,19 +146,19 @@ export default function GettingStarted() {
       </div>
 
       {/* Footer */}
-      <div className="bg-slate-800 border-t border-slate-700 py-8">
+      <div className="bg-white dark:bg-slate-800 border-t border-gray-200 dark:border-slate-700 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-slate-400 text-sm mb-4">
+          <p className="text-gray-600 dark:text-slate-400 text-sm mb-4">
             Built by veterans, for veterans • 100% privacy-focused
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <Link to="/terms" className="text-slate-400 hover:text-white transition-colors">
+            <Link to="/terms" className="text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white transition-colors">
               Terms
             </Link>
-            <Link to="/privacy" className="text-slate-400 hover:text-white transition-colors">
+            <Link to="/privacy" className="text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white transition-colors">
               Privacy
             </Link>
-            <a href="mailto:support@formationlabs.net" className="text-slate-400 hover:text-white transition-colors">
+            <a href="mailto:support@formationlabs.net" className="text-gray-600 dark:text-slate-400 hover:text-gray-900 dark:hover:text-white transition-colors">
               Support
             </a>
           </div>

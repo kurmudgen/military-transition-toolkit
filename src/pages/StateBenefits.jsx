@@ -787,6 +787,27 @@ export default function StateBenefits({ publicMode = false }) {
             </button>
           </div>
 
+          {/* Informational Footer */}
+          <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+              <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              </svg>
+              Need More Details?
+            </h4>
+            <p className="text-gray-700 dark:text-gray-300 text-sm mb-3">
+              This comparison tool provides an overview of veteran benefits by state. For complete details about eligibility requirements, application processes, and specific exemption amounts:
+            </p>
+            <ul className="text-gray-700 dark:text-gray-300 text-sm space-y-2 ml-6">
+              <li className="list-disc">Contact your state's Department of Veterans Affairs directly</li>
+              <li className="list-disc">Visit the <a href="https://www.va.gov/statedva.htm" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">VA State Benefits Directory</a></li>
+              <li className="list-disc">Check your county's Veterans Service Office for local assistance</li>
+            </ul>
+            <p className="text-gray-600 dark:text-gray-400 text-xs mt-3">
+              <strong>Note:</strong> Benefit details vary by disability rating, age, and other factors. Always verify with official state sources.
+            </p>
+          </div>
+
           {/* Public Mode CTA - Sign Up to Save */}
           {publicMode && (
             <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6">
