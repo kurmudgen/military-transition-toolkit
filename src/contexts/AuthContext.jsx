@@ -107,14 +107,30 @@ export const AuthProvider = ({ children }) => {
       return // No cleanup needed when skipping auth
     }
 
+    // Check if URL contains auth code (PKCE flow)
+    // If there's a code, we need to wait for Supabase to exchange it before allowing navigation
+    const urlParams = new URLSearchParams(window.location.search)
+    const hasAuthCode = urlParams.has('code')
+
+    if (hasAuthCode) {
+      console.log('🔐 Auth code detected in URL - waiting for PKCE exchange to complete')
+    }
+
     // Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session)
       setUser(session?.user ?? null)
-      setLoading(false)
+
+      // Only set loading to false if we're NOT waiting for code exchange
+      // If there's a code in URL, wait for onAuthStateChange to fire with the new session
+      if (!hasAuthCode) {
+        setLoading(false)
+      } else {
+        console.log('⏳ Keeping loading state - waiting for code exchange')
+      }
 
       // Run migration if user is logged in
-      if (session?.user) {
+      if (session?.user && !hasAuthCode) {
         migrateAllDataToSupabase().catch(err => {
           console.error('Migration failed:', err)
         })
@@ -125,8 +141,13 @@ export const AuthProvider = ({ children }) => {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (_event, session) => {
+      console.log(`🔄 Auth state change: ${_event}`, session?.user?.id)
+
       setSession(session)
       setUser(session?.user ?? null)
+
+      // Always set loading to false when auth state changes
+      // This handles the code exchange completion
       setLoading(false)
 
       // Run migration on sign in
@@ -139,10 +160,23 @@ export const AuthProvider = ({ children }) => {
       }
     })
 
+    // Fallback timeout: if code exchange takes too long (>10 seconds), stop loading
+    // This prevents infinite loading if something goes wrong
+    let timeoutId
+    if (hasAuthCode) {
+      timeoutId = setTimeout(() => {
+        console.warn('⚠️ Code exchange timeout - setting loading to false')
+        setLoading(false)
+      }, 10000)
+    }
+
     // Cleanup: only unsubscribe if we created a subscription
     return () => {
       if (subscription) {
         subscription.unsubscribe()
+      }
+      if (timeoutId) {
+        clearTimeout(timeoutId)
       }
     }
   }, [])
