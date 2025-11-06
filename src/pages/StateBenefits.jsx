@@ -17,7 +17,6 @@ export default function StateBenefits({ publicMode = false }) {
   const [error, setError] = useState(null)
   const [searchTerm, setSearchTerm] = useState('')
   const [filterCategory, setFilterCategory] = useState('all')
-  const [minRating, setMinRating] = useState(0)
   const [showExportModal, setShowExportModal] = useState(false)
   const [selectedCategories, setSelectedCategories] = useState([])
   const [vetPopRange, setVetPopRange] = useState('all')
@@ -96,25 +95,6 @@ export default function StateBenefits({ publicMode = false }) {
     }
   }
 
-  const getScoreColor = (score) => {
-    if (score >= 4.5) return 'bg-green-500'
-    if (score >= 4.0) return 'bg-yellow-500'
-    return 'bg-orange-500'
-  }
-
-  const getRatingStars = (rating) => {
-    const stars = []
-    const fullStars = Math.floor(rating)
-    const hasHalfStar = rating % 1 >= 0.5
-
-    for (let i = 0; i < fullStars; i++) {
-      stars.push(<span key={`full-${i}`}>⭐</span>)
-    }
-    if (hasHalfStar) {
-      stars.push(<span key="half">⭐</span>)
-    }
-    return stars
-  }
 
   // Parse veteran population string to number
   const parseVetPop = (vetPopString) => {
@@ -158,11 +138,6 @@ export default function StateBenefits({ publicMode = false }) {
 
       // Search filter
       if (searchTerm && !state.name.toLowerCase().includes(searchTerm.toLowerCase())) {
-        return false
-      }
-
-      // Minimum rating filter
-      if (state.rating < minRating) {
         return false
       }
 
@@ -219,7 +194,6 @@ export default function StateBenefits({ publicMode = false }) {
     states.forEach(state => {
       text += `${state.name} (${state.abbreviation})\n`
       text += `${''.repeat(state.name.length + state.abbreviation.length + 3)}\n`
-      text += `Rating: ${state.rating}/5.0\n`
       text += `Veteran Population: ${state.vetPopulation}\n\n`
 
       text += `PROPERTY TAX BENEFITS:\n`
@@ -308,14 +282,6 @@ export default function StateBenefits({ publicMode = false }) {
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white">{state.name}</h3>
-                      <div className="flex items-center mt-1">
-                        <span className="text-sm text-slate-400">
-                          Rating: {state.rating.toFixed(1)}/5.0
-                        </span>
-                      </div>
-                    </div>
-                    <div className={`w-12 h-12 rounded-full ${state.rating >= 4.5 ? 'bg-green-500' : state.rating >= 4.0 ? 'bg-yellow-500' : 'bg-orange-500'} flex items-center justify-center text-white font-bold`}>
-                      {state.rating.toFixed(1)}
                     </div>
                   </div>
 
@@ -409,23 +375,6 @@ export default function StateBenefits({ publicMode = false }) {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
             />
-          </div>
-
-          {/* Minimum Rating Filter */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              Minimum Rating
-            </label>
-            <select
-              value={minRating}
-              onChange={(e) => setMinRating(Number(e.target.value))}
-              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
-            >
-              <option value={0}>All Ratings</option>
-              <option value={4.5}>4.5+ Stars</option>
-              <option value={4.0}>4.0+ Stars</option>
-              <option value={3.5}>3.5+ Stars</option>
-            </select>
           </div>
 
           {/* Veteran Population Range */}
@@ -540,7 +489,6 @@ export default function StateBenefits({ publicMode = false }) {
               onClick={() => {
                 setSearchTerm('')
                 setFilterCategory('all')
-                setMinRating(0)
                 setSelectedCategories([])
                 setVetPopRange('all')
                 setNoIncomeTax(false)
@@ -633,14 +581,6 @@ export default function StateBenefits({ publicMode = false }) {
               <div className="flex items-start justify-between mb-3">
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">{state.name}</h3>
-                  <div className="flex items-center mt-1">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      {getRatingStars(state.rating)} {state.rating.toFixed(1)}
-                    </span>
-                  </div>
-                </div>
-                <div className={`w-12 h-12 rounded-full ${getScoreColor(state.rating)} flex items-center justify-center text-white font-bold`}>
-                  {state.rating.toFixed(1)}
                 </div>
               </div>
 
@@ -697,14 +637,6 @@ export default function StateBenefits({ publicMode = false }) {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                   {STATE_BENEFITS_DATABASE[selectedState].name}
                 </h2>
-                <div className="flex items-center mt-2">
-                  <span className="text-lg">
-                    {getRatingStars(STATE_BENEFITS_DATABASE[selectedState].rating)}
-                  </span>
-                  <span className="ml-2 text-gray-600 dark:text-gray-400">
-                    {STATE_BENEFITS_DATABASE[selectedState].rating.toFixed(1)} out of 5.0
-                  </span>
-                </div>
               </div>
               <button
                 onClick={() => setSelectedState(null)}
@@ -793,9 +725,6 @@ export default function StateBenefits({ publicMode = false }) {
                         className="border border-gray-300 dark:border-gray-600 px-4 py-3 text-center font-semibold text-gray-900 dark:text-white"
                       >
                         <div>{state.name}</div>
-                        <div className="text-xs font-normal text-gray-600 dark:text-gray-400 mt-1">
-                          {getRatingStars(state.rating)} {state.rating.toFixed(1)}
-                        </div>
                       </th>
                     )
                   })}

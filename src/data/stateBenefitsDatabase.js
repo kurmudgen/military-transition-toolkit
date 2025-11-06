@@ -32,7 +32,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '387,806',
-    rating: 4.5
   },
 
   'AK': {
@@ -66,7 +65,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '71,494',
-    rating: 4.8
   },
 
   'AZ': {
@@ -100,7 +98,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '526,683',
-    rating: 4.3
   },
 
   'AR': {
@@ -134,7 +131,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '226,176',
-    rating: 4.2
   },
 
   'CA': {
@@ -168,7 +164,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '1,563,283',
-    rating: 4.4
   },
 
   'CO': {
@@ -202,7 +197,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '401,491',
-    rating: 4.6
   },
 
   'CT': {
@@ -236,7 +230,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '190,228',
-    rating: 4.1
   },
 
   'DE': {
@@ -270,7 +263,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '69,922',
-    rating: 4.0
   },
 
   'FL': {
@@ -304,7 +296,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '1,522,466',
-    rating: 4.9
   },
 
   'GA': {
@@ -338,7 +329,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '703,909',
-    rating: 4.7
   },
 
   'HI': {
@@ -372,7 +362,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '116,765',
-    rating: 4.2
   },
 
   'ID': {
@@ -406,7 +395,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '128,123',
-    rating: 4.4
   },
 
   'IL': {
@@ -440,7 +428,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '621,401',
-    rating: 4.8
   },
 
   'IN': {
@@ -474,7 +461,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '418,381',
-    rating: 4.1
   },
 
   'IA': {
@@ -508,7 +494,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '216,824',
-    rating: 4.0
   },
 
   'KS': {
@@ -542,7 +527,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '205,949',
-    rating: 4.3
   },
 
   'KY': {
@@ -576,7 +560,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '293,551',
-    rating: 4.5
   },
 
   'LA': {
@@ -610,7 +593,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '296,108',
-    rating: 4.4
   },
 
   'ME': {
@@ -644,7 +626,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '108,853',
-    rating: 4.1
   },
 
   'MD': {
@@ -678,7 +659,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '402,022',
-    rating: 4.6
   },
 
   'MA': {
@@ -712,7 +692,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '324,135',
-    rating: 4.2
   },
 
   'MI': {
@@ -746,7 +725,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '581,977',
-    rating: 4.3
   },
 
   'MN': {
@@ -780,7 +758,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '344,897',
-    rating: 4.7
   },
 
   'MS': {
@@ -814,7 +791,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '200,239',
-    rating: 4.3
   },
 
   'MO': {
@@ -848,7 +824,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '446,433',
-    rating: 4.6
   },
 
   'MT': {
@@ -882,7 +857,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '93,959',
-    rating: 4.4
   },
 
   'NE': {
@@ -916,7 +890,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '135,533',
-    rating: 4.0
   },
 
   'NV': {
@@ -950,7 +923,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '225,671',
-    rating: 4.5
   },
 
   'NH': {
@@ -984,7 +956,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '111,934',
-    rating: 4.2
   },
 
   'NJ': {
@@ -1018,7 +989,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '357,873',
-    rating: 4.5
   },
 
   'NM': {
@@ -1052,7 +1022,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '157,707',
-    rating: 4.3
   },
 
   'NY': {
@@ -1086,7 +1055,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '745,527',
-    rating: 4.4
   },
 
   'NC': {
@@ -1120,7 +1088,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '764,758',
-    rating: 4.7
   },
 
   'ND': {
@@ -1154,7 +1121,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '55,871',
-    rating: 4.1
   },
 
   'OH': {
@@ -1188,7 +1154,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '731,196',
-    rating: 4.3
   },
 
   'OK': {
@@ -1222,7 +1187,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '304,821',
-    rating: 4.4
   },
 
   'OR': {
@@ -1256,7 +1220,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '303,047',
-    rating: 4.5
   },
 
   'PA': {
@@ -1290,7 +1253,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '768,092',
-    rating: 4.6
   },
 
   'RI': {
@@ -1324,7 +1286,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '63,675',
-    rating: 4.0
   },
 
   'SC': {
@@ -1358,7 +1319,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '409,713',
-    rating: 4.8
   },
 
   'SD': {
@@ -1392,7 +1352,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '68,848',
-    rating: 4.6
   },
 
   'TN': {
@@ -1426,7 +1385,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '482,180',
-    rating: 4.7
   },
 
   'TX': {
@@ -1460,7 +1418,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '1,533,379',
-    rating: 4.9
   },
 
   'UT': {
@@ -1494,7 +1451,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '138,271',
-    rating: 4.4
   },
 
   'VT': {
@@ -1528,7 +1484,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '41,531',
-    rating: 4.2
   },
 
   'VA': {
@@ -1562,7 +1517,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '763,251',
-    rating: 4.8
   },
 
   'WA': {
@@ -1596,7 +1550,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '557,978',
-    rating: 4.6
   },
 
   'WV': {
@@ -1630,7 +1583,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '136,893',
-    rating: 4.1
   },
 
   'WI': {
@@ -1664,7 +1616,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '334,029',
-    rating: 4.4
   },
 
   'WY': {
@@ -1698,7 +1649,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '47,770',
-    rating: 4.3
   },
 
   'DC': {
@@ -1732,7 +1682,6 @@ export const STATE_BENEFITS_DATABASE = {
       }
     },
     vetPopulation: '33,699',
-    rating: 4.0
   }
 }
 
