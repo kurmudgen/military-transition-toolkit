@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useLocation, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 import { trackPageView, trackButtonClick } from '../../utils/analytics'
 import { useEffect } from 'react'
@@ -14,8 +14,10 @@ export default function Login() {
   const { signIn } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
+  const [searchParams] = useSearchParams()
 
   const from = location.state?.from?.pathname || '/app'
+  const isConfirmed = searchParams.get('confirmed') === 'true'
 
   useEffect(() => {
     document.title = 'Login - Military Transition Toolkit'
@@ -71,6 +73,31 @@ export default function Login() {
           {error && (
             <div className="mb-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-600 dark:text-red-400 px-4 py-3 rounded-lg text-sm">
               {error}
+            </div>
+          )}
+
+          {/* Email Confirmation Success Message */}
+          {isConfirmed && (
+            <div className="mb-6 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400 px-4 py-3 rounded-lg">
+              <div className="flex items-start">
+                <svg
+                  className="h-5 w-5 text-green-500 dark:text-green-400 mt-0.5 mr-3 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <div>
+                  <p className="font-semibold text-sm">Email confirmed successfully!</p>
+                  <p className="text-sm mt-1">Please log in to continue.</p>
+                </div>
+              </div>
             </div>
           )}
 
