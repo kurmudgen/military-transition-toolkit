@@ -1,11 +1,31 @@
 // ES6 modules for Vercel serverless functions
 import Stripe from 'stripe'
 import { createClient } from '@supabase/supabase-js'
+import { rateLimitCheck, addRateLimitHeaders, RATE_LIMITS } from '../_utils/ratelimit.js'
 
 // Serverless function handler
 export default async function handler(req, res) {
   // CRITICAL: Set Content-Type header FIRST before any processing
   res.setHeader('Content-Type', 'application/json')
+
+  // Rate limiting (SECURITY: Phase 4 - CRITICAL-004 fix)
+  const rateLimitResult = await rateLimitCheck(
+    req,
+    'checkout',
+    RATE_LIMITS.CHECKOUT.maxRequests,
+    RATE_LIMITS.CHECKOUT.window
+  )
+
+  if (!rateLimitResult.success) {
+    addRateLimitHeaders(res, rateLimitResult)
+    return res.status(429).json({
+      error: 'Too many requests',
+      message: `Rate limit exceeded. Please try again after ${new Date(rateLimitResult.reset).toLocaleString()}`,
+      retryAfter: Math.ceil((rateLimitResult.reset - Date.now()) / 1000)
+    })
+  }
+
+  addRateLimitHeaders(res, rateLimitResult)
 
   // ✅ SECURITY FIX: Restrict CORS to only your domains
   const allowedOrigins = [

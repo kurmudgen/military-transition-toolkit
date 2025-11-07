@@ -3,6 +3,7 @@
 
 import Stripe from 'stripe'
 import { createClient } from '@supabase/supabase-js'
+import { rateLimitCheck, addRateLimitHeaders, RATE_LIMITS } from '../_utils/ratelimit.js'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const supabase = createClient(
@@ -15,6 +16,25 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
+
+  // Rate limiting (SECURITY: Phase 4 - CRITICAL-004 fix)
+  const rateLimitResult = await rateLimitCheck(
+    req,
+    'cancel-subscription',
+    RATE_LIMITS.CANCEL_SUBSCRIPTION.maxRequests,
+    RATE_LIMITS.CANCEL_SUBSCRIPTION.window
+  )
+
+  if (!rateLimitResult.success) {
+    addRateLimitHeaders(res, rateLimitResult)
+    return res.status(429).json({
+      error: 'Too many requests',
+      message: `Rate limit exceeded. Please try again after ${new Date(rateLimitResult.reset).toLocaleString()}`,
+      retryAfter: Math.ceil((rateLimitResult.reset - Date.now()) / 1000)
+    })
+  }
+
+  addRateLimitHeaders(res, rateLimitResult)
 
   try {
     // ============================================
