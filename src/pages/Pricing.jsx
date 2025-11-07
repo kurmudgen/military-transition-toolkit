@@ -160,7 +160,7 @@ export default function Pricing() {
             : 'bg-blue-600 hover:bg-blue-700 text-white shadow-md'
         }`}
       >
-        {loading ? 'Processing...' : (planId === 'free' ? 'Get Started Free' : 'Upgrade Now')}
+        {loading ? 'Processing...' : 'Currently Free'}
       </button>
     </div>
   )
@@ -198,7 +198,7 @@ export default function Pricing() {
           </div>
 
           <p className="text-blue-100 max-w-2xl mx-auto">
-            All premium features are free until the government shutdown ends. Sign up to get full access now.
+            All premium features are free until the government shutdown ends. Start using tools immediately - no account needed.
           </p>
         </div>
       )}
@@ -376,14 +376,8 @@ export default function Pricing() {
                 </li>
               </ul>
             </div>
-            <button
-              onClick={() => window.location.href = '/signup'}
-              className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
-            >
-              Get Started Free - No Payment Required
-            </button>
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-              Paid plans will be available when the promotion ends
+              All features currently free - no account needed during government shutdown
             </p>
           </div>
         </div>
@@ -584,15 +578,9 @@ export default function Pricing() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to take control of your transition?
         </h2>
-        <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          Join thousands of transitioning service members who trust our platform.
+        <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          All features currently free during government shutdown. Start using our tools immediately from the home page - no account needed.
         </p>
-        <button
-          onClick={() => handleSelectPlan('free')}
-          className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
-        >
-          Get Started Free
-        </button>
       </div>
     </div>
   )

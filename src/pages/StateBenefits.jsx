@@ -238,26 +238,12 @@ export default function StateBenefits({ publicMode = false }) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
         <div className="max-w-7xl mx-auto px-4">
-          {/* Signup CTA Banner */}
-          <div className="mb-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
+          {/* Free Access Notice */}
+          <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
             <h2 className="text-3xl font-bold mb-4">Explore State Veteran Benefits</h2>
-            <p className="text-xl text-blue-100 mb-6">
-              See basic state information below. Sign up for free to access advanced comparison tools, filtering, and detailed benefit breakdowns!
+            <p className="text-xl text-green-100 mb-6">
+              All features currently free during government shutdown - full access available now
             </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <a
-                href="/signup"
-                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
-              >
-                Sign Up Free - Compare States
-              </a>
-              <a
-                href="/login"
-                className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
-              >
-                Log In
-              </a>
-            </div>
           </div>
 
           {/* Header */}
@@ -291,7 +277,7 @@ export default function StateBenefits({ publicMode = false }) {
 
                   <div className="pt-4 border-t border-slate-700">
                     <p className="text-sm text-slate-400 mb-3">
-                      Sign up to see detailed benefits for:
+                      Detailed benefits available for:
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {state.benefits.propertyTax.available && (
@@ -326,18 +312,12 @@ export default function StateBenefits({ publicMode = false }) {
             })}
           </div>
 
-          {/* Bottom CTA */}
-          <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-white text-center">
-            <h3 className="text-2xl font-bold mb-4">Ready to find your perfect state?</h3>
-            <p className="text-lg text-blue-100 mb-6">
-              Sign up free to unlock comparison tools, advanced filtering, and personalized recommendations
+          {/* Free Access Info */}
+          <div className="mt-12 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-12 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">All Features Free Now</h3>
+            <p className="text-lg text-green-100">
+              All features currently free during government shutdown - full access available now
             </p>
-            <a
-              href="/signup"
-              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl inline-block"
-            >
-              Create Free Account
-            </a>
           </div>
         </div>
       </div>
@@ -808,60 +788,16 @@ export default function StateBenefits({ publicMode = false }) {
             </p>
           </div>
 
-          {/* Public Mode CTA - Sign Up to Save */}
+          {/* Free Access Information */}
           {publicMode && (
             <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6">
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-2 border-blue-200 dark:border-blue-800 rounded-xl p-6 text-center">
-                <div className="mb-4">
-                  <div className="inline-block p-3 bg-blue-100 dark:bg-blue-800 rounded-full mb-3">
-                    <svg className="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                    Want to Save This Comparison?
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    Create a free account to save your state comparisons, access personalized transition checklists, and unlock premium tools like the VA Claims Builder.
-                  </p>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                  <Link
-                    to="/signup"
-                    onClick={() => trackButtonClick('Public State Benefits - Sign Up CTA')}
-                    className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors shadow-lg hover:shadow-xl text-lg"
-                  >
-                    Create Free Account →
-                  </Link>
-                  <Link
-                    to="/login"
-                    className="px-6 py-3 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium"
-                  >
-                    Already have an account? Log in
-                  </Link>
-                </div>
-
-                <div className="mt-4 flex items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-400">
-                  <span className="flex items-center gap-1">
-                    <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Free forever
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    No credit card required
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Setup in 30 seconds
-                  </span>
-                </div>
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-2 border-green-200 dark:border-green-800 rounded-xl p-6 text-center">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  All Features Free
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                  All features currently free during government shutdown - full access available now
+                </p>
               </div>
             </div>
           )}

@@ -308,26 +308,12 @@ export default function RetirementCalculator({ publicMode = false }) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
         <div className="max-w-4xl mx-auto px-4">
-          {/* Signup CTA Banner */}
-          <div className="mb-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
-            <h2 className="text-3xl font-bold mb-4">Try Our Retirement Calculator</h2>
-            <p className="text-xl text-blue-100 mb-6">
-              Get a basic estimate below. Sign up for free to access advanced features like state tax comparisons, BAH/BAS calculations, PDF exports, and saved scenarios!
+          {/* Free Features Banner */}
+          <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
+            <h2 className="text-3xl font-bold mb-4">Retirement Calculator</h2>
+            <p className="text-xl text-green-100 mb-2">
+              All features currently free during government shutdown
             </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <a
-                href="/signup"
-                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl"
-              >
-                Sign Up Free - Full Calculator
-              </a>
-              <a
-                href="/login"
-                className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
-              >
-                Log In
-              </a>
-            </div>
           </div>
 
           {/* Simple Calculator Card */}
@@ -442,9 +428,9 @@ export default function RetirementCalculator({ publicMode = false }) {
                     Based on {formData.rank} with {formData.yearsOfService} years under {formData.retirementSystem === 'high3' ? 'High-3' : 'BRS'} system
                   </p>
 
-                  <div className="mt-6 p-4 bg-blue-900/30 border border-blue-600 rounded-lg">
-                    <p className="text-blue-300 text-sm font-semibold mb-2">
-                      🔒 Sign up for free to access:
+                  <div className="mt-6 p-4 bg-green-900/30 border border-green-600 rounded-lg">
+                    <p className="text-green-300 text-sm font-semibold mb-2">
+                      All features currently free during government shutdown
                     </p>
                     <ul className="text-slate-300 text-sm space-y-1 list-disc list-inside">
                       <li>State-specific tax calculations for all 50 states</li>
@@ -460,19 +446,6 @@ export default function RetirementCalculator({ publicMode = false }) {
             </div>
           </div>
 
-          {/* Bottom CTA */}
-          <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-white text-center">
-            <h3 className="text-2xl font-bold mb-4">Get the Complete Picture</h3>
-            <p className="text-lg text-blue-100 mb-6">
-              Sign up free to access our full retirement calculator with state tax analysis, VA disability integration, and comprehensive planning tools
-            </p>
-            <a
-              href="/signup"
-              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-xl inline-block"
-            >
-              Create Free Account
-            </a>
-          </div>
         </div>
       </div>
     )
