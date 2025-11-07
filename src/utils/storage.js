@@ -1,11 +1,42 @@
 import { supabase } from '../lib/supabase'
-import { hasActiveSubscription } from './subscriptionCheck'
 
 /**
  * Storage Utility Functions
  * Handles data persistence with localStorage for public features
  * and Supabase for premium features
  */
+
+/**
+ * Verify subscription server-side (SECURITY: prevents client-side bypass)
+ * @returns {Promise<Object>} - { hasActiveSubscription, tier, status }
+ */
+async function verifySubscriptionServerSide() {
+  try {
+    const { data: { session } } = await supabase.auth.getSession()
+
+    if (!session?.access_token) {
+      return { hasActiveSubscription: false, tier: 'free', status: 'none' }
+    }
+
+    const response = await fetch('/api/verify-subscription', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${session.access_token}`,
+        'Content-Type': 'application/json'
+      }
+    })
+
+    if (!response.ok) {
+      throw new Error('Subscription verification failed')
+    }
+
+    return await response.json()
+  } catch (error) {
+    console.error('Subscription verification error:', error)
+    // Fail closed - if we can't verify, assume no subscription
+    return { hasActiveSubscription: false, tier: 'free', status: 'error' }
+  }
+}
 
 /**
  * Public tables that use localStorage
@@ -61,21 +92,33 @@ export const saveData = async (table, data, user = null) => {
     }
   }
 
-  // Premium features require subscription
-  if (!hasActiveSubscription(user)) {
+  // Premium features require subscription (server-side verification)
+  const subscriptionStatus = await verifySubscriptionServerSide()
+  if (!subscriptionStatus.hasActiveSubscription) {
     return {
       success: false,
       error: 'subscription_required',
       message: 'Upgrade to Premium to save your data to the cloud',
-      upgradeUrl: '/pricing'
+      upgradeUrl: '/pricing',
+      currentTier: subscriptionStatus.tier
     }
   }
 
   // Save to Supabase for premium users
   try {
+    // Get user from session (server-verified)
+    const { data: { session } } = await supabase.auth.getSession()
+    if (!session?.user?.id) {
+      return {
+        success: false,
+        error: 'authentication_required',
+        message: 'Please log in to save data'
+      }
+    }
+
     const dataWithUser = {
       ...data,
-      user_id: user.id,
+      user_id: session.user.id,
       updated_at: new Date().toISOString()
     }
 
@@ -142,21 +185,33 @@ export const loadData = async (table, user = null) => {
     }
   }
 
-  // Premium features require subscription
-  if (!hasActiveSubscription(user)) {
+  // Premium features require subscription (server-side verification)
+  const subscriptionStatus = await verifySubscriptionServerSide()
+  if (!subscriptionStatus.hasActiveSubscription) {
     return {
       success: false,
       error: 'subscription_required',
-      message: 'Upgrade to Premium to access your saved data'
+      message: 'Upgrade to Premium to access your saved data',
+      currentTier: subscriptionStatus.tier
     }
   }
 
   // Load from Supabase for premium users
   try {
+    // Get user from session (server-verified)
+    const { data: { session } } = await supabase.auth.getSession()
+    if (!session?.user?.id) {
+      return {
+        success: false,
+        error: 'authentication_required',
+        message: 'Please log in to access data'
+      }
+    }
+
     const { data, error } = await supabase
       .from(table)
       .select('*')
-      .eq('user_id', user.id)
+      .eq('user_id', session.user.id)
       .order('updated_at', { ascending: false })
 
     if (error) {
@@ -206,22 +261,34 @@ export const deleteData = async (table, id = null, user = null) => {
     }
   }
 
-  // Premium features require subscription
-  if (!hasActiveSubscription(user)) {
+  // Premium features require subscription (server-side verification)
+  const subscriptionStatus = await verifySubscriptionServerSide()
+  if (!subscriptionStatus.hasActiveSubscription) {
     return {
       success: false,
       error: 'subscription_required',
-      message: 'Upgrade to Premium to manage your data'
+      message: 'Upgrade to Premium to manage your data',
+      currentTier: subscriptionStatus.tier
     }
   }
 
   // Delete from Supabase for premium users
   try {
+    // Get user from session (server-verified)
+    const { data: { session } } = await supabase.auth.getSession()
+    if (!session?.user?.id) {
+      return {
+        success: false,
+        error: 'authentication_required',
+        message: 'Please log in to delete data'
+      }
+    }
+
     const { error } = await supabase
       .from(table)
       .delete()
       .eq('id', id)
-      .eq('user_id', user.id)
+      .eq('user_id', session.user.id)
 
     if (error) {
       console.error('Supabase delete error:', error)
