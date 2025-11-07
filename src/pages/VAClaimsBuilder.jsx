@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { isPromoModeActive } from '../utils/promoConfig'
+import UpgradeOverlay from '../components/UpgradeOverlay'
 import {
   getVAConditions,
   createVACondition,
@@ -123,7 +124,7 @@ const SECONDARY_SUGGESTIONS = {
   ]
 }
 
-export default function VAClaimsBuilder() {
+export default function VAClaimsBuilder({ previewMode = false }) {
   const [activeTab, setActiveTab] = useState('builder') // builder, evidence
   const [selectedConditions, setSelectedConditions] = useState([])
   const [conditionDetails, setConditionDetails] = useState({})
@@ -672,7 +673,22 @@ export default function VAClaimsBuilder() {
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      <div className="bg-white rounded-lg shadow p-6">
+      {/* Preview Mode Overlay (SECURITY: Phase 3 - CRITICAL-003 fix) */}
+      {previewMode && (
+        <UpgradeOverlay
+          featureName="VA Claims Builder"
+          description="Build your VA disability claims with guided evidence tracking, medical records management, and expert recommendations."
+          benefits={[
+            'Track multiple VA disability conditions',
+            'Organize medical evidence and documentation',
+            'Generate claim statements',
+            'Cloud storage for all your claims data',
+            'Sync across all devices'
+          ]}
+        />
+      )}
+
+      <div className={`bg-white rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         {/* Error Alert */}
         {error && (
           <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-400 rounded">

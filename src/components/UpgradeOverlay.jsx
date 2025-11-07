@@ -1,13 +1,20 @@
 import { useNavigate } from 'react-router-dom'
 import { CheckCircleIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import DOMPurify from 'dompurify'
 
 /**
  * UpgradeOverlay Component
  * Displays a modal overlay for premium features in preview mode
  * Shows benefits and pricing with CTA to upgrade
+ *
+ * SECURITY: All user-provided inputs are sanitized with DOMPurify to prevent XSS
  */
 export default function UpgradeOverlay({ featureName, description, benefits = null }) {
   const navigate = useNavigate()
+
+  // Sanitize inputs to prevent XSS attacks (SECURITY: HIGH-002 fix)
+  const sanitizedFeatureName = featureName ? DOMPurify.sanitize(featureName, { ALLOWED_TAGS: [] }) : null
+  const sanitizedDescription = description ? DOMPurify.sanitize(description, { ALLOWED_TAGS: [] }) : null
 
   // Default benefits if none provided
   const defaultBenefits = [
@@ -17,7 +24,10 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
     'Priority support'
   ]
 
-  const displayBenefits = benefits || defaultBenefits
+  // Sanitize benefits array to prevent XSS
+  const displayBenefits = (benefits || defaultBenefits).map(benefit =>
+    DOMPurify.sanitize(benefit, { ALLOWED_TAGS: [] })
+  )
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900/80 backdrop-blur-sm p-4">
@@ -31,13 +41,13 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
               Premium Feature
             </h3>
-            {featureName && (
+            {sanitizedFeatureName && (
               <p className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-2">
-                {featureName}
+                {sanitizedFeatureName}
               </p>
             )}
             <p className="text-gray-600 dark:text-gray-400">
-              {description}
+              {sanitizedDescription}
             </p>
           </div>
 

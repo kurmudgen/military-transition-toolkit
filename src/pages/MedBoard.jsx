@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getChecklistProgress, updateChecklistProgress } from '../services/checklistService'
+import UpgradeOverlay from '../components/UpgradeOverlay'
 
 const IDES_TIMELINE = [
   {
@@ -175,7 +176,7 @@ const IDES_TIMELINE = [
   }
 ]
 
-export default function MedBoard() {
+export default function MedBoard({ previewMode = false }) {
   const [completedItems, setCompletedItems] = useState({})
   const [expandedSections, setExpandedSections] = useState({
     phase1: true,
@@ -334,7 +335,21 @@ export default function MedBoard() {
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+      {previewMode && (
+        <UpgradeOverlay
+          featureName="Medical Board (MEB/PEB) Tracker"
+          description="Navigate the medical separation process with organized tracking and guidance."
+          benefits={[
+            'Track MEB/PEB process stages',
+            'Organize medical documentation',
+            'Timeline management',
+            'Cloud storage and sync',
+            'Export medical board records'
+          ]}
+        />
+      )}
+
+      <div className={`bg-white dark:bg-gray-800 rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
           MedBoard / Medical Separation (IDES)
         </h1>

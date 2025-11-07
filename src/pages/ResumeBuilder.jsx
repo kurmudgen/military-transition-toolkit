@@ -3,6 +3,7 @@ import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { getProfileData } from '../utils/profileAutoFill'
 import UseProfileButton from '../components/UseProfileButton'
 import { isPromoModeActive } from '../utils/promoConfig'
+import UpgradeOverlay from '../components/UpgradeOverlay'
 import {
   SKILL_TRANSLATIONS,
   MOS_TRANSLATIONS,
@@ -23,7 +24,7 @@ import {
   deleteResume as deleteResumeDB
 } from '../services/resumeService'
 
-export default function ResumeBuilder() {
+export default function ResumeBuilder({ previewMode = false }) {
   // Feature gating hooks
   const { hasAccess: canExport, upgradeMessage: exportMessage } = useFeatureAccess(FEATURES.RESUME_EXPORT)
   const { checkLimit } = useUsageLimits()
@@ -477,7 +478,22 @@ export default function ResumeBuilder() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
-      <div className="max-w-7xl mx-auto px-4">
+      {/* Preview Mode Overlay (SECURITY: Phase 3 - CRITICAL-003 fix) */}
+      {previewMode && (
+        <UpgradeOverlay
+          featureName="Resume Builder"
+          description="Create ATS-optimized resumes with military-to-civilian translation and cloud storage."
+          benefits={[
+            'Military-to-civilian job translation',
+            'ATS-optimized templates',
+            'Export to PDF',
+            'Cloud storage and sync',
+            'Multiple resume versions'
+          ]}
+        />
+      )}
+
+      <div className={`max-w-7xl mx-auto px-4 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-3">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Resume Builder</h1>

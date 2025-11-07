@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { useUsageLimits } from '../hooks/useFeatureAccess'
 import UpgradePrompt from '../components/UpgradePrompt'
+import UpgradeOverlay from '../components/UpgradeOverlay'
 import { isPromoModeActive } from '../utils/promoConfig'
 import {
   getSavedJobs,
@@ -13,7 +14,7 @@ import {
   deleteJobApplication
 } from '../services/jobService'
 
-export default function JobSearch() {
+export default function JobSearch({ previewMode = false }) {
   // Feature gating
   const { checkLimit } = useUsageLimits()
   const [showUpgradeModal, setShowUpgradeModal] = useState(false)
@@ -265,8 +266,23 @@ export default function JobSearch() {
   }
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
+    <>
+      {previewMode && (
+        <UpgradeOverlay
+          featureName="Job Search & Tracker"
+          description="Search for jobs, save opportunities, track applications, and manage your job hunt all in one place."
+          benefits={[
+            'Save and organize job postings',
+            'Track application status',
+            'Set follow-up reminders',
+            'Cloud storage for all data',
+            'Export job search reports'
+          ]}
+        />
+      )}
+
+      <div className={`space-y-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
+        {/* Header */}
       <div>
         <div className="flex items-center gap-3">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Job Search</h1>
@@ -548,16 +564,17 @@ export default function JobSearch() {
         />
       )}
 
-      {/* Upgrade Modal */}
-      {showUpgradeModal && (
-        <UpgradePrompt
-          variant="modal"
-          title="Upgrade to Premium"
-          message="Free users can save up to 5 jobs. Upgrade to Premium for unlimited saved jobs and applications!"
-          onClose={() => setShowUpgradeModal(false)}
-        />
-      )}
-    </div>
+        {/* Upgrade Modal */}
+        {showUpgradeModal && (
+          <UpgradePrompt
+            variant="modal"
+            title="Upgrade to Premium"
+            message="Free users can save up to 5 jobs. Upgrade to Premium for unlimited saved jobs and applications!"
+            onClose={() => setShowUpgradeModal(false)}
+          />
+        )}
+      </div>
+    </>
   )
 }
 

@@ -8,6 +8,7 @@ import {
   MILESTONE_CATEGORIES
 } from '../utils/progressTracking'
 import { trackPageView } from '../utils/analytics'
+import UpgradeOverlay from '../components/UpgradeOverlay'
 
 // Celebration animation component
 function CelebrationModal({ onClose, categoryName }) {
@@ -32,7 +33,7 @@ function CelebrationModal({ onClose, categoryName }) {
   )
 }
 
-export default function Progress() {
+export default function Progress({ previewMode = false }) {
   const [progress, setProgress] = useState(null)
   const [expandedCategories, setExpandedCategories] = useState({})
   const [showCelebration, setShowCelebration] = useState(null)
@@ -98,7 +99,21 @@ export default function Progress() {
   const stats = getOverallStats()
 
   return (
-    <div className="px-4 py-6 sm:px-0 max-w-7xl mx-auto">
+    <div className={`px-4 py-6 sm:px-0 max-w-7xl mx-auto ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
+      {previewMode && (
+        <UpgradeOverlay
+          featureName="Transition Progress Tracker"
+          description="Track your transition progress across all areas - career, benefits, education, and health."
+          benefits={[
+            'Visualize transition progress',
+            'Track milestones and deadlines',
+            'Set and manage goals',
+            'Cloud sync and backup',
+            'Export progress reports'
+          ]}
+        />
+      )}
+
       {/* Celebration Modal */}
       {showCelebration && (
         <CelebrationModal
