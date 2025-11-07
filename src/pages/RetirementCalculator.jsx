@@ -22,7 +22,7 @@ const BASE_PAY_2025 = {
   'O-5': { '16': 9668, '18': 10058, '20': 10448, '22': 10838, '26': 11418 },
 }
 
-// VA Disability Rates 2025 (monthly)
+// VA Disability Rates 2025 (monthly) - Comprehensive with Dependents
 const VA_DISABILITY_RATES = {
   '0%': 0,
   '10%': 171,
@@ -35,6 +35,21 @@ const VA_DISABILITY_RATES = {
   '80%': 1995,
   '90%': 2241,
   '100%': 3737
+}
+
+// Comprehensive 2025 VA Disability Rates with Dependents
+const VA_DISABILITY_WITH_DEPENDENTS = {
+  '0%': { base: 0, withSpouse: 0, spouseAndOneChild: 0, spouseAndTwoChildren: 0, spouseAndThreeChildren: 0, spouseAndFourPlusChildren: 0, oneChildNoSpouse: 0, twoChildrenNoSpouse: 0, oneParent: 0, twoParents: 0 },
+  '10%': { base: 171, withSpouse: 171, spouseAndOneChild: 171, spouseAndTwoChildren: 171, spouseAndThreeChildren: 171, spouseAndFourPlusChildren: 171, oneChildNoSpouse: 171, twoChildrenNoSpouse: 171, oneParent: 171, twoParents: 171 },
+  '20%': { base: 338, withSpouse: 338, spouseAndOneChild: 338, spouseAndTwoChildren: 338, spouseAndThreeChildren: 338, spouseAndFourPlusChildren: 338, oneChildNoSpouse: 338, twoChildrenNoSpouse: 338, oneParent: 338, twoParents: 338 },
+  '30%': { base: 524, withSpouse: 586, spouseAndOneChild: 633, spouseAndTwoChildren: 677, spouseAndThreeChildren: 718, spouseAndFourPlusChildren: 718, oneChildNoSpouse: 563, twoChildrenNoSpouse: 597, oneParent: 556, twoParents: 587 },
+  '40%': { base: 755, withSpouse: 847, spouseAndOneChild: 908, spouseAndTwoChildren: 965, spouseAndThreeChildren: 1019, spouseAndFourPlusChildren: 1019, oneChildNoSpouse: 804, twoChildrenNoSpouse: 849, oneParent: 795, twoParents: 834 },
+  '50%': { base: 1075, withSpouse: 1197, spouseAndOneChild: 1271, spouseAndTwoChildren: 1341, spouseAndThreeChildren: 1408, spouseAndFourPlusChildren: 1408, oneChildNoSpouse: 1138, twoChildrenNoSpouse: 1197, oneParent: 1124, twoParents: 1172 },
+  '60%': { base: 1361, withSpouse: 1513, spouseAndOneChild: 1602, spouseAndTwoChildren: 1686, spouseAndThreeChildren: 1768, spouseAndFourPlusChildren: 1768, oneChildNoSpouse: 1438, twoChildrenNoSpouse: 1511, oneParent: 1417, twoParents: 1472 },
+  '70%': { base: 1716, withSpouse: 1898, spouseAndOneChild: 2001, spouseAndTwoChildren: 2101, spouseAndThreeChildren: 2198, spouseAndFourPlusChildren: 2198, oneChildNoSpouse: 1809, twoChildrenNoSpouse: 1898, oneParent: 1781, twoParents: 1845 },
+  '80%': { base: 1995, withSpouse: 2207, spouseAndOneChild: 2326, spouseAndTwoChildren: 2441, spouseAndThreeChildren: 2553, spouseAndFourPlusChildren: 2553, oneChildNoSpouse: 2104, twoChildrenNoSpouse: 2207, oneParent: 2070, twoParents: 2144 },
+  '90%': { base: 2241, withSpouse: 2477, spouseAndOneChild: 2611, spouseAndTwoChildren: 2741, spouseAndThreeChildren: 2868, spouseAndFourPlusChildren: 2868, oneChildNoSpouse: 2364, twoChildrenNoSpouse: 2482, oneParent: 2325, twoParents: 2408 },
+  '100%': { base: 3737, withSpouse: 3946, spouseAndOneChild: 4096, spouseAndTwoChildren: 4241, spouseAndThreeChildren: 4382, spouseAndFourPlusChildren: 4532, oneChildNoSpouse: 3877, twoChildrenNoSpouse: 4012, oneParent: 3829, twoParents: 3920 }
 }
 
 // State tax treatment of military retirement
@@ -171,6 +186,20 @@ export default function RetirementCalculator({ publicMode = false }) {
   })
   const [savedCalculations, setSavedCalculations] = useState([])
   const [showResults, setShowResults] = useState(false)
+
+  // Standalone VA Disability Calculator state
+  const [vaCalcRating, setVaCalcRating] = useState('100%')
+  const [vaCalcDependents, setVaCalcDependents] = useState('base')
+
+  // Calculate VA Disability Payment
+  const calculateVADisability = () => {
+    const rates = VA_DISABILITY_WITH_DEPENDENTS[vaCalcRating]
+    if (!rates) return 0
+    return rates[vaCalcDependents] || 0
+  }
+
+  const vaMonthly = calculateVADisability()
+  const vaAnnual = vaMonthly * 12
 
   // Set page title
   useEffect(() => {
@@ -1143,6 +1172,126 @@ export default function RetirementCalculator({ publicMode = false }) {
               </button>
             )}
           </div>
+        </div>
+      </div>
+
+      {/* Standalone VA Disability Calculator */}
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700 mt-6">
+        <div className="flex flex-wrap items-center gap-3 mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+            VA Disability Compensation Calculator
+          </h2>
+          {isPromoModeActive() && (
+            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
+              🎖️ Launch Special - FREE
+            </span>
+          )}
+        </div>
+        <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
+          Calculate your monthly VA disability compensation based on your rating and dependents
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {/* Disability Rating Dropdown */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              Disability Rating
+            </label>
+            <select
+              value={vaCalcRating}
+              onChange={(e) => setVaCalcRating(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+            >
+              <option value="0%">0% - No Compensation</option>
+              <option value="10%">10%</option>
+              <option value="20%">20%</option>
+              <option value="30%">30%</option>
+              <option value="40%">40%</option>
+              <option value="50%">50%</option>
+              <option value="60%">60%</option>
+              <option value="70%">70%</option>
+              <option value="80%">80%</option>
+              <option value="90%">90%</option>
+              <option value="100%">100%</option>
+            </select>
+          </div>
+
+          {/* Dependents Dropdown */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              Dependents
+            </label>
+            <select
+              value={vaCalcDependents}
+              onChange={(e) => setVaCalcDependents(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+            >
+              <option value="base">No dependents</option>
+              <option value="withSpouse">Veteran with spouse</option>
+              <option value="spouseAndOneChild">Veteran with spouse + 1 child</option>
+              <option value="spouseAndTwoChildren">Veteran with spouse + 2 children</option>
+              <option value="spouseAndThreeChildren">Veteran with spouse + 3 children</option>
+              <option value="spouseAndFourPlusChildren">Veteran with spouse + 4+ children</option>
+              <option value="oneChildNoSpouse">Veteran with 1 child (no spouse)</option>
+              <option value="twoChildrenNoSpouse">Veteran with 2 children (no spouse)</option>
+              <option value="oneParent">Veteran with parent(s)</option>
+              <option value="twoParents">Veteran with 2 parents</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Results Display */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div className="bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900/30 dark:to-blue-900/30 border-2 border-green-500 dark:border-green-600 rounded-xl p-6">
+            <h3 className="text-sm text-gray-600 dark:text-gray-400 mb-2">Monthly VA Disability Payment</h3>
+            <div className="text-4xl font-bold text-green-700 dark:text-green-300">
+              ${vaMonthly.toLocaleString()}
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 border-2 border-blue-500 dark:border-blue-600 rounded-xl p-6">
+            <h3 className="text-sm text-gray-600 dark:text-gray-400 mb-2">Annual VA Disability Payment</h3>
+            <div className="text-4xl font-bold text-blue-700 dark:text-blue-300">
+              ${vaAnnual.toLocaleString()}
+            </div>
+          </div>
+        </div>
+
+        {/* Combined with Retirement (if calculated) */}
+        {currentStep === 7 && results.monthlyRetirement > 0 && (
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 border-2 border-purple-500 dark:border-purple-600 rounded-xl p-6 mb-6">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Combined Retirement + VA Disability
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Military Retirement</div>
+                <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                  ${results.monthlyRetirement.toLocaleString()}
+                </div>
+              </div>
+              <div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">VA Disability</div>
+                <div className="text-2xl font-bold text-green-700 dark:text-green-300">
+                  ${vaMonthly.toLocaleString()}
+                </div>
+              </div>
+              <div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Total Monthly Income</div>
+                <div className="text-3xl font-bold text-purple-700 dark:text-purple-300">
+                  ${(results.monthlyRetirement + vaMonthly).toLocaleString()}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Disclaimer */}
+        <div className="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+          <p className="text-sm text-gray-700 dark:text-gray-300">
+            <strong>Important:</strong> VA disability compensation is federal tax-free and not reduced by state taxes.
+            Rates shown are for 2025. Actual rates may vary based on individual circumstances and annual COLA adjustments.
+          </p>
         </div>
       </div>
     </div>

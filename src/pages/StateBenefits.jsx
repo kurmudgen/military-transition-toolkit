@@ -275,37 +275,66 @@ export default function StateBenefits({ publicMode = false }) {
                     <p>Veteran Population: {state.vetPopulation}</p>
                   </div>
 
-                  <div className="pt-4 border-t border-slate-700">
-                    <p className="text-sm text-slate-400 mb-3">
-                      Detailed benefits available for:
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {state.benefits.propertyTax.available && (
-                        <span className="px-2 py-1 bg-blue-900/50 text-blue-300 rounded text-xs">
-                          Property Tax
-                        </span>
-                      )}
-                      {state.benefits.incomeTax.available && (
-                        <span className="px-2 py-1 bg-green-900/50 text-green-300 rounded text-xs">
-                          Income Tax
-                        </span>
-                      )}
-                      {state.benefits.education.available && (
-                        <span className="px-2 py-1 bg-purple-900/50 text-purple-300 rounded text-xs">
-                          Education
-                        </span>
-                      )}
-                      {state.benefits.vehicleRegistration.available && (
-                        <span className="px-2 py-1 bg-yellow-900/50 text-yellow-300 rounded text-xs">
-                          Vehicle
-                        </span>
-                      )}
-                      {state.benefits.hunting.available && (
-                        <span className="px-2 py-1 bg-red-900/50 text-red-300 rounded text-xs">
-                          Hunting/Fishing
-                        </span>
-                      )}
-                    </div>
+                  <div className="pt-4 border-t border-slate-700 space-y-3">
+                    {/* Property Tax Benefits */}
+                    {state.benefits.propertyTax.available && (
+                      <div className="text-sm">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-blue-400">🏠</span>
+                          <span className="font-semibold text-blue-300">Property Tax</span>
+                        </div>
+                        <p className="text-slate-300 text-xs ml-6">{state.benefits.propertyTax.description}</p>
+                        <p className="text-slate-400 text-xs ml-6 mt-1">✓ {state.benefits.propertyTax.details}</p>
+                      </div>
+                    )}
+
+                    {/* Income Tax Benefits */}
+                    {state.benefits.incomeTax.available && (
+                      <div className="text-sm">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-green-400">💰</span>
+                          <span className="font-semibold text-green-300">Income Tax</span>
+                        </div>
+                        <p className="text-slate-300 text-xs ml-6">{state.benefits.incomeTax.description}</p>
+                        <p className="text-slate-400 text-xs ml-6 mt-1">✓ {state.benefits.incomeTax.details}</p>
+                      </div>
+                    )}
+
+                    {/* Education Benefits */}
+                    {state.benefits.education.available && (
+                      <div className="text-sm">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-purple-400">🎓</span>
+                          <span className="font-semibold text-purple-300">Education</span>
+                        </div>
+                        <p className="text-slate-300 text-xs ml-6">{state.benefits.education.description}</p>
+                        <p className="text-slate-400 text-xs ml-6 mt-1">✓ {state.benefits.education.details}</p>
+                      </div>
+                    )}
+
+                    {/* Vehicle Registration */}
+                    {state.benefits.vehicleRegistration.available && (
+                      <div className="text-sm">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-yellow-400">🚗</span>
+                          <span className="font-semibold text-yellow-300">Vehicle</span>
+                        </div>
+                        <p className="text-slate-300 text-xs ml-6">{state.benefits.vehicleRegistration.description}</p>
+                        <p className="text-slate-400 text-xs ml-6 mt-1">✓ {state.benefits.vehicleRegistration.details}</p>
+                      </div>
+                    )}
+
+                    {/* Hunting/Fishing */}
+                    {state.benefits.hunting.available && (
+                      <div className="text-sm">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-orange-400">🎣</span>
+                          <span className="font-semibold text-orange-300">Hunting/Fishing</span>
+                        </div>
+                        <p className="text-slate-300 text-xs ml-6">{state.benefits.hunting.description}</p>
+                        <p className="text-slate-400 text-xs ml-6 mt-1">✓ {state.benefits.hunting.details}</p>
+                      </div>
+                    )}
                   </div>
                 </div>
               )
@@ -564,18 +593,35 @@ export default function StateBenefits({ publicMode = false }) {
                 </div>
               </div>
 
-              <div className="space-y-2 text-sm mb-4">
-                <div className="flex items-start text-gray-600 dark:text-gray-400">
-                  <span className="mr-1">🏠</span>
-                  <span className="flex-1">{state.benefits.propertyTax.description.substring(0, 60)}...</span>
+              <div className="space-y-3 text-sm mb-4">
+                {/* Property Tax */}
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span>🏠</span>
+                    <span className="font-semibold text-gray-900 dark:text-white">Property Tax</span>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 text-xs ml-6">{state.benefits.propertyTax.description}</p>
+                  <p className="text-gray-500 dark:text-gray-500 text-xs ml-6 mt-1">✓ {state.benefits.propertyTax.details}</p>
                 </div>
-                <div className="flex items-start text-gray-600 dark:text-gray-400">
-                  <span className="mr-1">💰</span>
-                  <span className="flex-1">{state.benefits.incomeTax.description.substring(0, 60)}...</span>
+
+                {/* Income Tax */}
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span>💰</span>
+                    <span className="font-semibold text-gray-900 dark:text-white">Income Tax</span>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 text-xs ml-6">{state.benefits.incomeTax.description}</p>
+                  <p className="text-gray-500 dark:text-gray-500 text-xs ml-6 mt-1">✓ {state.benefits.incomeTax.details}</p>
                 </div>
-                <div className="flex items-start text-gray-600 dark:text-gray-400">
-                  <span className="mr-1">🎓</span>
-                  <span className="flex-1">{state.benefits.education.description.substring(0, 60)}...</span>
+
+                {/* Education */}
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span>🎓</span>
+                    <span className="font-semibold text-gray-900 dark:text-white">Education</span>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 text-xs ml-6">{state.benefits.education.description}</p>
+                  <p className="text-gray-500 dark:text-gray-500 text-xs ml-6 mt-1">✓ {state.benefits.education.details}</p>
                 </div>
               </div>
 

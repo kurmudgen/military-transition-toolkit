@@ -151,16 +151,18 @@ export default function Pricing() {
 
       <button
         onClick={() => handleSelectPlan(planId)}
-        disabled={loading}
+        disabled={loading || (paymentUIHidden && planId !== 'free')}
         className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors mt-auto disabled:opacity-50 disabled:cursor-not-allowed ${
-          planId === 'free'
+          paymentUIHidden && planId !== 'free'
+            ? 'bg-gray-400 text-gray-100 cursor-not-allowed shadow-md'
+            : planId === 'free'
             ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md'
             : featured
             ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg'
             : 'bg-blue-600 hover:bg-blue-700 text-white shadow-md'
         }`}
       >
-        {loading ? 'Processing...' : 'Currently Free'}
+        {loading ? 'Processing...' : paymentUIHidden && planId !== 'free' ? 'Currently Free - No Payment Needed' : planId === 'free' ? 'Get Started Free' : 'Select Plan'}
       </button>
     </div>
   )
@@ -197,8 +199,12 @@ export default function Pricing() {
             </p>
           </div>
 
-          <p className="text-blue-100 max-w-2xl mx-auto">
+          <p className="text-blue-100 max-w-2xl mx-auto mb-3">
             All premium features are free until the government shutdown ends. Start using tools immediately - no account needed.
+          </p>
+
+          <p className="text-sm text-blue-200 max-w-2xl mx-auto">
+            Prices shown below for transparency about future value, but no payment is needed during the shutdown.
           </p>
         </div>
       )}
@@ -330,15 +336,13 @@ export default function Pricing() {
         </div>
       )}
 
-      {/* Pricing Cards - Hidden during promo mode */}
-      {!paymentUIHidden && (
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 items-stretch">
-          <PlanCard plan={PRICING.FREE} planId="free" />
-          <PlanCard plan={PRICING.MONTHLY} planId="monthly" />
-          <PlanCard plan={PRICING.ANNUAL} planId="annual" />
-          <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured />
-        </div>
-      )}
+      {/* Pricing Cards - Showing prices but non-clickable during promo mode */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 items-stretch">
+        <PlanCard plan={PRICING.FREE} planId="free" />
+        <PlanCard plan={PRICING.MONTHLY} planId="monthly" />
+        <PlanCard plan={PRICING.ANNUAL} planId="annual" />
+        <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured />
+      </div>
 
       {/* Promo Mode Message - Show when payment UI is hidden */}
       {paymentUIHidden && (
