@@ -298,7 +298,7 @@ export default function Resources({ publicMode = false }) {
     const stars = []
     for (let i = 1; i <= 5; i++) {
       stars.push(
-        <span key={i} className={i <= rating ? 'text-yellow-500' : 'text-gray-300 dark:text-gray-600'}>
+        <span key={i} className={i <= rating ? 'text-yellow-500' : 'text-slate-600'}>
           ★
         </span>
       )
@@ -307,32 +307,33 @@ export default function Resources({ publicMode = false }) {
   }
 
   return (
-    <div className="space-y-6">
-      {/* PUBLIC MODE: Free Features Notice */}
-      {publicMode && (
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white shadow-2xl">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Resource Library</h2>
-            <p className="text-xl text-blue-100 mb-6">
-              Core resources always free - no account needed
-            </p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+        {/* PUBLIC MODE: Free Features Notice */}
+        {publicMode && (
+          <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white shadow-2xl">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-bold mb-4">Resource Library</h2>
+              <p className="text-xl text-blue-100 mb-6">
+                Core resources always free - no account needed
+              </p>
+            </div>
           </div>
+        )}
+
+        {/* Header */}
+        <div>
+          <h1 className="text-3xl font-bold text-white">
+            Resource Library
+          </h1>
+          <p className="mt-2 text-slate-300">
+            60+ curated veteran transition resources with advanced filtering and ratings
+          </p>
         </div>
-      )}
 
-      {/* Header */}
-      <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-          Resource Library {publicMode && <span className="text-lg font-normal text-gray-500 dark:text-gray-400">(Preview)</span>}
-        </h1>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
-          60+ curated veteran transition resources with advanced filtering and ratings
-        </p>
-      </div>
-
-      {/* Search and Filters */}
-      <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Search & Filters</h2>
+        {/* Search and Filters */}
+        <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 shadow-xl rounded-lg p-6">
+          <h2 className="text-lg font-semibold text-white mb-4">Search & Filters</h2>
 
         {/* Search Bar */}
         <div className="mb-4">
@@ -345,7 +346,7 @@ export default function Resources({ publicMode = false }) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search resources, tags, or keywords..."
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full pl-10 pr-4 py-3 bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
         </div>
@@ -354,13 +355,13 @@ export default function Resources({ publicMode = false }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
           {/* Category Filter */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            <label className="block text-sm font-medium text-slate-300 mb-2">
               Category
             </label>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-3 py-2 bg-slate-700 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="all">All Categories</option>
               {Object.entries(RESOURCE_CATEGORIES).map(([key, cat]) => (
@@ -373,13 +374,13 @@ export default function Resources({ publicMode = false }) {
 
           {/* Type Filter */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            <label className="block text-sm font-medium text-slate-300 mb-2">
               Type
             </label>
             <select
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-3 py-2 bg-slate-700 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="all">All Types</option>
               {Object.entries(RESOURCE_TYPES).map(([key, type]) => (
@@ -392,13 +393,13 @@ export default function Resources({ publicMode = false }) {
 
           {/* Rating Filter */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            <label className="block text-sm font-medium text-slate-300 mb-2">
               Minimum Rating
             </label>
             <select
               value={minRating}
               onChange={(e) => setMinRating(Number(e.target.value))}
-              className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-3 py-2 bg-slate-700 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               <option value={0}>Any Rating</option>
               <option value={4.5}>4.5+ Stars</option>
@@ -414,9 +415,9 @@ export default function Resources({ publicMode = false }) {
                 type="checkbox"
                 checked={showOnlyOfficial}
                 onChange={(e) => setShowOnlyOfficial(e.target.checked)}
-                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                className="w-4 h-4 text-blue-600 border-slate-600 rounded focus:ring-blue-500 bg-slate-700"
               />
-              <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+              <span className="ml-2 text-sm text-slate-300">
                 Official resources only
               </span>
             </label>
@@ -425,7 +426,7 @@ export default function Resources({ publicMode = false }) {
 
         {/* Popular Tags */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <label className="block text-sm font-medium text-slate-300 mb-2">
             Filter by Tags:
           </label>
           <div className="flex flex-wrap gap-2">
@@ -436,7 +437,7 @@ export default function Resources({ publicMode = false }) {
                 className={`px-3 py-1 text-xs rounded-full transition-colors ${
                   selectedTags.includes(tag)
                     ? 'bg-blue-600 text-white'
-                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600 border border-slate-600'
                 }`}
               >
                 {tag}
@@ -445,7 +446,7 @@ export default function Resources({ publicMode = false }) {
             {selectedTags.length > 0 && (
               <button
                 onClick={() => setSelectedTags([])}
-                className="px-3 py-1 text-xs rounded-full bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 hover:bg-red-200 dark:hover:bg-red-900/50"
+                className="px-3 py-1 text-xs rounded-full bg-red-900/30 text-red-400 hover:bg-red-900/50 border border-red-800"
               >
                 Clear Tags
               </button>
@@ -472,63 +473,63 @@ export default function Resources({ publicMode = false }) {
               setShowOnlyOfficial(false)
               setMinRating(0)
             }}
-            className="px-6 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg transition-colors"
+            className="px-6 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 font-semibold rounded-lg transition-colors border border-slate-600"
           >
             Reset All Filters
           </button>
         </div>
 
-        <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+        <div className="mt-4 text-sm text-slate-400">
           Showing {filteredResources.length} of {resources.length} resources
         </div>
-      </div>
-
-      {/* Resources Display */}
-      {Object.keys(groupedResources).length === 0 ? (
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-12 text-center">
-          <div className="text-6xl mb-4">🔍</div>
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-            No resources found
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
-            Try adjusting your search or filters
-          </p>
-          <button
-            onClick={() => {
-              setSearchQuery('')
-              setSelectedCategory('all')
-              setSelectedType('all')
-              setSelectedTags([])
-              setShowOnlyOfficial(false)
-              setMinRating(0)
-            }}
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all"
-          >
-            Clear All Filters
-          </button>
         </div>
-      ) : (
-        <div className="space-y-4">
-          {Object.entries(groupedResources).map(([categoryKey, categoryResources]) => {
-            const category = RESOURCE_CATEGORIES[categoryKey]
-            const isExpanded = isCategoryExpanded(categoryKey)
-            return (
-              <div key={categoryKey} className="bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden">
-                <button
-                  onClick={() => toggleCategory(categoryKey)}
-                  className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">{isExpanded ? '▼' : '▶'}</span>
-                    <span className="text-3xl">{category.icon}</span>
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                      {category.name}
-                    </h2>
-                    <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                      ({categoryResources.length})
-                    </span>
-                  </div>
-                </button>
+
+        {/* Resources Display */}
+        {Object.keys(groupedResources).length === 0 ? (
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg shadow-xl p-12 text-center">
+            <div className="text-6xl mb-4">🔍</div>
+            <h3 className="text-2xl font-bold text-white mb-2">
+              No resources found
+            </h3>
+            <p className="text-slate-400 mb-6">
+              Try adjusting your search or filters
+            </p>
+            <button
+              onClick={() => {
+                setSearchQuery('')
+                setSelectedCategory('all')
+                setSelectedType('all')
+                setSelectedTags([])
+                setShowOnlyOfficial(false)
+                setMinRating(0)
+              }}
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all"
+            >
+              Clear All Filters
+            </button>
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {Object.entries(groupedResources).map(([categoryKey, categoryResources]) => {
+              const category = RESOURCE_CATEGORIES[categoryKey]
+              const isExpanded = isCategoryExpanded(categoryKey)
+              return (
+                <div key={categoryKey} className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg shadow-xl overflow-hidden">
+                  <button
+                    onClick={() => toggleCategory(categoryKey)}
+                    className="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-700/50 transition-colors"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl text-slate-300">{isExpanded ? '▼' : '▶'}</span>
+                      <span className="text-3xl">{category.icon}</span>
+                      <h2 className="text-2xl font-bold text-white">
+                        {category.name}
+                      </h2>
+                      <span className="text-sm font-normal text-slate-400">
+                        ({categoryResources.length})
+                      </span>
+                    </div>
+                  </button>
 
                 {isExpanded && (
                   <div className="px-6 pb-6 animate-fadeIn">
@@ -540,20 +541,20 @@ export default function Resources({ publicMode = false }) {
                     return (
                       <div
                         key={resource.id}
-                        className="bg-gray-50 dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 p-5 hover:border-blue-500 dark:hover:border-blue-500 transition-all"
+                        className="bg-slate-700/50 rounded-lg border border-slate-600 p-5 hover:border-blue-500 transition-all"
                       >
                         {/* Header with badges */}
                         <div className="flex items-start justify-between mb-3">
                           <div className="flex-1">
-                            <h3 className="font-bold text-gray-900 dark:text-white text-lg mb-1">
+                            <h3 className="font-bold text-white text-lg mb-1">
                               {resource.title}
                             </h3>
                             <div className="flex flex-wrap gap-1 mb-2">
-                              <span className="px-2 py-0.5 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 text-xs font-medium rounded">
+                              <span className="px-2 py-0.5 bg-slate-600 text-slate-200 text-xs font-medium rounded">
                                 {resourceType.icon} {resourceType.label}
                               </span>
                               {resource.official && (
-                                <span className="px-2 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold rounded">
+                                <span className="px-2 py-0.5 bg-green-900/30 text-green-400 text-xs font-semibold rounded border border-green-700">
                                   Official
                                 </span>
                               )}
@@ -562,7 +563,7 @@ export default function Resources({ publicMode = false }) {
                         </div>
 
                         {/* Description */}
-                        <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                        <p className="text-slate-300 text-sm mb-3">
                           {resource.description}
                         </p>
 
@@ -572,13 +573,13 @@ export default function Resources({ publicMode = false }) {
                             {resource.tags.slice(0, 3).map(tag => (
                               <span
                                 key={tag}
-                                className="px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs rounded"
+                                className="px-2 py-0.5 bg-blue-900/30 text-blue-400 text-xs rounded border border-blue-800"
                               >
                                 {tag}
                               </span>
                             ))}
                             {resource.tags.length > 3 && (
-                              <span className="px-2 py-0.5 text-gray-500 dark:text-gray-400 text-xs">
+                              <span className="px-2 py-0.5 text-slate-400 text-xs">
                                 +{resource.tags.length - 3} more
                               </span>
                             )}
@@ -590,14 +591,14 @@ export default function Resources({ publicMode = false }) {
                           <div className="flex text-sm">
                             {renderStars(Math.round(displayRating))}
                           </div>
-                          <span className="text-xs text-gray-600 dark:text-gray-400">
+                          <span className="text-xs text-slate-400">
                             {displayRating.toFixed(1)}
                           </span>
                         </div>
 
                         {/* User Rating */}
-                        <div className="mb-4 p-2 bg-gray-100 dark:bg-gray-600 rounded">
-                          <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1">
+                        <div className="mb-4 p-2 bg-slate-600/50 rounded border border-slate-600">
+                          <label className="block text-xs font-medium text-slate-300 mb-1">
                             Your Rating:
                           </label>
                           <div className="flex gap-1">
@@ -608,7 +609,7 @@ export default function Resources({ publicMode = false }) {
                                 className={`text-lg ${
                                   (userRatings[resource.id] || 0) >= star
                                     ? 'text-yellow-500'
-                                    : 'text-gray-300 dark:text-gray-500 hover:text-yellow-400'
+                                    : 'text-slate-500 hover:text-yellow-400'
                                 }`}
                               >
                                 ★
@@ -636,7 +637,7 @@ export default function Resources({ publicMode = false }) {
                             <div className="flex gap-1">
                               <button
                                 onClick={() => openEditModal(resource)}
-                                className="p-2 bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 text-gray-700 dark:text-gray-300 rounded-lg transition-all"
+                                className="p-2 bg-slate-600 hover:bg-slate-500 text-slate-200 rounded-lg transition-all"
                                 aria-label="Edit resource"
                               >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -645,7 +646,7 @@ export default function Resources({ publicMode = false }) {
                               </button>
                               <button
                                 onClick={() => handleDeleteResource(resource.id)}
-                                className="p-2 bg-red-100 dark:bg-red-900/30 hover:bg-red-200 dark:hover:bg-red-900/50 text-red-700 dark:text-red-400 rounded-lg transition-all"
+                                className="p-2 bg-red-900/30 hover:bg-red-900/50 text-red-400 rounded-lg transition-all border border-red-800"
                                 aria-label="Delete resource"
                               >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -667,66 +668,66 @@ export default function Resources({ publicMode = false }) {
         </div>
       )}
 
-      {/* Add/Edit Resource Modal */}
-      {showAddModal && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="p-6 border-b border-gray-200 dark:border-gray-700">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                {editingResource ? 'Edit Resource' : 'Add Custom Resource'}
-              </h2>
-            </div>
-
-            <div className="p-6 space-y-4">
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                  Title *
-                </label>
-                <input
-                  type="text"
-                  value={formData.title}
-                  onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  placeholder="e.g., Veteran Job Board"
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
+        {/* Add/Edit Resource Modal */}
+        {showAddModal && (
+          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <div className="bg-slate-800 border border-slate-700 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="p-6 border-b border-slate-700">
+                <h2 className="text-2xl font-bold text-white">
+                  {editingResource ? 'Edit Resource' : 'Add Custom Resource'}
+                </h2>
               </div>
 
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                  URL *
-                </label>
-                <input
-                  type="url"
-                  value={formData.url}
-                  onChange={(e) => setFormData({ ...formData, url: e.target.value })}
-                  placeholder="https://example.com"
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                  Description
-                </label>
-                <textarea
-                  value={formData.description}
-                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                  placeholder="Brief description of this resource..."
-                  rows={3}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                />
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
+              <div className="p-6 space-y-4">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                    Category
+                  <label className="block text-sm font-semibold text-slate-300 mb-2">
+                    Title *
                   </label>
-                  <select
-                    value={formData.category}
-                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
+                  <input
+                    type="text"
+                    value={formData.title}
+                    onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+                    placeholder="e.g., Veteran Job Board"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-slate-300 mb-2">
+                    URL *
+                  </label>
+                  <input
+                    type="url"
+                    value={formData.url}
+                    onChange={(e) => setFormData({ ...formData, url: e.target.value })}
+                    placeholder="https://example.com"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-slate-300 mb-2">
+                    Description
+                  </label>
+                  <textarea
+                    value={formData.description}
+                    onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                    placeholder="Brief description of this resource..."
+                    rows={3}
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                  />
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-300 mb-2">
+                      Category
+                    </label>
+                    <select
+                      value={formData.category}
+                      onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                      className="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    >
                     {Object.entries(RESOURCE_CATEGORIES).map(([key, cat]) => (
                       <option key={key} value={key}>
                         {cat.icon} {cat.name}
@@ -735,15 +736,15 @@ export default function Resources({ publicMode = false }) {
                   </select>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                    Type
-                  </label>
-                  <select
-                    value={formData.type}
-                    onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-300 mb-2">
+                      Type
+                    </label>
+                    <select
+                      value={formData.type}
+                      onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+                      className="w-full px-4 py-3 bg-slate-700 border border-slate-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    >
                     {Object.entries(RESOURCE_TYPES).map(([key, type]) => (
                       <option key={key} value={key}>
                         {type.icon} {type.label}
@@ -753,47 +754,48 @@ export default function Resources({ publicMode = false }) {
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                  Tags (select all that apply)
-                </label>
-                <div className="flex flex-wrap gap-2 max-h-32 overflow-y-auto p-2 border border-gray-300 dark:border-gray-600 rounded-lg">
-                  {AVAILABLE_TAGS.map(tag => (
-                    <button
-                      key={tag}
-                      type="button"
-                      onClick={() => toggleFormTag(tag)}
-                      className={`px-3 py-1 text-xs rounded-full transition-colors ${
-                        formData.tags.includes(tag)
-                          ? 'bg-blue-600 text-white'
-                          : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
-                      }`}
-                    >
-                      {tag}
-                    </button>
-                  ))}
+                <div>
+                  <label className="block text-sm font-semibold text-slate-300 mb-2">
+                    Tags (select all that apply)
+                  </label>
+                  <div className="flex flex-wrap gap-2 max-h-32 overflow-y-auto p-2 bg-slate-700 border border-slate-600 rounded-lg">
+                    {AVAILABLE_TAGS.map(tag => (
+                      <button
+                        key={tag}
+                        type="button"
+                        onClick={() => toggleFormTag(tag)}
+                        className={`px-3 py-1 text-xs rounded-full transition-colors ${
+                          formData.tags.includes(tag)
+                            ? 'bg-blue-600 text-white'
+                            : 'bg-slate-600 text-slate-300 hover:bg-slate-500'
+                        }`}
+                      >
+                        {tag}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="p-6 border-t border-gray-200 dark:border-gray-700 flex gap-3">
-              <button
-                onClick={closeModal}
-                className="flex-1 px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-bold rounded-lg transition-all"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={editingResource ? handleUpdateResource : handleAddResource}
-                disabled={!formData.title || !formData.url}
-                className="flex-1 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {editingResource ? 'Update Resource' : 'Add Resource'}
-              </button>
+              <div className="p-6 border-t border-slate-700 flex gap-3">
+                <button
+                  onClick={closeModal}
+                  className="flex-1 px-6 py-3 bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold rounded-lg transition-all border border-slate-600"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={editingResource ? handleUpdateResource : handleAddResource}
+                  disabled={!formData.title || !formData.url}
+                  className="flex-1 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {editingResource ? 'Update Resource' : 'Add Resource'}
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
