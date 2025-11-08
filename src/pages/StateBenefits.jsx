@@ -8,6 +8,7 @@ import {
   compareStates
 } from '../data/stateBenefitsDatabase'
 import { getStateComparison, saveStateComparison } from '../services/stateBenefitsService'
+import { SHUTDOWN_BANNER } from '../utils/constants'
 
 export default function StateBenefits({ publicMode = false }) {
   const [selectedState, setSelectedState] = useState(null)
@@ -241,8 +242,11 @@ export default function StateBenefits({ publicMode = false }) {
           {/* Free Access Notice */}
           <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
             <h2 className="text-3xl font-bold mb-4">Explore State Veteran Benefits</h2>
-            <p className="text-xl text-green-100 mb-6">
-              Premium features temporarily free - State benefits comparison always free
+            <p className="text-xl text-green-100 mb-2">
+              {SHUTDOWN_BANNER.line1}
+            </p>
+            <p className="text-sm text-green-200">
+              {SHUTDOWN_BANNER.line2}
             </p>
           </div>
 
@@ -344,8 +348,11 @@ export default function StateBenefits({ publicMode = false }) {
           {/* Free Access Info */}
           <div className="mt-12 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-12 text-white text-center">
             <h3 className="text-2xl font-bold mb-4">All Features Free Now</h3>
-            <p className="text-lg text-green-100">
-              Premium features temporarily free - State benefits comparison always free
+            <p className="text-lg text-green-100 mb-2">
+              {SHUTDOWN_BANNER.line1}
+            </p>
+            <p className="text-sm text-green-200">
+              {SHUTDOWN_BANNER.line2}
             </p>
           </div>
         </div>
@@ -841,8 +848,11 @@ export default function StateBenefits({ publicMode = false }) {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                   All Features Free
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                  Premium features temporarily free - State benefits comparison always free
+                <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-1">
+                  {SHUTDOWN_BANNER.line1}
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-500 max-w-2xl mx-auto">
+                  {SHUTDOWN_BANNER.line2}
                 </p>
               </div>
             </div>

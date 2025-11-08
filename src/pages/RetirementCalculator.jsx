@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import UseProfileButton from '../components/UseProfileButton'
 import { getProfileData, getServiceInfo, getLocationInfo } from '../utils/profileAutoFill'
 import { isPromoModeActive } from '../utils/promoConfig'
+import { SHUTDOWN_BANNER } from '../utils/constants'
 
 // 2025 Base Pay Data (E-5 through O-5 for key ranks + Warrant Officers)
 const BASE_PAY_2025 = {
@@ -341,10 +342,10 @@ export default function RetirementCalculator({ publicMode = false }) {
           <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
             <h2 className="text-3xl font-bold mb-4">Retirement Calculator</h2>
             <p className="text-xl text-green-100 mb-2">
-              Premium features temporarily free during government shutdown
+              {SHUTDOWN_BANNER.line1}
             </p>
             <p className="text-sm text-green-200">
-              Core calculator always free - no account needed
+              {SHUTDOWN_BANNER.line2}
             </p>
           </div>
 

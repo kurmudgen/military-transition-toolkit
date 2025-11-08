@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { isPromoModeActive } from '../utils/promoConfig'
 import UpgradeOverlay from '../components/UpgradeOverlay'
+import { useAuth } from '../contexts/AuthContext'
+import { AUTH_LOADING_TIMEOUT } from '../utils/constants'
 import {
   getVAConditions,
   createVACondition,
@@ -186,6 +189,7 @@ const SECONDARY_SUGGESTIONS = {
 }
 
 export default function VAClaimsBuilder({ previewMode = false, demoMode = false }) {
+  const { user } = useAuth()
   const [activeTab, setActiveTab] = useState('builder') // builder, evidence
   const [selectedConditions, setSelectedConditions] = useState([])
   const [conditionDetails, setConditionDetails] = useState({})
@@ -198,11 +202,24 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState(null)
   const [conditionIdMap, setConditionIdMap] = useState({}) // Maps condition names to database IDs
+  const [showAuthPrompt, setShowAuthPrompt] = useState(false)
 
   // Set page title
   useEffect(() => {
     document.title = 'VA Claims Builder | Military Transition Toolkit'
   }, [])
+
+  // Timeout for unauthenticated users - show auth prompt after timeout
+  useEffect(() => {
+    if (!user && !demoMode && loading) {
+      const timer = setTimeout(() => {
+        setLoading(false)
+        setShowAuthPrompt(true)
+      }, AUTH_LOADING_TIMEOUT)
+
+      return () => clearTimeout(timer)
+    }
+  }, [user, demoMode, loading])
 
   // Load data from Supabase database or demo data
   useEffect(() => {
@@ -891,6 +908,45 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
     : 0
 
   const conditionsWithCompleteEvidence = selectedConditions.filter(c => getEvidenceProgress(c) === 100).length
+
+  // Show auth prompt for unauthenticated users after timeout
+  if (showAuthPrompt) {
+    return (
+      <div className="px-4 py-6 sm:px-0">
+        <div className="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto text-center">
+          <div className="mb-6">
+            <svg className="w-16 h-16 text-blue-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Sign In to View Your VA Claims</h3>
+            <p className="text-gray-600 mb-6">
+              Your VA claims data is securely stored in the cloud. Sign in to access your saved conditions and evidence tracking.
+            </p>
+          </div>
+          <div className="space-y-3">
+            <Link
+              to="/login"
+              className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
+            >
+              Sign In
+            </Link>
+            <Link
+              to="/signup"
+              className="block w-full bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-6 rounded-lg font-semibold transition-colors"
+            >
+              Create Free Account
+            </Link>
+            <Link
+              to="/"
+              className="block text-gray-500 hover:text-gray-700 text-sm py-2"
+            >
+              ← Back to Home
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   // Show loading state
   if (loading) {

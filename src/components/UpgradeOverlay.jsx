@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CheckCircleIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 import DOMPurify from 'dompurify'
+import { createCheckoutSession } from '../services/subscriptionService'
+import { isPromoModeActive } from '../utils/promoConfig'
 
 /**
  * UpgradeOverlay Component
@@ -11,6 +14,15 @@ import DOMPurify from 'dompurify'
  */
 export default function UpgradeOverlay({ featureName, description, benefits = null }) {
   const navigate = useNavigate()
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
+  const paymentUIHidden = isPromoModeActive()
+
+  // Stripe Price IDs
+  const STRIPE_PRICE_IDS = {
+    monthly: import.meta.env.VITE_STRIPE_PRICE_MONTHLY,
+    lifetime: import.meta.env.VITE_STRIPE_PRICE_LIFETIME
+  }
 
   // Sanitize inputs to prevent XSS attacks (SECURITY: HIGH-002 fix)
   const sanitizedFeatureName = featureName ? DOMPurify.sanitize(featureName, { ALLOWED_TAGS: [] }) : null
@@ -28,6 +40,27 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
   const displayBenefits = (benefits || defaultBenefits).map(benefit =>
     DOMPurify.sanitize(benefit, { ALLOWED_TAGS: [] })
   )
+
+  // Handle subscribe button click
+  const handleSubscribe = async (planId) => {
+    try {
+      setLoading(true)
+      setError(null)
+
+      const priceId = STRIPE_PRICE_IDS[planId]
+
+      if (!priceId) {
+        throw new Error('Invalid plan selected')
+      }
+
+      const checkoutUrl = await createCheckoutSession(priceId)
+      window.location.href = checkoutUrl
+    } catch (err) {
+      console.error('Error creating checkout session:', err)
+      setError(err.message || 'Failed to start checkout. Please try again.')
+      setLoading(false)
+    }
+  }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900/80 backdrop-blur-sm p-4">
@@ -61,10 +94,17 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
             ))}
           </div>
 
+          {/* Error Message */}
+          {error && (
+            <div className="mb-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+              <p className="text-sm text-red-700 dark:text-red-400">{error}</p>
+            </div>
+          )}
+
           {/* Pricing Options */}
           <div className="mb-6 space-y-3">
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-4 border-2 border-blue-200 dark:border-blue-700">
-              <div className="flex justify-between items-start mb-2">
+              <div className="flex justify-between items-start mb-3">
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">Monthly Plan</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Cancel anytime</p>
@@ -74,10 +114,17 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
                   <p className="text-xs text-gray-600 dark:text-gray-400">per month</p>
                 </div>
               </div>
+              <button
+                onClick={() => handleSubscribe('monthly')}
+                disabled={loading || paymentUIHidden}
+                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2 px-4 rounded-lg font-semibold transition-colors text-sm"
+              >
+                {loading ? 'Loading...' : paymentUIHidden ? 'Free During Shutdown' : 'Subscribe Now'}
+              </button>
             </div>
 
             <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg p-4 border-2 border-purple-200 dark:border-purple-700">
-              <div className="flex justify-between items-start mb-2">
+              <div className="flex justify-between items-start mb-3">
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">Lifetime Access</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Pay once, use forever</p>
@@ -87,6 +134,13 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
                   <p className="text-xs text-gray-600 dark:text-gray-400">one-time</p>
                 </div>
               </div>
+              <button
+                onClick={() => handleSubscribe('lifetime')}
+                disabled={loading || paymentUIHidden}
+                className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2 px-4 rounded-lg font-semibold transition-colors text-sm"
+              >
+                {loading ? 'Loading...' : paymentUIHidden ? 'Free During Shutdown' : 'Get Lifetime Access'}
+              </button>
             </div>
           </div>
 
