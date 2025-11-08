@@ -242,7 +242,7 @@ export default function StateBenefits({ publicMode = false }) {
           <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
             <h2 className="text-3xl font-bold mb-4">Explore State Veteran Benefits</h2>
             <p className="text-xl text-green-100 mb-6">
-              All features currently free during government shutdown - full access available now
+              Premium features temporarily free - State benefits comparison always free
             </p>
           </div>
 
@@ -252,7 +252,7 @@ export default function StateBenefits({ publicMode = false }) {
               State Veteran Benefits Preview
             </h1>
             <p className="text-slate-300 text-lg">
-              Browse all 50 states + DC. Create a free account to compare benefits, filter by category, and export your analysis.
+              Compare veteran benefits across all 50 states + DC. Filter by category and view detailed eligibility requirements. Currently free - no account needed.
             </p>
           </div>
 
@@ -345,7 +345,7 @@ export default function StateBenefits({ publicMode = false }) {
           <div className="mt-12 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-12 text-white text-center">
             <h3 className="text-2xl font-bold mb-4">All Features Free Now</h3>
             <p className="text-lg text-green-100">
-              All features currently free during government shutdown - full access available now
+              Premium features temporarily free - State benefits comparison always free
             </p>
           </div>
         </div>
@@ -842,7 +842,7 @@ export default function StateBenefits({ publicMode = false }) {
                   All Features Free
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                  All features currently free during government shutdown - full access available now
+                  Premium features temporarily free - State benefits comparison always free
                 </p>
               </div>
             </div>

@@ -184,10 +184,7 @@ export default function Pricing() {
       {/* Government Shutdown Support Header */}
       {paymentUIHidden && (
         <div className="mb-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-5xl" role="img" aria-label="US Flag">🇺🇸</span>
-            <h2 className="text-3xl font-bold">Supporting Veterans During Government Shutdown</h2>
-          </div>
+          <h2 className="text-3xl font-bold mb-4">Supporting Veterans During Government Shutdown</h2>
 
           <p className="text-xl mb-4 text-blue-100">
             <strong>All premium features remain FREE</strong> until federal operations resume
@@ -195,16 +192,12 @@ export default function Pricing() {
 
           <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 max-w-3xl mx-auto mb-4">
             <p className="text-base text-blue-100 font-medium">
-              Active duty, veterans, and military families - you have enough to worry about. Focus on your transition, we've got the rest covered.
+              Active duty, veterans, and military families - focus on your transition, we've got the rest covered.
             </p>
           </div>
 
-          <p className="text-blue-100 max-w-2xl mx-auto mb-3">
-            All premium features are free until the government shutdown ends. Start using tools immediately - no account needed.
-          </p>
-
           <p className="text-sm text-blue-200 max-w-2xl mx-auto">
-            Prices shown below for transparency about future value, but no payment is needed during the shutdown.
+            Premium pricing shown below will apply when federal operations resume. Core transition tools remain free forever.
           </p>
         </div>
       )}
@@ -381,7 +374,7 @@ export default function Pricing() {
               </ul>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-              All features currently free - no account needed during government shutdown
+              Premium features temporarily free. Core tools (state benefits, basic calculator, resources) remain free forever.
             </p>
           </div>
         </div>
@@ -582,9 +575,29 @@ export default function Pricing() {
         <h2 className="text-3xl font-bold mb-4">
           Ready to take control of your transition?
         </h2>
-        <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-          All features currently free during government shutdown. Start using our tools immediately from the home page - no account needed.
-        </p>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="grid md:grid-cols-2 gap-6 text-left">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+              <h3 className="font-bold text-xl mb-3">Core Features (Always Free)</h3>
+              <ul className="space-y-2 text-blue-100">
+                <li>• State benefits comparison</li>
+                <li>• Basic retirement calculator</li>
+                <li>• Resource library</li>
+              </ul>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+              <h3 className="font-bold text-xl mb-3">Premium Features (Currently Free)</h3>
+              <ul className="space-y-2 text-blue-100">
+                <li>• VA claims builder</li>
+                <li>• Resume tools</li>
+                <li>• Cloud storage & sync</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-sm text-blue-200">
+            During the shutdown, everything is free. When operations resume, premium features will require a paid plan.
+          </p>
+        </div>
       </div>
     </div>
   )

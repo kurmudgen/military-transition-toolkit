@@ -341,7 +341,10 @@ export default function RetirementCalculator({ publicMode = false }) {
           <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
             <h2 className="text-3xl font-bold mb-4">Retirement Calculator</h2>
             <p className="text-xl text-green-100 mb-2">
-              All features currently free during government shutdown
+              Premium features temporarily free during government shutdown
+            </p>
+            <p className="text-sm text-green-200">
+              Core calculator always free - no account needed
             </p>
           </div>
 
@@ -459,7 +462,7 @@ export default function RetirementCalculator({ publicMode = false }) {
 
                   <div className="mt-6 p-4 bg-green-900/30 border border-green-600 rounded-lg">
                     <p className="text-green-300 text-sm font-semibold mb-2">
-                      All features currently free during government shutdown
+                      Premium features currently free
                     </p>
                     <ul className="text-slate-300 text-sm space-y-1 list-disc list-inside">
                       <li>State-specific tax calculations for all 50 states</li>
@@ -472,6 +475,162 @@ export default function RetirementCalculator({ publicMode = false }) {
                   </div>
                 </div>
               )}
+            </div>
+          </div>
+
+          {/* VA Disability Calculator */}
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl shadow-xl p-8 mt-8">
+            <h2 className="text-3xl font-bold text-white mb-3">
+              VA Disability Compensation Calculator
+            </h2>
+            <p className="text-slate-300 mb-8 text-lg">
+              Calculate your monthly VA disability compensation based on rating and dependents
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {/* Disability Rating Dropdown */}
+              <div>
+                <label className="block text-sm font-semibold text-slate-300 mb-2">
+                  Disability Rating
+                </label>
+                <select
+                  value={vaCalcRating}
+                  onChange={(e) => setVaCalcRating(e.target.value)}
+                  className="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white"
+                >
+                  <option value="0%">0% - No Compensation</option>
+                  <option value="10%">10%</option>
+                  <option value="20%">20%</option>
+                  <option value="30%">30%</option>
+                  <option value="40%">40%</option>
+                  <option value="50%">50%</option>
+                  <option value="60%">60%</option>
+                  <option value="70%">70%</option>
+                  <option value="80%">80%</option>
+                  <option value="90%">90%</option>
+                  <option value="100%">100%</option>
+                </select>
+              </div>
+
+              {/* Dependents Dropdown */}
+              <div>
+                <label className="block text-sm font-semibold text-slate-300 mb-2">
+                  Do you have dependents?
+                </label>
+                <select
+                  value={vaCalcDependents}
+                  onChange={(e) => setVaCalcDependents(e.target.value)}
+                  className="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white"
+                >
+                  <option value="base">No dependents</option>
+                  <option value="withSpouse">Spouse only</option>
+                  <option value="spouseAndOneChild">Spouse + 1 child</option>
+                  <option value="spouseAndTwoChildren">Spouse + 2 children</option>
+                  <option value="spouseAndThreeChildren">Spouse + 3+ children</option>
+                  <option value="oneChildNoSpouse">1 child (no spouse)</option>
+                  <option value="twoChildrenNoSpouse">2+ children (no spouse)</option>
+                  <option value="oneParent">Dependent parent(s)</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Results Display */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 border-2 border-green-500 rounded-xl p-6">
+                <h3 className="text-sm text-slate-300 mb-2">Monthly VA Disability</h3>
+                <div className="text-4xl font-bold text-green-400">
+                  ${vaMonthly.toLocaleString()}
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-900/30 to-indigo-900/30 border-2 border-blue-500 rounded-xl p-6">
+                <h3 className="text-sm text-slate-300 mb-2">Annual VA Disability</h3>
+                <div className="text-4xl font-bold text-blue-400">
+                  ${vaAnnual.toLocaleString()}
+                </div>
+              </div>
+            </div>
+
+            {/* Combined Results */}
+            {showResults && basicResults > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border-2 border-purple-500 rounded-xl p-6">
+                  <h3 className="text-sm text-slate-300 mb-2">Combined Monthly (Retirement + VA)</h3>
+                  <div className="text-4xl font-bold text-purple-400">
+                    ${(basicResults + vaMonthly).toLocaleString()}
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-pink-900/30 to-red-900/30 border-2 border-pink-500 rounded-xl p-6">
+                  <h3 className="text-sm text-slate-300 mb-2">Combined Annual</h3>
+                  <div className="text-4xl font-bold text-pink-400">
+                    ${((basicResults + vaMonthly) * 12).toLocaleString()}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Tax-free disclaimer */}
+            <div className="bg-yellow-900/30 border border-yellow-600 rounded-lg p-4">
+              <p className="text-sm text-yellow-200">
+                <strong>Important:</strong> VA disability compensation is federal tax-free and not reduced by state taxes.
+                Rates shown are for 2025.
+              </p>
+            </div>
+          </div>
+
+          {/* Premium Features Callout */}
+          <div className="bg-gradient-to-br from-blue-900/40 to-indigo-900/40 border-2 border-blue-500 rounded-2xl shadow-xl p-8 mt-8">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="text-4xl">🔒</div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Premium Features Available</h3>
+                <p className="text-blue-200">Currently free during government shutdown</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <ul className="space-y-2 text-slate-200">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>Save and track multiple retirement scenarios</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>Export calculations to PDF</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>State tax comparison for all 50 states</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>BAH and BAS calculations by location</span>
+                </li>
+              </ul>
+              <ul className="space-y-2 text-slate-200">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>Survivor Benefit Plan (SBP) calculator</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>REDUX vs High-36 comparison tool</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-400 mt-1">✓</span>
+                  <span>Cloud storage - access from any device</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="text-center">
+              <p className="text-xl font-bold text-white mb-2">
+                Upgrade to Premium - $7/month
+              </p>
+              <p className="text-sm text-blue-300">
+                Free during government shutdown. Standard pricing applies when federal operations resume.
+              </p>
             </div>
           </div>
 
