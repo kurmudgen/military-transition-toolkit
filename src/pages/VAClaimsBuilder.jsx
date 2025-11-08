@@ -185,7 +185,7 @@ const SECONDARY_SUGGESTIONS = {
   ]
 }
 
-export default function VAClaimsBuilder({ previewMode = false }) {
+export default function VAClaimsBuilder({ previewMode = false, demoMode = false }) {
   const [activeTab, setActiveTab] = useState('builder') // builder, evidence
   const [selectedConditions, setSelectedConditions] = useState([])
   const [conditionDetails, setConditionDetails] = useState({})
@@ -204,9 +204,144 @@ export default function VAClaimsBuilder({ previewMode = false }) {
     document.title = 'VA Claims Builder | Military Transition Toolkit'
   }, [])
 
-  // Load data from Supabase database
+  // Load data from Supabase database or demo data
   useEffect(() => {
     const loadVAData = async () => {
+      // Handle demo mode with pre-populated sample data
+      if (demoMode) {
+        const demoConditions = ['PTSD (Post-Traumatic Stress Disorder)', 'Left knee pain/injury', 'Tinnitus']
+        const demoDetails = {
+          'PTSD (Post-Traumatic Stress Disorder)': {
+            startDate: '2018-06',
+            incident: 'During my deployment to Afghanistan in 2018, our convoy was hit by an IED. I witnessed casualties and experienced multiple combat situations that continue to affect me today.',
+            symptoms: {
+              'Nightmares or night terrors': true,
+              'Flashbacks or intrusive memories': true,
+              'Avoidance of situations that remind you of trauma': true,
+              'Difficulty sleeping': true,
+              'Hypervigilance or being easily startled': true,
+              'Irritability or anger outbursts': true
+            },
+            frequency: 'Nightmares occur 3-4 times per week. Flashbacks triggered by loud noises or crowded places.',
+            worsening: 'Symptoms worse during fireworks, thunderstorms, or in crowded public spaces',
+            treatment: {
+              'VA mental health appointments': true,
+              'Private therapy/counseling': true,
+              'Prescribed medication': true
+            },
+            limitations: {
+              'Difficulty maintaining employment': true,
+              'Avoiding public places or crowds': true,
+              'Problems with relationships': true,
+              'Difficulty concentrating at work': true
+            },
+            painLevel: '',
+            category: 'Mental Health',
+            serviceConnected: true,
+            estimatedRating: '70%',
+            notes: 'Currently receiving therapy at VA and taking prescribed medications for anxiety and sleep.'
+          },
+          'Left knee pain/injury': {
+            startDate: '2019-03',
+            incident: 'Injured during field training exercise when I landed incorrectly during a tactical movement. Knee gave out and I fell. Have had chronic pain and instability since.',
+            symptoms: {
+              'Pain during activity': true,
+              'Swelling or inflammation': true,
+              'Limited range of motion': true,
+              'Instability or knee giving way': true,
+              'Pain when climbing stairs': true
+            },
+            frequency: 'Daily pain, especially after physical activity or at end of day',
+            worsening: 'Pain increases with prolonged standing, climbing stairs, running, or cold weather',
+            treatment: {
+              'Physical therapy': true,
+              'Pain medication': true,
+              'Ice/heat therapy': true
+            },
+            limitations: {
+              'Walking long distances': true,
+              'Standing for long periods': true,
+              'Climbing stairs': true,
+              'Running or jogging': true,
+              'Kneeling or squatting': true
+            },
+            painLevel: '6',
+            category: 'Musculoskeletal',
+            serviceConnected: true,
+            estimatedRating: '10-20%',
+            notes: 'MRI shows meniscus tear and early arthritis. PT helped initially but pain persists.'
+          },
+          'Tinnitus': {
+            startDate: '2017-01',
+            incident: 'Exposure to heavy weapons fire, explosions, and aircraft noise during multiple deployments. Ringing started during first deployment and has been constant since.',
+            symptoms: {
+              'Constant ringing or buzzing': true,
+              'Difficulty hearing conversations': true,
+              'Worse in quiet environments': true
+            },
+            frequency: 'Constant 24/7, high-pitched ringing in both ears',
+            worsening: 'More noticeable in quiet environments, makes it difficult to sleep',
+            treatment: {
+              'Hearing aids': false,
+              'Sound therapy': true,
+              'VA audiology appointments': true
+            },
+            limitations: {
+              'Difficulty sleeping': true,
+              'Difficulty concentrating': true,
+              'Avoidance of loud environments': true
+            },
+            painLevel: '',
+            category: 'Hearing',
+            serviceConnected: true,
+            estimatedRating: '10%',
+            notes: 'Audiologist confirmed hearing loss. Use white noise machine to sleep.'
+          }
+        }
+
+        const demoEvidence = {
+          'PTSD (Post-Traumatic Stress Disorder)': {
+            required: {
+              strs: { status: 'complete', notes: 'Obtained service treatment records showing mental health visits during service', details: {} },
+              diagnosis: { status: 'complete', notes: 'VA psychiatrist diagnosis on file', details: {} },
+              nexus: { status: 'pending', notes: 'Need nexus letter from provider', details: {} }
+            },
+            recommended: {
+              buddy_statements: { status: 'complete', notes: 'Statement from fellow service member confirming IED incident', details: {} },
+              personal_statement: { status: 'complete', notes: 'Detailed personal statement written', details: {} }
+            }
+          },
+          'Left knee pain/injury': {
+            required: {
+              strs: { status: 'complete', notes: 'Service medical records document injury during training', details: {} },
+              diagnosis: { status: 'complete', notes: 'Orthopedic diagnosis with MRI results', details: {} },
+              nexus: { status: 'complete', notes: 'Doctor confirmed injury relates to service incident', details: {} }
+            },
+            recommended: {
+              buddy_statements: { status: 'pending', notes: 'Could get statement from training NCO', details: {} }
+            }
+          },
+          'Tinnitus': {
+            required: {
+              strs: { status: 'complete', notes: 'Service records show noise exposure', details: {} },
+              diagnosis: { status: 'complete', notes: 'Audiologist confirmed tinnitus', details: {} },
+              nexus: { status: 'complete', notes: 'Audiologist linked to service noise exposure', details: {} }
+            },
+            recommended: {
+              noise_exposure: { status: 'complete', notes: 'DD-214 shows combat MOS and deployments', details: {} }
+            }
+          }
+        }
+
+        setSelectedConditions(demoConditions)
+        setConditionDetails(demoDetails)
+        setEvidenceTracking(demoEvidence)
+        setLoading(false)
+        console.log('✓ Demo data loaded')
+        return
+      }
+
+      // Normal database loading for non-demo mode
       try {
         setLoading(true)
         setError(null)
@@ -295,7 +430,7 @@ export default function VAClaimsBuilder({ previewMode = false }) {
     }
 
     loadVAData()
-  }, [])
+  }, [demoMode])
 
   // Helper function to save condition to database
   const saveConditionToDatabase = async (conditionName, details, isNew = false) => {
@@ -363,6 +498,51 @@ export default function VAClaimsBuilder({ previewMode = false }) {
     } catch (err) {
       console.error('Error deleting condition:', err)
       setError(`Failed to delete ${conditionName}. Please try again.`)
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  // Helper function to delete ALL VA claims data
+  const deleteAllVAData = async () => {
+    const confirmed = window.confirm(
+      '⚠️ WARNING: This will permanently delete ALL your VA claims data, including all conditions, symptoms, and evidence tracking.\n\nThis action CANNOT be undone.\n\nAre you absolutely sure you want to delete everything?'
+    )
+
+    if (!confirmed) return
+
+    // Double confirmation for extra safety
+    const doubleConfirmed = window.confirm(
+      'Final confirmation: Delete ALL VA claims data?\n\nClick OK to permanently delete everything, or Cancel to keep your data.'
+    )
+
+    if (!doubleConfirmed) return
+
+    try {
+      setSaving(true)
+      setError(null)
+
+      // Delete all conditions from database
+      const deletePromises = Object.entries(conditionIdMap).map(async ([name, id]) => {
+        await deleteVACondition(id)
+      })
+
+      await Promise.all(deletePromises)
+
+      // Clear all local state
+      setSelectedConditions([])
+      setConditionDetails({})
+      setEvidenceTracking({})
+      setConditionIdMap({})
+      setGeneratedStatements(null)
+      setExpandedCategories({})
+      setExpandedEvidence({})
+
+      console.log('✓ All VA claims data deleted successfully')
+      alert('✓ All VA claims data has been permanently deleted.')
+    } catch (err) {
+      console.error('Error deleting all VA data:', err)
+      setError('Failed to delete all data. Please try again or contact support.')
     } finally {
       setSaving(false)
     }
@@ -749,7 +929,7 @@ export default function VAClaimsBuilder({ previewMode = false }) {
         />
       )}
 
-      <div className={`bg-white rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
+      <div className={`bg-white rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''} ${demoMode ? 'pointer-events-none' : ''}`}>
         {/* Error Alert */}
         {error && (
           <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-400 rounded">
@@ -802,24 +982,67 @@ export default function VAClaimsBuilder({ previewMode = false }) {
           Build comprehensive claim statements and track evidence for your VA disability application
         </p>
 
-        {/* Privacy Warning */}
-        <div className="mb-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
-          <div className="flex items-start">
-            <div className="flex-shrink-0">
-              <svg className="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <div className="ml-3">
-              <h3 className="text-sm font-medium text-blue-800">Privacy & Security</h3>
-              <div className="mt-2 text-sm text-blue-700">
-                <p>
-                  🔒 Your sensitive medical and personal information is <strong>securely stored in the cloud</strong> with bank-level encryption. Your data is <strong>automatically backed up</strong> and accessible from any device. We use row-level security to ensure complete data isolation - only you can access your VA claims information.
+        {/* Demo Banner or Privacy Warning */}
+        {demoMode ? (
+          <div className="mb-6 p-6 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg shadow-lg border-2 border-purple-400">
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <svg className="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3 flex-1">
+                <h3 className="text-lg font-bold text-white mb-2">👀 Interactive Demo - Explore Sample VA Claims</h3>
+                <div className="text-sm text-purple-100 mb-4">
+                  <p className="mb-2">
+                    You're viewing <strong>realistic sample data</strong> showing how veterans build VA disability claims with our tool. This demo includes:
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 ml-2">
+                    <li>3 common conditions (PTSD, knee injury, tinnitus)</li>
+                    <li>Detailed symptoms and functional limitations</li>
+                    <li>Evidence tracking with completion status</li>
+                    <li>Generated claim statements</li>
+                  </ul>
+                </div>
+                <p className="text-white font-semibold text-sm mb-3">
+                  💡 Explore both the <span className="underline">Claims Builder</span> and <span className="underline">Evidence Tracker</span> tabs to see the full system in action.
                 </p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="/signup"
+                    className="inline-flex items-center px-5 py-2.5 bg-white text-purple-700 font-bold rounded-lg hover:bg-purple-50 transition-colors shadow-md"
+                  >
+                    Sign Up Free - Build Your Own Claims
+                  </a>
+                  <a
+                    href="/"
+                    className="inline-flex items-center px-5 py-2.5 bg-purple-700 text-white font-semibold rounded-lg hover:bg-purple-800 transition-colors border-2 border-white"
+                  >
+                    ← Back to Home
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <div className="mb-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <h3 className="text-sm font-medium text-blue-800">Privacy & Security</h3>
+                <div className="mt-2 text-sm text-blue-700">
+                  <p>
+                    🔒 Your sensitive medical and personal information is <strong>securely stored in the cloud</strong> with bank-level encryption. Your data is <strong>automatically backed up</strong> and accessible from any device. We use row-level security to ensure complete data isolation - only you can access your VA claims information.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Tab Navigation */}
         <div className="border-b border-gray-200 mb-6">
@@ -1214,6 +1437,38 @@ export default function VAClaimsBuilder({ previewMode = false }) {
                   </div>
                 </div>
 
+                {/* Conditions Being Tracked */}
+                <div className="mb-6 p-4 bg-slate-50 border border-slate-300 rounded-lg">
+                  <h3 className="font-bold text-slate-900 mb-3">📋 Conditions Being Tracked ({selectedConditions.length})</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                    {selectedConditions.map((condition, idx) => {
+                      const progress = getEvidenceProgress(condition)
+                      return (
+                        <button
+                          key={condition}
+                          onClick={() => {
+                            setExpandedEvidence(prev => ({ ...prev, [condition]: true }))
+                            setTimeout(() => {
+                              document.getElementById(`evidence-${idx}`)?.scrollIntoView({ behavior: 'smooth' })
+                            }, 100)
+                          }}
+                          className="flex items-center justify-between p-2 bg-white border border-slate-200 rounded hover:bg-slate-100 hover:border-blue-400 transition-all text-left group"
+                        >
+                          <span className="text-sm text-slate-700 group-hover:text-blue-600 font-medium truncate mr-2">{condition}</span>
+                          <span className={`text-xs font-semibold px-2 py-1 rounded ${
+                            progress === 100 ? 'bg-green-100 text-green-700' :
+                            progress >= 50 ? 'bg-yellow-100 text-yellow-700' :
+                            'bg-red-100 text-red-700'
+                          }`}>
+                            {progress}%
+                          </span>
+                        </button>
+                      )
+                    })}
+                  </div>
+                  <p className="text-xs text-slate-500 mt-3">Click any condition to jump to its evidence tracker below</p>
+                </div>
+
                 {/* Priority Alerts */}
                 {missingCritical.length > 0 && (
                   <div className="mb-6 p-4 bg-red-50 border-2 border-red-300 rounded-lg">
@@ -1245,13 +1500,19 @@ export default function VAClaimsBuilder({ previewMode = false }) {
                   </div>
                 )}
 
-                {/* Export Button */}
-                <div className="mb-6">
+                {/* Export and Data Management Buttons */}
+                <div className="mb-6 flex flex-wrap gap-3 items-center">
                   <button
                     onClick={exportEvidenceChecklist}
                     className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm"
                   >
                     Export Evidence Tracker as PDF
+                  </button>
+                  <button
+                    onClick={deleteAllVAData}
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 text-sm border-2 border-red-700 font-semibold"
+                  >
+                    🗑️ Delete All Data
                   </button>
                 </div>
 

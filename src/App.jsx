@@ -76,6 +76,9 @@ function App() {
         <Route path="/preview/progress" element={<Progress previewMode />} />
         <Route path="/preview/reminders" element={<Reminders previewMode />} />
 
+        {/* Demo pages (no login required, interactive with sample data) */}
+        <Route path="/demo/va-claims" element={<VAClaimsBuilder demoMode />} />
+
         {/* Protected application routes with Layout */}
         <Route
           path="/app"
