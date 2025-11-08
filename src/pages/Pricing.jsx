@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { CheckCircleIcon, SparklesIcon, RocketLaunchIcon } from '@heroicons/react/24/outline'
 import { PRICING, shouldHidePaymentUI } from '../utils/promoConfig'
+import { SHUTDOWN_BANNER } from '../utils/constants'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { createCheckoutSession } from '../services/subscriptionService'
 import { getCurrentUser } from '../lib/supabase'
@@ -83,21 +84,17 @@ export default function Pricing() {
     }
   }
 
-  const PlanCard = ({ plan, planId, featured = false }) => (
+  const PlanCard = ({ plan, planId, featured = false, bestValue = false }) => (
     <div
-      className={`relative rounded-2xl border-2 p-8 h-full flex flex-col bg-white dark:bg-gray-800 ${
+      className={`relative rounded-2xl border-2 p-8 h-full flex flex-col bg-slate-800 ${
         featured
-          ? 'border-blue-600 dark:border-blue-500 shadow-2xl scale-105'
-          : 'border-gray-200 dark:border-gray-700 shadow-lg'
+          ? 'border-blue-500 shadow-2xl'
+          : 'border-slate-700 shadow-lg'
       }`}
     >
       {plan.badge && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <div className={`${
-            featured
-              ? 'bg-gradient-to-r from-blue-600 to-blue-500'
-              : 'bg-gradient-to-r from-purple-600 to-purple-500'
-          } text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1`}>
+          <div className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
             <SparklesIcon className="h-4 w-4" />
             {plan.badge}
           </div>
@@ -105,37 +102,32 @@ export default function Pricing() {
       )}
 
       <div className="text-center mb-6">
-        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+        <h3 className="text-2xl font-bold text-white mb-2">
           {plan.name}
         </h3>
         {plan.description && (
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <p className="text-sm text-slate-400 mb-3">
             {plan.description}
           </p>
         )}
         <div className="flex items-baseline justify-center gap-1">
           {plan.originalPrice && (
-            <span className="text-2xl font-semibold text-gray-400 dark:text-gray-500 line-through">
+            <span className="text-2xl font-semibold text-slate-500 line-through">
               ${plan.originalPrice}
             </span>
           )}
-          <span className="text-5xl font-bold text-gray-900 dark:text-white">
+          <span className="text-5xl font-bold text-white">
             ${plan.price}
           </span>
           {plan.priceMonthly && (
-            <span className="text-gray-600 dark:text-gray-400 text-sm">
+            <span className="text-slate-400 text-sm">
               (${plan.priceMonthly}/mo)
             </span>
           )}
         </div>
         {plan.savings && (
-          <p className="text-green-600 dark:text-green-400 font-semibold mt-2">
+          <p className="text-green-400 font-semibold mt-2">
             Save ${plan.savings}
-          </p>
-        )}
-        {plan.price === 0 && (
-          <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
-            Forever Free
           </p>
         )}
       </div>
@@ -143,242 +135,68 @@ export default function Pricing() {
       <ul className="space-y-3 mb-8 flex-1">
         {plan.features.map((feature, index) => (
           <li key={index} className="flex items-start gap-3">
-            <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-            <span className="text-gray-700 dark:text-gray-300 text-sm">{feature}</span>
+            <CheckCircleIcon className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
+            <span className="text-slate-300 text-sm">{feature}</span>
           </li>
         ))}
       </ul>
 
       <button
         onClick={() => handleSelectPlan(planId)}
-        disabled={loading || (paymentUIHidden && planId !== 'free')}
-        className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors mt-auto disabled:opacity-50 disabled:cursor-not-allowed ${
-          paymentUIHidden && planId !== 'free'
-            ? 'bg-gray-400 text-gray-100 cursor-not-allowed shadow-md'
-            : planId === 'free'
-            ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md'
-            : featured
-            ? 'bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg'
-            : 'bg-blue-600 hover:bg-blue-700 text-white shadow-md'
-        }`}
+        disabled={loading || paymentUIHidden}
+        className="w-full py-3 px-6 rounded-lg font-semibold transition-colors mt-auto bg-slate-700 text-slate-300 cursor-not-allowed shadow-md"
       >
-        {loading ? 'Processing...' : paymentUIHidden && planId !== 'free' ? 'Currently Free - No Payment Needed' : planId === 'free' ? 'Get Started Free' : 'Select Plan'}
+        {loading ? 'Processing...' : 'Currently Free - No Payment Needed'}
       </button>
     </div>
   )
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 bg-white dark:bg-gray-900 min-h-screen transition-colors">
-      {/* Cancel Message */}
-      {showCancelMessage && (
-        <div className="mb-8 bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-400 dark:border-yellow-600 rounded-xl p-6 text-center">
-          <p className="text-yellow-800 dark:text-yellow-200 font-semibold mb-2">
-            No charge was made to your card
-          </p>
-          <p className="text-yellow-700 dark:text-yellow-300 text-sm">
-            You can try again anytime. We're here to help if you have questions!
-          </p>
-        </div>
-      )}
-
-      {/* Government Shutdown Support Header */}
-      {paymentUIHidden && (
-        <div className="mb-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center shadow-2xl">
-          <h2 className="text-3xl font-bold mb-4">Supporting Veterans During Government Shutdown</h2>
-
-          <p className="text-xl mb-4 text-blue-100">
-            <strong>All premium features remain FREE</strong> until federal operations resume
-          </p>
-
-          <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 max-w-3xl mx-auto mb-4">
-            <p className="text-base text-blue-100 font-medium">
-              Active duty, veterans, and military families - focus on your transition, we've got the rest covered.
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Cancel Message */}
+        {showCancelMessage && (
+          <div className="mb-8 bg-yellow-900/20 border-2 border-yellow-600 rounded-xl p-6 text-center">
+            <p className="text-yellow-200 font-semibold mb-2">
+              No charge was made to your card
+            </p>
+            <p className="text-yellow-300 text-sm">
+              You can try again anytime. We're here to help if you have questions!
             </p>
           </div>
+        )}
 
-          <p className="text-sm text-blue-200 max-w-2xl mx-auto">
-            Premium pricing shown below will apply when federal operations resume. Core transition tools remain free forever.
+        {/* Shutdown Banner */}
+        <div className="mb-12 bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-700/30 rounded-2xl p-8 text-center shadow-xl">
+          <h2 className="text-2xl font-bold text-white mb-3">Supporting Veterans During Shutdown</h2>
+          <p className="text-xl text-green-100 mb-2">
+            {SHUTDOWN_BANNER.line1}
+          </p>
+          <p className="text-sm text-green-200">
+            {SHUTDOWN_BANNER.line2}
           </p>
         </div>
-      )}
 
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Simple, Transparent Pricing
-        </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Start free and upgrade when you're ready. No tricks, no time limits, no pressure.
-        </p>
-      </div>
-
-      {/* 3-Tier Model Explanation - Only show when payment UI is visible */}
-      {!paymentUIHidden && (
-        <div className="mb-16 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-800">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            What's Free Forever
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Tier 1: Public Features */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 dark:bg-green-900/40 rounded-full mb-3">
-                  <CheckCircleIcon className="w-6 h-6 text-green-600 dark:text-green-400" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Always Free
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">No login required</p>
-              </div>
-              <ul className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>State benefits comparison tool</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Basic retirement calculator</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Resources and links</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Sample checklists</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Tier 2: Preview Features */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-full mb-3">
-                  <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Try Before You Buy
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">View-only preview mode</p>
-              </div>
-              <ul className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                <li className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>See the VA Claims Builder UI</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>Preview resume builder templates</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>Explore all premium tools</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>No credit card needed</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Tier 3: Premium Features */}
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl p-6 shadow-lg text-white">
-              <div className="text-center mb-4">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
-                  <RocketLaunchIcon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">
-                  Premium Access
-                </h3>
-                <p className="text-sm text-blue-100">Full features + cloud storage</p>
-              </div>
-              <ul className="space-y-3 text-sm text-blue-50">
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
-                  <span>Save and track everything</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
-                  <span>Unlimited claims, resumes, jobs</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
-                  <span>Cloud sync across devices</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircleIcon className="w-4 h-4 text-white flex-shrink-0 mt-0.5" />
-                  <span>Priority support</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <p className="text-center text-gray-600 dark:text-gray-400 mt-8 text-sm">
-            <strong>No pressure:</strong> Try premium features in preview mode before deciding to upgrade
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-white mb-4">
+            Simple, Transparent Pricing
+          </h1>
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-6">
+            Core features like state benefits and basic calculator are always free - no account needed.
+          </p>
+          <p className="text-lg text-slate-400 max-w-3xl mx-auto">
+            Premium features below unlock cloud storage, advanced tools, and unlimited tracking.
           </p>
         </div>
-      )}
 
-      {/* Pricing Cards - Showing prices but non-clickable during promo mode */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 items-stretch">
-        <PlanCard plan={PRICING.FREE} planId="free" />
-        <PlanCard plan={PRICING.MONTHLY} planId="monthly" />
-        <PlanCard plan={PRICING.ANNUAL} planId="annual" />
-        <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured />
-      </div>
-
-      {/* Promo Mode Message - Show when payment UI is hidden */}
-      {paymentUIHidden && (
-        <div className="mb-16 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border-2 border-green-500 dark:border-green-600 rounded-2xl p-12 text-center shadow-2xl">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-6xl mb-6">🎉</div>
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              All Premium Features Are FREE
-            </h2>
-            <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">
-              During our government shutdown support promotion, every feature of Military Transition Toolkit
-              is completely free. No credit card required. No payment needed.
-            </p>
-            <div className="bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl p-6 mb-6">
-              <ul className="space-y-3 text-left">
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Unlimited resumes and job applications</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>VA disability claims builder with evidence tracking</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Advanced retirement calculator (BRS & High-3)</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Cloud storage and device sync</span>
-                </li>
-                <li className="flex items-start gap-3 text-gray-800 dark:text-gray-200">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <span>Priority support</span>
-                </li>
-              </ul>
-            </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-              Premium features temporarily free. Core tools (state benefits, basic calculator, resources) remain free forever.
-            </p>
-          </div>
+        {/* Pricing Cards - 3 paid tiers only */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16 items-stretch max-w-5xl mx-auto">
+          <PlanCard plan={PRICING.MONTHLY} planId="monthly" />
+          <PlanCard plan={PRICING.ANNUAL} planId="annual" bestValue />
+          <PlanCard plan={PRICING.LIFETIME} planId="lifetime" featured />
         </div>
-      )}
+
 
       {/* Optional Donation Section - Promo Mode Only */}
       {/* TODO: Wire up donation checkout after soft launch */}
@@ -453,151 +271,105 @@ export default function Pricing() {
       )}
 
 
-      {/* Feature Comparison */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-          What's Included
-        </h2>
-        <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
-          <table className="w-full">
-            <thead className="bg-gray-50 dark:bg-gray-700">
-              <tr>
-                <th className="text-left py-4 px-6 font-semibold text-gray-900 dark:text-white">Feature</th>
-                <th className="text-center py-4 px-6 font-semibold text-gray-900 dark:text-white">Free</th>
-                <th className="text-center py-4 px-6 font-semibold text-gray-900 dark:text-white">Premium</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-              <tr>
-                <td className="py-4 px-6 text-gray-700 dark:text-gray-300">Basic transition checklists</td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-gray-700 dark:text-gray-300">State benefits comparison</td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-gray-700 dark:text-gray-300">Advanced retirement calculator (BRS & High-3)</td>
-                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">Basic only</td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-gray-700 dark:text-gray-300">VA disability claims builder</td>
-                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">—</td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-gray-700 dark:text-gray-300">Cloud storage & device sync</td>
-                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">—</td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-              </tr>
-              <tr>
-                <td className="py-4 px-6 text-gray-700 dark:text-gray-300">Priority support</td>
-                <td className="text-center py-4 px-6 text-gray-400 dark:text-gray-500">—</td>
-                <td className="text-center py-4 px-6">
-                  <CheckCircleIcon className="h-6 w-6 text-green-600 dark:text-green-400 mx-auto" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        {/* Feature Comparison */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">
+            Premium Features
+          </h2>
+          <div className="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden">
+            <table className="w-full">
+              <thead className="bg-slate-700">
+                <tr>
+                  <th className="text-left py-4 px-6 font-semibold text-white">Feature</th>
+                  <th className="text-center py-4 px-6 font-semibold text-white">Included</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-700">
+                <tr className="bg-slate-800">
+                  <td className="py-4 px-6 text-slate-300">Unlimited resumes with ATS optimization</td>
+                  <td className="text-center py-4 px-6">
+                    <CheckCircleIcon className="h-6 w-6 text-green-400 mx-auto" />
+                  </td>
+                </tr>
+                <tr className="bg-slate-800/50">
+                  <td className="py-4 px-6 text-slate-300">VA disability claims builder</td>
+                  <td className="text-center py-4 px-6">
+                    <CheckCircleIcon className="h-6 w-6 text-green-400 mx-auto" />
+                  </td>
+                </tr>
+                <tr className="bg-slate-800">
+                  <td className="py-4 px-6 text-slate-300">Evidence tracking and management</td>
+                  <td className="text-center py-4 px-6">
+                    <CheckCircleIcon className="h-6 w-6 text-green-400 mx-auto" />
+                  </td>
+                </tr>
+                <tr className="bg-slate-800/50">
+                  <td className="py-4 px-6 text-slate-300">Advanced retirement calculator (BRS & High-3)</td>
+                  <td className="text-center py-4 px-6">
+                    <CheckCircleIcon className="h-6 w-6 text-green-400 mx-auto" />
+                  </td>
+                </tr>
+                <tr className="bg-slate-800">
+                  <td className="py-4 px-6 text-slate-300">Cloud storage & device sync</td>
+                  <td className="text-center py-4 px-6">
+                    <CheckCircleIcon className="h-6 w-6 text-green-400 mx-auto" />
+                  </td>
+                </tr>
+                <tr className="bg-slate-800/50">
+                  <td className="py-4 px-6 text-slate-300">PDF exports and document generation</td>
+                  <td className="text-center py-4 px-6">
+                    <CheckCircleIcon className="h-6 w-6 text-green-400 mx-auto" />
+                  </td>
+                </tr>
+                <tr className="bg-slate-800">
+                  <td className="py-4 px-6 text-slate-300">Priority support</td>
+                  <td className="text-center py-4 px-6">
+                    <CheckCircleIcon className="h-6 w-6 text-green-400 mx-auto" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
 
-      {/* FAQ Section */}
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-          Frequently Asked Questions
-        </h2>
-        <div className="space-y-4">
-          {paymentUIHidden && (
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-                What happens when the government shutdown ends?
+        {/* FAQ Section */}
+        <div className="max-w-3xl mx-auto mb-16">
+          <h2 className="text-2xl font-bold text-white mb-6 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+              <h3 className="font-semibold text-white mb-2">
+                Is my data safe and private?
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                In response to the government shutdown affecting military families, all premium features are currently free.
-                When federal operations resume, premium features will require a paid plan. Free tier users will still have access
-                to core transition planning tools, but advanced features like the VA claims builder and cloud sync
-                will require an upgrade.
+              <p className="text-slate-300">
+                Yes! Your data is protected with end-to-end encryption and stored securely in the cloud with
+                military-grade security. Only you can access your information. Premium users get automatic
+                cloud backup and the ability to sync across all their devices.
               </p>
             </div>
-          )}
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-              Is my data safe and private?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              Yes! Your data is protected with end-to-end encryption and stored securely in the cloud with
-              military-grade security. Only you can access your information. Premium users get automatic
-              cloud backup and the ability to sync across all their devices.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-              Can I cancel anytime?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              Absolutely. Monthly and annual plans can be cancelled at any time. You'll keep premium access until
-              the end of your billing period. Lifetime access never expires and has no recurring fees.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
-              What's included with Lifetime Access?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              Lifetime Access gives you ALL premium features, forever. This includes all future
-              features we add - no additional charges, ever. Plus, you get priority support and one-time
-              payment means no recurring bills.
-            </p>
+            <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+              <h3 className="font-semibold text-white mb-2">
+                Can I cancel anytime?
+              </h3>
+              <p className="text-slate-300">
+                Absolutely. Monthly and annual plans can be cancelled at any time. You'll keep premium access until
+                the end of your billing period. Lifetime access never expires and has no recurring fees.
+              </p>
+            </div>
+            <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+              <h3 className="font-semibold text-white mb-2">
+                What's included with Lifetime Access?
+              </h3>
+              <p className="text-slate-300">
+                Lifetime Access gives you ALL premium features, forever. This includes all future
+                features we add - no additional charges, ever. Plus, you get priority support and one-time
+                payment means no recurring bills.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* CTA Section */}
-      <div className="mt-16 text-center bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 text-white">
-        <h2 className="text-3xl font-bold mb-4">
-          Ready to take control of your transition?
-        </h2>
-        <div className="max-w-3xl mx-auto space-y-6">
-          <div className="grid md:grid-cols-2 gap-6 text-left">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="font-bold text-xl mb-3">Core Features (Always Free)</h3>
-              <ul className="space-y-2 text-blue-100">
-                <li>• State benefits comparison</li>
-                <li>• Basic retirement calculator</li>
-                <li>• Resource library</li>
-              </ul>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="font-bold text-xl mb-3">Premium Features (Currently Free)</h3>
-              <ul className="space-y-2 text-blue-100">
-                <li>• VA claims builder</li>
-                <li>• Resume tools</li>
-                <li>• Cloud storage & sync</li>
-              </ul>
-            </div>
-          </div>
-          <p className="text-sm text-blue-200">
-            During the shutdown, everything is free. When operations resume, premium features will require a paid plan.
-          </p>
-        </div>
       </div>
     </div>
   )
