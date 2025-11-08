@@ -118,6 +118,57 @@ export default function About() {
             </p>
           </div>
 
+          {/* Resources & Feedback */}
+          <div className="bg-gradient-to-r from-blue-900/40 to-purple-900/40 rounded-lg shadow-lg p-6 border-2 border-blue-500/50">
+            <h2 className="text-2xl font-bold text-white mb-4">📚 Resources & Feedback</h2>
+            <p className="text-slate-300 mb-6">
+              Stay updated with our progress and share your feedback to help us improve:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              {/* Roadmap Link */}
+              <a
+                href="https://docs.google.com/document/d/1pJ0rHGXtb9g3txue9hsiN-kritb-_ZAml1r6P2axq98/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-blue-400 rounded-lg p-4 transition-all group"
+              >
+                <div className="text-3xl mb-2">🗺️</div>
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400">View Full Roadmap</h3>
+                <p className="text-slate-400 text-sm">
+                  See detailed feature plans and upcoming improvements
+                </p>
+              </a>
+
+              {/* Changelog Link */}
+              <a
+                href="https://docs.google.com/document/d/10YECz-KhGHPeUjnzRvA1HYGnVIu6A2GSsUzHvd4v_k0/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-green-400 rounded-lg p-4 transition-all group"
+              >
+                <div className="text-3xl mb-2">📝</div>
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400">View Changelog</h3>
+                <p className="text-slate-400 text-sm">
+                  Track all updates, fixes, and new features
+                </p>
+              </a>
+
+              {/* Feedback Form Link */}
+              <a
+                href="https://forms.gle/Z3ZFnphafATv7pRn6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-purple-400 rounded-lg p-4 transition-all group"
+              >
+                <div className="text-3xl mb-2">💬</div>
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400">Submit Feedback</h3>
+                <p className="text-slate-400 text-sm">
+                  Share your experience and help us improve
+                </p>
+              </a>
+            </div>
+          </div>
+
           {/* Commitment */}
           <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
             <h2 className="text-2xl font-bold text-white mb-4">🤝 Our Commitment</h2>
