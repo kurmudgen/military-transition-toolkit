@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { getProfileData } from '../utils/profileAutoFill'
 import UseProfileButton from '../components/UseProfileButton'
 import { isPromoModeActive } from '../utils/promoConfig'
 import UpgradeOverlay from '../components/UpgradeOverlay'
+import { useAuth } from '../contexts/AuthContext'
+import { AUTH_LOADING_TIMEOUT } from '../utils/constants'
 import {
   SKILL_TRANSLATIONS,
   MOS_TRANSLATIONS,
@@ -25,6 +28,8 @@ import {
 } from '../services/resumeService'
 
 export default function ResumeBuilder({ previewMode = false }) {
+  const { user } = useAuth()
+
   // Feature gating hooks
   const { hasAccess: canExport, upgradeMessage: exportMessage } = useFeatureAccess(FEATURES.RESUME_EXPORT)
   const { checkLimit } = useUsageLimits()
@@ -35,6 +40,7 @@ export default function ResumeBuilder({ previewMode = false }) {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState(null)
+  const [showAuthPrompt, setShowAuthPrompt] = useState(false)
 
   const [currentStep, setCurrentStep] = useState(1)
   const [template, setTemplate] = useState('chronological')
@@ -73,6 +79,18 @@ export default function ResumeBuilder({ previewMode = false }) {
     trackPageView('Resume Builder')
     loadSavedResumes()
   }, [])
+
+  // Timeout for unauthenticated users - show auth prompt after timeout
+  useEffect(() => {
+    if (!user && loading) {
+      const timer = setTimeout(() => {
+        setLoading(false)
+        setShowAuthPrompt(true)
+      }, AUTH_LOADING_TIMEOUT)
+
+      return () => clearTimeout(timer)
+    }
+  }, [user, loading])
 
   const loadSavedResumes = async () => {
     try {
@@ -454,6 +472,47 @@ export default function ResumeBuilder({ previewMode = false }) {
   const getMOSTranslation = () => {
     const mos = resumeData.militaryService.mos
     return MOS_TRANSLATIONS[mos] || null
+  }
+
+  // Show auth prompt for unauthenticated users after timeout
+  if (showAuthPrompt) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-w-md mx-auto text-center">
+            <div className="mb-6">
+              <svg className="w-16 h-16 text-blue-600 dark:text-blue-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Sign In to View Your Resumes</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Your resume data is securely stored in the cloud. Sign in to access your saved resumes and continue building your civilian career profile.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <Link
+                to="/login"
+                className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
+              >
+                Sign In
+              </Link>
+              <Link
+                to="/signup"
+                className="block w-full bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 py-3 px-6 rounded-lg font-semibold transition-colors"
+              >
+                Create Free Account
+              </Link>
+              <Link
+                to="/"
+                className="block text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 text-sm py-2"
+              >
+                ← Back to Home
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   // Loading state
