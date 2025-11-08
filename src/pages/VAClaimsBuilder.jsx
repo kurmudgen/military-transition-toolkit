@@ -451,6 +451,12 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
 
   // Helper function to save condition to database
   const saveConditionToDatabase = async (conditionName, details, isNew = false) => {
+    // In demo mode, show upgrade prompt instead of saving
+    if (demoMode) {
+      alert('Sign up to save your claims permanently!\n\nDemo mode lets you try the tool, but your data won\'t be saved. Create a free account to save your VA claims securely in the cloud.')
+      return
+    }
+
     try {
       setSaving(true)
 
@@ -497,6 +503,11 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
 
   // Helper function to delete condition from database
   const deleteConditionFromDatabase = async (conditionName) => {
+    // In demo mode, data only exists in local state - no database action needed
+    if (demoMode) {
+      return
+    }
+
     try {
       setSaving(true)
       const conditionId = conditionIdMap[conditionName]
@@ -522,6 +533,26 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
 
   // Helper function to delete ALL VA claims data
   const deleteAllVAData = async () => {
+    // In demo mode, just clear local state without database operations
+    if (demoMode) {
+      const confirmed = window.confirm(
+        'Clear all demo data?\n\nThis will reset the demo to its initial state.'
+      )
+
+      if (!confirmed) return
+
+      // Clear all local state
+      setSelectedConditions([])
+      setConditionDetails({})
+      setEvidenceTracking({})
+      setConditionIdMap({})
+      setGeneratedStatements(null)
+      setExpandedCategories({})
+      setExpandedEvidence({})
+
+      return
+    }
+
     const confirmed = window.confirm(
       '⚠️ WARNING: This will permanently delete ALL your VA claims data, including all conditions, symptoms, and evidence tracking.\n\nThis action CANNOT be undone.\n\nAre you absolutely sure you want to delete everything?'
     )
@@ -985,7 +1016,30 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
         />
       )}
 
-      <div className={`bg-white rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''} ${demoMode ? 'pointer-events-none' : ''}`}>
+      {/* Demo Mode Banner */}
+      {demoMode && (
+        <div className="mb-6 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-lg p-4 shadow-lg">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-start gap-3 flex-1">
+              <div className="text-3xl">🎯</div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-1">Demo Mode - Try It Out!</h3>
+                <p className="text-gray-800 text-sm">
+                  Explore the full VA Claims Builder with sample data. Sign up to save your claims permanently and access from any device.
+                </p>
+              </div>
+            </div>
+            <Link
+              to="/signup"
+              className="px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg transition-colors whitespace-nowrap"
+            >
+              Create Free Account
+            </Link>
+          </div>
+        </div>
+      )}
+
+      <div className={`bg-white rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         {/* Error Alert */}
         {error && (
           <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-400 rounded">
