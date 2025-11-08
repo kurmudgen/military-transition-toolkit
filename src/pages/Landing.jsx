@@ -597,11 +597,8 @@ export default function Landing() {
             </div>
             <div>
               <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Built by Veterans</h4>
-              <p className="text-gray-600 dark:text-slate-400 text-sm mb-3">
+              <p className="text-gray-600 dark:text-slate-400 text-sm">
                 Created by transitioning service members, for transitioning service members.
-              </p>
-              <p className="text-gray-500 dark:text-slate-500 text-xs">
-                🇺🇸 Thank you for your service
               </p>
             </div>
           </div>

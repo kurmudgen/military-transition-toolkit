@@ -205,9 +205,8 @@ export default function About() {
                 <span className="text-slate-300">Spread the word to help more veterans</span>
               </div>
             </div>
-            <div className="text-4xl mb-4">🇺🇸</div>
             <p className="text-slate-300 font-semibold">
-              Thank you for your service, and good luck with your transition.
+              Good luck with your transition.
             </p>
             <p className="text-slate-400 mt-4 text-sm">
               Questions or feedback?<br/>
