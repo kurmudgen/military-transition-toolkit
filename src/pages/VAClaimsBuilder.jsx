@@ -319,33 +319,77 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
         const demoEvidence = {
           'PTSD (Post-Traumatic Stress Disorder)': {
             required: {
-              strs: { status: 'complete', notes: 'Obtained service treatment records showing mental health visits during service', details: {} },
-              diagnosis: { status: 'complete', notes: 'VA psychiatrist diagnosis on file', details: {} },
-              nexus: { status: 'pending', notes: 'Need nexus letter from provider', details: {} }
+              strs: { status: 'completed', date: '2024-01-15', notes: 'Obtained service treatment records showing mental health visits during service', upload: '' },
+              diagnosis: { status: 'completed', doctor: 'Dr. Smith, VA Psychiatrist', date: '2024-02-01', notes: 'VA psychiatrist diagnosis on file' },
+              nexus: { status: 'in-progress', doctor: 'Dr. Smith', date: '', notes: 'Need nexus letter from provider' }
             },
             recommended: {
-              buddy_statements: { status: 'complete', notes: 'Statement from fellow service member confirming IED incident', details: {} },
-              personal_statement: { status: 'complete', notes: 'Detailed personal statement written', details: {} }
+              buddyStatements: { count: 1, names: 'SGT John Doe', status: 'received', notes: 'Statement from fellow service member confirming IED incident' },
+              commanderStatement: { status: 'received', date: '2024-01-20', notes: 'Commander confirmed deployment details' },
+              photos: { has: false, description: '', location: '' },
+              prescriptions: { medications: 'Sertraline 100mg, Prazosin 2mg', pharmacy: 'VA Pharmacy', dateRange: '2023-present' },
+              appointments: { count: '15+', dateRange: '2023-2024', providers: 'VA Mental Health, Private Therapist' },
+              dbq: { status: 'completed', date: '2024-03-01', examiner: 'VA C&P Examiner' }
+            },
+            conditionSpecific: {},
+            submission: {
+              peblo: { submitted: true, date: '2024-03-15', method: 'Electronic', confirmed: true },
+              va: { submitted: false, date: '', claimNumber: '', confirmed: false }
+            },
+            timeline: {
+              started: '2024-01-10',
+              targetDate: '2024-06-01',
+              lastUpdated: new Date().toISOString()
             }
           },
           'Left knee pain/injury': {
             required: {
-              strs: { status: 'complete', notes: 'Service medical records document injury during training', details: {} },
-              diagnosis: { status: 'complete', notes: 'Orthopedic diagnosis with MRI results', details: {} },
-              nexus: { status: 'complete', notes: 'Doctor confirmed injury relates to service incident', details: {} }
+              strs: { status: 'completed', date: '2024-01-10', notes: 'Service medical records document injury during training', upload: '' },
+              diagnosis: { status: 'completed', doctor: 'Dr. Johnson, Orthopedic Surgeon', date: '2024-01-25', notes: 'Orthopedic diagnosis with MRI results' },
+              nexus: { status: 'completed', doctor: 'Dr. Johnson', date: '2024-02-05', notes: 'Doctor confirmed injury relates to service incident' }
             },
             recommended: {
-              buddy_statements: { status: 'pending', notes: 'Could get statement from training NCO', details: {} }
+              buddyStatements: { count: 0, names: '', status: 'not-started', notes: 'Could get statement from training NCO' },
+              commanderStatement: { status: 'not-started', date: '', notes: '' },
+              photos: { has: true, description: 'MRI scans showing meniscus tear', location: 'Medical records folder' },
+              prescriptions: { medications: 'Ibuprofen, Meloxicam', pharmacy: 'VA Pharmacy', dateRange: '2019-present' },
+              appointments: { count: '20+', dateRange: '2019-2024', providers: 'VA Orthopedics, Physical Therapy' },
+              dbq: { status: 'completed', date: '2024-02-15', examiner: 'VA C&P Examiner' }
+            },
+            conditionSpecific: {},
+            submission: {
+              peblo: { submitted: true, date: '2024-03-15', method: 'Electronic', confirmed: true },
+              va: { submitted: false, date: '', claimNumber: '', confirmed: false }
+            },
+            timeline: {
+              started: '2024-01-08',
+              targetDate: '2024-06-01',
+              lastUpdated: new Date().toISOString()
             }
           },
           'Tinnitus': {
             required: {
-              strs: { status: 'complete', notes: 'Service records show noise exposure', details: {} },
-              diagnosis: { status: 'complete', notes: 'Audiologist confirmed tinnitus', details: {} },
-              nexus: { status: 'complete', notes: 'Audiologist linked to service noise exposure', details: {} }
+              strs: { status: 'completed', date: '2024-01-12', notes: 'Service records show noise exposure', upload: '' },
+              diagnosis: { status: 'completed', doctor: 'Dr. Williams, Audiologist', date: '2024-01-30', notes: 'Audiologist confirmed tinnitus' },
+              nexus: { status: 'completed', doctor: 'Dr. Williams', date: '2024-02-10', notes: 'Audiologist linked to service noise exposure' }
             },
             recommended: {
-              noise_exposure: { status: 'complete', notes: 'DD-214 shows combat MOS and deployments', details: {} }
+              buddyStatements: { count: 0, names: '', status: 'not-started', notes: '' },
+              commanderStatement: { status: 'not-started', date: '', notes: '' },
+              photos: { has: false, description: '', location: '' },
+              prescriptions: { medications: '', pharmacy: '', dateRange: '' },
+              appointments: { count: '5', dateRange: '2023-2024', providers: 'VA Audiology' },
+              dbq: { status: 'completed', date: '2024-02-20', examiner: 'VA Audiologist' }
+            },
+            conditionSpecific: {},
+            submission: {
+              peblo: { submitted: true, date: '2024-03-15', method: 'Electronic', confirmed: true },
+              va: { submitted: false, date: '', claimNumber: '', confirmed: false }
+            },
+            timeline: {
+              started: '2024-01-05',
+              targetDate: '2024-06-01',
+              lastUpdated: new Date().toISOString()
             }
           }
         }
