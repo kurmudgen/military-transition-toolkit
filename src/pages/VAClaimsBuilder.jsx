@@ -226,37 +226,41 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
     const loadVAData = async () => {
       // Handle demo mode with pre-populated sample data
       if (demoMode) {
-        const demoConditions = ['PTSD (Post-Traumatic Stress Disorder)', 'Left knee pain/injury', 'Tinnitus']
+        const demoConditions = ['Lower back pain (lumbar spine)', 'Left knee pain/injury', 'Tinnitus']
         const demoDetails = {
-          'PTSD (Post-Traumatic Stress Disorder)': {
+          'Lower back pain (lumbar spine)': {
             startDate: '2018-06',
-            incident: 'During my deployment to Afghanistan in 2018, our convoy was hit by an IED. I witnessed casualties and experienced multiple combat situations that continue to affect me today.',
+            incident: 'Injured lower back during deployment while carrying heavy gear and equipment. Lifted ammunition crate incorrectly and felt immediate sharp pain. Pain has been chronic since then, aggravated by long tactical movements with full gear.',
             symptoms: {
-              'Nightmares or night terrors': true,
-              'Flashbacks or intrusive memories': true,
-              'Avoidance of situations that remind you of trauma': true,
-              'Difficulty sleeping': true,
-              'Hypervigilance or being easily startled': true,
-              'Irritability or anger outbursts': true
+              'Constant or frequent pain': true,
+              'Sharp pain with certain movements': true,
+              'Stiffness in the morning': true,
+              'Pain radiating down legs': true,
+              'Muscle spasms': true,
+              'Difficulty bending or twisting': true
             },
-            frequency: 'Nightmares occur 3-4 times per week. Flashbacks triggered by loud noises or crowded places.',
-            worsening: 'Symptoms worse during fireworks, thunderstorms, or in crowded public spaces',
+            frequency: 'Daily pain ranging from 4-8/10. Pain spikes when lifting, bending, or after prolonged sitting/standing.',
+            worsening: 'Pain worse with physical activity, lifting, bending, twisting, prolonged sitting, and cold/damp weather',
             treatment: {
-              'VA mental health appointments': true,
-              'Private therapy/counseling': true,
-              'Prescribed medication': true
+              'Physical therapy': true,
+              'Pain medication (NSAIDs)': true,
+              'Muscle relaxers': true,
+              'Chiropractic care': true,
+              'Epidural injections': true
             },
             limitations: {
-              'Difficulty maintaining employment': true,
-              'Avoiding public places or crowds': true,
-              'Problems with relationships': true,
-              'Difficulty concentrating at work': true
+              'Lifting heavy objects': true,
+              'Prolonged sitting or standing': true,
+              'Bending or twisting': true,
+              'Physical exercise/running': true,
+              'Difficulty sleeping due to pain': true,
+              'Impact on work performance': true
             },
-            painLevel: '',
-            category: 'Mental Health',
+            painLevel: '7',
+            category: 'Musculoskeletal',
             serviceConnected: true,
-            estimatedRating: '70%',
-            notes: 'Currently receiving therapy at VA and taking prescribed medications for anxiety and sleep.'
+            estimatedRating: '20-40%',
+            notes: 'MRI shows degenerative disc disease L4-L5 and bulging disc. Currently in physical therapy at VA. Pain impacts daily activities and work.'
           },
           'Left knee pain/injury': {
             startDate: '2019-03',
@@ -317,18 +321,18 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
         }
 
         const demoEvidence = {
-          'PTSD (Post-Traumatic Stress Disorder)': {
+          'Lower back pain (lumbar spine)': {
             required: {
-              strs: { status: 'completed', date: '2024-01-15', notes: 'Obtained service treatment records showing mental health visits during service', upload: '' },
-              diagnosis: { status: 'completed', doctor: 'Dr. Smith, VA Psychiatrist', date: '2024-02-01', notes: 'VA psychiatrist diagnosis on file' },
-              nexus: { status: 'in-progress', doctor: 'Dr. Smith', date: '', notes: 'Need nexus letter from provider' }
+              strs: { status: 'completed', date: '2024-01-15', notes: 'Obtained service medical records documenting back injury and treatment during active duty', upload: '' },
+              diagnosis: { status: 'completed', doctor: 'Dr. Martinez, Orthopedic Spine Specialist', date: '2024-02-01', notes: 'MRI confirms degenerative disc disease L4-L5 and bulging disc' },
+              nexus: { status: 'in-progress', doctor: 'Dr. Martinez', date: '', notes: 'Working on nexus letter linking condition to service' }
             },
             recommended: {
-              buddyStatements: { count: 1, names: 'SGT John Doe', status: 'received', notes: 'Statement from fellow service member confirming IED incident' },
-              commanderStatement: { status: 'received', date: '2024-01-20', notes: 'Commander confirmed deployment details' },
-              photos: { has: false, description: '', location: '' },
-              prescriptions: { medications: 'Sertraline 100mg, Prazosin 2mg', pharmacy: 'VA Pharmacy', dateRange: '2023-present' },
-              appointments: { count: '15+', dateRange: '2023-2024', providers: 'VA Mental Health, Private Therapist' },
+              buddyStatements: { count: 1, names: 'SGT Thompson', status: 'received', notes: 'Statement from squad leader who witnessed injury incident' },
+              commanderStatement: { status: 'received', date: '2024-01-20', notes: 'Commander verified deployment and heavy gear requirements' },
+              photos: { has: true, description: 'MRI images and X-rays showing disc damage', location: 'Medical records folder' },
+              prescriptions: { medications: 'Naproxen 500mg, Cyclobenzaprine 10mg', pharmacy: 'VA Pharmacy', dateRange: '2018-present' },
+              appointments: { count: '25+', dateRange: '2018-2024', providers: 'VA Orthopedics, Physical Therapy, Pain Management' },
               dbq: { status: 'completed', date: '2024-03-01', examiner: 'VA C&P Examiner' }
             },
             conditionSpecific: {},
