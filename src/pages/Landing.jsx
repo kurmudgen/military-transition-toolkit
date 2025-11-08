@@ -2,21 +2,73 @@ import { Link } from 'react-router-dom'
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Navigation Bar */}
+      <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo/Brand */}
+            <Link to="/" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
+              Military Transition Toolkit
+            </Link>
+
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center gap-6">
+              <a href="#features" className="text-slate-300 hover:text-white transition-colors">
+                Features
+              </a>
+              <Link to="/pricing" className="text-slate-300 hover:text-white transition-colors">
+                Pricing
+              </Link>
+              <Link to="/app/faq" className="text-slate-300 hover:text-white transition-colors">
+                FAQ
+              </Link>
+              <Link
+                to="/login"
+                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
+              >
+                Log In
+              </Link>
+              <Link
+                to="/signup"
+                className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg transition-colors"
+              >
+                Sign Up Free
+              </Link>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center gap-3">
+              <Link
+                to="/login"
+                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
+              >
+                Log In
+              </Link>
+              <Link
+                to="/signup"
+                className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold text-sm rounded-lg transition-colors"
+              >
+                Sign Up
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Government Shutdown Support Banner */}
       <div className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 border-b-4 border-yellow-600">
         <div className="max-w-6xl mx-auto px-4 py-4 text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
-            <span className="text-2xl md:text-3xl">🇺🇸</span>
+            <span className="text-2xl md:text-3xl">🎖️</span>
             <div className="text-slate-900">
               <p className="text-lg md:text-xl font-bold">
-                FREE Premium Access During Government Shutdown
+                Shutdown Special: Sign Up Now for Lifetime Premium Free
               </p>
               <p className="text-sm md:text-base font-semibold">
-                All premium features free until federal operations resume
+                Sign up during the shutdown and get lifetime access at no cost - forever
               </p>
             </div>
-            <span className="text-2xl md:text-3xl">🎖️</span>
           </div>
         </div>
       </div>
@@ -29,35 +81,124 @@ export default function Landing() {
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-          Your Complete Military<br/>Transition Toolkit
+        <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          Start Planning Your Transition
         </h1>
 
-        <p className="text-xl text-gray-700 dark:text-slate-300 mb-8 max-w-3xl mx-auto">
-          For transitioning service members AND current veterans. Plan your transition, file VA claims, compare states, and access comprehensive resources - all in one place.
+        <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
+          Everything you need to navigate military retirement, VA claims, and civilian career planning.
         </p>
 
-        <div className="flex gap-4 justify-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Link to="/getting-started" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
-            Start Planning Free →
+            Browse Tools →
           </Link>
-          <a href="#features" className="px-8 py-4 bg-gray-200 hover:bg-gray-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-gray-900 dark:text-white font-semibold rounded-lg text-lg transition-colors">
-            Learn More
-          </a>
+          <Link to="/signup" className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg text-lg transition-colors shadow-lg">
+            Create Free Account →
+          </Link>
         </div>
 
-        <p className="text-gray-600 dark:text-slate-400 text-sm">
-          100% private • Works on all devices
+        <p className="text-slate-400 text-sm">
+          All core tools free forever • Sign up during shutdown for lifetime premium access
         </p>
+      </div>
+
+      {/* Try Our Tools Section - Moved Higher */}
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Try Our Tools - No Signup Required
+          </h2>
+          <p className="text-xl text-slate-300">
+            Explore our toolkit with these free previews
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* State Benefits */}
+          <Link to="/public/state-benefits" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">🗺️</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              State Benefits Comparison
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Browse veteran benefits across all 50 states. See tax advantages, education benefits, and more.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              Explore States →
+            </span>
+          </Link>
+
+          {/* Retirement Calculator */}
+          <Link to="/public/retirement-calculator" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">💰</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Retirement Pay Calculator
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Calculate your estimated retirement pay. Try our basic calculator with High-3 and BRS systems.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              Calculate Pay →
+            </span>
+          </Link>
+
+          {/* Resource Library */}
+          <Link to="/public/resources" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">📚</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Resource Library
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Access 60+ curated resources for career planning, VA benefits, education, and more.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              Browse Resources →
+            </span>
+          </Link>
+
+          {/* Sample Checklist */}
+          <Link to="/public/sample-checklist" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+            <div className="text-4xl mb-3">✅</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Sample Transition Checklist
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Preview our comprehensive 20+ year retirement timeline with detailed action items.
+            </p>
+            <span className="text-blue-400 text-sm font-semibold">
+              View Checklist →
+            </span>
+          </Link>
+
+          {/* NEW: VA Claims Builder Demo */}
+          <Link to="/demo/va-claims" className="group bg-gradient-to-br from-blue-900/40 to-indigo-900/40 hover:from-blue-800/50 hover:to-indigo-800/50 rounded-xl p-6 border-2 border-blue-500 hover:border-blue-400 transition-all lg:col-span-2">
+            <div className="text-4xl mb-3">📋</div>
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+              Try VA Claims Builder
+            </h3>
+            <p className="text-slate-300 mb-4">
+              Build a complete VA disability claim with condition-specific tracking. See how it works before signing up.
+            </p>
+            <div className="flex items-center gap-2">
+              <span className="text-blue-400 text-sm font-semibold">
+                Try Demo →
+              </span>
+              <span className="px-2 py-1 bg-yellow-500/20 border border-yellow-500 text-yellow-400 text-xs font-bold rounded">
+                FEATURED
+              </span>
+            </div>
+          </Link>
+        </div>
       </div>
 
       {/* Problem Section */}
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Transitioning is Overwhelming
           </h2>
-          <p className="text-gray-700 dark:text-slate-300 text-lg">
+          <p className="text-slate-300 text-lg">
             200,000 service members transition annually. Most are confused and unprepared.
           </p>
         </div>
@@ -348,8 +489,8 @@ export default function Landing() {
           </div>
 
           {/* Lifetime Access */}
-          <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-6 border-2 border-purple-500 relative">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-xs font-bold rounded-full">
+          <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-6 border-2 border-purple-500 relative pt-8">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-xs font-bold rounded-full whitespace-nowrap">
               BEST FOR CAREER CHANGERS
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Lifetime</h3>
@@ -372,124 +513,57 @@ export default function Landing() {
         </div>
 
         {/* Shutdown Support Notice */}
-        <div className="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-2 border-yellow-500 rounded-xl p-6">
+        <div className="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-2 border-yellow-500 rounded-xl p-8">
           <div className="text-center">
-            <h3 className="text-xl font-bold text-yellow-400 mb-3">
-              🎖️ Government Shutdown Support Program
+            <h3 className="text-2xl font-bold text-yellow-400 mb-4">
+              🎖️ Shutdown Special: Lifetime Premium Free
             </h3>
-            <p className="text-slate-300 mb-4">
-              All premium features are <strong className="text-white">completely FREE</strong> during the government shutdown. Sign up now to get full access.
+            <p className="text-slate-300 mb-6 text-lg">
+              Sign up during the government shutdown and get <strong className="text-white">lifetime premium access</strong> at no cost - forever.
             </p>
-            <div className="grid md:grid-cols-2 gap-4 text-sm text-left">
+            <div className="grid md:grid-cols-2 gap-4 text-sm text-left mb-6">
               <div className="bg-slate-800/50 rounded-lg p-4">
-                <p className="text-yellow-400 font-semibold mb-2">✓ What You Get NOW (Free):</p>
-                <ul className="text-slate-300 space-y-1 text-xs">
-                  <li>• Complete VA Claims Builder</li>
-                  <li>• All Premium Features Unlocked</li>
-                  <li>• Unlimited PDF Exports</li>
-                  <li>• Priority Support</li>
+                <p className="text-yellow-400 font-semibold mb-3">✓ What You Get (Lifetime Free):</p>
+                <ul className="text-slate-300 space-y-2 text-sm">
+                  <li>• Complete VA Claims Builder with condition-specific tracking</li>
+                  <li>• Unlimited PDF exports for VSO appointments</li>
+                  <li>• Resume builder with military-to-civilian translation</li>
+                  <li>• Cloud storage for all your transition documents</li>
+                  <li>• Priority support</li>
                 </ul>
               </div>
               <div className="bg-slate-800/50 rounded-lg p-4">
-                <p className="text-yellow-400 font-semibold mb-2">✓ After Federal Operations Resume:</p>
-                <ul className="text-slate-300 space-y-1 text-xs">
-                  <li>• Free tier remains available</li>
-                  <li>• Upgrade options for premium features</li>
-                  <li>• Lifetime access available for $250</li>
+                <p className="text-yellow-400 font-semibold mb-3">✓ After Federal Operations Resume:</p>
+                <ul className="text-slate-300 space-y-2 text-sm">
+                  <li>• New signups: $7/month, $49/year, or $250 lifetime</li>
+                  <li>• You keep lifetime access forever (if you signed up during shutdown)</li>
                   <li>• All your data stays safe</li>
                 </ul>
               </div>
             </div>
-            <Link to="/signup" className="inline-block mt-6 px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg">
-              Sign Up Free →
+            <p className="text-yellow-400 font-semibold mb-4">
+              This offer ends when federal operations resume. Sign up now to lock in lifetime access.
+            </p>
+            <Link to="/signup" className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg text-lg">
+              Create Free Account →
             </Link>
           </div>
         </div>
       </div>
 
-      {/* Try Our Tools Section */}
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Try Our Tools - No Signup Required
-          </h2>
-          <p className="text-xl text-slate-300">
-            Explore our toolkit with these free previews
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* State Benefits */}
-          <Link to="/public/state-benefits" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">🗺️</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              State Benefits Comparison
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Browse veteran benefits across all 50 states. See tax advantages, education benefits, and more.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              Explore States →
-            </span>
-          </Link>
-
-          {/* Retirement Calculator */}
-          <Link to="/public/retirement-calculator" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">💰</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Retirement Pay Calculator
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Calculate your estimated retirement pay. Try our basic calculator with High-3 and BRS systems.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              Calculate Pay →
-            </span>
-          </Link>
-
-          {/* Resource Library */}
-          <Link to="/public/resources" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">📚</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Resource Library
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Access 60+ curated resources for career planning, VA benefits, education, and more.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              Browse Resources →
-            </span>
-          </Link>
-
-          {/* Sample Checklist */}
-          <Link to="/public/sample-checklist" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">✅</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Sample Transition Checklist
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Preview our comprehensive 20+ year retirement timeline with detailed action items.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              View Checklist →
-            </span>
-          </Link>
-        </div>
-      </div>
-
       {/* CTA Section */}
       <div className="max-w-4xl mx-auto px-4 py-16 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+        <h2 className="text-4xl font-bold text-white mb-6">
           Start Planning Your Transition Today
         </h2>
-        <p className="text-xl text-gray-700 dark:text-slate-300 mb-8">
-          Join thousands of service members successfully transitioning with our free tools
+        <p className="text-xl text-slate-300 mb-8">
+          Built by veterans who've been through this process. We know what you're going through.
         </p>
-        <Link to="/signup" className="inline-block px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-semibold rounded-lg transition-colors shadow-lg">
-          Get Started Free →
+        <Link to="/signup" className="inline-block px-12 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 text-xl font-bold rounded-lg transition-colors shadow-lg">
+          Sign Up for Lifetime Free Access →
         </Link>
-        <p className="text-gray-600 dark:text-slate-400 text-sm mt-4">
-          No credit card required • Start in 30 seconds
+        <p className="text-slate-400 text-sm mt-4">
+          No credit card required • Lifetime premium access during shutdown
         </p>
       </div>
 

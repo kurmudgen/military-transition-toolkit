@@ -11,6 +11,67 @@ import {
   updateVAEvidence,
   deleteVAEvidence
 } from '../services/vaService'
+import { VA_CONDITIONS_LIBRARY, getConditionData } from '../data/vaConditions'
+
+// Helper function to match condition names to library data
+const getConditionLibraryData = (conditionName) => {
+  // Try exact match first
+  let data = getConditionData(conditionName)
+  if (data) return data
+
+  // Try to match base condition (remove left/right/upper/lower/etc)
+  const normalized = conditionName
+    .replace(/^(Left|Right|Upper|Lower)\s+/i, '')
+    .replace(/\s*\(.*?\)/g, '') // Remove parentheses content
+    .trim()
+
+  // Check common mappings
+  const mappings = {
+    'knee pain/injury': 'Knee Pain',
+    'knee pain': 'Knee Pain',
+    'back pain lumbar spine': 'Back Pain (Lumbar Spine)',
+    'lower back pain': 'Back Pain (Lumbar Spine)',
+    'neck pain cervical spine': 'Neck Pain (Cervical Spine)',
+    'neck pain': 'Neck Pain (Cervical Spine)',
+    'shoulder injury': 'Shoulder Pain',
+    'shoulder pain': 'Shoulder Pain',
+    'ankle/foot condition': 'Ankle Pain',
+    'ankle pain': 'Ankle Pain',
+    'hip condition': 'Hip Pain',
+    'hip pain': 'Hip Pain',
+    'ptsd': 'PTSD (Post-Traumatic Stress Disorder)',
+    'major depressive disorder': 'Depression',
+    'depression': 'Depression',
+    'anxiety disorder': 'Anxiety Disorder',
+    'anxiety': 'Anxiety Disorder',
+    'tinnitus': 'Tinnitus',
+    'hearing loss': 'Hearing Loss',
+    'scars': 'Scars',
+    'sleep apnea': 'Sleep Apnea',
+    'asthma': 'Asthma',
+    'ibs': 'IBS (Irritable Bowel Syndrome)',
+    'gerd': 'GERD (Acid Reflux)',
+    'migraine headaches': 'Migraine Headaches',
+    'traumatic brain injury': 'TBI (Traumatic Brain Injury)',
+    'tbi': 'TBI (Traumatic Brain Injury)',
+    'hypertension': 'Hypertension (High Blood Pressure)',
+    'diabetes': 'Diabetes'
+  }
+
+  const mappedName = mappings[normalized.toLowerCase()]
+  if (mappedName) {
+    data = getConditionData(mappedName)
+    if (data) return data
+  }
+
+  // Return generic default if no match
+  return {
+    category: 'Other',
+    commonSymptoms: ['Pain', 'Discomfort', 'Difficulty with daily activities'],
+    functionalLimitations: ['Impact on work', 'Impact on daily activities', 'Impact on quality of life'],
+    evidenceTypes: ['Medical records', 'Service medical records', 'Treatment documentation']
+  }
+}
 
 // Condition categories and their conditions
 const CONDITION_CATEGORIES = {
@@ -949,22 +1010,43 @@ export default function VAClaimsBuilder({ previewMode = false }) {
                           <label className="block text-sm font-medium text-gray-700 mb-2">
                             Current Symptoms (check all that apply)
                           </label>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {['Pain', 'Swelling', 'Limited range of motion', 'Stiffness', 'Weakness', 'Numbness/tingling'].map(symptom => (
-                              <label key={symptom} className="flex items-center">
-                                <input
-                                  type="checkbox"
-                                  checked={details.symptoms?.[symptom] || false}
-                                  onChange={(e) => updateConditionDetail(condition, 'symptoms', {
-                                    ...details.symptoms,
-                                    [symptom]: e.target.checked
-                                  })}
-                                  className="h-4 w-4 text-blue-600 rounded border-gray-300"
-                                />
-                                <span className="ml-2 text-sm text-gray-700">{symptom}</span>
-                              </label>
-                            ))}
-                          </div>
+                          {(() => {
+                            const conditionData = getConditionLibraryData(condition)
+                            const symptoms = conditionData?.commonSymptoms || ['Pain', 'Discomfort']
+                            return (
+                              <>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                  {symptoms.map(symptom => (
+                                    <label key={symptom} className="flex items-center">
+                                      <input
+                                        type="checkbox"
+                                        checked={details.symptoms?.[symptom] || false}
+                                        onChange={(e) => updateConditionDetail(condition, 'symptoms', {
+                                          ...details.symptoms,
+                                          [symptom]: e.target.checked
+                                        })}
+                                        className="h-4 w-4 text-blue-600 rounded border-gray-300"
+                                      />
+                                      <span className="ml-2 text-sm text-gray-700">{symptom}</span>
+                                    </label>
+                                  ))}
+                                </div>
+                                {/* Custom symptom input */}
+                                <div className="mt-3">
+                                  <label className="block text-sm text-gray-600 mb-1">
+                                    Don't see your symptom? Add it here:
+                                  </label>
+                                  <input
+                                    type="text"
+                                    placeholder="Enter custom symptom"
+                                    value={details.customSymptom || ''}
+                                    onChange={(e) => updateConditionDetail(condition, 'customSymptom', e.target.value)}
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm"
+                                  />
+                                </div>
+                              </>
+                            )
+                          })()}
                           {details.symptoms?.['Pain'] && (
                             <div className="mt-2">
                               <label className="block text-sm text-gray-600 mb-1">Pain level (1-10):</label>
@@ -1019,22 +1101,28 @@ export default function VAClaimsBuilder({ previewMode = false }) {
                           <label className="block text-sm font-medium text-gray-700 mb-2">
                             Functional Limitations - What can't you do?
                           </label>
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {['Walking long distances', 'Standing for long periods', 'Climbing stairs', 'Running', 'Lifting heavy objects', 'Kneeling/squatting'].map(limitation => (
-                              <label key={limitation} className="flex items-center">
-                                <input
-                                  type="checkbox"
-                                  checked={details.limitations?.[limitation] || false}
-                                  onChange={(e) => updateConditionDetail(condition, 'limitations', {
-                                    ...details.limitations,
-                                    [limitation]: e.target.checked
-                                  })}
-                                  className="h-4 w-4 text-blue-600 rounded border-gray-300"
-                                />
-                                <span className="ml-2 text-sm text-gray-700">{limitation}</span>
-                              </label>
-                            ))}
-                          </div>
+                          {(() => {
+                            const conditionData = getConditionLibraryData(condition)
+                            const limitations = conditionData?.functionalLimitations || ['Impact on daily activities']
+                            return (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                {limitations.map(limitation => (
+                                  <label key={limitation} className="flex items-center">
+                                    <input
+                                      type="checkbox"
+                                      checked={details.limitations?.[limitation] || false}
+                                      onChange={(e) => updateConditionDetail(condition, 'limitations', {
+                                        ...details.limitations,
+                                        [limitation]: e.target.checked
+                                      })}
+                                      className="h-4 w-4 text-blue-600 rounded border-gray-300"
+                                    />
+                                    <span className="ml-2 text-sm text-gray-700">{limitation}</span>
+                                  </label>
+                                ))}
+                              </div>
+                            )
+                          })()}
                         </div>
                       </div>
                     )

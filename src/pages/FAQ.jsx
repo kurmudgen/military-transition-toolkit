@@ -217,7 +217,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                <strong>All premium features are FREE until the government shutdown ends</strong>. We had planned to offer free access through Veterans Day, but with veterans potentially impacted by the shutdown, we're extending free premium access until federal operations resume. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered. You can still lock in Founding Member lifetime pricing at $249 (save $150 off the future $399 price).
+                <strong>Sign up during the shutdown and get lifetime premium access FREE - forever</strong>. All users who create accounts while the government shutdown is active will keep premium access for life at no cost. After federal operations resume, new signups will be $7/month, $49/year, or $250 lifetime. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.
               </div>
             </details>
 

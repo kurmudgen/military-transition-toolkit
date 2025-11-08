@@ -615,10 +615,6 @@ export default function RetirementCalculator({ publicMode = false }) {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">✓</span>
-                  <span>REDUX vs High-36 comparison tool</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-400 mt-1">✓</span>
                   <span>Cloud storage - access from any device</span>
                 </li>
               </ul>
