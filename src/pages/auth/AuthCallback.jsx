@@ -6,7 +6,7 @@ export default function AuthCallback() {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
   const [status, setStatus] = useState('loading') // loading, success, error
-  const [message, setMessage] = useState('Completing sign in...')
+  const [message, setMessage] = useState('Signing you in...')
 
   useEffect(() => {
     const handleAuthCallback = async () => {
@@ -120,49 +120,49 @@ export default function AuthCallback() {
   }, [navigate, searchParams])
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 px-4">
-      <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 border border-gray-200 dark:border-gray-700">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4">
+      <div className="max-w-md w-full bg-slate-800 rounded-2xl shadow-2xl p-8 border border-slate-700">
         <div className="text-center">
           {status === 'loading' && (
             <>
-              <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-600 mx-auto mb-6"></div>
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Processing...
+              <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-500 mx-auto mb-6"></div>
+              <h2 className="text-xl font-semibold text-white mb-2">
+                Signing you in...
               </h2>
-              <p className="text-gray-600 dark:text-gray-400">{message}</p>
+              <p className="text-slate-400">{message}</p>
             </>
           )}
 
           {status === 'success' && (
             <>
               <div className="mb-6">
-                <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 dark:bg-green-900/30">
-                  <svg className="h-10 w-10 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-900/30">
+                  <svg className="h-10 w-10 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
               </div>
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h2 className="text-xl font-semibold text-white mb-2">
                 Success!
               </h2>
-              <p className="text-gray-600 dark:text-gray-400">{message}</p>
+              <p className="text-slate-400">{message}</p>
             </>
           )}
 
           {status === 'error' && (
             <>
               <div className="mb-6">
-                <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 dark:bg-red-900/30">
-                  <svg className="h-10 w-10 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-900/30">
+                  <svg className="h-10 w-10 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </div>
               </div>
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h2 className="text-xl font-semibold text-white mb-2">
                 Authentication Error
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">{message}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-500">
+              <p className="text-slate-400 mb-4">{message}</p>
+              <p className="text-sm text-slate-500">
                 Redirecting to login page...
               </p>
             </>
