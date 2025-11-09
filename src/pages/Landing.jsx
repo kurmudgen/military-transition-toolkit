@@ -491,7 +491,7 @@ export default function Landing() {
           {/* Lifetime Access */}
           <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-6 border-2 border-purple-500 relative pt-8">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-xs font-bold rounded-full whitespace-nowrap">
-              BEST FOR CAREER CHANGERS
+              BEST FOR LONG-TERM
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Lifetime</h3>
             <p className="text-purple-400 text-sm mb-4">Pay once, use forever</p>

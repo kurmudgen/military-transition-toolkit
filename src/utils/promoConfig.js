@@ -53,7 +53,7 @@ export const PRICING = {
     name: 'Lifetime Access',
     price: 250,
     description: 'Pay once, use forever',
-    badge: 'Best for Career Changers',
+    badge: 'Best for Long-Term',
     features: [
       'All Premium features forever',
       'Pay once, use forever - no recurring fees',

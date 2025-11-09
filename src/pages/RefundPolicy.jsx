@@ -118,7 +118,7 @@ export default function RefundPolicy() {
 
           {/* Government Shutdown Support */}
           <div className="bg-gradient-to-r from-blue-900/50 to-blue-800/50 rounded-lg shadow-lg p-6 border border-blue-700">
-            <h2 className="text-2xl font-bold text-white mb-4">🇺🇸 Government Shutdown Support</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Government Shutdown Support</h2>
             <p className="text-slate-300 mb-3">
               Supporting veterans during the government shutdown:
             </p>
@@ -128,7 +128,7 @@ export default function RefundPolicy() {
               <li>After the promotion ends, paid subscriptions will include the same 30-day guarantee</li>
             </ul>
             <p className="text-slate-300 mt-3 text-sm">
-              We had planned to offer free access through Veterans Day, but extended it to support military families potentially impacted by the shutdown.
+              We extended our free access period to support military families potentially impacted by the shutdown.
             </p>
           </div>
 
