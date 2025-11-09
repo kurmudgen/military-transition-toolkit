@@ -17,6 +17,7 @@ export default function Profile() {
   const [saveMessage, setSaveMessage] = useState('')
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
+  const [saveStatus, setSaveStatus] = useState(null) // null, 'success', 'error'
   const [error, setError] = useState(null)
   const [profileData, setProfileData] = useState({
     // Personal Information
@@ -91,7 +92,9 @@ export default function Profile() {
   const handleSave = async () => {
     try {
       setSaving(true)
+      setSaveStatus(null)
       setError(null)
+      setSaveMessage('')
 
       await updateUserProfile({
         first_name: profileData.firstName,
@@ -106,14 +109,26 @@ export default function Profile() {
       })
 
       trackButtonClick('Save Profile')
+      setSaveStatus('success')
       setIsEditing(false)
-      setSaveMessage('✓ Profile saved successfully!')
-      setTimeout(() => setSaveMessage(''), 3000)
+      setSaveMessage('✓ Profile updated successfully')
       console.log('✓ Profile saved to database')
+
+      // Reset status after 2 seconds
+      setTimeout(() => {
+        setSaveStatus(null)
+        setSaveMessage('')
+      }, 3000)
     } catch (err) {
       console.error('Error saving profile:', err)
-      setError('Failed to save profile.')
+      setSaveStatus('error')
+      setError('Failed to save profile. Please try again.')
       setSaveMessage('')
+
+      // Reset error status after 3 seconds
+      setTimeout(() => {
+        setSaveStatus(null)
+      }, 3000)
     } finally {
       setSaving(false)
     }
@@ -181,15 +196,31 @@ export default function Profile() {
           <div className="flex gap-2">
             <button
               onClick={handleCancel}
-              className="px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-bold rounded-lg transition-all"
+              disabled={saving}
+              className="px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-bold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Cancel
             </button>
             <button
               onClick={handleSave}
-              className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all shadow-md hover:shadow-lg"
+              disabled={saving}
+              className={`px-6 py-3 font-bold rounded-lg transition-all shadow-md hover:shadow-lg flex items-center gap-2 disabled:cursor-not-allowed ${
+                saveStatus === 'success'
+                  ? 'bg-green-600 text-white'
+                  : saveStatus === 'error'
+                  ? 'bg-red-600 hover:bg-red-700 text-white'
+                  : 'bg-blue-600 hover:bg-blue-700 text-white'
+              }`}
             >
-              Save Changes
+              {saving && (
+                <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+              )}
+              {saveStatus === 'success' && '✓'}
+              {saveStatus === 'error' && '⚠'}
+              {saving ? 'Saving...' : saveStatus === 'success' ? 'Saved!' : saveStatus === 'error' ? 'Failed - Try Again' : 'Save Changes'}
             </button>
           </div>
         )}
@@ -271,7 +302,8 @@ export default function Profile() {
                   type="text"
                   value={profileData.firstName}
                   onChange={(e) => handleChange('firstName', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="John"
                 />
               ) : (
@@ -288,7 +320,8 @@ export default function Profile() {
                   type="text"
                   value={profileData.lastName}
                   onChange={(e) => handleChange('lastName', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="Doe"
                 />
               ) : (
@@ -305,7 +338,8 @@ export default function Profile() {
                   type="email"
                   value={profileData.email}
                   onChange={(e) => handleChange('email', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="john.doe@email.com"
                 />
               ) : (
@@ -322,7 +356,8 @@ export default function Profile() {
                   type="tel"
                   value={profileData.phone}
                   onChange={(e) => handleChange('phone', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="(555) 123-4567"
                 />
               ) : (
@@ -345,7 +380,8 @@ export default function Profile() {
                 <select
                   value={profileData.branch}
                   onChange={(e) => handleChange('branch', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <option value="">Select Branch</option>
                   {BRANCHES.map(branch => (
@@ -365,8 +401,8 @@ export default function Profile() {
                 <select
                   value={profileData.rank}
                   onChange={(e) => handleChange('rank', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
-                  disabled={!profileData.branch}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled={!profileData.branch || saving}
                 >
                   <option value="">Select Rank</option>
                   {profileData.branch && RANKS[profileData.branch]?.map(rank => (
@@ -387,7 +423,8 @@ export default function Profile() {
                   type="text"
                   value={profileData.mos}
                   onChange={(e) => handleChange('mos', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="e.g., 11B, IT, 3D0X2"
                 />
               ) : (
@@ -404,7 +441,8 @@ export default function Profile() {
                   type="number"
                   value={profileData.yearsOfService}
                   onChange={(e) => handleChange('yearsOfService', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="e.g., 8"
                   min="0"
                   max="50"
@@ -423,7 +461,8 @@ export default function Profile() {
                   type="date"
                   value={profileData.separationDate}
                   onChange={(e) => handleChange('separationDate', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 />
               ) : (
                 <p className="text-gray-900 dark:text-white text-lg">
@@ -440,7 +479,8 @@ export default function Profile() {
                 <select
                   value={profileData.separationType}
                   onChange={(e) => handleChange('separationType', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <option value="">Select Type</option>
                   <option value="retirement">Retirement (20+ years)</option>
@@ -469,7 +509,8 @@ export default function Profile() {
                   type="text"
                   value={profileData.currentLocation}
                   onChange={(e) => handleChange('currentLocation', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="City, State"
                 />
               ) : (
@@ -486,7 +527,8 @@ export default function Profile() {
                   type="text"
                   value={profileData.targetLocation}
                   onChange={(e) => handleChange('targetLocation', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="City, State (where you want to relocate)"
                 />
               ) : (
@@ -509,8 +551,9 @@ export default function Profile() {
                 <textarea
                   value={profileData.unitAssignments}
                   onChange={(e) => handleChange('unitAssignments', e.target.value)}
+                  disabled={saving}
                   rows={3}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="List your major unit assignments..."
                 />
               ) : (
@@ -526,8 +569,9 @@ export default function Profile() {
                 <textarea
                   value={profileData.deployments}
                   onChange={(e) => handleChange('deployments', e.target.value)}
+                  disabled={saving}
                   rows={3}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="List deployment locations and dates..."
                 />
               ) : (
@@ -543,8 +587,9 @@ export default function Profile() {
                 <textarea
                   value={profileData.awards}
                   onChange={(e) => handleChange('awards', e.target.value)}
+                  disabled={saving}
                   rows={3}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="List your military awards and decorations..."
                 />
               ) : (
@@ -560,8 +605,9 @@ export default function Profile() {
                 <textarea
                   value={profileData.specializations}
                   onChange={(e) => handleChange('specializations', e.target.value)}
+                  disabled={saving}
                   rows={3}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="List special skills, schools, certifications..."
                 />
               ) : (
@@ -584,7 +630,8 @@ export default function Profile() {
                 <select
                   value={profileData.preferredContact}
                   onChange={(e) => handleChange('preferredContact', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <option value="email">Email</option>
                   <option value="phone">Phone</option>
@@ -604,7 +651,8 @@ export default function Profile() {
                   type="text"
                   value={profileData.contactableHours}
                   onChange={(e) => handleChange('contactableHours', e.target.value)}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  disabled={saving}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="e.g., Weekdays 9am-5pm EST"
                 />
               ) : (
