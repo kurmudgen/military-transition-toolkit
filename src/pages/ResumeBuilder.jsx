@@ -74,6 +74,11 @@ export default function ResumeBuilder({ previewMode = false }) {
   const [showTranslationHelper, setShowTranslationHelper] = useState(false)
   const [searchMOS, setSearchMOS] = useState('')
 
+  // Resume Import States
+  const [showImportModal, setShowImportModal] = useState(false)
+  const [importedText, setImportedText] = useState('')
+  const [showImportPanel, setShowImportPanel] = useState(false)
+
   useEffect(() => {
     document.title = 'Resume Builder - Military Transition Toolkit'
     trackPageView('Resume Builder')
@@ -408,6 +413,18 @@ export default function ResumeBuilder({ previewMode = false }) {
     trackButtonClick('Resume Builder - Load Resume')
   }
 
+  const handleImportResume = () => {
+    // Store imported text and show side panel
+    setShowImportPanel(true)
+    setShowImportModal(false)
+    trackButtonClick('Resume Builder - Import Resume')
+  }
+
+  const clearImport = () => {
+    setImportedText('')
+    setShowImportPanel(false)
+  }
+
   const deleteResume = async (id) => {
     if (window.confirm('Delete this resume? This action cannot be undone.')) {
       try {
@@ -568,6 +585,19 @@ export default function ResumeBuilder({ previewMode = false }) {
           <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
             🔒 Your resumes are <strong>securely stored in the cloud</strong> with bank-level encryption. Accessible from any device.
           </p>
+
+          {/* Import Button */}
+          <div className="mt-4">
+            <button
+              onClick={() => setShowImportModal(true)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold rounded-lg shadow-md transition-all"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              📋 Import Existing Resume
+            </button>
+          </div>
         </div>
 
         {/* Error Alert */}
@@ -1668,6 +1698,99 @@ export default function ResumeBuilder({ previewMode = false }) {
           </div>
         </div>
       </div>
+
+      {/* Import Modal */}
+      {showImportModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6 border-b border-gray-200 dark:border-gray-700">
+              <div className="flex items-center justify-between">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">📋 Import Existing Resume</h2>
+                <button
+                  onClick={() => setShowImportModal(false)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+
+            <div className="p-6">
+              <div className="mb-6">
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                  Paste Your Resume Text Below
+                </label>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                  Copy and paste your existing resume text. Don't worry about formatting - just paste the content
+                  and you can reference it while building your new civilian resume.
+                </p>
+                <textarea
+                  value={importedText}
+                  onChange={(e) => setImportedText(e.target.value)}
+                  rows={15}
+                  maxLength={10000}
+                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 resize-none font-mono text-sm"
+                  placeholder="Paste your resume here - any format works. You can paste from Word, PDF, or any text source..."
+                />
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                  {importedText.length} / 10,000 characters
+                </p>
+              </div>
+
+              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
+                <h3 className="font-semibold text-blue-900 dark:text-blue-200 mb-2">💡 How This Works</h3>
+                <ul className="text-sm text-blue-800 dark:text-blue-300 space-y-1">
+                  <li>• Your imported resume will appear in a side panel for easy reference</li>
+                  <li>• You can view your old resume while filling out the builder form</li>
+                  <li>• This helps you transfer information without constantly switching windows</li>
+                  <li>• Your imported text is stored locally and never sent anywhere</li>
+                </ul>
+              </div>
+
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setShowImportModal(false)}
+                  className="flex-1 px-6 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-lg transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleImportResume}
+                  disabled={!importedText.trim()}
+                  className="flex-1 px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-semibold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Import & Continue
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Import Side Panel */}
+      {showImportPanel && importedText && (
+        <div className="fixed right-0 top-0 h-full w-96 bg-white dark:bg-gray-800 shadow-2xl z-40 overflow-y-auto border-l-2 border-purple-500">
+          <div className="sticky top-0 bg-gradient-to-r from-purple-600 to-indigo-600 p-4 border-b border-purple-700">
+            <div className="flex items-center justify-between">
+              <h3 className="text-lg font-bold text-white">📋 Your Imported Resume</h3>
+              <button
+                onClick={clearImport}
+                className="text-white/80 hover:text-white text-xl"
+                title="Clear imported resume"
+              >
+                ×
+              </button>
+            </div>
+            <p className="text-purple-100 text-xs mt-1">Reference while filling out the form →</p>
+          </div>
+
+          <div className="p-4">
+            <pre className="whitespace-pre-wrap text-sm text-gray-700 dark:text-gray-300 font-sans leading-relaxed">
+              {importedText}
+            </pre>
+          </div>
+        </div>
+      )}
 
       {/* Upgrade Modal */}
       {showUpgradeModal && (
