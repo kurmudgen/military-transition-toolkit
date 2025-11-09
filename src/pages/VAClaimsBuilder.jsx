@@ -1610,7 +1610,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
                               document.getElementById(`evidence-${idx}`)?.scrollIntoView({ behavior: 'smooth' })
                             }, 100)
                           }}
-                          className="flex items-center justify-between p-2 bg-white border border-slate-200 rounded hover:bg-slate-100 hover:border-blue-400 transition-all text-left group"
+                          className="flex items-center justify-between p-2 bg-white border border-slate-200 rounded hover:bg-slate-100 hover:border-blue-400 transition-all text-left group pointer-events-auto cursor-pointer"
                         >
                           <span className="text-sm text-slate-700 group-hover:text-blue-600 font-medium truncate mr-2">{condition}</span>
                           <span className={`text-xs font-semibold px-2 py-1 rounded ${
@@ -1646,7 +1646,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
                                     document.getElementById(`evidence-${idx}`)?.scrollIntoView({ behavior: 'smooth' })
                                   }, 100)
                                 }}
-                                className="ml-3 text-sm text-blue-600 hover:text-blue-800 underline"
+                                className="ml-3 text-sm text-blue-600 hover:text-blue-800 underline pointer-events-auto cursor-pointer"
                               >
                                 Jump to tracker
                               </button>
