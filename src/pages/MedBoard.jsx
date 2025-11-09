@@ -1,6 +1,26 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { getChecklistProgress, updateChecklistProgress } from '../services/checklistService'
 import UpgradeOverlay from '../components/UpgradeOverlay'
+
+// Resource link mapping for MedBoard checklist items
+const RESOURCE_LINKS = {
+  'File VA disability claim with help from MSC': { to: '/public/resources#vso-resources', label: 'VSO Resources', external: false },
+  'Attend ALL VA C&P (Compensation & Pension) exams': { to: 'https://www.va.gov/disability/va-claim-exam/', label: 'C&P Exam Guide', external: true },
+  'Gather ALL medical documentation from civilian providers': { to: '/app/va-claims-builder', label: 'Evidence Tracker', external: false },
+  'Request buddy statements from fellow service members': { to: '/app/va-claims-builder', label: 'Buddy Statements Guide', external: false },
+  'Contact Wounded Warrior Program if applicable': { to: 'https://www.woundedwarriorproject.org/', label: 'WWP Website', external: true },
+  'Join veteran networking groups': { to: '/public/resources#vso-resources', label: 'VSO Resources', external: false },
+  'Connect with veteran service organizations': { to: '/public/resources#vso-resources', label: 'VSO Resources', external: false },
+  'Apply for state veterans benefits': { to: '/public/state-benefits', label: 'State Benefits', external: false },
+  'Research state veteran benefits': { to: '/public/state-benefits', label: 'State Benefits', external: false },
+  'Research healthcare options': { to: '/public/resources#healthcare', label: 'Healthcare Resources', external: false },
+  'Enroll in VA healthcare': { to: 'https://www.va.gov/health-care/how-to-apply/', label: 'VA Healthcare Enrollment', external: true },
+  'Research GI Bill benefits': { to: '/public/resources#education', label: 'GI Bill Guide', external: false },
+  'Start job search': { to: '/public/resources#employment', label: 'Job Resources', external: false },
+  'Update resume': { to: '/app/resume-builder', label: 'Resume Builder', external: false },
+  'Calculate retirement pay': { to: '/public/retirement-calculator', label: 'Retirement Calculator', external: false },
+}
 
 const IDES_TIMELINE = [
   {
@@ -499,8 +519,10 @@ export default function MedBoard({ previewMode = false }) {
                   <div className="px-6 py-4 space-y-3">
                     {section.items.map((item, idx) => {
                       const isCompleted = isItemCompleted(section.id, idx)
+                      const resourceLink = RESOURCE_LINKS[item]
+
                       return (
-                        <div key={idx} className="flex items-start">
+                        <div key={idx} className="flex items-start group">
                           <input
                             type="checkbox"
                             id={`${section.id}-${idx}`}
@@ -510,12 +532,38 @@ export default function MedBoard({ previewMode = false }) {
                           />
                           <label
                             htmlFor={`${section.id}-${idx}`}
-                            className={`ml-3 cursor-pointer select-none ${
+                            className={`ml-3 cursor-pointer select-none flex-1 ${
                               isCompleted ? 'line-through text-gray-400' : 'text-gray-700'
                             }`}
                           >
                             {item}
                           </label>
+
+                          {/* Resource Link */}
+                          {resourceLink && (
+                            resourceLink.external ? (
+                              <a
+                                href={resourceLink.to}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-2 text-blue-600 hover:text-blue-800 text-sm whitespace-nowrap flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                                title={`View ${resourceLink.label}`}
+                              >
+                                → {resourceLink.label}
+                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                              </a>
+                            ) : (
+                              <Link
+                                to={resourceLink.to}
+                                className="ml-2 text-blue-600 hover:text-blue-800 text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity"
+                                title={`View ${resourceLink.label}`}
+                              >
+                                → {resourceLink.label}
+                              </Link>
+                            )
+                          )}
                         </div>
                       )
                     })}
