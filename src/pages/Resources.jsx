@@ -484,6 +484,208 @@ export default function Resources({ publicMode = false }) {
         </div>
         </div>
 
+        {/* VSO Resources Section */}
+        <div id="vso-resources" className="mb-8 bg-gradient-to-br from-blue-900/30 to-indigo-900/30 border-2 border-blue-700 rounded-xl p-8 shadow-2xl">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-5xl">🤝</span>
+            <div>
+              <h2 className="text-3xl font-bold text-white">Veterans Service Organizations (VSOs)</h2>
+              <p className="text-blue-200 text-lg mt-1">
+                VSOs provide <strong>FREE</strong> assistance with VA claims, benefits applications, and appeals at no cost
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-6 p-4 bg-green-900/30 border border-green-600 rounded-lg">
+            <p className="text-green-300 font-bold text-center text-lg">
+              ✓ ALL VSO services are completely FREE. Never pay anyone to help with VA claims.
+            </p>
+          </div>
+
+          <p className="text-slate-300 mb-8 text-lg leading-relaxed">
+            These accredited organizations have trained representatives who can help you navigate the VA system,
+            file claims, gather evidence, and represent you in appeals. All services are provided at no charge to veterans.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* DAV */}
+            <a
+              href="https://www.dav.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Disabled American Veterans (DAV)
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: Disabled veterans, claims & appeals</p>
+              <p className="text-slate-300 text-sm mb-4">
+                VA claims assistance, transportation services, career counseling. Strong track record with disability claims.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit DAV.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+
+            {/* VFW */}
+            <a
+              href="https://www.vfw.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Veterans of Foreign Wars (VFW)
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: Combat veterans, service-connected disabilities</p>
+              <p className="text-slate-300 text-sm mb-4">
+                Claims assistance, financial grants, mental health support. Strong support for combat veterans.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit VFW.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+
+            {/* American Legion */}
+            <a
+              href="https://www.legion.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                American Legion
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: All veterans, strong local presence</p>
+              <p className="text-slate-300 text-sm mb-4">
+                Claims representation, education assistance, employment help. Local posts nationwide.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit Legion.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+
+            {/* AMVETS */}
+            <a
+              href="https://www.amvets.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                AMVETS
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: Post-9/11 veterans, career services</p>
+              <p className="text-slate-300 text-sm mb-4">
+                Claims filing, benefits counseling, career transition support. Strong focus on employment.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit AMVETS.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+
+            {/* WWP */}
+            <a
+              href="https://www.woundedwarriorproject.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Wounded Warrior Project
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: Post-9/11 combat wounded veterans</p>
+              <p className="text-slate-300 text-sm mb-4">
+                Mental health services, career counseling, long-term support programs for wounded veterans.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit WWP.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+
+            {/* IAVA */}
+            <a
+              href="https://iava.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Iraq and Afghanistan Veterans of America (IAVA)
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: OIF/OEF veterans</p>
+              <p className="text-slate-300 text-sm mb-4">
+                Benefits navigation, community support, advocacy for Iraq and Afghanistan veterans.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit IAVA.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+
+            {/* VVA */}
+            <a
+              href="https://vva.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Vietnam Veterans of America (VVA)
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: Vietnam-era veterans</p>
+              <p className="text-slate-300 text-sm mb-4">
+                Claims assistance, Agent Orange support, benefits help specifically for Vietnam veterans.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit VVA.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+
+            {/* MOPH */}
+            <a
+              href="https://www.purpleheart.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-blue-500 rounded-lg p-6 transition-all group"
+            >
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                Military Order of the Purple Heart
+              </h3>
+              <p className="text-sm text-green-400 font-semibold mb-3">Best for: Purple Heart recipients</p>
+              <p className="text-slate-300 text-sm mb-4">
+                Claims for combat-wounded veterans, service officer network specialized in combat injuries.
+              </p>
+              <div className="flex items-center text-blue-400 text-sm font-semibold">
+                Visit PurpleHeart.org
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
         {/* Resources Display */}
         {Object.keys(groupedResources).length === 0 ? (
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg shadow-xl p-12 text-center">
