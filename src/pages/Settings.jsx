@@ -9,6 +9,7 @@ import { getUserSubscription, createCustomerPortalSession } from '../services/su
 import { STRIPE_PLANS, getPlanById } from '../lib/stripe'
 import { auditService } from '../services/auditService'
 import { accountDeletionService } from '../services/accountDeletionService'
+import { getUserProfile, updateUserProfile } from '../services/profileService'
 
 export default function Settings() {
   const [importStatus, setImportStatus] = useState('')
@@ -18,13 +19,15 @@ export default function Settings() {
   const [loadingSubscription, setLoadingSubscription] = useState(true)
   const [managingBilling, setManagingBilling] = useState(false)
   const [separationStatus, setSeparationStatus] = useState('transitioning')
+  const [situation, setSituation] = useState(null)
+  const [situationUpdateMessage, setSituationUpdateMessage] = useState('')
   const [statusUpdateMessage, setStatusUpdateMessage] = useState('')
   const [recentActivity, setRecentActivity] = useState([])
   const [loadingActivity, setLoadingActivity] = useState(true)
   const [deletionEstimate, setDeletionEstimate] = useState(null)
   const [deletingAccount, setDeletingAccount] = useState(false)
   const navigate = useNavigate()
-  const { signOut, timeoutEnabled, setTimeoutEnabled } = useAuth()
+  const { signOut, timeoutEnabled, setTimeoutEnabled, user } = useAuth()
 
   useEffect(() => {
     document.title = 'Settings - Military Transition Toolkit'
@@ -32,6 +35,7 @@ export default function Settings() {
     loadSubscription()
     loadRecentActivity()
     loadDeletionEstimate()
+    loadUserProfile()
 
     // Load separation status from localStorage
     const saved = localStorage.getItem('userSetup')
@@ -46,6 +50,19 @@ export default function Settings() {
       }
     }
   }, [])
+
+  const loadUserProfile = async () => {
+    if (!user?.id) return
+
+    try {
+      const profile = await getUserProfile(user.id)
+      if (profile?.situation) {
+        setSituation(profile.situation)
+      }
+    } catch (error) {
+      console.error('Error loading user profile:', error)
+    }
+  }
 
   const loadRecentActivity = async () => {
     try {
@@ -295,6 +312,40 @@ export default function Settings() {
     navigate('/login')
   }
 
+  const handleSituationUpdate = async (newSituation) => {
+    setSituation(newSituation)
+
+    // Save to Supabase
+    if (user?.id) {
+      try {
+        await updateUserProfile(user.id, { situation: newSituation })
+      } catch (error) {
+        console.error('Error updating situation in Supabase:', error)
+      }
+    }
+
+    // Also save to localStorage as backup
+    const saved = localStorage.getItem('userSetup')
+    let userSetup = {}
+
+    if (saved) {
+      try {
+        userSetup = JSON.parse(saved)
+      } catch (error) {
+        console.error('Error parsing userSetup:', error)
+      }
+    }
+
+    userSetup.situation = newSituation
+    localStorage.setItem('userSetup', JSON.stringify(userSetup))
+
+    // Show success message
+    setSituationUpdateMessage('✓ Transition type updated successfully! Reload the page to see changes in your dashboard.')
+    setTimeout(() => setSituationUpdateMessage(''), 5000)
+
+    trackButtonClick(`Update Situation - ${newSituation}`)
+  }
+
   const handleSeparationStatusUpdate = (newStatus) => {
     setSeparationStatus(newStatus)
 
@@ -429,6 +480,114 @@ export default function Settings() {
               <p className="text-blue-400 text-sm">
                 🔒 All user data is securely stored in the cloud with bank-level encryption (AES-256) and row-level security ensuring you can only access your own data.
               </p>
+            </div>
+          </div>
+
+          {/* Transition Type / Situation */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <h2 className="text-2xl font-semibold text-white mb-4">📋 Transition Type</h2>
+            <p className="text-slate-300 mb-4">
+              Select your transition situation to see relevant checklists and guidance. This determines which tools are most helpful for your journey.
+            </p>
+
+            {situationUpdateMessage && (
+              <div className="mb-4 p-4 bg-green-900/20 border border-green-500 rounded-lg">
+                <p className="text-green-400 text-sm">{situationUpdateMessage}</p>
+              </div>
+            )}
+
+            <div className="space-y-3">
+              <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                situation === 'retirement'
+                  ? 'border-blue-500 bg-blue-900/20'
+                  : 'border-slate-600 hover:border-blue-400'
+              }`}>
+                <input
+                  type="radio"
+                  name="situation"
+                  value="retirement"
+                  checked={situation === 'retirement'}
+                  onChange={(e) => handleSituationUpdate(e.target.value)}
+                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                />
+                <div className="ml-3">
+                  <span className="block text-base font-semibold text-white">
+                    🎖️ 20+ Year Retirement
+                  </span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    Standard military retirement with pension benefits
+                  </span>
+                </div>
+              </label>
+
+              <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                situation === 'separation'
+                  ? 'border-blue-500 bg-blue-900/20'
+                  : 'border-slate-600 hover:border-blue-400'
+              }`}>
+                <input
+                  type="radio"
+                  name="situation"
+                  value="separation"
+                  checked={situation === 'separation'}
+                  onChange={(e) => handleSituationUpdate(e.target.value)}
+                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                />
+                <div className="ml-3">
+                  <span className="block text-base font-semibold text-white">
+                    📋 Separation (Under 20 Years)
+                  </span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    Transitioning without retirement pension (but still eligible for VA benefits)
+                  </span>
+                </div>
+              </label>
+
+              <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                situation === 'medboard'
+                  ? 'border-blue-500 bg-blue-900/20'
+                  : 'border-slate-600 hover:border-blue-400'
+              }`}>
+                <input
+                  type="radio"
+                  name="situation"
+                  value="medboard"
+                  checked={situation === 'medboard'}
+                  onChange={(e) => handleSituationUpdate(e.target.value)}
+                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                />
+                <div className="ml-3">
+                  <span className="block text-base font-semibold text-white">
+                    🏥 MedBoard/IDES
+                  </span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    Medical separation or retirement process
+                  </span>
+                </div>
+              </label>
+
+              <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                situation === 'planning'
+                  ? 'border-blue-500 bg-blue-900/20'
+                  : 'border-slate-600 hover:border-blue-400'
+              }`}>
+                <input
+                  type="radio"
+                  name="situation"
+                  value="planning"
+                  checked={situation === 'planning'}
+                  onChange={(e) => handleSituationUpdate(e.target.value)}
+                  className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                />
+                <div className="ml-3">
+                  <span className="block text-base font-semibold text-white">
+                    📊 Already Separated (Planning/Claims Only)
+                  </span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    Focus on VA claims, benefits, and post-service planning
+                  </span>
+                </div>
+              </label>
             </div>
           </div>
 

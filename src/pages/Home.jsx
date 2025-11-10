@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import RemindersWidget from '../components/RemindersWidget'
+import { useAuth } from '../contexts/AuthContext'
+import { getUserProfile, completeOnboarding } from '../services/profileService'
 
 // Tips that rotate
 const TIPS = [
@@ -16,6 +18,8 @@ const TIPS = [
 ]
 
 export default function Home() {
+  const { user } = useAuth()
+  const navigate = useNavigate()
   const [userSetup, setUserSetup] = useState(null)
   const [separationDate, setSeparationDate] = useState('')
   const [userName, setUserName] = useState('')
@@ -24,22 +28,66 @@ export default function Home() {
   const [currentTip, setCurrentTip] = useState(0)
   const [isEditingDate, setIsEditingDate] = useState(false)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
+  const [profileLoaded, setProfileLoaded] = useState(false)
 
-  // Load user setup from localStorage
+  // Load user profile from Supabase (with localStorage fallback)
   useEffect(() => {
-    const saved = localStorage.getItem('userSetup')
-    if (saved) {
+    async function loadUserProfile() {
+      if (!user?.id) {
+        setProfileLoaded(true)
+        return
+      }
+
       try {
-        const parsed = JSON.parse(saved)
-        setUserSetup(parsed.situation)
-        setSeparationDate(parsed.separationDate || '')
-        setUserName(parsed.name || '')
-        setSeparationStatus(parsed.separation_status || 'transitioning') // NEW: Load separation status
-      } catch (e) {
-        console.error('Error loading user setup:', e)
+        // Fetch profile from Supabase
+        const profile = await getUserProfile(user.id)
+
+        if (profile) {
+          // Use Supabase data as source of truth
+          setUserSetup(profile.situation)
+          setSeparationDate(profile.separation_date || '')
+          setUserName(profile.display_name || '')
+
+          // If onboarding is completed and there's a situation, don't show onboarding
+          if (profile.onboarding_completed && profile.situation) {
+            // User has completed onboarding - go straight to dashboard
+            // No need to show onboarding screen
+          }
+        } else {
+          // Fallback to localStorage if Supabase fails
+          const saved = localStorage.getItem('userSetup')
+          if (saved) {
+            try {
+              const parsed = JSON.parse(saved)
+              setUserSetup(parsed.situation)
+              setSeparationDate(parsed.separationDate || '')
+              setUserName(parsed.name || '')
+            } catch (e) {
+              console.error('Error loading localStorage:', e)
+            }
+          }
+        }
+      } catch (err) {
+        console.error('Error loading user profile:', err)
+        // Fallback to localStorage on error
+        const saved = localStorage.getItem('userSetup')
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved)
+            setUserSetup(parsed.situation)
+            setSeparationDate(parsed.separationDate || '')
+            setUserName(parsed.name || '')
+          } catch (e) {
+            console.error('Error loading localStorage:', e)
+          }
+        }
+      } finally {
+        setProfileLoaded(true)
       }
     }
-  }, [])
+
+    loadUserProfile()
+  }, [user])
 
   // Set page title and track page view
   useEffect(() => {
@@ -66,9 +114,20 @@ export default function Home() {
     return () => clearInterval(interval)
   }, [])
 
-  const handleSetup = (situation) => {
+  const handleSetup = async (situation) => {
+    // Save to Supabase
+    if (user?.id) {
+      try {
+        await completeOnboarding(user.id, situation, separationDate || null, userName || null)
+      } catch (err) {
+        console.error('Error saving to Supabase:', err)
+      }
+    }
+
+    // Also save to localStorage as backup
     const setup = { situation, separationDate, name: userName }
     localStorage.setItem('userSetup', JSON.stringify(setup))
+
     setUserSetup(situation)
     setShowSetup(false)
   }
@@ -452,6 +511,18 @@ export default function Home() {
   }
 
   const priorityActions = getPriorityActions()
+
+  // Show loading state while profile is being loaded
+  if (!profileLoaded) {
+    return (
+      <div className="px-4 py-6 sm:px-0 flex items-center justify-center min-h-[400px]">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading your dashboard...</p>
+        </div>
+      </div>
+    )
+  }
 
   // Show setup wizard if not configured
   if (!userSetup && !showSetup) {
