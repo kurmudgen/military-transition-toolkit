@@ -33,7 +33,7 @@ export default function Landing() {
                 to="/signup"
                 className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg transition-colors"
               >
-                Sign Up Free
+                Sign Up
               </Link>
             </div>
 
@@ -94,7 +94,7 @@ export default function Landing() {
             Browse Tools →
           </Link>
           <Link to="/signup" className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg text-lg transition-colors shadow-lg">
-            Create Free Account →
+            Create Account →
           </Link>
         </div>
 
@@ -545,7 +545,7 @@ export default function Landing() {
               This offer ends when federal operations resume. Sign up now to lock in lifetime access.
             </p>
             <Link to="/signup" className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg text-lg">
-              Create Free Account →
+              Create Account →
             </Link>
           </div>
         </div>
@@ -560,7 +560,7 @@ export default function Landing() {
           Built by veterans who've been through this process. We know what you're going through.
         </p>
         <Link to="/signup" className="inline-block px-12 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 text-xl font-bold rounded-lg transition-colors shadow-lg">
-          Sign Up for Lifetime Free Access →
+          Sign Up for Lifetime Access →
         </Link>
         <p className="text-slate-400 text-sm mt-4">
           No credit card required • Lifetime premium access during shutdown

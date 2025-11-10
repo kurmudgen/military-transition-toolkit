@@ -73,6 +73,10 @@ export default function ResumeBuilder({ previewMode = false }) {
   const [resumeName, setResumeName] = useState('')
   const [showTranslationHelper, setShowTranslationHelper] = useState(false)
   const [searchMOS, setSearchMOS] = useState('')
+  const [translationTab, setTranslationTab] = useState('job-titles') // 'job-titles', 'accomplishments', 'skills'
+  const [mosSearch, setMosSearch] = useState('')
+  const [accomplishmentInput, setAccomplishmentInput] = useState('')
+  const [translatedAccomplishment, setTranslatedAccomplishment] = useState('')
 
   // Resume Import States
   const [showImportModal, setShowImportModal] = useState(false)
@@ -1788,6 +1792,319 @@ export default function ResumeBuilder({ previewMode = false }) {
             <pre className="whitespace-pre-wrap text-sm text-gray-700 dark:text-gray-300 font-sans leading-relaxed">
               {importedText}
             </pre>
+          </div>
+        </div>
+      )}
+
+      {/* Translation Helper Modal */}
+      {showTranslationHelper && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            {/* Header */}
+            <div className="p-6 border-b border-gray-200 dark:border-gray-700">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white">🔄 Military-to-Civilian Translation Helper</h2>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                    Translate military experience into civilian-friendly language
+                  </p>
+                </div>
+                <button
+                  onClick={() => setShowTranslationHelper(false)}
+                  className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+                >
+                  ×
+                </button>
+              </div>
+
+              {/* Tabs */}
+              <div className="flex gap-2 mt-4">
+                <button
+                  onClick={() => setTranslationTab('job-titles')}
+                  className={`px-4 py-2 rounded-lg font-semibold transition ${
+                    translationTab === 'job-titles'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  }`}
+                >
+                  Job Titles
+                </button>
+                <button
+                  onClick={() => setTranslationTab('accomplishments')}
+                  className={`px-4 py-2 rounded-lg font-semibold transition ${
+                    translationTab === 'accomplishments'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  }`}
+                >
+                  Accomplishments
+                </button>
+                <button
+                  onClick={() => setTranslationTab('skills')}
+                  className={`px-4 py-2 rounded-lg font-semibold transition ${
+                    translationTab === 'skills'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  }`}
+                >
+                  Skills & Phrases
+                </button>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="p-6">
+              {/* Job Titles Tab */}
+              {translationTab === 'job-titles' && (
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                      Enter your MOS, AFSC, or Rate
+                    </label>
+                    <input
+                      type="text"
+                      value={mosSearch}
+                      onChange={(e) => setMosSearch(e.target.value.toUpperCase())}
+                      placeholder="e.g., 11B, 25B, IT, 0311, 3D0X2"
+                      className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                    />
+                  </div>
+
+                  {mosSearch && MOS_TRANSLATIONS[mosSearch] && (
+                    <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-500 rounded-lg p-6">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                        ✓ Translation Found
+                      </h3>
+                      <div className="space-y-2">
+                        <div>
+                          <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">Military Title:</span>
+                          <p className="text-lg text-gray-900 dark:text-white font-medium">
+                            {mosSearch} - {MOS_TRANSLATIONS[mosSearch].title}
+                          </p>
+                        </div>
+                        <div>
+                          <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">Civilian Equivalents:</span>
+                          <p className="text-lg text-blue-600 dark:text-blue-400 font-medium">
+                            {MOS_TRANSLATIONS[mosSearch].civilian}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {mosSearch && !MOS_TRANSLATIONS[mosSearch] && (
+                    <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-500 rounded-lg p-4">
+                      <p className="text-yellow-800 dark:text-yellow-200">
+                        ⚠️ MOS/AFSC/Rate "{mosSearch}" not found in our database. Try using the Skills & Phrases tab for common military terms.
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Popular MOS Examples */}
+                  <div className="mt-6">
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Popular Examples:</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {Object.entries(MOS_TRANSLATIONS).slice(0, 8).map(([mos, data]) => (
+                        <button
+                          key={mos}
+                          onClick={() => setMosSearch(mos)}
+                          className="text-left p-3 bg-gray-50 dark:bg-gray-700 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition"
+                        >
+                          <div className="font-semibold text-gray-900 dark:text-white">{mos} - {data.title}</div>
+                          <div className="text-sm text-gray-600 dark:text-gray-400">{data.civilian.split(',')[0]}</div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Accomplishments Tab */}
+              {translationTab === 'accomplishments' && (
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                      Enter your military accomplishment
+                    </label>
+                    <textarea
+                      value={accomplishmentInput}
+                      onChange={(e) => setAccomplishmentInput(e.target.value)}
+                      rows={4}
+                      placeholder="e.g., Led squad of 9 soldiers during 12-month deployment to Afghanistan"
+                      className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 resize-none"
+                    />
+                  </div>
+
+                  <button
+                    onClick={() => setTranslatedAccomplishment(translateAccomplishment(accomplishmentInput))}
+                    disabled={!accomplishmentInput.trim()}
+                    className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Translate to Civilian Language
+                  </button>
+
+                  {translatedAccomplishment && (
+                    <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-500 rounded-lg p-6">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
+                        ✓ Civilian-Friendly Version
+                      </h3>
+                      <p className="text-lg text-gray-900 dark:text-white leading-relaxed">
+                        {translatedAccomplishment}
+                      </p>
+                      <button
+                        onClick={() => {
+                          navigator.clipboard.writeText(translatedAccomplishment)
+                          alert('✓ Copied to clipboard!')
+                        }}
+                        className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition text-sm"
+                      >
+                        📋 Copy to Clipboard
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Example Bullets */}
+                  <div className="mt-6">
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Example Translations:</h4>
+                    <div className="space-y-3">
+                      {[
+                        {
+                          military: 'Led squad of 9 soldiers during 12-month deployment',
+                          civilian: 'Managed team of 9 personnel during 12-month assignment in high-pressure environment'
+                        },
+                        {
+                          military: 'Conducted tactical operations ensuring mission success',
+                          civilian: 'Executed strategic planning and operations achieving 100% project objectives'
+                        },
+                        {
+                          military: 'Trained troops on combat procedures and battle drills',
+                          civilian: 'Developed and mentored staff members on emergency procedures and protocols'
+                        }
+                      ].map((example, idx) => (
+                        <div key={idx} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                          <div className="text-sm">
+                            <div className="mb-2">
+                              <span className="font-semibold text-red-600 dark:text-red-400">❌ Military:</span>
+                              <p className="text-gray-700 dark:text-gray-300 mt-1">{example.military}</p>
+                            </div>
+                            <div>
+                              <span className="font-semibold text-green-600 dark:text-green-400">✓ Civilian:</span>
+                              <p className="text-gray-900 dark:text-white mt-1 font-medium">{example.civilian}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Skills & Phrases Tab */}
+              {translationTab === 'skills' && (
+                <div className="space-y-4">
+                  <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-500 rounded-lg p-4 mb-4">
+                    <h3 className="font-semibold text-blue-900 dark:text-blue-200 mb-2">💡 Common Translations</h3>
+                    <p className="text-sm text-blue-800 dark:text-blue-300">
+                      Browse common military terms and their civilian equivalents. Click to copy to your clipboard.
+                    </p>
+                  </div>
+
+                  {/* Leadership Skills */}
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                    <h4 className="font-bold text-gray-900 dark:text-white mb-3">Leadership & Management</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {Object.entries(SKILL_TRANSLATIONS)
+                        .filter(([_, value]) => value.includes('Leader') || value.includes('Manager'))
+                        .slice(0, 8)
+                        .map(([military, civilian]) => (
+                          <button
+                            key={military}
+                            onClick={() => {
+                              navigator.clipboard.writeText(civilian)
+                              alert(`✓ Copied "${civilian}" to clipboard!`)
+                            }}
+                            className="text-left p-3 bg-white dark:bg-gray-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded border border-gray-200 dark:border-gray-500 transition"
+                          >
+                            <div className="text-sm font-semibold text-gray-900 dark:text-white">{military}</div>
+                            <div className="text-xs text-blue-600 dark:text-blue-400 mt-1">→ {civilian}</div>
+                          </button>
+                        ))}
+                    </div>
+                  </div>
+
+                  {/* Common Phrases */}
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                    <h4 className="font-bold text-gray-900 dark:text-white mb-3">Common Phrases</h4>
+                    <div className="space-y-2">
+                      {[
+                        { military: 'Conducted reconnaissance', civilian: 'Gathered and analyzed intelligence' },
+                        { military: 'Maintained accountability', civilian: 'Managed inventory and tracked assets' },
+                        { military: 'Trained personnel', civilian: 'Developed and mentored staff' },
+                        { military: 'Ensured mission success', civilian: 'Achieved organizational objectives' },
+                        { military: 'Tactical operations', civilian: 'Strategic planning and execution' },
+                        { military: 'Combat operations', civilian: 'High-pressure operations' },
+                        { military: 'Deployed to', civilian: 'Assigned to' },
+                        { military: 'Executed missions', civilian: 'Completed projects' },
+                        { military: 'Zero defects', civilian: '100% accuracy' },
+                        { military: 'After action review', civilian: 'Post-project analysis' }
+                      ].map((item, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => {
+                            navigator.clipboard.writeText(item.civilian)
+                            alert(`✓ Copied "${item.civilian}" to clipboard!`)
+                          }}
+                          className="w-full text-left p-3 bg-white dark:bg-gray-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded border border-gray-200 dark:border-gray-500 transition"
+                        >
+                          <div className="flex items-center justify-between">
+                            <div className="flex-1">
+                              <div className="text-sm text-gray-600 dark:text-gray-400">{item.military}</div>
+                              <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-1">→ {item.civilian}</div>
+                            </div>
+                            <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                            </svg>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Verbs */}
+                  <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                    <h4 className="font-bold text-gray-900 dark:text-white mb-3">Powerful Action Verbs</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                      Start your resume bullets with these strong action verbs:
+                    </p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                      {Object.entries(ACTION_VERBS).map(([category, verbs]) => (
+                        <div key={category} className="space-y-1">
+                          <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase">{category}</div>
+                          {verbs.slice(0, 4).map(verb => (
+                            <div key={verb} className="text-sm text-gray-700 dark:text-gray-300">• {verb}</div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Footer */}
+            <div className="p-6 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50">
+              <div className="flex justify-between items-center">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  💡 Tip: Use these translations to make your resume ATS-friendly and easier for civilian hiring managers to understand.
+                </p>
+                <button
+                  onClick={() => setShowTranslationHelper(false)}
+                  className="px-6 py-2 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg transition"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}

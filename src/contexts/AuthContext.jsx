@@ -155,6 +155,32 @@ export const AuthProvider = ({ children }) => {
     const hasAuthCode = urlParams.has('code')
 
     const initAuth = async () => {
+      // Recovery mechanism: detect and clear broken auth state on mount
+      try {
+        const brokenAuthKeys = Object.keys(localStorage).filter(key =>
+          key.includes('supabase.auth.token') ||
+          key.includes('-auth-token')
+        )
+
+        if (brokenAuthKeys.length > 0) {
+          console.log('🔍 Checking for broken auth state on mount...')
+
+          // Try to get session - if it fails, clear everything
+          try {
+            const { data: { session: testSession } } = await supabase.auth.getSession()
+            if (!testSession) {
+              console.log('🧹 Clearing stale auth tokens from localStorage')
+              brokenAuthKeys.forEach(key => localStorage.removeItem(key))
+            }
+          } catch (err) {
+            console.log('🚨 Detected broken auth state - clearing all auth data')
+            brokenAuthKeys.forEach(key => localStorage.removeItem(key))
+          }
+        }
+      } catch (err) {
+        console.warn('Could not check for broken auth state:', err)
+      }
+
       if (hasAuthCode) {
         console.log('🔐 Auth code detected in URL - clearing stale sessions and waiting for PKCE exchange')
 
@@ -173,6 +199,24 @@ export const AuthProvider = ({ children }) => {
 
       if (sessionError) {
         console.error('❌ Session error:', sessionError)
+
+        // If session retrieval fails, clear local storage and redirect
+        console.log('🧹 Clearing broken session data')
+        try {
+          localStorage.removeItem('supabase.auth.token')
+          const authTokenKeys = Object.keys(localStorage).filter(key => key.includes('-auth-token'))
+          authTokenKeys.forEach(key => localStorage.removeItem(key))
+        } catch (err) {
+          console.warn('Could not clear localStorage:', err)
+        }
+
+        setSession(null)
+        setUser(null)
+
+        // Redirect to login if on protected route
+        if (window.location.pathname.includes('/app/')) {
+          navigate('/login')
+        }
       }
 
       // Validate session if it exists
@@ -219,6 +263,34 @@ export const AuthProvider = ({ children }) => {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (_event, session) => {
       console.log(`🔄 Auth state change: ${_event}`, session?.user?.id)
+
+      // Handle failed refresh gracefully - prevent white screen
+      if (_event === 'SIGNED_OUT' || _event === 'TOKEN_REFRESHED') {
+        if (!session) {
+          console.log('🚨 Session lost or refresh failed - clearing local data')
+
+          // Clear any stale local data to prevent broken auth state
+          try {
+            localStorage.removeItem('supabase.auth.token')
+            localStorage.removeItem('sb-' + supabase.supabaseUrl.split('//')[1]?.split('.')[0] + '-auth-token')
+          } catch (err) {
+            console.warn('Could not clear local storage:', err)
+          }
+
+          setSession(null)
+          setUser(null)
+
+          // Redirect to login if on protected route
+          const currentPath = window.location.pathname
+          if (currentPath.includes('/app/')) {
+            console.log('🔄 Redirecting to login from protected route')
+            navigate('/login')
+          }
+
+          setLoading(false)
+          return
+        }
+      }
 
       setSession(session)
 
