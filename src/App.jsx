@@ -11,6 +11,9 @@ import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 import RefundPolicy from './pages/RefundPolicy'
 import Pricing from './pages/Pricing'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
+import TerminalLeaveCalculator from './pages/TerminalLeaveCalculator'
 
 // Auth pages
 import Login from './pages/auth/Login'
@@ -59,6 +62,13 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/auth/reset-password" element={<ResetPassword />} />
         <Route path="/auth/callback" element={<AuthCallback />} />
+
+        {/* Blog pages (public access) */}
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+
+        {/* Calculator pages (public access) */}
+        <Route path="/calculator/terminal-leave" element={<TerminalLeaveCalculator />} />
 
         {/* Tier 1: Public access pages (no login required, fully functional) */}
         <Route path="/public/state-benefits" element={<StateBenefits publicMode />} />
