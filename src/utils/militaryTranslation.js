@@ -28,7 +28,28 @@ export const SKILL_TRANSLATIONS = {
   // Operations
   'Operations': 'Operations Manager, Program Manager',
   'Training': 'Training Specialist, Instructor, Facilitator',
-  'Security': 'Security Manager, Security Specialist'
+  'Security': 'Security Manager, Security Specialist',
+
+  // Common Military Phrases
+  'Led squad of': 'Managed team of',
+  'Conducted reconnaissance': 'Gathered and analyzed intelligence',
+  'Maintained accountability': 'Managed inventory and tracked assets',
+  'Trained personnel': 'Developed and mentored staff',
+  'Ensured mission success': 'Achieved organizational objectives',
+  'Tactical operations': 'Strategic planning and execution',
+  'Supervised troops': 'Managed team members',
+  'Combat operations': 'High-pressure operations',
+  'Deployed to': 'Assigned to',
+  'Provided security': 'Ensured safety and protection',
+  'Coordinated with': 'Collaborated with',
+  'Executed missions': 'Completed projects',
+  'Managed equipment worth': 'Managed assets valued at',
+  'Zero defects': '100% accuracy',
+  'Battle drills': 'Emergency procedures',
+  'After action review': 'Post-project analysis',
+  'Standard operating procedure': 'Best practices and protocols',
+  'Chain of command': 'Organizational hierarchy',
+  'Force protection': 'Security and safety measures'
 }
 
 /**
@@ -66,7 +87,34 @@ export const MOS_TRANSLATIONS = {
   '0311': { title: 'Rifleman', civilian: 'Security Specialist, Law Enforcement, Emergency Response' },
   '0621': { title: 'Radio Operator', civilian: 'Communications Specialist, Network Technician' },
   '0811': { title: 'Field Artillery', civilian: 'Operations Coordinator, Project Manager' },
-  '6531': { title: 'Aviation Ordnance Technician', civilian: 'Weapons Systems Technician, Quality Control Inspector' }
+  '6531': { title: 'Aviation Ordnance Technician', civilian: 'Weapons Systems Technician, Quality Control Inspector' },
+
+  // Additional Army MOS
+  '19D': { title: 'Cavalry Scout', civilian: 'Intelligence Analyst, Reconnaissance Specialist, Security Analyst' },
+  '25U': { title: 'Signal Support Systems Specialist', civilian: 'IT Support Specialist, Network Technician, Communications Engineer' },
+  '27D': { title: 'Paralegal Specialist', civilian: 'Paralegal, Legal Assistant, Compliance Specialist' },
+  '36B': { title: 'Financial Management Technician', civilian: 'Accountant, Financial Analyst, Budget Analyst' },
+  '74D': { title: 'Chemical, Biological, Radiological, and Nuclear Specialist', civilian: 'HAZMAT Specialist, Environmental Health & Safety Officer, Emergency Response Coordinator' },
+  '89B': { title: 'Ammunition Specialist', civilian: 'Inventory Manager, Warehouse Manager, Logistics Coordinator' },
+  '91B': { title: 'Wheeled Vehicle Mechanic', civilian: 'Automotive Technician, Fleet Maintenance Manager, Mechanic' },
+
+  // Additional Air Force AFSC
+  '2T2X1': { title: 'Air Transportation', civilian: 'Logistics Manager, Transportation Coordinator, Supply Chain Specialist' },
+  '3E0X1': { title: 'Electrical Systems', civilian: 'Electrician, Electrical Engineer, Facilities Manager' },
+  '6C0X1': { title: 'Contracting', civilian: 'Contract Specialist, Procurement Manager, Acquisition Specialist' },
+  '3F2X1': { title: 'Education and Training', civilian: 'Training Manager, Instructional Designer, Learning & Development Specialist' },
+  '2R1X1': { title: 'Maintenance Management Analysis', civilian: 'Operations Analyst, Logistics Manager, Quality Assurance Manager' },
+
+  // Additional Navy Ratings
+  'YN': { title: 'Yeoman', civilian: 'Administrative Manager, Executive Assistant, Office Manager' },
+  'FC': { title: 'Fire Controlman', civilian: 'Systems Engineer, Technical Specialist, Quality Control Inspector' },
+  'GM': { title: 'Gunner\'s Mate', civilian: 'Weapons Systems Technician, Ordnance Specialist, Quality Control Inspector' },
+  'ET': { title: 'Electronics Technician', civilian: 'Electronics Engineer, Systems Technician, Technical Support Specialist' },
+  'BM': { title: 'Boatswain\'s Mate', civilian: 'Operations Supervisor, Facilities Manager, Team Lead' },
+
+  // Coast Guard
+  'MK': { title: 'Machinery Technician', civilian: 'Mechanical Engineer, Maintenance Technician, Equipment Specialist' },
+  'OS': { title: 'Operations Specialist', civilian: 'Operations Coordinator, Logistics Analyst, Air Traffic Controller' }
 }
 
 /**
