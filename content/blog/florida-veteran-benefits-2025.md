@@ -15,7 +15,7 @@ Look, every state claims to be "military friendly." Florida actually delivers.
 
 The numbers don't lie. Only California has more veterans (1.6M), and their cost of living makes Florida look like a bargain. Texas comes in third with 1.3M, but they've got property taxes that'll eat your retirement check.
 
-Florida? **Zero state income tax**. That's not a discount. That's nothing.
+Florida? **Zero state income tax**. That's not a discount or some partial exemption. That's nothing.
 
 Let's say you're retiring as an E-7 with 20 years. Your retirement pay is around $2,600/month or $31,200/year. In a state with 5% income tax, you'd pay about $1,560 annually just on your military retirement. In Florida? Keep it all.
 
@@ -33,9 +33,9 @@ Here's where Florida really stands out. The property tax benefits are tiered bas
 
 **100% permanently disabled:** Full property tax exemption. Complete. Every penny.
 
-Let me repeat that. **If you're rated 100% P&T (permanent and total), you pay $0 in property taxes on your primary residence.**
+Let me repeat that because people don't believe it the first time. **If you're rated 100% P&T (permanent and total), you pay $0 in property taxes on your primary residence.**
 
-The average property tax bill in Florida is about 1% of assessed value. On a $350,000 home, that's $3,500 annually. Over 30 years? You're saving $105,000.
+The average property tax bill in Florida runs about 1% of assessed value. On a $350,000 home, that's $3,500 annually. Over 30 years? You're saving $105,000.
 
 ### Combat-related tax exemption:
 
@@ -67,7 +67,7 @@ Full in-state tuition at:
 
 ### What it doesn't cover:
 
-- Out-of-state tuition rates (but you'll already be in-state resident)
+- Out-of-state tuition rates (but you'll already qualify for in-state)
 - Fees, books, housing
 - Private universities
 
@@ -75,11 +75,11 @@ Full in-state tuition at:
 
 In-state tuition at University of Florida runs about $6,380/year. Four years? $25,520 saved per kid. If you've got two kids going through college, that's over $50,000.
 
-Combined with your transferred Post-9/11 GI Bill benefits (which can cover housing allowance and books), your kids can graduate debt-free.
+Combined with your transferred Post-9/11 GI Bill benefits (which can cover housing allowance and books), your kids can graduate debt-free. That's not nothing.
 
 ## VA facilities and healthcare
 
-Florida's got **eight VA Medical Centers** and numerous outpatient clinics. This matters more than people think.
+Florida's got **eight VA Medical Centers** and numerous outpatient clinics scattered around. This matters more than people think when you're actually living somewhere.
 
 ### Major VA Medical Centers:
 - **Miami VA Healthcare System** (serving 119,000+ veterans)
@@ -93,15 +93,15 @@ Florida's got **eight VA Medical Centers** and numerous outpatient clinics. This
 
 You're never more than an hour from VA care in most of Florida. Try finding that in Wyoming.
 
-The Tampa facility deserves special mention. It's a **polytrauma rehabilitation center**, one of only five in the entire VA system. If you or a buddy has TBI or complex injuries, this is world-class care.
+The Tampa facility deserves special mention. It's a **polytrauma rehabilitation center**, one of only five in the entire VA system. If you or someone you know has TBI or complex injuries, this is world-class care.
 
 ## Cost of living reality check
 
-Everyone talks about Florida's "high cost of living." Let's break down what that actually means.
+Everyone talks about Florida's "high cost of living." Let's be honest about what that actually means.
 
 ### Housing:
 
-Yes, median home prices in Florida are high. As of 2025, statewide median is around $420,000. But that's a misleading number because it includes Miami Beach ($800K+) and Naples ($600K+).
+Yeah, median home prices in Florida are high. As of 2025, statewide median is around $420,000. But that's a misleading number because it includes Miami Beach ($800K+) and Naples ($600K+).
 
 **Affordable veteran-friendly cities:**
 - **Jacksonville:** $315,000 median, massive military community, NAS Jax right there
@@ -110,21 +110,21 @@ Yes, median home prices in Florida are high. As of 2025, statewide median is aro
 - **Ocala:** $260,000 median, horse country, lower density
 - **Panama City:** $310,000 median, Tyndall AFB nearby
 
-Compare that to San Diego ($950,000), Virginia Beach ($385,000), or San Antonio ($295,000 but with property taxes).
+Compare that to San Diego ($950,000), Virginia Beach ($385,000), or even San Antonio ($295,000 but with property taxes that'll wreck you).
 
 ### Other costs:
 
 **Groceries:** About 3% above national average. Not nothing, but not California (18% above average).
 
-**Utilities:** Higher due to AC usage. Budget $200-300/month for electric in summer. But no heating costs in winter.
+**Utilities:** Higher due to AC usage. Budget $200-300/month for electric in summer. But no heating costs in winter, so it evens out somewhat.
 
-**Car insurance:** Higher than you'd like ($2,000-2,500/year average). Shop around.
+**Car insurance:** Higher than you'd like ($2,000-2,500/year average). Shop around aggressively.
 
 **Healthcare:** Average, and most veterans are using VA anyway.
 
 ### The tax savings cover it:
 
-Even if your daily expenses are 5% higher than Texas or Georgia, you're still coming out ahead with no income tax and property tax exemptions. The math works.
+Even if your daily expenses are 5% higher than Texas or Georgia, you're still coming out ahead with no income tax and property tax exemptions. I've run the numbers multiple times. The math works.
 
 ## Other Florida veteran benefits
 
@@ -136,7 +136,7 @@ Disabled veterans can get specialty license plates with registration fee discoun
 
 Florida offers **free hunting and fishing licenses** for Florida resident veterans with service-connected disabilities. If you're 10% or higher, you qualify.
 
-Saltwater, freshwater, doesn't matter. That's $80-100/year saved if you're outdoors.
+Saltwater, freshwater, doesn't matter. That's $80-100/year saved if you're outdoors regularly.
 
 ### State parks:
 
@@ -144,13 +144,15 @@ Saltwater, freshwater, doesn't matter. That's $80-100/year saved if you're outdo
 
 ### Veterans preference in hiring:
 
-Florida law gives preference to veterans in state government hiring and for state contracts. If you're applying for state jobs, veteran status is a tangible advantage.
+Florida gives vets preference for state jobs and contracts. Doesn't guarantee you'll get hired, but it helps. Worth checking out if you're looking at government work.
 
 ## Best Florida cities for veterans
 
-Not all Florida cities are created equal for vets. Here's the breakdown:
+Not all Florida cities are created equal for vets. Here's what actually matters.
 
 ### Jacksonville (population 950,000)
+
+Full disclosure: I'm biased toward Jax. Spent time there, know the area. But it's genuinely solid for veterans.
 
 **Why it works:**
 - Massive military presence (NAS Jax, NS Mayport, Camp Blanding)
@@ -159,20 +161,24 @@ Not all Florida cities are created equal for vets. Here's the breakdown:
 - VA Medical Center downtown
 - Strong job market (logistics, healthcare, finance)
 
-**Median home price:** $315,000
+**Median home price:** $315,000  
 **Veteran population:** 10.5% of population
+
+If you're Navy, you'll feel at home immediately. If you're not, you'll still find your people.
 
 ### Tampa (population 400,000)
 
 **Why it works:**
 - MacDill AFB (CENTCOM, SOCOM)
-- James A. Haley VA Hospital (best in Florida)
+- James A. Haley VA Hospital (best in Florida, not close)
 - Major job market (finance, tech, healthcare)
 - Great veteran community
 - Pro sports, culture, beaches nearby
 
-**Median home price:** $380,000
+**Median home price:** $380,000  
 **Veteran population:** 8.1% of population
+
+Tampa's probably got better nightlife if that matters to you. Also more expensive than Jax, but not Miami expensive.
 
 ### Pensacola (population 54,000)
 
@@ -183,8 +189,10 @@ Not all Florida cities are created equal for vets. Here's the breakdown:
 - Tight veteran community
 - Easy pace of life
 
-**Median home price:** $285,000
+**Median home price:** $285,000  
 **Veteran population:** 11.8% of population
+
+If you want quiet beach town vibes without giving up access to a VA hospital, this is your spot.
 
 ### Orlando (population 310,000)
 
@@ -195,8 +203,10 @@ Not all Florida cities are created equal for vets. Here's the breakdown:
 - Major airport for travel
 - Theme parks if you've got kids
 
-**Median home price:** $395,000
+**Median home price:** $395,000  
 **Veteran population:** 7.3% of population
+
+Orlando's more expensive and touristy, but the job market's strong and it's centrally located.
 
 ### Port St. Lucie (population 210,000)
 
@@ -207,20 +217,22 @@ Not all Florida cities are created equal for vets. Here's the breakdown:
 - Close to beaches
 - Quiet, family-oriented
 
-**Median home price:** $385,000
+**Median home price:** $385,000  
 **Veteran population:** 9.2% of population
 
 ## The weather factor (yes, it matters)
 
 Everyone jokes about the heat. Let's be real about it.
 
-**Summer (June-September):** Hot. Really hot. 90°F+ with humidity that feels like you're breathing soup. You'll run your AC constantly. If you grew up in the South or spent time in the Middle East, you'll adapt. If you're from Minnesota, you might struggle.
+**Summer (June-September):** Stupid hot. 90°F+ with humidity that makes you question every life decision. If you're coming from San Diego, you'll hate June through September. If you did Iraq or Afghanistan, you'll be fine.
+
+You'll run your AC constantly. Your electric bill will reflect this.
 
 **Winter (December-March):** Perfect. 70-75°F during the day, 50-60°F at night. This is why people move to Florida. You're wearing shorts on Christmas while your buddies up north are shoveling snow.
 
 **Hurricane season:** Real talk—it's a thing. June through November. You'll need insurance, you'll need to prep, and some years you'll evacuate. But modern homes are built to code, and most veterans handle the stress better than civilians. It's just another checklist to work through.
 
-**Trade-off:** No snow. No ice. No shoveling. No heating costs. No seasonal depression from gray skies. Your joints won't ache in January.
+**Trade-off:** No snow. No ice. No shoveling. No heating costs. No seasonal depression from gray skies all winter. Your joints won't ache in January.
 
 For aging veterans with injuries, that matters. A lot.
 
@@ -296,9 +308,9 @@ Here's the honest assessment.
 - Plan to work in industries where Florida's strong (logistics, healthcare, aerospace, tourism)
 
 **Florida might not work if you:**
-- Can't handle heat and humidity
+- Can't handle heat and humidity (seriously, summer's brutal)
 - Want four distinct seasons
-- Are looking for a low-cost-of-living state (it's cheaper than CA/NY, but not Texas/Tennessee)
+- Are looking for the absolute cheapest cost of living (it's cheaper than CA/NY, but not Texas/Tennessee)
 - Have a specialized job that doesn't exist in Florida's economy
 
 **The bottom line:** For E-7 to E-9 retirees with families, Florida's combination of tax benefits, VA healthcare access, and quality of life is tough to beat. The property tax exemption alone for 100% disabled vets is worth six figures over a retirement.
