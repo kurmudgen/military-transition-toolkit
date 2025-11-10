@@ -270,7 +270,7 @@ export default function Layout() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="#roadmap"
+                    href="https://docs.google.com/document/d/1pJ0rHGXtb9g3txue9hsiN-kritb-_ZAml1r6P2axq98/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-400 hover:text-white transition-colors text-sm"
@@ -280,7 +280,7 @@ export default function Layout() {
                 </li>
                 <li>
                   <a
-                    href="#changelog"
+                    href="https://docs.google.com/document/d/10YECz-KhGHPeUjnzRvA1HYGnVIu6A2GSsUzHvd4v_k0/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-400 hover:text-white transition-colors text-sm"
@@ -290,7 +290,7 @@ export default function Layout() {
                 </li>
                 <li>
                   <a
-                    href="#feedback"
+                    href="https://forms.gle/Z3ZFnphafATv7pRn6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-400 hover:text-white transition-colors text-sm"
