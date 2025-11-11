@@ -1,0 +1,333 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PREMIUM CONVERSION EMAIL SEQUENCE
+Purpose: Convert free users to premium subscribers
+Total Emails: 5 (triggered when user hits free tier limits or shows conversion intent)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+---
+EMAIL 1: You've Hit Your Free Limit
+Send: Immediate upon hitting free tier limit
+Subject Line: You've maxed out your free resume exports
+Preview Text: Here's what happens next (and what you're missing)...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+You just hit your free tier limit.
+
+You've exported 3 resumes (the free limit). That means you're actually using the platform—which is great.
+
+But now you're stuck. You need to export another version, but you can't.
+
+**Here's what's happening:**
+
+Free accounts get 3 resume exports. Why? Because we want you to try the tools without commitment. But unlimited exports require server resources, storage, and ongoing support.
+
+**Your options:**
+
+**Option 1: Upgrade to Premium**
+- Unlimited resume exports
+- Advanced VA claims research (secondary conditions database)
+- Interview prep platform with company research
+- Priority support (same-day responses)
+- Career coaching credits ($500 value)
+
+**Cost:** $29/month or $249/year (save 30%)
+
+**Option 2: Stay on Free**
+You can still use all the basic tools—resume builder, VA tracker, job search management. You just can't export more than 3 resumes.
+
+**No pressure. Your choice.**
+
+But here's the thing: If you're actively applying to jobs, you need more than 3 resume versions.
+
+You need a version tailored for each company. A version for project management roles. A version for operations roles. A version for logistics.
+
+One generic resume doesn't cut it anymore.
+
+**Limited-time offer for free users hitting their limit:**
+
+Upgrade in the next 48 hours and get your first month for $19 instead of $29.
+
+That's 34% off. Enough to export unlimited resumes and access all premium features.
+
+After 48 hours, regular pricing applies.
+
+Your call.
+
+Jacob
+
+CTA: Upgrade to Premium ($19 First Month)
+Link: /premium/limited-offer
+
+Alternative CTAs:
+- See all premium features
+- Continue with free (limited exports)
+
+---
+
+EMAIL 2: What Premium Users Are Achieving
+Send: 1 day after hitting limit
+Subject Line: Premium users land jobs 2.3x faster
+Preview Text: Real results from veterans who upgraded...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+You're still on the fence about premium. I get it.
+
+Let me show you what premium users are actually achieving.
+
+**Mark (Army E-6, 8 years)**
+- Used secondary conditions research to add 40% to his VA rating
+- Went from 30% ($524/month) to 70% ($1,788/month)
+- Lifetime value: $379,200 more
+- Premium cost: $249/year
+- **ROI: First month paid for 150+ years of premium**
+
+**Sarah (Navy E-5, 6 years)**
+- Used interview prep platform to research 8 companies
+- Received 3 offers in 2 months
+- Negotiated salary from $65K to $78K using our data
+- Extra earnings: $13K first year
+- **ROI: 52x in year one**
+
+**David (Marines E-7, 12 years)**
+- Exported 12 tailored resumes using unlimited feature
+- Applied to 30+ jobs with customized resumes
+- Landed job in 6 weeks (average for premium users: 8 weeks)
+- Average for free users: 18 weeks
+- **Result: Started earning civilian salary 12 weeks earlier = $18K more**
+
+**These aren't cherry-picked success stories. This is typical.**
+
+Premium users succeed faster because they have better tools and better information.
+
+**What you get with premium:**
+
+✓ **Unlimited resume exports** (stop being limited by arbitrary caps)
+✓ **Secondary conditions database** (find the VA claims you're missing)
+✓ **Interview prep platform** (research companies, practice answers, see salary data)
+✓ **Priority support** (same-day email responses from real people)
+✓ **Career coaching credits** (1-on-1 support when you need it)
+
+**The honest truth:**
+
+You don't need premium to succeed. Plenty of veterans transition successfully with free tools.
+
+But premium users succeed faster, with less stress, and often with better outcomes.
+
+**Is 2-3 months of faster transition worth $29/month?**
+
+You decide.
+
+Jacob
+
+P.S. 30-day money-back guarantee. If premium doesn't help you, get a full refund within 30 days. No questions asked.
+
+CTA: Upgrade to Premium Now
+Link: /premium
+
+Alternative CTAs:
+- Read more success stories
+- See premium features breakdown
+
+---
+
+EMAIL 3: Premium vs Free—The Honest Breakdown
+Send: 3 days after hitting limit
+Subject Line: What you get (and don't get) in free vs premium
+Preview Text: Complete feature comparison with no BS...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Let's be completely transparent about what you get with free vs premium.
+
+**RESUME TOOLS**
+Free: Basic resume builder, military translation helper, 3 exports
+Premium: Everything free has + unlimited exports, ATS optimization score, professional templates, resume review service
+
+**VA CLAIMS TOOLS**
+Free: Basic claims tracker, timeline management, document storage
+Premium: Everything free has + secondary conditions database with 500+ conditions, winning claim examples, evidence templates, C&P exam prep platform
+
+**JOB SEARCH TOOLS**
+Free: Job application tracker, basic timeline management
+Premium: Everything free has + interview prep platform, company research database, salary data for 500+ companies, networking templates
+
+**CAREER RESOURCES**
+Free: Basic guides, blog articles, community access
+Premium: Everything free has + career coaching credits ($500 value), priority support, expert Q&A access, advanced strategy guides
+
+**SUPPORT**
+Free: Email support (2-3 day response time), community forum
+Premium: Priority email support (same-day response), direct access to experts, 1-on-1 coaching sessions
+
+**PRICING**
+Free: $0/month forever
+Premium: $29/month or $249/year (save 30%)
+
+**WHO IS FREE GOOD FOR?**
+
+You're more than 6 months from separation. You're just starting to research. You want to test the platform before committing.
+
+**WHO IS PREMIUM GOOD FOR?**
+
+You're actively job searching. You're filing a VA claim soon. You want expert guidance. You're on a tight timeline. You want every advantage.
+
+**The decision framework:**
+
+If premium saves you 2 weeks in your job search, what's that worth?
+- Average veteran salary: $65,000/year
+- Two weeks: $2,500
+- Premium for 3 months: $87
+- **ROI: 28.7x**
+
+If premium helps you add 20% to your VA rating, what's that worth?
+- Difference (50% to 70%): $466/month
+- Lifetime value (25 years): $139,800
+- Premium for 1 year: $249
+- **ROI: 561x**
+
+**Those aren't hypotheticals. Those are actual outcomes from premium users.**
+
+You can do the math yourself.
+
+Jacob
+
+CTA: Upgrade to Premium
+Link: /premium/checkout
+
+Alternative CTAs:
+- Download full feature comparison PDF
+- Calculate your personal ROI
+
+---
+
+EMAIL 4: Last Chance—Special Pricing Expires Tomorrow
+Send: 5 days after hitting limit
+Subject Line: Your upgrade discount expires in 24 hours
+Preview Text: After tomorrow, you'll pay full price...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+This is your last chance to get premium at the discounted rate.
+
+When you hit your free limit 5 days ago, we offered you a special upgrade price: **$19 for your first month** (normally $29).
+
+That offer expires tomorrow at midnight.
+
+After that? You'll pay $29/month like everyone else.
+
+**Why am I being pushy about this?**
+
+Because I've watched thousands of veterans go through transition. The ones who invest in the right tools early succeed faster and with less stress.
+
+The ones who wait? They struggle longer, make more mistakes, and often end up paying for MORE expensive services later (resume writers, career coaches, VSO services).
+
+**Premium is the best value in veteran transition services:**
+
+- Resume writing service: $300-$800 (one-time, one resume)
+- Career coach: $150-$300/hour (you'll need 3-5 sessions)
+- VSO help: Free but slow and often unhelpful
+- Premium: $29/month for everything
+
+**What you're deciding:**
+
+Not whether premium is worth it. You've seen the value. You've read the success stories. You know it works.
+
+You're deciding whether to pull the trigger now at $19/month or wait and pay $29/month later.
+
+**Math time:**
+
+Upgrade today: $19 first month, then $29/month = $48 for first 2 months
+Wait until next week: $29/month = $58 for first 2 months
+
+**You're literally leaving $10 on the table by waiting.**
+
+Plus you're delaying access to tools you clearly need (you hit your export limit for a reason).
+
+**48 hours left to decide.**
+
+After that, the discount disappears and you're back to the free tier limits.
+
+Jacob
+
+P.S. Still on the fence? Reply to this email with your questions. I'll answer personally within 24 hours.
+
+CTA: Claim Your $19/Month Rate Now
+Link: /premium/limited-offer
+
+Alternative CTAs:
+- Set reminder for before discount expires
+- Ask me questions about premium
+
+---
+
+EMAIL 5: We'll Save Your Spot
+Send: 7 days after hitting limit (if they still haven't upgraded)
+Subject Line: Your free account is still here (whenever you're ready)
+Preview Text: No pressure. Just wanted you to know your options...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+You didn't upgrade. That's completely fine.
+
+The discount expired. Your free account is still here. You can still use all the basic tools.
+
+**I'm not going to keep pushing you.**
+
+You've heard the pitch. You understand the value. If premium made sense for you, you would've upgraded.
+
+**What happens now:**
+
+You'll still hear from me occasionally. New feature announcements. Helpful transition tips. Success stories from the community.
+
+But I'm done trying to convince you to upgrade. You'll make that decision when (or if) it makes sense for you.
+
+**Your free account includes:**
+
+- Resume builder with military translation (3 exports)
+- VA claims tracker
+- Job search management
+- State benefits database
+- Career transition resources
+- Community access
+
+That's still more than most transition programs offer at any price.
+
+**If you ever change your mind:**
+
+Premium is always available. Same features, same pricing. Just click upgrade whenever you're ready.
+
+No hard feelings. No judgment. Just tools that are there when you need them.
+
+**One last thing:**
+
+If you didn't upgrade because you genuinely can't afford it right now—not because you don't see the value, but because money is tight—email me directly.
+
+We have a financial hardship program. It's not advertised publicly, but it exists for veterans who need help.
+
+**Your transition matters.** Free or premium, I want you to succeed.
+
+Keep moving forward.
+
+Jacob
+
+P.S. If you do end up upgrading later, you won't see that $19 first-month rate again. Just so you know.
+
+CTA: Back to Dashboard
+Link: /dashboard
+
+Alternative CTAs:
+- Upgrade anytime (regular $29/month pricing)
+- Contact me about financial hardship program
+- Read more transition resources
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF PREMIUM CONVERSION SEQUENCE
+Total Emails: 5
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

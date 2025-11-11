@@ -1,0 +1,754 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+12-MONTH TRANSITION TIMELINE EMAIL SEQUENCE
+Purpose: Guide users through entire transition process, month by month
+Total Emails: 12 (one per month, triggered based on separation date)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+---
+EMAIL 1: One Year Out—Your Master Plan Starts Now
+Send: 12 months before separation date at 9:00 AM
+Subject Line: 365 days to separation: Here's your roadmap
+Preview Text: The biggest mistakes happen in month 12. Avoid them...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+One year out. This is where your transition really begins.
+
+Most veterans wait until month 6 to start planning. By then, they've already missed critical windows—VA claim prep, skill certifications, networking opportunities.
+
+You're not going to make that mistake.
+
+**Here's your 12-month mission:**
+
+**Months 12-9:** Foundation building
+- VA claim evidence gathering
+- Resume first draft
+- Career field research
+- Skill assessment
+
+**Months 9-6:** Skill development
+- Certifications and training
+- LinkedIn optimization
+- Initial networking
+- Interview preparation
+
+**Months 6-3:** Active execution
+- Job applications (20+ per month)
+- VA claim submission
+- Active interviewing
+- Offer negotiations
+
+**Months 3-0:** Final sprint
+- Terminal leave planning
+- Healthcare transition
+- Final paperwork
+- Start date coordination
+
+**Your month 12 priorities:**
+
+1. Document your military achievements (you'll forget details later)
+2. Start gathering VA claim evidence (medical records, buddy letters)
+3. Research career fields that match your skills
+4. Update your LinkedIn with a professional photo
+
+That's it. Four things. Not twenty. Just four.
+
+You've got 365 days. Use them wisely.
+
+Jacob
+
+CTA: Set Up Your 12-Month Timeline
+Link: /tools/timeline
+
+Alternative CTAs:
+- Download complete 12-month checklist
+- See what successful transitions look like
+
+---
+
+EMAIL 2: Month 11—Get Your VA Claim Started NOW
+Send: 11 months before separation at 10:00 AM
+Subject Line: Why starting your VA claim now saves you $10K+
+Preview Text: Evidence you gather today determines your rating...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+You can't file your VA claim until you're 180 days out (month 6).
+
+But if you wait until month 6 to start preparing? You've already lost.
+
+Here's why:
+
+**Evidence takes time to gather.** Medical records from 5 years ago. Buddy letters from people who've already separated. Documentation of incidents that happened years back.
+
+You can't manufacture this stuff in month 6 when you're scrambling.
+
+**What to do in month 11:**
+
+**1. List every injury, illness, or condition**
+Don't self-filter. If something hurts or bothers you, write it down.
+- Physical: Knee, back, shoulder, hearing, sleep issues
+- Mental: Anxiety, depression, PTSD, adjustment problems
+
+**2. Connect each condition to service**
+When did it start? What caused it? Who witnessed it? Where were you stationed?
+
+**3. Gather current evidence**
+- Schedule medical appointments NOW for anything that bothers you
+- Get it documented in your medical records while you're still in
+- Ask your doc to note the severity and impact on your daily life
+
+**4. Identify buddy letter sources**
+Who served with you when you got injured? Get their contact info before they PCS or separate.
+
+**The money difference:**
+
+Starting now vs. waiting until month 6 could mean the difference between a 30% rating and a 70% rating.
+
+That's $1,529/month vs. $466/month.
+Over 30 years: $382,680 vs. $167,760.
+**Difference: $214,920.**
+
+Worth starting early? You decide.
+
+Jacob
+
+P.S. Our VA Claims Tracker has a month-by-month prep timeline. Use it.
+
+CTA: Start VA Claim Preparation
+Link: /tools/va-claims-tracker
+
+Alternative CTAs:
+- Download VA evidence checklist
+- See what evidence you actually need
+
+---
+
+EMAIL 3: Month 10—Resume Building Begins
+Send: 10 months before separation at 11:00 AM
+Subject Line: Your first resume draft is due (to yourself)
+Preview Text: Bad resume = no interviews. Let's get this right...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Month 10 goal: Complete your first resume draft.
+
+Not your final version. Not a polished masterpiece. Just a solid first draft that you can refine over the next several months.
+
+**Why start now?**
+
+Because resume writing takes longer than you think. You'll go through 5-7 drafts before you have something that actually works.
+
+Draft 1: Military language (sounds like your eval)
+Draft 2: Civilian translation (but still awkward)
+Draft 3: Better, but missing impact
+Draft 4: Added numbers, still too long
+Draft 5: Condensed, but lost important details
+Draft 6: Finding the balance
+Draft 7: Actually pretty good
+
+That process takes months. Start now.
+
+**Your month 10 resume mission:**
+
+**1. Choose a format**
+- Reverse chronological (most common)
+- One page if <10 years experience
+- Two pages if 10+ years
+
+**2. Write your basic sections**
+- Contact info
+- Professional summary (2-3 sentences)
+- Work experience (translate your positions)
+- Education and training
+- Skills (technical + soft skills)
+
+**3. Use our translation helper**
+Don't write "Infantry Team Leader." Write "Operations Team Leader managing 9-person unit in high-risk environments."
+
+**4. Get it down on paper**
+Don't obsess over perfection. Just get the bones in place.
+
+You'll refine this over the next 10 months. But you can't refine what doesn't exist.
+
+Jacob
+
+CTA: Start Your Resume Draft
+Link: /tools/resume-builder
+
+Alternative CTAs:
+- See resume examples from your branch
+- Download resume template
+
+---
+
+EMAIL 4: Month 9—LinkedIn and Networking Ramp-Up
+Send: 9 months before separation at 9:30 AM
+Subject Line: LinkedIn is where 87% of recruiters find candidates
+Preview Text: If your profile says "Sergeant," you're invisible...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Recruiters aren't checking USAJobs. They're checking LinkedIn.
+
+87% of recruiters use LinkedIn as their primary candidate source. If your profile is weak (or nonexistent), you don't exist to them.
+
+**What's wrong with most veteran LinkedIn profiles:**
+
+❌ Headline: "Staff Sergeant, US Marine Corps"
+(Recruiters don't search for "Staff Sergeant." They search for "Project Manager" or "Logistics Coordinator.")
+
+❌ Summary: "Transitioning military veteran seeking opportunities."
+(Translation: "Please hire me because I have no idea what I want.")
+
+❌ Experience: Lists positions by rank and unit
+(Nobody knows what "S-4 NCOIC, 3rd Battalion, 5th Marines" means.)
+
+**What good profiles look like:**
+
+✓ Headline: "Operations Manager | Supply Chain | Team Leadership | Security Clearance"
+(Searchable keywords recruiters actually use.)
+
+✓ Summary: "Operations professional with 7 years managing logistics in complex, high-pressure environments. Proven track record of reducing costs, improving efficiency, and leading diverse teams through change."
+(Tells them what you do, not what rank you were.)
+
+✓ Experience: Civilian-translated job titles with quantified achievements
+(Shows impact in language they understand.)
+
+**Your month 9 mission:**
+
+1. Update your profile with civilian language
+2. Add a professional headshot (not your dress uniform photo)
+3. Connect with 50+ people in your target industry
+4. Join 5-10 groups related to your career field
+
+LinkedIn isn't optional. It's your digital resume.
+
+Jacob
+
+CTA: Optimize Your LinkedIn
+Link: /resources/linkedin-guide
+
+Alternative CTAs:
+- See before/after LinkedIn examples
+- Download LinkedIn optimization checklist
+
+---
+
+EMAIL 5: Month 8—Certification Planning and Execution
+Send: 8 months before separation at 1:00 PM
+Subject Line: The right cert could add $15K to your salary
+Preview Text: Which certifications actually matter in 2025...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Not all certifications are created equal.
+
+Some open doors and add serious money to your salary. Others are resume fluff that nobody cares about.
+
+**High-value certifications by field:**
+
+**IT/Cybersecurity:**
+- CompTIA Security+ (entry level, widely recognized)
+- CISSP (senior level, big salary bump)
+- AWS Certified Solutions Architect (cloud is huge)
+
+**Project Management:**
+- PMP (gold standard, adds $10K-$20K to salary)
+- Scrum Master (agile is everywhere now)
+- Six Sigma (manufacturing, process improvement)
+
+**Healthcare:**
+- EMT/Paramedic (direct transition from military medical)
+- Nursing certs (if you've got medical background)
+
+**Skilled Trades:**
+- Electrical, HVAC, Welding (high demand, great pay)
+
+**Logistics/Supply Chain:**
+- CSCP (Certified Supply Chain Professional)
+- APICS certifications
+
+**Your month 8 mission:**
+
+1. Research which certs matter in your target field
+2. Check if SkillBridge can fund it (free training during terminal leave)
+3. Register for the exam
+4. Start studying NOW (most certs need 60-90 days of prep)
+
+**The ROI:**
+
+PMP certification costs $555.
+Average salary increase: $16,000/year.
+First-year ROI: 2,783%.
+
+That's not a typo.
+
+Jacob
+
+P.S. Use your GI Bill or SkillBridge before paying out of pocket. Free is better.
+
+CTA: Research Certification Options
+Link: /resources/certifications
+
+Alternative CTAs:
+- See certification ROI data
+- Download cert study timeline
+
+---
+
+EMAIL 6: Month 7—TAP and Transition Assistance Programs
+Send: 7 months before separation at 10:00 AM
+Subject Line: TAP class is mandatory but insufficient
+Preview Text: What TAP covers (and what it doesn't)...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+You'll take TAP (Transition Assistance Program) sometime in the next few months.
+
+It's mandatory. It's also the bare minimum.
+
+**What TAP actually covers:**
+
+- Resume basics (very high level)
+- VA benefits overview (surface level)
+- Interview tips (generic advice)
+- Financial planning (one-size-fits-all)
+
+**What TAP doesn't cover:**
+
+- Industry-specific job searching strategies
+- Advanced VA claims tactics (secondary conditions, evidence gathering)
+- Salary negotiation specifics
+- Real-world networking
+- What to actually do day 1 after separation
+
+TAP gives you the 101-level overview. You need the 401-level execution.
+
+**Make TAP worth your time:**
+
+1. **Take notes on the basics** (they do cover important stuff)
+2. **Network with other attendees** (they're going through the same thing)
+3. **Ask specific questions** (instructors have good insights if you ask)
+4. **Identify gaps in your knowledge** (what wasn't covered that you need?)
+
+**After TAP, fill the gaps:**
+
+- Deep dive on VA claims strategy
+- Industry-specific resume optimization
+- Real interview practice (not generic tips)
+- Actual networking outreach
+- Company research for target employers
+
+TAP is your foundation. But you need to build the house yourself.
+
+Jacob
+
+CTA: Access Advanced Transition Resources
+Link: /resources/post-tap
+
+Alternative CTAs:
+- Download TAP supplement guide
+- See what TAP doesn't teach you
+
+---
+
+EMAIL 7: Month 6—Job Search Goes Live
+Send: 6 months before separation at 9:00 AM
+Subject Line: Time to start applying (here's your strategy)
+Preview Text: 20 applications per month minimum. Here's how...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Month 6 is when your job search shifts from prep to execution.
+
+You've built your resume. You've optimized LinkedIn. You've done your research.
+
+Now it's time to actually apply.
+
+**Your job search strategy for months 6-0:**
+
+**Target: 20 applications per month minimum**
+(That's 1 per business day. Totally manageable.)
+
+**Quality over spray-and-pray:**
+Don't apply to 100 random jobs. Apply to 20 jobs you actually want and customize each application.
+
+**Track everything:**
+- Company name
+- Position title
+- Date applied
+- Contact person (if you have one)
+- Follow-up dates
+- Status (applied, phone screen, interview, offer, rejected)
+
+**The application process that works:**
+
+1. Find a job posting that matches your skills
+2. Research the company (15 minutes)
+3. Customize your resume for that specific role (10 minutes)
+4. Write a brief, targeted cover letter (10 minutes)
+5. Apply through their system AND email the hiring manager directly if you can find them
+6. Log it in your job tracker
+7. Set a reminder to follow up in 1 week
+
+**Timeline expectations:**
+
+- Week 1-2: Mostly silence (this is normal)
+- Week 2-4: Phone screens start
+- Week 4-8: In-person interviews
+- Week 8-12: Offers (hopefully)
+
+6 months is enough time. But only if you start now and stay consistent.
+
+Jacob
+
+CTA: Start Job Search Tracking
+Link: /tools/job-tracker
+
+Alternative CTAs:
+- Download job search strategy guide
+- See application tracking template
+
+---
+
+EMAIL 8: Month 5—Final VA Claim Push
+Send: 5 months before separation at 11:00 AM
+Subject Line: VA claim submission window opens next month
+Preview Text: Final evidence review before you file...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Next month (month 4), you can officially file your VA claim.
+
+But this month is your final prep. Last chance to gather evidence before you submit.
+
+**Final evidence review checklist:**
+
+**1. Medical documentation**
+□ All service medical records requested
+□ Current medical appointments completed
+□ Civilian medical records (if any) gathered
+□ Nexus letters from doctors (if needed)
+
+**2. Lay evidence**
+□ Buddy letters written and signed
+□ Personal statements drafted
+□ Spouse/family statements (if relevant)
+□ Photos/videos of your condition (if applicable)
+
+**3. Service connection proof**
+□ Incident reports
+□ Unit logs or records
+□ Deployment documentation
+□ Any paperwork showing injury/illness during service
+
+**4. Conditions list finalized**
+□ All primary conditions listed
+□ All secondary conditions identified
+□ Ratings research complete (what percentage is each worth?)
+
+**5. DBQ consideration**
+□ Disability Benefits Questionnaires (if your doc will fill them out)
+□ These aren't required but can be powerful evidence
+
+**The more evidence you submit upfront, the faster and higher your rating.**
+
+Submitting a claim with minimal evidence and hoping the VA finds it? That's a recipe for delay and denial.
+
+Submitting a claim with overwhelming documentation? That's a recipe for approval.
+
+Do the work now.
+
+Jacob
+
+CTA: Review Your VA Claim Evidence
+Link: /tools/va-claims-tracker
+
+Alternative CTAs:
+- Download evidence checklist
+- See example successful claims
+
+---
+
+EMAIL 9: Month 4—Interview Season Begins
+Send: 4 months before separation at 2:00 PM
+Subject Line: Your first interview is coming. Are you ready?
+Preview Text: Interview prep checklist for transitioning veterans...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+If you've been applying consistently, you should start getting interview requests right about now.
+
+First one is always nerve-wracking. That's normal.
+
+**What civilian interviews actually test:**
+
+**1. Can you do the job?** (Skills and experience)
+**2. Will you fit the culture?** (Personality and communication)
+**3. Do you actually want this job?** (Enthusiasm and research)
+
+You're probably fine on #1. Most veterans are overqualified.
+
+You might struggle with #2 and #3. That's where veterans usually trip up.
+
+**Common veteran interview mistakes:**
+
+❌ Too formal (you don't need to say "sir" or "ma'am")
+❌ Too brief (they want stories, not yes/no answers)
+❌ Too military (translate your language)
+❌ Not enthusiastic enough (they want to see you actually want the job)
+❌ No questions prepared (shows lack of interest)
+
+**How to prepare for each interview:**
+
+**The night before:**
+- Research the company (30 minutes)
+- Review the job description
+- Prepare 3-5 stories that demonstrate your skills
+- Prepare 5+ questions to ask them
+- Review your resume (know what you wrote)
+
+**The morning of:**
+- Dress appropriately (when in doubt, business casual)
+- Arrive 10 minutes early
+- Bring copies of your resume
+- Silence your phone
+
+**During the interview:**
+- Make eye contact
+- Smile (seriously, you'd be surprised)
+- Answer in STAR format (Situation, Task, Action, Result)
+- Ask thoughtful questions
+- Show genuine interest
+
+You've briefed commanders. You can handle a hiring manager.
+
+Jacob
+
+CTA: Access Interview Prep Resources
+Link: /resources/interview-prep
+
+Alternative CTAs:
+- Download STAR method guide
+- See common interview questions
+
+---
+
+EMAIL 10: Month 3—Terminal Leave and Final Planning
+Send: 3 months before separation at 10:00 AM
+Subject Line: Terminal leave math: Get this wrong and lose money
+Preview Text: How to maximize your terminal leave benefits...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Terminal leave planning isn't just about taking vacation before you're out.
+
+It's about maximizing your financial bridge between military pay and civilian pay.
+
+**Terminal leave math:**
+
+Let's say you have 60 days of leave saved up (pretty common).
+
+**Option 1: Sell it back**
+60 days × your base pay = ~$8,000 (varies by rank)
+But it's taxed heavily (you'll see ~$5,500)
+
+**Option 2: Take terminal leave**
+60 days of full pay and benefits (including BAH)
+= ~$12,000 total (varies by rank and location)
+Plus you keep Tricare for those 60 days
+
+**Option 3: Split it**
+Take 30 days terminal, sell back 30 days
+Middle ground approach
+
+**The smart play:**
+
+If you have a job starting right after separation: Take full terminal leave. Use those 60 days to start your civilian job while still getting military pay and benefits.
+
+If you don't have a job yet: Still take terminal leave. Use it to interview and job search while still getting paid.
+
+**Your month 3 mission:**
+
+1. Calculate your exact leave balance
+2. Decide your terminal leave start date
+3. Work backwards from your separation date
+4. Coordinate with your new employer (if applicable)
+5. Submit your terminal leave request
+
+**Example timeline:**
+
+Separation date: June 1
+Terminal leave: 60 days
+Terminal leave starts: April 1
+Civilian job starts: April 15
+
+You're making military pay through June 1, but working civilian job starting April 15. That's overlap income.
+
+Plan it right.
+
+Jacob
+
+CTA: Calculate Your Terminal Leave
+Link: /tools/terminal-leave-calculator
+
+Alternative CTAs:
+- Download terminal leave planning guide
+- See terminal leave examples
+
+---
+
+EMAIL 11: Month 2—Final Preparations and Healthcare
+Send: 2 months before separation at 1:00 PM
+Subject Line: 60 days out: Final checklist activation
+Preview Text: Healthcare, housing, finances—lock it all down now...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Two months out. This is where you handle all the non-career stuff that still matters.
+
+**Healthcare transition:**
+
+**1. Choose your post-military healthcare**
+□ VA healthcare enrollment (if eligible)
+□ Employer insurance (review plans, choose coverage)
+□ Marketplace/ACA (if no employer coverage)
+□ COBRA (bridge option if needed)
+
+**2. Final military medical tasks**
+□ Complete any outstanding appointments
+□ Get final physical and dental
+□ Request complete medical records
+□ Fill prescriptions for 90-day supply
+
+**Housing decisions:**
+
+**Staying local?**
+□ Housing search complete
+□ Lease signed or mortgage approved
+□ Moving plans finalized
+
+**Relocating?**
+□ Housing search in new location
+□ Moving company booked
+□ Address change plan ready
+
+**Financial prep:**
+
+□ Budget adjusted for civilian income/expenses
+□ Emergency fund check (aim for 3-6 months expenses)
+□ Direct deposit updated for new job
+□ Understand your final military pay (when it hits, what's included)
+□ TSP rollover decision (leave it, roll to IRA, or cash out)
+
+**Administrative tasks:**
+
+□ Update DEERS if family situation changed
+□ File VA claim if you haven't already
+□ Request DD-214 (check it when you get it)
+□ Start clearing process
+
+This is the paperwork phase. Not fun, but critical.
+
+Don't skip it.
+
+Jacob
+
+CTA: Access Final Checklist
+Link: /tools/final-checklist
+
+Alternative CTAs:
+- Download healthcare transition guide
+- Download financial planning worksheet
+
+---
+
+EMAIL 12: Month 1—You're Almost There
+Send: 1 month before separation at 9:00 AM
+Subject Line: 30 days left. Here's what matters now.
+Preview Text: Final tasks before you clear that final gate...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+One month left.
+
+You're in the final sprint now. Everything you've built over the last 11 months comes down to execution in these last 30 days.
+
+**Final 30-day priorities:**
+
+**Week 1 (Days 1-7):**
+□ Complete all clearing appointments
+□ Pick up your DD-214 (check it immediately)
+□ Finalize terminal leave dates
+□ Confirm civilian job start date
+□ Healthcare coverage confirmed
+
+**Week 2 (Days 8-14):**
+□ Return all gear
+□ Clean out workspace
+□ Update contact info everywhere
+□ File change of address
+□ Final financial prep
+
+**Week 3 (Days 15-21):**
+□ Say goodbyes to key people
+□ Take photos of your unit/base
+□ Last military medical appointments
+□ Final paperwork signed
+
+**Week 4 (Days 22-30):**
+□ Terminal leave begins
+□ Breathe
+□ Prepare for civilian job (if starting soon)
+□ Decompress
+
+**A few final thoughts:**
+
+You've spent months preparing for this. You've built your resume. You've filed your VA claim. You've networked and interviewed. You've planned and prepared.
+
+Now trust the work you've done.
+
+**Transition isn't a single moment—it's a process.** You won't have everything figured out on day one. That's okay. No one does.
+
+You're going to stumble sometimes. You're going to miss the military sometimes. You're going to wonder if you made the right choice.
+
+That's all normal.
+
+But you're also going to succeed. Because you've got the skills, the preparation, and the resilience to figure it out.
+
+**Post-separation support:**
+
+I'll still be here after you separate. You'll get occasional check-in emails. You can access all the tools anytime. Hit reply if you need anything.
+
+You've got this.
+
+See you on the other side.
+
+Jacob
+
+P.S. When you land that job or get your VA rating, let me know. I want to hear how it turned out.
+
+CTA: View Your Final Week Checklist
+Link: /tools/final-checklist
+
+Alternative CTAs:
+- Download separation day guide
+- Join veteran community for post-transition support
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF 12-MONTH TRANSITION TIMELINE SEQUENCE
+Total Emails: 12
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

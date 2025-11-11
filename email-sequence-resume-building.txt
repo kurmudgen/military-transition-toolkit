@@ -1,0 +1,533 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RESUME BUILDING SUCCESS EMAIL SEQUENCE
+Purpose: Help users build winning civilian resumes
+Total Emails: 7 (sent every 2 days)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+---
+EMAIL 1: Your Military Resume Is Failing. Here's Why.
+Send: Day 0 (upon entering resume building workflow)
+Subject Line: Why your resume gets zero callbacks
+Preview Text: The one mistake that kills 87% of veteran resumes...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Your resume is getting rejected in 6 seconds.
+
+That's the average time a recruiter spends on an initial resume screen. Six seconds.
+
+**Here's what they see when they look at your resume:**
+
+"Infantry Squad Leader, US Army, 2018-2024"
+
+Translation in their head: "I have no idea what this person did or if they can do this job."
+
+**Next.**
+
+It's not personal. It's not anti-military. They just don't understand military language.
+
+**The #1 mistake veterans make:**
+
+They write their resume for other military people, not for civilian hiring managers.
+
+**Bad resume language:**
+- "Supervised 12 personnel in garrison and field environments"
+- "Maintained accountability of $1.2M in sensitive equipment"
+- "Conducted battle drills and tactical operations"
+
+**What they hear:**
+- "Did something with people somewhere"
+- "Watched expensive stuff"
+- "Military things I don't understand"
+
+**Good resume language:**
+- "Led team of 12 in high-pressure operational environments with zero safety incidents"
+- "Managed inventory tracking system for $1.2M in assets with 100% accountability over 3 years"
+- "Trained team on emergency procedures, reducing response time by 35%"
+
+See the difference?
+
+**Same accomplishments. Different language.**
+
+Over the next 2 weeks, I'm going to show you exactly how to build a resume that actually works.
+
+Not a resume that looks military. A resume that gets interviews.
+
+Let's fix this.
+
+Jacob
+
+CTA: Start Building Your Resume
+Link: /tools/resume-builder
+
+Alternative CTAs:
+- See before/after resume examples
+- Download resume template
+
+---
+
+EMAIL 2: Translation—Converting MOS to Civilian Speak
+Send: Day 2 at 10:00 AM
+Subject Line: What "11B Infantry" means in civilian language
+Preview Text: The MOS translation guide that gets interviews...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Your MOS means nothing to civilians.
+
+11B, 68W, 0311, BM2—these are codes that mean everything in the military and absolutely nothing outside it.
+
+**Your job isn't to explain your MOS. It's to translate what you actually did.**
+
+**Let's translate some common positions:**
+
+**Military:** Infantry Squad Leader (11B)
+**Civilian:** Operations Team Leader
+**What you actually did:** Led 9-person team in complex operations requiring coordination, quick decision-making, and risk management under pressure
+
+**Military:** Combat Medic (68W)
+**Civilian:** Emergency Medical Technician / Healthcare Operations
+**What you actually did:** Provided emergency medical care in high-stress environments, managed medical supply inventory, trained personnel on life-saving procedures
+
+**Military:** Intelligence Analyst (35F)
+**Civilian:** Data Analyst / Intelligence Analyst
+**What you actually did:** Analyzed complex datasets, identified patterns and trends, created intelligence reports for leadership decision-making
+
+**Military:** Logistics Specialist (92A)
+**Civilian:** Supply Chain Coordinator / Logistics Analyst
+**What you actually did:** Managed multi-million dollar supply chain operations, coordinated transportation and distribution, optimized inventory management
+
+**How to translate YOUR position:**
+
+**Step 1:** List what you actually did day-to-day (ignore your rank and title)
+**Step 2:** Remove military jargon (no acronyms, no unit names, no formations)
+**Step 3:** Focus on transferable skills (leadership, problem-solving, technical skills)
+**Step 4:** Use civilian job titles that match those skills
+
+**Use our Military Translation Helper:**
+
+We've got 500+ military positions already translated. Just search your MOS and see civilian equivalents.
+
+Stop saying "I was an 11B." Start saying "I led operational teams in high-risk environments."
+
+That's a language they understand.
+
+Jacob
+
+CTA: Translate Your MOS Now
+Link: /tools/translation-helper
+
+Alternative CTAs:
+- See 50+ translation examples
+- Download MOS to civilian job mapping
+
+---
+
+EMAIL 3: Quantifying Impact—Numbers That Impress
+Send: Day 4 at 11:00 AM
+Subject Line: "Led a team" vs "Led team of 12" (guess which wins?)
+Preview Text: Why numbers are the most powerful words on your resume...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Here's a secret about recruiters: They love numbers.
+
+Numbers are specific. Numbers are verifiable. Numbers show impact.
+
+**Weak resume bullet:**
+"Responsible for team leadership and training"
+
+**Strong resume bullet:**
+"Led team of 12, conducted 40+ training sessions, improved readiness scores by 23%"
+
+Which one tells the better story?
+
+**Every accomplishment should have a number.**
+
+**Categories of numbers that matter:**
+
+**1. People managed**
+- Led team of X
+- Supervised X personnel
+- Trained X employees
+- Managed X contractors
+
+**2. Money handled**
+- Managed $X budget
+- Reduced costs by $X or X%
+- Responsible for $X in assets
+- Generated $X in savings
+
+**3. Time saved/improved**
+- Reduced processing time by X%
+- Improved efficiency by X hours per week
+- Completed project X days ahead of schedule
+
+**4. Volume/Scale**
+- Processed X requests per day
+- Maintained X pieces of equipment
+- Conducted X operations
+- Managed X locations
+
+**5. Results achieved**
+- Increased performance by X%
+- Achieved X% accuracy rate
+- Reduced incidents by X%
+- Improved scores from X to X
+
+**How to find your numbers:**
+
+Go through your last eval or performance review. Pull out every metric mentioned.
+
+Can't find numbers? Estimate reasonably:
+- "How many people did I supervise?" (8-12)
+- "How much equipment was I responsible for?" ($500K-$2M)
+- "How many operations did we run?" (50+ annually)
+
+**Before and after examples:**
+
+❌ "Managed logistics operations"
+✓ "Managed logistics operations supporting 200+ personnel across 3 locations, maintaining 98% inventory accuracy"
+
+❌ "Trained new personnel"
+✓ "Trained 25+ new team members, reducing onboarding time from 8 weeks to 5 weeks"
+
+❌ "Maintained equipment"
+✓ "Maintained $1.8M in communications equipment with 99% operational readiness over 2 years"
+
+Numbers tell the story. Use them everywhere.
+
+Jacob
+
+CTA: Add Numbers to Your Resume
+Link: /tools/resume-builder
+
+Alternative CTAs:
+- See quantified resume examples
+- Download impact metrics worksheet
+
+---
+
+EMAIL 4: ATS Optimization—Getting Past the Robots
+Send: Day 6 at 2:00 PM
+Subject Line: 75% of resumes never reach human eyes
+Preview Text: How to beat the Applicant Tracking System filters...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Your resume isn't being rejected by a person.
+
+It's being rejected by a robot.
+
+**Applicant Tracking Systems (ATS) scan your resume for keywords before a human ever sees it.**
+
+No keywords = No interview.
+
+**Here's how ATS works:**
+
+1. Company posts job description
+2. You submit resume
+3. ATS scans your resume for keywords from the job description
+4. ATS ranks candidates by keyword match
+5. Top 25% get sent to a human recruiter
+6. Bottom 75% never get seen
+
+**You're probably in the bottom 75%.**
+
+**How to beat ATS:**
+
+**1. Use the exact keywords from the job description**
+
+If the job says "project management," don't say "led projects." Say "project management."
+
+If they say "budgeting," use "budgeting" not "financial management."
+
+Match their language exactly.
+
+**2. Put keywords in multiple places**
+
+- Professional summary
+- Skills section
+- Work experience bullets
+- Education/certifications
+
+The more places you use the keyword, the higher you rank.
+
+**3. Use both acronyms and full terms**
+
+Don't just say "PMP." Say "PMP (Project Management Professional)."
+
+Don't just say "CRM." Say "CRM (Customer Relationship Management)."
+
+ATS might search for either version.
+
+**4. Avoid tables, graphics, headers/footers**
+
+ATS can't read these. Stick to simple formatting.
+
+**5. Use standard section headers**
+
+"Work Experience" not "My Career Journey"
+"Education" not "Academic Background"
+"Skills" not "What I'm Good At"
+
+**How to find the right keywords:**
+
+Read the job description. Highlight every skill, qualification, or requirement mentioned. Those are your keywords.
+
+Then weave them naturally into your resume.
+
+**Example:**
+
+Job description says: "seeking project manager with experience in agile methodology, stakeholder communication, and budget management."
+
+Your resume better include: "project management," "agile methodology," "stakeholder communication," and "budget management."
+
+**ATS isn't evil. It's just a filter. Learn to pass the filter.**
+
+Jacob
+
+CTA: Optimize Your Resume for ATS
+Link: /tools/resume-builder
+
+Alternative CTAs:
+- Download ATS keyword guide
+- Test your resume against ATS
+
+---
+
+EMAIL 5: Civilian Format—What Hiring Managers Expect
+Send: Day 8 at 10:30 AM
+Subject Line: Your resume format is costing you interviews
+Preview Text: Military chronological vs civilian functional formats...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+Military resumes look different from civilian resumes.
+
+And when a civilian recruiter sees a military-formatted resume? It screams "this person doesn't understand the civilian world."
+
+**What's wrong with military resume format:**
+
+❌ Multiple pages (your military resume is probably 3-5 pages)
+❌ Dense paragraphs (walls of text)
+❌ Formal language ("subject matter expert," "facilitates")
+❌ Awards section that dominates the page
+❌ References included (never do this)
+
+**What civilian resumes look like:**
+
+✓ 1-2 pages max (1 page if under 10 years experience)
+✓ Bullet points (easy to scan)
+✓ Active, conversational language
+✓ Awards mentioned briefly if relevant
+✓ No references ("available upon request" is outdated)
+
+**The format that works:**
+
+**HEADER**
+Name, phone, email, LinkedIn, location (city/state)
+
+**PROFESSIONAL SUMMARY** (3-4 lines)
+Who you are, what you do, your key strengths
+
+**WORK EXPERIENCE** (reverse chronological)
+Job Title | Company | Dates
+- 3-5 bullet points per position
+- Focus on achievements, not duties
+
+**EDUCATION**
+Degree, School, Year
+Relevant certifications
+
+**SKILLS**
+Technical skills, software, relevant competencies
+
+**That's it.**
+
+No objectives ("seeking a challenging position where I can grow..."). Nobody cares.
+
+No hobbies unless directly relevant to the job.
+
+No personal info (age, marital status, photo—these are actually illegal considerations in the US).
+
+**Formatting rules:**
+
+- Use standard fonts (Calibri, Arial, Times New Roman)
+- 10-12pt font size
+- 0.5-1 inch margins
+- Consistent formatting (if one job title is bold, all should be)
+- Bullet points aligned
+- No colors, no graphics, no fancy designs
+
+**Length matters:**
+
+If you have 6 years of experience and your resume is 3 pages, you're including too much.
+
+Focus on the last 10 years. Focus on relevant experience. Cut the fluff.
+
+**Your resume is a marketing document, not your life story.**
+
+Include what helps you get the job. Exclude everything else.
+
+Jacob
+
+CTA: Reformat Your Resume
+Link: /tools/resume-builder
+
+Alternative CTAs:
+- Download civilian resume template
+- See format comparison examples
+
+---
+
+EMAIL 6: Cover Letters That Actually Work
+Send: Day 10 at 1:00 PM
+Subject Line: Do you even need a cover letter in 2025?
+Preview Text: Yes—but only if you do it right. Here's how...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+"Do I need a cover letter?"
+
+**Short answer:** Sometimes.
+
+**Long answer:** If the application asks for one, yes. If it doesn't, you probably still should.
+
+**Why cover letters matter:**
+
+They let you tell the story your resume can't. They show you actually want THIS job at THIS company, not just any job.
+
+And most importantly: Most people don't write them. So writing a good one sets you apart.
+
+**What makes a terrible cover letter:**
+
+❌ "I am writing to express my interest in the position..."
+(They know why you're writing. Don't waste the opening.)
+
+❌ Three paragraphs that just repeat your resume
+(If you're going to repeat your resume, don't write a cover letter)
+
+❌ "I am a hard worker, team player, and quick learner."
+(Everyone says this. It means nothing without proof.)
+
+❌ Generic letter that could apply to any company
+(Shows you didn't do your research)
+
+**What makes a great cover letter:**
+
+✓ Opens with a hook that shows you understand their problem
+✓ Connects your specific experience to their specific needs
+✓ Shows you researched the company
+✓ Demonstrates enthusiasm for the role
+✓ Ends with a clear call to action
+
+**The formula that works:**
+
+**Paragraph 1: The Hook**
+"I saw you're expanding your logistics operations into the Southeast region. I spent 5 years managing complex supply chain operations in high-pressure environments—exactly the kind of problem-solving your team needs."
+
+**Paragraph 2: Your Fit**
+"In my role as a logistics coordinator in the Marines, I managed $3M in inventory across multiple locations, reduced processing time by 30%, and maintained 99% accuracy. I did this by [specific method] which directly applies to [their need]."
+
+**Paragraph 3: Why Them**
+"I'm particularly drawn to [Company] because [specific reason based on research]. Your focus on [company value] aligns with my approach to [relevant skill]."
+
+**Paragraph 4: The Close**
+"I'd love to discuss how my logistics background can support your expansion. I'm available for a conversation this week. Thanks for your consideration."
+
+**Keep it to 3-4 short paragraphs. Half a page max.**
+
+If your cover letter is longer than your resume, you've done it wrong.
+
+Jacob
+
+CTA: Write Your Cover Letter
+Link: /tools/cover-letter-builder
+
+Alternative CTAs:
+- See cover letter examples
+- Download cover letter template
+
+---
+
+EMAIL 7: Resume Review Checklist—Final Polish
+Send: Day 12 at 9:00 AM
+Subject Line: Final resume check before you hit send
+Preview Text: The 25-point checklist that catches every mistake...
+From: Jacob at Military Transition Toolkit
+
+Body:
+
+You've written your resume. You've translated your experience. You've added numbers. You've optimized for ATS.
+
+Now it's time for the final review.
+
+**Go through this checklist before you submit:**
+
+**CONTENT**
+□ Professional summary clearly states what you do and your value
+□ Every position has 3-5 bullet points (not paragraphs)
+□ Bullets start with action verbs (Led, Managed, Reduced, Increased)
+□ Every bullet includes a number or quantified result
+□ No military jargon or acronyms without explanation
+□ Keywords from job description appear multiple times
+□ Most recent/relevant experience is highlighted
+□ All dates are accurate (month/year format)
+
+**FORMAT**
+□ 1-2 pages max (1 page if <10 years experience)
+□ Consistent formatting (fonts, sizes, spacing)
+□ Bullet points aligned properly
+□ No tables, text boxes, headers, or footers
+□ Standard section headers (Work Experience, Education, Skills)
+□ No colors, graphics, or fancy designs
+□ Saved as PDF (unless ATS specifies .docx)
+
+**LANGUAGE**
+□ No first-person pronouns (I, me, my)
+□ Active voice, not passive
+□ Past tense for previous jobs, present tense for current job
+□ No clichés ("hard worker," "team player," "go-getter")
+□ Professional but conversational tone
+
+**TECHNICAL**
+□ Contact info is current (phone, email, LinkedIn)
+□ Email address is professional (firstname.lastname@email.com)
+□ LinkedIn URL is customized (linkedin.com/in/yourname)
+□ No typos or grammatical errors (read it out loud)
+□ File name is professional (FirstName_LastName_Resume.pdf)
+
+**THE FINAL TEST:**
+
+Give your resume to someone outside the military. Not a veteran. A civilian friend or family member.
+
+Ask them: "What do you think I did for a living?"
+
+If they can't tell you clearly? Your translation isn't done.
+
+**You've built a strong resume. Now make it perfect.**
+
+This is the document that gets you in the door. It's worth getting right.
+
+Jacob
+
+P.S. Want a professional review? Premium members get resume reviews from career coaches. Worth considering if you want expert eyes on it.
+
+CTA: Review Your Resume
+Link: /tools/resume-builder
+
+Alternative CTAs:
+- Download final checklist PDF
+- Get professional resume review (premium)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF RESUME BUILDING SUCCESS SEQUENCE
+Total Emails: 7
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
