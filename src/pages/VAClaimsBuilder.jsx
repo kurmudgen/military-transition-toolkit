@@ -1607,8 +1607,11 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
                           onClick={() => {
                             setExpandedEvidence(prev => ({ ...prev, [condition]: true }))
                             setTimeout(() => {
-                              document.getElementById(`evidence-${idx}`)?.scrollIntoView({ behavior: 'smooth' })
-                            }, 100)
+                              const element = document.getElementById(`evidence-${idx}`)
+                              if (element) {
+                                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                              }
+                            }, 200)
                           }}
                           className="flex items-center justify-between p-2 bg-white border border-slate-200 rounded hover:bg-slate-100 hover:border-blue-400 transition-all text-left group pointer-events-auto cursor-pointer"
                         >
@@ -1635,23 +1638,29 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
                       <div className="flex-1">
                         <h3 className="font-bold text-red-900 mb-2">These conditions are missing REQUIRED evidence:</h3>
                         <ul className="space-y-2">
-                          {missingCritical.map((item, idx) => (
-                            <li key={idx} className="text-red-800">
-                              <span className="font-semibold">{item.condition}</span>
-                              <span className="text-red-600"> - Missing: {item.missing.join(', ')}</span>
-                              <button
-                                onClick={() => {
-                                  setExpandedEvidence(prev => ({ ...prev, [item.condition]: true }))
-                                  setTimeout(() => {
-                                    document.getElementById(`evidence-${idx}`)?.scrollIntoView({ behavior: 'smooth' })
-                                  }, 100)
-                                }}
-                                className="ml-3 text-sm text-blue-600 hover:text-blue-800 underline pointer-events-auto cursor-pointer"
-                              >
-                                Jump to tracker
-                              </button>
-                            </li>
-                          ))}
+                          {missingCritical.map((item, idx) => {
+                            const evidenceIdx = selectedConditions.indexOf(item.condition)
+                            return (
+                              <li key={idx} className="text-red-800">
+                                <span className="font-semibold">{item.condition}</span>
+                                <span className="text-red-600"> - Missing: {item.missing.join(', ')}</span>
+                                <button
+                                  onClick={() => {
+                                    setExpandedEvidence(prev => ({ ...prev, [item.condition]: true }))
+                                    setTimeout(() => {
+                                      const element = document.getElementById(`evidence-${evidenceIdx}`)
+                                      if (element) {
+                                        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                                      }
+                                    }, 200)
+                                  }}
+                                  className="ml-3 text-sm text-blue-600 hover:text-blue-800 underline pointer-events-auto cursor-pointer"
+                                >
+                                  Jump to tracker
+                                </button>
+                              </li>
+                            )
+                          })}
                         </ul>
                       </div>
                     </div>
