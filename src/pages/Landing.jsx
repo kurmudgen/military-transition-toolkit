@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import DeadlineBanner from '../components/DeadlineBanner'
 
 export default function Landing() {
   return (
@@ -55,6 +56,9 @@ export default function Landing() {
           </div>
         </div>
       </nav>
+
+      {/* Founding Member Deadline Banner with Countdown */}
+      <DeadlineBanner />
 
       {/* Government Shutdown Support Banner */}
       <div className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 border-b-4 border-yellow-600">
