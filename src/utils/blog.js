@@ -92,18 +92,27 @@ export function getPostBySlug(slug) {
 export async function getPostContent(slug) {
   try {
     // Use dynamic import to load markdown file
+    // Path is relative to src/utils/ so ../content/blog/ goes to src/content/blog/
     const module = await import(`../content/blog/${slug}.md?raw`)
     const content = module.default
 
-    // Parse frontmatter
-    const { data, content: markdown } = matter(content)
-
-    return {
-      frontmatter: data,
-      content: markdown
+    // Parse frontmatter if present, otherwise just return content
+    try {
+      const { data, content: markdown } = matter(content)
+      return {
+        frontmatter: data,
+        content: markdown
+      }
+    } catch (parseError) {
+      // If no frontmatter, return content as-is
+      return {
+        frontmatter: {},
+        content: content
+      }
     }
   } catch (error) {
     console.error(`Error loading post ${slug}:`, error)
+    console.error('Attempted path:', `../content/blog/${slug}.md?raw`)
     return null
   }
 }

@@ -18,6 +18,9 @@ export default function Landing() {
               <a href="#features" className="text-slate-300 hover:text-white transition-colors">
                 Features
               </a>
+              <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">
+                Blog
+              </Link>
               <Link to="/pricing" className="text-slate-300 hover:text-white transition-colors">
                 Pricing
               </Link>

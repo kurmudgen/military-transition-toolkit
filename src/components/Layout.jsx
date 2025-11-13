@@ -50,6 +50,7 @@ export default function Layout() {
   // All navigation links for mobile menu
   const navLinks = [
     { to: '/app', label: 'Home', feature: null, premium: false },
+    { to: '/blog', label: 'Blog', feature: null, premium: false },
     { to: '/app/progress', label: 'Progress Dashboard', feature: 'progress_tracking', premium: true },
     { to: '/app/reminders', label: 'Reminders', feature: 'reminders', premium: true },
     { to: '/app/resources', label: 'Resources', feature: 'resources', premium: false },
@@ -71,6 +72,7 @@ export default function Layout() {
   // Simplified desktop navigation - only essential items
   const desktopNavLinks = [
     { to: '/app', label: 'Home', feature: null, premium: false },
+    { to: '/blog', label: 'Blog', feature: null, premium: false },
     { to: '/app/progress', label: 'Progress', feature: 'progress_tracking', premium: true },
     { to: '/app/resources', label: 'Resources', feature: 'resources', premium: false },
     { to: '/app/va-claims-builder', label: 'VA Claims', feature: 'claims_builder', premium: true, highlighted: true }, // Highlighted for separated veterans
