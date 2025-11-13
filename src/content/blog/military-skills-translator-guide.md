@@ -1,12 +1,12 @@
 ---
-title: "Military Skills Translator: Find Your Civilian Career Match (Complete Guide to All Tools)"
-date: ""
+title: "Military Skills Translator Guide (2025)"
+date: "2025-11-13"
 description: "Complete comparison of every military skills translator tool available. Learn which tool works best for your branch, how to use results for resumes, and how to actually find civilian job matches."
 keywords: "military skills translator, MOS translator, military to civilian jobs, AFSC translator, Navy rating translator, military job search"
 slug: "military-skills-translator-guide"
 ---
 
-# Military Skills Translator: Find Your Civilian Career Match (Complete Guide to All Tools)
+# Military Skills Translator Guide (2025)
 
 You've been told to "use a military skills translator" about 47 times since you started your separation process. Cool. But which one? And more importantly, how do you actually use the results to land a job?
 

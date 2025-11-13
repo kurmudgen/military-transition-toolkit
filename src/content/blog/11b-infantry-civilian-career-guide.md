@@ -1,6 +1,6 @@
 ---
-title: "Army 11B Infantryman to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
-date: "2024-11-11"
+title: "Army 11B Infantry Career Guide (2025)"
+date: "2025-11-13"
 description: "Real career options for Army 11B Infantrymen transitioning to civilian life. Includes salary ranges $45K-$180K+, law enforcement, security, skilled trades, and leadership opportunities with 100+ companies hiring."
 keywords: "11B Infantryman civilian jobs, infantry career transition, 11B to police officer, infantry veteran security jobs, 11B salary civilian, Army infantry transition guide"
 slug: "army-mos-11b-civilian-career-guide"
@@ -56,7 +56,7 @@ Your role required mastery of individual tactical skills, the ability to work se
 - K-9 Handler
 - School Resource Officer
 
-**Salary Ranges (2024-2025 Data):**
+**Salary Ranges (2025-2026 Data):**
 - **Local Police Officer:** $55,000-$90,000 (average $70,500, Glassdoor/Indeed)
 - **State Trooper:** $60,000-$95,000 (varies by state)
 - **Sheriff's Deputy:** $50,000-$85,000
@@ -66,7 +66,7 @@ Your role required mastery of individual tactical skills, the ability to work se
 - **DEA Special Agent:** $87,500-$131,000 (with LEAP)
 - **Senior Federal Agent (GS-14/15):** $120,000-$165,000+
 
-**Job Outlook:** Police and detectives employment projected to grow 3% from 2024-2034 (62,200 openings annually). Corrections declining 7% but still 31,900 openings annually due to turnover (BLS).
+**Job Outlook:** Police and detectives employment projected to grow 3% from 2025-2035 (62,200 openings annually). Corrections declining 7% but still 31,900 openings annually due to turnover (BLS).
 
 **What Translates Directly:**
 Your tactical training, weapons proficiency, high-stress decision-making, physical fitness, teamwork, and ability to follow protocols directly align with law enforcement. Departments actively recruit infantry veterans because you already understand use of force, chain of command, operating in dangerous environments, and executing missions under pressure.
@@ -113,7 +113,7 @@ Your tactical training, weapons proficiency, high-stress decision-making, physic
 - **High-Threat Contracting (Middle East, Africa):** $120,000-$250,000+
 - **Security Manager/Director:** $85,000-$150,000+
 
-**Job Outlook:** Security guards employment projected to show little or no change 2024-2034, but 162,300 openings annually due to turnover (BLS).
+**Job Outlook:** Security guards employment projected to show little or no change 2025-2035, but 162,300 openings annually due to turnover (BLS).
 
 **What Translates Directly:**
 Everything. You're doing similar work—providing security, threat assessment, patrol, access control, response to incidents. Your infantry training gives you tactical awareness, weapons proficiency, and calm under pressure that civilian-trained guards don't have.
@@ -606,7 +606,7 @@ Here's what's worth your time and GI Bill as an 11B:
 **Overseas Contracting Hotspots:**
 - Middle East (Saudi Arabia, UAE, Kuwait): $120K-$200K
 - Africa (high-threat): $100K-$180K
-- Note: Foreign earned income exclusion = first $126,500 tax-free (2024 IRS rule)
+- Note: Foreign earned income exclusion = first $126,500 tax-free (2025 IRS rule)
 
 ## Resume Translation: 11B Skills to Civilian Language
 

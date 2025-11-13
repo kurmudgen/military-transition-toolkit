@@ -1,6 +1,6 @@
 ---
-title: "Army 68W Combat Medic to Civilian: Complete Career Transition Guide (EMT to Paramedic to RN)"
-date: ""
+title: "Army 68W Combat Medic Career Guide (2025)"
+date: "2025-11-13"
 description: "The definitive career transition roadmap for Army 68W Combat Medics. Explore EMT-Paramedic-RN pathways with salaries $45K-$95K+, bridge programs, NREMT certification ($104), and 100+ employers actively hiring military medics."
 keywords: "68W civilian jobs, Combat Medic career transition, 68W to paramedic, 68W to RN, military medic civilian salary, NREMT certification, EMT-P jobs veterans"
 slug: "army-mos-68w-civilian-career-guide"
@@ -86,7 +86,7 @@ The critical difference between you and civilian EMTs: You made medical decision
 - Veterans Affairs hospitals (veterans preference hiring)
 - Private ambulance companies (MedStar, Priority, local services)
 
-**Growth potential**: Limited. EMT-Basic is an entry point, not a career endpoint. Median national salary is $41,340 (BLS 2024). Use this as a bridge to paramedic or RN.
+**Growth potential**: Limited. EMT-Basic is an entry point, not a career endpoint. Median national salary is $41,340 (BLS 2025). Use this as a bridge to paramedic or RN.
 
 **Best for**: 68W medics who need immediate income, want to work while pursuing paramedic or nursing education, or prefer part-time medical work while transitioning to other careers.
 

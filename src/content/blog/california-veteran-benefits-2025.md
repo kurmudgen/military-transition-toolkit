@@ -1,20 +1,20 @@
 ---
-title: "California Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2025-01-10"
+title: "California Veteran Benefits Guide (2025-2026)"
+date: "2025-11-13"
 description: "Complete guide to California veteran tax benefits: new military retirement tax exemption, property tax breaks for disabled veterans, and cost-saving strategies."
 keywords: "California veteran benefits, California property tax exemption veterans, California military retirement tax, California disabled veteran benefits"
 slug: "ca-veteran-tax-benefits-2025"
 ---
 
-# California Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide
+# California Veteran Benefits 2025-2026: Property Tax, Income Tax & Financial Guide
 
-California has historically been one of the toughest states for military retirees financially - but that's changing. In 2025, California introduced a partial military retirement tax exemption for the first time, joining the majority of states in recognizing veterans' service.
+California has historically been one of the toughest states for military retirees financially - but that's changing. In 2025-2026, California now offers a partial military retirement tax exemption for the first time, joining the majority of states in recognizing veterans' service.
 
 Here's what you need to know about California's veteran tax benefits, including the new military retirement exemption, property tax breaks for disabled veterans, and how these benefits stack up against the state's notoriously high cost of living.
 
 ## Bottom Line Up Front
 
-Here's what California offers veterans in 2025:
+Here's what California offers veterans in 2025-2026:
 
 - **Military retirement pay**: NEW partial exemption up to $20,000 (starting 2025, expires 2029)
 - **Property tax exemption**: Up to $262,950 in assessed value for 100% disabled veterans

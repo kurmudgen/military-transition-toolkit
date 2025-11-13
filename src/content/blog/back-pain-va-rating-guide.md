@@ -1,14 +1,14 @@
 ---
-title: "VA Rating for Back Pain and Lumbar Spine: Complete Disability Guide"
+title: "Back Pain VA Rating Guide (2025)"
 description: "Comprehensive guide to VA back pain ratings (10%-100%), monthly compensation, evidence requirements, and proven filing strategies for lumbar spine claims."
-date: 2025-11-11
+date: 2025-11-13
 category: "VA Benefits"
 tags: ["back-pain", "lumbar-spine", "va-rating", "musculoskeletal", "disability", "claims"]
 author: "Military Transition Toolkit"
 readTime: "14 min"
 ---
 
-# VA Rating for Back Pain and Lumbar Spine: Complete Disability Guide
+# Back Pain VA Rating Guide (2025)
 
 Back pain and lumbar spine injuries rank among the highest-rated service-connected disabilities affecting veterans. Whether from combat trauma, occupational demands, or training injuries, back conditions cause lasting disability and significantly impact quality of life. Understanding VA rating criteria, compensation amounts, and evidence requirements is crucial for maximizing your claim.
 
