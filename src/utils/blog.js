@@ -1,4 +1,30 @@
-import matter from 'gray-matter'
+// Custom frontmatter parser (gray-matter doesn't work in browser - no Buffer API)
+function parseFrontmatter(content) {
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+  const match = content.match(frontmatterRegex);
+
+  if (!match) {
+    return { data: {}, content: content };
+  }
+
+  const frontmatterText = match[1];
+  const contentWithoutFrontmatter = match[2];
+
+  // Parse YAML-style frontmatter
+  const data = {};
+  frontmatterText.split('\n').forEach(line => {
+    const colonIndex = line.indexOf(':');
+    if (colonIndex > -1) {
+      const key = line.substring(0, colonIndex).trim();
+      let value = line.substring(colonIndex + 1).trim();
+      // Remove quotes if present
+      value = value.replace(/^["']|["']$/g, '');
+      data[key] = value;
+    }
+  });
+
+  return { data, content: contentWithoutFrontmatter };
+}
 
 // This would normally use fs to read files server-side, but in a Vite app
 // we need to import the posts directly or use dynamic imports
@@ -96,28 +122,11 @@ export async function getPostContent(slug) {
     const module = await import(`../content/blog/${slug}.md?raw`)
     const content = module.default
 
-    console.log(`[DEBUG] Loading post: ${slug}`)
-    console.log(`[DEBUG] Raw content length: ${content.length}`)
-    console.log(`[DEBUG] First 200 chars:`, content.substring(0, 200))
-
-    // Parse frontmatter if present, otherwise just return content
-    try {
-      const { data, content: markdown } = matter(content)
-      console.log(`[DEBUG] Frontmatter parsed successfully`)
-      console.log(`[DEBUG] Frontmatter data:`, data)
-      console.log(`[DEBUG] Content without frontmatter length: ${markdown.length}`)
-      console.log(`[DEBUG] Content first 100 chars:`, markdown.substring(0, 100))
-      return {
-        frontmatter: data,
-        content: markdown
-      }
-    } catch (parseError) {
-      // If no frontmatter, return content as-is
-      console.error(`[DEBUG] Failed to parse frontmatter:`, parseError)
-      return {
-        frontmatter: {},
-        content: content
-      }
+    // Parse frontmatter using custom parser (gray-matter doesn't work in browser)
+    const { data, content: markdown } = parseFrontmatter(content)
+    return {
+      frontmatter: data,
+      content: markdown
     }
   } catch (error) {
     console.error(`Error loading post ${slug}:`, error)
