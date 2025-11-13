@@ -1,0 +1,21 @@
+# Military Transition Toolkit - Robots.txt
+# Updated: 2025-11-13
+
+User-agent: *
+Allow: /
+
+# Disallow auth callback pages
+Disallow: /auth/callback
+Disallow: /auth/reset-password
+
+# Disallow private app pages (require login)
+Disallow: /app/
+
+# Allow public pages
+Allow: /public/
+Allow: /preview/
+Allow: /demo/
+Allow: /calculator/
+
+# Sitemap
+Sitemap: https://militarytransitiontoolkit.com/sitemap.xml
