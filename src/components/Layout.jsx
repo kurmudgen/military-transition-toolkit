@@ -5,6 +5,7 @@ import { hasActiveSubscription, SUBSCRIPTION_FEATURES } from '../utils/subscript
 import { LockClosedIcon } from '@heroicons/react/24/outline'
 import AIAssistant from './AIAssistant'
 import PromoBanner from './PromoBanner'
+import DeadlineBanner from './DeadlineBanner'
 
 // Initialize dark mode from localStorage before component mounts
 const getInitialDarkMode = () => {
@@ -217,6 +218,9 @@ export default function Layout() {
           </div>
         </div>
       </nav>
+
+      {/* Founding Member Deadline Banner with Countdown */}
+      <DeadlineBanner />
 
       {/* Government Shutdown Support Banner */}
       <PromoBanner />
