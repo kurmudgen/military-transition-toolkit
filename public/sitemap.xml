@@ -30,6 +30,70 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/11b-infantry-civilian-career-guide</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/68w-combat-medic-civilian-career-guide</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/mn-mineman-civilian-career-guide</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/texas-veteran-benefits-2025</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/california-veteran-benefits-2025</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/back-pain-va-rating-guide</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/military-skills-translator-guide</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/salary-negotiation-guide-veterans</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://militarytransitiontoolkit.com/blog/terminal-leave-calculator</loc>
+    <lastmod>2025-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Auth Pages -->
   <url>
     <loc>https://militarytransitiontoolkit.com/login</loc>
