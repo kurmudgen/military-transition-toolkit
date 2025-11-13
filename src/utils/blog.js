@@ -96,15 +96,24 @@ export async function getPostContent(slug) {
     const module = await import(`../content/blog/${slug}.md?raw`)
     const content = module.default
 
+    console.log(`[DEBUG] Loading post: ${slug}`)
+    console.log(`[DEBUG] Raw content length: ${content.length}`)
+    console.log(`[DEBUG] First 200 chars:`, content.substring(0, 200))
+
     // Parse frontmatter if present, otherwise just return content
     try {
       const { data, content: markdown } = matter(content)
+      console.log(`[DEBUG] Frontmatter parsed successfully`)
+      console.log(`[DEBUG] Frontmatter data:`, data)
+      console.log(`[DEBUG] Content without frontmatter length: ${markdown.length}`)
+      console.log(`[DEBUG] Content first 100 chars:`, markdown.substring(0, 100))
       return {
         frontmatter: data,
         content: markdown
       }
     } catch (parseError) {
       // If no frontmatter, return content as-is
+      console.error(`[DEBUG] Failed to parse frontmatter:`, parseError)
       return {
         frontmatter: {},
         content: content
