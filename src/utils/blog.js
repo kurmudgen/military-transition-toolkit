@@ -32,6 +32,38 @@ function parseFrontmatter(content) {
 
 const blogPosts = [
   {
+    slug: 'va-rating-knee-pain-compensation-rates',
+    title: 'VA Rating for Knee Pain: Compensation and Rating Guide',
+    date: '2025-11-14',
+    description: 'Complete guide to VA knee pain ratings from 0%-100%, monthly compensation amounts, evidence requirements, and successful filing strategies.',
+    keywords: 'knee pain va rating, va disability knee, knee injury compensation, veterans knee pain',
+    excerpt: "Complete guide to VA knee pain ratings from 0%-100%, monthly compensation amounts, evidence requirements, and successful filing strategies for veterans."
+  },
+  {
+    slug: 'florida-veteran-benefits-2025',
+    title: 'Florida Veteran Benefits 2025: Why 1.4 Million Veterans Choose the Sunshine State',
+    date: '2025-11-14',
+    description: 'Complete guide to Florida veteran benefits: no state income tax, full property tax exemptions, education waivers, and why 1.4M+ veterans call Florida home.',
+    keywords: 'Florida veteran benefits, Florida property tax exemption veterans, Florida veteran education benefits',
+    excerpt: "Florida's the second-largest veteran population in the country (1.4 million+) for good reason. No state income tax saves you thousands yearly, 100% disabled veterans get complete property tax exemption."
+  },
+  {
+    slug: '25b-it-specialist-civilian-career-guide',
+    title: '25B IT Specialist: Your Cyber Security Career Path to $90K+ Salaries',
+    date: '2025-11-14',
+    description: 'Complete 25B to civilian IT career guide. Cybersecurity jobs, $90K+ salaries, required certs (Security+, CISSP), clearance value, and remote work opportunities.',
+    keywords: '25B civilian jobs, 25B IT specialist career, military IT to cyber security',
+    excerpt: "25B Information Technology Specialist is one of the smoothest military-to-civilian transitions. Your experience translates directly to civilian IT roles paying $60K-$75K entry-level and $90K-$130K+ with experience."
+  },
+  {
+    slug: 'how-to-transition-military-cybersecurity-career',
+    title: 'How to Transition to Cybersecurity: Military IT to Security Career Path',
+    date: '2025-11-14',
+    description: '17C cyber ops to cybersecurity professional, Security+, CEH, incident response careers, salary expectations, and why military cyber experience is gold.',
+    keywords: 'military cybersecurity, 17C career transition, Security+ certification, CEH, cybersecurity careers, incident response',
+    excerpt: "If you're military IT (17C, 25B, 25D) with cyber/security background, cybersecurity is your natural path. Transition in 6-12 months with Security+ certification. Starting salary: $80K-$110K."
+  },
+  {
     slug: '11b-infantry-civilian-career-guide',
     title: 'Army 11B Infantry Career Guide (2025)',
     date: '2025-11-13',
@@ -97,11 +129,11 @@ const blogPosts = [
   },
   {
     slug: 'terminal-leave-calculator',
-    title: 'Terminal Leave Calculator Guide (2025)',
-    date: '2025-11-13',
-    description: 'Calculate whether taking terminal leave or selling it back gives you more value. Free calculator for active duty service members.',
-    keywords: 'terminal leave calculator, military terminal leave, sell terminal leave, terminal leave vs sell back',
-    excerpt: "When you're preparing to separate from the military, one of the most important financial decisions you'll make is what to do with your terminal leave. Should you take it and extend your benefits, or sell it back for a lump sum payment?"
+    title: 'Terminal Leave Calculator: Should You Use It or Sell It? (2025)',
+    date: '2025-11-14',
+    description: 'Take terminal leave or sell it back? We break down the real numbers, tax implications, and who should choose each option with our free calculator.',
+    keywords: 'terminal leave calculator, sell terminal leave, terminal leave vs sell back',
+    excerpt: "Every separating service member faces this decision: take terminal leave or sell it back for cash? There's no universal right answer. Most people with families should take the leave for TRICARE coverage alone."
   }
 ]
 

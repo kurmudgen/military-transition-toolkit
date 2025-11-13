@@ -1,6 +1,6 @@
 ---
 title: "Terminal Leave Calculator: Should You Use It or Sell It? (2025 Guide)"
-date: ""
+date: "2025-11-14"
 description: "Take terminal leave or sell it back? We break down the real numbers, tax implications, and who should choose each option with our free calculator."
 keywords: "terminal leave calculator, sell terminal leave, terminal leave vs sell back"
 slug: "terminal-leave-calculator"

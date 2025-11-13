@@ -1,6 +1,6 @@
 ---
 title: "25B IT Specialist: Your Cyber Security Career Path to $90K+ Salaries"
-date: ""
+date: "2025-11-14"
 description: "Complete 25B to civilian IT career guide. Cybersecurity jobs, $90K+ salaries, required certs (Security+, CISSP), clearance value, and remote work opportunities."
 keywords: "25B civilian jobs, 25B IT specialist career, military IT to cyber security"
 ---
