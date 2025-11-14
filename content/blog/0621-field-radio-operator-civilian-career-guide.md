@@ -1,6 +1,6 @@
 ---
 title: "Marine 0621 Field Radio Operator to Civilian: Your Complete Career Transition Roadmap (With 2025 Salary Data)"
-date: ""
+date: "2025-11-18"
 description: "Real career options for 0621 Field Radio Operator transitioning to civilian life. Includes salary ranges $55K-$120K+, required certifications, and skills translation for RF, wireless, and IT careers."
 keywords: "0621 field radio operator civilian jobs, 0621 career transition, marine radio operator to civilian career, RF technician wireless communications jobs"
 ---

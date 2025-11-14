@@ -1,6 +1,6 @@
 ---
 title: "11B Infantry to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
-date: ""
+date: "2025-11-15"
 description: "Real career options for 11B Infantry transitioning to civilian life. Includes salary ranges $45K-$85K+, required certifications, and skills translation."
 keywords: "11B infantry civilian jobs, 11B career transition, infantry to civilian career"
 ---
