@@ -1,6 +1,6 @@
 ---
 title: "Michigan Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2026-06-01"
+date: "2026-03-16"
 description: "Where to retire in Michigan as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Michigan best cities for veterans, Michigan military retirement, Michigan cost of living veterans, where to retire Michigan"
 slug: "mi-best-cities-veterans-2025"

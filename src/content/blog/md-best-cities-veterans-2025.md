@@ -1,6 +1,6 @@
 ---
 title: "Maryland Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2026-05-18"
+date: "2026-03-05"
 description: "Where to retire in Maryland as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Maryland best cities for veterans, Maryland military retirement, Maryland cost of living veterans, where to retire Maryland"
 slug: "md-best-cities-veterans-2025"

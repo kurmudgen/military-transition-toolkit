@@ -1,6 +1,6 @@
 ---
 title: "New Hampshire Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-07-29"
+date: "2026-04-28"
 description: "Guide to New Hampshire veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "new hampshire veteran healthcare, new hampshire GI Bill schools, new hampshire veteran jobs, new hampshire VA hospital"
 slug: "nh-veteran-healthcare-education-jobs"

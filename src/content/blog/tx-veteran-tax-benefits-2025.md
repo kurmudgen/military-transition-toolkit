@@ -1,6 +1,6 @@
 ---
 title: "Texas Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-10-30"
+date: "2026-07-07"
 description: "Complete guide to Texas veteran tax benefits: property tax exemptions up to 100%, no state income tax, vehicle registration discounts, and financial analysis for disabled veterans."
 keywords: "texas veteran benefits, texas property tax exemption veterans, texas veteran tax benefits, military retirement texas, disabled veteran texas"
 slug: "tx-veteran-tax-benefits-2025"

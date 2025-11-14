@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in Oregon for Veterans 2025: Cost of Living & Quality of Life"
-date: "2026-09-14"
+date: "2026-06-02"
 description: "Oregon's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities oregon veterans, oregon cost of living veterans, where to live oregon military, oregon veteran population"
 slug: "or-best-cities-veterans-2025"

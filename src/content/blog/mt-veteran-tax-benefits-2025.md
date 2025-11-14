@@ -1,6 +1,6 @@
 ---
 title: "Montana Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-07-03"
+date: "2026-04-09"
 description: "Complete guide to Montana veteran tax benefits: property tax reduction for 100% disabled, 50% military retirement exemption starting 2026, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Montana veteran benefits, Montana property tax exemption veterans, Montana veteran income tax, Montana disabled veteran benefits"
 slug: "mt-veteran-tax-benefits-2025"

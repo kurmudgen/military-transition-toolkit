@@ -1,6 +1,6 @@
 ---
 title: "Texas Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-10-28"
+date: "2026-07-06"
 description: "Guide to Texas veteran resources: VA healthcare facilities across the state, Hazlewood Act free tuition, GI Bill schools, and veteran employment programs."
 keywords: "texas veteran healthcare, texas GI Bill schools, texas veteran jobs, texas VA hospital, hazlewood act texas"
 slug: "tx-veteran-healthcare-education-jobs"

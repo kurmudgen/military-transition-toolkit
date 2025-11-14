@@ -1,6 +1,6 @@
 ---
 title: "New Mexico Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-08-14"
+date: "2026-05-11"
 description: "Complete guide to New Mexico veteran tax benefits: property tax exemptions, military retirement income treatment, vehicle registration discounts, and financial analysis for disabled veterans."
 keywords: "new mexico veteran benefits, new mexico property tax exemption veterans, new mexico veteran tax benefits, military retirement new mexico"
 slug: "new-mexico-veteran-tax-benefits-2025"

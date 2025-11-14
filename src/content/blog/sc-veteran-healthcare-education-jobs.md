@@ -1,6 +1,6 @@
 ---
 title: "South Carolina Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-10-07"
+date: "2026-06-19"
 description: "Guide to South Carolina veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs with 1.7% unemployment."
 keywords: "south carolina veteran healthcare, south carolina GI Bill schools, south carolina veteran jobs, south carolina VA hospital"
 slug: "sc-veteran-healthcare-education-jobs"

@@ -1,6 +1,6 @@
 ---
 title: "Connecticut Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-02-20"
+date: "2025-12-30"
 description: "Complete guide to Connecticut veteran tax benefits: 100% military retirement tax exemption, new property tax breaks for disabled veterans, and cost-saving strategies."
 keywords: "Connecticut veteran benefits, Connecticut property tax exemption veterans, Connecticut military retirement tax, Connecticut disabled veteran benefits"
 slug: "ct-veteran-tax-benefits-2025"

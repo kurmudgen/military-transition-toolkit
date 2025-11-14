@@ -1,6 +1,6 @@
 ---
 title: "Hawaii Veteran Benefits 2025: Property Tax Exemption, Income Tax & Financial Reality"
-date: "2026-03-20"
+date: "2026-01-20"
 description: "Complete guide to Hawaii veteran tax benefits: 100% exempt military retirement income, full property tax exemption for disabled veterans, and the brutal reality of living in America's most expensive state."
 keywords: "Hawaii veteran benefits, Hawaii property tax exemption veterans, Hawaii veteran income tax, Hawaii disabled veteran benefits, Hawaii military retirement tax"
 slug: "hi-veteran-tax-benefits-2025"

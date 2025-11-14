@@ -1,6 +1,6 @@
 ---
 title: "Tennessee Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-10-21"
+date: "2026-06-30"
 description: "Guide to Tennessee veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "tennessee veteran healthcare, tennessee GI Bill schools, tennessee veteran jobs, tennessee VA hospital"
 slug: "tn-veteran-healthcare-education-jobs"

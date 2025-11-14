@@ -1,6 +1,6 @@
 ---
 title: "Ohio Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-09-02"
+date: "2026-05-25"
 description: "Guide to Ohio veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "ohio veteran healthcare, ohio GI Bill schools, ohio veteran jobs, ohio VA hospital"
 slug: "oh-veteran-healthcare-education-jobs"

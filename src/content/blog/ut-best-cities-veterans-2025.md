@@ -1,6 +1,6 @@
 ---
 title: "Utah Best Cities for Veterans 2025: Housing Costs, Benefits & Quality of Life"
-date: "2026-11-02"
+date: "2026-07-09"
 description: "Where to live in Utah as a veteran: best cities ranked by benefits, housing costs, veteran population, employment opportunities, and quality of life for 2025."
 keywords: "utah best cities for veterans, utah military retirement, utah cost of living veterans, where to retire utah"
 slug: "ut-best-cities-veterans-2025"

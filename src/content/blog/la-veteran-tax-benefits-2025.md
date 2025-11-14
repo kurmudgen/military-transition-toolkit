@@ -1,6 +1,6 @@
 ---
 title: "Louisiana Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-05-08"
+date: "2026-02-26"
 description: "Complete guide to Louisiana veteran tax benefits: property tax exemption for disabled veterans, income tax treatment, financial benefits, and money-saving strategies."
 keywords: "Louisiana veteran benefits, Louisiana property tax exemption veterans, Louisiana veteran income tax, Louisiana disabled veteran benefits"
 slug: "la-veteran-tax-benefits-2025"

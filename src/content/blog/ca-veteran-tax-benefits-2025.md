@@ -1,6 +1,6 @@
 ---
 title: "California Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-02-06"
+date: "2025-12-19"
 description: "Complete guide to California veteran tax benefits: new military retirement tax exemption, property tax breaks for disabled veterans, and cost-saving strategies."
 keywords: "California veteran benefits, California property tax exemption veterans, California military retirement tax, California disabled veteran benefits"
 slug: "ca-veteran-tax-benefits-2025"

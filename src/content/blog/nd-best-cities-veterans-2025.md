@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in North Dakota for Veterans 2025: Cost of Living & Quality of Life"
-date: "2026-07-13"
+date: "2026-04-16"
 description: "North Dakota's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities north dakota veterans, north dakota cost of living veterans, where to live north dakota military, north dakota veteran population"
 slug: "nd-best-cities-veterans-2025"

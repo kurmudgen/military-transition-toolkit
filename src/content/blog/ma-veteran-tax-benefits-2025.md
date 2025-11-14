@@ -1,6 +1,6 @@
 ---
 title: "Massachusetts Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-05-15"
+date: "2026-03-03"
 description: "Complete guide to Massachusetts veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Massachusetts veteran benefits, Massachusetts property tax exemption veterans, Massachusetts veteran income tax, Massachusetts disabled veteran benefits"
 slug: "ma-veteran-tax-benefits-2025"

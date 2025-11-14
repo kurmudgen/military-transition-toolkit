@@ -1,6 +1,6 @@
 ---
 title: "Indiana Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-04-17"
+date: "2026-02-10"
 description: "Complete guide to Indiana veteran tax benefits: property tax deductions, income tax exemptions, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Indiana veteran benefits, Indiana property tax exemption veterans, Indiana veteran income tax, Indiana disabled veteran benefits"
 slug: "in-veteran-tax-benefits-2025"

@@ -1,6 +1,6 @@
 ---
 title: "Best Cities for Veterans in Louisiana 2025: Comprehensive Cost & Benefits Guide"
-date: "2026-05-04"
+date: "2026-02-23"
 description: "Detailed analysis of the best Louisiana cities for veterans including New Orleans, Baton Rouge, Shreveport, and Lafayette - housing costs, jobs, VA healthcare, and quality of life."
 keywords: "Louisiana best cities veterans, New Orleans veterans, Baton Rouge veterans, Louisiana veteran housing, Shreveport military"
 slug: "la-best-cities-veterans-2025"

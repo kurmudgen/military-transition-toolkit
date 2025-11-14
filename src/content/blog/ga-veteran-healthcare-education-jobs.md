@@ -1,6 +1,6 @@
 ---
 title: "Georgia Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-03-11"
+date: "2026-01-13"
 description: "Complete directory of Georgia VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Georgia VA hospital, Georgia veteran education, Georgia veteran jobs, Georgia GI Bill schools"
 slug: "ga-veteran-healthcare-education-jobs"

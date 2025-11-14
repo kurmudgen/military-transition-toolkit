@@ -1,6 +1,6 @@
 ---
 title: "West Virginia Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-12-11"
+date: "2026-08-07"
 description: "Complete guide to West Virginia veteran tax benefits including property tax exemptions for disabled veterans, military retirement income tax treatment, homestead exemptions, and 20-year savings projections with county-by-county comparisons."
 keywords: "West Virginia veteran tax benefits, WV property tax exemption veterans, West Virginia military retirement tax, WV homestead exemption, disabled veteran tax benefits WV"
 slug: "wv-veteran-tax-benefits-2025"

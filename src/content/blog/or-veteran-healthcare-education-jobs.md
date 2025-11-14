@@ -1,6 +1,6 @@
 ---
 title: "Oregon Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-09-16"
+date: "2026-06-04"
 description: "Guide to Oregon veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "oregon veteran healthcare, oregon GI Bill schools, oregon veteran jobs, portland VA hospital"
 slug: "or-veteran-healthcare-education-jobs"

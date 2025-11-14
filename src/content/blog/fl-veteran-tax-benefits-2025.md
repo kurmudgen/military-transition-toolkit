@@ -1,6 +1,6 @@
 ---
 title: "Florida Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-03-06"
+date: "2026-01-09"
 description: "Complete guide to Florida veteran tax benefits: NO state income tax, property tax exemptions for disabled veterans, and financial benefits that save thousands annually."
 keywords: "Florida veteran benefits, Florida property tax exemption veterans, Florida no income tax, Florida disabled veteran benefits"
 slug: "fl-veteran-tax-benefits-2025"

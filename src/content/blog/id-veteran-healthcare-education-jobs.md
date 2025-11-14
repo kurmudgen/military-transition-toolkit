@@ -1,6 +1,6 @@
 ---
 title: "Idaho Veterans: VA Healthcare, University Programs & Military Employment 2025"
-date: "2026-04-01"
+date: "2026-01-29"
 description: "Complete guide to Idaho VA facilities, education benefits at Boise State and University of Idaho, veteran employment at Mountain Home AFB and federal agencies, and support services across the state."
 keywords: "Idaho VA hospital, Idaho veteran education, Idaho veteran jobs, Boise State veterans, Mountain Home Air Force Base employment"
 slug: "id-veteran-healthcare-education-jobs"

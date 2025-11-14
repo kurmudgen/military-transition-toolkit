@@ -1,6 +1,6 @@
 ---
 title: "Delaware Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-02-27"
+date: "2026-01-05"
 description: "Complete guide to Delaware veteran tax benefits: no sales tax, property tax exemptions for disabled veterans, military retirement tax treatment, and cost-saving strategies."
 keywords: "Delaware veteran benefits, Delaware property tax exemption veterans, Delaware military retirement tax, Delaware disabled veteran benefits"
 slug: "de-veteran-tax-benefits-2025"

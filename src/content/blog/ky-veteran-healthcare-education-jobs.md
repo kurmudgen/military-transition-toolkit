@@ -1,6 +1,6 @@
 ---
 title: "Kentucky Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-04-29"
+date: "2026-02-19"
 description: "Complete directory of Kentucky VA medical centers, education programs, veteran employment resources, and support services across the Commonwealth."
 keywords: "Kentucky VA hospital, Kentucky veteran education, Kentucky veteran jobs, Kentucky GI Bill schools"
 slug: "ky-veteran-healthcare-education-jobs"

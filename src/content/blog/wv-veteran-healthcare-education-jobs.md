@@ -1,6 +1,6 @@
 ---
 title: "West Virginia Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-12-09"
+date: "2026-08-06"
 description: "Comprehensive guide to West Virginia veteran resources including VA Medical Centers in Beckley, Clarksburg, Huntington, and Martinsburg, community clinics, WVU and Marshall University benefits, state tuition waivers, employment programs, and job opportunities across the state."
 keywords: "West Virginia VA healthcare, WVU veteran benefits, Marshall University veterans, WV veteran jobs, West Virginia veteran education, VA clinics WV"
 slug: "wv-veteran-healthcare-education-jobs"

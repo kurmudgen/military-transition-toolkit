@@ -1,6 +1,6 @@
 ---
 title: "Kentucky Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-05-01"
+date: "2026-02-20"
 description: "Complete guide to Kentucky veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Kentucky veteran benefits, Kentucky property tax exemption veterans, Kentucky veteran income tax, Kentucky disabled veteran benefits"
 slug: "ky-veteran-tax-benefits-2025"

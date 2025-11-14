@@ -1,6 +1,6 @@
 ---
 title: "Vermont Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-11-18"
+date: "2026-07-21"
 description: "Complete Vermont veteran resource guide for 2025: VA Medical Center White River Junction services, 5 CBOCs statewide, Vermont State Veterans' Home, National Guard tuition benefits, Vermont State Colleges programs, employment resources, state hiring preference, and unemployment statistics."
 keywords: "Vermont veteran healthcare, White River Junction VA, Vermont CBOC, Vermont State Veterans Home, Vermont National Guard tuition, Vermont State Colleges veterans, Vermont veteran jobs, state hiring preference Vermont"
 slug: "vt-veteran-healthcare-education-jobs-2025"
