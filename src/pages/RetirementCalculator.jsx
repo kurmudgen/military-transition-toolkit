@@ -595,7 +595,7 @@ export default function RetirementCalculator({ publicMode = false }) {
               <div className="text-4xl">🔒</div>
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">Premium Features Available</h3>
-                <p className="text-blue-200">Currently free during government shutdown</p>
+                <p className="text-blue-200">Sign up by Nov 19 for lifetime free access</p>
               </div>
             </div>
 
@@ -635,7 +635,7 @@ export default function RetirementCalculator({ publicMode = false }) {
                 Upgrade to Premium - $7/month
               </p>
               <p className="text-sm text-blue-300">
-                Free during government shutdown. Standard pricing applies when federal operations resume.
+                Sign up by Nov 19 for lifetime free access. Starting Nov 20: Basic features stay free, premium features are $7/month.
               </p>
             </div>
           </div>

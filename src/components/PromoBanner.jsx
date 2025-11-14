@@ -50,10 +50,10 @@ export default function PromoBanner() {
             </span>
             <div className="flex-1 min-w-0">
               <p className="font-bold text-sm sm:text-base mb-2">
-                Supporting Veterans During Government Shutdown: All Premium Features FREE Until Shutdown Ends
+                ⚠️ LIFETIME FREE ACCESS ENDS NOV 19 - Sign Up Now
               </p>
               <p className="text-xs sm:text-sm text-blue-50 font-medium">
-                Active duty, veterans, and military families - you have enough to worry about. Focus on your transition, we've got the rest covered.
+                Join 43+ founding members who locked in lifetime free access. Basic features stay free, premium features become $7/month on Nov 20.
               </p>
             </div>
           </div>

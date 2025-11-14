@@ -217,7 +217,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                <strong>Sign up during the shutdown and get lifetime premium access FREE - forever</strong>. All users who create accounts while the government shutdown is active will keep premium access for life at no cost. After federal operations resume, new signups will be $7/month, $49/year, or $250 lifetime. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.
+                <strong>Sign up by Nov 19 and get lifetime premium access FREE - forever</strong>. All users who create accounts before Nov 20 will keep premium access for life at no cost. Starting Nov 20: Basic features stay free, premium features are $7/month, $49/year, or $250 lifetime. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.
               </div>
             </details>
 

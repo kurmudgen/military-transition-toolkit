@@ -1,9 +1,9 @@
-// Government Shutdown Support Configuration
-// When government shutdown is active, all premium features are free for military families
+// Founding Member Promotion Configuration
+// When promo mode is active, all authenticated users get free premium access
 
 // PROMO MODE FEATURE FLAG
 // When VITE_PROMO_MODE=true, all authenticated users get free premium access
-// This prevents accidental charges during government shutdowns or other support periods
+// This allows founding members (signups before Nov 20) to lock in lifetime free access
 export const isPromoModeActive = () => {
   return import.meta.env.VITE_PROMO_MODE === 'true'
 }
@@ -66,9 +66,9 @@ export const PRICING = {
 }
 
 // Check if user has premium access
-// Priority: 1) Promo Mode (government shutdown support), 2) Actual subscription
+// Priority: 1) Promo Mode (founding member access), 2) Actual subscription
 export const hasPremiumAccess = (userTier = 'free') => {
-  // First check: Promo mode feature flag (e.g., government shutdown support)
+  // First check: Promo mode feature flag (e.g., founding member promotion)
   if (isPromoModeActive()) {
     return true
   }

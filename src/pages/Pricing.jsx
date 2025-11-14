@@ -38,7 +38,7 @@ export default function Pricing() {
 
     // PROMO MODE: Block all paid plan selections when promo mode active
     if (paymentUIHidden && planId !== 'free') {
-      alert('All premium features are currently FREE during our government shutdown support promotion. Simply sign up for a free account to get full access!')
+      alert('Sign up by Nov 19 for lifetime free access to all premium features! Starting Nov 20: Basic features stay free, premium features are $7/month.')
       return
     }
 
@@ -166,9 +166,9 @@ export default function Pricing() {
           </div>
         )}
 
-        {/* Shutdown Banner */}
+        {/* Founding Member Deadline Banner */}
         <div className="mb-12 bg-gradient-to-r from-green-900/20 to-emerald-900/20 border border-green-700/30 rounded-2xl p-8 text-center shadow-xl">
-          <h2 className="text-2xl font-bold text-white mb-3">Supporting Veterans During Shutdown</h2>
+          <h2 className="text-2xl font-bold text-white mb-3">⚠️ Lifetime Free Access Ends Nov 19</h2>
           <p className="text-xl text-green-100 mb-2">
             {SHUTDOWN_BANNER.line1}
           </p>
@@ -208,7 +208,7 @@ export default function Pricing() {
               Love This Tool? Buy Me a Coffee!
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
-              This tool is <strong>100% free</strong> during the government shutdown. No payment required, ever.
+              This tool is <strong>100% free</strong> for founding members (sign up by Nov 19). Starting Nov 20: Basic features stay free, premium features are $7/month.
             </p>
             <p className="text-base text-gray-600 dark:text-gray-400 mb-8">
               If you find it valuable and want to support continued development, consider buying me a coffee. It's completely optional and genuinely appreciated! 🙏

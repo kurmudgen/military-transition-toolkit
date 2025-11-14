@@ -63,17 +63,17 @@ export default function Landing() {
       {/* Founding Member Deadline Banner with Countdown */}
       <DeadlineBanner />
 
-      {/* Government Shutdown Support Banner */}
+      {/* Founding Member Deadline Banner */}
       <div className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 border-b-4 border-yellow-600">
         <div className="max-w-6xl mx-auto px-4 py-4 text-center">
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
-            <span className="text-2xl md:text-3xl">🎖️</span>
+            <span className="text-2xl md:text-3xl">⚠️</span>
             <div className="text-slate-900">
               <p className="text-lg md:text-xl font-bold">
-                Shutdown Special: Sign Up Now for Lifetime Premium Free
+                Lifetime Free Access Ends Nov 19 - Sign Up Now
               </p>
               <p className="text-sm md:text-base font-semibold">
-                Sign up during the shutdown and get lifetime access at no cost - forever
+                Join 43+ founding members who locked in lifetime free access
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function Landing() {
         </div>
 
         <p className="text-slate-400 text-sm">
-          All core tools free forever • Sign up during shutdown for lifetime premium access
+          All core tools free forever • Sign up by Nov 19 for lifetime premium access
         </p>
       </div>
 
@@ -428,7 +428,7 @@ export default function Landing() {
           </p>
           <div className="inline-block px-6 py-3 bg-yellow-500/20 border-2 border-yellow-500 rounded-lg">
             <p className="text-yellow-400 font-bold text-sm md:text-base">
-              🎖️ All premium features FREE during government shutdown - Sign up now!
+              ⚠️ Sign up by Nov 19 for lifetime free access - 43+ founding members already locked in!
             </p>
           </div>
         </div>
@@ -519,14 +519,14 @@ export default function Landing() {
           </div>
         </div>
 
-        {/* Shutdown Support Notice */}
+        {/* Founding Member Deadline Notice */}
         <div className="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-2 border-yellow-500 rounded-xl p-8">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-yellow-400 mb-4">
-              🎖️ Shutdown Special: Lifetime Premium Free
+              ⚠️ Lifetime Free Access Ends Nov 19
             </h3>
             <p className="text-slate-300 mb-6 text-lg">
-              Sign up during the government shutdown and get <strong className="text-white">lifetime premium access</strong> at no cost - forever.
+              Sign up by Nov 19 and get <strong className="text-white">lifetime premium access</strong> at no cost - forever.
             </p>
             <div className="grid md:grid-cols-2 gap-4 text-sm text-left mb-6">
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -540,16 +540,17 @@ export default function Landing() {
                 </ul>
               </div>
               <div className="bg-slate-800/50 rounded-lg p-4">
-                <p className="text-yellow-400 font-semibold mb-3">✓ After Federal Operations Resume:</p>
+                <p className="text-yellow-400 font-semibold mb-3">✓ Starting Nov 20:</p>
                 <ul className="text-slate-300 space-y-2 text-sm">
                   <li>• New signups: $7/month, $49/year, or $250 lifetime</li>
-                  <li>• You keep lifetime access forever (if you signed up during shutdown)</li>
+                  <li>• Basic features stay free forever</li>
+                  <li>• Founding members keep lifetime access forever</li>
                   <li>• All your data stays safe</li>
                 </ul>
               </div>
             </div>
             <p className="text-yellow-400 font-semibold mb-4">
-              This offer ends when federal operations resume. Sign up now to lock in lifetime access.
+              Join 43+ founding members who locked in lifetime free access. Deadline: Nov 19, 2025.
             </p>
             <Link to="/signup" className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg text-lg">
               Create Account →
@@ -570,7 +571,7 @@ export default function Landing() {
           Sign Up for Lifetime Access →
         </Link>
         <p className="text-slate-400 text-sm mt-4">
-          No credit card required • Lifetime premium access during shutdown
+          No credit card required • Sign up by Nov 19 for lifetime free access
         </p>
       </div>
 
