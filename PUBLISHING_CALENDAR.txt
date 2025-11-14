@@ -1,0 +1,269 @@
+================================================================================
+STATE VETERANS GUIDES PUBLISHING CALENDAR
+================================================================================
+Total Posts: 152
+Schedule: Monday, Wednesday, Friday
+Start Date: January 05, 2026 (Monday)
+================================================================================
+
+
+--- AK (1-3) ---
+    1. ak-best-cities-veterans-2025.md                    | Monday    Jan 05, 2026 (2026-01-05)
+    2. ak-veteran-healthcare-education-jobs.md            | Wednesday Jan 07, 2026 (2026-01-07)
+    3. ak-veteran-tax-benefits-2025.md                    | Friday    Jan 09, 2026 (2026-01-09)
+
+--- AL (4-6) ---
+    4. al-best-cities-veterans-2025.md                    | Monday    Jan 12, 2026 (2026-01-12)
+    5. al-veteran-healthcare-education-jobs.md            | Wednesday Jan 14, 2026 (2026-01-14)
+    6. al-veteran-tax-benefits-2025.md                    | Friday    Jan 16, 2026 (2026-01-16)
+
+--- AR (7-9) ---
+    7. ar-best-cities-veterans-2025.md                    | Monday    Jan 19, 2026 (2026-01-19)
+    8. ar-veteran-healthcare-education-jobs.md            | Wednesday Jan 21, 2026 (2026-01-21)
+    9. ar-veteran-tax-benefits-2025.md                    | Friday    Jan 23, 2026 (2026-01-23)
+
+--- AZ (10-12) ---
+   10. az-best-cities-veterans-2025.md                    | Monday    Jan 26, 2026 (2026-01-26)
+   11. az-veteran-healthcare-education-jobs.md            | Wednesday Jan 28, 2026 (2026-01-28)
+   12. az-veteran-tax-benefits-2025.md                    | Friday    Jan 30, 2026 (2026-01-30)
+
+--- CA (13-15) ---
+   13. ca-best-cities-veterans-2025.md                    | Monday    Feb 02, 2026 (2026-02-02)
+   14. ca-veteran-healthcare-education-jobs.md            | Wednesday Feb 04, 2026 (2026-02-04)
+   15. ca-veteran-tax-benefits-2025.md                    | Friday    Feb 06, 2026 (2026-02-06)
+
+--- CO (16-18) ---
+   16. co-best-cities-veterans-2025.md                    | Monday    Feb 09, 2026 (2026-02-09)
+   17. co-veteran-healthcare-education-jobs.md            | Wednesday Feb 11, 2026 (2026-02-11)
+   18. co-veteran-tax-benefits-2025.md                    | Friday    Feb 13, 2026 (2026-02-13)
+
+--- CT (19-21) ---
+   19. ct-best-cities-veterans-2025.md                    | Monday    Feb 16, 2026 (2026-02-16)
+   20. ct-veteran-healthcare-education-jobs.md            | Wednesday Feb 18, 2026 (2026-02-18)
+   21. ct-veteran-tax-benefits-2025.md                    | Friday    Feb 20, 2026 (2026-02-20)
+
+--- DE (22-24) ---
+   22. de-best-cities-veterans-2025.md                    | Monday    Feb 23, 2026 (2026-02-23)
+   23. de-veteran-healthcare-education-jobs.md            | Wednesday Feb 25, 2026 (2026-02-25)
+   24. de-veteran-tax-benefits-2025.md                    | Friday    Feb 27, 2026 (2026-02-27)
+
+--- FL (25-27) ---
+   25. fl-best-cities-veterans-2025.md                    | Monday    Mar 02, 2026 (2026-03-02)
+   26. fl-veteran-healthcare-education-jobs.md            | Wednesday Mar 04, 2026 (2026-03-04)
+   27. fl-veteran-tax-benefits-2025.md                    | Friday    Mar 06, 2026 (2026-03-06)
+
+--- GA (28-30) ---
+   28. ga-best-cities-veterans-2025.md                    | Monday    Mar 09, 2026 (2026-03-09)
+   29. ga-veteran-healthcare-education-jobs.md            | Wednesday Mar 11, 2026 (2026-03-11)
+   30. ga-veteran-tax-benefits-2025.md                    | Friday    Mar 13, 2026 (2026-03-13)
+
+--- HI (31-33) ---
+   31. hi-best-cities-veterans-2025.md                    | Monday    Mar 16, 2026 (2026-03-16)
+   32. hi-veteran-healthcare-education-jobs.md            | Wednesday Mar 18, 2026 (2026-03-18)
+   33. hi-veteran-tax-benefits-2025.md                    | Friday    Mar 20, 2026 (2026-03-20)
+
+--- IA (34-36) ---
+   34. ia-best-cities-veterans-2025.md                    | Monday    Mar 23, 2026 (2026-03-23)
+   35. ia-veteran-healthcare-education-jobs.md            | Wednesday Mar 25, 2026 (2026-03-25)
+   36. ia-veteran-tax-benefits-2025.md                    | Friday    Mar 27, 2026 (2026-03-27)
+
+--- ID (37-39) ---
+   37. id-best-cities-veterans-2025.md                    | Monday    Mar 30, 2026 (2026-03-30)
+   38. id-veteran-healthcare-education-jobs.md            | Wednesday Apr 01, 2026 (2026-04-01)
+   39. id-veteran-tax-benefits-2025.md                    | Friday    Apr 03, 2026 (2026-04-03)
+
+--- IL (40-42) ---
+   40. il-best-cities-veterans-2025.md                    | Monday    Apr 06, 2026 (2026-04-06)
+   41. il-veteran-healthcare-education-jobs.md            | Wednesday Apr 08, 2026 (2026-04-08)
+   42. il-veteran-tax-benefits-2025.md                    | Friday    Apr 10, 2026 (2026-04-10)
+
+--- IN (43-45) ---
+   43. in-best-cities-veterans-2025.md                    | Monday    Apr 13, 2026 (2026-04-13)
+   44. in-veteran-healthcare-education-jobs.md            | Wednesday Apr 15, 2026 (2026-04-15)
+   45. in-veteran-tax-benefits-2025.md                    | Friday    Apr 17, 2026 (2026-04-17)
+
+--- KS (46-48) ---
+   46. ks-best-cities-veterans-2025.md                    | Monday    Apr 20, 2026 (2026-04-20)
+   47. ks-veteran-healthcare-education-jobs.md            | Wednesday Apr 22, 2026 (2026-04-22)
+   48. ks-veteran-tax-benefits-2025.md                    | Friday    Apr 24, 2026 (2026-04-24)
+
+--- KY (49-51) ---
+   49. ky-best-cities-veterans-2025.md                    | Monday    Apr 27, 2026 (2026-04-27)
+   50. ky-veteran-healthcare-education-jobs.md            | Wednesday Apr 29, 2026 (2026-04-29)
+   51. ky-veteran-tax-benefits-2025.md                    | Friday    May 01, 2026 (2026-05-01)
+
+--- LA (52-54) ---
+   52. la-best-cities-veterans-2025.md                    | Monday    May 04, 2026 (2026-05-04)
+   53. la-veteran-healthcare-education-jobs.md            | Wednesday May 06, 2026 (2026-05-06)
+   54. la-veteran-tax-benefits-2025.md                    | Friday    May 08, 2026 (2026-05-08)
+
+--- MA (55-57) ---
+   55. ma-best-cities-veterans-2025.md                    | Monday    May 11, 2026 (2026-05-11)
+   56. ma-veteran-healthcare-education-jobs.md            | Wednesday May 13, 2026 (2026-05-13)
+   57. ma-veteran-tax-benefits-2025.md                    | Friday    May 15, 2026 (2026-05-15)
+
+--- MD (58-60) ---
+   58. md-best-cities-veterans-2025.md                    | Monday    May 18, 2026 (2026-05-18)
+   59. md-veteran-healthcare-education-jobs.md            | Wednesday May 20, 2026 (2026-05-20)
+   60. md-veteran-tax-benefits-2025.md                    | Friday    May 22, 2026 (2026-05-22)
+
+--- ME (61-63) ---
+   61. me-best-cities-veterans-2025.md                    | Monday    May 25, 2026 (2026-05-25)
+   62. me-veteran-healthcare-education-jobs.md            | Wednesday May 27, 2026 (2026-05-27)
+   63. me-veteran-tax-benefits-2025.md                    | Friday    May 29, 2026 (2026-05-29)
+
+--- MI (64-66) ---
+   64. mi-best-cities-veterans-2025.md                    | Monday    Jun 01, 2026 (2026-06-01)
+   65. mi-veteran-healthcare-education-jobs.md            | Wednesday Jun 03, 2026 (2026-06-03)
+   66. mi-veteran-tax-benefits-2025.md                    | Friday    Jun 05, 2026 (2026-06-05)
+
+--- MN (67-69) ---
+   67. mn-best-cities-veterans-2025.md                    | Monday    Jun 08, 2026 (2026-06-08)
+   68. mn-veteran-healthcare-education-jobs.md            | Wednesday Jun 10, 2026 (2026-06-10)
+   69. mn-veteran-tax-benefits-2025.md                    | Friday    Jun 12, 2026 (2026-06-12)
+
+--- MO (70-72) ---
+   70. mo-best-cities-veterans-2025.md                    | Monday    Jun 15, 2026 (2026-06-15)
+   71. mo-veteran-healthcare-education-jobs.md            | Wednesday Jun 17, 2026 (2026-06-17)
+   72. mo-veteran-tax-benefits-2025.md                    | Friday    Jun 19, 2026 (2026-06-19)
+
+--- MS (73-75) ---
+   73. ms-best-cities-veterans-2025.md                    | Monday    Jun 22, 2026 (2026-06-22)
+   74. ms-veteran-healthcare-education-jobs.md            | Wednesday Jun 24, 2026 (2026-06-24)
+   75. ms-veteran-tax-benefits-2025.md                    | Friday    Jun 26, 2026 (2026-06-26)
+
+--- MT (76-78) ---
+   76. mt-best-cities-veterans-2025.md                    | Monday    Jun 29, 2026 (2026-06-29)
+   77. mt-veteran-healthcare-education-jobs.md            | Wednesday Jul 01, 2026 (2026-07-01)
+   78. mt-veteran-tax-benefits-2025.md                    | Friday    Jul 03, 2026 (2026-07-03)
+
+--- NC (79-81) ---
+   79. nc-best-cities-veterans-2025.md                    | Monday    Jul 06, 2026 (2026-07-06)
+   80. nc-veteran-healthcare-education-jobs.md            | Wednesday Jul 08, 2026 (2026-07-08)
+   81. nc-veteran-tax-benefits-2025.md                    | Friday    Jul 10, 2026 (2026-07-10)
+
+--- ND (82-84) ---
+   82. nd-best-cities-veterans-2025.md                    | Monday    Jul 13, 2026 (2026-07-13)
+   83. nd-veteran-healthcare-education-jobs.md            | Wednesday Jul 15, 2026 (2026-07-15)
+   84. nd-veteran-tax-benefits-2025.md                    | Friday    Jul 17, 2026 (2026-07-17)
+
+--- NE (85-87) ---
+   85. ne-best-cities-veterans-2025.md                    | Monday    Jul 20, 2026 (2026-07-20)
+   86. ne-veteran-healthcare-education-jobs.md            | Wednesday Jul 22, 2026 (2026-07-22)
+   87. ne-veteran-tax-benefits-2025.md                    | Friday    Jul 24, 2026 (2026-07-24)
+
+--- NH (88-90) ---
+   88. nh-best-cities-veterans-2025.md                    | Monday    Jul 27, 2026 (2026-07-27)
+   89. nh-veteran-healthcare-education-jobs.md            | Wednesday Jul 29, 2026 (2026-07-29)
+   90. nh-veteran-tax-benefits-2025.md                    | Friday    Jul 31, 2026 (2026-07-31)
+
+--- NJ (91-93) ---
+   91. nj-best-cities-veterans-2025.md                    | Monday    Aug 03, 2026 (2026-08-03)
+   92. nj-veteran-healthcare-education-jobs.md            | Wednesday Aug 05, 2026 (2026-08-05)
+   93. nj-veteran-tax-benefits-2025.md                    | Friday    Aug 07, 2026 (2026-08-07)
+
+--- NM (94-96) ---
+   94. nm-best-cities-veterans-2025.md                    | Monday    Aug 10, 2026 (2026-08-10)
+   95. nm-veteran-healthcare-education-jobs.md            | Wednesday Aug 12, 2026 (2026-08-12)
+   96. nm-veteran-tax-benefits-2025.md                    | Friday    Aug 14, 2026 (2026-08-14)
+
+--- NV (97-99) ---
+   97. nv-best-cities-veterans-2025.md                    | Monday    Aug 17, 2026 (2026-08-17)
+   98. nv-veteran-healthcare-education-jobs.md            | Wednesday Aug 19, 2026 (2026-08-19)
+   99. nv-veteran-tax-benefits-2025.md                    | Friday    Aug 21, 2026 (2026-08-21)
+
+--- NY (100-102) ---
+  100. ny-best-cities-veterans-2025.md                    | Monday    Aug 24, 2026 (2026-08-24)
+  101. ny-veteran-healthcare-education-jobs.md            | Wednesday Aug 26, 2026 (2026-08-26)
+  102. ny-veteran-tax-benefits-2025.md                    | Friday    Aug 28, 2026 (2026-08-28)
+
+--- OH (103-105) ---
+  103. oh-best-cities-veterans-2025.md                    | Monday    Aug 31, 2026 (2026-08-31)
+  104. oh-veteran-healthcare-education-jobs.md            | Wednesday Sep 02, 2026 (2026-09-02)
+  105. oh-veteran-tax-benefits-2025.md                    | Friday    Sep 04, 2026 (2026-09-04)
+
+--- OK (106-108) ---
+  106. ok-best-cities-veterans-2025.md                    | Monday    Sep 07, 2026 (2026-09-07)
+  107. ok-veteran-healthcare-education-jobs.md            | Wednesday Sep 09, 2026 (2026-09-09)
+  108. ok-veteran-tax-benefits-2025.md                    | Friday    Sep 11, 2026 (2026-09-11)
+
+--- OR (109-111) ---
+  109. or-best-cities-veterans-2025.md                    | Monday    Sep 14, 2026 (2026-09-14)
+  110. or-veteran-healthcare-education-jobs.md            | Wednesday Sep 16, 2026 (2026-09-16)
+  111. or-veteran-tax-benefits-2025.md                    | Friday    Sep 18, 2026 (2026-09-18)
+
+--- PA (112-114) ---
+  112. pa-best-cities-veterans-2025.md                    | Monday    Sep 21, 2026 (2026-09-21)
+  113. pa-veteran-healthcare-education-jobs.md            | Wednesday Sep 23, 2026 (2026-09-23)
+  114. pa-veteran-tax-benefits-2025.md                    | Friday    Sep 25, 2026 (2026-09-25)
+
+--- RI (115-117) ---
+  115. ri-best-cities-veterans-2025.md                    | Monday    Sep 28, 2026 (2026-09-28)
+  116. ri-veteran-healthcare-education-jobs.md            | Wednesday Sep 30, 2026 (2026-09-30)
+  117. ri-veteran-tax-benefits-2025.md                    | Friday    Oct 02, 2026 (2026-10-02)
+
+--- SC (118-120) ---
+  118. sc-best-cities-veterans-2025.md                    | Monday    Oct 05, 2026 (2026-10-05)
+  119. sc-veteran-healthcare-education-jobs.md            | Wednesday Oct 07, 2026 (2026-10-07)
+  120. sc-veteran-tax-benefits-2025.md                    | Friday    Oct 09, 2026 (2026-10-09)
+
+--- SD (121-123) ---
+  121. sd-best-cities-veterans-2025.md                    | Monday    Oct 12, 2026 (2026-10-12)
+  122. sd-veteran-healthcare-education-jobs.md            | Wednesday Oct 14, 2026 (2026-10-14)
+  123. sd-veteran-tax-benefits-2025.md                    | Friday    Oct 16, 2026 (2026-10-16)
+
+--- TN (124-126) ---
+  124. tn-best-cities-veterans-2025.md                    | Monday    Oct 19, 2026 (2026-10-19)
+  125. tn-veteran-healthcare-education-jobs.md            | Wednesday Oct 21, 2026 (2026-10-21)
+  126. tn-veteran-tax-benefits-2025.md                    | Friday    Oct 23, 2026 (2026-10-23)
+
+--- TX (127-129) ---
+  127. tx-best-cities-veterans-2025.md                    | Monday    Oct 26, 2026 (2026-10-26)
+  128. tx-veteran-healthcare-education-jobs.md            | Wednesday Oct 28, 2026 (2026-10-28)
+  129. tx-veteran-tax-benefits-2025.md                    | Friday    Oct 30, 2026 (2026-10-30)
+
+--- UT (130-132) ---
+  130. ut-best-cities-veterans-2025.md                    | Monday    Nov 02, 2026 (2026-11-02)
+  131. ut-veteran-healthcare-education-jobs.md            | Wednesday Nov 04, 2026 (2026-11-04)
+  132. ut-veteran-tax-benefits-2025.md                    | Friday    Nov 06, 2026 (2026-11-06)
+
+--- VA (133-135) ---
+  133. va-best-cities-veterans-2025.md                    | Monday    Nov 09, 2026 (2026-11-09)
+  134. va-veteran-healthcare-education-jobs.md            | Wednesday Nov 11, 2026 (2026-11-11)
+  135. va-veteran-tax-benefits-2025.md                    | Friday    Nov 13, 2026 (2026-11-13)
+
+--- VT (136-138) ---
+  136. vt-best-cities-veterans-2025.md                    | Monday    Nov 16, 2026 (2026-11-16)
+  137. vt-veteran-healthcare-education-jobs.md            | Wednesday Nov 18, 2026 (2026-11-18)
+  138. vt-veteran-tax-benefits-2025.md                    | Friday    Nov 20, 2026 (2026-11-20)
+
+--- WA (139-141) ---
+  139. wa-best-cities-veterans-2025.md                    | Monday    Nov 23, 2026 (2026-11-23)
+  140. wa-veteran-healthcare-education-jobs.md            | Wednesday Nov 25, 2026 (2026-11-25)
+  141. wa-veteran-tax-benefits-2025.md                    | Friday    Nov 27, 2026 (2026-11-27)
+
+--- WI (142-144) ---
+  142. wi-best-cities-veterans-2025.md                    | Monday    Nov 30, 2026 (2026-11-30)
+  143. wi-veteran-healthcare-education-jobs.md            | Wednesday Dec 02, 2026 (2026-12-02)
+  144. wi-veteran-tax-benefits-2025.md                    | Friday    Dec 04, 2026 (2026-12-04)
+
+--- WV (145-147) ---
+  145. wv-best-cities-veterans-2025.md                    | Monday    Dec 07, 2026 (2026-12-07)
+  146. wv-veteran-healthcare-education-jobs.md            | Wednesday Dec 09, 2026 (2026-12-09)
+  147. wv-veteran-tax-benefits-2025.md                    | Friday    Dec 11, 2026 (2026-12-11)
+
+--- WY (148-150) ---
+  148. wy-best-cities-veterans-2025.md                    | Monday    Dec 14, 2026 (2026-12-14)
+  149. wy-veteran-healthcare-education-jobs.md            | Wednesday Dec 16, 2026 (2026-12-16)
+  150. wy-veteran-tax-benefits-2025.md                    | Friday    Dec 18, 2026 (2026-12-18)
+
+--- OVERVIEW POSTS (151-152) ---
+  151. best-states-for-veterans-2025.md                   | Monday    Dec 21, 2026 (2026-12-21)
+  152. best-states-military-retirees.md                   | Wednesday Dec 23, 2026 (2026-12-23)
+
+================================================================================
+End Date: December 23, 2026
+Duration: 50 weeks
+================================================================================
+
+Date mapping saved to file-date-mapping.txt

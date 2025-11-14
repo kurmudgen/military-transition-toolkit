@@ -1,6 +1,6 @@
 ---
 title: "California Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-11-15"
+date: "2026-02-02"
 description: "Where to retire in California as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "California best cities for veterans, California military retirement, California cost of living veterans, where to retire California"
 slug: "ca-best-cities-veterans-2025"

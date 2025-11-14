@@ -1,6 +1,6 @@
 ---
 title: "Hawaii Military Retirement: Best Cities, Housing Costs & Island Living Reality 2025"
-date: "2025-11-20"
+date: "2026-03-16"
 description: "Where to retire in Hawaii as a veteran: Oahu vs neighbor islands, housing costs by city, military base proximity, VA healthcare access, and honest assessment of who can afford island life."
 keywords: "Hawaii best cities for veterans, Hawaii military retirement, Hawaii cost of living veterans, where to retire Hawaii, Honolulu veterans, Oahu military retirees"
 slug: "hi-best-cities-veterans-2025"
