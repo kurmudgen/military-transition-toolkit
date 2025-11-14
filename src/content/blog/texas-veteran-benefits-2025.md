@@ -1,500 +1,514 @@
 ---
-title: "Texas Veteran Benefits Guide (2025-2026)"
-date: "2025-11-13"
-description: "Complete guide to Texas veteran tax benefits: property tax exemptions up to 100%, no state income tax, vehicle registration discounts, and financial analysis for disabled veterans."
-keywords: "texas veteran benefits, texas property tax exemption veterans, texas veteran tax benefits, military retirement texas, disabled veteran texas"
-slug: "tx-veteran-tax-benefits-2025"
+title: "Texas Veteran Benefits 2025: Complete Guide to Living Tax-Free in Texas"
+date: "2025-11-16"
+description: "Texas offers massive veteran benefits: 100% property tax exemption for disabled vets, no state income tax, 150 free tuition hours, and more. Complete guide for 2025."
+keywords: "Texas veteran benefits, Texas property tax exemption veterans, Hazelwood Act, Texas disabled veteran benefits"
+slug: "texas-veteran-benefits-2025"
 ---
 
-# Texas Veteran Tax Benefits 2025-2026: Complete Guide
+# Texas Veteran Benefits 2025: Complete Guide to Living Tax-Free in Texas
 
 ## Bottom Line Up Front
 
-Texas offers some of the nation's best veteran tax benefits, anchored by having **no state income tax** (saving military retirees $2,000-$6,000+ annually) and a **full property tax exemption** for 100% disabled veterans with no cap or limit. A 100% P&T disabled veteran with a $400,000 home in Dallas saves $6,200+ annually in property taxes, plus $4,000+ in eliminated state income taxes, totaling over $10,000 in annual savings.
+Texas has some of the best veteran benefits in the nation. **No state income tax** for anyone. **100% property tax exemption** if you're 100% disabled through the VA. **150 hours of free college tuition** through the Hazelwood Act. Plus veteran hiring preferences, drivers license exemptions, business advantages, and more. If you're choosing where to retire or relocate after service, Texas makes a strong financial case. This guide covers every major benefit, who qualifies, and how to maximize your value.
 
-Texas ranks in the **top 5 states nationally** for veteran tax benefits. The combination of zero income tax, full property tax exemption for 100% disabled veterans (worth $5,000-$12,000+ annually depending on location), partial exemptions starting at 10% disability ($5,000-$24,000 based on rating and age), and reduced vehicle registration fees creates substantial financial advantages.
+## Why Texas for veterans?
 
-The property tax structure is graduated: 10-29% disability gets $5,000 exemption; 30-49% gets $7,500; 50-69% gets $10,000; 70-100% gets $12,000. Veterans 65+ with at least 10% disability get an additional $12,000 exemption (maximum $24,000 combined). But the crown jewel: 100% P&T disabled veterans get **complete exemption** of their primary residence—no cap, unlimited value.
+1.5 million veterans live in Texas. That's not an accident.
 
-Downsides? Texas has relatively high property taxes generally (1.60% effective rate, 7th highest nationally), so if you don't qualify for exemptions, you'll pay substantial property taxes. Also, sales tax is high at 6.25% state (8.25% combined with local). But for 100% disabled veterans and military retirees, the benefits far outweigh these costs.
+Texas has:
+- No state income tax (you keep more of your retirement/disability pay)
+- Massive property tax breaks for disabled veterans
+- Free college tuition for veterans and dependents
+- 15+ major military installations (easy transition, familiar culture)
+- Strong veteran employment programs
+- Large veteran community and support networks
+- Booming economy with job opportunities
 
-Overall verdict: Texas is **exceptional** for 100% disabled veterans and military retirees—top 5 nationally. Even veterans with 50%+ disability ratings benefit significantly. Texas has the **largest veteran population in America** (1.54+ million) for good reason.
+Let's break down each benefit and what it's actually worth.
 
-## Property Tax Benefits
+## Property tax exemption (the big one)
 
-### Exemptions by Disability Rating
+This is the benefit that changes the math on living in Texas.
 
-**100% Disabled Veterans (Permanent & Total):**
-- Exemption: **100% of assessed property value** (full exemption, no cap, unlimited)
-- Requirements: 100% P&T service-connected disability from VA or Individual Unemployability (TDIU); primary residence in Texas
-- Annual savings: $5,000-$15,000+ depending on home value and county
-- Form: 50-114 (Application for 100% Disabled Veteran Exemption)
+### 100% Disabled Veterans (the full exemption)
 
-If you're rated 100% P&T by the VA, your primary residence is completely exempt from property taxes—period. No cap, no income limit, no restrictions. Whether your home is worth $200,000 or $2 million, you pay **zero property tax**.
+If you have a **100% VA disability rating**, you qualify for:
+- **100% exemption** from school district property taxes
+- **100% exemption** from county property taxes
+- **100% exemption** from city property taxes (most cities)
+- **$12,000 exemption** from other taxing entities
 
-This is governed by Texas Tax Code Section 11.131 and is one of the most generous property tax benefits in America. Individual Unemployability (TDIU) also qualifies, meaning if you're rated less than 100% but the VA determined you're unemployable due to service-connected disabilities, you get the full exemption.
+**What's this worth?**
 
-**Example:** A 100% disabled veteran with a $400,000 home in Dallas County (1.55% effective rate) saves $6,200 annually. Over 30 years, that's $186,000 in tax savings.
+Average home in Texas: $320,000
+Average property tax rate: 1.6% (varies by area)
+Annual property tax without exemption: ~$5,120
 
-**Partial Disability Exemptions (Tax Code Section 11.22):**
+**With 100% disability exemption: $0 for most homeowners**
 
-Texas offers graduated exemptions for all disabled veterans:
+That's $5,000+ per year in savings. Every year. For life.
 
-- **10% to 29% disability:** $5,000 exemption from assessed value
-- **30% to 49% disability:** $7,500 exemption
-- **50% to 69% disability:** $10,000 exemption
-- **70% to 100% disability:** $12,000 exemption
+Over 20 years of retirement, that's **$100,000+ in tax-free value.**
 
-**Important:** These dollar amounts are deducted from your home's assessed value before taxes are calculated.
+### Partial exemptions (if you're not 100%)
 
-**Additional Exemption for Age 65+:**
+Don't have 100%? You still get partial exemptions:
 
-Disabled veterans who are 65 years or older with a disability rating of **at least 10%** receive an additional $12,000 exemption. This stacks with the disability exemption above.
+- **10-29% disabled:** $5,000 off assessed home value
+- **30-49% disabled:** $7,500 off assessed home value
+- **50-69% disabled:** $10,000 off assessed home value
+- **70-99% disabled:** $12,000 off assessed home value
 
-**Maximum for seniors:** A 70%+ disabled veteran age 65+ gets $12,000 (disability) + $12,000 (age 65+) = **$24,000 total exemption**.
+Plus an additional $12,000 off for disabled veterans who are 65+ or surviving spouses.
 
-**Calculation Example (70% disabled, age 67, Harris County):**
+**Example:**
+60% disabled veteran with a $300,000 home in an area with 2% tax rate:
+- Regular tax: $6,000/year
+- With exemption: $5,800/year
+- Savings: $200/year
 
-- Home assessed value: $350,000
-- Total exemption: $24,000
-- Taxable value: $326,000
-- Effective tax rate: 1.49%
-- Annual tax: $4,857 (vs. $5,215 without exemption)
-- **Annual savings: $358**
+Not as dramatic as 100%, but it adds up.
 
-While $358 seems modest, remember this applies to those under 100% P&T. If you're 100% P&T, you pay zero regardless of age.
+### How to claim it
 
-**General Veteran Homestead Exemption:**
+1. **Get your VA disability rating** (if you don't have one, apply through VA)
 
-All honorably discharged Texas veterans qualify for an additional **$12,000 homestead exemption** from their school district taxes, even with 0% disability. This applies on top of the standard Texas homestead exemption.
+2. **Apply with your county appraisal district** - each county handles this separately. Search "[your county] appraisal district veteran exemption"
 
-### How to Apply
+3. **Provide documentation:**
+   - Copy of your VA disability award letter showing percentage
+   - DD-214 showing honorable discharge
+   - Texas driver's license or ID showing residency
+   - Proof of homeownership
 
-**Application Process:**
+4. **Apply by April 30th** for that tax year (but you can apply late and still get future years)
 
-1. **Determine which exemption you qualify for:**
-   - 100% P&T: Form 50-114
-   - Partial disability (10-100%): Form 50-135
-   - Both available at county appraisal district
+5. **It carries forward** - once approved, you don't reapply annually unless your situation changes
 
-2. **Gather required documents:**
-   - DD Form 214 (Member Copy 4)
-   - VA award letter showing disability rating and P&T status (for 100% exemption) or percentage (for partial)
-   - Texas driver's license or ID matching property address
-   - Property deed or tax statement
+**Where to start:**
+- [Travis County](https://www.traviscad.org/) (Austin area)
+- [Harris County](https://hcad.org/) (Houston area)
+- [Bexar County](https://www.bcad.org/) (San Antonio area)
+- [Dallas County](https://www.dallascad.org/) (Dallas area)
+- [Tarrant County](https://www.tad.org/) (Fort Worth area)
 
-3. **File application with your county appraisal district:**
-   - Find your county: Search "[County name] appraisal district Texas"
-   - Deadline: **April 30** of the tax year
-   - Can file up to 5 years retroactively if you miss the deadline
+Or Google "[your county] appraisal district"
 
-4. **Processing:**
-   - Processing: 30-60 days
-   - Effective: Current tax year if filed by April 30
-   - Renewal: Typically automatic once approved for 100% P&T; may require periodic recertification for partial disability
+## No state income tax (everyone benefits)
 
-**County Appraisal District Contacts (Major Counties):**
+Texas has no state income tax. Period.
 
-- **Dallas County:** Dallas Central Appraisal District | (214) 631-0910 | dallascad.org
-- **Harris County (Houston):** Harris County Appraisal District | (713) 957-7800 | hcad.org
-- **Bexar County (San Antonio):** Bexar Appraisal District | (210) 242-2432 | bcad.org
-- **Tarrant County (Fort Worth):** Tarrant Appraisal District | (817) 284-0024 | tad.org
-- **Travis County (Austin):** Travis Central Appraisal District | (512) 834-9317 | traviscad.org
+**What's this worth?**
 
-**Important:** Once approved for the 100% disabled exemption, it typically renews automatically. However, if you move to a different county, you must reapply with that county's appraisal district.
+If you're pulling in military retirement, disability, and civilian income:
+- **E-7 retirement + 60% disability + $75K civilian job** = ~$140K total income
+- In California (9.3% state tax on that): **~$13,000/year in state taxes**
+- In Texas: **$0**
 
-### Property Tax by County (Major Cities)
+That's $13,000 more in your pocket. Every year.
 
-Texas property taxes are assessed at the county level with significant variation. Here's what 100% disabled veterans save:
+Over 20 years: **$260,000+** (assuming no income growth, which is conservative)
 
-| County (City) | Median Home Value | Effective Tax Rate | Annual Tax (Non-Exempt) | Savings (100% Disabled) |
-|---------------|-------------------|-------------------|------------------------|------------------------|
-| Travis (Austin) | $499,000 | 1.64% | $8,184 | $8,184 |
-| Dallas (Dallas) | $439,999 | 1.55% | $6,820 | $6,820 |
-| Harris (Houston) | $370,990 | 1.49% | $5,528 | $5,528 |
-| Tarrant (Fort Worth) | $360,000 | 1.52% | $5,472 | $5,472 |
-| Bexar (San Antonio) | $335,000 | 1.82% | $6,097 | $6,097 |
-| El Paso (El Paso) | $245,000 | 1.78% | $4,361 | $4,361 |
-| Bell (Killeen/Fort Cavazos) | $268,000 | 1.85% | $4,958 | $4,958 |
+This alone makes Texas attractive for military retirees drawing multiple income streams.
 
-**Over 20 years**, a 100% disabled veteran in Austin saves **$163,680** in property taxes. In Dallas: **$136,400**. In San Antonio: **$121,940**.
+## Hazelwood Act (free college tuition)
 
-### Partial Exemption Savings by Rating
+The Hazelwood Act provides **up to 150 semester credit hours of tuition exemption** at Texas public colleges and universities.
 
-**50% Disabled Veteran (Dallas County, $439,999 home):**
-- Exemption: $10,000 from assessed value
-- Taxable value: $429,999
-- Tax without exemption: $6,820
-- Tax with exemption: $6,665
-- **Annual savings: $155**
+### Who qualifies?
 
-**70% Disabled Veteran, Age 66 (Dallas County, $439,999 home):**
-- Exemption: $12,000 (disability) + $12,000 (age 65+) = $24,000
-- Taxable value: $415,999
-- Tax with exemption: $6,448
-- **Annual savings: $372**
+You must be a Texas resident and meet one of these:
 
-While partial exemptions provide modest savings, the real benefit is for 100% P&T disabled veterans who pay **zero** property tax.
+- Veteran who served at least 181 days of active duty (excluding training)
+- Veteran with an honorable discharge or general discharge under honorable conditions
+- Served as a member of the Texas National Guard or Reserve
+- Child of veteran (if veteran qualifies and transfers unused hours)
 
-### Surviving Spouse Benefits
+### What's covered?
 
-An unremarried surviving spouse of a 100% disabled veteran can continue receiving the full property tax exemption if:
-- Spouse continues to occupy the homestead
-- Spouse doesn't remarry
-- Property remains the surviving spouse's primary residence
+- **Tuition and required fees** at any Texas public college or university
+- **Up to 150 credit hours** (enough for a bachelor's degree + some graduate work, or multiple degrees)
+- **Undergraduate and graduate courses**
 
-The exemption also transfers if the surviving spouse sells the home and purchases another primary residence in Texas. The new home receives a similar proportional exemption based on the sale proceeds applied to the new property.
+### What's NOT covered?
 
-## Income Tax Treatment
+- Books, supplies, room and board
+- Lab fees (usually covered, but varies)
+- Optional fees
+- Private universities
 
-### Military Retirement Pay
+### What's this worth?
 
-- State tax: **$0—Texas has no state income tax**
-- Federal tax: Still taxed federally
-- Annual savings: $2,000-$6,000+ compared to taxing states
+**University of Texas at Austin:**
+- Annual tuition: ~$11,500
+- Four-year degree: ~$46,000
+- **Hazelwood saves you: $46,000**
 
-Texas is one of **eight states** with no general income tax (Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Washington, Wyoming). Military retirement pay, civilian wages, Social Security, pensions—all tax-free at the state level.
+**Texas A&M:**
+- Annual tuition: ~$12,000
+- Four-year degree: ~$48,000
+- **Hazelwood saves you: $48,000**
 
-**Example savings:**
+**Community college pathway:**
+- 2 years community college: ~$8,000
+- 2 years university: ~$24,000
+- **Total saved: $32,000**
 
-- **O-5 retiree with $60,000 pension:**
-  - In California (top rate 9.3%): $5,580 state tax
-  - In Texas: $0
-  - **Annual savings: $5,580**
+If you have kids, you can **transfer your unused hours to them**. Many veterans use 30-45 hours for themselves and give the rest to their kids.
 
-- **E-7 retiree with $35,000 pension:**
-  - In Virginia (5.75% rate): $2,013 state tax
-  - In Texas: $0
-  - **Annual savings: $2,013**
+### How to apply
 
-- **O-6 retiree with $80,000 pension:**
-  - In New York (top rate 8.82%): $7,056 state tax
-  - In Texas: $0
-  - **Annual savings: $7,056**
+1. **Apply for admission** to a Texas public college/university
+2. **Complete the Hazelwood application** through the school's financial aid office
+3. **Provide documentation:**
+   - DD-214 showing honorable discharge
+   - Proof of Texas residency (driver's license, utility bills)
+   - If transferring to children: birth certificate and veteran's unused hours
 
-Over 20 years of retirement, an E-7 retiree saves **$40,260**. An O-5 saves **$111,600**. An O-6 saves **$141,120**.
+4. **Submit BEFORE registration** for each semester
 
-### VA Disability Compensation
+Each school handles it differently. Contact their financial aid office.
 
-- Tax status: 100% exempt federally and in all states
-- Texas: Not taxed
+**Important:** You must be a Texas resident when you apply, not when you served. So you can move to Texas after service and still qualify.
 
-All VA disability compensation is tax-free everywhere. Texas' lack of income tax means you keep every dollar of your VA disability payment.
+## Texas Veterans Land Board (cheap land loans)
 
-### Survivor Benefits (SBP)
+The Texas Veterans Land Board offers **below-market interest rate loans** for:
 
-- Texas taxation: $0 (no income tax)
-- Federal: Taxed federally
+**Land loans** - purchase land in Texas
+- Max loan: $150,000
+- Interest rate: typically 1-2% below market
+- Up to 30-year term
 
-Surviving spouses pay zero Texas state tax on Survivor Benefit Plan payments, saving $1,000-$3,000+ annually compared to states with income tax.
+**Home loans** - purchase or refinance a home
+- Max loan: Up to conventional limits (~$766K for 2025)
+- Interest rate: competitive with VA loans, sometimes lower
+- No PMI, low closing costs
 
-### Other Military Income
+**Home improvement loans** - repairs, renovations
+- Max loan: $75,000
+- Low fixed rate
+- Can be combined with home loan
 
-- **Drill pay (Guard/Reserve):** Not subject to Texas state tax (no income tax)
-- **Combat pay:** Federally exempt; Texas doesn't tax it either
-- **Active duty pay:** Not taxed by Texas if you maintain out-of-state residency under SCRA
-- **401(k)/IRA withdrawals:** Not taxed by Texas
-- **Social Security:** Not taxed by Texas
+### Who qualifies?
 
-## Vehicle & Registration Benefits
+- Served in U.S. military
+- Honorable discharge or still serving
+- Texas resident (or planning to become one)
+- Haven't defaulted on previous VLB loan
 
-**Disabled Veteran License Plates:**
+### What's this worth?
 
-- **Cost for first set:** $3 for plates + **FREE vehicle registration** (vehicles under 18,000 lbs)
-- **Eligibility:** At least 50% service-connected disability, OR 40% with lower extremity amputation
-- **Annual savings:** $50-$80 (typical registration fees waived)
-- **Personalization:** Available for additional $40/year
+**Example:** $300,000 home loan
+- Market rate: 7%
+- VLB rate: 6.5%
+- Monthly payment difference: ~$95/month
+- **Savings over 30 years: ~$34,000**
 
-Texas Transportation Code Section 504.202 allows disabled veterans to register one vehicle for personal use without paying the standard registration fee. Additional vehicles can be registered at normal fees.
+Plus lower closing costs than conventional loans.
 
-**Application:** Complete Form VTR-615 (Application for Disabled Veteran License Plates) and submit to your county tax assessor-collector's office along with VA disability documentation.
+[Apply at texasveterans.com](https://texasveterans.com)
 
-**Additional Parking Benefits:**
+## Veteran employment preference
 
-Disabled veteran plates qualify for:
-- Use of disabled parking spaces statewide
-- Parking placard (no additional fee for permanent disability)
-- Parking meter exemptions in many municipalities (verify locally)
+Texas law requires **state agencies and some local governments** to give hiring preference to veterans.
 
-**Driver's License Fee Waiver:**
+**What it means:**
+- Veterans get preference over non-veterans with similar qualifications
+- Disabled veterans get additional preference
+- Apply to state jobs, universities, some city/county positions
 
-Veterans with a service-related disability of **at least 60%** qualify for a **free Texas driver's license or ID card**.
+**Where to look:**
+- [Texas Workforce Commission Veteran Services](https://www.twc.texas.gov/jobseekers/veterans-services)
+- [WorkInTexas.com](https://www.workingtexas.com) - state job board with veteran filters
+- Individual state agency career pages
 
-- Standard license fee: $33
-- Commercial driver's license (CDL): Not included in waiver
-- Renewal: Free renewals as long as disability persists
+**Does it guarantee a job?** No. But it gives you an edge in state/public employment.
 
-Since 100% P&T disabled veterans exceed 60%, they automatically qualify.
+## Driver's license and ID benefits
 
-**Application:** Present disability letter from VA showing 60%+ rating at Texas DPS office when applying or renewing.
+**Free driver's license** for:
+- Veterans with at least 50% VA disability rating
+- Medal of Honor recipients
 
-**Disabled Veteran Designation:**
+**Veteran designation on license:**
+- Optional "Veteran" designation
+- Makes proving veteran status easier for discounts, benefits
+- Free to add
 
-Veterans who are at least 50% disabled (or 40% with lower extremity amputation) may request a **"DISABLED VETERAN"** designation on their driver's license or ID card. This provides additional recognition and may qualify for local discounts.
+**Military training credit:**
+- Some military driving experience counts toward commercial driver's license (CDL) requirements
 
-## Sales Tax
+Apply when getting/renewing your Texas license. Bring DD-214.
 
-- General sales tax: **6.25% state rate**
-- Combined (state + local): Typically **8.25%** in major cities
-- **No general veteran exemption**
+## License plate benefits
 
-Texas does **not** offer sales tax exemptions for veteran purchases, including vehicle purchases. All residents, including disabled veterans, pay the 6.25% state sales tax plus local rates (typically 2% local, totaling 8.25%).
+**Disabled Veteran license plates:**
+- Free registration if you have 60%+ disability rating connected to loss of/loss of use of limb
+- Specialized DV plates available
+- Some parking benefits
 
-**Vehicle Purchase Example:**
-- $40,000 truck purchase
-- Sales tax: $3,300 (8.25%)
-- Disabled veteran pays: Full $3,300
+**Other veteran plates:**
+- Various designs (branch-specific, medals, etc.)
+- Small fee ($30-40 typically)
+- Shows veteran status
 
-**Exception:** Vehicles modified for orthopedic disabilities are exempt from motor vehicle sales tax if used at least 80% of the time to transport or be driven by a person with an orthopedic disability. Requires Form 14-318.
+[Check current plates at TxDMV.gov](https://www.txdmv.gov)
 
-While the lack of sales tax exemption is a downside, the property tax and income tax benefits far outweigh this for most veterans.
+## Business benefits
 
-## Overall Tax Analysis
+**State Contracting Preference:**
+Texas gives preference to **Service-Disabled Veteran-Owned Small Businesses (SDVOSB)** in state contracting.
 
-### Annual Tax Savings by Rating
+**HUB Certification:**
+Historically Underutilized Business certification for veteran-owned businesses.
 
-**100% Disabled Veteran (Dallas, $439,999 home, $50,000 military retirement):**
-- Property tax saved: $6,820
-- Income tax saved (vs. California 9.3%): $4,650
-- Driver's license fee saved: $33 (annualized every 6 years)
-- Vehicle registration saved: $70
-- **Total annual savings vs. California: $11,573**
-- **Total savings vs. non-exempt Texas resident: $6,920**
+**Does it matter?** If you're starting a business that contracts with state/local government, yes. These preferences can be worth significant revenue.
 
-**70% Disabled, Age 67, Military Retiree ($370,990 home, Houston, $40,000 retirement):**
-- Property tax saved: $268 (with $24,000 exemption)
-- Income tax saved (vs. Virginia 5.75%): $2,300
-- Vehicle registration saved: $70
-- **Total annual savings: $2,638**
+**Where to apply:** [Texas Comptroller HUB Program](https://comptroller.texas.gov/purchasing/vendor/hub/)
 
-**50% Disabled, Military Retiree ($335,000 home, San Antonio, $35,000 retirement):**
-- Property tax saved: $182 (with $10,000 exemption)
-- Income tax saved (vs. New York 8.82%): $3,087
-- Vehicle registration saved: $70
-- **Total annual savings: $3,339**
+## Hunting and fishing license exemptions
 
-**Military Retiree, No Disability ($370,990 home, Houston, $45,000 retirement):**
-- Property tax saved: $0 (no exemption)
-- Income tax saved (vs. Oregon top rate 9.9%): $4,455
-- **Total annual savings: $4,455**
+**Free hunting/fishing licenses** for:
+- Disabled veterans with 50%+ VA rating
+- Totally blind veterans
+- Purple Heart recipients
 
-Even without disability, military retirees save thousands annually by living in Texas due to no state income tax.
+**Lifetime "Super Combo" license** for all veterans for **$85** (normally $1,000+)
 
-### 30-Year Savings Projection
+Includes hunting, fishing, all stamps and permits. One-time purchase, good for life.
 
-**100% Disabled Veteran (Dallas scenario):**
-- Annual savings (vs. CA): $11,573
-- 30-year total: $347,190
-- Net present value (3% discount rate): $227,600
+**Is this a big deal?** If you hunt/fish regularly, the Super Combo saves $50-100/year in license fees. Over 30 years, that's $1,500-$3,000.
 
-**70% Disabled, Age 67:**
-- Annual savings: $2,638
-- 30-year total (15 years at 70%, 15 at 100% post-exemption): $79,140
-- NPV: $60,400
+Not life-changing, but a nice perk.
 
-**Military Retiree (No Disability):**
-- Annual savings: $4,455
-- 30-year total: $133,650
-- NPV: $87,600
+[Apply at Texas Parks & Wildlife](https://tpwd.texas.gov)
 
-Over 30 years of retirement, a 100% disabled veteran saves **$227,600-$347,000** compared to living in high-tax states. That's a brand-new home.
+## Healthcare access (VA facilities)
 
-### Comparison to Neighboring States
+Texas has extensive VA healthcare:
 
-| State | Military Retirement Tax | 100% Disabled Property Exemption | Annual Savings (100% Disabled, $50K Retirement, $440K Home) |
-|-------|------------------------|----------------------------------|----------------------------------------------------------|
-| **Texas** | Exempt (no income tax) | Full exemption (no cap) | $11,573 (vs. CA) |
-| Oklahoma | Fully exempt | Full exemption | $9,200 |
-| Arkansas | $6,000 exempt | $350K cap exemption | $7,500 |
-| Louisiana | Fully exempt | Full exemption | $10,800 |
-| New Mexico | Partially exempt | $4,000 exemption | $5,200 |
+**Major VA Medical Centers:**
+- Houston (Michael E. DeBakey VAMC) - one of the largest in the country
+- Dallas (VA North Texas)
+- San Antonio (Audie Murphy VAMC)
+- El Paso
+- Temple (Central Texas VA)
+- Waco
+- Big Spring
+- Amarillo
 
-**Verdict:** Texas ranks **#1** among neighboring states for combined tax benefits to disabled veterans and military retirees. Only Oklahoma comes close, but Texas has superior employment opportunities and larger veteran community.
+**Community-Based Outpatient Clinics (CBOCs):** 40+ locations across the state
 
-## State vs National Comparison
+**What's the quality?**
+Mixed. Houston and San Antonio VA facilities are generally well-regarded. Some smaller clinics have longer wait times.
 
-- **Income tax treatment:** **Top tier**—no income tax (only 8 states)
-- **Property tax exemption:** **Top 5 nationally**—full exemption with no cap for 100% P&T is elite (only Florida, Texas, Oklahoma, South Carolina offer similar)
-- **Sales tax:** Average—6.25% state rate is middle of pack
-- **Overall ranking:** **Top 5 nationally** for 100% disabled veterans and military retirees
+Most veterans use a combination of VA healthcare and private insurance.
 
-Studies consistently rank Texas in the top 5 states for military retirees and top 3 for disabled veterans. MOAA (Military Officers Association of America), WalletHub, and VA studies all rate Texas highly.
+## Top veteran-friendly employers in Texas
 
-## Who Benefits Most
+These companies actively recruit veterans:
 
-**Best for:**
-- **100% P&T disabled veterans:** Save $7,000-$12,000+ annually (property tax exemption + no income tax)
-- **Military retirees with pensions over $40,000:** Save $2,500-$6,000+ annually on income tax
-- **Veterans rated 50%+ with homes under $400,000:** Meaningful property tax relief plus income tax savings
-- **Veterans moving from high-tax states:** California, New York, Oregon, Illinois, New Jersey residents see massive savings
-- **Veteran families wanting employment:** Texas has strong job market, low veteran unemployment (3.0% vs. 3.9% national avg)
+**Defense contractors:**
+- Lockheed Martin (Fort Worth)
+- Raytheon Technologies (Dallas)
+- General Dynamics (multiple locations)
+- CACI (San Antonio)
+- Booz Allen Hamilton (San Antonio)
 
-**Less beneficial for:**
-- **Veterans rated 0-30% disabled:** Minimal property tax benefit ($5,000-$7,500 exemption)
-- **Veterans without military retirement income:** Property tax exemption helps, but no income tax benefit
-- **Renters:** Can't access property tax exemption benefits
-- **Veterans in expensive housing markets (Austin):** High property taxes eat into savings if not 100% disabled
+**Energy:**
+- ExxonMobil (Houston)
+- ConocoPhillips (Houston)
+- Halliburton (Houston)
 
-**Better options:**
-- If you're 50-90% disabled and want more property tax relief, consider **Florida** (offers exemptions at lower ratings with higher dollar amounts)
-- If you want lower cost of living with similar tax benefits, consider **Oklahoma** (lower housing costs, similar tax structure)
+**Tech:**
+- USAA (San Antonio) - insurance/financial services for military
+- Dell Technologies (Austin)
+- Texas Instruments (Dallas)
+- Oracle (Austin)
 
-## Additional Financial Benefits
+**Logistics:**
+- FedEx (Dallas hub)
+- UPS (Dallas/Houston)
+- DHL (multiple locations)
 
-### Estate Tax / Inheritance Tax
+**Manufacturing:**
+- Toyota (San Antonio)
+- Samsung (Austin)
+- Bell Helicopter (Fort Worth)
 
-- Texas estate tax: **None** (repealed 2015)
-- Texas inheritance tax: **None**
-- Veteran exemptions: N/A (no estate/inheritance taxes)
+Most have veteran recruiting programs and understand military skill translation.
 
-Texas has no estate or inheritance taxes, making it excellent for estate planning and passing wealth to heirs.
+## Cost of living by major city
 
-### Property Tax Payment Plans
+Texas is generally affordable, but varies by area:
 
-Texas offers property tax deferral for:
-- Veterans age 65+
-- Veterans with disabilities (as determined by Social Security)
-- Surviving spouses (under certain conditions)
+**Austin**
+- Median home: $565,000 (most expensive in Texas)
+- Rental: $1,600-$2,200 for 2BR
+- Vibe: Tech hub, liberal, growing fast
+- Veteran population: Strong, especially in Round Rock/Georgetown
 
-Deferral allows you to postpone property tax payments until property is sold or inherited. Interest accrues at 5% annually, but deferral prevents foreclosure for tax delinquency.
+**San Antonio**
+- Median home: $280,000 (very affordable)
+- Rental: $1,100-$1,500 for 2BR
+- Vibe: Military-heavy (JBSA), strong Hispanic culture
+- Veteran population: Massive (16% of population is veteran/military)
 
-### Homestead Portability
+**Houston**
+- Median home: $330,000
+- Rental: $1,300-$1,800 for 2BR
+- Vibe: Sprawling, diverse, energy/medical industries
+- Veteran population: Large veteran community
 
-Texas allows 100% disabled veterans to **transfer their exemption** when selling one home and buying another. If you sell your exempt home and purchase a new primary residence within 2 years, the new home receives a proportional exemption.
+**Dallas-Fort Worth**
+- Median home: $380,000 (Dallas), $310,000 (Fort Worth)
+- Rental: $1,400-$2,000 for 2BR
+- Vibe: Corporate, sprawling, diverse job market
+- Veteran population: Strong in Fort Worth (Naval Air Station JRB)
 
-**Example:** Sell $400,000 home (fully exempt) for $450,000, buy $500,000 home. The new home receives 90% exemption ($450k/$500k = 90%), so you only pay tax on $50,000 of value.
+**El Paso**
+- Median home: $245,000 (most affordable major city)
+- Rental: $900-$1,300 for 2BR
+- Vibe: Border city, heavy military presence (Fort Bliss)
+- Veteran population: Very strong
 
-This is **huge** for relocating veterans—your exemption travels with you.
+**Corpus Christi**
+- Median home: $265,000
+- Rental: $1,000-$1,400 for 2BR
+- Vibe: Coastal, slower pace, Navy presence
+- Veteran population: Strong (Naval Air Station Corpus Christi)
 
-## How to Maximize Benefits
+## Military installations (if you want to stay close)
 
-**Action Plan:**
+**Joint Base San Antonio** (Army/Air Force)
+- Fort Sam Houston, Lackland AFB, Randolph AFB
+- 80,000+ active duty, largest joint base in DoD
 
-1. **Establish Texas residency immediately.** Get a Texas driver's license within 90 days of moving (free if 60%+ disabled), register to vote, update DFAS for military retirement payments.
+**Fort Cavazos** (formerly Fort Hood) - Army
+- Killeen area, massive armor/artillery installation
 
-2. **Apply for property tax exemption immediately—don't wait.** File with your county appraisal district within 30 days of moving. Deadline is April 30, but earlier is better. Missing the deadline costs you a full year of savings ($6,000-$10,000+).
+**Fort Bliss** - Army
+- El Paso, air defense and maneuver training
 
-3. **Apply for disabled veteran license plates if you're 50%+ disabled.** Free registration saves $70+/year. File Form VTR-615 with county tax assessor-collector.
+**Naval Air Station Corpus Christi** - Navy
+- Primary naval flight training
 
-4. **Get free driver's license if you're 60%+ disabled.** Visit Texas DPS with VA disability letter. Save $33 every 6 years.
+**Naval Air Station Fort Worth** (JRB) - Navy/Air Force
+- Joint reserve base
 
-5. **Update DFAS tax withholding.** Stop withholding state income tax if you're coming from another state. Texas has no income tax—keep every dollar.
+**Dyess Air Force Base** - Air Force
+- Abilene, bomber base
 
-6. **Document everything.** Keep copies of DD-214, VA award letters, Texas driver's license, property deed, and exemption approval letters. You may need these for verification.
+**Sheppard Air Force Base** - Air Force
+- Wichita Falls, pilot training
 
-**Common Mistakes:**
+If you want to work on base or use facilities regularly, these locations give you access.
 
-- **Not filing property tax exemption by April 30:** You'll pay full property tax for that year. In Dallas, that's $6,820 lost for a $440K home.
+## How to move to Texas and claim benefits
 
-- **Assuming partial disability exemption is worth it alone:** If you're 50% disabled with a $400K home in Dallas, you save only $155/year in property tax. The real benefit is no income tax on military retirement.
+**Step 1: Establish residency**
+Move to Texas and get a Texas driver's license within 30 days. This establishes residency for most benefits.
 
-- **Not claiming free vehicle registration:** 50%+ disabled veterans get free registration on one vehicle. Don't pay if you qualify.
+**Step 2: Register to vote**
+Optional but helps establish residency for Hazelwood Act and other benefits.
 
-- **Not updating DFAS after moving:** If you move from California and don't update your address/state, DFAS may continue withholding California state tax. Fix this immediately.
+**Step 3: Buy or rent a home**
+If buying, consider using VLB loan. Once you own, apply for property tax exemption.
 
-- **Not transferring exemption when moving within Texas:** If you move from Dallas to Austin, reapply for the exemption with Travis County Appraisal District. It doesn't automatically transfer between counties.
+**Step 4: Apply for benefits**
+- Property tax exemption: Apply to county appraisal district
+- Hazelwood Act: Apply through your college
+- Hunting/fishing license: Apply at Texas Parks & Wildlife
+- Driver's license: Bring DD-214 to DPS
 
-- **Forgetting to apply for driver's license fee waiver:** 60%+ disabled veterans qualify for free licenses. Bring VA documentation to Texas DPS.
+**Step 5: Connect with veteran resources**
+- Find your local VA clinic
+- Join local veteran organizations (VFW, American Legion, etc.)
+- Check out state veteran services
 
-## Resources
+## Comparing Texas to other veteran-friendly states
 
-**Apply Here:**
+**Texas vs. Florida:**
+Both have no state income tax. Florida has property tax exemptions for disabled veterans but more limited (not as generous as Texas 100% exemption). Florida has no Hazelwood-equivalent for free college. Edge: Texas
 
-- **Property tax exemption:** Contact your county appraisal district
-  - Find your county: Google "[County name] appraisal district Texas"
-  - Major county contacts listed above in "How to Apply" section
+**Texas vs. Oklahoma:**
+Oklahoma has lower property taxes overall and veteran property tax exemptions. Oklahoma has some veteran education benefits. But Oklahoma has state income tax (up to 4.75%). Edge: Texas for high earners
 
-- **Disabled veteran plates / registration exemption:** County tax assessor-collector's office
-  - Harris County: (713) 274-8000 | hctax.net
-  - Dallas County: (214) 653-7811 | dallascounty.org/tax
-  - Bexar County: (210) 335-2251 | bexar.org/tax
-  - Tarrant County: (817) 884-1100 | tarrantcountytx.gov/tax
-  - Travis County: (512) 854-9473 | tax-office.traviscountytx.gov
+**Texas vs. South Dakota:**
+South Dakota has no state income tax, lower property taxes, and veteran property tax breaks. Education benefits are limited. Cost of living is lower, but so are job opportunities. Edge: Texas for job market, South Dakota for pure tax minimization
 
-- **Free driver's license (60%+ disabled):** Texas Department of Public Safety | (512) 424-2600 | dps.texas.gov
+**Texas vs. Arizona:**
+Arizona has property tax exemptions for disabled veterans and no tax on military retirement. But Arizona has state income tax on other income. Education benefits are more limited than Texas. Edge: Texas overall
 
-**Contact Information:**
+## Real cost comparison (retired E-8 example)
 
-- **Texas Veterans Commission (TVC):** (800) 252-8387 (VETS) | tvc.texas.gov | info@tvc.texas.gov
-  - Headquarters: 1700 N. Congress Ave., Suite 800, Austin, TX 78701
-  - Services: Benefits counseling, claims assistance, state program enrollment
+**Scenario:** Retired E-8 with 23 years, 100% VA disability, married, 2 kids, working $90K civilian job
 
-- **Property tax questions:** Texas Comptroller of Public Accounts | (800) 252-9121 | comptroller.texas.gov/taxes/property-tax
+**Income:**
+- Military retirement: $38,000/year
+- VA disability: $44,000/year (100%, with dependents)
+- Civilian job: $90,000/year
+- **Total: $172,000/year**
 
-## Frequently Asked Questions
+**Living in California:**
+- State income tax: ~$14,000/year (military retirement tax-free in CA, but disability and civilian taxed)
+- Property tax on $500K home: ~$7,500/year
+- **Total state/local taxes: $21,500/year**
 
-**Q: Do I pay state income tax on my military retirement in Texas?**
+**Living in Texas:**
+- State income tax: $0
+- Property tax on $400K home with 100% exemption: $0
+- **Total state/local taxes: $0/year**
 
-A: No. Texas has no state income tax. Military retirement, wages, pensions, Social Security—nothing is taxed at the state level.
+**Difference: $21,500/year savings in Texas**
 
-**Q: I'm 100% disabled. Do I qualify for the full property tax exemption?**
+Over 20 years of retirement: **$430,000+ savings** (not accounting for investment growth of that money)
 
-A: If you're 100% P&T (Permanent and Total) or TDIU (Total Disability Individual Unemployability), yes—full exemption, no cap. Your entire primary residence is exempt from property taxes.
+Plus Hazelwood Act for 2 kids: ~$100,000 in tuition savings
 
-**Q: I'm 70% disabled. What exemption do I get?**
+**Total Texas advantage for this family: $500,000+ over 20 years**
 
-A: You receive a $12,000 exemption from your home's assessed value. If you're also 65+, you get an additional $12,000 ($24,000 total). This reduces your taxable value before taxes are calculated.
+That's real money.
 
-**Q: Can I get the property tax exemption if I'm 50% disabled?**
+## Who should consider Texas?
 
-A: Yes. You receive a $10,000 exemption from assessed value. Not as substantial as the 100% exemption, but it reduces your tax bill by $150-$200 annually depending on your county's rate.
+**Strong fit if you:**
+- Have 100% VA disability (property tax exemption is massive)
+- Have kids who'll attend college (Hazelwood Act)
+- Want no state income tax
+- Work in energy, defense, tech, logistics, or manufacturing
+- Like hot weather and sprawling suburbs
+- Want strong veteran community and support
 
-**Q: Does the exemption apply to second homes or rental properties?**
+**Maybe not the best fit if you:**
+- Hate heat (summers are brutal, 100°F+ common)
+- Want mountains or dramatic nature (Texas is flat outside Hill Country)
+- Prefer walkable cities (most of Texas is car-dependent)
+- Want strong public transit (basically doesn't exist)
+- Work in industries not strong in Texas
 
-A: No. Only your primary residence (homestead) qualifies.
+## The bottom line
 
-**Q: I'm 100% P&T. Do I need to reapply every year?**
+Texas offers veterans an extremely attractive financial package:
+- No state income tax saves most retirees $5K-$15K+/year
+- 100% property tax exemption saves $3K-$8K+/year for disabled veterans
+- Hazelwood Act saves $30K-$50K per family member for college
+- Low cost of living in most areas
+- Strong job market
+- Large veteran community
 
-A: Usually no. Once approved, the exemption typically renews automatically. However, if you move to a different county, you must reapply with that county's appraisal district.
+**For a 100% disabled veteran with a family, moving to Texas can be worth $500K+ over retirement.**
 
-**Q: Can my surviving spouse keep the property tax exemption if I die?**
+Even if you're not 100%, the no income tax benefit alone makes Texas financially competitive with most states.
 
-A: Yes. An unremarried surviving spouse can continue the exemption as long as they occupy the homestead and don't remarry.
+Is it perfect? No. It's hot. It's sprawling. Public services are sometimes limited. But financially, for most veterans, it's hard to beat.
 
-**Q: I'm TDIU (rated 70% but 100% unemployable). Do I qualify for the full exemption?**
+Run your own numbers based on your disability rating, income, family size, and where you'd likely live. Use our [Texas Veteran Benefits Calculator](/calculator/texas-benefits) to see your specific savings.
 
-A: Yes! TDIU qualifies for the full property tax exemption, even though your combined rating is less than 100%.
-
-**Q: Does Texas tax Social Security benefits?**
-
-A: No. Texas has no income tax, so Social Security is not taxed.
-
-**Q: I'm active duty stationed in Texas but my home of record is Florida. Do I pay Texas taxes?**
-
-A: Texas has no income tax anyway, so there's nothing to pay. If Texas had income tax, you'd be protected under SCRA.
-
-**Q: What if I move from one Texas county to another?**
-
-A: You need to reapply for the exemption with your new county's appraisal district. The exemption doesn't automatically transfer between counties, but it is transferable.
-
-**Q: Are there local income taxes in Texas?**
-
-A: No. There are no state or local income taxes in Texas.
-
-**Q: I'm 60% disabled. Can I get a free driver's license?**
-
-A: Yes. Veterans with 60%+ service-connected disability qualify for free Texas driver's licenses and ID cards. Bring your VA disability letter to Texas DPS.
-
-**Q: How much do I save on sales tax living in Texas vs. other states?**
-
-A: Texas doesn't offer veteran sales tax exemptions. All residents pay 6.25% state + ~2% local = 8.25% total sales tax. This is actually slightly higher than national average (7.12%). However, the property and income tax savings far exceed this.
-
-**Q: Can I get both the property tax exemption and free vehicle registration?**
-
-A: Yes, if you qualify for both. 100% P&T qualifies for full property tax exemption. 50%+ disability (or 40% with lower extremity amputation) qualifies for free registration on one vehicle.
-
-**Q: What if I have a 100% VA rating but it's not P&T?**
-
-A: Check if you qualify as TDIU (Individual Unemployability). If you have TDIU, you qualify for the full exemption even if it's not P&T. Otherwise, the exemption requires P&T or specific conditions (TDIU, 100% P&T).
-
-**Q: Can I transfer my Hazlewood Act education benefits to my children?**
-
-A: Yes, through the Hazlewood Legacy Program. But this is a separate education benefit—not a tax benefit. See our Texas education guide for details.
-
-**Q: How does Texas compare to Florida for disabled veteran tax benefits?**
-
-A: Very similar. Both offer no income tax and full exemption for 100% disabled veterans. Florida offers slightly higher exemptions at lower disability ratings (50-90%), but Texas has stronger job market and larger veteran community. Both are top-tier.
+Texas isn't for everyone. But if the numbers work, it works really well.
 
 ---
 
-*Last updated: 2025. Tax laws change frequently. Verify current rates and eligibility with your county appraisal district and Texas Comptroller's office.*
+**Considering a move to Texas?** Use our [Texas Veteran Benefits Calculator](/calculator/texas-benefits) to see exactly how much you'd save based on your disability rating, retirement pay, and family situation.
