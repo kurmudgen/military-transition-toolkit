@@ -4,6 +4,12 @@ import { trackPageView, trackButtonClick } from '../utils/analytics'
 import RemindersWidget from '../components/RemindersWidget'
 import { useAuth } from '../contexts/AuthContext'
 import { getUserProfile, completeOnboarding } from '../services/profileService'
+import {
+  generatePersonalizedTimeline,
+  getTasksDueWithin,
+  isDueWithinDays
+} from '../data/timelineTemplates'
+import { getTimelineItems } from '../services/timelineService'
 
 // Tips that rotate
 const TIPS = [
@@ -29,6 +35,8 @@ export default function Home() {
   const [isEditingDate, setIsEditingDate] = useState(false)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
   const [profileLoaded, setProfileLoaded] = useState(false)
+  const [timeline, setTimeline] = useState([])
+  const [upcomingTasks, setUpcomingTasks] = useState([])
 
   // Load user profile from Supabase (with localStorage fallback)
   useEffect(() => {
@@ -88,6 +96,51 @@ export default function Home() {
 
     loadUserProfile()
   }, [user])
+
+  // Load personalized timeline
+  useEffect(() => {
+    async function loadTimeline() {
+      if (!userSetup || !separationDate) {
+        setTimeline([])
+        setUpcomingTasks([])
+        return
+      }
+
+      try {
+        // Generate personalized timeline based on situation and separation date
+        const personalizedTimeline = generatePersonalizedTimeline(
+          separationDate,
+          userSetup
+        )
+
+        // Get completed tasks from database
+        const dbTasks = await getTimelineItems()
+        const completedIds = new Set(
+          dbTasks.filter(t => t.completed).map(t => t.task_id)
+        )
+
+        // Merge with completion status
+        const mergedTimeline = personalizedTimeline.map(task => ({
+          ...task,
+          completed: completedIds.has(task.id)
+        }))
+
+        setTimeline(mergedTimeline)
+
+        // Get upcoming tasks (incomplete, due within 7 days, max 3)
+        const upcoming = mergedTimeline
+          .filter(task => !task.completed && task.dueDate && isDueWithinDays(task.dueDate, 7))
+          .sort((a, b) => a.dueDate - b.dueDate)
+          .slice(0, 3)
+
+        setUpcomingTasks(upcoming)
+      } catch (error) {
+        console.error('Error loading timeline:', error)
+      }
+    }
+
+    loadTimeline()
+  }, [userSetup, separationDate])
 
   // Set page title and track page view
   useEffect(() => {
@@ -406,26 +459,47 @@ export default function Home() {
   const getPriorityActions = () => {
     const actions = []
 
-    // If no checklist progress, encourage starting
-    const totalChecklistItems = activeChecklists.reduce((sum, cl) => sum + cl.total, 0)
-    const totalChecklistCompleted = activeChecklists.reduce((sum, cl) => sum + cl.completed, 0)
+    // Check if profile is complete
+    const isProfileComplete = userSetup && separationDate
 
-    if (totalChecklistItems === 0) {
+    // If profile is not complete, show setup prompt
+    if (!isProfileComplete) {
       actions.push({
-        task: 'Choose your transition path',
+        task: 'Complete your profile setup',
         source: 'Getting Started',
         action: 'Complete setup',
-        link: '#',
+        link: '/app/setup',
         urgent: true
       })
-    } else if (totalChecklistCompleted < 5) {
-      actions.push({
-        task: 'Start your transition checklist',
-        source: 'Timeline',
-        action: 'Begin planning',
-        link: activeChecklists[0]?.link || '/retirement',
-        urgent: true
+      return actions // Return early, don't show other actions yet
+    }
+
+    // If profile is complete, show timeline tasks
+    if (upcomingTasks.length > 0) {
+      upcomingTasks.forEach(task => {
+        actions.push({
+          task: task.title,
+          source: task.category,
+          action: 'View Timeline',
+          link: '/app/timeline',
+          urgent: task.priority === 'critical' || task.priority === 'required',
+          dueDate: task.dueDate
+        })
       })
+    } else {
+      // If no upcoming tasks, encourage checking the full timeline
+      const totalChecklistItems = activeChecklists.reduce((sum, cl) => sum + cl.total, 0)
+      const totalChecklistCompleted = activeChecklists.reduce((sum, cl) => sum + cl.completed, 0)
+
+      if (totalChecklistCompleted < 5) {
+        actions.push({
+          task: 'Start your transition checklist',
+          source: 'Timeline',
+          action: 'View Timeline',
+          link: '/app/timeline',
+          urgent: true
+        })
+      }
     }
 
     // NEW: Resume Builder recommendation
@@ -1176,6 +1250,11 @@ export default function Home() {
                       <div className="flex-1">
                         <h3 className="font-semibold text-gray-900">{action.task}</h3>
                         <p className="text-sm text-gray-600 mt-1">From: {action.source}</p>
+                        {action.dueDate && (
+                          <p className="text-sm text-gray-700 mt-1 font-medium">
+                            Due: {new Date(action.dueDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                          </p>
+                        )}
                       </div>
                       <Link
                         to={action.link}
