@@ -7,7 +7,7 @@ import { supabase } from '../lib/supabase'
 
 /**
  * Get user profile from Supabase
- * Creates profile if it doesn't exist
+ * The user_profiles table uses 'id' as the primary key (references auth.users.id)
  */
 export async function getUserProfile(userId) {
   if (!userId) return null
@@ -17,41 +17,17 @@ export async function getUserProfile(userId) {
     const { data, error } = await supabase
       .from('user_profiles')
       .select('*')
-      .eq('user_id', userId)
+      .eq('id', userId)
       .single()
 
     if (error && error.code !== 'PGRST116') {
-      // PGRST116 is "not found" - that's okay, we'll create one
+      // PGRST116 is "not found" - that's okay
       console.error('Error fetching user profile:', error)
       return null
     }
 
-    // If profile doesn't exist, create one
-    if (!data) {
-      const newProfile = {
-        user_id: userId,
-        situation: null,
-        onboarding_completed: false,
-        separation_date: null,
-        display_name: null,
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString()
-      }
-
-      const { data: created, error: createError } = await supabase
-        .from('user_profiles')
-        .insert(newProfile)
-        .select()
-        .single()
-
-      if (createError) {
-        console.error('Error creating user profile:', createError)
-        return null
-      }
-
-      return created
-    }
-
+    // Profile should already exist (created by signup trigger)
+    // If it doesn't exist, it will be created on next update
     return data
   } catch (err) {
     console.error('Error in getUserProfile:', err)
@@ -61,6 +37,7 @@ export async function getUserProfile(userId) {
 
 /**
  * Update user profile
+ * The user_profiles table uses 'id' as the primary key (references auth.users.id)
  */
 export async function updateUserProfile(userId, updates) {
   if (!userId) return { error: 'User ID required' }
@@ -72,7 +49,7 @@ export async function updateUserProfile(userId, updates) {
         ...updates,
         updated_at: new Date().toISOString()
       })
-      .eq('user_id', userId)
+      .eq('id', userId)
       .select()
       .single()
 
@@ -90,8 +67,9 @@ export async function updateUserProfile(userId, updates) {
 
 /**
  * Complete onboarding and set situation
+ * Note: table uses 'full_name' not 'display_name'
  */
-export async function completeOnboarding(userId, situation, separationDate = null, displayName = null) {
+export async function completeOnboarding(userId, situation, separationDate = null, fullName = null) {
   if (!userId || !situation) {
     return { error: 'User ID and situation required' }
   }
@@ -99,9 +77,8 @@ export async function completeOnboarding(userId, situation, separationDate = nul
   try {
     const updates = {
       situation,
-      onboarding_completed: true,
       separation_date: separationDate,
-      display_name: displayName
+      full_name: fullName
     }
 
     return await updateUserProfile(userId, updates)

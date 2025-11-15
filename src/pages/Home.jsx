@@ -54,10 +54,10 @@ export default function Home() {
           // Use Supabase data as source of truth
           setUserSetup(profile.situation)
           setSeparationDate(profile.separation_date || '')
-          setUserName(profile.display_name || '')
+          setUserName(profile.full_name || '')
 
-          // If onboarding is completed and there's a situation, don't show onboarding
-          if (profile.onboarding_completed && profile.situation) {
+          // If situation exists, user has completed setup
+          if (profile.situation && profile.separation_date) {
             // User has completed onboarding - go straight to dashboard
             // No need to show onboarding screen
           }
