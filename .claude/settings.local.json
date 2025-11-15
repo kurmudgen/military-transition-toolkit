@@ -1,15 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(vercel logs:*)",
-      "Bash(powershell \"Get-Content api\\stripe\\create-checkout-session.js | Select-String -Context 0,5 ''User authenticated''\")",
+      "Bash(PUBLISHING_CALENDAR_NOV2025.txt)",
+      "Bash(git init:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(npm run build:*)",
-      "Bash(git restore --staged .claude/settings.local.json PENETRATION_TEST_MANUAL.md SECURITY_AUDIT_SUMMARY.md military-transition-app pentest-scripts tatus)",
-      "Bash(npm audit:*)",
-      "Bash(npm install:*)"
+      "Bash(git config:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
