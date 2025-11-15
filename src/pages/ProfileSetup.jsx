@@ -29,7 +29,7 @@ export default function ProfileSetup() {
         const profile = await getUserProfile(user.id)
         if (profile) {
           setFormData({
-            name: profile.display_name || '',
+            name: profile.full_name || '',  // FIXED: Use full_name from database
             situation: profile.situation || '',
             separationDate: profile.separation_date || ''
           })
@@ -90,28 +90,51 @@ export default function ProfileSetup() {
     setIsSubmitting(true)
 
     try {
+      // Prepare profile data for logging
+      const profileData = {
+        full_name: formData.name,
+        situation: formData.situation,
+        separation_date: formData.separationDate
+      }
+
+      console.log('💾 Saving profile to database:', profileData)
+
       // Save to Supabase if user is logged in
       if (user?.id) {
-        await completeOnboarding(
+        console.log('👤 User ID:', user.id)
+
+        const result = await completeOnboarding(
           user.id,
           formData.situation,
           formData.separationDate,
           formData.name
         )
+
+        if (result.error) {
+          console.error('❌ Database save failed:', result.error)
+          throw new Error('Failed to save profile to database: ' + result.error.message)
+        }
+
+        console.log('✅ Profile saved to database successfully')
+        console.log('📊 Saved data:', result.data)
+      } else {
+        console.warn('⚠️ No user logged in - skipping database save')
       }
 
-      // Also save to localStorage
+      // Also save to localStorage as backup
       saveProfileToLocalStorage({
         situation: formData.situation,
         separationDate: formData.separationDate,
         name: formData.name
       })
+      console.log('💾 Profile saved to localStorage')
 
       // Navigate to dashboard
+      console.log('🔄 Redirecting to dashboard...')
       navigate('/app')
     } catch (error) {
-      console.error('Error saving profile:', error)
-      setErrors({ submit: 'Failed to save profile. Please try again.' })
+      console.error('❌ Error saving profile:', error)
+      setErrors({ submit: 'Failed to save profile. Please try again. Error: ' + error.message })
     } finally {
       setIsSubmitting(false)
     }
