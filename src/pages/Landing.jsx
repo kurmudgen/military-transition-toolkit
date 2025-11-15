@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 import DeadlineBanner from '../components/DeadlineBanner'
 
 export default function Landing() {
+  const { user } = useAuth()
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Navigation Bar */}
@@ -27,34 +30,62 @@ export default function Landing() {
               <Link to="/app/faq" className="text-slate-300 hover:text-white transition-colors">
                 FAQ
               </Link>
-              <Link
-                to="/login"
-                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
-              >
-                Log In
-              </Link>
-              <Link
-                to="/signup"
-                className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg transition-colors"
-              >
-                Sign Up
-              </Link>
+
+              {/* Show different buttons based on auth state */}
+              {!user ? (
+                // Not logged in - show Login and Sign Up
+                <>
+                  <Link
+                    to="/login"
+                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg transition-colors"
+                  >
+                    Sign Up
+                  </Link>
+                </>
+              ) : (
+                // Logged in - show Dashboard link
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                >
+                  Go to Dashboard →
+                </Link>
+              )}
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-3">
-              <Link
-                to="/login"
-                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
-              >
-                Log In
-              </Link>
-              <Link
-                to="/signup"
-                className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold text-sm rounded-lg transition-colors"
-              >
-                Sign Up
-              </Link>
+              {!user ? (
+                // Not logged in - show Login and Sign Up
+                <>
+                  <Link
+                    to="/login"
+                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold text-sm rounded-lg transition-colors"
+                  >
+                    Sign Up
+                  </Link>
+                </>
+              ) : (
+                // Logged in - show Dashboard link
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+                >
+                  Dashboard →
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -100,13 +131,19 @@ export default function Landing() {
           <Link to="/getting-started" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
             Browse Tools →
           </Link>
-          <Link to="/signup" className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg text-lg transition-colors shadow-lg">
-            Create Account →
-          </Link>
+          {!user ? (
+            <Link to="/signup" className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg text-lg transition-colors shadow-lg">
+              Create Account →
+            </Link>
+          ) : (
+            <Link to="/app" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
+              Go to Dashboard →
+            </Link>
+          )}
         </div>
 
         <p className="text-slate-400 text-sm">
-          All core tools free forever • Sign up by Nov 19 for lifetime premium access
+          {!user ? 'All core tools free forever • Sign up by Nov 19 for lifetime premium access' : 'Welcome back! Access all your transition tools'}
         </p>
       </div>
 
@@ -550,11 +587,17 @@ export default function Landing() {
               </div>
             </div>
             <p className="text-yellow-400 font-semibold mb-4">
-              Join 43+ founding members who locked in lifetime free access. Deadline: Nov 19, 2025.
+              {!user ? 'Join 43+ founding members who locked in lifetime free access. Deadline: Nov 19, 2025.' : 'You\'re already a founding member with lifetime access!'}
             </p>
-            <Link to="/signup" className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg text-lg">
-              Create Account →
-            </Link>
+            {!user ? (
+              <Link to="/signup" className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg text-lg">
+                Create Account →
+              </Link>
+            ) : (
+              <Link to="/app" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors shadow-lg text-lg">
+                Access Your Tools →
+              </Link>
+            )}
           </div>
         </div>
       </div>
@@ -562,17 +605,30 @@ export default function Landing() {
       {/* CTA Section */}
       <div className="max-w-4xl mx-auto px-4 py-16 text-center">
         <h2 className="text-4xl font-bold text-white mb-6">
-          Start Planning Your Transition Today
+          {!user ? 'Start Planning Your Transition Today' : 'Ready to Continue Your Transition?'}
         </h2>
         <p className="text-xl text-slate-300 mb-8">
           Built by veterans who've been through this process. We know what you're going through.
         </p>
-        <Link to="/signup" className="inline-block px-12 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 text-xl font-bold rounded-lg transition-colors shadow-lg">
-          Sign Up for Lifetime Access →
-        </Link>
-        <p className="text-slate-400 text-sm mt-4">
-          No credit card required • Sign up by Nov 19 for lifetime free access
-        </p>
+        {!user ? (
+          <>
+            <Link to="/signup" className="inline-block px-12 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 text-xl font-bold rounded-lg transition-colors shadow-lg">
+              Sign Up for Lifetime Access →
+            </Link>
+            <p className="text-slate-400 text-sm mt-4">
+              No credit card required • Sign up by Nov 19 for lifetime free access
+            </p>
+          </>
+        ) : (
+          <>
+            <Link to="/app" className="inline-block px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold rounded-lg transition-colors shadow-lg">
+              Go to Your Dashboard →
+            </Link>
+            <p className="text-slate-400 text-sm mt-4">
+              Access all your personalized transition tools and resources
+            </p>
+          </>
+        )}
       </div>
 
       {/* Footer */}
