@@ -38,6 +38,7 @@ import RetirementCalculator from './pages/RetirementCalculator'
 import AppointmentsTracking from './pages/AppointmentsTracking'
 import ResumeBuilder from './pages/ResumeBuilder'
 import JobSearch from './pages/JobSearch'
+import Timeline from './pages/Timeline'
 import Profile from './pages/Profile'
 import ProfileSetup from './pages/ProfileSetup'
 import Settings from './pages/Settings'
@@ -85,6 +86,7 @@ function App() {
           <Route path="/preview/resume-builder" element={<ResumeBuilder previewMode />} />
           <Route path="/preview/appointments" element={<AppointmentsTracking previewMode />} />
           <Route path="/preview/job-search" element={<JobSearch previewMode />} />
+          <Route path="/preview/timeline" element={<Timeline previewMode />} />
           <Route path="/preview/medboard" element={<MedBoard previewMode />} />
           <Route path="/preview/separation" element={<SeparationUnder20 previewMode />} />
           <Route path="/preview/progress" element={<Progress previewMode />} />
@@ -118,6 +120,7 @@ function App() {
             <Route path="appointments" element={<AppointmentsTracking />} />
             <Route path="resume-builder" element={<ResumeBuilder />} />
             <Route path="job-search" element={<JobSearch />} />
+            <Route path="timeline" element={<Timeline />} />
             <Route path="profile" element={<Profile />} />
             <Route path="settings" element={<Settings />} />
             <Route path="account" element={<Account />} />
