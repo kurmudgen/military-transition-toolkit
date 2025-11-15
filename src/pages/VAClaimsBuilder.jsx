@@ -1461,20 +1461,33 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
                             Treatment Received
                           </label>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            {['Physical therapy', 'Medications', 'Injections', 'Surgery', 'Seeing specialist', 'Using brace/support'].map(treatment => (
-                              <label key={treatment} className="flex items-center">
-                                <input
-                                  type="checkbox"
-                                  checked={details.treatment?.[treatment] || false}
-                                  onChange={(e) => updateConditionDetail(condition, 'treatment', {
-                                    ...details.treatment,
-                                    [treatment]: e.target.checked
-                                  })}
-                                  className="h-4 w-4 text-blue-600 rounded border-gray-300"
-                                />
-                                <span className="ml-2 text-sm text-gray-700">{treatment}</span>
-                              </label>
-                            ))}
+                            {(() => {
+                              // Get condition-specific treatments from library
+                              const conditionData = getConditionLibraryData(condition);
+                              const treatments = conditionData?.treatments || [
+                                'Physical therapy',
+                                'Medications',
+                                'Injections',
+                                'Surgery',
+                                'Seeing specialist',
+                                'Using brace/support'
+                              ];
+
+                              return treatments.map(treatment => (
+                                <label key={treatment} className="flex items-center">
+                                  <input
+                                    type="checkbox"
+                                    checked={details.treatment?.[treatment] || false}
+                                    onChange={(e) => updateConditionDetail(condition, 'treatment', {
+                                      ...details.treatment,
+                                      [treatment]: e.target.checked
+                                    })}
+                                    className="h-4 w-4 text-blue-600 rounded border-gray-300"
+                                  />
+                                  <span className="ml-2 text-sm text-gray-700">{treatment}</span>
+                                </label>
+                              ));
+                            })()}
                           </div>
                         </div>
 

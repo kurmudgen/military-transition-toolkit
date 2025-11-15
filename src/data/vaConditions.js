@@ -28,6 +28,17 @@ export const VA_CONDITIONS_LIBRARY = {
       "Sleeping comfortably",
       "Performing physically demanding work"
     ],
+    treatments: [
+      "Physical therapy",
+      "Medications (NSAIDs, muscle relaxants)",
+      "Injections (epidural, cortisone)",
+      "Chiropractic care",
+      "Surgery",
+      "Using brace/support",
+      "Heat/ice therapy",
+      "Exercise and stretching",
+      "Pain management program"
+    ],
     evidenceTypes: [
       "Service medical records showing back complaints",
       "X-rays, MRI, or CT scans",
@@ -820,6 +831,15 @@ export const VA_CONDITIONS_LIBRARY = {
       "Decision making",
       "Daily activities",
       "Relationships"
+    ],
+    treatments: [
+      "Therapy (CBT, acceptance and commitment therapy)",
+      "Medications (SSRIs, SNRIs, benzodiazepines)",
+      "Stress management techniques",
+      "Relaxation techniques (meditation, breathing exercises)",
+      "Exercise",
+      "Lifestyle modifications",
+      "Support groups"
     ],
     evidenceTypes: [
       "Mental health treatment records",
@@ -2390,6 +2410,16 @@ export const VA_CONDITIONS_LIBRARY = {
       "Problems with communication",
       "Increased irritability",
       "Social withdrawal"
+    ],
+    treatments: [
+      "Hearing aids",
+      "Sound therapy/masking devices",
+      "Tinnitus retraining therapy (TRT)",
+      "Cognitive Behavioral Therapy (CBT)",
+      "Medications (for underlying causes or associated anxiety/depression)",
+      "Avoiding loud noises",
+      "Stress management",
+      "Limiting caffeine and alcohol"
     ],
     evidenceTypes: [
       "Audiogram",
