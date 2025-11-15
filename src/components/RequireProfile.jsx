@@ -28,29 +28,38 @@ export default function RequireProfile({ children }) {
       // If user is logged in, check Supabase profile
       if (user?.id) {
         try {
+          console.log('🔍 User logged in:', user.id)
           const profile = await getUserProfile(user.id)
+          console.log('📊 Profile from DB:', profile)
 
           if (profile) {
-            // Check if profile has required fields
+            // Map database fields to app format
             const validation = validateProfileCompleteness({
               situation: profile.situation,
               separationDate: profile.separation_date,
-              name: profile.display_name
+              name: profile.full_name  // FIXED: Use full_name from database
             })
+
+            console.log('✅ Profile complete?', validation.isComplete)
+            if (!validation.isComplete) {
+              console.log('❌ Missing fields:', validation.missing)
+            }
 
             if (validation.isComplete) {
               setProfileComplete(true)
               setIsChecking(false)
               return
             } else {
-              console.log('📋 Profile incomplete:', validation.missing)
+              console.log('📋 Profile incomplete - redirecting to setup')
               // Redirect to setup
               navigate('/app/setup', { replace: true })
               return
             }
+          } else {
+            console.log('⚠️ No profile found in database')
           }
         } catch (error) {
-          console.error('Error checking profile:', error)
+          console.error('❌ Error checking profile:', error)
         }
       }
 
