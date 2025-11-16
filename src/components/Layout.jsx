@@ -221,10 +221,8 @@ export default function Layout() {
         </div>
       </nav>
 
-      {/* Founding Member Deadline Banner with Countdown */}
       <DeadlineBanner />
 
-      {/* Founding Member Deadline Banner */}
       <PromoBanner />
 
       <main className="flex-1 max-w-7xl w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">

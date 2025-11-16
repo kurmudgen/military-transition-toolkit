@@ -1,9 +1,9 @@
-// Founding Member Promotion Configuration
+// Promotion Configuration
 // When promo mode is active, all authenticated users get free premium access
 
 // PROMO MODE FEATURE FLAG
 // When VITE_PROMO_MODE=true, all authenticated users get free premium access
-// This allows founding members (signups before Nov 20) to lock in lifetime free access
+// This allows early adopters to access all features while keeping the platform free
 export const isPromoModeActive = () => {
   return import.meta.env.VITE_PROMO_MODE === 'true'
 }

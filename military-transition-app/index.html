@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V50Q8QL9X2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V50Q8QL9X2');
+    </script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎖️</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Complete military transition planning toolkit. Track your transition checklist, calculate retirement pay, build VA disability claims, compare state benefits, and manage appointments - all with privacy-first local storage." />
+    <meta name="keywords" content="military transition, veteran resources, VA claims tracker, retirement calculator, military benefits, transition checklist, separation planning, medboard timeline, state veteran benefits, TSP calculator" />
+    <meta name="author" content="Military Transition Toolkit" />
+    <title>Military Transition Toolkit | Complete Transition Planning for Veterans</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Military Transition Toolkit | Complete Transition Planning for Veterans" />
+    <meta property="og:description" content="Privacy-first transition planning toolkit. Track checklists, calculate retirement, build VA claims, and compare benefits - all stored locally on your device." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://militarytransitiontoolkit.com" />
+    <meta property="og:image" content="https://militarytransitiontoolkit.com/og-image.jpg" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Military Transition Toolkit | Complete Transition Planning" />
+    <meta name="twitter:description" content="Privacy-first transition planning. Track checklists, calculate retirement, build VA claims - all stored locally." />
+    <meta name="twitter:image" content="https://militarytransitiontoolkit.com/twitter-card.jpg" />
+
+    <!-- Dark Mode Script - Prevents flash of wrong theme -->
+    <script>
+      // Check localStorage and apply dark mode class before page renders
+      (function() {
+        const darkMode = localStorage.getItem('darkMode') === 'true';
+        if (darkMode) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

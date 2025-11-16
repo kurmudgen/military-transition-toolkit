@@ -116,23 +116,6 @@ export default function RefundPolicy() {
             </p>
           </div>
 
-          {/* Founding Member Program */}
-          <div className="bg-gradient-to-r from-blue-900/50 to-blue-800/50 rounded-lg shadow-lg p-6 border border-blue-700">
-            <h2 className="text-2xl font-bold text-white mb-4">Founding Member Program</h2>
-            <p className="text-slate-300 mb-3">
-              Special lifetime access for early adopters (sign up by Nov 19):
-            </p>
-            <ul className="list-disc list-inside text-slate-300 space-y-2 ml-4">
-              <li>All premium features are <strong>FREE</strong> for founding members forever</li>
-              <li>No refunds needed since no payment is required</li>
-              <li>Starting Nov 20: Basic features stay free, premium features are $7/month</li>
-              <li>Paid subscriptions include a 30-day money-back guarantee</li>
-            </ul>
-            <p className="text-slate-300 mt-3 text-sm">
-              Join 43+ founding members who locked in lifetime free access. Deadline: Nov 19, 2025.
-            </p>
-          </div>
-
           {/* Questions */}
           <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">❓ Questions About Refunds?</h2>

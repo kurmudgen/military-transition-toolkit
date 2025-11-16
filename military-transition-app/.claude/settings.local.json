@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vercel logs:*)",
+      "Bash(powershell \"Get-Content api\\stripe\\create-checkout-session.js | Select-String -Context 0,5 ''User authenticated''\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

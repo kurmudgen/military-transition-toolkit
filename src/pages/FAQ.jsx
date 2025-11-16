@@ -217,7 +217,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                <strong>Sign up by Nov 19 and get lifetime premium access FREE - forever</strong>. All users who create accounts before Nov 20 will keep premium access for life at no cost. Starting Nov 20: Basic features stay free, premium features are $7/month, $49/year, or $250 lifetime. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.
+                <strong>Military Transition Toolkit is currently 100% free for all servicemembers and veterans.</strong> Our mission is to keep it that way through partnerships and optional community donations. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.
               </div>
             </details>
 

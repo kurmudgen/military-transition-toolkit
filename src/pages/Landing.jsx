@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
-import DeadlineBanner from '../components/DeadlineBanner'
 
 export default function Landing() {
   const { user } = useAuth()
@@ -93,26 +92,6 @@ export default function Landing() {
           </div>
         </div>
       </nav>
-
-      {/* Founding Member Deadline Banner with Countdown */}
-      <DeadlineBanner />
-
-      {/* Founding Member Deadline Banner */}
-      <div className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 border-b-4 border-yellow-600">
-        <div className="max-w-6xl mx-auto px-4 py-4 text-center">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
-            <span className="text-2xl md:text-3xl">⚠️</span>
-            <div className="text-slate-900">
-              <p className="text-lg md:text-xl font-bold">
-                Lifetime Free Access Ends Nov 19 - Sign Up Now
-              </p>
-              <p className="text-sm md:text-base font-semibold">
-                Join 43+ founding members who locked in lifetime free access
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 py-16 text-center">
@@ -509,14 +488,9 @@ export default function Landing() {
           <h2 className="text-3xl font-bold text-white mb-4">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-slate-300 text-lg mb-4">
+          <p className="text-slate-300 text-lg">
             100% free for all servicemembers and veterans.
           </p>
-          <div className="inline-block px-6 py-3 bg-yellow-500/20 border-2 border-yellow-500 rounded-lg">
-            <p className="text-yellow-400 font-bold text-sm md:text-base">
-              ⚠️ Sign up by Nov 19 for lifetime free access - 43+ founding members already locked in!
-            </p>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
@@ -604,51 +578,6 @@ export default function Landing() {
             </Link>
           </div>
         </div>
-
-        {/* Founding Member Deadline Notice */}
-        <div className="mt-12 max-w-4xl mx-auto bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-2 border-yellow-500 rounded-xl p-8">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-4">
-              ⚠️ Lifetime Free Access Ends Nov 19
-            </h3>
-            <p className="text-slate-300 mb-6 text-lg">
-              Create your free account and get <strong className="text-white">lifetime access</strong> to all features - forever.
-            </p>
-            <div className="grid md:grid-cols-2 gap-4 text-sm text-left mb-6">
-              <div className="bg-slate-800/50 rounded-lg p-4">
-                <p className="text-yellow-400 font-semibold mb-3">✓ What You Get (Lifetime Free):</p>
-                <ul className="text-slate-300 space-y-2 text-sm">
-                  <li>• Complete VA Claims Builder with condition-specific tracking</li>
-                  <li>• Unlimited PDF exports for VSO appointments</li>
-                  <li>• Resume builder with military-to-civilian translation</li>
-                  <li>• Cloud storage for all your transition documents</li>
-                  <li>• Priority support</li>
-                </ul>
-              </div>
-              <div className="bg-slate-800/50 rounded-lg p-4">
-                <p className="text-yellow-400 font-semibold mb-3">✓ Starting Nov 20:</p>
-                <ul className="text-slate-300 space-y-2 text-sm">
-                  <li>• New signups: $7/month, $49/year, or $250 lifetime</li>
-                  <li>• Basic features stay free forever</li>
-                  <li>• Founding members keep lifetime access forever</li>
-                  <li>• All your data stays safe</li>
-                </ul>
-              </div>
-            </div>
-            <p className="text-yellow-400 font-semibold mb-4">
-              {!user ? 'Join 43+ founding members who locked in lifetime free access. Deadline: Nov 19, 2025.' : 'You\'re already a founding member with lifetime access!'}
-            </p>
-            {!user ? (
-              <Link to="/signup" className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-bold rounded-lg transition-colors shadow-lg text-lg">
-                Create Account →
-              </Link>
-            ) : (
-              <Link to="/app" className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors shadow-lg text-lg">
-                Access Your Tools →
-              </Link>
-            )}
-          </div>
-        </div>
       </div>
 
       {/* CTA Section */}
@@ -661,11 +590,11 @@ export default function Landing() {
         </p>
         {!user ? (
           <>
-            <Link to="/signup" className="inline-block px-12 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 text-xl font-bold rounded-lg transition-colors shadow-lg">
-              Sign Up for Lifetime Access →
+            <Link to="/signup" className="inline-block px-12 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-xl font-bold rounded-lg transition-colors shadow-lg">
+              Get Started Free →
             </Link>
             <p className="text-slate-400 text-sm mt-4">
-              No credit card required • Sign up by Nov 19 for lifetime free access
+              100% free • No credit card required
             </p>
           </>
         ) : (

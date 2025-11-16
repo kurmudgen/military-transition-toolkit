@@ -595,7 +595,7 @@ export default function RetirementCalculator({ publicMode = false }) {
               <div className="text-4xl">🔒</div>
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">Premium Features Available</h3>
-                <p className="text-blue-200">Sign up by Nov 19 for lifetime free access</p>
+                <p className="text-blue-200">Currently free for all servicemembers and veterans</p>
               </div>
             </div>
 
@@ -632,10 +632,10 @@ export default function RetirementCalculator({ publicMode = false }) {
 
             <div className="text-center">
               <p className="text-xl font-bold text-white mb-2">
-                Upgrade to Premium - $7/month
+                Currently Free for All Users
               </p>
               <p className="text-sm text-blue-300">
-                Sign up by Nov 19 for lifetime free access. Starting Nov 20: Basic features stay free, premium features are $7/month.
+                100% free for all servicemembers and veterans. Our mission is to keep it that way.
               </p>
             </div>
           </div>

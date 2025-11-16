@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+    <!-- Dark Mode Script - Same as in main app -->
+    <script>
+      (function() {
+        const darkMode = localStorage.getItem('darkMode') === 'true';
+        if (darkMode) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 transition-colors">
+    <div class="min-h-screen p-8">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Dark Mode Test Page</h1>
+            <p class="text-gray-600 dark:text-gray-300 mb-8">This page tests the dark mode functionality.</p>
+
+            <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Current Status</h2>
+                <div class="space-y-2 text-gray-700 dark:text-gray-300">
+                    <p>Dark mode enabled: <span id="darkModeStatus" class="font-bold">-</span></p>
+                    <p>localStorage value: <span id="localStorageValue" class="font-bold">-</span></p>
+                    <p>HTML class: <span id="htmlClass" class="font-bold">-</span></p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <button
+                    onclick="toggleDarkMode()"
+                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                >
+                    Toggle Dark Mode
+                </button>
+
+                <button
+                    onclick="clearLocalStorage()"
+                    class="ml-4 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors"
+                >
+                    Clear localStorage
+                </button>
+
+                <button
+                    onclick="location.reload()"
+                    class="ml-4 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors"
+                >
+                    Reload Page
+                </button>
+            </div>
+
+            <div class="mt-8 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Test Instructions:</h3>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>Click "Toggle Dark Mode" button - theme should change immediately</li>
+                    <li>Reload the page - theme should persist</li>
+                    <li>Check browser console for any errors</li>
+                    <li>Verify localStorage has 'darkMode' key set to 'true' or 'false'</li>
+                    <li>Test in main app at http://localhost:5174/app</li>
+                </ol>
+            </div>
+
+            <div class="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Expected Behavior:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>Background changes from white to dark gray</li>
+                    <li>Text changes from dark to light</li>
+                    <li>No flash of wrong theme on page reload</li>
+                    <li>localStorage persists between sessions</li>
+                    <li>Moon/Sun icon in navbar shows correct state</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateStatus() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const storedValue = localStorage.getItem('darkMode');
+            const htmlClasses = document.documentElement.className;
+
+            document.getElementById('darkModeStatus').textContent = isDark ? 'Yes ✓' : 'No ✗';
+            document.getElementById('localStorageValue').textContent = storedValue || 'null';
+            document.getElementById('htmlClass').textContent = htmlClasses || '(empty)';
+        }
+
+        function toggleDarkMode() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const newMode = !isDark;
+
+            localStorage.setItem('darkMode', String(newMode));
+
+            if (newMode) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+
+            updateStatus();
+            console.log('Dark mode toggled:', newMode);
+        }
+
+        function clearLocalStorage() {
+            localStorage.removeItem('darkMode');
+            document.documentElement.classList.remove('dark');
+            updateStatus();
+            console.log('localStorage cleared');
+        }
+
+        // Update status on page load
+        updateStatus();
+
+        // Log initial state
+        console.log('Page loaded. Dark mode:', document.documentElement.classList.contains('dark'));
+        console.log('localStorage.darkMode:', localStorage.getItem('darkMode'));
+    </script>
+</body>
+</html>

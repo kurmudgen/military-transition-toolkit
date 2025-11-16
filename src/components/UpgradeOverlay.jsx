@@ -119,7 +119,7 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
                 disabled={loading || paymentUIHidden}
                 className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2 px-4 rounded-lg font-semibold transition-colors text-sm"
               >
-                {loading ? 'Loading...' : paymentUIHidden ? 'Free Until Nov 19' : 'Subscribe Now'}
+                {loading ? 'Loading...' : paymentUIHidden ? 'Currently Free' : 'Subscribe Now'}
               </button>
             </div>
 
@@ -139,7 +139,7 @@ export default function UpgradeOverlay({ featureName, description, benefits = nu
                 disabled={loading || paymentUIHidden}
                 className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2 px-4 rounded-lg font-semibold transition-colors text-sm"
               >
-                {loading ? 'Loading...' : paymentUIHidden ? 'Free Until Nov 19' : 'Get Lifetime Access'}
+                {loading ? 'Loading...' : paymentUIHidden ? 'Currently Free' : 'Get Lifetime Access'}
               </button>
             </div>
           </div>

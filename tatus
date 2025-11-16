@@ -1,0 +1,56 @@
+[33mcommit 1b4cc5c70394c10d711e505a490c340360544e70[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jacob <jacob@militarytransitiontoolkit.com>
+Date:   Tue Nov 4 00:55:04 2025 -0800
+
+    Reposition as comprehensive toolkit + add security transparency page (DOD-compliant)
+    
+    PART 1: DOD-COMPLIANT REPOSITIONING
+    - Landing page: Changed "Built by Veterans, for Veterans" to "Built by someone going through transition"
+    - Footer: Updated to "Created by someone going through military transition"
+    - FAQ: Removed "active duty" references, changed to "transitioning service members and veterans"
+    - FAQ: Added comprehensive toolkit clarification (VA claims is ONE of seven features)
+    - About: Complete rewrite emphasizing comprehensive nature
+      * Positioned as full transition solution (not just VA claims)
+      * Clarified software tool vs filing service (like TurboTax)
+      * Emphasized all features: timeline, resume, jobs, calculator, state comparison, VA claims, resources
+      * Added value comparison ($4,800-$10,500 vs $49/year)
+    
+    PART 2: SECURITY TRANSPARENCY PAGE
+    - Created new /app/security route with comprehensive security documentation
+    - Added Security & Privacy link to Landing page footer
+    - Updated App.jsx routing to include Security component
+    - Page covers:
+      * Data encryption (in transit & at rest)
+      * Authentication & access controls
+      * Attack prevention (rate limiting, CSRF, input validation)
+      * Payment security (Stripe PCI-DSS Level 1)
+      * Logging & monitoring (with PHI redaction)
+      * Data rights (GDPR-compliant deletion, data portability)
+      * Regular security audits
+      * Third-party service security (Supabase, Vercel, Stripe)
+      * Compliance standards (GDPR, HIPAA-aware)
+      * Incident response procedures
+    
+    DOD COMPLIANCE CHECKLIST:
+    ✅ No rank mentions (E6, First Class, etc.)
+    ✅ No "active duty" status claims
+    ✅ No service branch identification (Navy, Army, etc.)
+    ✅ No implication of DOD endorsement
+    ✅ "Built by someone going through transition" messaging
+    ✅ Generic transition experience references
+    ✅ Comprehensive disclaimer present
+    
+    FILES MODIFIED: 5
+    FILES CREATED: 1 (Security.jsx)
+    ROUTES ADDED: 1 (/app/security)
+    
+    🤖 Generated with [Claude Code](https://claude.com/claude-code)
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+ src/App.jsx            |   2 [32m+[m
+ src/pages/About.jsx    | 268 [32m++++++++++++++++++++++++[m[31m-----------------[m
+ src/pages/FAQ.jsx      |  38 [32m+++++[m[31m-[m
+ src/pages/Landing.jsx  |  13 [32m+[m[31m-[m
+ src/pages/Security.jsx | 321 [32m+++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 5 files changed, 524 insertions(+), 118 deletions(-)

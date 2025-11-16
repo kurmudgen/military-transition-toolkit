@@ -824,7 +824,7 @@ export default function Settings() {
                 ☕ Love This Tool?
               </h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                This tool is <strong>100% free</strong> for founding members (sign up by Nov 19). If you find it valuable and want to support continued development, consider buying me a coffee. It's completely optional and genuinely appreciated! 🙏
+                This tool is <strong>100% free</strong> for all servicemembers and veterans. If you find it valuable and want to support continued development, consider buying me a coffee. It's completely optional and genuinely appreciated! 🙏
               </p>
               <a
                 href="https://donate.stripe.com/test_aEU5kU4xm8vt5gI000"
