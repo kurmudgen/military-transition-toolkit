@@ -366,11 +366,21 @@ export default function StateBenefits({ publicMode = false }) {
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-          State Veteran Benefits Comparison
+          Which State Has the Best Veteran Benefits?
         </h1>
-        <p className="mt-2 text-gray-600 dark:text-gray-300">
-          Compare veteran benefits across all 50 states + DC to find the best fit for your transition
-        </p>
+        <div className="mt-3 text-gray-600 dark:text-gray-300 space-y-3">
+          <p>
+            Compare property tax exemptions, education benefits, healthcare programs, and veteran hiring preferences across all 50 states. Filter by what matters most - whether it's no income tax, free college for dependents, or VA hospital access.
+          </p>
+          <p className="text-sm">
+            <strong>Top states for veterans by category:</strong><br />
+            • Best overall: South Dakota, Wyoming, Texas, Florida, Alaska<br />
+            • Property tax exemptions: Texas (100% disabled vets pay zero), Idaho, Nevada<br />
+            • Education benefits: Texas (Hazelwood Act - free tuition), Virginia, Illinois<br />
+            • No state income tax: Texas, Florida, Nevada, Alaska, South Dakota, Wyoming, Washington, Tennessee, New Hampshire<br />
+            • VA healthcare access: South Dakota (70% enrollment), Wyoming (most facilities per capita)
+          </p>
+        </div>
       </div>
 
       {/* Search and Filter Controls */}

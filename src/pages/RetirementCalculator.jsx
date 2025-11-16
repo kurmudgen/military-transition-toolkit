@@ -213,7 +213,7 @@ export default function RetirementCalculator({ publicMode = false }) {
 
   // Set page title
   useEffect(() => {
-    document.title = 'Retirement Pay Calculator - Military Transition Toolkit'
+    document.title = 'Military Retirement Pay Calculator - High-3 vs BRS Comparison | Military Transition Toolkit'
   }, [])
 
   // Load saved calculations from localStorage
@@ -651,7 +651,7 @@ export default function RetirementCalculator({ publicMode = false }) {
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 dark:border-gray-700">
         <div className="flex flex-wrap items-center gap-3 mb-3">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
-            Military Retirement Pay Calculator
+            How Do I Calculate My Military Retirement Pay?
           </h1>
           {isPromoModeActive() && (
             <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
@@ -659,9 +659,21 @@ export default function RetirementCalculator({ publicMode = false }) {
             </span>
           )}
         </div>
-        <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
-          Calculate your estimated retirement pay, VA disability compensation, and total income
-        </p>
+        <div className="text-gray-600 dark:text-gray-400 mb-8 space-y-3">
+          <p className="text-lg">
+            Calculate your exact retirement pay using either High-3 or Blended Retirement System (BRS). Enter your years of service, final pay grade, and retirement system to see your monthly pension, annual amount, and projected lifetime benefits.
+          </p>
+          <p>
+            <strong>High-3 System:</strong> 2.5% × years of service × average of highest 36 months base pay<br />
+            <strong>BRS:</strong> 2.0% × years of service × average of highest 36 months base pay (plus TSP matching)
+          </p>
+          <p className="text-sm">
+            <strong>Example: E6 with 20 years under High-3</strong><br />
+            • Base pay average: $4,200/month<br />
+            • Retirement: 50% × $4,200 = $2,100/month ($25,200/year)<br />
+            • Plus VA disability (tax-free, separate calculation)
+          </p>
+        </div>
 
         {/* Common Scenarios */}
         <div className="mb-8 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border-2 border-blue-200 dark:border-blue-800 shadow-lg">
