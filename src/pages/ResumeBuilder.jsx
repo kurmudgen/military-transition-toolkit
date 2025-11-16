@@ -84,7 +84,7 @@ export default function ResumeBuilder({ previewMode = false }) {
   const [showImportPanel, setShowImportPanel] = useState(false)
 
   useEffect(() => {
-    document.title = 'Resume Builder - Military Transition Toolkit'
+    document.title = 'Military to Civilian Resume Builder - Translate MOS to Job Titles | Military Transition Toolkit'
     trackPageView('Resume Builder')
     loadSavedResumes()
   }, [])
@@ -583,12 +583,23 @@ export default function ResumeBuilder({ previewMode = false }) {
               </span>
             )}
           </div>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
-            Create a professional civilian resume with military-to-civilian translation
-          </p>
-          <p className="text-gray-500 dark:text-gray-500 text-sm mt-2">
-            🔒 Your resumes are <strong>securely stored in the cloud</strong> with bank-level encryption. Accessible from any device.
-          </p>
+          <div className="text-gray-600 dark:text-gray-400 space-y-3">
+            <p className="text-lg font-semibold text-gray-900 dark:text-white">
+              How Do I Translate My Military Experience to a Civilian Resume?
+            </p>
+            <p>
+              Our resume builder automatically converts your MOS, rating, or AFSC into civilian job titles and translates military accomplishments into language hiring managers understand. Built specifically for E4-E7 transitioning to project management, logistics, IT, operations, and leadership roles.
+            </p>
+            <p>
+              Unlike generic resume templates, our builder knows military structure. It converts 'led 15-person division' to 'managed 15-person team,' 'coordinated logistics for 200+ personnel' to 'supply chain management for $2M inventory,' and 'maintained 98% equipment readiness' to 'achieved 98% operational uptime.'
+            </p>
+            <p>
+              No guesswork. No military jargon in your civilian resume. Just clean, professional resumes that get interviews.
+            </p>
+            <p className="text-gray-500 dark:text-gray-500 text-sm mt-4">
+              🔒 Your resumes are <strong>securely stored in the cloud</strong> with bank-level encryption. Accessible from any device.
+            </p>
+          </div>
 
           {/* Import Button */}
           <div className="mt-4">

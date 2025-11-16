@@ -206,7 +206,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
 
   // Set page title
   useEffect(() => {
-    document.title = 'VA Claims Builder | Military Transition Toolkit'
+    document.title = 'VA Disability Claims Tracker - Organize Evidence, Track C&P Exams | Military Transition Toolkit'
   }, [])
 
   // Timeout for unauthenticated users - show auth prompt after timeout
@@ -1136,9 +1136,20 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
             </span>
           )}
         </div>
-        <p className="text-gray-600 mb-6">
-          Build comprehensive claim statements and track evidence for your VA disability application
-        </p>
+        <div className="text-gray-600 mb-6 space-y-3">
+          <p className="text-lg font-semibold text-gray-900">
+            How Do I Organize My VA Disability Claim Evidence?
+          </p>
+          <p>
+            Track your claimed conditions, upload medical records, manage C&P exam appointments, and organize nexus letters in one place. We don't file claims for you - we give you the tools to file them yourself, with confidence.
+          </p>
+          <p>
+            Think of this like TurboTax for VA claims. TurboTax doesn't file your taxes FOR you - it helps YOU file them correctly. Our VA Claims Tracker does the same: it's a software tool that organizes your evidence, tracks deadlines, and ensures you don't miss critical steps.
+          </p>
+          <p>
+            What you track: Current conditions, in-service events, medical evidence, C&P exam dates, Intent to File deadline, claim status, and secondary conditions.
+          </p>
+        </div>
 
         {/* Demo Banner or Privacy Warning */}
         {demoMode ? (
