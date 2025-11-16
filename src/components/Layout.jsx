@@ -4,8 +4,6 @@ import { useAuth } from '../contexts/AuthContext'
 import { hasActiveSubscription, SUBSCRIPTION_FEATURES } from '../utils/subscriptionCheck'
 import { LockClosedIcon } from '@heroicons/react/24/outline'
 import AIAssistant from './AIAssistant'
-import PromoBanner from './PromoBanner'
-import DeadlineBanner from './DeadlineBanner'
 
 // Initialize dark mode from localStorage before component mounts
 const getInitialDarkMode = () => {
@@ -220,10 +218,6 @@ export default function Layout() {
           </div>
         </div>
       </nav>
-
-      <DeadlineBanner />
-
-      <PromoBanner />
 
       <main className="flex-1 max-w-7xl w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <Outlet />
