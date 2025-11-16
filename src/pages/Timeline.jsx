@@ -314,9 +314,16 @@ export default function Timeline({ previewMode = false }) {
                     <div className="flex-1">
                       <h3 className="text-white font-semibold">{task.title}</h3>
                       <p className="text-blue-100 text-sm mt-1">{task.description}</p>
-                      <div className="flex items-center gap-3 mt-2">
-                        <span className="text-blue-200 text-sm">{formatDate(task.dueDate)}</span>
-                        <span className={getPriorityBadge(task.priority)}>{task.priority}</span>
+                      <div className="flex flex-col gap-2 mt-2">
+                        <div className="flex items-center gap-3">
+                          <span className="text-blue-200 text-sm">📅 {formatDate(task.dueDate)}</span>
+                          <span className={getPriorityBadge(task.priority)}>{task.priority}</span>
+                        </div>
+                        {task.monthsBefore > 0 && (
+                          <span className="text-blue-300 text-xs">
+                            {task.monthsBefore} {task.monthsBefore === 1 ? 'month' : 'months'} before separation
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -421,7 +428,12 @@ export default function Timeline({ previewMode = false }) {
                       <p className="text-gray-600 dark:text-gray-300 mb-3">{task.description}</p>
                       <div className="flex flex-wrap items-center gap-3 text-sm">
                         <span className={`font-medium ${isOverdue(task.dueDate) && !task.completed ? 'text-red-600 dark:text-red-400' : 'text-gray-700 dark:text-gray-300'}`}>
-                          {formatDate(task.dueDate)}
+                          📅 {formatDate(task.dueDate)}
+                          {task.monthsBefore > 0 && (
+                            <span className="text-gray-500 dark:text-gray-400 ml-2">
+                              ({task.monthsBefore} {task.monthsBefore === 1 ? 'month' : 'months'} before separation)
+                            </span>
+                          )}
                         </span>
                         <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">
                           {task.category}
