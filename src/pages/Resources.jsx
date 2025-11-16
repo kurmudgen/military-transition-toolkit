@@ -760,6 +760,11 @@ export default function Resources({ publicMode = false }) {
                                   Official
                                 </span>
                               )}
+                              {resource.isAffiliate && (
+                                <span className="px-2 py-0.5 bg-blue-900/30 text-blue-400 text-xs font-semibold rounded border border-blue-700 flex items-center gap-1">
+                                  ⭐ Partner
+                                </span>
+                              )}
                             </div>
                           </div>
                         </div>
@@ -826,7 +831,7 @@ export default function Resources({ publicMode = false }) {
                             href={resource.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            onClick={() => trackButtonClick('Open Resource Link')}
+                            onClick={() => trackButtonClick(resource.isAffiliate ? `Affiliate Click - ${resource.title}` : 'Open Resource Link')}
                             className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-center font-semibold rounded-lg transition-all text-sm flex items-center justify-center gap-2"
                           >
                             Visit
