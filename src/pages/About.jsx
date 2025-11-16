@@ -50,14 +50,12 @@ export default function About() {
                 <p className="text-slate-300 mb-4">
                   One-time donations help cover immediate infrastructure costs like servers and development tools.
                 </p>
-                <a
-                  href="https://buymeacoffee.com/militarytransition"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/donate"
                   className="inline-block px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold rounded-lg transition-colors shadow-lg"
                 >
                   ☕ Support the Mission
-                </a>
+                </Link>
               </div>
             </div>
           </div>

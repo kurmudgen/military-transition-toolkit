@@ -266,19 +266,12 @@ export default function Layout() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/donate" className="text-slate-400 hover:text-white transition-colors text-sm">
-                    Support MTT (Optional)
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://buymeacoffee.com/militarytransition"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/donate"
                     className="text-slate-400 hover:text-white transition-colors text-sm"
                   >
-                    ☕ Buy Me a Coffee
-                  </a>
+                    ☕ Support MTT (Optional)
+                  </Link>
                 </li>
                 <li>
                   <a

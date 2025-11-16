@@ -2127,14 +2127,12 @@ export default function ResumeBuilder({ previewMode = false }) {
           <p className="text-gray-700 dark:text-gray-300 mb-4">
             If the Resume Builder has helped you create professional resumes and translate your military experience, consider buying me a coffee to help keep this platform free for all servicemembers.
           </p>
-          <a
-            href="https://buymeacoffee.com/militarytransition"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/donate"
             className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl"
           >
-            ☕ Buy Me a Coffee
-          </a>
+            ☕ Support the Mission
+          </Link>
           <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
             100% optional • Helps keep MTT free for everyone
           </p>

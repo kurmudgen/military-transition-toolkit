@@ -160,14 +160,12 @@ export default function Landing() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://buymeacoffee.com/militarytransition"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/donate"
               className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold rounded-lg text-center transition-colors shadow-lg"
             >
               ☕ Support the Mission
-            </a>
+            </Link>
             <Link to="/contact" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors shadow-lg">
               Interested in Partnering?
             </Link>
