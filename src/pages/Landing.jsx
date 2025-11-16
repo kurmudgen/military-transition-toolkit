@@ -113,42 +113,84 @@ export default function Landing() {
 
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 py-16 text-center">
-        <div className="mb-8">
-          <span className="inline-block px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm font-semibold mb-4">
-            Built by Veterans, for Veterans
-          </span>
-        </div>
-
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-          Military Transition Toolkit - Everything You Need to Navigate Your Military Transition and VA Benefits
+          Military Transition Toolkit
         </h1>
 
-        <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-          Whether you're separating in 12 months or separated 10 years ago - translate military experience to civilian resumes, organize VA disability claim evidence with 110+ conditions, compare veteran benefits across all 50 states, calculate retirement pay, and track your transition timeline.
+        <p className="text-xl text-slate-300 mb-6 max-w-3xl mx-auto">
+          Navigate your transition with VA claims tracking, state benefits comparison, and comprehensive planning tools
         </p>
 
-        <p className="text-lg text-slate-400 mb-8 max-w-3xl mx-auto">
-          Not a claims filing service. Not a resume writer. A complete toolkit that helps YOU do it yourself - like TurboTax for your entire military transition and VA claims.
+        <p className="text-lg font-semibold text-yellow-400 mb-8">
+          Currently Free - Mission: Stay Free Forever
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <Link to="/getting-started" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
-            Browse Tools →
-          </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
           {!user ? (
-            <Link to="/signup" className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg text-lg transition-colors shadow-lg">
-              Create Account →
-            </Link>
+            <>
+              <Link to="/signup" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
+                Get Started Free
+              </Link>
+              <Link to="/about" className="px-8 py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
+                Our Mission
+              </Link>
+            </>
           ) : (
             <Link to="/app" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
               Go to Dashboard →
             </Link>
           )}
         </div>
+      </div>
 
-        <p className="text-slate-400 text-sm">
-          {!user ? 'All core tools free forever • Sign up by Nov 19 for lifetime premium access' : 'Welcome back! Access all your transition tools'}
-        </p>
+      {/* Mission & Sustainability Section */}
+      <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="bg-slate-800/50 backdrop-blur rounded-2xl p-8 sm:p-12 border border-slate-700">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-white mb-4">💡 Our Mission & Sustainability</h2>
+            <p className="text-slate-300 text-lg">
+              Military Transition Toolkit is currently free and our mission is to keep it that way.
+            </p>
+          </div>
+
+          <div className="space-y-6 mb-8">
+            <div>
+              <h3 className="text-xl font-semibold text-white mb-3">How we plan to sustain this:</h3>
+              <p className="text-slate-300">
+                We're actively seeking partnerships with organizations that serve transitioning servicemembers and veterans - training providers, financial services, education platforms - to support operating costs while keeping the platform free.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-white mb-3">How you can help keep MTT free:</h3>
+              <ul className="space-y-2 text-slate-300">
+                <li>☕ One-time donations help cover server costs - every bit helps</li>
+                <li>🤝 Know an organization that might partner with us? Put us in touch</li>
+                <li>📢 Share MTT with others going through transition - growth helps attract partners</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-900/30 border border-blue-700 rounded-lg p-4">
+              <p className="text-blue-100">
+                <strong className="text-blue-300">Our commitment:</strong> As long as partnerships and community support sustain operations, MTT stays free. If circumstances change, current members will be grandfathered in.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://buymeacoffee.com/militarytransition"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold rounded-lg text-center transition-colors shadow-lg"
+            >
+              ☕ Support the Mission
+            </a>
+            <Link to="/contact" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors shadow-lg">
+              Interested in Partnering?
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* Try Our Tools Section - Moved Higher */}

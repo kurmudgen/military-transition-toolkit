@@ -94,11 +94,40 @@ export default function Signup() {
             </div>
           </Link>
           <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white">
-            Create your account
+            Create your free account
           </h2>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-            Start planning your military transition today - it's free!
+            Save your progress and access your data from any device. No credit card required.
           </p>
+        </div>
+
+        {/* Account Benefits Callout */}
+        <div className="bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-xl p-6">
+          <h3 className="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-3 text-center">
+            Why create an account?
+          </h3>
+          <ul className="space-y-2 text-sm text-blue-800 dark:text-blue-200">
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 dark:text-green-400 flex-shrink-0">✓</span>
+              <span>Save your progress across all devices</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 dark:text-green-400 flex-shrink-0">✓</span>
+              <span>Never lose your data with secure cloud backup</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 dark:text-green-400 flex-shrink-0">✓</span>
+              <span>Access from phone, tablet, or computer</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 dark:text-green-400 flex-shrink-0">✓</span>
+              <span>Bank-level encryption protects your sensitive information</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 dark:text-green-400 flex-shrink-0">✓</span>
+              <span>100% free - no credit card, no trial, no surprise charges</span>
+            </li>
+          </ul>
         </div>
 
         {/* Main Card */}

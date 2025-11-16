@@ -1,3 +1,4 @@
+/* HIDDEN - Free model - Keep for future use
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { isPromoModeActive } from '../utils/promoConfig'
@@ -92,4 +93,10 @@ export default function PromoBanner() {
       </div>
     </div>
   )
+}
+*/
+
+// Simplified version for free model
+export default function PromoBanner() {
+  return null
 }

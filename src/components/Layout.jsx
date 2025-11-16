@@ -233,6 +233,17 @@ export default function Layout() {
 
       <footer className="bg-slate-800 dark:bg-slate-900 border-t border-slate-700 mt-auto">
         <div className="max-w-7xl mx-auto px-4 py-8">
+          {/* Sustainability Banner */}
+          <div className="text-center mb-8 bg-blue-900/20 border border-blue-700 rounded-lg p-4">
+            <p className="text-blue-100 text-sm mb-2 flex items-center justify-center gap-2 flex-wrap">
+              <span className="text-lg">💡</span>
+              <strong>Currently Free - Mission: Stay Free Forever</strong>
+            </p>
+            <p className="text-blue-200 text-xs">
+              We're actively seeking partnerships with organizations that serve transitioning servicemembers and veterans to sustain operations and keep MTT free.
+            </p>
+          </div>
+
           {/* Privacy Banner */}
           <div className="text-center mb-8">
             <p className="text-slate-300 text-sm mb-2 flex items-center justify-center gap-2 flex-wrap">
@@ -254,8 +265,23 @@ export default function Layout() {
               <ul className="space-y-3">
                 <li>
                   <Link to="/app/about" className="text-slate-400 hover:text-white transition-colors text-sm">
-                    About
+                    About & Mission
                   </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    Partner with Us
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://buymeacoffee.com/militarytransition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-400 hover:text-white transition-colors text-sm"
+                  >
+                    ☕ Support MTT
+                  </a>
                 </li>
                 <li>
                   <a
@@ -321,11 +347,6 @@ export default function Layout() {
                 <li>
                   <Link to="/privacy" className="text-slate-400 hover:text-white transition-colors text-sm">
                     Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/refund-policy" className="text-slate-400 hover:text-white transition-colors text-sm">
-                    Refund Policy
                   </Link>
                 </li>
                 <li>

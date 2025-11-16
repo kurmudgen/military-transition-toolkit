@@ -2405,6 +2405,27 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
             )}
           </>
         )}
+
+        {/* Buy Me a Coffee Support Section */}
+        {selectedConditions.length > 0 && !demoMode && (
+          <div className="mt-12 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300 dark:border-purple-700 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">☕ Finding MTT helpful with your VA claim?</h3>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              If the VA Claims Builder has helped you organize your claim and track your evidence, consider buying me a coffee to help keep this platform free for all servicemembers.
+            </p>
+            <a
+              href="https://buymeacoffee.com/militarytransition"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl"
+            >
+              ☕ Buy Me a Coffee
+            </a>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
+              100% optional • Helps keep MTT free for everyone
+            </p>
+          </div>
+        )}
       </div>
     </div>
   )

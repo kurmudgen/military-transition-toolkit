@@ -1,131 +1,101 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function About() {
   useEffect(() => {
-    document.title = 'About | Military Transition Toolkit'
+    document.title = 'Keeping MTT Free | Military Transition Toolkit'
   }, [])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-slate-800 rounded-lg shadow-xl p-6 mb-6 border border-slate-700">
-          <h1 className="text-3xl font-bold text-white mb-2">About This Project</h1>
-          <p className="text-slate-300">Built by veterans, for veterans</p>
+        <div className="bg-slate-800 rounded-lg shadow-xl p-6 sm:p-8 mb-6 border border-slate-700">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Keeping MTT Free</h1>
+          <p className="text-slate-300 text-lg">Currently Free - Mission: Stay Free Forever</p>
         </div>
 
         <div className="space-y-6">
           {/* Mission */}
-          <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-bold text-white mb-4">🎯 Our Mission</h2>
+          <div className="bg-slate-800 rounded-lg shadow-lg p-6 sm:p-8 border border-slate-700">
+            <h2 className="text-2xl font-bold text-white mb-4">The Mission</h2>
             <p className="text-slate-300 mb-4">
-              This tool was created by a transitioning service member currently going through the military separation process.
-            </p>
-            <p className="text-slate-300">
-              <strong>Creator Background:</strong><br/>
-              • Active duty service member in transition<br/>
-              • Currently navigating the MedBoard/IDES process<br/>
-              • Built this tool out of personal necessity<br/>
-              • Using modern AI tools to develop quickly and affordably
+              Military Transition Toolkit was created by someone going through the medboard process.
+              We know how confusing and anxiety-inducing the transition process can be. That's why MTT
+              is free - and why we're actively seeking partnerships to keep it that way.
             </p>
           </div>
 
-          {/* Why Built */}
-          <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-bold text-white mb-4">💡 Why We Built This</h2>
-            <p className="text-slate-300 mb-4">
-              Going through transition, we were overwhelmed by:
-            </p>
-            <ul className="list-disc list-inside text-slate-300 space-y-2 mb-4">
-              <li>Confusing timelines and checklists</li>
-              <li>Missing critical deadlines</li>
-              <li>Not knowing what evidence to collect</li>
-              <li>Losing track of appointments</li>
-              <li>Trying to compare retirement options across states</li>
-            </ul>
-            <p className="text-slate-300">
-              We couldn't find ONE comprehensive tool that handled everything. So we built it.
-            </p>
-          </div>
+          {/* Sustainability Model */}
+          <div className="bg-slate-800 rounded-lg shadow-lg p-6 sm:p-8 border border-slate-700">
+            <h2 className="text-2xl font-bold text-white mb-6">Sustainability Model</h2>
 
-          {/* What We Offer */}
-          <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-bold text-white mb-4">✨ What We Offer</h2>
-            <p className="text-slate-300 mb-4">
-              Built for veterans, by veterans:
-            </p>
-            <ul className="list-disc list-inside text-slate-300 space-y-2 mb-4">
-              <li>Small veteran-owned team building with AI assistance</li>
-              <li>No venture capital, no huge budget</li>
-              <li>Focused on core value over fancy features</li>
-              <li>End-to-end encrypted cloud storage for complete privacy and security</li>
-              <li>Launched fast to help veterans NOW, not in 2 years</li>
-            </ul>
-
-            <div className="grid md:grid-cols-2 gap-4 mt-6">
+            <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-green-400 mb-2">What You Get:</h3>
-                <ul className="text-slate-300 space-y-1">
-                  <li>✓ Complete privacy with military-grade encryption</li>
-                  <li>✓ Secure cloud backup & sync across devices</li>
-                  <li>✓ Built by veterans going through it NOW</li>
-                  <li>✓ Features prioritized by veteran need</li>
-                  <li>✓ Access your data from anywhere</li>
-                </ul>
+                <h3 className="text-xl font-semibold text-blue-400 mb-3">Partnership Revenue (Primary Goal)</h3>
+                <p className="text-slate-300 mb-3">
+                  We partner with companies and nonprofits that serve transitioning servicemembers -
+                  training providers, education platforms, financial services - who support our mission.
+                  When our users benefit from partner services, those partners help sustain MTT.
+                </p>
+                <p className="text-slate-400 mb-3">
+                  <strong>Current partners:</strong> <em>Actively seeking partnerships</em>
+                </p>
+                <p className="text-slate-300">
+                  Interested in partnering? <Link to="/contact" className="text-blue-400 hover:text-blue-300 underline">Contact us</Link>
+                </p>
               </div>
+
               <div>
-                <h3 className="text-lg font-semibold text-blue-400 mb-2">Premium Features:</h3>
-                <ul className="text-slate-300 space-y-1">
-                  <li>✓ Advanced retirement calculator</li>
-                  <li>✓ VA disability claims builder</li>
-                  <li>✓ Cloud storage & device sync</li>
-                  <li>✓ Automated reminders</li>
-                  <li>✓ Priority support</li>
-                </ul>
+                <h3 className="text-xl font-semibold text-yellow-400 mb-3">Community Support</h3>
+                <p className="text-slate-300 mb-4">
+                  One-time donations help cover immediate infrastructure costs like servers and development tools.
+                </p>
+                <a
+                  href="https://buymeacoffee.com/militarytransition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold rounded-lg transition-colors shadow-lg"
+                >
+                  ☕ Support the Mission
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Roadmap */}
-          <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-bold text-white mb-4">🗺️ The Roadmap</h2>
+          {/* Commitment */}
+          <div className="bg-slate-800 rounded-lg shadow-lg p-6 sm:p-8 border border-slate-700">
+            <h2 className="text-2xl font-bold text-white mb-4">Our Commitment</h2>
             <p className="text-slate-300 mb-4">
-              We're committed to continuous improvement:
+              As long as partnerships and community donations sustain operations, MTT stays free for all servicemembers.
             </p>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="text-green-400 font-bold">✓ Phase 1:</span>
-                <span className="text-slate-300">Launched with core tools & end-to-end encrypted cloud storage</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-blue-400 font-bold">Phase 2:</span>
-                <span className="text-slate-300">Native mobile apps (iOS & Android)</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-blue-400 font-bold">Phase 3:</span>
-                <span className="text-slate-300">Enhanced automated reminders and smart notifications</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-blue-400 font-bold">Phase 4:</span>
-                <span className="text-slate-300">AI-powered transition assistant and document automation</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-blue-400 font-bold">Phase 5:</span>
-                <span className="text-slate-300">Partner with VSOs, TAP programs, and military bases</span>
-              </div>
+            <p className="text-slate-300 mb-3">
+              If we ever face circumstances requiring fees to maintain operations, we will:
+            </p>
+            <ul className="list-disc list-inside text-slate-300 space-y-2">
+              <li>Provide 60 days advance notice</li>
+              <li>Grandfather in all current members</li>
+              <li>Keep core transition tools free</li>
+              <li>Charge only for premium add-on features</li>
+            </ul>
+          </div>
+
+          {/* Transparency */}
+          <div className="bg-slate-800 rounded-lg shadow-lg p-6 sm:p-8 border border-slate-700">
+            <h2 className="text-2xl font-bold text-white mb-4">Transparency</h2>
+            <p className="text-slate-300 mb-4">Status updates posted quarterly.</p>
+            <div className="bg-blue-900/30 border border-blue-700 rounded-lg p-4">
+              <p className="text-blue-100 mb-2"><strong>Last updated:</strong> November 2025</p>
+              <p className="text-blue-100"><strong>Current status:</strong> ✅ Operating sustainably</p>
             </div>
-            <p className="text-slate-300 mt-4 italic">
-              Every Premium purchase directly funds these improvements and keeps this tool veteran-focused.
-            </p>
           </div>
 
           {/* Resources & Feedback */}
-          <div className="bg-gradient-to-r from-blue-900/40 to-purple-900/40 rounded-lg shadow-lg p-6 border-2 border-blue-500/50">
+          <div className="bg-gradient-to-r from-blue-900/40 to-purple-900/40 rounded-lg shadow-lg p-6 sm:p-8 border-2 border-blue-500/50">
             <h2 className="text-2xl font-bold text-white mb-4">📚 Resources & Feedback</h2>
             <p className="text-slate-300 mb-6">
               Stay updated with our progress and share your feedback to help us improve:
             </p>
             <div className="grid md:grid-cols-3 gap-4">
-              {/* Roadmap Link */}
               <a
                 href="https://docs.google.com/document/d/1pJ0rHGXtb9g3txue9hsiN-kritb-_ZAml1r6P2axq98/edit?usp=sharing"
                 target="_blank"
@@ -134,12 +104,9 @@ export default function About() {
               >
                 <div className="text-3xl mb-2">🗺️</div>
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400">View Full Roadmap</h3>
-                <p className="text-slate-400 text-sm">
-                  See detailed feature plans and upcoming improvements
-                </p>
+                <p className="text-slate-400 text-sm">See detailed feature plans and upcoming improvements</p>
               </a>
 
-              {/* Changelog Link */}
               <a
                 href="https://docs.google.com/document/d/10YECz-KhGHPeUjnzRvA1HYGnVIu6A2GSsUzHvd4v_k0/edit?usp=sharing"
                 target="_blank"
@@ -148,12 +115,9 @@ export default function About() {
               >
                 <div className="text-3xl mb-2">📝</div>
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400">View Changelog</h3>
-                <p className="text-slate-400 text-sm">
-                  Track all updates, fixes, and new features
-                </p>
+                <p className="text-slate-400 text-sm">Track all updates, fixes, and new features</p>
               </a>
 
-              {/* Feedback Form Link */}
               <a
                 href="https://forms.gle/Z3ZFnphafATv7pRn6"
                 target="_blank"
@@ -162,62 +126,13 @@ export default function About() {
               >
                 <div className="text-3xl mb-2">💬</div>
                 <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400">Submit Feedback</h3>
-                <p className="text-slate-400 text-sm">
-                  Share your experience and help us improve
-                </p>
+                <p className="text-slate-400 text-sm">Share your experience and help us improve</p>
               </a>
             </div>
-          </div>
-
-          {/* Commitment */}
-          <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700">
-            <h2 className="text-2xl font-bold text-white mb-4">🤝 Our Commitment</h2>
-            <ul className="list-disc list-inside text-slate-300 space-y-2">
-              <li>Core features will ALWAYS be free</li>
-              <li>Your privacy will NEVER be compromised for convenience</li>
-              <li>No predatory pricing or tricks</li>
-              <li>Honest communication about capabilities and limitations</li>
-              <li>Built for veterans, by veterans</li>
-            </ul>
-          </div>
-
-          {/* Thank You */}
-          <div className="bg-slate-800 rounded-lg shadow-lg p-6 border border-slate-700 text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">🙏 Thank You</h2>
-            <p className="text-slate-300 mb-4">
-              If this tool helps your transition, please:
-            </p>
-            <div className="grid md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-6">
-              <div className="flex items-start gap-2">
-                <span className="text-green-400">•</span>
-                <span className="text-slate-300">Share it with fellow veterans</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-green-400">•</span>
-                <span className="text-slate-300">Leave honest feedback</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-green-400">•</span>
-                <span className="text-slate-300">Consider supporting via Premium</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="text-green-400">•</span>
-                <span className="text-slate-300">Spread the word to help more veterans</span>
-              </div>
-            </div>
-            <p className="text-slate-300 font-semibold">
-              Good luck with your transition.
-            </p>
-            <p className="text-slate-400 mt-4 text-sm">
-              Questions or feedback?<br/>
-              <a href="mailto:support@formationlabs.net" className="text-blue-400 hover:text-blue-300">
-                support@formationlabs.net
-              </a>
-            </p>
           </div>
 
           {/* DoD Disclaimer */}
-          <div className="bg-slate-700 rounded-lg shadow-lg p-6 border border-slate-600">
+          <div className="bg-slate-700 rounded-lg shadow-lg p-6 sm:p-8 border border-slate-600">
             <h2 className="text-xl font-bold text-slate-200 mb-3">⚠️ Important Disclaimer</h2>
             <div className="space-y-3 text-slate-300 text-sm">
               <p className="font-semibold">
@@ -230,18 +145,19 @@ export default function About() {
                 <li>Any federal, state, or local government agency</li>
               </ul>
               <p>
-                This is an <strong>independent, privately-owned tool</strong> created by a transitioning service member
-                to help fellow veterans navigate the military separation process. All information provided is for
-                educational and planning purposes only.
+                This is an <strong>independent, privately-owned tool</strong> created by someone going
+                through transition to help fellow servicemembers navigate the military separation process.
+                All information provided is for educational and planning purposes only.
               </p>
               <p>
-                <strong>Official Information:</strong> Always verify critical information with official government sources,
-                your command, your transition assistance office, or the VA. While we strive for accuracy, this tool does
-                not replace official guidance from your chain of command or government agencies.
+                <strong>Official Information:</strong> Always verify critical information with official
+                government sources, your command, your transition assistance office, or the VA. While we
+                strive for accuracy, this tool does not replace official guidance from your chain of
+                command or government agencies.
               </p>
               <p className="text-slate-400 italic">
-                The views expressed on this website are those of the creator and do not reflect the official policy
-                or position of the Department of Defense, any military service, or the U.S. Government.
+                The views expressed on this website are those of the creator and do not reflect the
+                official policy or position of the Department of Defense, any military service, or the U.S. Government.
               </p>
             </div>
           </div>

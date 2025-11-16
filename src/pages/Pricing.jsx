@@ -1,3 +1,4 @@
+/* HIDDEN - Free model - Keep for future use
 import { useState, useEffect } from 'react'
 import { CheckCircleIcon, SparklesIcon, RocketLaunchIcon } from '@heroicons/react/24/outline'
 import { PRICING, shouldHidePaymentUI } from '../utils/promoConfig'
@@ -6,7 +7,7 @@ import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { createCheckoutSession } from '../services/subscriptionService'
 import { getCurrentUser } from '../lib/supabase'
 
-export default function Pricing() {
+function PricingOriginal() {
   const [loading, setLoading] = useState(false)
   const [showCancelMessage, setShowCancelMessage] = useState(false)
   const paymentUIHidden = shouldHidePaymentUI()
@@ -370,6 +371,29 @@ export default function Pricing() {
           </div>
         </div>
 
+      </div>
+    </div>
+  )
+}
+*/
+
+// Simplified version for free model - redirect to About page
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+
+export default function Pricing() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    // Redirect to About page which explains sustainability model
+    navigate('/app/about', { replace: true })
+  }, [navigate])
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl font-bold text-white mb-4">Currently Free</h1>
+        <p className="text-xl text-slate-300">Redirecting to our mission page...</p>
       </div>
     </div>
   )

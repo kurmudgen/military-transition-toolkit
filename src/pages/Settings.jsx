@@ -841,7 +841,8 @@ export default function Settings() {
             </div>
           )}
 
-          {/* Subscription Management */}
+          {/* HIDDEN - Free model - Subscription Management section removed */}
+          {/*
           {!loadingSubscription && (
             <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
               <h2 className="text-2xl font-semibold text-white mb-4">💳 Subscription Management</h2>
@@ -864,6 +865,7 @@ export default function Settings() {
                 </div>
 
                 {/* Show subscription details for active paid plans */}
+                {/*
                 {subscription && subscription.status === 'active' && subscription.plan_id !== 'free' && (
                   <>
                     <div>
@@ -898,6 +900,7 @@ export default function Settings() {
                 )}
 
                 {/* Special badge for Founding Members */}
+                {/*
                 {subscription && subscription.plan_id === 'founding_member' && (
                   <div className="p-4 bg-gradient-to-r from-yellow-900/30 to-amber-900/30 border border-yellow-600 rounded-lg">
                     <p className="text-yellow-400 font-semibold flex items-center gap-2">
@@ -910,6 +913,7 @@ export default function Settings() {
                 )}
 
                 {/* Action buttons */}
+                {/*
                 <div className="pt-4 border-t border-slate-700">
                   {subscription && subscription.plan_id !== 'free' && subscription.plan_id !== 'founding_member' && subscription.stripe_customer_id ? (
                     <button
@@ -940,6 +944,7 @@ export default function Settings() {
               </div>
             </div>
           )}
+          */}
 
           {/* Session Timeout Settings */}
           <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
