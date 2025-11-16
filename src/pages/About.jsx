@@ -161,6 +161,16 @@ export default function About() {
               </p>
             </div>
           </div>
+
+          {/* Optional Donation Link */}
+          <div className="text-center mt-8">
+            <Link
+              to="/donate"
+              className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
+            >
+              Optional: Support MTT with a one-time donation
+            </Link>
+          </div>
         </div>
       </div>
     </div>
