@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import RemindersWidget from '../components/RemindersWidget'
+import ReferralCard from '../components/ReferralCard'
 import { useAuth } from '../contexts/AuthContext'
 import { getUserProfile, completeOnboarding } from '../services/profileService'
 import {
@@ -36,6 +37,8 @@ export default function Home() {
   const [profileLoaded, setProfileLoaded] = useState(false)
   const [timeline, setTimeline] = useState([])
   const [upcomingTasks, setUpcomingTasks] = useState([])
+  const [referralCode, setReferralCode] = useState('')
+  const [referralCount, setReferralCount] = useState(0)
 
   // Load user profile from Supabase (with localStorage fallback)
   useEffect(() => {
@@ -54,6 +57,8 @@ export default function Home() {
           setUserSetup(profile.situation)
           setSeparationDate(profile.separation_date || '')
           setUserName(profile.full_name || '')
+          setReferralCode(profile.referral_code || '')
+          setReferralCount(profile.referral_count || 0)
 
           // If situation exists, user has completed setup
           if (profile.situation && profile.separation_date) {
@@ -1246,6 +1251,13 @@ export default function Home() {
 
           {/* Reminders Widget */}
           <RemindersWidget />
+
+          {/* Referral Card */}
+          {referralCode && (
+            <div className="mb-8">
+              <ReferralCard referralCode={referralCode} referralCount={referralCount} />
+            </div>
+          )}
 
           {/* Upcoming Schedule */}
           <div className="bg-white rounded-lg shadow p-6">
