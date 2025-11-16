@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 import { trackPageView, trackButtonClick } from '../../utils/analytics'
 
@@ -13,14 +13,23 @@ export default function Signup() {
   const [loading, setLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
   const [successMessage, setSuccessMessage] = useState('')
+  const [referralCode, setReferralCode] = useState('')
 
   const { signUp } = useAuth()
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
 
   useEffect(() => {
     document.title = 'Sign Up - Military Transition Toolkit'
     trackPageView('Signup')
-  }, [])
+
+    // Capture referral code from URL
+    const ref = searchParams.get('ref')
+    if (ref) {
+      setReferralCode(ref)
+      trackPageView('Signup - Referred')
+    }
+  }, [searchParams])
 
   const validatePassword = (pass) => {
     if (pass.length < 8) {
@@ -57,13 +66,14 @@ export default function Signup() {
     try {
       const { error } = await signUp(email, password, {
         full_name: fullName.trim(),
-        separation_status: separationStatus
+        separation_status: separationStatus,
+        referred_by: referralCode || null
       })
 
       if (error) {
         setError(error.message)
       } else {
-        trackButtonClick(`Signup - ${separationStatus}`)
+        trackButtonClick(`Signup - ${separationStatus}${referralCode ? ' - Referred' : ''}`)
         setSuccessMessage(
           'Success! Please check your email to verify your account.'
         )
@@ -99,6 +109,14 @@ export default function Signup() {
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
             Save your progress and access your data from any device. No credit card required.
           </p>
+          {referralCode && (
+            <div className="mt-3 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg">
+              <p className="text-green-700 dark:text-green-300 text-sm font-semibold flex items-center gap-2">
+                <span>✓</span>
+                Referred by a battle buddy! You're both Founding Members.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Account Benefits Callout */}

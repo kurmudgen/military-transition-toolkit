@@ -347,11 +347,18 @@ export const AuthProvider = ({ children }) => {
     resetActivityTimer,
     signUp: async (email, password, metadata = {}) => {
       if (!supabase) return { data: null, error: { message: 'Authentication not configured' } }
-      const { data, error } = await supabase.auth.signUp({
+
+      // Generate referral code from email
+      const referralCode = email ? email.split('@')[0].toLowerCase().substring(0, 8) + Math.random().toString(36).substring(2, 6).toUpperCase() : null
+
+      const { data, error} = await supabase.auth.signUp({
         email,
         password,
         options: {
-          data: metadata
+          data: {
+            ...metadata,
+            referral_code: referralCode
+          }
         }
       })
       return { data, error }
