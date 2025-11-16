@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import UseProfileButton from '../components/UseProfileButton'
 import { getProfileData, getServiceInfo, getLocationInfo } from '../utils/profileAutoFill'
 import { isPromoModeActive } from '../utils/promoConfig'
-import { SHUTDOWN_BANNER } from '../utils/constants'
 
 // 2025 Base Pay Data - Retirement Years Only (20-30 years)
 // Source: 2025 Active Duty Pay Table effective April 1, 2025
@@ -351,10 +350,10 @@ export default function RetirementCalculator({ publicMode = false }) {
           <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
             <h2 className="text-3xl font-bold mb-4">Retirement Calculator</h2>
             <p className="text-xl text-green-100 mb-2">
-              {SHUTDOWN_BANNER.line1}
+              100% Free for All Servicemembers and Veterans
             </p>
             <p className="text-sm text-green-200">
-              {SHUTDOWN_BANNER.line2}
+              Calculate your estimated retirement pay with our free military retirement calculator
             </p>
           </div>
 
