@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 
 export default function DeadlineBanner() {
+  const { user } = useAuth()
   // Deadline: November 20, 2025 at 00:00:00 PST (America/Los_Angeles)
   const DEADLINE = new Date('2025-11-20T00:00:00-08:00')
 
@@ -88,18 +90,21 @@ export default function DeadlineBanner() {
                 role="img"
                 aria-label="Medal"
               >
-                🎖️
+                {user ? '✅' : '🎖️'}
               </span>
               <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
                 <p className="font-bold text-sm sm:text-base lg:text-lg">
-                  {isVeryUrgent
-                    ? 'LAST CHANCE! Less than 1 hour remaining for FREE LIFETIME ACCESS!'
-                    : isUrgent
-                      ? 'FINAL HOURS! FREE LIFETIME ACCESS ends Nov 19!'
-                      : 'FREE LIFETIME ACCESS ends Nov 19! Sign up now to become a Founding Member.'
-                  }
+                  {user ? (
+                    "You're locked in as a Founding Member!"
+                  ) : isVeryUrgent ? (
+                    'LAST CHANCE! Less than 1 hour remaining for FREE LIFETIME ACCESS!'
+                  ) : isUrgent ? (
+                    'FINAL HOURS! FREE LIFETIME ACCESS ends Nov 19!'
+                  ) : (
+                    'FREE LIFETIME ACCESS ends Nov 19! Sign up now to become a Founding Member.'
+                  )}
                 </p>
-                {!isVeryUrgent && (
+                {!user && !isVeryUrgent && (
                   <div className="flex items-center gap-1 sm:gap-2">
                     <span
                       className={`font-mono font-bold text-base sm:text-lg lg:text-xl px-3 py-1 rounded-md ${
@@ -116,28 +121,48 @@ export default function DeadlineBanner() {
                     </span>
                   </div>
                 )}
+                {user && (
+                  <span className="text-xs sm:text-sm font-semibold">
+                    Lifetime free access secured
+                  </span>
+                )}
               </div>
             </div>
 
             {/* CTA Button */}
-            <Link
-              to="/signup"
-              className={`${
-                isVeryUrgent || isUrgent
-                  ? 'bg-white text-red-600 hover:bg-red-50 shadow-2xl ring-4 ring-white/50 animate-bounce'
-                  : 'bg-white text-amber-600 hover:bg-amber-50'
-              } px-5 sm:px-6 py-2 sm:py-2.5 rounded-lg font-bold text-sm sm:text-base transition-all whitespace-nowrap flex-shrink-0`}
-              aria-label="Sign up for free lifetime access"
-            >
-              {isVeryUrgent ? '🚨 Sign Up NOW!' : '✨ Sign Up Free'}
-            </Link>
+            {!user ? (
+              <Link
+                to="/signup"
+                className={`${
+                  isVeryUrgent || isUrgent
+                    ? 'bg-white text-red-600 hover:bg-red-50 shadow-2xl ring-4 ring-white/50 animate-bounce'
+                    : 'bg-white text-amber-600 hover:bg-amber-50'
+                } px-5 sm:px-6 py-2 sm:py-2.5 rounded-lg font-bold text-sm sm:text-base transition-all whitespace-nowrap flex-shrink-0`}
+                aria-label="Sign up for free lifetime access"
+              >
+                {isVeryUrgent ? '🚨 Sign Up NOW!' : '✨ Sign Up Free'}
+              </Link>
+            ) : (
+              <Link
+                to="/app"
+                className="bg-white text-green-600 hover:bg-green-50 px-5 sm:px-6 py-2 sm:py-2.5 rounded-lg font-bold text-sm sm:text-base transition-all whitespace-nowrap flex-shrink-0"
+                aria-label="Go to dashboard"
+              >
+                Go to Dashboard →
+              </Link>
+            )}
           </div>
         </div>
       </div>
     )
   }
 
-  // AFTER DEADLINE: Show trial banner (dismissible)
+  // AFTER DEADLINE: Show trial banner (dismissible) only for non-authenticated users
+  if (user) {
+    // Hide banner for authenticated users after deadline
+    return null
+  }
+
   return (
     <div
       className="bg-gradient-to-r from-blue-700 to-blue-900 text-white shadow-lg"

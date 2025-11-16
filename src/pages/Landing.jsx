@@ -120,15 +120,15 @@ export default function Landing() {
         </div>
 
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-          Military Transition Toolkit - Everything You Need to Transition from Active Duty to Civilian Life in One Place
+          Military Transition Toolkit - Everything You Need to Navigate Your Military Transition and VA Benefits
         </h1>
 
         <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-          Built for E5-E7s separating in the next 12-24 months. Translate your military experience to civilian resumes, compare veteran benefits across all 50 states, organize your VA disability claim evidence, calculate retirement pay, and track job applications.
+          Whether you're separating in 12 months or separated 10 years ago - translate military experience to civilian resumes, organize VA disability claim evidence with 110+ conditions, compare veteran benefits across all 50 states, calculate retirement pay, and track your transition timeline.
         </p>
 
         <p className="text-lg text-slate-400 mb-8 max-w-3xl mx-auto">
-          Not a claims filing service. Not a resume writer. A complete toolkit that helps YOU do it yourself - like TurboTax for your entire military transition.
+          Not a claims filing service. Not a resume writer. A complete toolkit that helps YOU do it yourself - like TurboTax for your entire military transition and VA claims.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
