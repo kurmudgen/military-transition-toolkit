@@ -144,14 +144,56 @@ export default function ResourcesPartners() {
             <h2 className="text-3xl font-bold text-white">Recommended Reading</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Your Next Mission */}
             <ResourceCard
-              title="Transition Books"
-              description="Curated list of top-rated military transition books"
-              link="https://www.amazon.com/shop/militarytransitiontoolkit?utm_source=mtt&utm_medium=referral&utm_campaign=resources-page"
-              linkText="View Reading List"
+              title="Your Next Mission"
+              description="By Lida Citroen - Essential guide for veteran career transition and personal branding"
+              link="https://www.amazon.com/dp/1632651483?tag=militarytra05-20"
+              linkText="View on Amazon"
               small={true}
             />
+
+            {/* The Veteran's Playbook */}
+            <ResourceCard
+              title="The Veteran's Playbook"
+              description="By Glenn Hubbard - Proven strategies for successful transition to civilian life"
+              link="https://www.amazon.com/dp/B07H3V6JYM?tag=militarytra05-20"
+              linkText="View on Amazon"
+              small={true}
+            />
+
+            {/* Combat to College */}
+            <ResourceCard
+              title="Combat to College"
+              description="By Jillian Ventiera - Navigate higher education with your military benefits"
+              link="https://www.amazon.com/dp/1948080001?tag=militarytra05-20"
+              linkText="View on Amazon"
+              small={true}
+            />
+
+            {/* Recruit or Die */}
+            <ResourceCard
+              title="Recruit or Die"
+              description="By Ryan McManus - Build your veteran hiring program and team"
+              link="https://www.amazon.com/dp/1544510527?tag=militarytra05-20"
+              linkText="View on Amazon"
+              small={true}
+            />
+          </div>
+
+          {/* Browse More Link */}
+          <div className="mt-6 text-center">
+            <a
+              href="https://www.amazon.com/s?k=military+transition&tag=militarytra05-20"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackButtonClick('Resource Click - Browse More Books')}
+              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold transition-colors"
+            >
+              Browse more military transition books on Amazon
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </div>
         </section>
 
