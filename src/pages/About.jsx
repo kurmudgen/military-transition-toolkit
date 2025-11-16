@@ -75,7 +75,7 @@ export default function About() {
               <li>Provide 60 days advance notice</li>
               <li>Grandfather in all current members</li>
               <li>Keep core transition tools free</li>
-              <li>Charge only for premium add-on features</li>
+              <li>Keep all core features free</li>
             </ul>
           </div>
 

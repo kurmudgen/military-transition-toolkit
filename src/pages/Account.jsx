@@ -149,8 +149,8 @@ export default function Account() {
               </>
             )}
 
-            <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-              {subscription && subscription.plan_id !== 'free' ? (
+            {subscription && subscription.plan_id !== 'free' && (
+              <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
                 <button
                   onClick={handleManageBilling}
                   disabled={managingBilling}
@@ -158,15 +158,8 @@ export default function Account() {
                 >
                   {managingBilling ? 'Opening...' : 'Manage Subscription'}
                 </button>
-              ) : (
-                <button
-                  onClick={() => navigate('/pricing')}
-                  className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-colors"
-                >
-                  Upgrade to Premium
-                </button>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
 

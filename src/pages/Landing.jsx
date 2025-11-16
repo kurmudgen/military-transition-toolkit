@@ -360,7 +360,7 @@ export default function Landing() {
               Explore Free Tools →
             </Link>
             <p className="text-blue-200 text-sm mt-3">
-              Start with free tools • Upgrade for premium features
+              100% free • No credit card required
             </p>
           </div>
         </div>
@@ -392,7 +392,7 @@ export default function Landing() {
               <ul className="text-gray-700 dark:text-slate-300 space-y-2">
                 <li>✓ Personalized timeline based on your situation</li>
                 <li>✓ Track completion progress</li>
-                <li>✓ Secure cloud sync across devices (Premium)</li>
+                <li>✓ Secure cloud sync across devices</li>
               </ul>
             </div>
             <div className="flex-1 bg-gray-100 dark:bg-slate-700 rounded-lg p-6 text-center">
@@ -507,7 +507,7 @@ export default function Landing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-slate-300 text-lg mb-4">
-            Core features free forever. Premium options available.
+            100% free for all servicemembers and veterans.
           </p>
           <div className="inline-block px-6 py-3 bg-yellow-500/20 border-2 border-yellow-500 rounded-lg">
             <p className="text-yellow-400 font-bold text-sm md:text-base">
@@ -590,7 +590,7 @@ export default function Landing() {
             </div>
             <p className="text-purple-400 text-xs font-semibold mb-4">No subscriptions, no renewals</p>
             <ul className="space-y-2 mb-6 text-sm">
-              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">Everything in Premium</span></li>
+              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">All features included</span></li>
               <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">Lifetime access</span></li>
               <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">All future features</span></li>
               <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">No recurring fees</span></li>
@@ -609,7 +609,7 @@ export default function Landing() {
               ⚠️ Lifetime Free Access Ends Nov 19
             </h3>
             <p className="text-slate-300 mb-6 text-lg">
-              Sign up by Nov 19 and get <strong className="text-white">lifetime premium access</strong> at no cost - forever.
+              Create your free account and get <strong className="text-white">lifetime access</strong> to all features - forever.
             </p>
             <div className="grid md:grid-cols-2 gap-4 text-sm text-left mb-6">
               <div className="bg-slate-800/50 rounded-lg p-4">

@@ -139,12 +139,7 @@ export default function JobSearch({ previewMode = false }) {
       console.log('✓ Job saved to database')
     } catch (err) {
       console.error('Error saving job:', err)
-      if (err.message.includes('Free tier')) {
-        setShowUpgradeModal(true)
-        trackButtonClick('Save Job Blocked')
-      } else {
-        setError('Failed to save job. Please try again.')
-      }
+      setError('Failed to save job. Please try again.')
     } finally {
       setSaving(false)
     }
@@ -564,15 +559,6 @@ export default function JobSearch({ previewMode = false }) {
         />
       )}
 
-        {/* Upgrade Modal */}
-        {showUpgradeModal && (
-          <UpgradePrompt
-            variant="modal"
-            title="Upgrade to Premium"
-            message="Free users can save up to 5 jobs. Upgrade to Premium for unlimited saved jobs and applications!"
-            onClose={() => setShowUpgradeModal(false)}
-          />
-        )}
       </div>
     </>
   )

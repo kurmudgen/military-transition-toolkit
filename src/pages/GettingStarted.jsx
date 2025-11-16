@@ -99,13 +99,13 @@ export default function GettingStarted() {
           </Link>
         </div>
 
-        {/* Premium Features Teaser */}
+        {/* Free Account Benefits */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">
-            Want More? Go Premium
+            Save Your Progress - Create a Free Account
           </h2>
           <p className="text-blue-100 text-lg mb-6 max-w-2xl mx-auto">
-            Unlock VA Claims Builder, Resume Builder, Job Tracker, and cloud storage to save your work across devices
+            Get full access to VA Claims Builder, Resume Builder, Job Tracker, and cloud storage to save your work across devices
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8 text-left max-w-3xl mx-auto">
@@ -128,15 +128,15 @@ export default function GettingStarted() {
 
           <div className="text-center">
             <Link
-              to="/pricing"
+              to="/signup"
               className="inline-block px-10 py-4 bg-white text-blue-600 hover:bg-blue-50 font-bold rounded-lg text-lg transition-colors shadow-xl"
             >
-              View Premium Plans
+              Create Free Account
             </Link>
           </div>
 
           <p className="text-blue-200 text-sm mt-4">
-            From $7/month or $250 lifetime • All features included
+            100% free • No credit card required • All features included
           </p>
         </div>
       </div>
