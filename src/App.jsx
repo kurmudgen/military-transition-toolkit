@@ -13,6 +13,7 @@ import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 import RefundPolicy from './pages/RefundPolicy'
 import Pricing from './pages/Pricing'
+import ResourcesPartners from './pages/ResourcesPartners'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import TerminalLeaveCalculator from './pages/TerminalLeaveCalculator'
@@ -60,6 +61,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/resources" element={<ResourcesPartners />} />
 
           {/* Auth pages */}
           <Route path="/login" element={<Login />} />

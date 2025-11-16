@@ -301,6 +301,11 @@ export default function Layout() {
               </h3>
               <ul className="space-y-3">
                 <li>
+                  <Link to="/resources" className="text-slate-400 hover:text-white transition-colors text-sm">
+                    Resources & Partners
+                  </Link>
+                </li>
+                <li>
                   <a
                     href="https://docs.google.com/document/d/1pJ0rHGXtb9g3txue9hsiN-kritb-_ZAml1r6P2axq98/edit?usp=sharing"
                     target="_blank"
