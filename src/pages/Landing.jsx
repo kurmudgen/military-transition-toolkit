@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import AnnouncementBanner from '../components/AnnouncementBanner'
 
 export default function Landing() {
   const { user } = useAuth()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Announcement Banner */}
+      <AnnouncementBanner />
+
       {/* Navigation Bar */}
       <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
