@@ -26,6 +26,9 @@ export default function Landing() {
               <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">
                 Blog
               </Link>
+              <Link to="/state-benefits" className="text-slate-300 hover:text-white transition-colors">
+                State Benefits
+              </Link>
               <Link to="/app/about" className="text-slate-300 hover:text-white transition-colors">
                 About
               </Link>
