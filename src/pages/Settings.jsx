@@ -4,9 +4,6 @@ import { useAuth } from '../contexts/AuthContext'
 import AnalyticsDashboard from '../components/AnalyticsDashboard'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { generateTransitionPlanPDF } from '../utils/pdfExport'
-import { shouldHidePaymentUI } from '../utils/promoConfig'
-import { getUserSubscription, createCustomerPortalSession } from '../services/subscriptionService'
-import { STRIPE_PLANS, getPlanById } from '../lib/stripe'
 import { auditService } from '../services/auditService'
 import { accountDeletionService } from '../services/accountDeletionService'
 import { getUserProfile, updateUserProfile } from '../services/profileService'
@@ -15,9 +12,6 @@ export default function Settings() {
   const [importStatus, setImportStatus] = useState('')
   const [importError, setImportError] = useState('')
   const [showAnalytics, setShowAnalytics] = useState(false)
-  const [subscription, setSubscription] = useState(null)
-  const [loadingSubscription, setLoadingSubscription] = useState(true)
-  const [managingBilling, setManagingBilling] = useState(false)
   const [separationStatus, setSeparationStatus] = useState('transitioning')
   const [situation, setSituation] = useState(null)
   const [situationUpdateMessage, setSituationUpdateMessage] = useState('')
@@ -32,7 +26,6 @@ export default function Settings() {
   useEffect(() => {
     document.title = 'Settings - Military Transition Toolkit'
     trackPageView('Settings')
-    loadSubscription()
     loadRecentActivity()
     loadDeletionEstimate()
     loadUserProfile()
@@ -81,17 +74,6 @@ export default function Settings() {
       setDeletionEstimate(estimate)
     } catch (error) {
       console.error('Error loading deletion estimate:', error)
-    }
-  }
-
-  const loadSubscription = async () => {
-    try {
-      const sub = await getUserSubscription()
-      setSubscription(sub)
-    } catch (error) {
-      console.error('Error loading subscription:', error)
-    } finally {
-      setLoadingSubscription(false)
     }
   }
 
@@ -245,8 +227,7 @@ export default function Settings() {
       '• All appointments (' + (deletionEstimate?.breakdown?.['Appointments'] || 0) + ')\n' +
       '• All resumes (' + (deletionEstimate?.breakdown?.['Resumes'] || 0) + ')\n' +
       '• All job applications (' + (deletionEstimate?.breakdown?.['Job Applications'] || 0) + ')\n' +
-      '• All checklist progress\n' +
-      '• Your subscription (will be canceled)\n\n' +
+      '• All checklist progress\n\n' +
       'This action CANNOT be undone!\n\n' +
       'Are you absolutely sure?'
     )
@@ -369,41 +350,6 @@ export default function Settings() {
     setTimeout(() => setStatusUpdateMessage(''), 5000)
 
     trackButtonClick(`Update Separation Status - ${newStatus}`)
-  }
-
-  const handleManageBilling = async () => {
-    try {
-      setManagingBilling(true)
-      trackButtonClick('Manage Subscription')
-
-      console.log('Creating customer portal session...')
-      const portalUrl = await createCustomerPortalSession()
-      console.log('Portal URL received:', portalUrl)
-
-      if (!portalUrl) {
-        throw new Error('No portal URL returned')
-      }
-
-      // Redirect to Stripe Customer Portal
-      window.location.href = portalUrl
-    } catch (error) {
-      console.error('Error opening billing portal:', error)
-
-      // Show user-friendly error message
-      let errorMessage = 'Failed to open billing portal. '
-      if (error.message?.includes('No subscription found')) {
-        errorMessage += 'No active subscription found. Please contact support if you believe this is an error.'
-      } else if (error.message?.includes('Unauthorized')) {
-        errorMessage += 'Authentication failed. Please try logging out and back in.'
-      } else {
-        errorMessage += error.message || 'Please try again or contact support.'
-      }
-
-      setImportError(errorMessage)
-      setTimeout(() => setImportError(''), 8000)
-    } finally {
-      setManagingBilling(false)
-    }
   }
 
   return (
@@ -816,136 +762,6 @@ export default function Settings() {
             </div>
           </div>
 
-          {/* Optional Donation - Promo Mode Only */}
-          {/* TODO: Wire up donation checkout after soft launch */}
-          {shouldHidePaymentUI() && (
-            <div className="hidden bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-2 border-purple-300 dark:border-purple-700 rounded-lg p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                ☕ Love This Tool?
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                This tool is <strong>100% free</strong> for all servicemembers and veterans. If you find it valuable and want to support continued development, consider buying me a coffee. It's completely optional and genuinely appreciated! 🙏
-              </p>
-              <a
-                href="https://donate.stripe.com/test_aEU5kU4xm8vt5gI000"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackButtonClick('Settings - Donation Button')}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl"
-              >
-                ☕ Buy Me a Coffee
-              </a>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
-                Donations are optional and help support continued development.
-              </p>
-            </div>
-          )}
-
-          {/* HIDDEN - Free model - Subscription Management section removed */}
-          {/*
-          {!loadingSubscription && (
-            <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
-              <h2 className="text-2xl font-semibold text-white mb-4">💳 Subscription Management</h2>
-
-              <div className="space-y-4">
-                <div>
-                  <label className="text-sm font-medium text-slate-400 block mb-1">
-                    Current Plan
-                  </label>
-                  <div className="flex items-baseline gap-2">
-                    <p className="text-2xl font-bold text-white">
-                      {subscription ? getPlanById(subscription.plan_id)?.name || 'Free' : 'Free'}
-                    </p>
-                    {subscription && subscription.plan_id !== 'free' && (
-                      <span className="text-slate-400">
-                        {getPlanById(subscription.plan_id)?.price > 0 && `$${getPlanById(subscription.plan_id).price}/${getPlanById(subscription.plan_id).interval}`}
-                      </span>
-                    )}
-                  </div>
-                </div>
-
-                {/* Show subscription details for active paid plans */}
-                {/*
-                {subscription && subscription.status === 'active' && subscription.plan_id !== 'free' && (
-                  <>
-                    <div>
-                      <label className="text-sm font-medium text-slate-400 block mb-1">
-                        Status
-                      </label>
-                      <p className="text-white capitalize">
-                        {subscription.status}
-                        {subscription.cancel_at_period_end && (
-                          <span className="text-orange-400 ml-2">
-                            (Cancels at period end)
-                          </span>
-                        )}
-                      </p>
-                    </div>
-
-                    {subscription.current_period_end && (
-                      <div>
-                        <label className="text-sm font-medium text-slate-400 block mb-1">
-                          {subscription.cancel_at_period_end ? 'Active Until' : 'Next Billing Date'}
-                        </label>
-                        <p className="text-white">
-                          {new Date(subscription.current_period_end).toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                          })}
-                        </p>
-                      </div>
-                    )}
-                  </>
-                )}
-
-                {/* Special badge for Founding Members */}
-                {/*
-                {subscription && subscription.plan_id === 'founding_member' && (
-                  <div className="p-4 bg-gradient-to-r from-yellow-900/30 to-amber-900/30 border border-yellow-600 rounded-lg">
-                    <p className="text-yellow-400 font-semibold flex items-center gap-2">
-                      🏆 Founding Member - Lifetime Free Access
-                    </p>
-                    <p className="text-sm text-yellow-300/80 mt-1">
-                      Thank you for your early support!
-                    </p>
-                  </div>
-                )}
-
-                {/* Action buttons */}
-                {/*
-                <div className="pt-4 border-t border-slate-700">
-                  {subscription && subscription.plan_id !== 'free' && subscription.plan_id !== 'founding_member' && subscription.stripe_customer_id ? (
-                    <button
-                      onClick={handleManageBilling}
-                      disabled={managingBilling}
-                      className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      {managingBilling ? 'Opening Portal...' : '⚙️ Manage Subscription'}
-                    </button>
-                  ) : subscription?.plan_id !== 'founding_member' && !shouldHidePaymentUI() && (
-                    <button
-                      onClick={() => navigate('/pricing')}
-                      className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-semibold rounded-lg transition-colors"
-                    >
-                      ⭐ Upgrade to Premium
-                    </button>
-                  )}
-                </div>
-
-                <div className="text-sm text-slate-400 pt-2">
-                  <p className="flex items-start gap-2">
-                    <span className="text-blue-400">ℹ️</span>
-                    <span>
-                      Manage your subscription allows you to update payment methods, change plans, or cancel your subscription at any time.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
-          */}
-
           {/* Session Timeout Settings */}
           <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-2xl font-semibold text-white mb-4">⏱️ Session Timeout Settings</h2>
@@ -1094,7 +910,6 @@ export default function Settings() {
                 <li>All resumes and job applications</li>
                 <li>All checklist progress</li>
                 <li>All settings, preferences, and audit logs</li>
-                <li>Your subscription (will be automatically canceled)</li>
               </ul>
               <div className="mt-4 p-3 bg-red-900/40 border border-red-600 rounded-lg">
                 <p className="font-semibold text-red-300">

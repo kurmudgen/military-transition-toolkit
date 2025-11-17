@@ -11,11 +11,7 @@ import Landing from './pages/Landing'
 import GettingStarted from './pages/GettingStarted'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
-import RefundPolicy from './pages/RefundPolicy'
-import Pricing from './pages/Pricing'
 import ResourcesPartners from './pages/ResourcesPartners'
-import Donate from './pages/Donate'
-import DonateSuccess from './pages/DonateSuccess'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import TerminalLeaveCalculator from './pages/TerminalLeaveCalculator'
@@ -65,11 +61,7 @@ function App() {
           <Route path="/getting-started" element={<GettingStarted />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/refund-policy" element={<RefundPolicy />} />
-          <Route path="/pricing" element={<Pricing />} />
           <Route path="/resources" element={<ResourcesPartners />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/donate/success" element={<DonateSuccess />} />
 
           {/* Auth pages */}
           <Route path="/login" element={<Login />} />

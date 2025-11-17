@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
-import { hasActiveSubscription, SUBSCRIPTION_FEATURES } from '../utils/subscriptionCheck'
-import { LockClosedIcon } from '@heroicons/react/24/outline'
 import AIAssistant from './AIAssistant'
 
 // Initialize dark mode from localStorage before component mounts
@@ -18,8 +16,7 @@ export default function Layout() {
   const navigate = useNavigate()
   const { signOut, user } = useAuth()
 
-  // Check if user has active premium subscription
-  const isPremium = hasActiveSubscription(user)
+  // All features are free - no premium gates
 
   // Apply dark mode class on mount and when darkMode changes
   useEffect(() => {
@@ -45,36 +42,38 @@ export default function Layout() {
     navigate('/login')
   }
 
-  // All navigation links for mobile menu
+  // All navigation links for mobile menu - all features free
   const navLinks = [
-    { to: '/app', label: 'Home', feature: null, premium: false },
-    { to: '/blog', label: 'Blog', feature: null, premium: false },
-    { to: '/app/progress', label: 'Progress Dashboard', feature: 'progress_tracking', premium: true },
-    { to: '/app/reminders', label: 'Reminders', feature: 'reminders', premium: true },
-    { to: '/app/resources', label: 'Resources', feature: 'resources', premium: false },
-    { to: '/app/retirement', label: '20+ Year Retirement', feature: 'retirement', premium: true },
-    { to: '/app/medboard', label: 'MedBoard', feature: 'medboard', premium: true },
-    { to: '/app/separation', label: 'Separation (<20 Yrs)', feature: 'separation', premium: true },
-    { to: '/app/state-benefits', label: 'State Benefits', feature: 'state_benefits', premium: false },
-    { to: '/app/va-claims-builder', label: 'VA Claims Builder', feature: 'claims_builder', premium: true },
-    { to: '/app/retirement-calculator', label: 'Pay Calculator', feature: 'retirement_calculator', premium: false },
-    { to: '/app/appointments', label: 'Appointments & Tracking', feature: 'appointments', premium: true },
-    { to: '/app/resume-builder', label: 'Resume Builder', feature: 'resume_builder', premium: true },
-    { to: '/app/job-search', label: 'Job Search', feature: 'job_tracker', premium: true },
-    { to: '/app/profile', label: 'Profile', feature: null, premium: false },
-    { to: '/app/settings', label: 'Settings', feature: null, premium: false },
-    { to: '/app/faq', label: 'FAQ', feature: null, premium: false },
-    { to: '/app/about', label: 'About', feature: null, premium: false }
+    { to: '/app', label: 'Home' },
+    { to: '/blog', label: 'Blog' },
+    { to: '/app/progress', label: 'Progress Dashboard' },
+    { to: '/app/reminders', label: 'Reminders' },
+    { to: '/app/resources', label: 'Resources' },
+    { to: '/app/retirement', label: '20+ Year Retirement' },
+    { to: '/app/medboard', label: 'MedBoard' },
+    { to: '/app/separation', label: 'Separation (<20 Yrs)' },
+    { to: '/app/state-benefits', label: 'State Benefits' },
+    { to: '/state-benefits', label: 'State Benefits Comparison' },
+    { to: '/app/va-claims-builder', label: 'VA Claims Builder' },
+    { to: '/app/retirement-calculator', label: 'Pay Calculator' },
+    { to: '/app/appointments', label: 'Appointments & Tracking' },
+    { to: '/app/resume-builder', label: 'Resume Builder' },
+    { to: '/app/job-search', label: 'Job Search' },
+    { to: '/app/profile', label: 'Profile' },
+    { to: '/app/settings', label: 'Settings' },
+    { to: '/app/faq', label: 'FAQ' },
+    { to: '/app/about', label: 'About' }
   ]
 
-  // Simplified desktop navigation - only essential items
+  // Simplified desktop navigation - only essential items - all free
   const desktopNavLinks = [
-    { to: '/app', label: 'Home', feature: null, premium: false },
-    { to: '/blog', label: 'Blog', feature: null, premium: false },
-    { to: '/app/progress', label: 'Progress', feature: 'progress_tracking', premium: true },
-    { to: '/app/resources', label: 'Resources', feature: 'resources', premium: false },
-    { to: '/app/va-claims-builder', label: 'VA Claims', feature: 'claims_builder', premium: true, highlighted: true }, // Highlighted for separated veterans
-    { to: '/app/settings', label: 'Settings', feature: null, premium: false }
+    { to: '/app', label: 'Home' },
+    { to: '/blog', label: 'Blog' },
+    { to: '/app/progress', label: 'Progress' },
+    { to: '/app/resources', label: 'Resources' },
+    { to: '/state-benefits', label: 'State Benefits' },
+    { to: '/app/va-claims-builder', label: 'VA Claims', highlighted: true },
+    { to: '/app/settings', label: 'Settings' }
   ]
 
   const isActive = (path) => location.pathname === path
@@ -97,7 +96,6 @@ export default function Layout() {
             {/* Desktop Navigation - Simplified */}
             <div className="hidden lg:flex lg:space-x-6 lg:items-center">
               {desktopNavLinks.map((link) => {
-                const showLock = link.premium && !isPremium
                 return (
                   <Link
                     key={link.to}
@@ -113,7 +111,6 @@ export default function Layout() {
                     } inline-flex items-center gap-1.5 px-4 py-2 border-b-2 text-sm font-semibold transition-colors rounded-t-md`}
                   >
                     {link.highlighted && <span>🏥</span>}
-                    {showLock && <LockClosedIcon className="w-4 h-4" />}
                     {link.label}
                   </Link>
                 )
@@ -189,9 +186,7 @@ export default function Layout() {
         {/* Mobile menu */}
         <div className={`lg:hidden ${mobileMenuOpen ? 'block' : 'hidden'}`}>
           <div className="pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 max-h-[70vh] overflow-y-auto">
-            {navLinks.map((link) => {
-              const showLock = link.premium && !isPremium
-              return (
+            {navLinks.map((link) => (
                 <Link
                   key={link.to}
                   to={link.to}
@@ -202,11 +197,10 @@ export default function Layout() {
                       : 'border-transparent text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 hover:text-gray-700 dark:hover:text-white'
                   } flex items-center gap-2 pl-3 pr-4 py-3 border-l-4 text-base font-medium transition-colors`}
                 >
-                  {showLock && <LockClosedIcon className="w-4 h-4" />}
                   {link.label}
                 </Link>
               )
-            })}
+            )}
 
             {/* Logout Button - Mobile */}
             <button
@@ -264,21 +258,6 @@ export default function Layout() {
                   <Link to="/contact" className="text-slate-400 hover:text-white transition-colors text-sm">
                     Partner with Us
                   </Link>
-                </li>
-                <li>
-                  <Link to="/donate" className="text-slate-400 hover:text-white transition-colors text-sm">
-                    Support MTT (Optional)
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://buymeacoffee.com/militarytransition"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-400 hover:text-white transition-colors text-sm"
-                  >
-                    ☕ Buy Me a Coffee
-                  </a>
                 </li>
                 <li>
                   <a

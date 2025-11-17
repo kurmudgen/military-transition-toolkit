@@ -46,18 +46,15 @@ export default function About() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-yellow-400 mb-3">Community Support</h3>
-                <p className="text-slate-300 mb-4">
-                  One-time donations help cover immediate infrastructure costs like servers and development tools.
+                <h3 className="text-xl font-semibold text-green-400 mb-3">Affiliate Partnerships</h3>
+                <p className="text-slate-300 mb-3">
+                  MTT includes affiliate links to quality products and services we've researched and believe
+                  can help transitioning servicemembers. When you make a purchase through these links, we may
+                  earn a small commission at no additional cost to you. This helps keep MTT free for everyone.
                 </p>
-                <a
-                  href="https://buymeacoffee.com/militarytransition"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold rounded-lg transition-colors shadow-lg"
-                >
-                  ☕ Support the Mission
-                </a>
+                <p className="text-slate-400 text-sm">
+                  We only recommend products and services we would use ourselves. All opinions and reviews are our own.
+                </p>
               </div>
             </div>
           </div>
@@ -66,7 +63,7 @@ export default function About() {
           <div className="bg-slate-800 rounded-lg shadow-lg p-6 sm:p-8 border border-slate-700">
             <h2 className="text-2xl font-bold text-white mb-4">Our Commitment</h2>
             <p className="text-slate-300 mb-4">
-              As long as partnerships and community donations sustain operations, MTT stays free for all servicemembers.
+              As long as affiliate partnerships sustain operations, MTT stays free for all servicemembers.
             </p>
             <p className="text-slate-300 mb-3">
               If we ever face circumstances requiring fees to maintain operations, we will:
@@ -160,16 +157,6 @@ export default function About() {
                 official policy or position of the Department of Defense, any military service, or the U.S. Government.
               </p>
             </div>
-          </div>
-
-          {/* Optional Donation Link */}
-          <div className="text-center mt-8">
-            <Link
-              to="/donate"
-              className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
-            >
-              Optional: Support MTT with a one-time donation
-            </Link>
           </div>
         </div>
       </div>

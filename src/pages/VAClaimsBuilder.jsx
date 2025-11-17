@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { isPromoModeActive } from '../utils/promoConfig'
-import UpgradeOverlay from '../components/UpgradeOverlay'
 import { useAuth } from '../contexts/AuthContext'
 import { AUTH_LOADING_TIMEOUT } from '../utils/constants'
 import {
@@ -1051,21 +1050,6 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      {/* Preview Mode Overlay (SECURITY: Phase 3 - CRITICAL-003 fix) */}
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="VA Claims Builder"
-          description="Build your VA disability claims with guided evidence tracking, medical records management, and expert recommendations."
-          benefits={[
-            'Track multiple VA disability conditions',
-            'Organize medical evidence and documentation',
-            'Generate claim statements',
-            'Cloud storage for all your claims data',
-            'Sync across all devices'
-          ]}
-        />
-      )}
-
       {/* Demo Mode Banner */}
       {demoMode && (
         <div className="mb-6 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-lg p-4 shadow-lg">
