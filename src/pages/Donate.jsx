@@ -23,7 +23,7 @@ export default function Donate() {
     trackButtonClick(`Donate - $${donationAmount}`);
 
     try {
-      const response = await fetch('/.netlify/functions/create-donation', {
+      const response = await fetch('/api/create-donation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: donationAmount * 100 }) // Convert to cents
