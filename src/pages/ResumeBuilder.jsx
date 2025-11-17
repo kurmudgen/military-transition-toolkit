@@ -534,21 +534,6 @@ export default function ResumeBuilder({ previewMode = false }) {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
-      {/* Preview Mode Overlay (SECURITY: Phase 3 - CRITICAL-003 fix) */}
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="Resume Builder"
-          description="Create ATS-optimized resumes with military-to-civilian translation and cloud storage."
-          benefits={[
-            'Military-to-civilian job translation',
-            'ATS-optimized templates',
-            'Export to PDF',
-            'Cloud storage and sync',
-            'Multiple resume versions'
-          ]}
-        />
-      )}
-
       <div className={`max-w-7xl mx-auto px-4 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-3">

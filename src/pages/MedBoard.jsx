@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getChecklistProgress, updateChecklistProgress } from '../services/checklistService'
-import UpgradeOverlay from '../components/UpgradeOverlay'
 
 // Resource link mapping for MedBoard checklist items
 const RESOURCE_LINKS = {
@@ -355,20 +354,6 @@ export default function MedBoard({ previewMode = false }) {
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="Medical Board (MEB/PEB) Tracker"
-          description="Navigate the medical separation process with organized tracking and guidance."
-          benefits={[
-            'Track MEB/PEB process stages',
-            'Organize medical documentation',
-            'Timeline management',
-            'Cloud storage and sync',
-            'Export medical board records'
-          ]}
-        />
-      )}
-
       <div className={`bg-white dark:bg-gray-800 rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
           MedBoard / Medical Separation (IDES)

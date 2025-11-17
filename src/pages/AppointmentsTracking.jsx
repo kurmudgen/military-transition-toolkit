@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { isPromoModeActive } from '../utils/promoConfig'
-import UpgradeOverlay from '../components/UpgradeOverlay'
 import {
   getAppointments,
   createAppointment,
@@ -321,21 +320,6 @@ export default function AppointmentsTracking({ previewMode = false }) {
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      {/* Preview Mode Overlay (SECURITY: Phase 3 - CRITICAL-003 fix) */}
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="Appointments Tracking"
-          description="Track all your medical appointments, VA claims appointments, and transition milestones in one place."
-          benefits={[
-            'Track medical and VA appointments',
-            'Set reminders and notifications',
-            'Cloud sync across devices',
-            'Export appointment history',
-            'Integration with calendar'
-          ]}
-        />
-      )}
-
       <div className={`bg-white rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         {/* Error Alert */}
         {error && (
