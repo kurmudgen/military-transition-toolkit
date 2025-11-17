@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Layout from '../../components/Layout';
 import StateBenefitsComparison from './StateBenefitsComparison';
 import PersonalizedCalculator from '../../components/StateBenefits/PersonalizedCalculator';
 import MovingCostCalculator from '../../components/StateBenefits/MovingCostCalculator';
@@ -9,65 +10,66 @@ export default function StateBenefitsIndex() {
   const [activeTab, setActiveTab] = useState('comparison');
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">State Benefits Comparison Tool</h1>
-          <p className="text-2xl text-blue-100 mb-6">
-            The most comprehensive veteran state benefits comparison platform. Find the perfect state for your transition.
+    <Layout>
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Page Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+            State Benefits Comparison
+          </h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+            Compare veteran benefits across all 50 states. Find the perfect place for your transition.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-              <p className="text-sm text-blue-100">STATES ANALYZED</p>
-              <p className="text-3xl font-bold">50</p>
+
+          {/* Quick Stats */}
+          <div className="grid grid-cols-3 gap-4 max-w-2xl">
+            <div className="bg-blue-50 dark:bg-blue-900/20 px-4 py-3 rounded-lg text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">STATES</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white">50</p>
             </div>
-            <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-              <p className="text-sm text-blue-100">DATA POINTS</p>
-              <p className="text-3xl font-bold">500+</p>
+            <div className="bg-green-50 dark:bg-green-900/20 px-4 py-3 rounded-lg text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">DATA POINTS</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white">500+</p>
             </div>
-            <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-              <p className="text-sm text-blue-100">AVG SAVINGS FOUND</p>
-              <p className="text-3xl font-bold">$12K/yr</p>
+            <div className="bg-purple-50 dark:bg-purple-900/20 px-4 py-3 rounded-lg text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">AVG SAVINGS</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white">$12K/yr</p>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Tab Navigation */}
-      <div className="bg-white border-b-2 border-gray-200">
-        <div className="container mx-auto px-4">
+        {/* Tab Navigation */}
+        <div className="bg-white dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700 rounded-t-lg mb-6">
           <div className="flex overflow-x-auto">
             <button
               onClick={() => setActiveTab('comparison')}
-              className={`px-6 py-4 font-semibold border-b-4 ${activeTab === 'comparison' ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-600 hover:text-gray-900'}`}
+              className={`px-4 md:px-6 py-3 md:py-4 font-semibold whitespace-nowrap border-b-4 transition-colors ${activeTab === 'comparison' ? 'border-blue-600 text-blue-600 dark:text-blue-400' : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'}`}
             >
-              📊 Side-by-Side Comparison
+              📊 Compare
             </button>
             <button
               onClick={() => setActiveTab('calculator')}
-              className={`px-6 py-4 font-semibold border-b-4 ${activeTab === 'calculator' ? 'border-green-600 text-green-600' : 'border-transparent text-gray-600 hover:text-gray-900'}`}
+              className={`px-4 md:px-6 py-3 md:py-4 font-semibold whitespace-nowrap border-b-4 transition-colors ${activeTab === 'calculator' ? 'border-green-600 text-green-600 dark:text-green-400' : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'}`}
             >
-              🎯 Personalized Calculator
+              🎯 Calculator
             </button>
             <button
               onClick={() => setActiveTab('moving')}
-              className={`px-6 py-4 font-semibold border-b-4 ${activeTab === 'moving' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-600 hover:text-gray-900'}`}
+              className={`px-4 md:px-6 py-3 md:py-4 font-semibold whitespace-nowrap border-b-4 transition-colors ${activeTab === 'moving' ? 'border-purple-600 text-purple-600 dark:text-purple-400' : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'}`}
             >
-              🚚 Moving Cost Calculator
+              🚚 Moving
             </button>
             <button
               onClick={() => setActiveTab('rankings')}
-              className={`px-6 py-4 font-semibold border-b-4 ${activeTab === 'rankings' ? 'border-yellow-600 text-yellow-600' : 'border-transparent text-gray-600 hover:text-gray-900'}`}
+              className={`px-4 md:px-6 py-3 md:py-4 font-semibold whitespace-nowrap border-b-4 transition-colors ${activeTab === 'rankings' ? 'border-yellow-600 text-yellow-600 dark:text-yellow-400' : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'}`}
             >
-              🏆 State Rankings
+              🏆 Rankings
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Content Area */}
-      <div className="container mx-auto px-4 py-8">
+        {/* Content Area */}
+        <div>
 
         {/* Comparison Tab */}
         {activeTab === 'comparison' && (
@@ -187,26 +189,8 @@ export default function StateBenefitsIndex() {
           </div>
         )}
 
-      </div>
-
-      {/* Bottom CTA */}
-      <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Find Your Perfect State?</h2>
-          <p className="text-xl text-green-100 mb-6">
-            Create a free account to save your comparisons, get personalized recommendations, and access all MTT tools.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <button className="bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-gray-100 font-bold text-lg">
-              Create Free Account - 30 Seconds
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 font-bold text-lg">
-              Log In
-            </button>
-          </div>
-          <p className="text-sm text-green-100 mt-3">Always free. No credit card. No catch.</p>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

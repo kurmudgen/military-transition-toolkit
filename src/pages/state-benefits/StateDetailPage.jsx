@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import Layout from '../../components/Layout';
 import { statesData } from '../../data/stateBenefitsData';
 
 export default function StateDetailPage() {
@@ -7,15 +8,18 @@ export default function StateDetailPage() {
 
   if (!state) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">State Not Found</h1>
-          <p className="text-gray-600 mb-6">The state you're looking for doesn't exist in our database yet.</p>
-          <Link to="/state-benefits" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+      <Layout>
+        <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">State Not Found</h1>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">The state you're looking for doesn't exist in our database yet.</p>
+          <Link
+            to="/state-benefits"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-semibold"
+          >
             ← Back to Comparison
           </Link>
         </div>
-      </div>
+      </Layout>
     );
   }
 
@@ -29,22 +33,26 @@ export default function StateDetailPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-blue-900 text-white py-8">
-        <div className="container mx-auto px-4">
-          <Link to="/state-benefits" className="text-blue-200 hover:text-white mb-4 inline-block">
+    <Layout>
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Page Header */}
+        <div className="mb-8">
+          <Link
+            to="/state-benefits"
+            className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 mb-4 inline-block font-semibold"
+          >
             ← Back to Comparison
           </Link>
-          <h1 className="text-4xl font-bold mb-2">{state.name} Veteran Benefits - Complete Guide 2025</h1>
-          <div className="flex items-center space-x-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+            {state.name} Veteran Benefits - Complete Guide 2025
+          </h1>
+          <div className="flex items-center gap-4">
             <div className="text-2xl">{renderStars(Math.round(state.overallRating / 20))}</div>
-            <div className="text-xl">Overall Rating: {state.overallRating}/100</div>
+            <div className="text-xl text-gray-700 dark:text-gray-300">
+              Overall Rating: <span className="font-bold text-blue-600 dark:text-blue-400">{state.overallRating}/100</span>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="container mx-auto px-4 py-8">
 
         {/* Quick Stats */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
@@ -426,6 +434,6 @@ export default function StateDetailPage() {
         </div>
 
       </div>
-    </div>
+    </Layout>
   );
 }
