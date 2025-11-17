@@ -50,6 +50,10 @@ import FAQ from './pages/FAQ'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 
+// New State Benefits Tool pages
+import StateBenefitsIndex from './pages/state-benefits/StateBenefitsIndex'
+import StateDetailPage from './pages/state-benefits/StateDetailPage'
+
 function App() {
   return (
     <ErrorBoundary>
@@ -80,6 +84,10 @@ function App() {
 
           {/* Calculator pages (public access) */}
           <Route path="/calculator/terminal-leave" element={<TerminalLeaveCalculator />} />
+
+          {/* State Benefits Tool (public access - browsing free, saving requires account) */}
+          <Route path="/state-benefits" element={<StateBenefitsIndex />} />
+          <Route path="/state-benefits/:stateCode" element={<StateDetailPage />} />
 
           {/* Tier 1: Public access pages (no login required, fully functional) */}
           <Route path="/public/state-benefits" element={<StateBenefits publicMode />} />
