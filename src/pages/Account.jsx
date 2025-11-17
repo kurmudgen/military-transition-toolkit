@@ -1,59 +1,14 @@
-import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { UserCircleIcon, CreditCardIcon, BellIcon } from '@heroicons/react/24/outline'
+import { UserCircleIcon } from '@heroicons/react/24/outline'
 import { useAuth } from '../contexts/AuthContext'
-import { getUserSubscription, createCustomerPortalSession } from '../services/subscriptionService'
-import { STRIPE_PLANS, getPlanById } from '../lib/stripe'
 
 export default function Account() {
   const { user, signOut } = useAuth()
   const navigate = useNavigate()
-  const [subscription, setSubscription] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [managingBilling, setManagingBilling] = useState(false)
-
-  useEffect(() => {
-    loadSubscription()
-  }, [])
-
-  const loadSubscription = async () => {
-    try {
-      const sub = await getUserSubscription()
-      setSubscription(sub)
-    } catch (error) {
-      console.error('Error loading subscription:', error)
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  const handleManageBilling = async () => {
-    try {
-      setManagingBilling(true)
-      const portalUrl = await createCustomerPortalSession()
-      window.location.href = portalUrl
-    } catch (error) {
-      console.error('Error opening billing portal:', error)
-      alert('Failed to open billing portal. Please try again.')
-    } finally {
-      setManagingBilling(false)
-    }
-  }
 
   const handleSignOut = async () => {
     await signOut()
     navigate('/login')
-  }
-
-  const currentPlan = subscription ? getPlanById(subscription.plan_id) : STRIPE_PLANS.FREE
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-        <p className="ml-4 text-gray-600 dark:text-gray-400">Loading account...</p>
-      </div>
-    )
   }
 
   return (
@@ -97,124 +52,44 @@ export default function Account() {
           </div>
         </div>
 
-        {/* Subscription Section */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-          <div className="flex items-center gap-3 mb-4">
-            <CreditCardIcon className="h-6 w-6 text-gray-600 dark:text-gray-400" />
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Subscription</h2>
-          </div>
-
-          <div className="space-y-4">
-            <div>
-              <label className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                Current Plan
-              </label>
-              <div className="flex items-baseline gap-2 mt-1">
-                <p className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {currentPlan.name}
-                </p>
-                {currentPlan.price > 0 && (
-                  <span className="text-gray-600 dark:text-gray-400">
-                    ${currentPlan.price}/{currentPlan.interval}
-                  </span>
-                )}
-              </div>
-            </div>
-
-            {subscription && subscription.status === 'active' && subscription.plan_id !== 'free' && (
-              <>
-                <div>
-                  <label className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                    Status
-                  </label>
-                  <p className="text-gray-900 dark:text-white capitalize">
-                    {subscription.status}
-                    {subscription.cancel_at_period_end && (
-                      <span className="text-orange-600 dark:text-orange-400 ml-2">
-                        (Cancels at period end)
-                      </span>
-                    )}
-                  </p>
-                </div>
-                {subscription.current_period_end && (
-                  <div>
-                    <label className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                      {subscription.cancel_at_period_end ? 'Active Until' : 'Renews On'}
-                    </label>
-                    <p className="text-gray-900 dark:text-white">
-                      {new Date(subscription.current_period_end).toLocaleDateString()}
-                    </p>
-                  </div>
-                )}
-              </>
-            )}
-
-            {subscription && subscription.plan_id !== 'free' && (
-              <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                <button
-                  onClick={handleManageBilling}
-                  disabled={managingBilling}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors disabled:opacity-50"
-                >
-                  {managingBilling ? 'Opening...' : 'Manage Subscription'}
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Plan Features */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            Your Plan Includes
-          </h3>
+        {/* All Features Free */}
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg border-2 border-green-200 dark:border-green-700 p-6">
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            🎉 100% Free - All Features Unlocked
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-4">
+            Military Transition Toolkit is completely free for all servicemembers and veterans.
+            All features are unlocked with your free account.
+          </p>
           <ul className="space-y-2">
-            {currentPlan.features.map((feature, index) => (
-              <li key={index} className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
-                <span className="text-green-600 dark:text-green-400 mt-0.5">✓</span>
-                {feature}
-              </li>
-            ))}
+            <li className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+              <span className="text-green-600 dark:text-green-400 mt-0.5">✓</span>
+              Unlimited resumes with PDF export
+            </li>
+            <li className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+              <span className="text-green-600 dark:text-green-400 mt-0.5">✓</span>
+              Full VA Claims Builder access
+            </li>
+            <li className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+              <span className="text-green-600 dark:text-green-400 mt-0.5">✓</span>
+              Complete state benefits comparison tool
+            </li>
+            <li className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+              <span className="text-green-600 dark:text-green-400 mt-0.5">✓</span>
+              Job search and application tracking
+            </li>
+            <li className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+              <span className="text-green-600 dark:text-green-400 mt-0.5">✓</span>
+              All transition checklists and resources
+            </li>
+            <li className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
+              <span className="text-green-600 dark:text-green-400 mt-0.5">✓</span>
+              Cloud storage for all your data
+            </li>
           </ul>
-        </div>
-
-        {/* Usage Limits */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Usage Limits</h3>
-          <div className="space-y-3">
-            <div>
-              <div className="flex justify-between text-sm mb-1">
-                <span className="text-gray-600 dark:text-gray-400">Resumes</span>
-                <span className="text-gray-900 dark:text-white">
-                  {currentPlan.limits.resumes === Infinity ? 'Unlimited' : `${currentPlan.limits.resumes} max`}
-                </span>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between text-sm mb-1">
-                <span className="text-gray-600 dark:text-gray-400">Saved Jobs</span>
-                <span className="text-gray-900 dark:text-white">
-                  {currentPlan.limits.savedJobs === Infinity ? 'Unlimited' : `${currentPlan.limits.savedJobs} max`}
-                </span>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between text-sm mb-1">
-                <span className="text-gray-600 dark:text-gray-400">PDF Exports</span>
-                <span className="text-gray-900 dark:text-white">
-                  {currentPlan.limits.exports ? 'Enabled' : 'Disabled'}
-                </span>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-between text-sm mb-1">
-                <span className="text-gray-600 dark:text-gray-400">AI Questions</span>
-                <span className="text-gray-900 dark:text-white">
-                  {currentPlan.limits.aiQuestions === 0 ? 'Not available' : `${currentPlan.limits.aiQuestions}/day`}
-                </span>
-              </div>
-            </div>
-          </div>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
+            Supported by affiliate partnerships - no subscriptions, no payments, no catch.
+          </p>
         </div>
       </div>
     </div>
