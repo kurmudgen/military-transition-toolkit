@@ -13,11 +13,6 @@ export default function StateBenefitsComparison() {
 
   const availableStates = Object.keys(statesData);
 
-  // Debug logging
-  console.log('StateBenefitsComparison - statesData loaded:', !!statesData);
-  console.log('StateBenefitsComparison - number of states:', availableStates.length);
-  console.log('StateBenefitsComparison - selectedStates:', selectedStates);
-
   const handleStateChange = (index, newState) => {
     const newSelected = [...selectedStates];
     newSelected[index] = newState;
@@ -67,26 +62,6 @@ export default function StateBenefitsComparison() {
 
   return (
     <div>
-      {/* EMERGENCY DEBUG: Highly visible test block */}
-      <div style={{
-        backgroundColor: '#FF0000',
-        padding: '40px',
-        color: '#FFFFFF',
-        fontSize: '32px',
-        fontWeight: 'bold',
-        border: '10px solid #000000',
-        margin: '20px 0',
-        textAlign: 'center'
-      }}>
-        🚨 DEBUG TEST - IF YOU SEE THIS RED BOX, COMPONENT IS RENDERING! 🚨
-        <div style={{ fontSize: '24px', marginTop: '20px' }}>
-          States loaded: {availableStates.length}
-        </div>
-        <div style={{ fontSize: '18px', marginTop: '10px' }}>
-          First 5 states: {availableStates.slice(0, 5).join(', ')}
-        </div>
-      </div>
-
       {/* State Selector */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 mb-6">
         <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
