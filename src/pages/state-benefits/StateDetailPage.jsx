@@ -1,8 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
 import Layout from '../../components/Layout';
 import { statesData } from '../../data/stateBenefitsData';
 
 export default function StateDetailPage() {
+  const { user } = useAuth();
   const { stateCode } = useParams();
   const state = statesData[stateCode?.toUpperCase()];
 
@@ -12,33 +14,51 @@ export default function StateDetailPage() {
   console.log('StateDetailPage - state found:', !!state);
   console.log('StateDetailPage - available states:', Object.keys(statesData).length);
 
+  // "State Not Found" content
+  const NotFoundContent = () => (
+    <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">State Not Found</h1>
+      <p className="text-gray-600 dark:text-gray-400 mb-6">The state you're looking for doesn't exist in our database yet.</p>
+      <Link
+        to="/state-benefits"
+        className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-semibold"
+      >
+        ← Back to Comparison
+      </Link>
+    </div>
+  );
+
   if (!state) {
+    // If user is logged in, use Layout
+    if (user) {
+      return (
+        <Layout>
+          <NotFoundContent />
+        </Layout>
+      );
+    }
+
+    // If not logged in, use public navigation
     return (
-      <Layout>
-        {/* DEBUG: State not found */}
-        <div style={{
-          backgroundColor: '#FFA500',
-          padding: '30px',
-          color: '#000000',
-          fontSize: '28px',
-          fontWeight: 'bold',
-          border: '8px solid #FF0000',
-          margin: '20px',
-          textAlign: 'center'
-        }}>
-          🟠 DEBUG: State "{stateCode}" NOT FOUND in data! Available: {Object.keys(statesData).length} 🟠
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <Link to="/" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
+                Military Transition Toolkit
+              </Link>
+              <div className="flex items-center gap-4">
+                <Link to="/state-benefits" className="text-blue-400 font-semibold">State Benefits</Link>
+                <Link to="/login" className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors">Log In</Link>
+                <Link to="/signup" className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">Sign Up</Link>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div className="dark">
+          <NotFoundContent />
         </div>
-        <div className="max-w-7xl mx-auto px-4 py-16 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">State Not Found</h1>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">The state you're looking for doesn't exist in our database yet.</p>
-          <Link
-            to="/state-benefits"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-semibold"
-          >
-            ← Back to Comparison
-          </Link>
-        </div>
-      </Layout>
+      </div>
     );
   }
 
@@ -51,23 +71,9 @@ export default function StateDetailPage() {
     return '⭐'.repeat(Math.min(5, Math.round(rating)));
   };
 
-  return (
-    <Layout>
-      {/* DEBUG: State found successfully */}
-      <div style={{
-        backgroundColor: '#00FF00',
-        padding: '30px',
-        color: '#000000',
-        fontSize: '28px',
-        fontWeight: 'bold',
-        border: '8px solid #000000',
-        margin: '20px',
-        textAlign: 'center'
-      }}>
-        🟢 DEBUG: State "{state.name}" ({stateCode}) FOUND! Rating: {state.overallRating}/100 🟢
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 py-8">
+  // Main state detail content component (reused for both authenticated and public views)
+  const StateDetailContent = () => (
+    <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Page Header */}
         <div className="mb-8">
           <Link
@@ -467,6 +473,89 @@ export default function StateDetailPage() {
         </div>
 
       </div>
-    </Layout>
+    </div>
+  );
+
+  // If user is logged in, use Layout.jsx for consistent navigation
+  if (user) {
+    return (
+      <Layout>
+        <StateDetailContent />
+      </Layout>
+    );
+  }
+
+  // If not logged in, use public marketing navigation
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Navigation Bar */}
+      <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo/Brand */}
+            <Link to="/" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
+              Military Transition Toolkit
+            </Link>
+
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center gap-6">
+              <a href="/#features" className="text-slate-300 hover:text-white transition-colors">
+                Features
+              </a>
+              <Link to="/resources" className="text-slate-300 hover:text-white transition-colors">
+                Resources
+              </Link>
+              <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">
+                Blog
+              </Link>
+              <Link to="/state-benefits" className="text-blue-400 font-semibold">
+                State Benefits
+              </Link>
+              <Link to="/about" className="text-slate-300 hover:text-white transition-colors">
+                About
+              </Link>
+              <Link to="/faq" className="text-slate-300 hover:text-white transition-colors">
+                FAQ
+              </Link>
+
+              {/* Auth buttons */}
+              <Link
+                to="/login"
+                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
+              >
+                Log In
+              </Link>
+              <Link
+                to="/signup"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+              >
+                Sign Up
+              </Link>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center gap-3">
+              <Link
+                to="/login"
+                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
+              >
+                Log In
+              </Link>
+              <Link
+                to="/signup"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+              >
+                Sign Up
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Use dark mode wrapper for public view */}
+      <div className="dark">
+        <StateDetailContent />
+      </div>
+    </div>
   );
 }

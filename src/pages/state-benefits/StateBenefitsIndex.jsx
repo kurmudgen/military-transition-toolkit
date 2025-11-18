@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
 import Layout from '../../components/Layout';
 import StateBenefitsComparison from './StateBenefitsComparison';
 import PersonalizedCalculator from '../../components/StateBenefits/PersonalizedCalculator';
@@ -7,43 +8,11 @@ import MovingCostCalculator from '../../components/StateBenefits/MovingCostCalcu
 import { statesData, stateRankings } from '../../data/stateBenefitsData';
 
 export default function StateBenefitsIndex() {
+  const { user } = useAuth();
   const [activeTab, setActiveTab] = useState('comparison');
 
-  return (
-    <>
-      {/* EMERGENCY DEBUG: Test OUTSIDE Layout */}
-      <div style={{
-        backgroundColor: '#FF00FF',
-        padding: '40px',
-        color: '#FFFFFF',
-        fontSize: '32px',
-        fontWeight: 'bold',
-        border: '10px solid #000000',
-        margin: '0',
-        textAlign: 'center',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 9999
-      }}>
-        🔴 CRITICAL DEBUG: StateBenefitsIndex COMPONENT IS RENDERING! 🔴
-      </div>
-
-      <Layout>
-        {/* DEBUG: Test INSIDE Layout */}
-        <div style={{
-          backgroundColor: '#FFFF00',
-          padding: '30px',
-          color: '#000000',
-          fontSize: '28px',
-          fontWeight: 'bold',
-          border: '8px solid #FF0000',
-          margin: '10px',
-          textAlign: 'center'
-        }}>
-          🟡 DEBUG: INSIDE Layout wrapper! Active Tab: {activeTab} 🟡
-        </div>
+  // Main content component (reused for both authenticated and public views)
+  const StateBenefitsContent = () => (
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Page Header */}
@@ -225,7 +194,88 @@ export default function StateBenefitsIndex() {
 
         </div>
       </div>
-    </Layout>
-    </>
+  );
+
+  // If user is logged in, use Layout.jsx for consistent navigation
+  if (user) {
+    return (
+      <Layout>
+        <StateBenefitsContent />
+      </Layout>
+    );
+  }
+
+  // If not logged in, use public marketing navigation
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Navigation Bar */}
+      <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo/Brand */}
+            <Link to="/" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
+              Military Transition Toolkit
+            </Link>
+
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center gap-6">
+              <a href="/#features" className="text-slate-300 hover:text-white transition-colors">
+                Features
+              </a>
+              <Link to="/resources" className="text-slate-300 hover:text-white transition-colors">
+                Resources
+              </Link>
+              <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">
+                Blog
+              </Link>
+              <Link to="/state-benefits" className="text-blue-400 font-semibold">
+                State Benefits
+              </Link>
+              <Link to="/about" className="text-slate-300 hover:text-white transition-colors">
+                About
+              </Link>
+              <Link to="/faq" className="text-slate-300 hover:text-white transition-colors">
+                FAQ
+              </Link>
+
+              {/* Auth buttons */}
+              <Link
+                to="/login"
+                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
+              >
+                Log In
+              </Link>
+              <Link
+                to="/signup"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+              >
+                Sign Up
+              </Link>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center gap-3">
+              <Link
+                to="/login"
+                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
+              >
+                Log In
+              </Link>
+              <Link
+                to="/signup"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+              >
+                Sign Up
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Use dark mode wrapper for public view */}
+      <div className="dark">
+        <StateBenefitsContent />
+      </div>
+    </div>
   );
 }
