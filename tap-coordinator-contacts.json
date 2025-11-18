@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "name": "Fort Cavazos (formerly Fort Hood)",
+    "location": "Texas",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["254-288-2227", "254-288-5627", "254-553-6363"],
+      "email": null,
+      "notes": "Phone numbers may be DSN. Contact Bob Schumacher at 254-288-0827."
+    }
+  },
+  {
+    "id": 2,
+    "name": "Fort Liberty (formerly Fort Bragg)",
+    "location": "North Carolina",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["910-396-7188", "910-396-2227", "910-432-4725"],
+      "email": "usarmy.bragg.usag.mbx.dhr-tap-career-skills-program@army.mil",
+      "address": "Building 4-2843, 1st Floor, Wing C, Fort Bragg, NC 28310"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Fort Campbell",
+    "location": "Kentucky/Tennessee",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["270-798-5000", "270-798-4613"],
+      "email": "CampbellClearingPapers@army.mil",
+      "address": "5661 Screaming Eagle Blvd., Fort Campbell, KY 42223",
+      "hours": "8 a.m. - 4 p.m. Monday - Friday",
+      "csp_phone": "270-798-3195",
+      "csp_email": "cspfortcampbell@army.mil"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Joint Base Lewis-McChord (JBLM)",
+    "location": "Washington",
+    "branch": "Joint",
+    "contacts": {
+      "phone": ["253-967-3258"],
+      "email": "usarmy.jblm.imcom.list.dpfr-tap-outreach@army.mil",
+      "address": "Hawk Career Center, Bldg. 11577, 42nd Division Drive",
+      "csp_email": "usarmy.jblm.imcom.list.dhr-career-skills-program@army.mil"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Fort Moore (formerly Fort Benning)",
+    "location": "Georgia",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["706-545-2309"],
+      "email": null,
+      "address": "8150 Marne Rd, Fort Benning, GA 31909"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Naval Station Norfolk",
+    "location": "Virginia",
+    "branch": "Navy",
+    "contacts": {
+      "phone": ["757-444-6089", "757-444-3522"],
+      "email": null,
+      "address": "West C Street, Bldg U-93, Naval Station Norfolk, VA 23505",
+      "hours": "Monday 0630-1630, Tuesday-Wednesday 0730-1630, Thursday 0630-1630, Friday 0730-1400, Saturday-Sunday Closed"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Naval Base San Diego",
+    "location": "California",
+    "branch": "Navy",
+    "contacts": {
+      "phone": ["619-556-9866"],
+      "dsn": "312-526-9866",
+      "email": null,
+      "address": "CNRSW Fleet and Family Support Center, 3005 Corbina Alley Building 263, San Diego, CA 92136"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Marine Corps Base Camp Pendleton",
+    "location": "California",
+    "branch": "Marine Corps",
+    "contacts": {
+      "phone": ["760-725-6324", "760-725-6635", "760-725-6207", "760-725-4395"],
+      "mcas_phone": "760-763-1086",
+      "email": "cptrsprs@usmc.mil",
+      "address": "BLDG 13150 Camp Pendleton, CA"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Fort Bliss",
+    "location": "Texas",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["915-568-7996", "915-569-3870", "915-568-1452"],
+      "email": null,
+      "notes": "TAP counselors available at SFAC (Soldier and Family Assistance Center)"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Fort Stewart",
+    "location": "Georgia",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["912-767-2234", "912-767-2252"],
+      "hunter_phone": "912-315-5854",
+      "email": "[email protected]",
+      "address": "Building 621, 2nd Floor, 972 William H. Wilson Ave, Fort Stewart, GA 31314",
+      "hours": "Monday-Friday 8 a.m. to 4:30 p.m.",
+      "hunter_address": "Hunter Army Airfield, Building 1289"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Joint Base San Antonio - Fort Sam Houston",
+    "location": "Texas",
+    "branch": "Joint",
+    "contacts": {
+      "phone": ["210-221-2705", "210-221-2964", "210-221-0936"],
+      "email": "802fss.fsyr.centerbox@us.af.mil",
+      "address": "2484 Stanley Road, JBSA-Fort Sam Houston, TX 78234"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Joint Base San Antonio - Lackland",
+    "location": "Texas",
+    "branch": "Joint",
+    "contacts": {
+      "phone": ["210-671-3722", "800-621-3725"],
+      "email": "802fss.fsfr@us.af.mil",
+      "address": "Military & Family Readiness Center, Building 1249, 2160 Kenly Avenue, JBSA-Lackland, TX 78236"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Joint Base San Antonio - Randolph",
+    "location": "Texas",
+    "branch": "Joint",
+    "contacts": {
+      "phone": ["210-652-5321"],
+      "email": "randolphmfrc@us.af.mil",
+      "address": "Building 693, JBSA-Randolph"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Eglin Air Force Base",
+    "location": "Florida",
+    "branch": "Air Force",
+    "contacts": {
+      "phone": ["850-882-9060", "850-882-9062", "850-882-9061"],
+      "email": null,
+      "address": "Airman & Family Readiness Center, 502 West Van Matre Avenue, Building 205, Eglin AFB, FL 32542",
+      "website": "https://eglin96fss.com/mfrc/mfrc-tap/"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Fort Carson",
+    "location": "Colorado",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["719-526-1002", "719-526-1001", "719-524-7310", "719-526-1818"],
+      "email": null,
+      "address": "Building 1218, Room 135",
+      "hours": "Walk-in hours: Monday-Friday from 9 a.m."
+    }
+  },
+  {
+    "id": 16,
+    "name": "Fort Riley",
+    "location": "Kansas",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["785-239-2278", "785-239-8948"],
+      "email": null,
+      "address": "212 Custer Avenue, Building 212, Room 101, Fort Riley, KS 66442"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Marine Corps Base Camp Lejeune",
+    "location": "North Carolina",
+    "branch": "Marine Corps",
+    "contacts": {
+      "phone": ["910-451-3212", "910-451-3754", "910-451-3781"],
+      "new_river_phone": "910-449-4914",
+      "email": "clnrutc@usmc.mil",
+      "address": "Bldg. 825 Stone St. Room 414, Camp Lejeune, NC 28547",
+      "alternate_address": "Russell Marine and Family Services Center, Bldg 824, Camp Lejeune, NC 28547"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Joint Base Pearl Harbor-Hickam",
+    "location": "Hawaii",
+    "branch": "Joint",
+    "contacts": {
+      "phone": ["808-474-1999"],
+      "email": null,
+      "notes": "Military and Family Support Center provides TAP services"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Fort Eisenhower (formerly Fort Gordon)",
+    "location": "Georgia",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["706-791-7333"],
+      "email": null,
+      "notes": "For service members 18 months from separating or 24 months from retiring"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Joint Base Elmendorf-Richardson (JBER) - Air Force",
+    "location": "Alaska",
+    "branch": "Air Force",
+    "contacts": {
+      "phone": ["907-552-6619"],
+      "email": null,
+      "address": "Building #7135, Fighter Drive, JBER, AK 99506",
+      "website": "http://www.jberlife.com/"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Joint Base Elmendorf-Richardson (JBER) - Army SFL-TAP",
+    "location": "Alaska",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["907-384-3501"],
+      "email": null,
+      "address": "600 Richardson Drive, Room 248, Fort Richardson 99505",
+      "website": "https://www.jber.jb.mil/Services-Resources/Military-Family-Readiness/"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Fort Polk",
+    "location": "Louisiana",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["726-780-1018"],
+      "email": "usarmy.polk.id-readiness.mbx.tap@army.mil",
+      "address": "7460 Colorado Avenue, Building 660"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Wright-Patterson Air Force Base",
+    "location": "Ohio",
+    "branch": "Air Force",
+    "contacts": {
+      "phone": ["937-257-3592"],
+      "dsn": "312-986-2946",
+      "email": "WPAFBTAPWORKFLOW@US.AF.MIL",
+      "address": "2000 Allbrook Drive, Suite 3, 88 FSS/FSFR, Wright-Patterson AFB, OH 45433",
+      "coordinators": ["Shonté Gonzalez", "DeAdria Habersham", "Kelly Hebert"]
+    }
+  },
+  {
+    "id": 24,
+    "name": "Fort Drum",
+    "location": "New York",
+    "branch": "Army",
+    "contacts": {
+      "phone": ["315-772-1090", "315-772-7581", "315-772-6984", "315-772-4767"],
+      "email": null,
+      "address": "Clark Hall, Building 10720, Room B2-18, Mount Belvedere Boulevard, Fort Drum, NY 13602"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Naval Air Station Jacksonville",
+    "location": "Florida",
+    "branch": "Navy",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "address": "Fleet and Family Support Center, Bldg. 27 Ranger Street, Jacksonville, FL 32212",
+      "notes": "TAP workshops scheduled through Command Career Counselor"
+    }
+  }
+]
