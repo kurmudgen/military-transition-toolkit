@@ -10,20 +10,40 @@ export default function StateBenefitsIndex() {
   const [activeTab, setActiveTab] = useState('comparison');
 
   return (
-    <Layout>
-      {/* EMERGENCY DEBUG: Test if this page loads at all */}
+    <>
+      {/* EMERGENCY DEBUG: Test OUTSIDE Layout */}
       <div style={{
-        backgroundColor: '#FFFF00',
-        padding: '30px',
-        color: '#000000',
-        fontSize: '28px',
+        backgroundColor: '#FF00FF',
+        padding: '40px',
+        color: '#FFFFFF',
+        fontSize: '32px',
         fontWeight: 'bold',
-        border: '8px solid #FF0000',
-        margin: '10px',
-        textAlign: 'center'
+        border: '10px solid #000000',
+        margin: '0',
+        textAlign: 'center',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 9999
       }}>
-        🟡 DEBUG: StateBenefitsIndex IS RENDERING! Active Tab: {activeTab} 🟡
+        🔴 CRITICAL DEBUG: StateBenefitsIndex COMPONENT IS RENDERING! 🔴
       </div>
+
+      <Layout>
+        {/* DEBUG: Test INSIDE Layout */}
+        <div style={{
+          backgroundColor: '#FFFF00',
+          padding: '30px',
+          color: '#000000',
+          fontSize: '28px',
+          fontWeight: 'bold',
+          border: '8px solid #FF0000',
+          margin: '10px',
+          textAlign: 'center'
+        }}>
+          🟡 DEBUG: INSIDE Layout wrapper! Active Tab: {activeTab} 🟡
+        </div>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Page Header */}
@@ -206,5 +226,6 @@ export default function StateBenefitsIndex() {
         </div>
       </div>
     </Layout>
+    </>
   );
 }
