@@ -31,7 +31,6 @@ import Resources from './pages/Resources'
 import Retirement from './pages/Retirement'
 import MedBoard from './pages/MedBoard'
 import SeparationUnder20 from './pages/SeparationUnder20'
-import StateBenefits from './pages/StateBenefits'
 import VAClaimsBuilder from './pages/VAClaimsBuilder'
 import RetirementCalculator from './pages/RetirementCalculator'
 import AppointmentsTracking from './pages/AppointmentsTracking'
@@ -82,7 +81,6 @@ function App() {
           <Route path="/state-benefits/:stateCode" element={<StateDetailPage />} />
 
           {/* Tier 1: Public access pages (no login required, fully functional) */}
-          <Route path="/public/state-benefits" element={<StateBenefits publicMode />} />
           <Route path="/public/retirement-calculator" element={<RetirementCalculator publicMode />} />
           <Route path="/public/resources" element={<Resources publicMode />} />
           <Route path="/public/sample-checklist" element={<Retirement publicMode sampleMode />} />
@@ -120,7 +118,6 @@ function App() {
             <Route path="retirement" element={<Retirement />} />
             <Route path="medboard" element={<MedBoard />} />
             <Route path="separation" element={<SeparationUnder20 />} />
-            <Route path="state-benefits" element={<StateBenefits />} />
             <Route path="va-claims-builder" element={<VAClaimsBuilder />} />
             <Route path="retirement-calculator" element={<RetirementCalculator />} />
             <Route path="appointments" element={<AppointmentsTracking />} />

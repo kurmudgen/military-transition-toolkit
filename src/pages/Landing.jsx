@@ -173,9 +173,6 @@ export default function Landing() {
             >
               Explore Resources & Tools
             </Link>
-            <Link to="/contact" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors shadow-lg">
-              Interested in Partnering?
-            </Link>
           </div>
         </div>
       </div>
