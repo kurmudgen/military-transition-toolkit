@@ -33,10 +33,10 @@ export default function Landing() {
               <Link to="/state-benefits" className="text-slate-300 hover:text-white transition-colors">
                 State Benefits
               </Link>
-              <Link to="/app/about" className="text-slate-300 hover:text-white transition-colors">
+              <Link to="/about" className="text-slate-300 hover:text-white transition-colors">
                 About
               </Link>
-              <Link to="/app/faq" className="text-slate-300 hover:text-white transition-colors">
+              <Link to="/faq" className="text-slate-300 hover:text-white transition-colors">
                 FAQ
               </Link>
 
@@ -530,8 +530,8 @@ export default function Landing() {
               <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Company</h4>
               <ul className="space-y-2 text-gray-600 dark:text-slate-400 text-sm">
                 <li><Link to="/blog" className="hover:text-gray-900 dark:hover:text-white">Blog</Link></li>
-                <li><Link to="/app/about" className="hover:text-gray-900 dark:hover:text-white">About</Link></li>
-                <li><Link to="/app/faq" className="hover:text-gray-900 dark:hover:text-white">FAQ</Link></li>
+                <li><Link to="/about" className="hover:text-gray-900 dark:hover:text-white">About</Link></li>
+                <li><Link to="/faq" className="hover:text-gray-900 dark:hover:text-white">FAQ</Link></li>
                 <li><a href="mailto:support@formationlabs.net" className="hover:text-gray-900 dark:hover:text-white">Contact</a></li>
               </ul>
             </div>
