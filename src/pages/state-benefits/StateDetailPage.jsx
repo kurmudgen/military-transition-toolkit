@@ -6,6 +6,12 @@ export default function StateDetailPage() {
   const { stateCode } = useParams();
   const state = statesData[stateCode?.toUpperCase()];
 
+  // Debug logging
+  console.log('StateDetailPage - stateCode:', stateCode);
+  console.log('StateDetailPage - statesData loaded:', !!statesData);
+  console.log('StateDetailPage - state found:', !!state);
+  console.log('StateDetailPage - available states:', Object.keys(statesData).length);
+
   if (!state) {
     return (
       <Layout>

@@ -13,6 +13,11 @@ export default function StateBenefitsComparison() {
 
   const availableStates = Object.keys(statesData);
 
+  // Debug logging
+  console.log('StateBenefitsComparison - statesData loaded:', !!statesData);
+  console.log('StateBenefitsComparison - number of states:', availableStates.length);
+  console.log('StateBenefitsComparison - selectedStates:', selectedStates);
+
   const handleStateChange = (index, newState) => {
     const newSelected = [...selectedStates];
     newSelected[index] = newState;
@@ -38,6 +43,27 @@ export default function StateBenefitsComparison() {
     if (amount < 0) return `-$${Math.abs(amount).toLocaleString()}`;
     return `$${amount}`;
   };
+
+  // Safety check for data
+  if (!statesData || availableStates.length === 0) {
+    return (
+      <div className="bg-red-50 dark:bg-red-900/20 border-2 border-red-300 dark:border-red-700 rounded-lg p-8 text-center">
+        <h2 className="text-2xl font-bold text-red-900 dark:text-red-200 mb-4">⚠️ Data Loading Error</h2>
+        <p className="text-red-700 dark:text-red-300 mb-4">
+          State benefits data failed to load. This might be a temporary issue.
+        </p>
+        <p className="text-sm text-red-600 dark:text-red-400">
+          Available states: {availableStates.length} | Data loaded: {statesData ? 'Yes' : 'No'}
+        </p>
+        <button
+          onClick={() => window.location.reload()}
+          className="mt-4 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg"
+        >
+          Reload Page
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div>
