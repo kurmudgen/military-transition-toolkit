@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getChecklistProgress, updateChecklistProgress } from '../services/checklistService'
-import UpgradeOverlay from '../components/UpgradeOverlay'
 
 // Resource link mapping for checklist items
 const RESOURCE_LINKS = {
@@ -336,20 +335,6 @@ export default function SeparationUnder20({ previewMode = false }) {
 
   return (
     <div className="px-4 py-6 sm:px-0">
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="Separation Under 20 Years"
-          description="Navigate early separation with comprehensive planning tools and benefit calculators."
-          benefits={[
-            'Calculate separation benefits',
-            'Track separation checklist',
-            'Plan post-service career',
-            'Cloud storage for documents',
-            'Sync across all devices'
-          ]}
-        />
-      )}
-
       <div className={`bg-white dark:bg-gray-800 rounded-lg shadow p-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
           Separation Timeline (Under 20 Years)

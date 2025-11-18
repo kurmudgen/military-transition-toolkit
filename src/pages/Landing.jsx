@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import AnnouncementBanner from '../components/AnnouncementBanner'
 
 export default function Landing() {
   const { user } = useAuth()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Announcement Banner */}
+      <AnnouncementBanner />
+
       {/* Navigation Bar */}
       <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,6 +29,9 @@ export default function Landing() {
               </Link>
               <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">
                 Blog
+              </Link>
+              <Link to="/state-benefits" className="text-slate-300 hover:text-white transition-colors">
+                State Benefits
               </Link>
               <Link to="/app/about" className="text-slate-300 hover:text-white transition-colors">
                 About
@@ -146,28 +153,25 @@ export default function Landing() {
             <div>
               <h3 className="text-xl font-semibold text-white mb-3">How you can help keep MTT free:</h3>
               <ul className="space-y-2 text-slate-300">
-                <li>☕ One-time donations help cover server costs - every bit helps</li>
                 <li>🤝 Know an organization that might partner with us? Put us in touch</li>
                 <li>📢 Share MTT with others going through transition - growth helps attract partners</li>
+                <li>💼 Use our affiliate links when purchasing recommended services - helps at no cost to you</li>
               </ul>
             </div>
 
             <div className="bg-blue-900/30 border border-blue-700 rounded-lg p-4">
               <p className="text-blue-100">
-                <strong className="text-blue-300">Our commitment:</strong> As long as partnerships and community support sustain operations, MTT stays free. If circumstances change, current members will be grandfathered in.
+                <strong className="text-blue-300">Our commitment:</strong> As long as affiliate partnerships sustain operations, MTT stays free. If circumstances change, current members will be grandfathered in.
               </p>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/donate"
-              className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold rounded-lg text-center transition-colors shadow-lg"
+              to="/resources"
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors shadow-lg"
             >
-              ☕ Support the Mission
-            </Link>
-            <Link to="/contact" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors shadow-lg">
-              Interested in Partnering?
+              Explore Resources & Tools
             </Link>
           </div>
         </div>
@@ -476,104 +480,6 @@ export default function Landing() {
               <span className="text-green-400">✓</span>
               <span className="text-slate-300 text-sm">Never sell your data</span>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Pricing Section */}
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Simple, Transparent Pricing
-          </h2>
-          <p className="text-slate-300 text-lg">
-            100% free for all servicemembers and veterans.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {/* Free Tier */}
-          <div className="bg-slate-800 rounded-lg p-6 border-2 border-slate-700">
-            <h3 className="text-xl font-bold text-white mb-2">Free</h3>
-            <p className="text-slate-400 text-sm mb-4">Core transition features</p>
-            <div className="text-3xl font-bold text-white mb-6">
-              $0<span className="text-base text-slate-400">/forever</span>
-            </div>
-            <ul className="space-y-2 mb-6 text-sm">
-              <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">All transition checklists</span></li>
-              <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Basic calculators</span></li>
-              <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">State comparison</span></li>
-              <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Appointment tracking</span></li>
-              <li className="flex gap-2"><span className="text-green-400">✓</span><span className="text-slate-300">Resource library</span></li>
-            </ul>
-            <Link to="/app" className="block w-full py-2.5 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-center transition-colors text-sm">
-              Start Free
-            </Link>
-          </div>
-
-          {/* Monthly */}
-          <div className="bg-slate-800 rounded-lg p-6 border-2 border-slate-600">
-            <h3 className="text-xl font-bold text-white mb-2">Monthly</h3>
-            <p className="text-slate-400 text-sm mb-4">Pay as you go</p>
-            <div className="text-3xl font-bold text-white mb-6">
-              $7<span className="text-base text-slate-400">/month</span>
-            </div>
-            <ul className="space-y-2 mb-6 text-sm">
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Everything in Free</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">VA claims builder</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Statement generators</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Evidence tracker</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">PDF exports</span></li>
-            </ul>
-            <Link to="/pricing" className="block w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center transition-colors text-sm">
-              Subscribe Monthly
-            </Link>
-          </div>
-
-          {/* Annual - Best Value */}
-          <div className="bg-slate-800 rounded-lg p-6 border-2 border-blue-500 relative transform md:scale-105 shadow-xl">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-blue-500 text-white text-xs font-bold rounded-full">
-              BEST VALUE
-            </div>
-            <h3 className="text-xl font-bold text-white mb-2">Annual</h3>
-            <p className="text-slate-400 text-sm mb-4">Save $35/year</p>
-            <div className="text-3xl font-bold text-white mb-1">
-              $49<span className="text-base text-slate-400">/year</span>
-            </div>
-            <p className="text-green-400 text-xs font-semibold mb-4">Save 42% vs Monthly</p>
-            <ul className="space-y-2 mb-6 text-sm">
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Everything in Free</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">VA claims builder</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Statement generators</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">Evidence tracker</span></li>
-              <li className="flex gap-2"><span className="text-blue-400">✓</span><span className="text-slate-300">PDF exports</span></li>
-            </ul>
-            <Link to="/pricing" className="block w-full py-2.5 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold rounded-lg text-center transition-colors text-sm shadow-lg">
-              Subscribe Annual
-            </Link>
-          </div>
-
-          {/* Lifetime Access */}
-          <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/40 rounded-lg p-6 border-2 border-purple-500 relative pt-8">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-xs font-bold rounded-full whitespace-nowrap">
-              BEST FOR LONG-TERM
-            </div>
-            <h3 className="text-xl font-bold text-white mb-2">Lifetime</h3>
-            <p className="text-purple-400 text-sm mb-4">Pay once, use forever</p>
-            <div className="text-3xl font-bold text-white mb-1">
-              $250<span className="text-base text-slate-400">/lifetime</span>
-            </div>
-            <p className="text-purple-400 text-xs font-semibold mb-4">No subscriptions, no renewals</p>
-            <ul className="space-y-2 mb-6 text-sm">
-              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">All features included</span></li>
-              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">Lifetime access</span></li>
-              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">All future features</span></li>
-              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">No recurring fees</span></li>
-              <li className="flex gap-2"><span className="text-purple-400">✓</span><span className="text-slate-300">Priority support</span></li>
-            </ul>
-            <Link to="/pricing" className="block w-full py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold rounded-lg text-center transition-colors text-sm shadow-lg">
-              Get Lifetime Access
-            </Link>
           </div>
         </div>
       </div>

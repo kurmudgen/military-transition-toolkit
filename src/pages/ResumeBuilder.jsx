@@ -4,7 +4,6 @@ import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { getProfileData } from '../utils/profileAutoFill'
 import UseProfileButton from '../components/UseProfileButton'
 import { isPromoModeActive } from '../utils/promoConfig'
-import UpgradeOverlay from '../components/UpgradeOverlay'
 import { useAuth } from '../contexts/AuthContext'
 import { AUTH_LOADING_TIMEOUT } from '../utils/constants'
 import {
@@ -16,9 +15,6 @@ import {
   ACTION_VERBS,
   EXAMPLE_BULLETS
 } from '../utils/militaryTranslation'
-import { useFeatureAccess, useUsageLimits } from '../hooks/useFeatureAccess'
-import { FEATURES } from '../utils/featureGating'
-import UpgradePrompt, { PremiumBadge } from '../components/UpgradePrompt'
 import { generateResumePDF } from '../utils/pdfExport'
 import {
   getAllResumes,
@@ -29,12 +25,6 @@ import {
 
 export default function ResumeBuilder({ previewMode = false }) {
   const { user } = useAuth()
-
-  // Feature gating hooks
-  const { hasAccess: canExport, upgradeMessage: exportMessage } = useFeatureAccess(FEATURES.RESUME_EXPORT)
-  const { checkLimit } = useUsageLimits()
-  const [showUpgradeModal, setShowUpgradeModal] = useState(false)
-  const [upgradeModalMessage, setUpgradeModalMessage] = useState('')
 
   // Database loading/saving states
   const [loading, setLoading] = useState(true)
@@ -385,12 +375,6 @@ export default function ResumeBuilder({ previewMode = false }) {
           setCurrentResumeId(savedResume.id)
           trackButtonClick('Resume Builder - Save Resume')
         } catch (err) {
-          if (err.message.includes('Free tier')) {
-            setUpgradeModalMessage('Free users can only create 1 resume. Upgrade to Premium for unlimited resumes and exports!')
-            setShowUpgradeModal(true)
-            trackButtonClick('Resume Builder - Save Resume Blocked')
-            return
-          }
           throw err
         }
       }
@@ -458,14 +442,6 @@ export default function ResumeBuilder({ previewMode = false }) {
   }
 
   const exportToPDF = () => {
-    // Check if user has export permission (free tier = no exports)
-    if (!canExport) {
-      setUpgradeModalMessage(exportMessage)
-      setShowUpgradeModal(true)
-      trackButtonClick('Resume Builder - Export PDF Blocked')
-      return
-    }
-
     // Generate and download PDF
     trackButtonClick('Resume Builder - Export PDF')
     try {
@@ -558,21 +534,6 @@ export default function ResumeBuilder({ previewMode = false }) {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
-      {/* Preview Mode Overlay (SECURITY: Phase 3 - CRITICAL-003 fix) */}
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="Resume Builder"
-          description="Create ATS-optimized resumes with military-to-civilian translation and cloud storage."
-          benefits={[
-            'Military-to-civilian job translation',
-            'ATS-optimized templates',
-            'Export to PDF',
-            'Cloud storage and sync',
-            'Multiple resume versions'
-          ]}
-        />
-      )}
-
       <div className={`max-w-7xl mx-auto px-4 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-3">
@@ -1613,7 +1574,6 @@ export default function ResumeBuilder({ previewMode = false }) {
                       className="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition flex items-center gap-2"
                     >
                       📄 Export PDF
-                      {!canExport && <PremiumBadge size="sm" />}
                     </button>
                   </div>
                 </div>
@@ -1659,7 +1619,6 @@ export default function ResumeBuilder({ previewMode = false }) {
                   className="w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition flex items-center justify-center gap-2"
                 >
                   📄 Export PDF
-                  {!canExport && <PremiumBadge size="sm" />}
                 </button>
 
                 <button
@@ -2137,16 +2096,6 @@ export default function ResumeBuilder({ previewMode = false }) {
             100% optional • Helps keep MTT free for everyone
           </p>
         </div>
-      )}
-
-      {/* Upgrade Modal */}
-      {showUpgradeModal && (
-        <UpgradePrompt
-          variant="modal"
-          title="Upgrade to Premium"
-          message={upgradeModalMessage}
-          onClose={() => setShowUpgradeModal(false)}
-        />
       )}
     </div>
   )

@@ -11,11 +11,7 @@ import Landing from './pages/Landing'
 import GettingStarted from './pages/GettingStarted'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
-import RefundPolicy from './pages/RefundPolicy'
-import Pricing from './pages/Pricing'
 import ResourcesPartners from './pages/ResourcesPartners'
-import Donate from './pages/Donate'
-import DonateSuccess from './pages/DonateSuccess'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import TerminalLeaveCalculator from './pages/TerminalLeaveCalculator'
@@ -35,7 +31,6 @@ import Resources from './pages/Resources'
 import Retirement from './pages/Retirement'
 import MedBoard from './pages/MedBoard'
 import SeparationUnder20 from './pages/SeparationUnder20'
-import StateBenefits from './pages/StateBenefits'
 import VAClaimsBuilder from './pages/VAClaimsBuilder'
 import RetirementCalculator from './pages/RetirementCalculator'
 import AppointmentsTracking from './pages/AppointmentsTracking'
@@ -50,6 +45,10 @@ import FAQ from './pages/FAQ'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 
+// New State Benefits Tool pages
+import StateBenefitsIndex from './pages/state-benefits/StateBenefitsIndex'
+import StateDetailPage from './pages/state-benefits/StateDetailPage'
+
 function App() {
   return (
     <ErrorBoundary>
@@ -61,11 +60,7 @@ function App() {
           <Route path="/getting-started" element={<GettingStarted />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/refund-policy" element={<RefundPolicy />} />
-          <Route path="/pricing" element={<Pricing />} />
           <Route path="/resources" element={<ResourcesPartners />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/donate/success" element={<DonateSuccess />} />
 
           {/* Auth pages */}
           <Route path="/login" element={<Login />} />
@@ -81,8 +76,11 @@ function App() {
           {/* Calculator pages (public access) */}
           <Route path="/calculator/terminal-leave" element={<TerminalLeaveCalculator />} />
 
+          {/* State Benefits Tool (public access - browsing free, saving requires account) */}
+          <Route path="/state-benefits" element={<StateBenefitsIndex />} />
+          <Route path="/state-benefits/:stateCode" element={<StateDetailPage />} />
+
           {/* Tier 1: Public access pages (no login required, fully functional) */}
-          <Route path="/public/state-benefits" element={<StateBenefits publicMode />} />
           <Route path="/public/retirement-calculator" element={<RetirementCalculator publicMode />} />
           <Route path="/public/resources" element={<Resources publicMode />} />
           <Route path="/public/sample-checklist" element={<Retirement publicMode sampleMode />} />
@@ -120,7 +118,6 @@ function App() {
             <Route path="retirement" element={<Retirement />} />
             <Route path="medboard" element={<MedBoard />} />
             <Route path="separation" element={<SeparationUnder20 />} />
-            <Route path="state-benefits" element={<StateBenefits />} />
             <Route path="va-claims-builder" element={<VAClaimsBuilder />} />
             <Route path="retirement-calculator" element={<RetirementCalculator />} />
             <Route path="appointments" element={<AppointmentsTracking />} />

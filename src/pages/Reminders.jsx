@@ -13,7 +13,6 @@ import {
   isToday
 } from '../utils/reminders'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
-import UpgradeOverlay from '../components/UpgradeOverlay'
 
 export default function Reminders({ previewMode = false }) {
   const [data, setData] = useState(null)
@@ -124,19 +123,6 @@ export default function Reminders({ previewMode = false }) {
 
   return (
     <div className={`px-4 py-6 sm:px-0 max-w-7xl mx-auto ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="Reminders & Notifications"
-          description="Never miss important deadlines, appointments, or transition milestones."
-          benefits={[
-            'Set custom reminders',
-            'Email and push notifications',
-            'Recurring reminders',
-            'Cloud sync across devices',
-            'Export reminder history'
-          ]}
-        />
-      )}
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-3">

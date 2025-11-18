@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
-import { useUsageLimits } from '../hooks/useFeatureAccess'
-import UpgradePrompt from '../components/UpgradePrompt'
-import UpgradeOverlay from '../components/UpgradeOverlay'
 import { isPromoModeActive } from '../utils/promoConfig'
 import {
   getSavedJobs,
@@ -15,10 +12,6 @@ import {
 } from '../services/jobService'
 
 export default function JobSearch({ previewMode = false }) {
-  // Feature gating
-  const { checkLimit } = useUsageLimits()
-  const [showUpgradeModal, setShowUpgradeModal] = useState(false)
-
   // Database loading/saving states
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
@@ -262,20 +255,6 @@ export default function JobSearch({ previewMode = false }) {
 
   return (
     <>
-      {previewMode && (
-        <UpgradeOverlay
-          featureName="Job Search & Tracker"
-          description="Search for jobs, save opportunities, track applications, and manage your job hunt all in one place."
-          benefits={[
-            'Save and organize job postings',
-            'Track application status',
-            'Set follow-up reminders',
-            'Cloud storage for all data',
-            'Export job search reports'
-          ]}
-        />
-      )}
-
       <div className={`space-y-6 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
         {/* Header */}
       <div>

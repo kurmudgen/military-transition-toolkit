@@ -3,7 +3,6 @@ import { supabase } from '../lib/supabase'
 import { useNavigate } from 'react-router-dom'
 import { migrateAllDataToSupabase } from '../utils/dataMigration'
 import { auditService } from '../services/auditService'
-import { getUserSubscription } from '../services/subscriptionService'
 
 const AuthContext = createContext({})
 
@@ -101,46 +100,13 @@ export const AuthProvider = ({ children }) => {
     }
   }, [user, timeoutEnabled, resetActivityTimer])
 
-  // Fetch subscription data and merge with user object
+  // Return user object (all features free, no subscription needed)
   const fetchSubscriptionData = useCallback(async (baseUser) => {
     if (!baseUser) return null
 
-    try {
-      const subscription = await getUserSubscription()
-
-      // Map subscription data to user object properties
-      const subscriptionData = {
-        subscription_status: subscription?.status || 'inactive',
-        subscription_tier: mapPlanIdToTier(subscription?.plan_id),
-        subscription_expires_at: subscription?.current_period_end || null
-      }
-
-      return {
-        ...baseUser,
-        ...subscriptionData
-      }
-    } catch (error) {
-      console.error('Error fetching subscription data:', error)
-      // Return user with default free tier if subscription fetch fails
-      return {
-        ...baseUser,
-        subscription_status: 'inactive',
-        subscription_tier: 'free',
-        subscription_expires_at: null
-      }
-    }
+    // All features are free - just return the base user
+    return baseUser
   }, [])
-
-  // Map Stripe plan_id to subscription tier
-  const mapPlanIdToTier = (planId) => {
-    if (!planId) return 'free'
-
-    if (planId.includes('monthly')) return 'monthly'
-    if (planId.includes('annual')) return 'annual'
-    if (planId.includes('lifetime')) return 'lifetime'
-
-    return 'free'
-  }
 
   useEffect(() => {
     // Skip authentication if Supabase is not configured (development mode)
