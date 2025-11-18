@@ -11,6 +11,20 @@ export default function StateBenefitsIndex() {
 
   return (
     <Layout>
+      {/* EMERGENCY DEBUG: Test if this page loads at all */}
+      <div style={{
+        backgroundColor: '#FFFF00',
+        padding: '30px',
+        color: '#000000',
+        fontSize: '28px',
+        fontWeight: 'bold',
+        border: '8px solid #FF0000',
+        margin: '10px',
+        textAlign: 'center'
+      }}>
+        🟡 DEBUG: StateBenefitsIndex IS RENDERING! Active Tab: {activeTab} 🟡
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Page Header */}
         <div className="mb-8">

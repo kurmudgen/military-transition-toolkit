@@ -46,6 +46,20 @@ export default function Blog() {
   // Blog content component (reused for both authenticated and public views)
   const BlogContent = () => (
     <div className="max-w-4xl mx-auto p-4 md:p-8">
+      {/* EMERGENCY DEBUG */}
+      <div style={{
+        backgroundColor: '#0000FF',
+        padding: '30px',
+        color: '#FFFFFF',
+        fontSize: '28px',
+        fontWeight: 'bold',
+        border: '8px solid #FFFF00',
+        marginBottom: '20px',
+        textAlign: 'center'
+      }}>
+        🔵 DEBUG: Blog IS RENDERING! Posts count: {allPosts.length} 🔵
+      </div>
+
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">

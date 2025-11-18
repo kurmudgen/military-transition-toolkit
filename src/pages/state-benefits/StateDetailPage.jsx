@@ -15,6 +15,19 @@ export default function StateDetailPage() {
   if (!state) {
     return (
       <Layout>
+        {/* DEBUG: State not found */}
+        <div style={{
+          backgroundColor: '#FFA500',
+          padding: '30px',
+          color: '#000000',
+          fontSize: '28px',
+          fontWeight: 'bold',
+          border: '8px solid #FF0000',
+          margin: '20px',
+          textAlign: 'center'
+        }}>
+          🟠 DEBUG: State "{stateCode}" NOT FOUND in data! Available: {Object.keys(statesData).length} 🟠
+        </div>
         <div className="max-w-7xl mx-auto px-4 py-16 text-center">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">State Not Found</h1>
           <p className="text-gray-600 dark:text-gray-400 mb-6">The state you're looking for doesn't exist in our database yet.</p>
@@ -40,6 +53,20 @@ export default function StateDetailPage() {
 
   return (
     <Layout>
+      {/* DEBUG: State found successfully */}
+      <div style={{
+        backgroundColor: '#00FF00',
+        padding: '30px',
+        color: '#000000',
+        fontSize: '28px',
+        fontWeight: 'bold',
+        border: '8px solid #000000',
+        margin: '20px',
+        textAlign: 'center'
+      }}>
+        🟢 DEBUG: State "{state.name}" ({stateCode}) FOUND! Rating: {state.overallRating}/100 🟢
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Page Header */}
         <div className="mb-8">
