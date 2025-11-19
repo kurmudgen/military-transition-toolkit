@@ -1,14 +1,105 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 
 export default function About() {
+  const { user } = useAuth()
+
   useEffect(() => {
     document.title = 'Keeping MTT Free | Military Transition Toolkit'
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Navigation Bar */}
+      <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo/Brand */}
+            <Link to="/" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
+              Military Transition Toolkit
+            </Link>
+
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center gap-6">
+              <a href="/#features" className="text-slate-300 hover:text-white transition-colors">
+                Features
+              </a>
+              <Link to="/resources" className="text-slate-300 hover:text-white transition-colors">
+                Resources
+              </Link>
+              <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">
+                Blog
+              </Link>
+              <Link to="/state-benefits" className="text-slate-300 hover:text-white transition-colors">
+                State Benefits
+              </Link>
+              <Link to="/about" className="text-blue-400 font-semibold">
+                About
+              </Link>
+              <Link to="/faq" className="text-slate-300 hover:text-white transition-colors">
+                FAQ
+              </Link>
+
+              {/* Show Dashboard or Auth buttons based on login */}
+              {user ? (
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                >
+                  Dashboard →
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                  >
+                    Sign Up
+                  </Link>
+                </>
+              )}
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center gap-3">
+              {user ? (
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+                >
+                  Dashboard →
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+                  >
+                    Sign Up
+                  </Link>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Content */}
+      <div className="p-4 md:p-8">
+        <div className="max-w-4xl mx-auto">
         <div className="bg-slate-800 rounded-lg shadow-xl p-6 sm:p-8 mb-6 border border-slate-700">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Keeping MTT Free</h1>
           <p className="text-slate-300 text-lg">Currently Free - Mission: Stay Free Forever</p>
@@ -158,6 +249,7 @@ export default function About() {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
