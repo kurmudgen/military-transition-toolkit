@@ -13,8 +13,7 @@ export default function StateBenefitsIndex() {
 
   // Main content component (reused for both authenticated and public views)
   const StateBenefitsContent = () => (
-
-      <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Page Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
@@ -191,9 +190,8 @@ export default function StateBenefitsIndex() {
             </div>
           </div>
         )}
-
-        </div>
       </div>
+    </div>
   );
 
   // If user is logged in, use Layout.jsx for consistent navigation
