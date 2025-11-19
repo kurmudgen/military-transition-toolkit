@@ -2,7 +2,6 @@ import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { getAllPosts } from '../utils/blog'
-import Layout from '../components/Layout'
 
 export default function Blog() {
   const { user } = useAuth()
@@ -157,16 +156,8 @@ export default function Blog() {
     </div>
   )
 
-  // If user is logged in, use Layout.jsx for consistent navigation
-  if (user) {
-    return (
-      <Layout>
-        <BlogContent />
-      </Layout>
-    )
-  }
-
-  // If not logged in, use public marketing navigation
+  // Use same public navigation for EVERYONE (logged in or out)
+  // This avoids Layout.jsx issues with dark mode and content visibility
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Navigation Bar */}
@@ -192,15 +183,22 @@ export default function Blog() {
               <Link to="/state-benefits" className="text-slate-300 hover:text-white transition-colors">
                 State Benefits
               </Link>
-              <Link to="/app/about" className="text-slate-300 hover:text-white transition-colors">
+              <Link to="/about" className="text-slate-300 hover:text-white transition-colors">
                 About
               </Link>
-              <Link to="/app/faq" className="text-slate-300 hover:text-white transition-colors">
+              <Link to="/faq" className="text-slate-300 hover:text-white transition-colors">
                 FAQ
               </Link>
 
-              {/* Show different buttons based on auth state */}
-              {!user ? (
+              {/* Show Dashboard or Auth buttons based on login */}
+              {user ? (
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                >
+                  Dashboard →
+                </Link>
+              ) : (
                 <>
                   <Link
                     to="/login"
@@ -215,19 +213,19 @@ export default function Blog() {
                     Sign Up
                   </Link>
                 </>
-              ) : (
-                <Link
-                  to="/app"
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
-                >
-                  Dashboard →
-                </Link>
               )}
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-3">
-              {!user ? (
+              {user ? (
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+                >
+                  Dashboard →
+                </Link>
+              ) : (
                 <>
                   <Link
                     to="/login"
@@ -242,20 +240,13 @@ export default function Blog() {
                     Sign Up
                   </Link>
                 </>
-              ) : (
-                <Link
-                  to="/app"
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
-                >
-                  Dashboard →
-                </Link>
               )}
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Use dark mode wrapper for public view */}
+      {/* Use dark mode wrapper for content */}
       <div className="dark">
         <BlogContent />
       </div>

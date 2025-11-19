@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import Layout from '../../components/Layout';
 import StateBenefitsComparison from './StateBenefitsComparison';
 import PersonalizedCalculator from '../../components/StateBenefits/PersonalizedCalculator';
 import MovingCostCalculator from '../../components/StateBenefits/MovingCostCalculator';
@@ -194,16 +193,8 @@ export default function StateBenefitsIndex() {
     </div>
   );
 
-  // If user is logged in, use Layout.jsx for consistent navigation
-  if (user) {
-    return (
-      <Layout>
-        <StateBenefitsContent />
-      </Layout>
-    );
-  }
-
-  // If not logged in, use public marketing navigation
+  // Use same public navigation for EVERYONE (logged in or out)
+  // This avoids Layout.jsx issues with dark mode and content visibility
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Navigation Bar */}
@@ -236,41 +227,63 @@ export default function StateBenefitsIndex() {
                 FAQ
               </Link>
 
-              {/* Auth buttons */}
-              <Link
-                to="/login"
-                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
-              >
-                Log In
-              </Link>
-              <Link
-                to="/signup"
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
-              >
-                Sign Up
-              </Link>
+              {/* Show Dashboard or Auth buttons based on login */}
+              {user ? (
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                >
+                  Dashboard →
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                  >
+                    Sign Up
+                  </Link>
+                </>
+              )}
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-3">
-              <Link
-                to="/login"
-                className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
-              >
-                Log In
-              </Link>
-              <Link
-                to="/signup"
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
-              >
-                Sign Up
-              </Link>
+              {user ? (
+                <Link
+                  to="/app"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+                >
+                  Dashboard →
+                </Link>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
+                  >
+                    Sign Up
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Use dark mode wrapper for public view */}
+      {/* Use dark mode wrapper for content */}
       <div className="dark">
         <StateBenefitsContent />
       </div>
