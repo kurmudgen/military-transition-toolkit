@@ -97,29 +97,29 @@ export default function StateBenefitsIndex() {
         {/* Rankings Tab */}
         {activeTab === 'rankings' && (
           <div>
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-3xl font-bold mb-6">🏆 State Rankings for Veterans</h2>
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">🏆 State Rankings for Veterans</h2>
 
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">Overall Best States for Veterans</h3>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Overall Best States for Veterans</h3>
                 <div className="space-y-4">
                   {stateRankings.map((state, index) => (
                     <Link
                       key={state.code}
                       to={`/state-benefits/${state.code.toLowerCase()}`}
-                      className="block border-2 border-gray-200 rounded-lg p-4 hover:border-blue-500 hover:shadow-lg transition"
+                      className="block border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 rounded-lg p-4 hover:border-blue-500 hover:shadow-lg transition"
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-4">
-                          <div className="text-3xl font-bold text-blue-600">#{index + 1}</div>
+                          <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">#{index + 1}</div>
                           <div>
-                            <h4 className="text-xl font-bold">{state.name}</h4>
-                            <p className="text-sm text-gray-600">{state.category}</p>
+                            <h4 className="text-xl font-bold text-gray-900 dark:text-white">{state.name}</h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">{state.category}</p>
                           </div>
                         </div>
                         <div className="text-right">
-                          <div className="text-2xl font-bold text-green-600">{state.score}/100</div>
-                          <div className="text-yellow-500">{'⭐'.repeat(Math.round(state.score / 20))}</div>
+                          <div className="text-2xl font-bold text-green-600 dark:text-green-400">{state.score}/100</div>
+                          <div className="text-yellow-500 dark:text-yellow-400">{'⭐'.repeat(Math.round(state.score / 20))}</div>
                         </div>
                       </div>
                     </Link>
@@ -130,56 +130,56 @@ export default function StateBenefitsIndex() {
               {/* Category Leaders */}
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-bold mb-3">🏅 Category Leaders</h3>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">🏅 Category Leaders</h3>
 
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div className="bg-green-50 border-2 border-green-200 rounded-lg p-4">
-                      <h4 className="font-bold text-green-900 mb-2">Best for Tax Savings</h4>
-                      <p className="text-lg font-semibold">Texas & Florida</p>
-                      <p className="text-sm text-gray-600">No income tax + property tax exemptions</p>
+                    <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-200 dark:border-green-700 rounded-lg p-4">
+                      <h4 className="font-bold text-green-900 dark:text-green-300 mb-2">Best for Tax Savings</h4>
+                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Texas & Florida</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">No income tax + property tax exemptions</p>
                     </div>
 
-                    <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-4">
-                      <h4 className="font-bold text-blue-900 mb-2">Best VA Healthcare Access</h4>
-                      <p className="text-lg font-semibold">Florida & Texas</p>
-                      <p className="text-sm text-gray-600">7-8 VA Medical Centers each</p>
+                    <div className="bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-200 dark:border-blue-700 rounded-lg p-4">
+                      <h4 className="font-bold text-blue-900 dark:text-blue-300 mb-2">Best VA Healthcare Access</h4>
+                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Florida & Texas</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">7-8 VA Medical Centers each</p>
                     </div>
 
-                    <div className="bg-purple-50 border-2 border-purple-200 rounded-lg p-4">
-                      <h4 className="font-bold text-purple-900 mb-2">Best Education Benefits</h4>
-                      <p className="text-lg font-semibold">Texas (Hazlewood Act)</p>
-                      <p className="text-sm text-gray-600">150 credit hours free + transferable</p>
+                    <div className="bg-purple-50 dark:bg-purple-900/20 border-2 border-purple-200 dark:border-purple-700 rounded-lg p-4">
+                      <h4 className="font-bold text-purple-900 dark:text-purple-300 mb-2">Best Education Benefits</h4>
+                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Texas (Hazlewood Act)</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">150 credit hours free + transferable</p>
                     </div>
 
-                    <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-4">
-                      <h4 className="font-bold text-yellow-900 mb-2">Most Affordable</h4>
-                      <p className="text-lg font-semibold">North Carolina</p>
-                      <p className="text-sm text-gray-600">Low cost of living + veteran benefits</p>
+                    <div className="bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-200 dark:border-yellow-700 rounded-lg p-4">
+                      <h4 className="font-bold text-yellow-900 dark:text-yellow-300 mb-2">Most Affordable</h4>
+                      <p className="text-lg font-semibold text-gray-900 dark:text-white">North Carolina</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Low cost of living + veteran benefits</p>
                     </div>
 
-                    <div className="bg-red-50 border-2 border-red-200 rounded-lg p-4">
-                      <h4 className="font-bold text-red-900 mb-2">Largest Veteran Population</h4>
-                      <p className="text-lg font-semibold">California (1.45M)</p>
-                      <p className="text-sm text-gray-600">But expensive with higher taxes</p>
+                    <div className="bg-red-50 dark:bg-red-900/20 border-2 border-red-200 dark:border-red-700 rounded-lg p-4">
+                      <h4 className="font-bold text-red-900 dark:text-red-300 mb-2">Largest Veteran Population</h4>
+                      <p className="text-lg font-semibold text-gray-900 dark:text-white">California (1.45M)</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">But expensive with higher taxes</p>
                     </div>
 
-                    <div className="bg-indigo-50 border-2 border-indigo-200 rounded-lg p-4">
-                      <h4 className="font-bold text-indigo-900 mb-2">Best Military Connection</h4>
-                      <p className="text-lg font-semibold">Virginia & NC</p>
-                      <p className="text-sm text-gray-600">Multiple bases + strong vet community</p>
+                    <div className="bg-indigo-50 dark:bg-indigo-900/20 border-2 border-indigo-200 dark:border-indigo-700 rounded-lg p-4">
+                      <h4 className="font-bold text-indigo-900 dark:text-indigo-300 mb-2">Best Military Connection</h4>
+                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Virginia & NC</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Multiple bases + strong vet community</p>
                     </div>
                   </div>
                 </div>
 
                 {/* All States Quick View */}
                 <div>
-                  <h3 className="text-xl font-bold mb-3">📍 View Detailed State Information</h3>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">📍 View Detailed State Information</h3>
                   <div className="grid md:grid-cols-3 gap-3">
                     {Object.keys(statesData).map(code => (
                       <Link
                         key={code}
                         to={`/state-benefits/${code.toLowerCase()}`}
-                        className="bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 text-center font-semibold"
+                        className="bg-blue-600 dark:bg-blue-700 text-white px-4 py-3 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 text-center font-semibold"
                       >
                         {statesData[code].name} →
                       </Link>
