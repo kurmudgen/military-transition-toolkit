@@ -190,7 +190,7 @@ export default function Landing() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* State Benefits */}
-          <Link to="/public/state-benefits" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
+          <Link to="/state-benefits" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
             <div className="text-4xl mb-3">🗺️</div>
             <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
               State Benefits Comparison
