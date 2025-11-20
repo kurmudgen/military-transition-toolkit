@@ -1,6 +1,7 @@
 ---
-title: "Navy MN Mineman Career Guide (2025)"
-date: "2025-11-13"
+title: "Navy MN (Mineman) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
+publishDate: "2026-05-27"
+date: ""
 description: "Real career options for Navy Minemen transitioning to civilian life. Includes salary ranges $50K-$100K+, required certifications, and underwater systems skills translation."
 keywords: "Navy MN civilian jobs, Mineman career transition, MN to civilian career, Navy mine warfare jobs, underwater systems technician"
 ---
@@ -29,7 +30,7 @@ That's underwater robotics operation, sonar analysis, explosives expertise, tech
 
 ## Best civilian career paths for Navy MNs
 
-Let's get specific. Here are the fields where MNs consistently land, with real 2025-2026 salary data.
+Let's get specific. Here are the fields where MNs consistently land, with real 2024-2025 salary data.
 
 ### Defense contracting (highest demand)
 

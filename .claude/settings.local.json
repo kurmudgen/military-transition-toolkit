@@ -16,7 +16,13 @@
       "Bash(test:*)",
       "Bash(git restore:*)",
       "Bash(mkdir:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(find:*)",
+      "Bash(/tmp/army.txt)",
+      "Bash(/tmp/marine.txt)",
+      "Bash(/tmp/navy.txt)",
+      "Bash(/tmp/cg.txt)",
+      "Bash(/tmp/af.txt)"
     ],
     "deny": [],
     "ask": []

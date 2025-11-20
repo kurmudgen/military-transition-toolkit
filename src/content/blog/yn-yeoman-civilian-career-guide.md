@@ -1,6 +1,7 @@
 ---
 title: "Navy YN (Yeoman) to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
-date: "2025-11-19"
+publishDate: "2026-08-12"
+date: ""
 description: "Real civilian career paths for Navy Yeomen transitioning to administrative assistant, executive assistant, office management, and legal support. Includes salary ranges $40K-$110K+, required certifications, and skills translation."
 keywords: "Navy Yeoman civilian jobs, YN career transition, Navy YN to admin, Yeoman executive assistant"
 ---

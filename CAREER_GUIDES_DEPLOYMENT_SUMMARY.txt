@@ -1,0 +1,79 @@
+================================================================================
+CAREER GUIDES WEDNESDAY PUBLISHING - DEPLOYMENT SUMMARY
+================================================================================
+Generated: November 20, 2024
+Status: READY FOR COMMIT (awaiting user approval)
+================================================================================
+
+TASK COMPLETED
+--------------
+✓ Scheduled 278 career/MOS guides for Wednesday publishing
+✓ Date range: Nov 26, 2025 → Aug 12, 2026 (38 Wednesdays)
+✓ All files copied to src/content/blog/
+✓ Frontmatter dates updated for all guides
+✓ Publishing calendar created
+
+FILES READY TO COMMIT
+---------------------
+- 269 new career guide markdown files
+-  10 existing guides updated (dates refreshed)
+-   4 calendar/schedule documentation files
+─────────────────────────────────────────
+TOTAL: 283 files changed
+
+GUIDES BY BRANCH
+----------------
+Army:         139 guides (50.0%) - includes 11B, 68W, 25B priority MOS
+Marines:       78 guides (28.1%) - includes 0311 priority MOS
+Navy:          52 guides (18.7%) - includes HM priority rating
+Air Force:      6 guides ( 2.2%)
+Coast Guard:    3 guides ( 1.1%)
+─────────────────────────────────────────
+TOTAL:        278 guides
+
+PUBLISHING PATTERN
+------------------
+• Wednesdays only (no conflicts with Mon/Tue/Thu/Fri state guides)
+• Weeks 1-13:  8 guides per Wednesday (104 total)
+• Weeks 14-38: 7 guides per Wednesday (174 total)
+• Branch mixing maintained for variety each week
+
+HIGH-PRIORITY MOS SCHEDULING
+-----------------------------
+Published in first 6 weeks:
+  Week 1 (Nov 26):  11B Infantry, 68W Combat Medic, 0311 Rifleman, HM Corpsman
+  Week 2 (Dec 3):   25B IT Specialist
+  Week 3 (Dec 10):  11C Indirect Fire Infantryman
+
+CALENDAR DOCUMENT
+-----------------
+See: PUBLISHING_CALENDAR_WEDNESDAY_CAREER_GUIDES.txt
+- Complete week-by-week schedule
+- Shows all 278 guides with publish dates
+- Branch distribution for each Wednesday
+- Summary statistics included
+
+DISCREPANCY NOTES
+-----------------
+• Original request: 380 guides (150 Army, 75 Navy, 90 Marine, 50 AF, 15 CG)
+• Actual available: 278 guides in S:/Military-Toolkit-Content-Library/
+• Missing content:
+  - ~44 Air Force AFSC guides
+  - ~12 Coast Guard rating guides
+  - ~23 Navy rating guides
+  (Likely not yet created in content library)
+
+• Adjusted distribution to use all 278 available guides
+• Maintained branch variety and high-priority MOS first
+• All weeks filled; no gaps in schedule
+
+NEXT STEPS
+----------
+1. User reviews deployment summary
+2. User approves commit
+3. Commit changes with message:
+   "feat: add 278 career guides scheduled for Wednesday publishing"
+4. Push to main branch
+
+READY TO COMMIT WHEN USER RETURNS
+==================================

@@ -1,6 +1,7 @@
 ---
 title: "1A0X1 In-Flight Refueling to Civilian Career: Jobs, Salary & Certifications"
-date: "2025-11-17"
+publishDate: "2025-11-26"
+date: ""
 description: "Complete transition guide for Air Force 1A0X1: civilian job options, salary ranges, required certifications, and companies hiring In-Flight Refueling veterans."
 keywords: "1A0X1 civilian jobs, 1A0X1 to civilian, Air Force 1A0X1 transition, 1A0X1 salary, 1A0X1 certifications"
 slug: "air-force-afsc-1a0x1-civilian-career-guide"

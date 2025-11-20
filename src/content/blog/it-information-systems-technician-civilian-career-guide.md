@@ -1,6 +1,7 @@
 ---
 title: "Navy IT (Information Systems Technician) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
-date: "2025-11-17"
+publishDate: "2026-04-29"
+date: ""
 description: "Navy IT rating civilian career roadmap. Real salaries $60K-$120K+. Network admin, systems admin, cybersecurity, IT support roles. Security clearance adds $15K-$30K premium. Current 2024-2025 data."
 keywords: "Navy IT civilian jobs, Information Systems Technician career transition, Navy IT to civilian, network administrator jobs, cybersecurity jobs"
 ---
