@@ -223,9 +223,6 @@ export default function StateBenefitsIndex() {
               <Link to="/about" className="text-slate-300 hover:text-white transition-colors">
                 About
               </Link>
-              <Link to="/faq" className="text-slate-300 hover:text-white transition-colors">
-                FAQ
-              </Link>
 
               {/* Show Dashboard or Auth buttons based on login */}
               {user ? (

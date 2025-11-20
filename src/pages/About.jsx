@@ -37,9 +37,6 @@ export default function About() {
               <Link to="/about" className="text-blue-400 font-semibold">
                 About
               </Link>
-              <Link to="/faq" className="text-slate-300 hover:text-white transition-colors">
-                FAQ
-              </Link>
 
               {/* Show Dashboard or Auth buttons based on login */}
               {user ? (
