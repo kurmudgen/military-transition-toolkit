@@ -1,8 +1,8 @@
 ---
 title: "Federal Resume 2-Page Limit: What Veterans Need to Know Before September 2025"
 description: "Complete guide for E5-E7 veterans: how to convert your federal resume to meet the new 2-page requirement before September 27, 2025"
-publishDate: "2024-11-20"
-date: "2024-11-20"
+publishDate: "2025-11-20"
+date: "2025-11-20"
 category: "Career Transition"
 slug: "federal-resume-2-page-limit"
 keywords: "federal resume 2 page limit, USAJOBS resume requirement 2025, veteran federal resume, military to federal civilian, GS resume writing, OPM merit hiring plan"
