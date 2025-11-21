@@ -1,6 +1,6 @@
 ---
-title: "Federal Resume 2-Page Limit: What Veterans Need to Know Before September 2025"
-description: "Complete guide for E5-E7 veterans: how to convert your federal resume to meet the new 2-page requirement before September 27, 2025"
+title: "Federal Resume 2-Page Limit: What Changed in September 2025 and How to Adapt Now"
+description: "Complete guide for E5-E7 veterans: how to adapt your federal resume to the 2-page requirement that took effect September 27, 2025"
 publishDate: "2025-11-20"
 date: "2025-11-20"
 category: "Career Transition"
@@ -10,39 +10,39 @@ keywords: "federal resume 2 page limit, USAJOBS resume requirement 2025, veteran
 
 If you're walking off active duty in the next 12-24 months and planning to hit USAJOBS, this matters:
 
-- After **September 27, 2025**, USAJOBS will only accept 2-page resumes
-- Resumes longer than 2 pages will be physically blocked from submission
-- Your "searchable" legacy resume stored in USAJOBS will be purged from the recruiter database
+- **As of September 27, 2025**, USAJOBS now only accepts 2-page resumes
+- Resumes longer than 2 pages are physically blocked from submission
+- All "searchable" legacy resumes stored in USAJOBS were purged from the recruiter database
 - If you submit a non-compliant resume, you'll be marked **ineligible** - not low-scored, eliminated
 
 If you've spent years building that detailed 8-10 page federal resume because every TAP class and transition mentor told you to "document everything," that playbook is officially dead.
 
-The federal government doesn't care how you feel about it. The system will reject your application if your resume exceeds two pages. Period.
+The federal government doesn't care how you feel about it. The system now rejects your application if your resume exceeds two pages. Period.
 
-This post is written for E5-E7 service members with 15-20 years in uniform. You've got deployments, leadership billets, technical qualifications, and awards that actually matter. You can fit what counts into 2 pages - but you can't just upload what you have now and hope.
+This post is written for E5-E7 service members with 15-20 years in uniform. You've got deployments, leadership billets, technical qualifications, and awards that actually matter. You can fit what counts into 2 pages - but you need to adapt your approach now.
 
-Let's walk through what's changing, what it means for you, and exactly how to convert your resume without losing your competitive edge.
+Let's walk through what changed, what it means for you, and exactly how to convert your resume without losing your competitive edge.
 
-## What's Changing (And When)
+## What Changed (And When It Happened)
 
-The Office of Personnel Management (OPM) is enforcing a strict two-page limit on all federal resumes submitted through USAJOBS as part of the **Merit Hiring Plan**, issued in response to Executive Order 14170. This isn't optional guidance for agencies to consider - it's a regulatory mandate that fundamentally rewrites federal hiring.
+The Office of Personnel Management (OPM) enforced a strict two-page limit on all federal resumes submitted through USAJOBS as part of the **Merit Hiring Plan**, issued in response to Executive Order 14170. This isn't optional guidance for agencies to consider - it's a regulatory mandate that fundamentally rewrote federal hiring.
 
-### The Timeline (Mark Your Calendar)
+### The Timeline (What Happened)
 
-| Date | What Happens | What It Means for You |
-|------|--------------|----------------------|
-| **May 29, 2025** | Merit Hiring Plan released | Official prohibition of longform resumes; agencies update guidance |
-| **Sept 26, 2025** | All open job announcements close | USAJOBS pauses to reset the system |
-| **Sept 27, 2025** | Two-page limit takes effect | System blocks resumes over 2 pages; searchable resumes purged from Agency Talent Portal |
-| **Sept 29, 2025** | New announcements post | All new jobs require compliant 2-page resumes |
+| Date | What Happened | What It Meant |
+|------|--------------|---------------|
+| **May 29, 2025** | Merit Hiring Plan released | Official prohibition of longform resumes; agencies updated guidance |
+| **Sept 26, 2025** | All open job announcements closed | USAJOBS paused to reset the system |
+| **Sept 27, 2025** | Two-page limit took effect | System now blocks resumes over 2 pages; searchable resumes purged from Agency Talent Portal |
+| **Sept 29, 2025** | New announcements posted | All jobs now require compliant 2-page resumes |
 
 ### What "Two-Page Maximum" Actually Means
 
-**Hard technical limit:** USAJOBS will not allow you to upload or build a resume longer than 2 pages. You'll get an error. Your application won't submit. There are no workarounds.
+**Hard technical limit:** USAJOBS does not allow you to upload or build a resume longer than 2 pages. You'll get an error. Your application won't submit. There are no workarounds.
 
-**Searchable resume purge:** If you have a resume marked "searchable" in your USAJOBS profile (meaning recruiters can find you in the Agency Talent Portal), it will be algorithmically deleted on September 27 if it exceeds 2 pages. The deletion is indiscriminate - doesn't matter if it's a stellar 3-page resume or a 10-page mess. Both get purged.
+**Searchable resume purge:** All resumes marked "searchable" in USAJOBS profiles that exceeded 2 pages were algorithmically deleted on September 27. The deletion was indiscriminate - didn't matter if it was a stellar 3-page resume or a 10-page mess. Both got purged.
 
-**Disqualification, not deduction:** If you somehow submit a resume over 2 pages, you won't just lose points - you'll be marked **ineligible for further consideration**. Your application dies at the gate.
+**Disqualification, not deduction:** If you submit a resume over 2 pages, you won't just lose points - you'll be marked **ineligible for further consideration**. Your application dies at the gate.
 
 ### Exceptions (The Only Ones That Exist)
 
@@ -67,7 +67,7 @@ In the legacy format, you listed each position separately with full duty descrip
 
 **The "verify but don't infer" constraint makes it worse.** Federal HR specialists are legally prohibited from assuming you have a skill - the evidence must be explicitly written in your resume. If a job announcement requires "experience in inventory management" and your resume says you were a "Logistics Chief" but never uses the words "inventory management," HR can't give you credit - even though every Logistics Chief does inventory management.
 
-The new two-page limit forces you to walk a tightrope: be brief enough to fit the page limit, but specific enough to provide the explicit verification HR requires by law.
+The two-page limit forces you to walk a tightrope: be brief enough to fit the page limit, but specific enough to provide the explicit verification HR requires by law.
 
 **The truncation risk is real.** Here's the nightmare scenario that actually happens:
 
@@ -79,7 +79,7 @@ No appeal. No second chance. Your application is dead.
 
 ## The 90-Minute Conversion System
 
-Here's a practical process for converting your legacy federal resume to the new 2-page format. Set a timer - forcing yourself to work fast prevents overthinking and analysis paralysis.
+Here's a practical process for converting your legacy federal resume to the 2-page format. Set a timer - forcing yourself to work fast prevents overthinking and analysis paralysis.
 
 ### Phase 1: Target Selection (15 minutes)
 
@@ -250,11 +250,11 @@ Every line should demonstrate impact, not just presence.
 1. Log into USAJOBS
 2. Go to Documents → Resumes
 3. Download/preview each existing resume to verify page count
-4. If any exceed 2 pages, they'll be purged from searchable database on Sept 27
+4. Delete any resumes over 2 pages (they're no longer usable)
 5. Build or upload one clean 2-page resume targeting your primary job series
-6. Mark it "searchable" so recruiters can find you after Sept 29
+6. Mark it "searchable" so recruiters can find you in the Agency Talent Portal
 
-### The Four Essay Questions (New Requirement)
+### The Four Essay Questions (Current Requirement)
 
 For positions graded GS-05 and above, you must now answer four short essay questions (200 words each). While technically "voluntary," not completing them will hurt your competitiveness.
 
@@ -276,7 +276,7 @@ Consider paying for a federal resume writing service if:
 
 **What to look for:**
 - Writers with federal HR or military transition experience
-- Services that understand the new 2-page requirement (many still don't)
+- Services that understand the 2-page requirement (many still don't)
 - Ability to target specific job series, not generic "admin" roles
 - Revision policies and guarantees
 
@@ -303,7 +303,7 @@ This way you can quickly grab the right 2-page variant instead of rebuilding fro
 
 ## The Bottom Line
 
-The federal hiring world is finally doing what the private sector has done for decades: forcing tight, targeted resumes that hiring managers can actually use.
+The federal hiring world finally did what the private sector has done for decades: forcing tight, targeted resumes that hiring managers can actually use.
 
 For you as an E5-E7 with 15-20 years of service:
 - This isn't about minimizing your service
@@ -315,13 +315,13 @@ You already know how to follow an instruction, hit a standard, and adapt to new 
 
 **Your action plan:**
 
-**By September 20:** Complete your 2-page resume and test it in USAJOBS
-**By September 25:** Draft your four essay responses
-**September 27:** Deadline - system blocks non-compliant resumes
-**September 29:** New job cycle begins with updated requirements
+**This Week:** Complete your 2-page resume and test it in USAJOBS
+**This Week:** Draft your four essay responses
+**Before Next Application:** Verify your resume is compliant and targeted to the specific job series
+**Ongoing:** Track results and refine your approach based on what gets you referred
 
 No drama. No panic. Just get your 2-page resume battle-ready and execute.
 
-If you need professional help, tap into a solid federal resume service through Military Transition Toolkit's recommended partners. These aren't generic resume mills - they're services that understand military-to-federal transitions and the new 2-page requirement.
+If you need professional help, tap into a solid federal resume service through Military Transition Toolkit's recommended partners. These aren't generic resume mills - they're services that understand military-to-federal transitions and the 2-page requirement.
 
 **Your mission starts now. Get to work.**
