@@ -141,24 +141,24 @@ export default function Landing() {
 
           <div className="space-y-6 mb-8">
             <div>
-              <h3 className="text-xl font-semibold text-white mb-3">How we plan to sustain this:</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">How we sustain this:</h3>
               <p className="text-slate-300">
-                We're actively seeking partnerships with organizations that serve transitioning servicemembers and veterans - training providers, financial services, education platforms - to support operating costs while keeping the platform free.
+                MTT is supported by affiliate commissions from recommended services and optional donations. We recommend quality organizations that serve transitioning servicemembers - training providers, financial services, education platforms - and may earn commissions when you use them.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-white mb-3">How you can help keep MTT free:</h3>
               <ul className="space-y-2 text-slate-300">
-                <li>🤝 Know an organization that might partner with us? Put us in touch</li>
-                <li>📢 Share MTT with others going through transition - growth helps attract partners</li>
+                <li>🤝 Know an organization we should recommend? Put us in touch</li>
+                <li>📢 Share MTT with others going through transition</li>
                 <li>💼 Use our affiliate links when purchasing recommended services - helps at no cost to you</li>
               </ul>
             </div>
 
             <div className="bg-blue-900/30 border border-blue-700 rounded-lg p-4">
               <p className="text-blue-100">
-                <strong className="text-blue-300">Our commitment:</strong> As long as affiliate partnerships sustain operations, MTT stays free. If circumstances change, current members will be grandfathered in.
+                <strong className="text-blue-300">Our commitment:</strong> MTT is completely free - no subscriptions, no paywalls, no catch. If we ever need to change this model, current users will be grandfathered in.
               </p>
             </div>
           </div>

@@ -33,7 +33,7 @@ export const RESOURCE_DATABASE = [
     description: '1 year free for veterans - networking and job search tools',
     official: false,
     isAffiliate: true,
-    tags: ['networking', 'job-search', 'professional-development', 'partner'],
+    tags: ['networking', 'job-search', 'professional-development', 'recommended'],
     avgRating: 4.6
   },
   {
@@ -67,7 +67,7 @@ export const RESOURCE_DATABASE = [
     description: 'Free 1-on-1 career coaching, resume help, and job placement assistance',
     official: false,
     isAffiliate: true,
-    tags: ['career-coaching', 'resume-help', 'job-search', 'partner'],
+    tags: ['career-coaching', 'resume-help', 'job-search', 'recommended'],
     avgRating: 4.7
   },
   {
@@ -246,7 +246,7 @@ export const RESOURCE_DATABASE = [
     description: 'Google IT Support, IBM Data Science, and more professional certificates',
     official: false,
     isAffiliate: true,
-    tags: ['online-learning', 'certifications', 'professional-development', 'partner'],
+    tags: ['online-learning', 'certifications', 'professional-development', 'recommended'],
     avgRating: 4.6
   },
   {
@@ -258,7 +258,7 @@ export const RESOURCE_DATABASE = [
     description: 'Free tech training in cybersecurity, cloud, and software development',
     official: false,
     isAffiliate: true,
-    tags: ['technology', 'cybersecurity', 'training', 'coding', 'partner'],
+    tags: ['technology', 'cybersecurity', 'training', 'coding', 'recommended'],
     avgRating: 4.7
   },
   {
@@ -270,7 +270,7 @@ export const RESOURCE_DATABASE = [
     description: 'Free professional certifications from Syracuse University (Google, CompTIA, PMI)',
     official: false,
     isAffiliate: true,
-    tags: ['certifications', 'training', 'professional-development', 'free', 'partner'],
+    tags: ['certifications', 'training', 'professional-development', 'free', 'recommended'],
     avgRating: 4.8
   },
   {
@@ -607,7 +607,7 @@ export const RESOURCE_DATABASE = [
     description: '#1 VA lender - $0 down, no PMI, fast closings (442K+ reviews)',
     official: false,
     isAffiliate: true,
-    tags: ['home-loans', 'mortgage', 'va-loans', 'partner'],
+    tags: ['home-loans', 'mortgage', 'va-loans', 'recommended'],
     avgRating: 4.6
   },
   {

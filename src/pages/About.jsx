@@ -109,7 +109,7 @@ export default function About() {
             <p className="text-slate-300 mb-4">
               Military Transition Toolkit was created by someone going through the medboard process.
               We know how confusing and anxiety-inducing the transition process can be. That's why MTT
-              is free - and why we're actively seeking partnerships to keep it that way.
+              is free - and always will be.
             </p>
           </div>
 
@@ -119,29 +119,29 @@ export default function About() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-blue-400 mb-3">Partnership Revenue (Primary Goal)</h3>
+                <h3 className="text-xl font-semibold text-blue-400 mb-3">Affiliate Revenue</h3>
                 <p className="text-slate-300 mb-3">
-                  We partner with companies and nonprofits that serve transitioning servicemembers -
-                  training providers, education platforms, financial services - who support our mission.
-                  When our users benefit from partner services, those partners help sustain MTT.
+                  MTT includes affiliate links to quality products and services we've researched and recommend
+                  for transitioning servicemembers - training providers, education platforms, financial services.
+                  When you use these recommended services, they may provide a commission that helps sustain MTT.
                 </p>
                 <p className="text-slate-400 mb-3">
-                  <strong>Current partners:</strong> <em>Actively seeking partnerships</em>
+                  <strong>No official partnerships yet.</strong> All recommendations are independently researched.
                 </p>
                 <p className="text-slate-300">
-                  Interested in partnering? <Link to="/contact" className="text-blue-400 hover:text-blue-300 underline">Contact us</Link>
+                  Interested in collaborating? <Link to="/contact" className="text-blue-400 hover:text-blue-300 underline">Contact us</Link>
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-green-400 mb-3">Affiliate Partnerships</h3>
+                <h3 className="text-xl font-semibold text-green-400 mb-3">Optional Donations</h3>
                 <p className="text-slate-300 mb-3">
-                  MTT includes affiliate links to quality products and services we've researched and believe
-                  can help transitioning servicemembers. When you make a purchase through these links, we may
-                  earn a small commission at no additional cost to you. This helps keep MTT free for everyone.
+                  Servicemembers who find value in MTT can optionally support the platform through donations.
+                  Every contribution helps cover hosting, development, and content creation costs - but donations
+                  are never required. MTT is free for all, regardless of whether you donate.
                 </p>
                 <p className="text-slate-400 text-sm">
-                  We only recommend products and services we would use ourselves. All opinions and reviews are our own.
+                  Your transition matters more than our revenue. Use MTT freely - donate only if it genuinely helped you.
                 </p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function About() {
           <div className="bg-slate-800 rounded-lg shadow-lg p-6 sm:p-8 border border-slate-700">
             <h2 className="text-2xl font-bold text-white mb-4">Our Commitment</h2>
             <p className="text-slate-300 mb-4">
-              As long as affiliate partnerships sustain operations, MTT stays free for all servicemembers.
+              MTT is completely free for all servicemembers and veterans. No subscriptions, no paywalls, no hidden fees.
             </p>
             <p className="text-slate-300 mb-3">
               If we ever face circumstances requiring fees to maintain operations, we will:

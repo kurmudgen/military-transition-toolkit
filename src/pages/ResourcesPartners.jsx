@@ -8,8 +8,8 @@ export default function ResourcesPartners() {
   const { user } = useAuth();
 
   useEffect(() => {
-    document.title = 'Resources & Partners - Military Transition Toolkit';
-    trackPageView('Resources & Partners');
+    document.title = 'Recommended Resources - Military Transition Toolkit';
+    trackPageView('Recommended Resources');
   }, []);
 
   return (
@@ -108,7 +108,7 @@ export default function ResourcesPartners() {
             Recommended Transition Resources
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            MTT partners with organizations that serve transitioning servicemembers.
+            MTT recommends these trusted organizations that serve transitioning servicemembers.
             When you use these services, they help support our mission to stay free.
           </p>
         </div>
@@ -290,7 +290,7 @@ export default function ResourcesPartners() {
         {/* Disclaimer */}
         <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
           <p className="text-slate-400 text-sm">
-            MTT may earn commissions from these partners, which helps us keep the platform
+            MTT may earn commissions from these recommended services, which helps us keep the platform
             free for all servicemembers and veterans. We only recommend resources we believe
             provide genuine value to the military community.
           </p>

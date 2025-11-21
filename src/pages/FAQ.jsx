@@ -156,7 +156,7 @@ export default function FAQ() {
                   <li>Native mobile apps (iOS & Android)</li>
                   <li>Enhanced smart notifications</li>
                   <li>AI-powered document automation</li>
-                  <li>Partnerships with VSOs and TAP programs</li>
+                  <li>Integration with VSOs and TAP programs</li>
                 </ul>
                 <p className="mt-2">Premium members get early access to all new features.</p>
               </div>
@@ -217,7 +217,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                <strong>Military Transition Toolkit is currently 100% free for all servicemembers and veterans.</strong> Our mission is to keep it that way through partnerships and optional community donations. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.
+                <strong>Military Transition Toolkit is currently 100% free for all servicemembers and veterans.</strong> Our mission is to keep it that way through affiliate commissions and optional community donations. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.
               </div>
             </details>
 

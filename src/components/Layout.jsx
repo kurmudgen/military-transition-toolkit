@@ -225,7 +225,7 @@ export default function Layout() {
               <strong>Currently Free - Mission: Stay Free Forever</strong>
             </p>
             <p className="text-blue-200 text-xs">
-              We're actively seeking partnerships with organizations that serve transitioning servicemembers and veterans to sustain operations and keep MTT free.
+              Supported by affiliate commissions from recommended services and optional donations. 100% free for all servicemembers and veterans.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ export default function Layout() {
                 </li>
                 <li>
                   <Link to="/contact" className="text-slate-400 hover:text-white transition-colors text-sm">
-                    Partner with Us
+                    Contact Us
                   </Link>
                 </li>
                 <li>
@@ -277,7 +277,7 @@ export default function Layout() {
               <ul className="space-y-3">
                 <li>
                   <Link to="/resources" className="text-slate-400 hover:text-white transition-colors text-sm">
-                    Resources & Partners
+                    Recommended Resources
                   </Link>
                 </li>
                 <li>

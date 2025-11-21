@@ -762,7 +762,7 @@ export default function Resources({ publicMode = false }) {
                               )}
                               {resource.isAffiliate && (
                                 <span className="px-2 py-0.5 bg-blue-900/30 text-blue-400 text-xs font-semibold rounded border border-blue-700 flex items-center gap-1">
-                                  ⭐ Partner
+                                  ⭐ Recommended
                                 </span>
                               )}
                             </div>
