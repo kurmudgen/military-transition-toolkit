@@ -88,7 +88,7 @@ export default function Account() {
             </li>
           </ul>
           <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-            Supported by affiliate commissions - no subscriptions, no payments, no catch.
+            100% free - no subscriptions, no payments, no catch.
           </p>
         </div>
       </div>

@@ -331,7 +331,7 @@ export default function Privacy() {
                   <li>✓ You have complete control over your information</li>
                   <li>✓ We'll never sell your data - 100% free for all servicemembers and veterans</li>
                   <li>✓ Military-grade security protects your transition planning</li>
-                  <li>✓ Supported by affiliate commissions from recommended services and optional donations</li>
+                  <li>✓ 100% free - optional donations welcome but never required</li>
                 </ul>
               </div>
             </section>

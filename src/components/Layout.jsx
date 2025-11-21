@@ -225,7 +225,7 @@ export default function Layout() {
               <strong>Currently Free - Mission: Stay Free Forever</strong>
             </p>
             <p className="text-blue-200 text-xs">
-              Supported by affiliate commissions from recommended services and optional donations. 100% free for all servicemembers and veterans.
+              100% free for all servicemembers and veterans. Optional donations welcome but never required.
             </p>
           </div>
 

@@ -195,7 +195,7 @@ export default function FAQ() {
               </summary>
               <div className="p-4 pt-0 text-slate-300">
                 <strong>Military Transition Toolkit is 100% free for all servicemembers and veterans.</strong> No subscriptions, no hidden fees, no paywalls. All features are available to everyone at no cost.
-                <p className="mt-2">We're supported by affiliate commissions from recommended services and optional donations. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.</p>
+                <p className="mt-2">MTT is 100% free for all servicemembers and veterans. Optional donations are welcome but never required. Active duty, veterans, and military families have enough to worry about - focus on your transition, we've got the rest covered.</p>
               </div>
             </details>
 

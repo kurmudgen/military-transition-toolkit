@@ -1,0 +1,165 @@
+═══════════════════════════════════════════════════════════════════════════════
+AFFILIATE COMMISSION CLAIMS FIX REPORT
+═══════════════════════════════════════════════════════════════════════════════
+
+Date: 2025-11-21
+Issue: False claims about earning affiliate commissions when ZERO deals are signed
+Status: ✅ COMPLETE
+
+═══════════════════════════════════════════════════════════════════════════════
+FILES MODIFIED
+═══════════════════════════════════════════════════════════════════════════════
+
+1. src/pages/ResourcesPartners.jsx
+2. src/pages/Landing.jsx
+3. src/pages/Privacy.jsx
+4. src/pages/FAQ.jsx
+5. src/pages/Account.jsx
+6. src/components/Layout.jsx
+
+═══════════════════════════════════════════════════════════════════════════════
+CHANGES MADE
+═══════════════════════════════════════════════════════════════════════════════
+
+1. ResourcesPartners.jsx (Line 292-294)
+──────────────────────────────────────────────────────────────────────────────
+OLD:
+"MTT may earn commissions from these recommended services, which helps us keep
+the platform free for all servicemembers and veterans. We only recommend
+resources we believe provide genuine value to the military community."
+
+NEW:
+"Organizations we trust and recommend for transitioning service members and
+veterans. We only recommend resources we believe provide genuine value to the
+military community."
+
+REASON: Removed FALSE claim about earning commissions and helping keep platform
+free when we have ZERO affiliate deals.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+2. Landing.jsx (Line 146)
+──────────────────────────────────────────────────────────────────────────────
+OLD:
+"MTT is supported by affiliate commissions from recommended services and optional
+donations. We recommend quality organizations that serve transitioning
+servicemembers - training providers, financial services, education platforms -
+and may earn commissions when you use them."
+
+NEW:
+"MTT is 100% free for all servicemembers and veterans. We're building
+partnerships with quality organizations that serve transitioning servicemembers -
+training providers, financial services, education platforms. Optional donations
+are welcome but never required."
+
+REASON: Changed from present tense "is supported by" (FALSE) to honest "building
+partnerships" (TRUE). Clarified that it's free and donations are optional.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+3. Privacy.jsx (Line 334)
+──────────────────────────────────────────────────────────────────────────────
+OLD:
+"✓ Supported by affiliate commissions from recommended services and optional
+donations"
+
+NEW:
+"✓ 100% free - optional donations welcome but never required"
+
+REASON: Removed false claim about affiliate commission support.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+4. FAQ.jsx (Line 198)
+──────────────────────────────────────────────────────────────────────────────
+OLD:
+"We're supported by affiliate commissions from recommended services and optional
+donations. Active duty, veterans, and military families have enough to worry
+about - focus on your transition, we've got the rest covered."
+
+NEW:
+"MTT is 100% free for all servicemembers and veterans. Optional donations are
+welcome but never required. Active duty, veterans, and military families have
+enough to worry about - focus on your transition, we've got the rest covered."
+
+REASON: Removed false affiliate commission claim. Clarified 100% free status.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+5. Account.jsx (Line 91)
+──────────────────────────────────────────────────────────────────────────────
+OLD:
+"Supported by affiliate commissions - no subscriptions, no payments, no catch."
+
+NEW:
+"100% free - no subscriptions, no payments, no catch."
+
+REASON: Removed false affiliate commission claim.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+6. Layout.jsx (Line 228)
+──────────────────────────────────────────────────────────────────────────────
+OLD:
+"Supported by affiliate commissions from recommended services and optional
+donations. 100% free for all servicemembers and veterans."
+
+NEW:
+"100% free for all servicemembers and veterans. Optional donations welcome but
+never required."
+
+REASON: Removed false affiliate commission claim. Simplified to honest messaging.
+
+═══════════════════════════════════════════════════════════════════════════════
+PATTERNS SEARCHED SITE-WIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+Searched entire codebase for these patterns:
+✓ "may earn commissions"
+✓ "affiliate commission"
+✓ "earn from"
+✓ "revenue from"
+✓ "helps us keep.*free"
+✓ "helps keep.*free"
+✓ "supports our mission"
+✓ "help support our mission"
+
+All instances found and fixed.
+
+═══════════════════════════════════════════════════════════════════════════════
+BUILD STATUS
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Build successful - no errors
+✅ 3266 modules transformed
+✅ All files compiled cleanly
+
+═══════════════════════════════════════════════════════════════════════════════
+GIT DEPLOYMENT STATUS
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ All changes committed
+✅ Pushed to main branch
+✅ Live deployment complete
+
+═══════════════════════════════════════════════════════════════════════════════
+SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+ISSUE: Site falsely claimed to be "supported by affiliate commissions" and that
+       organizations "help keep the platform free" when we have ZERO affiliate
+       deals signed and are earning $0 in revenue.
+
+FIX:   Removed ALL false affiliate commission claims across 6 files. Changed
+       language to honest "100% free" messaging and "building partnerships"
+       for future plans.
+
+RESULT: Site now 100% honest about revenue status. No false earnings claims.
+
+Truth: We have NO affiliate deals. We are earning ZERO dollars. Cannot claim
+       organizations "support" us or "help keep us free" when we're not getting
+       paid.
+
+═══════════════════════════════════════════════════════════════════════════════
+COMPLETE
+═══════════════════════════════════════════════════════════════════════════════

@@ -289,9 +289,8 @@ export default function ResourcesPartners() {
         {/* Disclaimer */}
         <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6 text-center">
           <p className="text-slate-400 text-sm">
-            MTT may earn commissions from these recommended services, which helps us keep the platform
-            free for all servicemembers and veterans. We only recommend resources we believe
-            provide genuine value to the military community.
+            Organizations we trust and recommend for transitioning service members and veterans.
+            We only recommend resources we believe provide genuine value to the military community.
           </p>
         </div>
       </div>

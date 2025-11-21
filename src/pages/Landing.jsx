@@ -143,7 +143,7 @@ export default function Landing() {
             <div>
               <h3 className="text-xl font-semibold text-white mb-3">How we sustain this:</h3>
               <p className="text-slate-300">
-                MTT is supported by affiliate commissions from recommended services and optional donations. We recommend quality organizations that serve transitioning servicemembers - training providers, financial services, education platforms - and may earn commissions when you use them.
+                MTT is 100% free for all servicemembers and veterans. We're building partnerships with quality organizations that serve transitioning servicemembers - training providers, financial services, education platforms. Optional donations are welcome but never required.
               </p>
             </div>
 
