@@ -124,30 +124,13 @@ export default function Terms() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">8. Premium Features</h2>
-              <p className="mb-4">
-                Some features may require a premium subscription or one-time payment. Premium features include:
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Advanced calculators and planning tools</li>
-                <li>Statement generators and templates</li>
-                <li>PDF export functionality</li>
-                <li>Priority support</li>
-              </ul>
-              <p className="mt-4">
-                Payment terms will be clearly displayed before purchase. Premium features are non-refundable unless required by law.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-white mb-4">9. Modifications to Service</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">8. Modifications to Service</h2>
               <p className="mb-4">
                 We reserve the right to:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Modify, suspend, or discontinue any part of the Service at any time</li>
                 <li>Update these Terms at any time</li>
-                <li>Change pricing for premium features with 30 days notice</li>
                 <li>Add or remove features</li>
               </ul>
               <p className="mt-4">
@@ -156,7 +139,7 @@ export default function Terms() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">10. Intellectual Property</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">9. Intellectual Property</h2>
               <p className="mb-4">
                 The Service, including all content, features, and functionality, is owned by Military Transition Toolkit and is protected by copyright, trademark, and other intellectual property laws.
               </p>
@@ -166,7 +149,7 @@ export default function Terms() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">11. Termination</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">10. Termination</h2>
               <p className="mb-4">
                 We may terminate or suspend your access to the Service at any time, for any reason, without notice. You may stop using the Service at any time.
               </p>
@@ -176,7 +159,7 @@ export default function Terms() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">12. Governing Law</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">11. Governing Law</h2>
               <p className="mb-4">
                 These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to conflict of law provisions.
               </p>
@@ -186,21 +169,21 @@ export default function Terms() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">13. Government Use</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">12. Government Use</h2>
               <p>
                 If you are using the Service on behalf of the U.S. Government, the Service is a "commercial item" as defined in FAR 2.101, and the Government's rights are limited to those granted in these Terms in accordance with FAR 12.212 and DFARS 227.7202.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">14. Severability</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">13. Severability</h2>
               <p>
                 If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-white mb-4">15. Contact Information</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">14. Contact Information</h2>
               <p className="mb-4">
                 For questions about these Terms, please contact us at:
               </p>

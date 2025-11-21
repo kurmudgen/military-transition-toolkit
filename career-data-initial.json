@@ -1,0 +1,138 @@
+{
+  "army": {
+    "11B": {
+      "title": "army-mos-11b-civilian-career-guide",
+      "branch": "Army",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "11C": {
+      "title": "army-mos-11c-civilian-career-guide",
+      "branch": "Army",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "11X": {
+      "title": "army-mos-11x-civilian-career-guide",
+      "branch": "Army",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "11Z": {
+      "title": "army-mos-11z-civilian-career-guide",
+      "branch": "Army",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "13B": {
+      "title": "army-mos-13b-civilian-career-guide",
+      "branch": "Army",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    }
+  },
+  "marines": {
+    "0204": {
+      "title": "0204-air-intelligence-officer-civilian-career-guide",
+      "branch": "Marines",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "0210": {
+      "title": "0210-counterintelligence-humint-officer-civilian-career-guide",
+      "branch": "Marines",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "0211": {
+      "title": "0211-counterintelligence-humint-specialist-civilian-career-guide",
+      "branch": "Marines",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "0231": {
+      "title": "0231-intelligence-specialist-civilian-career-guide",
+      "branch": "Marines",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "0241": {
+      "title": "0241-imagery-analysis-specialist-civilian-career-guide",
+      "branch": "Marines",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    }
+  },
+  "navy": {
+    "AB": {
+      "title": "ab-aviation-boatswains-mate-civilian-career-guide",
+      "branch": "Navy",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "AC": {
+      "title": "ac-air-traffic-controller-civilian-career-guide",
+      "branch": "Navy",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "AD": {
+      "title": "ad-aviation-machinists-mate-civilian-career-guide",
+      "branch": "Navy",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "AE": {
+      "title": "ae-aviation-electricians-mate-civilian-career-guide",
+      "branch": "Navy",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    },
+    "AET": {
+      "title": "aet-avionics-electrical-technician-civilian-career-guide",
+      "branch": "Navy",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    }
+  },
+  "coastguard": {
+    "ARD": {
+      "title": "coastguard-yn-yeoman-civilian-career-guide",
+      "branch": "Coastguard",
+      "civilianJobs": [],
+      "skills": [],
+      "certifications": [],
+      "salaryRange": null
+    }
+  }
+}

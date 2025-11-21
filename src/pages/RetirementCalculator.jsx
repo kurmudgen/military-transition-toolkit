@@ -471,7 +471,7 @@ export default function RetirementCalculator({ publicMode = false }) {
 
                   <div className="mt-6 p-4 bg-green-900/30 border border-green-600 rounded-lg">
                     <p className="text-green-300 text-sm font-semibold mb-2">
-                      Premium features currently free
+                      All features included for free:
                     </p>
                     <ul className="text-slate-300 text-sm space-y-1 list-disc list-inside">
                       <li>State-specific tax calculations for all 50 states</li>
@@ -588,13 +588,13 @@ export default function RetirementCalculator({ publicMode = false }) {
             </div>
           </div>
 
-          {/* Premium Features Callout */}
+          {/* All Features Free Callout */}
           <div className="bg-gradient-to-br from-blue-900/40 to-indigo-900/40 border-2 border-blue-500 rounded-2xl shadow-xl p-8 mt-8">
             <div className="flex items-start gap-4 mb-6">
-              <div className="text-4xl">🔒</div>
+              <div className="text-4xl">✓</div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-2">Premium Features Available</h3>
-                <p className="text-blue-200">Currently free for all servicemembers and veterans</p>
+                <h3 className="text-2xl font-bold text-white mb-2">All Features Included</h3>
+                <p className="text-blue-200">100% free for all servicemembers and veterans</p>
               </div>
             </div>
 

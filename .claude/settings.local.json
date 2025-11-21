@@ -22,7 +22,9 @@
       "Bash(/tmp/marine.txt)",
       "Bash(/tmp/navy.txt)",
       "Bash(/tmp/cg.txt)",
-      "Bash(/tmp/af.txt)"
+      "Bash(/tmp/af.txt)",
+      "Bash(python3:*)",
+      "Bash(node -c:*)"
     ],
     "deny": [],
     "ask": []

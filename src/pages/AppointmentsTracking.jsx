@@ -604,15 +604,6 @@ export default function AppointmentsTracking({ previewMode = false }) {
                     Cancel
                   </button>
                 </div>
-
-                {/* Premium Feature Badge */}
-                <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
-                  <div className="flex items-center text-sm text-yellow-800">
-                    <span className="mr-2">⭐</span>
-                    <span className="font-medium">Premium Feature:</span>
-                    <span className="ml-1">Get text/email reminders 24 hours before appointments</span>
-                  </div>
-                </div>
               </div>
             )}
 

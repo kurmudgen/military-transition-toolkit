@@ -108,8 +108,7 @@ export default function ResourcesPartners() {
             Recommended Transition Resources
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            MTT recommends these trusted organizations that serve transitioning servicemembers.
-            When you use these services, they help support our mission to stay free.
+            Organizations we trust and recommend for transitioning service members.
           </p>
         </div>
 

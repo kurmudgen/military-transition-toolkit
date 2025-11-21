@@ -66,7 +66,6 @@ export default function Privacy() {
                 <p className="mb-2">We collect minimal information necessary to provide secure cloud services:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li><strong className="text-white">Email address:</strong> For account creation, login, and service communications</li>
-                  <li><strong className="text-white">Payment information (Premium users):</strong> Processed securely through Stripe (we never store credit card numbers)</li>
                   <li><strong className="text-white">Encrypted user data:</strong> Your transition planning data, securely encrypted in our database</li>
                   <li><strong className="text-white">Profile information:</strong> Name, military branch, rank, MOS (only what you choose to provide)</li>
                 </ul>
@@ -119,7 +118,7 @@ export default function Privacy() {
                 <div className="flex gap-3">
                   <span className="text-green-400 flex-shrink-0">✓</span>
                   <div>
-                    <strong className="text-white">End-to-End Encryption (Premium):</strong>
+                    <strong className="text-white">End-to-End Encryption:</strong>
                     <span className="text-sm block">Your data is encrypted on your device using AES-256 encryption before being sent to our servers. We never have access to your unencrypted data.</span>
                   </div>
                 </div>
@@ -161,23 +160,11 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">5. Data Retention</h2>
 
-              <div className="mb-4">
-                <h3 className="text-lg font-semibold text-white mb-2">Free Tier Users</h3>
-                <p className="mb-2">Your locally stored data remains on your device until:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>You manually clear your browser data/cache</li>
-                  <li>You use the app's "Clear All Data" feature</li>
-                  <li>You uninstall your web browser</li>
-                  <li>You use private/incognito browsing (data clears when you close the browser)</li>
-                </ul>
-              </div>
-
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">Premium Users</h3>
                 <p className="mb-2">Your encrypted data is retained in the cloud:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>As long as your account is active and in good standing</li>
-                  <li>For 90 days after account cancellation (grace period for reactivation)</li>
+                  <li>As long as your account is active</li>
+                  <li>For 90 days after account deletion request (grace period for reactivation)</li>
                   <li>Permanently deleted upon your request or after the grace period</li>
                   <li>You can export your data at any time before deletion</li>
                 </ul>
@@ -208,7 +195,7 @@ export default function Privacy() {
 
                 <div className="bg-slate-900/50 rounded-lg p-4">
                   <h3 className="font-semibold text-white mb-2">Right to Privacy</h3>
-                  <p className="text-sm">Free tier: use in incognito mode. Premium: zero-knowledge encryption ensures privacy</p>
+                  <p className="text-sm">Zero-knowledge encryption ensures complete privacy - we cannot access your data</p>
                 </div>
               </div>
             </section>
@@ -220,19 +207,6 @@ export default function Privacy() {
               </p>
 
               <div className="space-y-4">
-                <div className="bg-slate-900/50 rounded-lg p-4">
-                  <h3 className="font-semibold text-white mb-2">Stripe (Payment Processing)</h3>
-                  <p className="text-sm mb-2">
-                    Purpose: Process Premium subscriptions securely
-                  </p>
-                  <p className="text-sm mb-2">
-                    Privacy Policy: <a href="https://stripe.com/privacy" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Stripe Privacy Policy</a>
-                  </p>
-                  <p className="text-sm">
-                    What they collect: Payment card information (we never see or store this)
-                  </p>
-                </div>
-
                 <div className="bg-slate-900/50 rounded-lg p-4">
                   <h3 className="font-semibold text-white mb-2">Google Analytics</h3>
                   <p className="text-sm mb-2">
@@ -247,9 +221,9 @@ export default function Privacy() {
                 </div>
 
                 <div className="bg-slate-900/50 rounded-lg p-4">
-                  <h3 className="font-semibold text-white mb-2">Cloud Storage Provider</h3>
+                  <h3 className="font-semibold text-white mb-2">Cloud Storage Provider (Supabase)</h3>
                   <p className="text-sm mb-2">
-                    Purpose: Store encrypted Premium user data
+                    Purpose: Store encrypted user data securely
                   </p>
                   <p className="text-sm">
                     What they store: Your encrypted data (unreadable without your keys), account metadata
@@ -272,7 +246,7 @@ export default function Privacy() {
                 <div>
                   <h3 className="font-semibold text-white">Essential Cookies (Required)</h3>
                   <p className="text-sm">
-                    Necessary for the site to function, including authentication for Premium users and preference storage.
+                    Necessary for the site to function, including authentication and preference storage.
                   </p>
                 </div>
 
@@ -311,13 +285,13 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">11. Data Breach Notification</h2>
               <p className="mb-4">
-                In the unlikely event of a security breach affecting Premium user accounts:
+                In the unlikely event of a security breach:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>We will notify affected users within 72 hours</li>
                 <li>Your encrypted data remains protected by your encryption keys</li>
                 <li>We will provide clear guidance on any necessary actions</li>
-                <li>Free tier users are not affected as data is stored locally only</li>
+                <li>Zero-knowledge encryption means your personal data cannot be decrypted even in a breach</li>
               </ul>
             </section>
 
@@ -327,7 +301,7 @@ export default function Privacy() {
                 We may update this Privacy Policy occasionally. Changes will be posted on this page with an updated "Last Updated" date.
               </p>
               <p>
-                Material changes will be announced on the home page and via email to Premium users. Your continued use of the service after changes constitutes acceptance of the updated policy.
+                Material changes will be announced on the home page and via email to all users. Your continued use of the service after changes constitutes acceptance of the updated policy.
               </p>
             </section>
 
@@ -351,13 +325,13 @@ export default function Privacy() {
                   <strong className="text-white">In Plain English:</strong>
                 </p>
                 <ul className="space-y-2 text-sm">
-                  <li>✓ <strong>Free tier:</strong> Your data stays on your device, we never see it</li>
-                  <li>✓ <strong>Premium:</strong> End-to-end encrypted cloud storage - we mathematically cannot decrypt your data</li>
+                  <li>✓ End-to-end encrypted cloud storage - we mathematically cannot decrypt your data</li>
                   <li>✓ Zero-knowledge architecture protects your privacy</li>
                   <li>✓ We only track anonymous page views for site improvement</li>
                   <li>✓ You have complete control over your information</li>
-                  <li>✓ We'll never sell your data - our business model is Premium subscriptions, not data</li>
+                  <li>✓ We'll never sell your data - 100% free for all servicemembers and veterans</li>
                   <li>✓ Military-grade security protects your transition planning</li>
+                  <li>✓ Supported by affiliate commissions from recommended services and optional donations</li>
                 </ul>
               </div>
             </section>
