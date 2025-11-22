@@ -1,101 +1,14 @@
-import { Link } from 'react-router-dom'
-import { useAuth } from '../contexts/AuthContext'
 import AnnouncementBanner from '../components/AnnouncementBanner'
+import PublicNav from '../components/Navigation/PublicNav'
 
 export default function Landing() {
-  const { user } = useAuth()
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Announcement Banner */}
       <AnnouncementBanner />
 
       {/* Navigation Bar */}
-      <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo/Brand */}
-            <Link to="/" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
-              Military Transition Toolkit
-            </Link>
-
-            {/* Navigation Links */}
-            <div className="hidden md:flex items-center gap-6">
-              <a href="#features" className="text-slate-300 hover:text-white transition-colors">
-                Features
-              </a>
-              <Link to="/resources" className="text-slate-300 hover:text-white transition-colors">
-                Resources
-              </Link>
-              <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">
-                Blog
-              </Link>
-              <Link to="/state-benefits" className="text-slate-300 hover:text-white transition-colors">
-                State Benefits
-              </Link>
-              <Link to="/about" className="text-slate-300 hover:text-white transition-colors">
-                About
-              </Link>
-
-              {/* Show different buttons based on auth state */}
-              {!user ? (
-                // Not logged in - show Login and Sign Up
-                <>
-                  <Link
-                    to="/login"
-                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors"
-                  >
-                    Log In
-                  </Link>
-                  <Link
-                    to="/signup"
-                    className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold rounded-lg transition-colors"
-                  >
-                    Sign Up
-                  </Link>
-                </>
-              ) : (
-                // Logged in - show Dashboard link
-                <Link
-                  to="/app"
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
-                >
-                  Go to Dashboard →
-                </Link>
-              )}
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-3">
-              {!user ? (
-                // Not logged in - show Login and Sign Up
-                <>
-                  <Link
-                    to="/login"
-                    className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors"
-                  >
-                    Log In
-                  </Link>
-                  <Link
-                    to="/signup"
-                    className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-slate-900 font-semibold text-sm rounded-lg transition-colors"
-                  >
-                    Sign Up
-                  </Link>
-                </>
-              ) : (
-                // Logged in - show Dashboard link
-                <Link
-                  to="/app"
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors"
-                >
-                  Dashboard →
-                </Link>
-              )}
-            </div>
-          </div>
-        </div>
-      </nav>
+      <PublicNav currentPage="/" />
 
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 py-16 text-center">

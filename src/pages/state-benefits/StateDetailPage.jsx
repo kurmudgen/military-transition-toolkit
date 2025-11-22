@@ -2,31 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import Layout from '../../components/Layout';
 import { statesData } from '../../data/stateBenefitsData';
-
-// Public navigation component (reusable for both "not found" and main content)
-const PublicNav = () => (
-  <nav className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex justify-between items-center h-16">
-        <Link to="/" className="text-xl font-bold text-white hover:text-blue-400 transition-colors">
-          Military Transition Toolkit
-        </Link>
-        <div className="hidden md:flex items-center gap-6">
-          <Link to="/resources" className="text-slate-300 hover:text-white transition-colors">Resources</Link>
-          <Link to="/blog" className="text-slate-300 hover:text-white transition-colors">Blog</Link>
-          <Link to="/state-benefits" className="text-blue-400 font-semibold">State Benefits</Link>
-          <Link to="/about" className="text-slate-300 hover:text-white transition-colors">About</Link>
-          <Link to="/login" className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white rounded-lg transition-colors">Log In</Link>
-          <Link to="/signup" className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">Sign Up</Link>
-        </div>
-        <div className="md:hidden flex items-center gap-3">
-          <Link to="/login" className="px-4 py-2 border border-slate-600 hover:border-slate-500 text-white text-sm rounded-lg transition-colors">Log In</Link>
-          <Link to="/signup" className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg transition-colors">Sign Up</Link>
-        </div>
-      </div>
-    </div>
-  </nav>
-);
+import PublicNav from '../../components/Navigation/PublicNav';
 
 export default function StateDetailPage() {
   const { user } = useAuth();
@@ -57,7 +33,7 @@ export default function StateDetailPage() {
     // If not logged in, use public navigation
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <PublicNav />
+        <PublicNav currentPage="/state-benefits" />
         <div className="dark">
           <NotFoundContent />
         </div>
@@ -299,7 +275,7 @@ export default function StateDetailPage() {
   // If not logged in, use public marketing navigation
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      <PublicNav />
+      <PublicNav currentPage="/state-benefits" />
       <div className="dark">
         <StateDetailContent />
       </div>

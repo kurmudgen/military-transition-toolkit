@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
 import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+import PublicNav from '../components/Navigation/PublicNav'
 
 export default function GettingStarted() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
-      {/* Hero Section */}
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <PublicNav currentPage="/getting-started" />
+      <div className="p-4 md:p-8">
+        {/* Hero Section */}
+        <div className="max-w-6xl mx-auto">
         <div className="mb-8 text-center">
           <Link to="/" className="inline-block text-lg font-semibold text-blue-400 hover:text-blue-300 transition-colors mb-8">
             ← Back to Home
@@ -159,6 +162,7 @@ export default function GettingStarted() {
             </a>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

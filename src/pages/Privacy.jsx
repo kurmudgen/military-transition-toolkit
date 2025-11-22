@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import PublicNav from '../components/Navigation/PublicNav'
 
 export default function Privacy() {
   useEffect(() => {
@@ -6,8 +7,10 @@ export default function Privacy() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16">
-      <div className="max-w-4xl mx-auto px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <PublicNav currentPage="/privacy" />
+      <div className="py-16">
+        <div className="max-w-4xl mx-auto px-4">
         <div className="bg-slate-800 rounded-lg shadow-xl p-8 border border-slate-700">
           <h1 className="text-4xl font-bold text-white mb-4">Privacy Policy</h1>
           <p className="text-slate-400 text-sm mb-8">Last Updated: January 2025</p>
@@ -346,6 +349,7 @@ export default function Privacy() {
             </a>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
