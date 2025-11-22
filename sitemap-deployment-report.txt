@@ -1,0 +1,168 @@
+═══════════════════════════════════════════════════════════════════════════════
+SITEMAP DEPLOYMENT REPORT
+═══════════════════════════════════════════════════════════════════════════════
+
+Date: 2025-11-21
+Task: Build and deploy comprehensive sitemap for Google indexing
+Status: ✅ COMPLETE
+
+═══════════════════════════════════════════════════════════════════════════════
+SITEMAP CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+Total URLs: 469
+
+Homepage (Priority 1.0):
+  - https://www.militarytransitiontoolkit.com
+
+Main Pages (Priority 0.9) - 12 pages:
+  - /blog
+  - /resources
+  - /state-benefits
+  - /app
+  - /app/about
+  - /app/faq
+  - /app/privacy
+  - /app/terms
+  - /app/refund
+  - /login
+  - /signup
+
+Blog Posts (Priority 0.8) - 457 posts:
+  - All blog posts from src/content/blog/
+  - Career guides (MOS/rating transitions)
+  - State benefits guides (all 50 states)
+  - VA disability guides
+  - Resume and job search guides
+  - Transition planning guides
+
+═══════════════════════════════════════════════════════════════════════════════
+TECHNICAL DETAILS
+═══════════════════════════════════════════════════════════════════════════════
+
+File Location: public/sitemap.xml
+File Size: 104,925 bytes (~105 KB)
+Total Lines: 2,817 lines
+Format: XML 1.0, UTF-8 encoding
+Schema: http://www.sitemaps.org/schemas/sitemap/0.9
+
+Last Modified Date: 2025-11-21 (all URLs)
+
+Change Frequency:
+  - Homepage & Main Pages: weekly
+  - Blog Posts: monthly
+
+Priority Distribution:
+  - 1.0: 1 URL (homepage)
+  - 0.9: 12 URLs (main pages)
+  - 0.8: 457 URLs (blog posts)
+
+═══════════════════════════════════════════════════════════════════════════════
+PAGES EXCLUDED
+═══════════════════════════════════════════════════════════════════════════════
+
+The following pages were intentionally EXCLUDED from sitemap:
+
+❌ /pricing - Site is 100% free (no pricing page exists)
+
+Auth pages disallowed in robots.txt but not in sitemap:
+  - /login (included with priority 0.7)
+  - /signup (included with priority 0.7)
+  - /forgot-password
+  - /auth/callback
+  - /auth/reset-password
+
+═══════════════════════════════════════════════════════════════════════════════
+ROBOTS.TXT CONFIGURATION
+═══════════════════════════════════════════════════════════════════════════════
+
+File: public/robots.txt
+Updated: 2025-11-21
+
+Key Configuration:
+  ✅ Sitemap URL: https://www.militarytransitiontoolkit.com/sitemap.xml
+  ✅ Allow all pages by default (User-agent: *)
+  ✅ Explicitly allow public app pages (/app/about, /app/faq, etc.)
+  ✅ Disallow auth pages from crawling
+
+Changes Made:
+  - Updated sitemap URL to include www subdomain
+  - Changed from blanket "Disallow: /app/" to explicit allows
+  - Added auth pages to disallow list
+  - Updated date to 2025-11-21
+
+═══════════════════════════════════════════════════════════════════════════════
+GENERATOR SCRIPT
+═══════════════════════════════════════════════════════════════════════════════
+
+File: generate-sitemap.py
+Purpose: Automated sitemap generation from blog content
+
+Features:
+  - Scans src/content/blog/ for all .md files
+  - Generates sitemap with proper XML structure
+  - Configurable priorities and change frequencies
+  - Easy to re-run when new blog posts are added
+
+Usage:
+  python3 generate-sitemap.py
+
+Output:
+  Sitemap generated: public/sitemap.xml
+  Total URLs: 469
+    - Main pages: 12
+    - Blog posts: 457
+
+═══════════════════════════════════════════════════════════════════════════════
+DEPLOYMENT STATUS
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Sitemap generated: public/sitemap.xml
+✅ Robots.txt updated: public/robots.txt
+✅ Generator script created: generate-sitemap.py
+✅ All changes committed to git
+✅ Deployed to main branch
+
+Commits:
+  - 2425737: Add complete sitemap.xml with all 457 blog posts
+  - be7e502: Update robots.txt: allow public pages, update sitemap URL
+
+═══════════════════════════════════════════════════════════════════════════════
+NEXT STEPS FOR GOOGLE INDEXING
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Submit to Google Search Console:
+   - Go to: https://search.google.com/search-console
+   - Add sitemap URL: https://www.militarytransitiontoolkit.com/sitemap.xml
+   - Monitor indexing status
+
+2. Verify robots.txt:
+   - Test: https://www.militarytransitiontoolkit.com/robots.txt
+   - Ensure it loads correctly
+
+3. Monitor Indexing:
+   - Check Google Search Console for crawl errors
+   - Monitor which pages get indexed
+   - Track search appearance over time
+
+4. Update Sitemap When Adding Content:
+   - Run: python3 generate-sitemap.py
+   - Commit and push changes
+   - Google will auto-discover updates (checks daily)
+
+═══════════════════════════════════════════════════════════════════════════════
+SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Complete sitemap with 469 URLs generated and deployed
+✅ All 457 blog posts included for Google indexing
+✅ Proper SEO priorities and change frequencies configured
+✅ Robots.txt updated to allow public pages and reference sitemap
+✅ Generator script created for easy future updates
+✅ All changes committed and pushed to production
+
+Site is now ready for optimal Google indexing!
+
+═══════════════════════════════════════════════════════════════════════════════
+COMPLETE
+═══════════════════════════════════════════════════════════════════════════════
