@@ -1,0 +1,18 @@
+Category,Modification,Low Estimate,High Estimate,Typical Range,Complexity,Installation Time
+Entry,Portable Ramp,100,1000,100-500,Low,1 day
+Entry,Permanent Ramp (concrete),2000,5000,2500-4000,Medium,3-5 days
+Entry,Door Widening (interior),500,2500,700-1200,Medium,1-2 days
+Entry,Door Widening (exterior),1000,5000,1500-2500,High,2-3 days
+Bathroom,Grab Bars (1-2 bars),100,500,200-350,Low,0.5-1 day
+Bathroom,Walk-in Tub,5000,15000,7000-12000,High,2-4 days
+Bathroom,Roll-in Shower,5000,15000,8000-12000,High,5-7 days
+Bathroom,Full ADA Remodel,9000,40000,15000-25000,High,2-4 weeks
+Kitchen,Counter Lowering,2000,8000,3500-6000,Medium,3-5 days
+Kitchen,Pull-out Shelves,500,3000,1000-2000,Low,1-2 days
+Kitchen,Full Accessible Remodel,13000,38000,18000-28000,High,2-4 weeks
+Mobility,Stairlift (straight),3500,6000,4000-5000,Medium,1-2 days
+Mobility,Stairlift (curved),8000,15000,10000-13000,High,2-3 days
+Mobility,Residential Elevator,15000,50000,30000-45000,Very High,4-8 weeks
+Flooring,Non-slip Flooring,2000,8000,3000-6000,Medium,3-7 days
+Safety,Improved Lighting,500,3000,1000-2000,Low,1-2 days
+Safety,Lever Handles/Faucets,200,1500,400-800,Low,1 day
