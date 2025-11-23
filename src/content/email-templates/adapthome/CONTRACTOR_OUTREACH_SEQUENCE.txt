@@ -1,0 +1,196 @@
+================================================================================
+ADAPTHOME CONTRACTOR OUTREACH EMAIL SEQUENCE
+3-Email Cold Outreach for CAPS-Certified Contractors
+================================================================================
+
+USAGE INSTRUCTIONS:
+- Personalize [First Name] with contractor's actual name
+- Update [adapthome.vet/contractor-signup] with actual signup URL
+- Adjust "13 contractors signed up" and "12 spots left" to reflect reality
+- Send emails 3-4 days apart (Day 1, Day 4, Day 7)
+- Skip subsequent emails if contractor responds
+
+================================================================================
+EMAIL 1: CONNECTION REQUEST FOLLOW-UP
+================================================================================
+
+SUBJECT LINE OPTIONS:
+1. Quick question about VA adaptive housing projects
+2. Fellow veteran here—question about your adaptive housing work
+3. Pre-qualified VA leads for CAPS-certified contractors
+4. Are you taking on more SAH/SHA projects right now?
+
+EMAIL BODY:
+---
+
+Hi [First Name],
+
+I noticed you're CAPS-certified and work with adaptive housing modifications. I'm Jacob, a 19-year Navy veteran currently on active duty, and I wanted to reach out about something I've been building.
+
+I'm launching AdaptHome, a platform that connects California veterans with qualified contractors like you for VA-funded adaptive housing modifications.
+
+Here's the problem: Veterans with approved SAH, SHA, or HISA grants struggle to find experienced contractors who understand VA requirements. They end up on HomeAdvisor getting bombarded by 5+ contractors fighting for the same lead, or worse—hiring someone with no VA experience who messes up their paperwork.
+
+Our solution: We pre-qualify veterans (grant already approved, budget confirmed), then match them with CAPS-certified contractors in their area. One veteran, one contractor. No bidding wars, no tire-kickers.
+
+Would you be open to a quick conversation about how this could work for your business? I'm keeping it very low-pressure—just want to see if it's a fit.
+
+Fair winds,
+Jacob
+E6, USN (Active Duty)
+Founder, AdaptHome
+adapthome.vet
+
+---
+
+TIMING: Send on Day 1
+
+================================================================================
+EMAIL 2: VALUE PROPOSITION
+================================================================================
+
+SUBJECT LINE:
+How AdaptHome works (and why I built it)
+
+EMAIL BODY:
+---
+
+Hi [First Name],
+
+Thanks for being open to learning more. Let me walk you through exactly how AdaptHome works and what our beta program looks like.
+
+THE PLATFORM:
+
+Veterans come to us, enter their ZIP code, disability type, and needed modifications. Our calculator gives them instant cost estimates based on their grant type (SAH/SHA/HISA).
+
+If they're in Southern California and you're in their area, we match them directly with you. One lead, one contractor. The veteran gets your contact info, you get theirs. From there, it's your relationship to manage.
+
+BETA PROGRAM (First 25 Contractors):
+
+- Cost: Free leads during beta (normally $400-500 per lead post-beta)
+- Geographic focus: San Diego, Orange, Riverside, San Bernardino counties
+- Lead quality: Veterans with approved grants, not window shoppers
+- Exclusivity: We don't send the same lead to multiple contractors
+- Your commitment: Just list your profile and respond when leads come in
+
+TIME INVESTMENT:
+
+Setup takes about 10 minutes (company info, service areas, certifications). After that, you'll get email notifications when a qualified veteran in your area needs work. No monthly fees, no platform management, no BS.
+
+WHY THIS WORKS:
+
+I'm building this because I've seen too many veterans get screwed by contractors who don't understand VA requirements, or they waste weeks trying to find someone qualified. And I've talked to contractors frustrated by HomeAdvisor-style lead mills where they're competing with 5 other people for the same job.
+
+This is better for everyone.
+
+NEXT STEPS:
+
+If this sounds like something you'd want to be part of, I can get you set up in the beta this week. We're limiting it to 25 contractors to make sure we're delivering quality leads, not volume.
+
+Let me know if you have any questions.
+
+Respectfully,
+Jacob
+E6, USN (Active Duty)
+Founder, AdaptHome
+adapthome.vet
+
+P.S. I'm also building a suite of veteran-focused tools (Transition Toolkit, SpouseForce). This is all about serving those who served—with authenticity, not corporate fluff.
+
+---
+
+TIMING: Send on Day 4 (only if no response to Email 1)
+
+================================================================================
+EMAIL 3: URGENCY & CALL TO ACTION
+================================================================================
+
+SUBJECT LINE OPTIONS:
+1. [First Name]—12 beta spots left for SoCal contractors
+2. Last call: Free VA leads for CAPS contractors (beta closing soon)
+3. 12 spots left—then we go to paid model
+4. Don't sleep on this, [First Name]
+
+EMAIL BODY:
+---
+
+Hi [First Name],
+
+Quick update: We're down to 12 remaining spots in our beta program for Southern California contractors.
+
+I wanted to reach back out because I think AdaptHome could be a solid lead source for your business, and I don't want you to miss the window for free beta access.
+
+WHAT'S HAPPENING RIGHT NOW:
+
+- 13 CAPS-certified contractors already signed up in San Diego and Orange County
+- We're launching veteran outreach next week (targeting 20 qualified leads in the first 30 days)
+- Beta contractors get free leads through Q1 2026—after that, we move to paid ($400-500 per lead or $299/month subscription)
+
+WHY THE 25-CONTRACTOR LIMIT?
+
+I want to prove the model works before scaling. That means focusing on quality leads in a defined geographic area, not spreading thin across the whole state. If we can't deliver real value in SoCal first, we have no business expanding.
+
+YOUR MOVE:
+
+If you want in, here's the signup link: [adapthome.vet/contractor-signup]
+
+Takes less than 10 minutes. If you're on the fence, I'm happy to answer any questions—just hit reply.
+
+But if this isn't for you, no worries. I'll stop reaching out and wish you fair winds.
+
+Semper Fi (or your service equivalent),
+Jacob
+E6, USN (Active Duty)
+Founder, AdaptHome
+adapthome.vet
+
+P.S. After we fill the 25 beta spots, the next contractors will go on a waitlist and pay from day one. I'm not saying that to be pushy—just being straight with you about where we're at.
+
+---
+
+TIMING: Send on Day 7 (only if no response to Email 1 or 2)
+
+================================================================================
+QUICK REFERENCE: PERSONALIZATION CHECKLIST
+================================================================================
+
+Before sending each email, update:
+☐ [First Name] → Contractor's actual first name
+☐ [adapthome.vet/contractor-signup] → Actual signup URL
+☐ "13 contractors signed up" → Current number of signups
+☐ "12 spots left" → Actual remaining beta spots
+☐ Service-specific sign-off if you know their branch (Semper Fi, Hooyah, etc.)
+
+================================================================================
+RESPONSE HANDLING GUIDE
+================================================================================
+
+IF THEY RESPOND POSITIVELY TO EMAIL 1:
+→ Skip Email 2 and 3
+→ Reply within 24 hours
+→ Send signup link directly
+→ Offer 10-15 min onboarding call
+
+IF THEY RESPOND WITH QUESTIONS:
+→ Answer directly, don't be pushy
+→ Reiterate beta benefits (free leads, exclusive)
+→ Ask if they want a quick call
+
+IF THEY RESPOND TO EMAIL 3:
+→ Fast-track to signup
+→ Thank them for interest
+→ Set expectations for next steps
+
+IF NO RESPONSE AFTER EMAIL 3:
+→ Move to "warm lead" list
+→ Follow up in 30 days with progress update
+
+================================================================================
+END OF SEQUENCE
+================================================================================
+
+Version: 1.0
+Created: November 2025
+Author: Jacob, Formation Labs LLC
+
+For full strategy guide, see README.md
