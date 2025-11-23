@@ -542,7 +542,7 @@ export default function ResumeBuilder({ previewMode = false }) {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
-      <div className={`max-w-7xl mx-auto px-4 ${previewMode ? 'pointer-events-none opacity-60' : ''}`}>
+      <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-3">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Resume Builder</h1>

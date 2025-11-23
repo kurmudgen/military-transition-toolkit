@@ -13,6 +13,15 @@ export const militaryPhrases = [
   // LEADERSHIP & MANAGEMENT
   // ========================================
   {
+    military: "Led",
+    civilian: {
+      executive: "Directed",
+      technical: "Supervised",
+      entryLevel: "Coordinated"
+    },
+    category: "leadership"
+  },
+  {
     military: "Led a team of",
     civilian: {
       executive: "Directed cross-functional team of",

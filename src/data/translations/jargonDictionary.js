@@ -189,6 +189,21 @@ export const jargonDictionary = [
     civilian: "Pause operations / Cease activity",
     type: "operational"
   },
+  {
+    military: "Combat",
+    civilian: "Operational / High-pressure",
+    type: "operational"
+  },
+  {
+    military: "Day-to-day",
+    civilian: "Daily / Routine",
+    type: "operational"
+  },
+  {
+    military: "Day to day",
+    civilian: "Daily / Routine",
+    type: "operational"
+  },
 
   // ========================================
   // ADMINISTRATIVE & HR TERMS
@@ -448,8 +463,25 @@ export function replaceJargonInText(text) {
   let result = text;
 
   jargonDictionary.forEach(({ military, civilian }) => {
-    const regex = new RegExp(`\\b${military}\\b`, 'gi');
-    result = result.replace(regex, civilian);
+    // Handle both singular and plural, case-insensitive
+    // Escape special regex characters in military term
+    const escapedTerm = military.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+    // Pick the FIRST civilian option if there are multiple (split by " / ")
+    const civilianTerm = civilian.split(' / ')[0].trim();
+
+    // Match singular
+    const singularRegex = new RegExp(`\\b${escapedTerm}\\b`, 'gi');
+    result = result.replace(singularRegex, civilianTerm);
+
+    // Match plural - if military term ends in 's', match it; otherwise add 's'
+    const pluralMilitary = military.endsWith('s') ? escapedTerm : escapedTerm + 's';
+    const pluralCivilian = civilianTerm.endsWith('y')
+      ? civilianTerm.slice(0, -1) + 'ies'  // activity → activities
+      : civilianTerm + 's';  // employee → employees
+
+    const pluralRegex = new RegExp(`\\b${pluralMilitary}\\b`, 'gi');
+    result = result.replace(pluralRegex, pluralCivilian);
   });
 
   return result;
