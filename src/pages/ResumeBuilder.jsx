@@ -15,6 +15,11 @@ import {
   ACTION_VERBS,
   EXAMPLE_BULLETS
 } from '../utils/militaryTranslation'
+import {
+  generateBulletVariations,
+  analyzeResumeBullet,
+  getJobRecommendations
+} from '../utils/resumeTranslator'
 import { generateResumePDF } from '../utils/pdfExport'
 import {
   getAllResumes,
@@ -67,6 +72,9 @@ export default function ResumeBuilder({ previewMode = false }) {
   const [mosSearch, setMosSearch] = useState('')
   const [accomplishmentInput, setAccomplishmentInput] = useState('')
   const [translatedAccomplishment, setTranslatedAccomplishment] = useState('')
+  const [selectedRank, setSelectedRank] = useState('E6') // Default to E6
+  const [bulletVariations, setBulletVariations] = useState(null)
+  const [bulletAnalysis, setBulletAnalysis] = useState(null)
 
   // Resume Import States
   const [showImportModal, setShowImportModal] = useState(false)
@@ -1892,6 +1900,27 @@ export default function ResumeBuilder({ previewMode = false }) {
               {/* Accomplishments Tab */}
               {translationTab === 'accomplishments' && (
                 <div className="space-y-4">
+                  {/* Rank Selector */}
+                  <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-300 dark:border-blue-700 rounded-lg p-4">
+                    <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                      Select Your Rank/Pay Grade
+                    </label>
+                    <select
+                      value={selectedRank}
+                      onChange={(e) => setSelectedRank(e.target.value)}
+                      className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                    >
+                      <option value="E4">E1-E4 (Junior Enlisted)</option>
+                      <option value="E6">E5-E6 (NCO/Petty Officer)</option>
+                      <option value="E8">E7-E9 (Senior NCO/Chief)</option>
+                      <option value="O3">O1-O3 (Junior Officer)</option>
+                      <option value="O5">O4-O6 (Senior Officer)</option>
+                    </select>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                      💡 Translations adjust based on your rank and target civilian role level
+                    </p>
+                  </div>
+
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       Enter your military accomplishment
@@ -1906,30 +1935,146 @@ export default function ResumeBuilder({ previewMode = false }) {
                   </div>
 
                   <button
-                    onClick={() => setTranslatedAccomplishment(translateAccomplishment(accomplishmentInput))}
+                    onClick={() => {
+                      const variations = generateBulletVariations(accomplishmentInput, selectedRank)
+                      const analysis = analyzeResumeBullet(accomplishmentInput, selectedRank)
+                      setBulletVariations(variations)
+                      setBulletAnalysis(analysis)
+                      setTranslatedAccomplishment('') // Clear old single translation
+                    }}
                     disabled={!accomplishmentInput.trim()}
-                    className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed shadow-lg text-lg"
                   >
-                    Translate to Civilian Language
+                    ✨ Translate to Civilian Language (New!)
                   </button>
 
-                  {translatedAccomplishment && (
-                    <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-500 rounded-lg p-6">
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
-                        ✓ Civilian-Friendly Version
+                  {/* 3 Variations Display */}
+                  {bulletVariations && (
+                    <div className="space-y-4 mt-6">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                        ✨ Your Civilian-Friendly Translations
                       </h3>
-                      <p className="text-lg text-gray-900 dark:text-white leading-relaxed">
-                        {translatedAccomplishment}
-                      </p>
-                      <button
-                        onClick={() => {
-                          navigator.clipboard.writeText(translatedAccomplishment)
-                          alert('✓ Copied to clipboard!')
-                        }}
-                        className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition text-sm"
-                      >
-                        📋 Copy to Clipboard
-                      </button>
+
+                      {/* Executive/Leadership Focus */}
+                      <div className="border-2 border-purple-300 dark:border-purple-700 rounded-lg p-5 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20">
+                        <div className="flex items-center justify-between mb-3">
+                          <h4 className="font-bold text-purple-900 dark:text-purple-300 text-lg">
+                            🎯 Executive/Leadership Focus
+                          </h4>
+                          <button
+                            onClick={() => {
+                              navigator.clipboard.writeText(bulletVariations.executive)
+                              alert('✓ Executive version copied!')
+                            }}
+                            className="px-3 py-1 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold rounded transition"
+                          >
+                            📋 Copy
+                          </button>
+                        </div>
+                        <p className="text-gray-900 dark:text-white text-base leading-relaxed">
+                          {bulletVariations.executive}
+                        </p>
+                        <p className="text-xs text-purple-700 dark:text-purple-300 mt-2">
+                          Best for: Director, Manager, Senior Leadership roles
+                        </p>
+                      </div>
+
+                      {/* Technical/Specialist Focus */}
+                      <div className="border-2 border-green-300 dark:border-green-700 rounded-lg p-5 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20">
+                        <div className="flex items-center justify-between mb-3">
+                          <h4 className="font-bold text-green-900 dark:text-green-300 text-lg">
+                            ⚙️ Technical/Specialist Focus
+                          </h4>
+                          <button
+                            onClick={() => {
+                              navigator.clipboard.writeText(bulletVariations.technical)
+                              alert('✓ Technical version copied!')
+                            }}
+                            className="px-3 py-1 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded transition"
+                          >
+                            📋 Copy
+                          </button>
+                        </div>
+                        <p className="text-gray-900 dark:text-white text-base leading-relaxed">
+                          {bulletVariations.technical}
+                        </p>
+                        <p className="text-xs text-green-700 dark:text-green-300 mt-2">
+                          Best for: Technical Specialist, Analyst, Subject Matter Expert roles
+                        </p>
+                      </div>
+
+                      {/* Entry-Level Focus */}
+                      <div className="border-2 border-blue-300 dark:border-blue-700 rounded-lg p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20">
+                        <div className="flex items-center justify-between mb-3">
+                          <h4 className="font-bold text-blue-900 dark:text-blue-300 text-lg">
+                            🌱 Entry-Level Focus
+                          </h4>
+                          <button
+                            onClick={() => {
+                              navigator.clipboard.writeText(bulletVariations.entryLevel)
+                              alert('✓ Entry-level version copied!')
+                            }}
+                            className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition"
+                          >
+                            📋 Copy
+                          </button>
+                        </div>
+                        <p className="text-gray-900 dark:text-white text-base leading-relaxed">
+                          {bulletVariations.entryLevel}
+                        </p>
+                        <p className="text-xs text-blue-700 dark:text-blue-300 mt-2">
+                          Best for: Entry-Level, Associate, Team Member roles
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Analysis Section */}
+                  {bulletAnalysis && (
+                    <div className="mt-4 space-y-3">
+                      {/* Detected Jargon */}
+                      {bulletAnalysis.detectedJargon && bulletAnalysis.detectedJargon.length > 0 && (
+                        <div className="bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-400 dark:border-yellow-700 rounded-lg p-4">
+                          <h4 className="font-bold text-yellow-900 dark:text-yellow-300 mb-2 text-sm">
+                            ⚠️ Military Jargon Detected & Replaced:
+                          </h4>
+                          <div className="flex flex-wrap gap-2">
+                            {bulletAnalysis.detectedJargon.map((item, idx) => (
+                              <span key={idx} className="bg-yellow-100 dark:bg-yellow-800 px-3 py-1 rounded-full text-sm text-yellow-900 dark:text-yellow-200 font-medium">
+                                {item.military} → {item.civilian}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Detected Phrases */}
+                      {bulletAnalysis.detectedPhrases && bulletAnalysis.detectedPhrases.length > 0 && (
+                        <div className="bg-orange-50 dark:bg-orange-900/20 border-2 border-orange-400 dark:border-orange-700 rounded-lg p-4">
+                          <h4 className="font-bold text-orange-900 dark:text-orange-300 mb-2 text-sm">
+                            🔄 Military Phrases Translated:
+                          </h4>
+                          <div className="space-y-1 text-sm text-orange-900 dark:text-orange-200">
+                            {bulletAnalysis.detectedPhrases.map((phrase, idx) => (
+                              <div key={idx}>• {phrase.category}: "{phrase.military}"</div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Recommendations */}
+                      {bulletAnalysis.recommendations && (
+                        <div className="bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-400 dark:border-blue-700 rounded-lg p-4">
+                          <h4 className="font-bold text-blue-900 dark:text-blue-300 mb-2 text-sm">
+                            💡 Recommendations:
+                          </h4>
+                          <ul className="text-sm text-blue-900 dark:text-blue-200 space-y-1">
+                            {bulletAnalysis.recommendations.focusAreas && bulletAnalysis.recommendations.focusAreas.map((area, idx) => (
+                              <li key={idx}>• {area}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   )}
 
