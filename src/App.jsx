@@ -49,6 +49,9 @@ import NotFound from './pages/NotFound'
 import StateBenefitsIndex from './pages/state-benefits/StateBenefitsIndex'
 import StateDetailPage from './pages/state-benefits/StateDetailPage'
 
+// AdaptHome pages
+import SanDiegoLanding from './pages/adapthome/SanDiegoLanding'
+
 function App() {
   return (
     <ErrorBoundary>
@@ -79,6 +82,9 @@ function App() {
           {/* State Benefits Tool (public access - browsing free, saving requires account) */}
           <Route path="/state-benefits" element={<StateBenefitsIndex />} />
           <Route path="/state-benefits/:stateCode" element={<StateDetailPage />} />
+
+          {/* AdaptHome pages (public access) */}
+          <Route path="/adapthome/san-diego" element={<SanDiegoLanding />} />
 
           {/* Tier 1: Public access pages (no login required, fully functional) */}
           <Route path="/public/retirement-calculator" element={<RetirementCalculator publicMode />} />
