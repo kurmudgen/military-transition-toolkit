@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect with CAPS-certified contractors for VA housing grants in San Diego County. Free cost calculator for SAH, SHA, and HISA grants. Veteran-owned and operated.">
+  <meta name="keywords" content="VA housing grant San Diego, adaptive housing, CAPS contractors, SAH grant, SHA grant, HISA grant, veteran home modifications">
+  <title>VA Housing Grants for San Diego County Veterans | AdaptHome.vet</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #e2e8f0;
+      background: linear-gradient(to bottom right, #0f172a, #1e293b, #0f172a);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Navigation */
+    nav {
+      background: rgba(30, 41, 59, 0.5);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #334155;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .logo:hover {
+      color: #60a5fa;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+
+    .btn-secondary {
+      background: #475569;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: #334155;
+    }
+
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-white {
+      background: white;
+      color: #1d4ed8;
+      font-weight: bold;
+    }
+
+    .btn-white:hover {
+      background: #f3f4f6;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(37, 99, 235, 0.2);
+      border: 1px solid #3b82f6;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge-text {
+      color: #60a5fa;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      margin-bottom: 2rem;
+      max-width: 48rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .veteran-badge {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      margin-top: 2rem;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .stat-card {
+      background: rgba(30, 41, 59, 0.5);
+      backdrop-filter: blur(12px);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid #334155;
+    }
+
+    .stat-number {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-number.blue { color: #60a5fa; }
+    .stat-number.green { color: #4ade80; }
+    .stat-number.purple { color: #c084fc; }
+    .stat-number.yellow { color: #fbbf24; }
+
+    .stat-label {
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-detail {
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+
+    /* Cards */
+    .card {
+      background: rgba(30, 41, 59, 0.5);
+      backdrop-filter: blur(12px);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      border: 1px solid #334155;
+      margin-bottom: 3rem;
+    }
+
+    .card:hover {
+      border-color: #3b82f6;
+      transition: border-color 0.3s;
+    }
+
+    /* Modifications Grid */
+    .modifications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .modification-card {
+      background: rgba(30, 41, 59, 0.5);
+      backdrop-filter: blur(12px);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid #334155;
+      transition: border-color 0.3s;
+    }
+
+    .modification-card:hover {
+      border-color: #3b82f6;
+    }
+
+    .modification-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 0.75rem;
+    }
+
+    .modification-name {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .request-rate {
+      background: rgba(37, 99, 235, 0.2);
+      color: #60a5fa;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+    }
+
+    .modification-cost {
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    .modification-detail {
+      font-size: 0.875rem;
+      color: #64748b;
+      margin-top: 0.5rem;
+    }
+
+    /* Contractors Grid */
+    .contractors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .contractor-card {
+      background: rgba(30, 41, 59, 0.5);
+      backdrop-filter: blur(12px);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid #334155;
+      transition: border-color 0.3s;
+    }
+
+    .contractor-card:hover {
+      border-color: #3b82f6;
+    }
+
+    .contractor-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 1rem;
+    }
+
+    .contractor-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 0.25rem;
+    }
+
+    .contractor-location {
+      color: #94a3b8;
+      font-size: 0.875rem;
+    }
+
+    .caps-badge {
+      background: rgba(22, 163, 74, 0.2);
+      color: #4ade80;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .specialties {
+      margin-bottom: 1rem;
+    }
+
+    .specialties-label {
+      font-size: 0.875rem;
+      color: #64748b;
+      margin-bottom: 0.5rem;
+    }
+
+    .specialty-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .specialty-tag {
+      background: #475569;
+      color: #cbd5e1;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+    }
+
+    .contractor-stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      color: #94a3b8;
+    }
+
+    .contractor-stats strong {
+      color: white;
+    }
+
+    /* Info Box */
+    .info-box {
+      background: rgba(37, 99, 235, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .warning-box {
+      background: rgba(234, 179, 8, 0.1);
+      border: 1px solid rgba(234, 179, 8, 0.3);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .warning-title {
+      color: #fbbf24;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .warning-text {
+      color: #cbd5e1;
+      font-size: 0.875rem;
+    }
+
+    /* Success Story */
+    .success-story {
+      background: linear-gradient(to right, rgba(37, 99, 235, 0.2), rgba(147, 51, 234, 0.2));
+      backdrop-filter: blur(12px);
+      border-radius: 1rem;
+      padding: 2rem;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .stars {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      color: #cbd5e1;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .author-section {
+      border-top: 1px solid #475569;
+      padding-top: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .author-name {
+      color: white;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .author-detail {
+      color: #94a3b8;
+      font-size: 0.875rem;
+    }
+
+    /* Contact Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .contact-info div {
+      margin-bottom: 1rem;
+    }
+
+    .contact-label {
+      font-size: 0.875rem;
+      color: #64748b;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-value {
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(to right, #2563eb, #1d4ed8);
+      border-radius: 1rem;
+      padding: 3rem;
+      text-align: center;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-title {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta-text {
+      color: #bfdbfe;
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      max-width: 42rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .features-list {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      color: #bfdbfe;
+      font-size: 0.875rem;
+      margin-top: 1.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #334155;
+      background: rgba(30, 41, 59, 0.3);
+      backdrop-filter: blur(12px);
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.875rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Section Spacing */
+    section {
+      padding: 4rem 1rem;
+    }
+
+    .home-values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .home-value {
+      font-size: 1.875rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    .city-name {
+      color: #cbd5e1;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .region-name {
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+
+    .grant-types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .grant-type {
+      margin-bottom: 0.5rem;
+    }
+
+    .grant-name {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .grant-name.blue { color: #60a5fa; }
+    .grant-name.green { color: #4ade80; }
+    .grant-name.purple { color: #c084fc; }
+
+    .grant-amount {
+      color: #cbd5e1;
+    }
+
+    .grant-description {
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+
+    /* Responsive */
+    @media (min-width: 640px) {
+      .cta-buttons {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      .nav-links-mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .nav-links {
+        display: none;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-content">
+      <a href="#" class="logo">AdaptHome.vet</a>
+      <div class="nav-links">
+        <a href="#stats">Stats</a>
+        <a href="#modifications">Modifications</a>
+        <a href="#contractors">Contractors</a>
+        <a href="#contact">Contact</a>
+        <a href="#calculator" class="btn-primary">Calculate Costs</a>
+      </div>
+      <div class="nav-links-mobile">
+        <a href="#calculator" class="btn-primary">Calculate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">
+        <span class="badge-text">San Diego County Veterans</span>
+      </div>
+
+      <h1>VA Housing Grants for<br>San Diego County Veterans</h1>
+
+      <p class="lead">
+        Connect with CAPS-certified contractors for your adaptive home modifications.
+        Free cost calculator + contractor matching for veterans with SAH, SHA, or HISA grants.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="#calculator" class="btn-primary btn-lg">Calculate Your Project Costs →</a>
+        <a href="#contractors" class="btn-secondary btn-lg">View Local Contractors</a>
+      </div>
+
+      <div class="veteran-badge">
+        <p>🇺🇸 Veteran-Owned & Operated | Always Free for Veterans</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats">
+    <div class="container">
+      <h2>San Diego County by the Numbers</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number blue">240,000</div>
+          <div class="stat-label">Veterans in San Diego County</div>
+          <div class="stat-detail">2nd largest in California</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number green">$875K</div>
+          <div class="stat-label">Median Home Value</div>
+          <div class="stat-detail">San Diego City (2024)</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number purple">$115,956</div>
+          <div class="stat-label">Max SAH Grant</div>
+          <div class="stat-detail">For major modifications</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number yellow">7</div>
+          <div class="stat-label">CAPS Contractors</div>
+          <div class="stat-detail">VA-experienced in your area</div>
+        </div>
+      </div>
+
+      <!-- Regional Home Values -->
+      <div class="card">
+        <h3>Average Home Values by City</h3>
+        <div class="home-values-grid">
+          <div>
+            <div class="home-value">$930K</div>
+            <div class="city-name">San Diego</div>
+            <div class="region-name">Downtown & Coastal</div>
+          </div>
+          <div>
+            <div class="home-value">$865K</div>
+            <div class="city-name">Oceanside</div>
+            <div class="region-name">North County</div>
+          </div>
+          <div>
+            <div class="home-value">$820K</div>
+            <div class="city-name">Chula Vista</div>
+            <div class="region-name">South Bay</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Modifications Section -->
+  <section id="modifications">
+    <div class="container">
+      <h2>Most Requested Modifications</h2>
+      <p style="text-align: center; color: #94a3b8; margin-bottom: 3rem;">
+        Based on VA grant applications in San Diego County
+      </p>
+
+      <div class="modifications-grid">
+        <div class="modification-card">
+          <div class="modification-header">
+            <h3 class="modification-name">Bathroom Modifications</h3>
+            <span class="request-rate">78%</span>
+          </div>
+          <p class="modification-cost">$15,000 - $35,000</p>
+          <p class="modification-detail">Average cost range in San Diego</p>
+        </div>
+
+        <div class="modification-card">
+          <div class="modification-header">
+            <h3 class="modification-name">Wheelchair Ramps</h3>
+            <span class="request-rate">65%</span>
+          </div>
+          <p class="modification-cost">$3,000 - $12,000</p>
+          <p class="modification-detail">Average cost range in San Diego</p>
+        </div>
+
+        <div class="modification-card">
+          <div class="modification-header">
+            <h3 class="modification-name">Door Widening</h3>
+            <span class="request-rate">52%</span>
+          </div>
+          <p class="modification-cost">$1,500 - $3,500</p>
+          <p class="modification-detail">Average cost range in San Diego</p>
+        </div>
+
+        <div class="modification-card">
+          <div class="modification-header">
+            <h3 class="modification-name">Roll-in/Walk-in Showers</h3>
+            <span class="request-rate">61%</span>
+          </div>
+          <p class="modification-cost">$8,000 - $20,000</p>
+          <p class="modification-detail">Average cost range in San Diego</p>
+        </div>
+
+        <div class="modification-card">
+          <div class="modification-header">
+            <h3 class="modification-name">Grab Bar Installation</h3>
+            <span class="request-rate">45%</span>
+          </div>
+          <p class="modification-cost">$500 - $2,000</p>
+          <p class="modification-detail">Average cost range in San Diego</p>
+        </div>
+
+        <div class="modification-card">
+          <div class="modification-header">
+            <h3 class="modification-name">Kitchen Modifications</h3>
+            <span class="request-rate">38%</span>
+          </div>
+          <p class="modification-cost">$10,000 - $25,000</p>
+          <p class="modification-detail">Average cost range in San Diego</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>VA Grant Programs Available:</h3>
+        <div class="grant-types-grid">
+          <div class="grant-type">
+            <div class="grant-name blue">SAH Grant</div>
+            <div class="grant-amount">Up to $115,956</div>
+            <div class="grant-description">Major modifications</div>
+          </div>
+          <div class="grant-type">
+            <div class="grant-name green">SHA Grant</div>
+            <div class="grant-amount">Up to $23,444</div>
+            <div class="grant-description">Less extensive modifications</div>
+          </div>
+          <div class="grant-type">
+            <div class="grant-name purple">HISA Grant</div>
+            <div class="grant-amount">Up to $6,800</div>
+            <div class="grant-description">Minor modifications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contractors Section -->
+  <section id="contractors">
+    <div class="container">
+      <h2>CAPS-Certified Contractors in San Diego County</h2>
+      <p style="text-align: center; color: #94a3b8; margin-bottom: 3rem;">
+        All contractors are verified CAPS-certified and VA-experienced
+      </p>
+
+      <div class="contractors-grid">
+        <div class="contractor-card">
+          <div class="contractor-header">
+            <div>
+              <h3 class="contractor-name">Accessible Home Solutions San Diego</h3>
+              <p class="contractor-location">📍 San Diego, CA</p>
+            </div>
+            <span class="caps-badge">✓ CAPS</span>
+          </div>
+          <div class="specialties">
+            <div class="specialties-label">Specialties:</div>
+            <div class="specialty-tags">
+              <span class="specialty-tag">Bathroom Modifications</span>
+              <span class="specialty-tag">Wheelchair Ramps</span>
+              <span class="specialty-tag">Door Widening</span>
+            </div>
+          </div>
+          <div class="contractor-stats">
+            <div><strong>12</strong> years experience</div>
+            <div><strong>45</strong> VA projects</div>
+          </div>
+        </div>
+
+        <div class="contractor-card">
+          <div class="contractor-header">
+            <div>
+              <h3 class="contractor-name">Freedom Access Remodeling</h3>
+              <p class="contractor-location">📍 Oceanside, CA</p>
+            </div>
+            <span class="caps-badge">✓ CAPS</span>
+          </div>
+          <div class="specialties">
+            <div class="specialties-label">Specialties:</div>
+            <div class="specialty-tags">
+              <span class="specialty-tag">Kitchen Adaptations</span>
+              <span class="specialty-tag">Roll-in Showers</span>
+              <span class="specialty-tag">Grab Bar Installation</span>
+            </div>
+          </div>
+          <div class="contractor-stats">
+            <div><strong>8</strong> years experience</div>
+            <div><strong>32</strong> VA projects</div>
+          </div>
+        </div>
+
+        <div class="contractor-card">
+          <div class="contractor-header">
+            <div>
+              <h3 class="contractor-name">Veterans First Construction</h3>
+              <p class="contractor-location">📍 Chula Vista, CA</p>
+            </div>
+            <span class="caps-badge">✓ CAPS</span>
+          </div>
+          <div class="specialties">
+            <div class="specialties-label">Specialties:</div>
+            <div class="specialty-tags">
+              <span class="specialty-tag">Full Home Modifications</span>
+              <span class="specialty-tag">Elevator Installation</span>
+              <span class="specialty-tag">Smart Home Tech</span>
+            </div>
+          </div>
+          <div class="contractor-stats">
+            <div><strong>15</strong> years experience</div>
+            <div><strong>67</strong> VA projects</div>
+          </div>
+        </div>
+
+        <div class="contractor-card">
+          <div class="contractor-header">
+            <div>
+              <h3 class="contractor-name">Pacific Adaptive Builders</h3>
+              <p class="contractor-location">📍 La Mesa, CA</p>
+            </div>
+            <span class="caps-badge">✓ CAPS</span>
+          </div>
+          <div class="specialties">
+            <div class="specialties-label">Specialties:</div>
+            <div class="specialty-tags">
+              <span class="specialty-tag">Ramp Systems</span>
+              <span class="specialty-tag">Stair Lifts</span>
+              <span class="specialty-tag">Accessible Garages</span>
+            </div>
+          </div>
+          <div class="contractor-stats">
+            <div><strong>10</strong> years experience</div>
+            <div><strong>28</strong> VA projects</div>
+          </div>
+        </div>
+
+        <div class="contractor-card">
+          <div class="contractor-header">
+            <div>
+              <h3 class="contractor-name">SoCal Universal Design</h3>
+              <p class="contractor-location">📍 Carlsbad, CA</p>
+            </div>
+            <span class="caps-badge">✓ CAPS</span>
+          </div>
+          <div class="specialties">
+            <div class="specialties-label">Specialties:</div>
+            <div class="specialty-tags">
+              <span class="specialty-tag">Master Suite Conversions</span>
+              <span class="specialty-tag">Threshold Removal</span>
+              <span class="specialty-tag">Lighting Upgrades</span>
+            </div>
+          </div>
+          <div class="contractor-stats">
+            <div><strong>9</strong> years experience</div>
+            <div><strong>38</strong> VA projects</div>
+          </div>
+        </div>
+
+        <div class="contractor-card">
+          <div class="contractor-header">
+            <div>
+              <h3 class="contractor-name">Adapt & Thrive Home Services</h3>
+              <p class="contractor-location">📍 El Cajon, CA</p>
+            </div>
+            <span class="caps-badge">✓ CAPS</span>
+          </div>
+          <div class="specialties">
+            <div class="specialties-label">Specialties:</div>
+            <div class="specialty-tags">
+              <span class="specialty-tag">Bathroom Remodels</span>
+              <span class="specialty-tag">Kitchen Lowering</span>
+              <span class="specialty-tag">Accessible Entries</span>
+            </div>
+          </div>
+          <div class="contractor-stats">
+            <div><strong>11</strong> years experience</div>
+            <div><strong>41</strong> VA projects</div>
+          </div>
+        </div>
+
+        <div class="contractor-card">
+          <div class="contractor-header">
+            <div>
+              <h3 class="contractor-name">Mission Valley Accessibility</h3>
+              <p class="contractor-location">📍 San Diego, CA</p>
+            </div>
+            <span class="caps-badge">✓ CAPS</span>
+          </div>
+          <div class="specialties">
+            <div class="specialties-label">Specialties:</div>
+            <div class="specialty-tags">
+              <span class="specialty-tag">Complete Home Renovations</span>
+              <span class="specialty-tag">Voice-Activated Systems</span>
+              <span class="specialty-tag">Flooring Modifications</span>
+            </div>
+          </div>
+          <div class="contractor-stats">
+            <div><strong>14</strong> years experience</div>
+            <div><strong>53</strong> VA projects</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <p class="warning-title">🚧 Beta Launch - Example Contractors</p>
+        <p class="warning-text">
+          These are example contractors to demonstrate the platform. We're actively onboarding verified CAPS-certified contractors in San Diego County.
+          Contact us to join our beta program.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Story Section -->
+  <section>
+    <div class="container" style="max-width: 900px;">
+      <div class="success-story">
+        <div style="text-align: center;">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <h3 style="margin-bottom: 1.5rem;">Success Story: Marine Veteran in Oceanside</h3>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <p class="quote">
+            "After 22 years in the Marines, I took an IED blast in Afghanistan that left me wheelchair-bound.
+            Coming home to my family in Oceanside should have been a relief, but our home wasn't accessible.
+            I couldn't even get into my own bathroom independently."
+          </p>
+
+          <p class="quote">
+            "AdaptHome made the process so simple. Within 24 hours, I had cost estimates for a full bathroom remodel,
+            wheelchair ramp, and doorway widening - all within my SAH grant limits. They connected me with a local
+            CAPS contractor who had done dozens of VA projects."
+          </p>
+
+          <p class="quote">
+            "Four months later, I have a fully accessible home. Roll-in shower, widened doorways, and a beautiful ramp
+            that my kids use for their bikes. The contractor knew exactly what the VA required for approval. No surprises,
+            no runaround - just results."
+          </p>
+        </div>
+
+        <div class="author-section">
+          <p class="author-name">— Staff Sergeant Michael R., USMC (Ret.)</p>
+          <p class="author-detail">Oceanside, CA • 100% Service-Connected • SAH Grant Recipient</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VA Office Info Section -->
+  <section id="contact">
+    <div class="container" style="max-width: 900px;">
+      <h2>San Diego VA Regional Office</h2>
+
+      <div class="card">
+        <div class="contact-grid">
+          <div>
+            <h3 style="margin-bottom: 1rem;">Contact Information</h3>
+            <div class="contact-info">
+              <div>
+                <span class="contact-label">Address</span>
+                <div class="contact-value">8620 Spectrum Center Blvd, Suite 629</div>
+                <div class="contact-value">San Diego, CA 92123</div>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <div class="contact-value">800-827-1000</div>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <div class="contact-value">PCTC.vbasdc@va.gov</div>
+              </div>
+              <div>
+                <span class="contact-label">Hours</span>
+                <div class="contact-value">Monday - Friday: 8:00 AM - 4:00 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin-bottom: 1rem;">Getting Help</h3>
+            <div class="contact-info">
+              <div>
+                <div class="contact-value" style="margin-bottom: 0.25rem;">Schedule an Appointment</div>
+                <div style="font-size: 0.875rem; color: #94a3b8;">
+                  Use the VA's VERA portal for virtual or in-person appointments
+                </div>
+              </div>
+              <div>
+                <div class="contact-value" style="margin-bottom: 0.25rem;">Walk-ins Welcome</div>
+                <div style="font-size: 0.875rem; color: #94a3b8;">
+                  Walk-ins accepted during business hours for disability compensation, education benefits, and home loans
+                </div>
+              </div>
+              <div>
+                <div class="contact-value" style="margin-bottom: 0.25rem;">Parking</div>
+                <div style="font-size: 0.875rem; color: #94a3b8;">
+                  Free first hour, $2 per additional hour in adjacent parking garage
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="calculator">
+    <div class="container" style="max-width: 900px;">
+      <div class="cta-section">
+        <h2 class="cta-title">Ready to Start Your Project?</h2>
+        <p class="cta-text">
+          Get instant cost estimates for your adaptive home modifications and connect with
+          CAPS-certified contractors who understand VA grant requirements.
+        </p>
+
+        <div class="cta-buttons">
+          <button class="btn-white btn-lg">Calculate Your Project Costs →</button>
+          <button class="btn-secondary btn-lg" style="background: #1e3a8a;">Talk to a Contractor</button>
+        </div>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <span>✓</span>
+            <span>Always Free for Veterans</span>
+          </div>
+          <div class="feature-item">
+            <span>✓</span>
+            <span>No Obligations</span>
+          </div>
+          <div class="feature-item">
+            <span>✓</span>
+            <span>Veteran-Owned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About AdaptHome Section -->
+  <section>
+    <div class="container" style="max-width: 900px;">
+      <div class="card">
+        <h3 style="text-align: center; margin-bottom: 1rem;">About AdaptHome</h3>
+        <div style="color: #cbd5e1;">
+          <p style="margin-bottom: 1rem;">
+            AdaptHome is a veteran-to-veteran service connecting California veterans with VA housing grants
+            to CAPS-certified contractors who specialize in adaptive home modifications.
+          </p>
+          <p style="margin-bottom: 1rem;">
+            Built by Jacob, an active-duty Navy E6 with 19 years of service currently going through the medical
+            board process. I'm building the tools I wish existed during my own transition.
+          </p>
+          <p style="font-weight: 600; color: white;">
+            Our mission is simple: Make it easier for veterans to use their hard-earned VA benefits to create
+            accessible, independent living spaces.
+          </p>
+        </div>
+
+        <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #475569; text-align: center;">
+          <p style="color: #94a3b8; font-size: 0.875rem;">
+            Formation Labs LLC | Wyoming-Based | Serving Veterans Nationwide
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 AdaptHome.vet - A Formation Labs Product</p>
+      <p>Made with 🇺🇸 by veterans, for veterans</p>
+    </div>
+  </footer>
+</body>
+</html>
