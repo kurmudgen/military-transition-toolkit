@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { getPostContent, getPostBySlug } from '../utils/blog'
+import PublicNav from '../components/Navigation/PublicNav'
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -36,10 +37,13 @@ export default function BlogPost() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-500 mx-auto mb-4"></div>
-          <p className="text-slate-400">Loading post...</p>
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <PublicNav currentPage="/blog" />
+        <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-500 mx-auto mb-4"></div>
+            <p className="text-slate-400">Loading post...</p>
+          </div>
         </div>
       </div>
     )
@@ -47,21 +51,24 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
-        <div className="max-w-4xl mx-auto">
-          <Link to="/blog" className="inline-block text-lg font-semibold text-blue-400 hover:text-blue-300 transition-colors mb-6">
-            ← Back to Blog
-          </Link>
-          <div className="bg-slate-800 rounded-xl shadow-lg p-12 border border-slate-700 text-center">
-            <div className="text-6xl mb-4">📭</div>
-            <h2 className="text-2xl font-bold text-white mb-2">Post Not Found</h2>
-            <p className="text-slate-400 mb-6">The blog post you're looking for doesn't exist.</p>
-            <Link
-              to="/blog"
-              className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
-            >
-              View All Posts
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <PublicNav currentPage="/blog" />
+        <div className="p-4 md:p-8">
+          <div className="max-w-4xl mx-auto">
+            <Link to="/blog" className="inline-block text-lg font-semibold text-blue-400 hover:text-blue-300 transition-colors mb-6">
+              ← Back to Blog
             </Link>
+            <div className="bg-slate-800 rounded-xl shadow-lg p-12 border border-slate-700 text-center">
+              <div className="text-6xl mb-4">📭</div>
+              <h2 className="text-2xl font-bold text-white mb-2">Post Not Found</h2>
+              <p className="text-slate-400 mb-6">The blog post you're looking for doesn't exist.</p>
+              <Link
+                to="/blog"
+                className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+              >
+                View All Posts
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -69,8 +76,10 @@ export default function BlogPost() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
-      <article className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <PublicNav currentPage="/blog" />
+      <div className="p-4 md:p-8">
+        <article className="max-w-4xl mx-auto">
         {/* Back Link */}
         <Link to="/blog" className="inline-block text-lg font-semibold text-blue-400 hover:text-blue-300 transition-colors mb-6">
           ← Back to Blog
@@ -155,6 +164,7 @@ export default function BlogPost() {
           </Link>
         </div>
       </article>
+      </div>
     </div>
   )
 }

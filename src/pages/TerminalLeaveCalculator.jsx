@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import PublicNav from '../components/Navigation/PublicNav'
 
 // 2025 Base Pay for common ranks (monthly)
 const BASE_PAY_BY_RANK = {
@@ -82,10 +83,12 @@ export default function TerminalLeaveCalculator() {
   const recommendation = getRecommendation()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="mb-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <PublicNav currentPage="/calculator/terminal-leave" />
+      <div className="p-4 md:p-8">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="mb-8">
           <Link to="/" className="inline-block text-lg font-semibold text-blue-400 hover:text-blue-300 transition-colors mb-6">
             ← Back to Home
           </Link>
@@ -475,6 +478,7 @@ export default function TerminalLeaveCalculator() {
             </Link>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

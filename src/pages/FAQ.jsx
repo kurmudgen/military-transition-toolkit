@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import PublicNav from '../components/Navigation/PublicNav'
 
 export default function FAQ() {
   useEffect(() => {
@@ -6,8 +7,10 @@ export default function FAQ() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <PublicNav currentPage="/faq" />
+      <div className="p-4 md:p-8">
+        <div className="max-w-4xl mx-auto">
         <div className="bg-slate-800 rounded-lg shadow-xl p-6 mb-6 border border-slate-700">
           <h1 className="text-3xl font-bold text-white mb-2">Frequently Asked Questions</h1>
           <p className="text-slate-300">Honest answers to your questions about this tool</p>
@@ -240,6 +243,7 @@ export default function FAQ() {
             </details>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
