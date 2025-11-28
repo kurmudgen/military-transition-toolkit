@@ -58,16 +58,26 @@ BATCH 3 COMPLETE - Operations/Aircrew (15 guides)
 
 BATCH 4 COMPLETE - Aircraft Maintenance (13 guides)
 
+✓ 2A7X1 - Aircraft Metals Technology - 2025-11-28 09:10
+✓ 2A7X2 - Nondestructive Inspection - 2025-11-28 09:11
+✓ 2A7X3 - Aircraft Structural Maintenance - 2025-11-28 09:12
+✓ 2A7X5 - Low Observable Aircraft Structural - 2025-11-28 09:13
+✓ 2W0X1 - Munitions Systems - 2025-11-28 09:14
+✓ 2W1X1 - Aircraft Armament Systems - 2025-11-28 09:15
+✓ 2W2X1 - Nuclear Weapons - 2025-11-28 09:16
+✓ 2M0X1 - Missile/Space Electronic Maintenance - 2025-11-28 09:17
+✓ 2M0X2 - Missile/Space Systems Maintenance - 2025-11-28 09:18
+✓ 2M0X3 - Missile/Space Facilities - 2025-11-28 09:19
+
+BATCH 5 COMPLETE - Fabrication/Munitions/Missiles (10 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 5 - FABRICATION/MUNITIONS/MISSILES (10 guides):
-2A7X1, 2A7X2, 2A7X3, 2A7X5, 2W0X1, 2W1X1, 2W2X1, 2M0X1, 2M0X2, 2M0X3
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 85 guides
-
 BATCH 6 - LOGISTICS (12 guides):
 2S0X1, 2S0X2, 2T0X1, 2T1X1, 2T2X1, 2T3X1, 2T3X2, 2T3X5, 2T3X7, 2F0X1, 6C0X1, 2G0X1
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 75 guides
 
 BATCH 7 - SUPPORT/SERVICES (12 guides):
 3F0X1, 3F1X1, 3F2X1, 3F3X1, 3F4X1, 3F5X1, 3A0X1, 3A1X1, 3S0X1, 3S1X1, 3S2X1, 3S3X1
@@ -82,4 +92,4 @@ BATCH 10 - LEGAL/SECURITY (3 guides):
 5J0X1, 5P0X1, 5S0X1
 
 ═══════════════════════════════════════════════════════════════
-PROGRESS SUMMARY: 45 of 130 guides complete (35%)
+PROGRESS SUMMARY: 55 of 130 guides complete (42%)
