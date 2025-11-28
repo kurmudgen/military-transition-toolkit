@@ -14,16 +14,23 @@ COMPLETED:
 
 BATCH 1 COMPLETE - Cyber/IT (10 guides)
 
+✓ 1N0X1 - Operations Intelligence - 2025-11-28 07:56
+✓ 1N1X1 - Geospatial Intelligence - 2025-11-28 07:57
+✓ 1N2X1 - Signals Intelligence Analyst - 2025-11-28 07:58
+✓ 1N3X1 - Cryptologic Language Analyst - 2025-11-28 07:59
+✓ 1N4X1 - Fusion Analyst - 2025-11-28 08:00
+✓ 1N7X1 - Human Intelligence Specialist - 2025-11-28 08:01
+✓ 1N8X1 - Targeting Analyst - 2025-11-28 08:02
+
+BATCH 2 COMPLETE - Intel (7 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 2 - INTEL (7 guides):
-1N0X1, 1N1X1, 1N2X1, 1N3X1, 1N4X1, 1N7X1, 1N8X1
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 120 guides
-
 BATCH 3 - OPERATIONS/AIRCREW (15 guides):
 1A0X1, 1A1X1, 1A2X1, 1A3X1, 1A6X1, 1A8X1, 1A8X2, 1A9X1, 1C0X2, 1C1X1, 1C3X1, 1C4X1, 1C5X1, 1C6X1, 1C7X1
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 113 guides
 
 BATCH 4 - AIRCRAFT MAINTENANCE (13 guides):
 2A3X3, 2A3X5, 2A3X7, 2A5X1, 2A5X2, 2A5X3, 2A5X4, 2A6X1, 2A6X2, 2A6X3, 2A6X4, 2A6X5, 2A6X6
