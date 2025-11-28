@@ -110,16 +110,30 @@ BATCH 7 COMPLETE - Support/Services (12 guides)
 
 BATCH 8 COMPLETE - Public Affairs/Finance (6 guides)
 
+✓ 4A0X1 - Health Services Management - 2025-11-28 11:00
+✓ 4A1X1 - Medical Materiel - 2025-11-28 11:01
+✓ 4A2X1 - Biomedical Equipment - 2025-11-28 11:02
+✓ 4E0X1 - Public Health - 2025-11-28 11:03
+✓ 4H0X1 - Cardiopulmonary Laboratory - 2025-11-28 11:04
+✓ 4J0X2 - Physical Medicine - 2025-11-28 11:05
+✓ 4M0X1 - Aerospace and Operational Physiology - 2025-11-28 11:06
+✓ 4N0X1 - Aerospace Medical Service - 2025-11-28 11:07
+✓ 4N1X1 - Surgical Service - 2025-11-28 11:08
+✓ 4P0X1 - Pharmacy - 2025-11-28 11:09
+✓ 4R0X1 - Diagnostic Imaging - 2025-11-28 11:10
+✓ 4T0X1 - Medical Laboratory - 2025-11-28 11:11
+✓ 4T0X2 - Histopathology - 2025-11-28 11:12
+✓ 4V0X1 - Optics - 2025-11-28 11:13
+
+BATCH 9 COMPLETE - Medical (14 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 9 - MEDICAL (14 guides):
-4A0X1, 4A1X1, 4A2X1, 4E0X1, 4H0X1, 4J0X2, 4M0X1, 4N0X1, 4N1X1, 4P0X1, 4R0X1, 4T0X1, 4T0X2, 4V0X1
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 17 guides
-
 BATCH 10 - LEGAL/SECURITY (3 guides):
-5J0X1, 5P0X1, 5S0X1
+5J0X1 Paralegal, 3P0X1 Security Forces, 5R0X1 Chaplain Assistant
 
 ═══════════════════════════════════════════════════════════════
-PROGRESS SUMMARY: 85 of 102 guides complete (83%)
+REMAINING: 3 guides
+
+═══════════════════════════════════════════════════════════════
+PROGRESS SUMMARY: 99 of 102 guides complete (97%)
