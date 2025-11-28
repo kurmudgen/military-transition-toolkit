@@ -71,16 +71,28 @@ BATCH 4 COMPLETE - Aircraft Maintenance (13 guides)
 
 BATCH 5 COMPLETE - Fabrication/Munitions/Missiles (10 guides)
 
+✓ 2S0X1 - Materiel Management - 2025-11-28 09:35
+✓ 2S0X2 - Supply Management - 2025-11-28 09:36
+✓ 2T0X1 - Traffic Management - 2025-11-28 09:37
+✓ 2T1X1 - Vehicle Operations - 2025-11-28 09:38
+✓ 2T2X1 - Air Transportation - 2025-11-28 09:39
+✓ 2T3X1 - Vehicle Maintenance Special Purpose - 2025-11-28 09:40
+✓ 2T3X2 - Vehicle Maintenance Management - 2025-11-28 09:41
+✓ 2T3X5 - Vehicle Body Maintenance - 2025-11-28 09:42
+✓ 2T3X7 - Vehicle Management and Analysis - 2025-11-28 09:43
+✓ 2F0X1 - Fuels - 2025-11-28 09:44
+✓ 6C0X1 - Contracting - 2025-11-28 09:45
+✓ 2G0X1 - Logistics Plans - 2025-11-28 09:46
+
+BATCH 6 COMPLETE - Logistics (12 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 6 - LOGISTICS (12 guides):
-2S0X1, 2S0X2, 2T0X1, 2T1X1, 2T2X1, 2T3X1, 2T3X2, 2T3X5, 2T3X7, 2F0X1, 6C0X1, 2G0X1
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 75 guides
-
 BATCH 7 - SUPPORT/SERVICES (12 guides):
 3F0X1, 3F1X1, 3F2X1, 3F3X1, 3F4X1, 3F5X1, 3A0X1, 3A1X1, 3S0X1, 3S1X1, 3S2X1, 3S3X1
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 63 guides
 
 BATCH 8 - PUBLIC AFFAIRS/FINANCE (6 guides):
 3N0X1, 3N0X2, 3N0X5, 3N0X6, 3N1X1, 6F0X1
@@ -92,4 +104,4 @@ BATCH 10 - LEGAL/SECURITY (3 guides):
 5J0X1, 5P0X1, 5S0X1
 
 ═══════════════════════════════════════════════════════════════
-PROGRESS SUMMARY: 55 of 130 guides complete (42%)
+PROGRESS SUMMARY: 67 of 130 guides complete (52%)
