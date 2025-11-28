@@ -1,0 +1,47 @@
+Air Force AFSC Guide Generation - Started: 2025-11-28 07:44 UTC
+═══════════════════════════════════════════════════════════════
+COMPLETED:
+✓ 1B4X1 - Cyberspace Defense Operations - 2025-11-28 07:45
+✓ 3D0X1 - Knowledge Operations Management - 2025-11-28 07:46
+✓ 3D0X2 - Cyber Systems Operations - 2025-11-28 07:47
+✓ 3D0X3 - Cyber Surety - 2025-11-28 07:48
+✓ 3D0X4 - Computer Systems Programming - 2025-11-28 07:49
+✓ 3D1X1 - Client Systems - 2025-11-28 07:50
+✓ 3D1X2 - Cyber Transport Systems - 2025-11-28 07:51
+✓ 3D1X3 - RF Transmission Systems - 2025-11-28 07:52
+✓ 3D1X4 - Spectrum Operations - 2025-11-28 07:53
+✓ 3D1X7 - Cable and Antenna Systems - 2025-11-28 07:54
+
+BATCH 1 COMPLETE - Cyber/IT (10 guides)
+
+═══════════════════════════════════════════════════════════════
+IN PROGRESS:
+BATCH 2 - INTEL (7 guides):
+1N0X1, 1N1X1, 1N2X1, 1N3X1, 1N4X1, 1N7X1, 1N8X1
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 120 guides
+
+BATCH 3 - OPERATIONS/AIRCREW (15 guides):
+1A0X1, 1A1X1, 1A2X1, 1A3X1, 1A6X1, 1A8X1, 1A8X2, 1A9X1, 1C0X2, 1C1X1, 1C3X1, 1C4X1, 1C5X1, 1C6X1, 1C7X1
+
+BATCH 4 - AIRCRAFT MAINTENANCE (13 guides):
+2A3X3, 2A3X5, 2A3X7, 2A5X1, 2A5X2, 2A5X3, 2A5X4, 2A6X1, 2A6X2, 2A6X3, 2A6X4, 2A6X5, 2A6X6
+
+BATCH 5 - FABRICATION/MUNITIONS/MISSILES (10 guides):
+2A7X1, 2A7X2, 2A7X3, 2A7X5, 2W0X1, 2W1X1, 2W2X1, 2M0X1, 2M0X2, 2M0X3
+
+BATCH 6 - LOGISTICS (12 guides):
+2S0X1, 2S0X2, 2T0X1, 2T1X1, 2T2X1, 2T3X1, 2T3X2, 2T3X5, 2T3X7, 2F0X1, 6C0X1, 2G0X1
+
+BATCH 7 - SUPPORT/SERVICES (12 guides):
+3F0X1, 3F1X1, 3F2X1, 3F3X1, 3F4X1, 3F5X1, 3A0X1, 3A1X1, 3S0X1, 3S1X1, 3S2X1, 3S3X1
+
+BATCH 8 - PUBLIC AFFAIRS/FINANCE (6 guides):
+3N0X1, 3N0X2, 3N0X5, 3N0X6, 3N1X1, 6F0X1
+
+BATCH 9 - MEDICAL (14 guides):
+4A0X1, 4A1X1, 4A2X1, 4E0X1, 4H0X1, 4J0X2, 4M0X1, 4N0X1, 4N1X1, 4P0X1, 4R0X1, 4T0X1, 4T0X2, 4V0X1
+
+BATCH 10 - LEGAL/SECURITY (3 guides):
+5J0X1, 5P0X1, 5S0X1
