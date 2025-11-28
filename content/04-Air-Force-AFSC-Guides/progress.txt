@@ -86,16 +86,28 @@ BATCH 5 COMPLETE - Fabrication/Munitions/Missiles (10 guides)
 
 BATCH 6 COMPLETE - Logistics (12 guides)
 
+✓ 3F0X1 - Personnel - 2025-11-28 10:05
+✓ 3F1X1 - Services - 2025-11-28 10:06
+✓ 3F2X1 - Education and Training - 2025-11-28 10:15
+✓ 3F3X1 - Manpower - 2025-11-28 10:16
+✓ 3F4X1 - Equal Opportunity - 2025-11-28 10:17
+✓ 3F5X1 - Administration - 2025-11-28 10:18
+✓ 3A0X1 - Knowledge Operations Management - 2025-11-28 10:19
+✓ 3A1X1 - Information Management - 2025-11-28 10:20
+✓ 3E0X1 - Electrical Systems - 2025-11-28 10:21
+✓ 3E7X1 - Fire Protection - 2025-11-28 10:22
+✓ 3E9X1 - Emergency Management - 2025-11-28 10:23
+✓ 3E5X1 - Engineering - 2025-11-28 10:24
+
+BATCH 7 COMPLETE - Support/Services (12 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 7 - SUPPORT/SERVICES (12 guides):
-3F0X1, 3F1X1, 3F2X1, 3F3X1, 3F4X1, 3F5X1, 3A0X1, 3A1X1, 3S0X1, 3S1X1, 3S2X1, 3S3X1
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 63 guides
-
 BATCH 8 - PUBLIC AFFAIRS/FINANCE (6 guides):
 3N0X1, 3N0X2, 3N0X5, 3N0X6, 3N1X1, 6F0X1
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 23 guides
 
 BATCH 9 - MEDICAL (14 guides):
 4A0X1, 4A1X1, 4A2X1, 4E0X1, 4H0X1, 4J0X2, 4M0X1, 4N0X1, 4N1X1, 4P0X1, 4R0X1, 4T0X1, 4T0X2, 4V0X1
@@ -104,4 +116,4 @@ BATCH 10 - LEGAL/SECURITY (3 guides):
 5J0X1, 5P0X1, 5S0X1
 
 ═══════════════════════════════════════════════════════════════
-PROGRESS SUMMARY: 67 of 130 guides complete (52%)
+PROGRESS SUMMARY: 79 of 102 guides complete (77%)
