@@ -101,19 +101,25 @@ BATCH 6 COMPLETE - Logistics (12 guides)
 
 BATCH 7 COMPLETE - Support/Services (12 guides)
 
+✓ 3N0X1 - Broadcasting - 2025-11-28 10:40
+✓ 3N0X2 - Radio and Television Broadcasting - 2025-11-28 10:41
+✓ 3N0X5 - Photojournalist - 2025-11-28 10:42
+✓ 3N0X6 - Public Affairs - 2025-11-28 10:43
+✓ 3N1X1 - Regional Band Member - 2025-11-28 10:44
+✓ 6F0X1 - Financial Management - 2025-11-28 10:45
+
+BATCH 8 COMPLETE - Public Affairs/Finance (6 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 8 - PUBLIC AFFAIRS/FINANCE (6 guides):
-3N0X1, 3N0X2, 3N0X5, 3N0X6, 3N1X1, 6F0X1
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 23 guides
-
 BATCH 9 - MEDICAL (14 guides):
 4A0X1, 4A1X1, 4A2X1, 4E0X1, 4H0X1, 4J0X2, 4M0X1, 4N0X1, 4N1X1, 4P0X1, 4R0X1, 4T0X1, 4T0X2, 4V0X1
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 17 guides
 
 BATCH 10 - LEGAL/SECURITY (3 guides):
 5J0X1, 5P0X1, 5S0X1
 
 ═══════════════════════════════════════════════════════════════
-PROGRESS SUMMARY: 79 of 102 guides complete (77%)
+PROGRESS SUMMARY: 85 of 102 guides complete (83%)
