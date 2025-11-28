@@ -24,16 +24,31 @@ BATCH 1 COMPLETE - Cyber/IT (10 guides)
 
 BATCH 2 COMPLETE - Intel (7 guides)
 
+✓ 1A0X1 - In-Flight Refueling - 2025-11-28 08:05
+✓ 1A1X1 - Flight Engineer - 2025-11-28 08:06
+✓ 1A2X1 - Aircraft Loadmaster - 2025-11-28 08:07
+✓ 1A3X1 - Airborne Mission Systems - 2025-11-28 08:08
+✓ 1A6X1 - Flight Attendant - 2025-11-28 08:09
+✓ 1A8X1 - Airborne Cryptologic Language Analyst - 2025-11-28 08:10
+✓ 1A8X2 - Airborne ISR Operator - 2025-11-28 08:11
+✓ 1A9X1 - Special Mission Aviator - 2025-11-28 08:12
+✓ 1C0X2 - Aviation Resource Management - 2025-11-28 08:13
+✓ 1C1X1 - Air Traffic Control - 2025-11-28 08:14
+✓ 1C3X1 - Command Post - 2025-11-28 08:15
+✓ 1C4X1 - Tactical Air Control Party - 2025-11-28 08:16
+✓ 1C5X1 - Command and Control Battle Management - 2025-11-28 08:17
+✓ 1C6X1 - Space Systems Operations - 2025-11-28 08:18
+✓ 1C7X1 - Airfield Management - 2025-11-28 08:19
+
+BATCH 3 COMPLETE - Operations/Aircrew (15 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 3 - OPERATIONS/AIRCREW (15 guides):
-1A0X1, 1A1X1, 1A2X1, 1A3X1, 1A6X1, 1A8X1, 1A8X2, 1A9X1, 1C0X2, 1C1X1, 1C3X1, 1C4X1, 1C5X1, 1C6X1, 1C7X1
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 113 guides
-
 BATCH 4 - AIRCRAFT MAINTENANCE (13 guides):
 2A3X3, 2A3X5, 2A3X7, 2A5X1, 2A5X2, 2A5X3, 2A5X4, 2A6X1, 2A6X2, 2A6X3, 2A6X4, 2A6X5, 2A6X6
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 98 guides
 
 BATCH 5 - FABRICATION/MUNITIONS/MISSILES (10 guides):
 2A7X1, 2A7X2, 2A7X3, 2A7X5, 2W0X1, 2W1X1, 2W2X1, 2M0X1, 2M0X2, 2M0X3
