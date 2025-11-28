@@ -42,16 +42,29 @@ BATCH 2 COMPLETE - Intel (7 guides)
 
 BATCH 3 COMPLETE - Operations/Aircrew (15 guides)
 
+✓ 2A3X3 - Tactical Aircraft Maintenance - 2025-11-28 08:25
+✓ 2A3X5 - Fighter Avionics Systems - 2025-11-28 08:26
+✓ 2A3X7 - F-35 Integrated Avionics - 2025-11-28 08:27
+✓ 2A5X1 - Airlift/Tanker Aircraft Maintenance - 2025-11-28 08:28
+✓ 2A5X2 - Helicopter/Tiltrotor Aircraft Maintenance - 2025-11-28 08:29
+✓ 2A5X3 - Bomber/Special Integrated Avionics - 2025-11-28 08:30
+✓ 2A5X4 - Refuel/Bomber Aircraft Maintenance - 2025-11-28 08:45
+✓ 2A6X1 - Aerospace Propulsion - 2025-11-28 08:46
+✓ 2A6X2 - Aerospace Ground Equipment - 2025-11-28 08:47
+✓ 2A6X3 - Aircrew Egress Systems - 2025-11-28 08:48
+✓ 2A6X4 - Aircraft Fuel Systems - 2025-11-28 08:49
+✓ 2A6X5 - Aircraft Hydraulic Systems - 2025-11-28 08:50
+✓ 2A6X6 - Aircraft Electrical and Environmental - 2025-11-28 08:51
+
+BATCH 4 COMPLETE - Aircraft Maintenance (13 guides)
+
 ═══════════════════════════════════════════════════════════════
 IN PROGRESS:
-BATCH 4 - AIRCRAFT MAINTENANCE (13 guides):
-2A3X3, 2A3X5, 2A3X7, 2A5X1, 2A5X2, 2A5X3, 2A5X4, 2A6X1, 2A6X2, 2A6X3, 2A6X4, 2A6X5, 2A6X6
-
-═══════════════════════════════════════════════════════════════
-REMAINING: 98 guides
-
 BATCH 5 - FABRICATION/MUNITIONS/MISSILES (10 guides):
 2A7X1, 2A7X2, 2A7X3, 2A7X5, 2W0X1, 2W1X1, 2W2X1, 2M0X1, 2M0X2, 2M0X3
+
+═══════════════════════════════════════════════════════════════
+REMAINING: 85 guides
 
 BATCH 6 - LOGISTICS (12 guides):
 2S0X1, 2S0X2, 2T0X1, 2T1X1, 2T2X1, 2T3X1, 2T3X2, 2T3X5, 2T3X7, 2F0X1, 6C0X1, 2G0X1
@@ -67,3 +80,6 @@ BATCH 9 - MEDICAL (14 guides):
 
 BATCH 10 - LEGAL/SECURITY (3 guides):
 5J0X1, 5P0X1, 5S0X1
+
+═══════════════════════════════════════════════════════════════
+PROGRESS SUMMARY: 45 of 130 guides complete (35%)
