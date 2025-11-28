@@ -28,8 +28,7 @@ export default function PublicNav({ currentPage = '' }) {
     career: {
       title: 'Career',
       items: [
-        { name: 'Resume Translator', path: '/app/resume-translator' },
-        { name: 'Resume Builder', path: '/app/resume-builder' },
+        { name: 'Resume Translator', path: '/app/resume-builder' },
         { name: 'Job Search', path: '/app/job-search' }
       ]
     },
@@ -86,22 +85,72 @@ export default function PublicNav({ currentPage = '' }) {
   }
 
   const renderToolsDropdown = () => (
-    <div className="absolute left-0 mt-2 w-80 bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2 z-50">
-      {/* Planning */}
-      <div className="px-3 py-2">
-        <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-          {toolsMenu.planning.title}
+    <div className="absolute left-0 top-full pt-2 w-80 z-50">
+      <div className="bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2">
+        {/* Planning */}
+        <div className="px-3 py-2">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+            {toolsMenu.planning.title}
+          </div>
+          {toolsMenu.planning.items.map((item) => (
+            item.isHashLink ? (
+              <a
+                key={item.name}
+                href={item.path}
+                className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={item.name}
+                to={item.path}
+                className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+                onClick={() => setActiveDropdown(null)}
+              >
+                {item.name}
+              </Link>
+            )
+          ))}
         </div>
-        {toolsMenu.planning.items.map((item) => (
-          item.isHashLink ? (
-            <a
-              key={item.name}
-              href={item.path}
-              className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-            >
-              {item.name}
-            </a>
-          ) : (
+
+        <div className="border-t border-slate-700 my-1"></div>
+
+        {/* VA & Medical */}
+        <div className="px-3 py-2">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+            {toolsMenu.vaMedical.title}
+          </div>
+          {toolsMenu.vaMedical.items.map((item) => (
+            item.isHashLink ? (
+              <a
+                key={item.name}
+                href={item.path}
+                className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={item.name}
+                to={item.path}
+                className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+                onClick={() => setActiveDropdown(null)}
+              >
+                {item.name}
+              </Link>
+            )
+          ))}
+        </div>
+
+        <div className="border-t border-slate-700 my-1"></div>
+
+        {/* Career */}
+        <div className="px-3 py-2">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+            {toolsMenu.career.title}
+          </div>
+          {toolsMenu.career.items.map((item) => (
             <Link
               key={item.name}
               to={item.path}
@@ -110,199 +159,153 @@ export default function PublicNav({ currentPage = '' }) {
             >
               {item.name}
             </Link>
-          )
-        ))}
-      </div>
-
-      <div className="border-t border-slate-700 my-1"></div>
-
-      {/* VA & Medical */}
-      <div className="px-3 py-2">
-        <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-          {toolsMenu.vaMedical.title}
+          ))}
         </div>
-        {toolsMenu.vaMedical.items.map((item) => (
-          item.isHashLink ? (
-            <a
-              key={item.name}
-              href={item.path}
-              className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-            >
-              {item.name}
-            </a>
-          ) : (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-              onClick={() => setActiveDropdown(null)}
-            >
-              {item.name}
-            </Link>
-          )
-        ))}
-      </div>
 
-      <div className="border-t border-slate-700 my-1"></div>
+        <div className="border-t border-slate-700 my-1"></div>
 
-      {/* Career */}
-      <div className="px-3 py-2">
-        <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-          {toolsMenu.career.title}
+        {/* Financial Calculators - Nested Submenu */}
+        <div className="px-3 py-2">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+            {toolsMenu.financial.title}
+          </div>
+
+          {/* Retirement & Pay */}
+          <div className="mb-2">
+            <div className="text-xs font-medium text-slate-500 uppercase tracking-wide px-3 py-1">
+              {toolsMenu.financial.submenu.retirementPay.title}
+            </div>
+            {toolsMenu.financial.submenu.retirementPay.items.map((item) => (
+              item.comingSoon ? (
+                <div
+                  key={item.name}
+                  className="px-3 py-1.5 text-slate-500 text-sm cursor-not-allowed flex items-center justify-between group"
+                  title="Coming soon - stay tuned!"
+                >
+                  <span>{item.name}</span>
+                  <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded">Soon</span>
+                </div>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+                  onClick={() => setActiveDropdown(null)}
+                >
+                  {item.name}
+                </Link>
+              )
+            ))}
+          </div>
+
+          {/* Education Benefits */}
+          <div className="mb-2">
+            <div className="text-xs font-medium text-slate-500 uppercase tracking-wide px-3 py-1">
+              {toolsMenu.financial.submenu.education.title}
+            </div>
+            {toolsMenu.financial.submenu.education.items.map((item) => (
+              item.comingSoon ? (
+                <div
+                  key={item.name}
+                  className="px-3 py-1.5 text-slate-500 text-sm cursor-not-allowed flex items-center justify-between group"
+                  title="Coming soon - stay tuned!"
+                >
+                  <span>{item.name}</span>
+                  <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded">Soon</span>
+                </div>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+                  onClick={() => setActiveDropdown(null)}
+                >
+                  {item.name}
+                </Link>
+              )
+            ))}
+          </div>
+
+          {/* Cost of Living */}
+          <div>
+            <div className="text-xs font-medium text-slate-500 uppercase tracking-wide px-3 py-1">
+              {toolsMenu.financial.submenu.costOfLiving.title}
+            </div>
+            {toolsMenu.financial.submenu.costOfLiving.items.map((item) => (
+              item.comingSoon ? (
+                <div
+                  key={item.name}
+                  className="px-3 py-1.5 text-slate-500 text-sm cursor-not-allowed flex items-center justify-between group"
+                  title="Coming soon - stay tuned!"
+                >
+                  <span>{item.name}</span>
+                  <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded">Soon</span>
+                </div>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+                  onClick={() => setActiveDropdown(null)}
+                >
+                  {item.name}
+                </Link>
+              )
+            ))}
+          </div>
         </div>
-        {toolsMenu.career.items.map((item) => (
+
+        <div className="border-t border-slate-700 my-1"></div>
+
+        {/* State Benefits */}
+        <div className="px-3 py-2">
           <Link
-            key={item.name}
-            to={item.path}
-            className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+            to={toolsMenu.stateBenefits.path}
+            className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors font-medium"
             onClick={() => setActiveDropdown(null)}
           >
-            {item.name}
+            {toolsMenu.stateBenefits.title}
           </Link>
-        ))}
-      </div>
-
-      <div className="border-t border-slate-700 my-1"></div>
-
-      {/* Financial Calculators - Nested Submenu */}
-      <div className="px-3 py-2">
-        <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-          {toolsMenu.financial.title}
         </div>
-
-        {/* Retirement & Pay */}
-        <div className="mb-2">
-          <div className="text-xs font-medium text-slate-500 uppercase tracking-wide px-3 py-1">
-            {toolsMenu.financial.submenu.retirementPay.title}
-          </div>
-          {toolsMenu.financial.submenu.retirementPay.items.map((item) => (
-            item.comingSoon ? (
-              <div
-                key={item.name}
-                className="px-3 py-1.5 text-slate-500 text-sm cursor-not-allowed flex items-center justify-between group"
-                title="Coming soon - stay tuned!"
-              >
-                <span>{item.name}</span>
-                <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded">Soon</span>
-              </div>
-            ) : (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-                onClick={() => setActiveDropdown(null)}
-              >
-                {item.name}
-              </Link>
-            )
-          ))}
-        </div>
-
-        {/* Education Benefits */}
-        <div className="mb-2">
-          <div className="text-xs font-medium text-slate-500 uppercase tracking-wide px-3 py-1">
-            {toolsMenu.financial.submenu.education.title}
-          </div>
-          {toolsMenu.financial.submenu.education.items.map((item) => (
-            item.comingSoon ? (
-              <div
-                key={item.name}
-                className="px-3 py-1.5 text-slate-500 text-sm cursor-not-allowed flex items-center justify-between group"
-                title="Coming soon - stay tuned!"
-              >
-                <span>{item.name}</span>
-                <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded">Soon</span>
-              </div>
-            ) : (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-                onClick={() => setActiveDropdown(null)}
-              >
-                {item.name}
-              </Link>
-            )
-          ))}
-        </div>
-
-        {/* Cost of Living */}
-        <div>
-          <div className="text-xs font-medium text-slate-500 uppercase tracking-wide px-3 py-1">
-            {toolsMenu.financial.submenu.costOfLiving.title}
-          </div>
-          {toolsMenu.financial.submenu.costOfLiving.items.map((item) => (
-            item.comingSoon ? (
-              <div
-                key={item.name}
-                className="px-3 py-1.5 text-slate-500 text-sm cursor-not-allowed flex items-center justify-between group"
-                title="Coming soon - stay tuned!"
-              >
-                <span>{item.name}</span>
-                <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded">Soon</span>
-              </div>
-            ) : (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-                onClick={() => setActiveDropdown(null)}
-              >
-                {item.name}
-              </Link>
-            )
-          ))}
-        </div>
-      </div>
-
-      <div className="border-t border-slate-700 my-1"></div>
-
-      {/* State Benefits */}
-      <div className="px-3 py-2">
-        <Link
-          to={toolsMenu.stateBenefits.path}
-          className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors font-medium"
-          onClick={() => setActiveDropdown(null)}
-        >
-          {toolsMenu.stateBenefits.title}
-        </Link>
       </div>
     </div>
   )
 
   const renderResourcesDropdown = () => (
-    <div className="absolute left-0 mt-2 w-72 bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2 z-50">
-      {/* Career Guides */}
-      <div className="px-3 py-2">
-        <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-          {resourcesMenu.careerGuides.title}
+    <div className="absolute left-0 top-full pt-2 w-72 z-50">
+      <div className="bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2">
+        {/* Career Guides */}
+        <div className="px-3 py-2">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+            {resourcesMenu.careerGuides.title}
+          </div>
+          {resourcesMenu.careerGuides.items.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+              onClick={() => setActiveDropdown(null)}
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
-        {resourcesMenu.careerGuides.items.map((item) => (
-          <Link
-            key={item.name}
-            to={item.path}
-            className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-            onClick={() => setActiveDropdown(null)}
-          >
-            {item.name}
-          </Link>
-        ))}
-      </div>
 
-      <div className="border-t border-slate-700 my-1"></div>
+        <div className="border-t border-slate-700 my-1"></div>
 
-      {/* Other Resources */}
-      <div className="px-3 py-2">
-        {resourcesMenu.resources.map((item) => (
-          <Link
-            key={item.name}
-            to={item.path}
-            className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
-            onClick={() => setActiveDropdown(null)}
-          >
-            {item.name}
-          </Link>
-        ))}
+        {/* Other Resources */}
+        <div className="px-3 py-2">
+          {resourcesMenu.resources.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="block px-3 py-1.5 text-slate-300 text-sm hover:bg-slate-700 hover:text-white rounded transition-colors"
+              onClick={() => setActiveDropdown(null)}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )
