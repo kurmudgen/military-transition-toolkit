@@ -1,7 +1,7 @@
 ---
 title: "Army 25M (Multimedia Illustrator) to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-03-11"
-date: ""
+date: "2025-12-11"
 description: "Real career options for Army 25M Multimedia Illustrators transitioning to civilian graphic design, multimedia production, and visual communication careers. Salary ranges $50K-$120K+ with portfolio and certification guidance."
 keywords: "Army 25M civilian jobs, Multimedia Illustrator career transition, 25M to graphic designer, multimedia artist salary, visual communication jobs"
 ---

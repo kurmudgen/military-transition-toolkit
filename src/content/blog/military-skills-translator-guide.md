@@ -1,6 +1,6 @@
 ---
 title: "Military Skills Translator Guide (2025)"
-date: "2025-11-13"
+date: "2025-11-30"
 description: "Complete comparison of every military skills translator tool available. Learn which tool works best for your branch, how to use results for resumes, and how to actually find civilian job matches."
 keywords: "military skills translator, MOS translator, military to civilian jobs, AFSC translator, Navy rating translator, military job search"
 slug: "military-skills-translator-guide"

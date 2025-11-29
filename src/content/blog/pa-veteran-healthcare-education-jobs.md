@@ -1,6 +1,6 @@
 ---
 title: "Pennsylvania Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-06-09"
+date: "2026-01-09"
 description: "Guide to Pennsylvania veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "pennsylvania veteran healthcare, pennsylvania GI Bill schools, pennsylvania veteran jobs, pennsylvania VA hospital"
 slug: "pa-veteran-healthcare-education-jobs"

@@ -1,7 +1,7 @@
 ---
 title: "Navy AE (Aviation Electrician's Mate) to Civilian: Your Complete Career Transition Guide (With 2025 Salary Data)"
 publishDate: "2025-12-10"
-date: ""
+date: "2025-12-23"
 description: "Real career options for Navy AE Aviation Electrician's Mate transitioning to civilian life. Includes salary ranges $55K-$95K+, required certifications, and FAA pathway."
 keywords: "Navy AE civilian jobs, Aviation Electrician's Mate career transition, AE to civilian career, Navy aviation electrician jobs"
 ---

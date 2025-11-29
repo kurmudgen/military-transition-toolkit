@@ -1,7 +1,7 @@
 ---
 title: "MOS 6072 Aircraft Maintenance Material Chief to Civilian: Aviation Supply Chain Leadership Guide"
 publishDate: "2026-05-06"
-date: ""
+date: "2025-12-29"
 description: "Career paths for 6072 Aircraft Maintenance Material Chiefs. Includes salary data $70K-$130K+, supply chain management, aviation logistics, and program management."
 keywords: "6072 MOS civilian jobs, aircraft maintenance material chief transition, aviation supply chain careers, Marine aviation logistics"
 ---

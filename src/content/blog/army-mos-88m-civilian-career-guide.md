@@ -1,7 +1,7 @@
 ---
 title: "Army 88M Motor Transport Operator to Civilian: Complete CDL Career Transition Guide (2024-2025)"
 publishDate: "2026-06-17"
-date: ""
+date: "2025-11-28"
 description: "Real trucking careers for Army 88M Motor Transport Operators. CDL Class A driver salaries $55K-$95K+, owner-operator earnings $150K-$250K, logistics dispatch, fleet management, and transportation careers for veterans."
 keywords: "88M Motor Transport Operator civilian jobs, Army truck driver CDL career, CDL Class A salary, owner operator earnings, veteran trucking jobs"
 ---

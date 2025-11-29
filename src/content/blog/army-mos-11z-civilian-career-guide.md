@@ -1,7 +1,7 @@
 ---
 title: "Army 11Z Infantry Senior Sergeant to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-17"
-date: "2024-11-11"
+date: "2025-12-07"
 description: "Real career options for Army 11Z Infantry Senior Sergeants transitioning to civilian life. Includes salary ranges $70K-$200K+, law enforcement leadership, security management, training roles, and 100+ companies hiring."
 keywords: "11Z Infantry Senior Sergeant civilian jobs, infantry NCO career transition, 11Z to police supervisor, senior NCO civilian salary, Army infantry leadership jobs"
 slug: "army-mos-11z-civilian-career-guide"

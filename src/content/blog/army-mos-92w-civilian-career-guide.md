@@ -1,7 +1,7 @@
 ---
 title: "Army 92W Water Treatment Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-08-05"
-date: ""
+date: "2025-12-20"
 description: "Complete career roadmap for 92W Water Treatment Specialists transitioning to civilian water utilities, wastewater management, and environmental careers. Includes salary data $47K-$106K+, water plant operator, utilities manager roles with companies actively hiring veterans."
 keywords: "92W civilian jobs, Water Treatment Specialist career transition, water plant operator salary, wastewater treatment careers, utilities jobs, water quality technician, environmental compliance"
 ---

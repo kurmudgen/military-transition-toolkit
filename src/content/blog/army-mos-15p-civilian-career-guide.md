@@ -1,7 +1,7 @@
 ---
 title: "Army 15P Aviation Operations Specialist to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-01-21"
-date: ""
+date: "2025-12-09"
 description: "Real career options for Army 15P Aviation Operations Specialists transitioning to civilian life. Includes salary ranges $50K-$150K+, aircraft dispatcher certification, airline operations, airport management, and FAA licensing requirements."
 keywords: "Army 15P civilian jobs, aviation operations specialist career transition, aircraft dispatcher salary, FAA dispatcher license cost, flight operations coordinator jobs"
 ---

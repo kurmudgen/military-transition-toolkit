@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 2311 Ammunition Technician to Civilian: Complete Career Transition Guide (2025)"
 publishDate: "2026-03-25"
-date: ""
+date: "2025-12-28"
 description: "Career guide for 2311 Ammunition Technicians. Ammunition specialist roles $55K-$95K, logistics positions $60K-$100K, defense contractor work $75K-$120K+, hazmat careers with 2025 salary data and certification paths."
 keywords: "2311 MOS civilian jobs, ammunition technician careers, Marine ammo specialist jobs, 2311 career transition, explosives logistics civilian careers"
 ---

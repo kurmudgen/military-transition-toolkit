@@ -1,7 +1,7 @@
 ---
 title: "Army 17B Cyber Electromagnetic Warfare Officer to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-04"
-date: ""
+date: "2025-12-10"
 description: "Complete transition roadmap for Army 17B Cyber Electromagnetic Warfare Officers. Includes salary ranges $110K-$240K+, RF engineering, electronic warfare, spectrum operations, and defense contractors actively hiring EW specialists."
 keywords: "Army 17B civilian jobs, electronic warfare officer transition, RF engineer salary, spectrum operations career, 17B to civilian"
 ---

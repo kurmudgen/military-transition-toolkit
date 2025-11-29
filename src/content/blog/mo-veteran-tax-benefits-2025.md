@@ -1,6 +1,6 @@
 ---
 title: "Missouri Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-03-30"
+date: "2026-01-07"
 description: "Complete guide to Missouri veteran tax benefits: property tax credit up to $1,100, 100% military retirement exemption, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Missouri veteran benefits, Missouri property tax credit veterans, Missouri veteran income tax, Missouri disabled veteran benefits"
 slug: "mo-veteran-tax-benefits-2025"

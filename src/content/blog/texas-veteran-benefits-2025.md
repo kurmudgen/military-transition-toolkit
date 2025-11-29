@@ -1,6 +1,6 @@
 ---
 title: "Texas Veteran Benefits 2025: Complete Guide to Living Tax-Free in Texas"
-date: "2025-11-16"
+date: "2025-12-05"
 description: "Texas offers massive veteran benefits: 100% property tax exemption for disabled vets, no state income tax, 150 free tuition hours, and more. Complete guide for 2025."
 keywords: "Texas veteran benefits, Texas property tax exemption veterans, Hazelwood Act, Texas disabled veteran benefits"
 slug: "texas-veteran-benefits-2025"

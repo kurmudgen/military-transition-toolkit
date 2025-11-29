@@ -1,6 +1,6 @@
 ---
 title: "Maryland Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-03-09"
+date: "2026-01-06"
 description: "Complete guide to Maryland veteran tax benefits: full property tax exemption for 100% disabled veterans, partial military retirement income exclusion, and county-specific benefits."
 keywords: "Maryland veteran benefits, Maryland property tax exemption veterans, Maryland veteran income tax, Maryland disabled veteran benefits"
 slug: "md-veteran-tax-benefits-2025"

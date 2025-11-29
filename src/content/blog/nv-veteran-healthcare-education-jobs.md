@@ -1,6 +1,6 @@
 ---
 title: "Nevada Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-05-14"
+date: "2026-01-08"
 description: "Guide to Nevada veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "nevada veteran healthcare, nevada GI Bill schools, nevada veteran jobs, nevada VA hospital"
 slug: "nevada-veteran-healthcare-education-jobs"

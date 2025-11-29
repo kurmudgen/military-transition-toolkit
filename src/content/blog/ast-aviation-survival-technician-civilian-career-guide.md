@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard AST Rescue Swimmer to Civilian: Complete SAR Career Transition Guide (2024 Salaries)"
 publishDate: "2026-01-07"
-date: ""
+date: "2025-12-24"
 description: "Coast Guard rescue swimmers (AST) transitioning to civilian search and rescue, EMS, firefighter, and tactical careers. Salary ranges $40K-$130K+, certifications, and direct career pathways."
 keywords: "Coast Guard rescue swimmer civilian jobs, AST career transition, rescue swimmer to paramedic, SAR careers, aviation survival technician"
 ---

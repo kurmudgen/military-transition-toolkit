@@ -1,7 +1,7 @@
 ---
 title: "Army 68G Patient Administration Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-13"
-date: ""
+date: "2025-12-15"
 description: "Real career options for Army Patient Administration Specialists transitioning to civilian life. Includes salary ranges $40K-$95K+, medical records careers, RHIT/RHIA certification ($229-$299), Epic Systems training, major employers including VA hospitals and HCA Healthcare."
 keywords: "Army 68G civilian jobs, patient administration specialist career transition, medical records salary, RHIT certification, health information management, 68G to civilian healthcare administration"
 ---

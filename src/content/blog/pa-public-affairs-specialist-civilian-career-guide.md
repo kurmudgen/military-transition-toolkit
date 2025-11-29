@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard PA to Civilian: Complete Communications Career Transition Guide (2024 Salaries)"
 publishDate: "2026-06-17"
-date: ""
+date: "2025-12-27"
 description: "Coast Guard Public Affairs Specialists transitioning to civilian communications, marketing, public relations, and media careers. Salary ranges $50K-$130K+, portfolio-building strategies."
 keywords: "Coast Guard PA civilian jobs, public affairs specialist career transition, communications jobs, public relations, journalism careers"
 ---

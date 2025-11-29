@@ -1,7 +1,7 @@
 ---
 title: "MOS 6092 Aircraft Intermediate Level Maintenance Chief to Civilian: Depot & Heavy Maintenance Career Guide"
 publishDate: "2026-05-20"
-date: ""
+date: "2025-12-30"
 description: "Career paths for 6092 Intermediate Level Maintenance Chiefs. Includes salary data $80K-$150K+, MRO management, depot maintenance, and aviation leadership."
 keywords: "6092 MOS civilian jobs, intermediate level maintenance chief transition, MRO management careers, depot maintenance jobs"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Rhode Island Veteran Healthcare, Education & Jobs 2025: Complete Guide"
-date: "2026-06-15"
+date: "2026-01-10"
 description: "Comprehensive guide to Rhode Island veteran benefits: Providence VA Medical Center services, free tuition for disabled veterans, Naval Station Newport jobs, and top employers hiring veterans."
 keywords: "rhode island veterans healthcare, providence va medical center, rhode island veteran education, rhode island veteran jobs, naval station newport"
 slug: "ri-veteran-healthcare-education-jobs-2025"

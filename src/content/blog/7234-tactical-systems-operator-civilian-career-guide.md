@@ -1,7 +1,7 @@
 ---
 title: "Marine 7234 Tactical Systems Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-08-05"
-date: ""
+date: "2026-01-01"
 description: "Career transition guide for Marine Tactical Systems Operators moving to civilian careers. Includes defense contractors, tactical operations coordination, IT systems roles with $70K-$170K+ salary ranges."
 keywords: "7234 Marine career transition, tactical systems operator civilian jobs, air defense systems civilian career, tactical operations coordinator jobs"
 ---

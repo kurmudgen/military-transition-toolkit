@@ -1,7 +1,7 @@
 ---
 title: "Army 92Y Unit Supply Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-08-05"
-date: ""
+date: "2025-11-29"
 description: "Complete career roadmap for 92Y Unit Supply Specialists transitioning to civilian supply chain, warehouse management, inventory control, and logistics careers. Includes salary data $48K-$130K+, warehouse manager, supply coordinator roles with 100+ companies actively hiring veterans."
 keywords: "92Y civilian jobs, Unit Supply Specialist career transition, warehouse manager salary, inventory control jobs, supply chain careers, logistics coordinator, procurement specialist"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Army 88K Watercraft Operator to Civilian: Complete Maritime Career Guide (2024-2025)"
 publishDate: "2026-06-17"
-date: ""
+date: "2025-12-17"
 description: "Real maritime careers for Army 88K Watercraft Operators. Tugboat operator salaries $50K-$90K+, merchant marine captain earnings $80K-$140K+, port operations, inland waterways, and commercial vessel careers for veterans."
 keywords: "88K Watercraft Operator civilian jobs, Army maritime career transition, tugboat operator salary, merchant mariner credentials, USCG MMC, watercraft operator jobs"
 ---

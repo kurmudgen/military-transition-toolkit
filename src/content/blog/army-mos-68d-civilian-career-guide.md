@@ -1,7 +1,7 @@
 ---
 title: "Army 68D (Operating Room Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-13"
-date: ""
+date: "2025-12-15"
 description: "Real career options for Army 68D Operating Room Specialists transitioning to civilian life. Includes salary ranges $50K-$90K+, surgical tech certification (CST), hospital OR jobs, ambulatory surgery centers, and travel opportunities."
 keywords: "Army 68D civilian jobs, operating room specialist career transition, surgical technologist certification CST, 68D to civilian, surgical tech salary"
 slug: "army-mos-68d-civilian-career-guide"

@@ -1,6 +1,6 @@
 ---
 title: "Ohio Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-05-26"
+date: "2026-01-09"
 description: "Complete guide to Ohio veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans."
 keywords: "ohio veteran benefits, ohio property tax exemption veterans, ohio veteran tax benefits, military retirement ohio"
 slug: "oh-veteran-tax-benefits-2025"

@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0511 MAGTF Planning Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-02-04"
-date: ""
+date: "2025-12-22"
 description: "Real career options for 0511 MAGTF Planning Specialists transitioning to civilian life. Includes salary ranges $60K-$145K+, certifications, and direct skills translation for operations analysts and project managers."
 keywords: "0511 MAGTF planning specialist civilian jobs, Marine Corps planner career transition, operations analyst salary, defense contractor jobs"
 ---

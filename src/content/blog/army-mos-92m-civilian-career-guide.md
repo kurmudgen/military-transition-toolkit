@@ -1,7 +1,7 @@
 ---
 title: "Army 92M Mortuary Affairs Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-07-29"
-date: ""
+date: "2025-12-19"
 description: "Complete career roadmap for 92M Mortuary Affairs Specialists transitioning to civilian funeral services, mortuary science, and death care careers. Includes salary data $40K-$95K+, funeral director, embalmer, mortician roles with companies actively hiring veterans."
 keywords: "92M civilian jobs, Mortuary Affairs Specialist career transition, funeral director salary, mortician career, embalmer jobs, mortuary science degree, death care industry"
 ---

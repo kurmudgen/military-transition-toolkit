@@ -1,7 +1,7 @@
 ---
 title: "Navy AG (Aerographer's Mate) to Civilian: Your Complete Meteorology Career Transition Guide (With 2025 Salary Data)"
 publishDate: "2025-12-17"
-date: ""
+date: "2025-12-24"
 description: "Real career options for Navy AG Aerographer's Mate transitioning to civilian meteorology careers. Includes salary ranges $55K-$130K+, required education, and NOAA pathways."
 keywords: "Navy AG civilian jobs, Aerographer's Mate career transition, AG to meteorologist, Navy weather forecaster jobs"
 ---

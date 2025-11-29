@@ -1,7 +1,7 @@
 ---
 title: "1A2X1 Aircraft Loadmaster to Civilian Career: Jobs, Salary & Certifications"
 publishDate: "2025-12-10"
-date: ""
+date: "2025-12-06"
 description: "Complete transition guide for Air Force 1A2X1: civilian job options, salary ranges, required certifications, and companies hiring Loadmaster veterans."
 keywords: "1A2X1 civilian jobs, 1A2X1 to civilian, Air Force Loadmaster transition, Loadmaster salary, Loadmaster certifications"
 slug: "air-force-afsc-1a2x1-civilian-career-guide"

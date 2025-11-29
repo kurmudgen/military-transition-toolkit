@@ -1,6 +1,6 @@
 ---
 title: "New Jersey Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-05-04"
+date: "2026-01-08"
 description: "Guide to New Jersey veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "new jersey veteran healthcare, new jersey GI Bill schools, new jersey veteran jobs, new jersey VA hospital"
 slug: "new-jersey-veteran-healthcare-education-jobs"

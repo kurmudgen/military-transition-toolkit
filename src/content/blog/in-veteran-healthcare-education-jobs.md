@@ -1,6 +1,6 @@
 ---
 title: "Indiana Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-09"
+date: "2026-01-05"
 description: "Complete directory of Indiana VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Indiana VA hospital, Indiana veteran education, Indiana veteran jobs, Indiana GI Bill schools"
 slug: "in-veteran-healthcare-education-jobs"

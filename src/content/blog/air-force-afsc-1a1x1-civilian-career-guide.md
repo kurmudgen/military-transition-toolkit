@@ -1,7 +1,7 @@
 ---
 title: "1A1X1 Flight Engineer to Civilian Career: Jobs, Salary & Certifications"
 publishDate: "2025-12-03"
-date: ""
+date: "2025-11-28"
 description: "Complete transition guide for Air Force 1A1X1: civilian job options, salary ranges, required certifications, and companies hiring Flight Engineer veterans."
 keywords: "1A1X1 civilian jobs, 1A1X1 to civilian, Air Force 1A1X1 transition, Flight Engineer salary, Flight Engineer certifications"
 slug: "air-force-afsc-1a1x1-civilian-career-guide"

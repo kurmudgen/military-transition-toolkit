@@ -1,7 +1,7 @@
 ---
 title: "Army 170A/17D Cyber Capabilities Developer to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-01-28"
-date: ""
+date: "2025-12-09"
 description: "Complete transition roadmap for Army 170A/17D Cyber Capabilities Developer Officers. Includes salary ranges $120K-$250K+, software engineering, cyber tool development, DevSecOps, and tech companies actively hiring military developers."
 keywords: "Army 170A civilian jobs, 17D Cyber Capabilities Developer transition, software engineer salary, cyber tool developer, DevSecOps careers"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Navy EO Equipment Operator to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-02-18"
-date: ""
+date: "2025-12-25"
 description: "Real career options for Navy Seabee Equipment Operators transitioning to civilian life. Includes salary ranges $45K-$95K+, required certifications, and skills translation."
 keywords: "Navy EO civilian jobs, Equipment Operator career transition, Seabee to civilian career, heavy equipment operator jobs"
 ---

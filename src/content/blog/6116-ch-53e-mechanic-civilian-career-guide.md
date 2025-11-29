@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6116 CH-53E Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-06-10"
-date: ""
+date: "2025-12-30"
 description: "Real career options for 6116 CH-53E/K Super Stallion Mechanics transitioning to civilian aviation. Includes A&P license pathway, heavy-lift helicopter careers, Sikorsky contractor roles with salaries $62K-$105K+."
 keywords: "6116 MOS civilian jobs, CH-53 mechanic civilian career, Marine Super Stallion mechanic transition, heavy helicopter mechanic A&P"
 ---

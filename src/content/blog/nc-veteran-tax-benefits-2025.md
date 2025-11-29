@@ -1,6 +1,6 @@
 ---
 title: "North Carolina Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-04-14"
+date: "2026-01-07"
 description: "Complete guide to North Carolina veteran tax benefits: $45,000 property tax exemption for disabled veterans, military retirement fully exempt, vehicle benefits, and financial analysis."
 keywords: "north carolina veteran benefits, north carolina property tax exemption veterans, north carolina veteran tax benefits, military retirement north carolina"
 slug: "nc-veteran-tax-benefits-2025"

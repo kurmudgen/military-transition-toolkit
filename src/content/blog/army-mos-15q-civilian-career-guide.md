@@ -1,7 +1,7 @@
 ---
 title: "Army 15Q Air Traffic Control Operator to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-01-21"
-date: ""
+date: "2025-12-09"
 description: "Real career options for Army 15Q Air Traffic Controllers transitioning to civilian life. Includes salary ranges $50K-$225K+, FAA ATC hiring, contract tower positions, age requirements, veteran preference benefits, and direct hiring pathways."
 keywords: "Army 15Q civilian jobs, air traffic controller career transition, FAA ATC salary, military ATC to civilian, air traffic controller retirement"
 ---

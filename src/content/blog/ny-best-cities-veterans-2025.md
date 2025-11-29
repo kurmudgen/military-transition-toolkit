@@ -1,6 +1,6 @@
 ---
 title: "Best Cities for Veterans in New York 2025: Cost of Living, Jobs & Communities"
-date: "2026-05-18"
+date: "2025-12-04"
 description: "Complete guide to the best New York cities for veterans: Syracuse, Buffalo, Rochester, Albany, NYC, and Watertown—with cost of living, jobs, and veteran communities."
 keywords: "best cities for veterans new york, syracuse veterans, buffalo rochester albany veterans, nyc veterans cost of living"
 slug: "ny-best-cities-veterans-2025"

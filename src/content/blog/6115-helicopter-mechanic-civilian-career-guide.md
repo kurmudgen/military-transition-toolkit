@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6115 Helicopter Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-06-03"
-date: ""
+date: "2025-12-30"
 description: "Real career options for 6115 Helicopter/Tiltrotor Mechanics transitioning to civilian aviation. Comprehensive A&P license pathway, airline careers, helicopter operator roles with salaries $60K-$100K+."
 keywords: "6115 MOS civilian jobs, helicopter mechanic civilian career, Marine helicopter mechanic transition, 6115 A&P license"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Arizona Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-12-11"
+date: "2025-12-01"
 description: "Where to retire in Arizona as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Arizona best cities for veterans, Arizona military retirement, Arizona cost of living veterans, where to retire Arizona"
 slug: "az-best-cities-veterans-2025"

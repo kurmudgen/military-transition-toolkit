@@ -1,7 +1,7 @@
 ---
 title: "Army 68F Physical Therapy Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-13"
-date: ""
+date: "2025-12-15"
 description: "Real career options for Army Physical Therapy Specialists transitioning to civilian life. Includes salary ranges $46K-$88K+, PTA careers, NPTE certification ($485+$83), major employers like ATI Physical Therapy and Select Medical, and VA healthcare opportunities."
 keywords: "Army 68F civilian jobs, physical therapy specialist career transition, PTA salary, NPTE certification, 68F to civilian physical therapy career"
 ---

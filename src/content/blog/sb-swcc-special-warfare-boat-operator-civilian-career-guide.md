@@ -1,7 +1,7 @@
 ---
 title: "Navy SWCC/SB (Special Warfare Boat Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-15"
-date: ""
+date: "2025-12-27"
 description: "Real career options for Navy SWCC/Special Warfare Boat Operators transitioning to civilian life. Includes salary ranges $60K-$170K+, maritime security, law enforcement, and boat operations careers."
 keywords: "Navy SWCC civilian jobs, Special Warfare Boat Operator career transition, SWCC maritime security, boat operator civilian career, SB rating transition"
 ---

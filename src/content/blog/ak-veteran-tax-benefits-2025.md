@@ -1,6 +1,6 @@
 ---
 title: "Alaska Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2025-11-28"
+date: "2026-01-02"
 description: "Complete guide to Alaska veteran tax benefits: no income tax, $150K property tax exemption for disabled veterans, Permanent Fund Dividend, and financial strategies for military retirees."
 keywords: "Alaska veteran benefits, Alaska property tax exemption veterans, Alaska veteran income tax, Alaska disabled veteran benefits, Alaska PFD veterans"
 slug: "ak-veteran-tax-benefits-2025"

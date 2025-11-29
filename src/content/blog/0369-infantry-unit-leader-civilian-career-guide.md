@@ -1,7 +1,7 @@
 ---
 title: "Marine 0369 Infantry Unit Leader to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-01-07"
-date: ""
+date: "2025-11-29"
 description: "Real career options for 0369 Infantry Unit Leaders (Staff NCOs) transitioning to civilian life. Includes salary ranges $65K-$120K+, required certifications, and leadership skills translation."
 keywords: "0369 Marine civilian jobs, infantry unit leader career transition, Marine Staff NCO civilian career, Marine SNCO jobs"
 ---

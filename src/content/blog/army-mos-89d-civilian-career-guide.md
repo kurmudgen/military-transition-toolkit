@@ -1,7 +1,7 @@
 ---
 title: "Army 89D (EOD Specialist) to Civilian Career: Complete Transition Guide With Salary Data"
 publishDate: "2026-07-01"
-date: ""
+date: "2025-12-18"
 description: "Comprehensive career transition guide for Army MOS 89D Explosive Ordnance Disposal Specialists. Includes salary data $75K-$250K+, FBI/ATF careers, bomb squad positions, EOD contracting, and 60+ companies actively hiring veterans."
 keywords: "Army 89D civilian jobs, EOD specialist career transition, FBI bomb technician, ATF explosives investigator, police bomb squad careers, EOD contractor salary, UXO technician jobs"
 ---

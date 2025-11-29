@@ -1,7 +1,7 @@
 ---
 title: "Army 68X Mental Health Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-06-10"
-date: ""
+date: "2025-12-16"
 description: "Real career options for Army Mental Health Specialists transitioning to civilian life. Includes salary ranges $31K-$104K+, psychiatric technician, mental health counselor, VA counselor, substance abuse counselor, and peer support specialist opportunities."
 keywords: "Army 68X civilian jobs, Mental Health Specialist career transition, psychiatric technician salary, VA mental health counselor, behavioral health certification"
 ---

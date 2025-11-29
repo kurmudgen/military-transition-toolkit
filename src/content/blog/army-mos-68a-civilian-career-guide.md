@@ -1,7 +1,7 @@
 ---
 title: "Army 68A (Biomedical Equipment Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-06"
-date: ""
+date: "2025-12-15"
 description: "Real career options for Army 68A Biomedical Equipment Specialists transitioning to civilian life. Includes salary ranges $55K-$120K+, hospital systems, medical device companies, VA careers, and BMET certification paths."
 keywords: "Army 68A civilian jobs, biomedical equipment specialist career transition, BMET certification, 68A to civilian, medical equipment technician salary"
 slug: "army-mos-68a-civilian-career-guide"

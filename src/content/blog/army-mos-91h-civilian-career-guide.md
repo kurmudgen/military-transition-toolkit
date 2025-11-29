@@ -1,7 +1,7 @@
 ---
 title: "Army 91H (Track Vehicle Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-15"
-date: ""
+date: "2025-12-18"
 description: "Real career options for 91H Track Vehicle Repairers transitioning to civilian life. Includes salary ranges $55K-$100K+, heavy equipment mechanic careers, construction equipment, CAT/Komatsu dealerships, mining equipment, and diesel technician paths."
 keywords: "91H civilian jobs, track vehicle repairer career transition, heavy equipment mechanic salary, construction equipment mechanic, CAT dealership jobs, mining equipment technician"
 ---

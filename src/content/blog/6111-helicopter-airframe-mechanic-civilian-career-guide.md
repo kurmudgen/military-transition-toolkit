@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6111 Helicopter Airframe Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-05-20"
-date: ""
+date: "2025-12-30"
 description: "Real career options for 6111 Helicopter/Tiltrotor Airframe Mechanics transitioning to civilian aviation. Includes A&P license pathway, airline careers, defense contractor roles with salaries $55K-$95K+."
 keywords: "6111 MOS civilian jobs, helicopter airframe mechanic civilian career, Marine aircraft mechanic transition, A&P license military"
 ---

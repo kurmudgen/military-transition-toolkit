@@ -1,7 +1,7 @@
 ---
 title: "1A3X1 Airborne Mission Systems to Civilian Career: Jobs, Salary & Certifications"
 publishDate: "2025-12-17"
-date: ""
+date: "2025-12-06"
 description: "Complete transition guide for Air Force 1A3X1: civilian job options, salary ranges, required certifications, and companies hiring Airborne Mission Systems veterans."
 keywords: "1A3X1 civilian jobs, 1A3X1 to civilian, Air Force 1A3X1 transition, Airborne Mission Systems salary, avionics certifications"
 slug: "air-force-afsc-1a3x1-civilian-career-guide"

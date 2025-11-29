@@ -1,7 +1,7 @@
 ---
 title: "4402 Judge Advocate to Civilian Attorney: Your Complete Legal Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-04-08"
-date: ""
+date: "2025-12-29"
 description: "Real career options for Marine Corps Judge Advocates (4402) transitioning to civilian legal practice. Includes salary ranges $85K-$250K+, paths to corporate counsel, federal positions, private practice, and skills translation from military law to civilian careers."
 keywords: "4402 judge advocate civilian jobs, JAG to civilian attorney, Marine Corps lawyer career transition, military attorney to corporate counsel"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Navy AS to Civilian: Aviation Support Equipment Career Transition Guide (With Salary Data)"
 publishDate: "2025-12-31"
-date: ""
+date: "2025-12-24"
 description: "Career guide for Navy AS transitioning to civilian careers. Includes salary ranges $45K-$95K, diesel mechanic certifications, heavy equipment jobs, and ground support equipment technician roles."
 keywords: "Navy AS civilian jobs, Aviation Support Equipment Technician career, GSE mechanic, diesel technician, heavy equipment mechanic"
 ---

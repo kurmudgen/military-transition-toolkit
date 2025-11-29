@@ -1,7 +1,7 @@
 ---
 title: "Army 91Z (Mechanical Maintenance Supervisor) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-22"
-date: ""
+date: "2025-12-19"
 description: "Complete transition roadmap for Army 91Z Senior Maintenance Supervisors. Includes verified salary ranges $95K-$175K+, director of maintenance, operations manager, VP-level careers with executive certifications and 75+ companies hiring senior veteran leaders for $120K-$180K+ positions."
 keywords: "91Z civilian jobs, Army Mechanical Maintenance Supervisor career transition, director of maintenance salary, operations manager, VP operations, 91Z to civilian career"
 ---

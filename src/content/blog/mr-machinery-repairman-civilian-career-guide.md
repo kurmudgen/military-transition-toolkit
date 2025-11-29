@@ -1,7 +1,7 @@
 ---
 title: "Navy MR (Machinery Repairman) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-06-03"
-date: ""
+date: "2025-12-27"
 description: "Real career paths for Navy Machinery Repairmen transitioning to civilian life. Includes salary ranges $45K-$95K+, machining certifications, welding credentials, and precision manufacturing jobs."
 keywords: "Navy MR civilian jobs, Machinery Repairman career transition, MR to civilian career, Navy machinist civilian jobs"
 ---

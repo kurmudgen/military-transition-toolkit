@@ -1,7 +1,7 @@
 ---
 title: "Army 68E Dental Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-13"
-date: ""
+date: "2025-12-15"
 description: "Real career options for Army Dental Specialists transitioning to civilian life. Includes salary ranges $38K-$75K+, dental assistant careers, DANB certification ($425), major employers like Aspen Dental and Heartland Dental, and VA healthcare opportunities."
 keywords: "Army 68E civilian jobs, dental specialist career transition, dental assistant salary, DANB certification, 68E to civilian dental career"
 ---

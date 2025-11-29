@@ -1,7 +1,7 @@
 ---
 title: "Navy AZ (Aviation Maintenance Administrationman) to Civilian: Complete Career Transition Guide (With 2025 Salary Data)"
 publishDate: "2026-01-14"
-date: ""
+date: "2025-12-25"
 description: "Real career options for Navy AZ transitioning to civilian aviation logistics careers. Includes salary ranges $50K-$110K+, maintenance planning, quality assurance, and operations management."
 keywords: "Navy AZ civilian jobs, aviation maintenance administrator career transition, aircraft maintenance planner salary, AZ to civilian career"
 ---

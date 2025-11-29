@@ -1,7 +1,7 @@
 ---
 title: "Army 17A Cyber Operations Officer to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-04"
-date: ""
+date: "2025-12-10"
 description: "Complete career transition roadmap for Army 17A Cyber Operations Officers. Includes salary ranges $120K-$280K+, CISO track, security architecture, SOC operations, and top cybersecurity employers actively hiring veterans."
 keywords: "Army 17A civilian jobs, Cyber Operations Officer transition, 17A to CISO, cybersecurity officer salary, Army cyber officer careers"
 ---

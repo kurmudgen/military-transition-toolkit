@@ -1,7 +1,7 @@
 ---
 title: "Navy Hospital Corpsman (HM) to Civilian Healthcare: Complete Career Transition Roadmap (2024-2025 Salary Data)"
 publishDate: "2025-11-26"
-date: ""
+date: "2025-11-29"
 description: "Real career options for Navy Hospital Corpsmen transitioning to civilian healthcare. Includes salary ranges $44K-$94K+, required certifications, and direct pathways to RN, paramedic, and PA careers."
 keywords: "Navy Hospital Corpsman civilian jobs, HM to RN transition, corpsman to paramedic, IDC civilian career"
 ---

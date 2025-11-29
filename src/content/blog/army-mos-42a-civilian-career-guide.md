@@ -1,7 +1,7 @@
 ---
 title: "Army 42A Human Resources Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-29"
-date: ""
+date: "2025-12-14"
 description: "Real career options for Army 42A Human Resources Specialists transitioning to civilian life. Includes salary ranges $50K-$140K+, HR generalist, recruiter, benefits administrator careers, and SHRM/PHR certification requirements with ROI data."
 keywords: "Army 42A civilian jobs, human resources specialist career transition, 42A to HR generalist, military HR to civilian, HR jobs for veterans"
 ---

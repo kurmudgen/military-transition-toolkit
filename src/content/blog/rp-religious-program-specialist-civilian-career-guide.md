@@ -1,7 +1,7 @@
 ---
 title: "Navy RP (Religious Program Specialist) to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-07-08"
-date: ""
+date: "2025-12-27"
 description: "Real civilian career paths for Navy Religious Program Specialists transitioning to chaplain assistant, nonprofit, social services, and event coordination. Includes salary ranges $40K-$95K+, required certifications, and skills translation."
 keywords: "Navy Religious Program Specialist civilian jobs, RP career transition, Navy RP to chaplain, RP nonprofit career"
 ---

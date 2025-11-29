@@ -1,7 +1,7 @@
 ---
 title: "Army 25C (Radio Operator-Maintainer) to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-03-04"
-date: ""
+date: "2025-12-11"
 description: "Real career options for Army 25C Radio Operator-Maintainers transitioning to civilian telecommunications, RF technician, and communications specialist careers. Salary ranges $50K-$110K+ with certification guidance."
 keywords: "Army 25C civilian jobs, Radio Operator Maintainer career transition, 25C to telecommunications, RF technician salary, communications specialist jobs"
 ---

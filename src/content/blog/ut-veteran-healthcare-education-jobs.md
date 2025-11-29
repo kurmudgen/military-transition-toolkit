@@ -1,6 +1,6 @@
 ---
 title: "Utah Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-07-10"
+date: "2026-01-11"
 description: "Guide to Utah veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs including Hill Air Force Base opportunities."
 keywords: "utah veteran healthcare, utah GI Bill schools, utah veteran jobs, utah VA hospital"
 slug: "ut-veteran-healthcare-education-jobs"

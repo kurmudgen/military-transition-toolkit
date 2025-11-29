@@ -1,7 +1,7 @@
 ---
 title: "4421 Legal Services Specialist to Civilian: Your Complete Paralegal Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-04-15"
-date: ""
+date: "2025-12-29"
 description: "Real career options for Marine Corps 4421 Legal Services Specialists transitioning to civilian legal careers. Includes salary ranges $45K-$95K+, certifications, and direct skills translation to paralegal, legal assistant, and federal legal positions."
 keywords: "4421 legal services specialist civilian jobs, Marine Corps paralegal career transition, military legal specialist to civilian"
 ---

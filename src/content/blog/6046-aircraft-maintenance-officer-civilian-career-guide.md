@@ -1,7 +1,7 @@
 ---
 title: "MOS 6046 Aircraft Maintenance Officer to Civilian: Aviation Leadership Career Transition Guide"
 publishDate: "2026-04-29"
-date: ""
+date: "2025-12-29"
 description: "Career paths for 6046 Aircraft Maintenance Officers transitioning to civilian aviation. Includes salary data $75K-$140K+, management roles, and A&P pathways."
 keywords: "6046 MOS civilian jobs, aircraft maintenance officer transition, Marine aviation officer careers, aviation management jobs"
 ---

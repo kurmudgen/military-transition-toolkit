@@ -1,7 +1,7 @@
 ---
 title: "Marine 0613 Construction Wireman to Civilian: Your Complete Career Transition Roadmap (With 2025 Salary Data)"
 publishDate: "2026-02-18"
-date: ""
+date: "2025-12-22"
 description: "Real career options for 0613 Construction Wireman transitioning to civilian life. Includes salary ranges $48K-$110K+, union apprenticeships, and skills translation for electrician and telecommunications careers."
 keywords: "0613 construction wireman civilian jobs, 0613 career transition, marine construction wireman to electrician, telecommunications installer jobs"
 ---

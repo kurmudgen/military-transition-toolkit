@@ -1,7 +1,7 @@
 ---
 title: "How to Apply for Federal Jobs on USAJOBS: Complete Veterans Guide"
 description: "Land federal government jobs using USAJOBS. Complete guide to federal job search, veteran preferences, and application strategies for GS positions."
-date: "2025-11-16"
+date: "2025-12-06"
 author: "Military Transition Toolkit"
 category: "Career Transition"
 tags: ["federal-jobs", "usajobs", "veteran-preference", "government-employment"]

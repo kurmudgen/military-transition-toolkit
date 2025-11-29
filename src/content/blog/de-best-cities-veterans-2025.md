@@ -1,6 +1,6 @@
 ---
 title: "Delaware Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2026-01-01"
+date: "2025-12-01"
 description: "Where to retire in Delaware as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Delaware best cities for veterans, Delaware military retirement, Delaware cost of living veterans, where to retire Delaware"
 slug: "de-best-cities-veterans-2025"

@@ -1,6 +1,6 @@
 ---
 title: "South Dakota Veteran Tax Benefits 2025: No Income Tax, Property Tax & Exemptions"
-date: "2026-06-26"
+date: "2026-01-10"
 description: "Complete guide to South Dakota veteran tax benefits: no state income tax, property tax exemptions for disabled veterans, vehicle fees, and financial analysis."
 keywords: "south dakota veteran benefits, south dakota property tax exemption veterans, south dakota veteran tax benefits, military retirement south dakota"
 slug: "south-dakota-veteran-tax-benefits-2025"

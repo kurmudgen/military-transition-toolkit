@@ -1,6 +1,6 @@
 ---
 title: "Nebraska Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-04-23"
+date: "2026-01-08"
 description: "Guide to Nebraska veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "nebraska veteran healthcare, nebraska GI Bill schools, nebraska veteran jobs, nebraska VA hospital"
 slug: "nebraska-veteran-healthcare-education-jobs"

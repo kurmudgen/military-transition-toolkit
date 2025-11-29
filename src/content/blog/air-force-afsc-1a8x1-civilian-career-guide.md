@@ -1,7 +1,7 @@
 ---
 title: "1A8X1 Airborne Cryptologic Linguist to Civilian Career: Jobs, Salary & Certifications"
 publishDate: "2025-12-31"
-date: ""
+date: "2025-12-07"
 description: "Complete transition guide for Air Force 1A8X1: civilian job options, salary ranges, required certifications, and companies hiring Airborne Cryptologic Linguist veterans."
 keywords: "1A8X1 civilian jobs, 1A8X1 to civilian, Air Force linguist transition, cryptologic linguist salary, intelligence linguist certifications"
 slug: "air-force-afsc-1a8x1-civilian-career-guide"

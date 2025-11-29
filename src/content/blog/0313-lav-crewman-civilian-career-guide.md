@@ -1,7 +1,7 @@
 ---
 title: "Marine 0313 LAV Crewman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2025-12-24"
-date: ""
+date: "2025-12-21"
 description: "Real career options for Marine 0313 LAV Crewman transitioning to civilian life. Includes salary ranges $45K-$95K+, required certifications, vehicle operations and mechanical skills translation."
 keywords: "0313 LAV Crewman civilian jobs, 0313 career transition, LAV Crewman to civilian career, Marine vehicle operator jobs"
 ---

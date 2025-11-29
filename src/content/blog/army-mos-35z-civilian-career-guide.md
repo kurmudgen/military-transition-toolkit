@@ -1,7 +1,7 @@
 ---
 title: "Army 35Z Intelligence Senior Sergeant to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-04-15"
-date: ""
+date: "2025-12-13"
 description: "Real career options for Army 35Z Intelligence Senior NCOs transitioning to civilian life. Includes salary ranges $110K-$200K+, intelligence management, program management, defense contractors, and senior leadership opportunities with security clearance advantages."
 keywords: "35Z civilian jobs, Intelligence Senior Sergeant career transition, intelligence manager salary, program manager jobs, senior intelligence analyst"
 ---

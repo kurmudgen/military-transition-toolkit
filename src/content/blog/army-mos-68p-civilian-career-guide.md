@@ -1,7 +1,7 @@
 ---
 title: "Army 68P (Radiology Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-27"
-date: ""
+date: "2025-12-16"
 description: "Real career options for Army 68P Radiology Specialists transitioning to civilian life. Includes salary ranges $60K-$127K+, CT/MRI tech jobs, interventional radiology, VA hospitals, and ARRT certification with costs."
 keywords: "Army 68P civilian jobs, radiology specialist career transition, 68P to civilian, ARRT certification cost, CT technologist salary, MRI tech jobs, interventional radiology technologist"
 ---

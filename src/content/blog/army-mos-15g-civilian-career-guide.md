@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 15G (Aircraft Structural Repairer) to Civilian Career: Complete Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-14"
-date: ""
+date: "2025-12-08"
 description: "Real career options for Army 15G Aircraft Structural Repairers transitioning to civilian life. Includes salary ranges $60K-$120K+, sheet metal mechanic roles, airframe technician jobs, FAA A&P certification, and companies hiring veterans."
 keywords: "Army 15G civilian jobs, aircraft structural repairer career transition, sheet metal mechanic salary, airframe technician jobs, A&P mechanic careers"
 ---

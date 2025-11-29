@@ -1,7 +1,7 @@
 ---
 title: "Army 36B Financial Management Technician to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-15"
-date: ""
+date: "2025-12-13"
 description: "Real career options for Army 36B Financial Management Technicians transitioning to civilian life. Includes salary ranges $45K-$120K+, accounting, bookkeeping, financial analysis careers, and certification requirements with ROI data."
 keywords: "Army 36B civilian jobs, financial management technician career transition, 36B to accountant, military finance to civilian, accounting jobs for veterans"
 ---

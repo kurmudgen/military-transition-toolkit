@@ -1,6 +1,6 @@
 ---
 title: "Coast Guard BM to Civilian: Complete Career Transition Guide for Boatswain's Mates (2024-2025 Salaries)"
-date: "2025-11-18"
+date: "2025-12-28"
 description: "Real career options for Coast Guard Boatswain's Mates transitioning to civilian life. Maritime careers, port security, law enforcement with salary ranges $40K-$95K+."
 keywords: "Coast Guard BM civilian jobs, Boatswain's Mate career transition, maritime to civilian career, port security jobs"
 ---

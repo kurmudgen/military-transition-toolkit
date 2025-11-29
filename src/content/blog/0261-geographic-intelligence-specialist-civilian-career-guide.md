@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0261 Geographic Intelligence Specialist to Civilian: Complete Career Guide (2025)"
 publishDate: "2025-12-17"
-date: ""
+date: "2025-12-20"
 description: "Career transition roadmap for 0261 Geographic Intelligence Specialists. NGA positions $70K-$135K, GIS analyst roles $65K-$110K, geospatial contractors $80K-$145K+, with 2025 salary data and certification pathways."
 keywords: "0261 MOS civilian jobs, geographic intelligence careers, Marine GIS specialist jobs, 0261 career transition, geospatial analyst positions"
 ---

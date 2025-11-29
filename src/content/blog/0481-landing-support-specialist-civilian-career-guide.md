@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0481 Landing Support Specialist to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-28"
-date: ""
+date: "2025-12-21"
 description: "Real career options for 0481 Landing Support Specialists transitioning to civilian life. Includes salary ranges $55K-$130K+, required certifications, and skills translation for port operations and transportation careers."
 keywords: "0481 landing support specialist civilian jobs, 0481 career transition, Marine landing support to civilian career, port operations jobs, transportation management"
 ---

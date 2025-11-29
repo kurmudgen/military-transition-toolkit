@@ -1,7 +1,7 @@
 ---
 title: "Army 19Z Armor Senior Sergeant to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-02-25"
-date: "2024-11-11"
+date: "2025-12-11"
 description: "Real career options for Army 19Z Armor Senior Sergeants transitioning to civilian life. Includes salary ranges $75K-$200K+, operations management, equipment supervision, skilled trades leadership, law enforcement command, and 100+ companies hiring."
 keywords: "19Z Armor Senior Sergeant civilian jobs, armor NCO career transition, 19Z to operations manager, senior armor NCO civilian salary, Army armor leadership jobs"
 slug: "army-mos-19z-civilian-career-guide"

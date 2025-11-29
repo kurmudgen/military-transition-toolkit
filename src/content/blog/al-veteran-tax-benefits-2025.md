@@ -1,6 +1,6 @@
 ---
 title: "Alabama Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2025-12-04"
+date: "2026-01-02"
 description: "Complete guide to Alabama veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Alabama veteran benefits, Alabama property tax exemption veterans, Alabama veteran income tax, Alabama disabled veteran benefits"
 slug: "al-veteran-tax-benefits-2025"

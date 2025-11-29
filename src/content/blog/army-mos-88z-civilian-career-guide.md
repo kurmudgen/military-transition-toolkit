@@ -1,7 +1,7 @@
 ---
 title: "Army 88Z Transportation Senior Sergeant to Civilian: Complete Logistics Leadership Career Guide (2024-2025)"
 publishDate: "2026-06-24"
-date: ""
+date: "2025-12-17"
 description: "Real logistics leadership careers for Army 88Z Transportation Senior Sergeants. Operations manager salaries $85K-$130K+, logistics director earnings $110K-$165K+, supply chain leadership, transportation management for veteran leaders."
 keywords: "88Z Transportation Senior Sergeant civilian jobs, logistics operations manager salary, transportation director careers, supply chain leadership veterans, senior logistics management"
 ---

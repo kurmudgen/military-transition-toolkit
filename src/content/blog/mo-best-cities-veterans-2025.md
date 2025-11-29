@@ -1,6 +1,6 @@
 ---
 title: "Missouri Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2026-03-26"
+date: "2025-12-03"
 description: "Where to retire in Missouri as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Missouri best cities for veterans, Missouri military retirement, Missouri cost of living veterans, where to retire Missouri"
 slug: "mo-best-cities-veterans-2025"

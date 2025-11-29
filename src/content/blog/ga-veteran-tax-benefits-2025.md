@@ -1,6 +1,6 @@
 ---
 title: "Georgia Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-01-15"
+date: "2026-01-04"
 description: "Complete guide to Georgia veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Georgia veteran benefits, Georgia property tax exemption veterans, Georgia veteran income tax, Georgia disabled veteran benefits"
 slug: "ga-veteran-tax-benefits-2025"

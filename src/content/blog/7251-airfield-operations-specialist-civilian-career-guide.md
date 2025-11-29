@@ -1,7 +1,7 @@
 ---
 title: "Marine 7251 Airfield Operations Specialist to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-08-12"
-date: ""
+date: "2026-01-01"
 description: "Career transition guide for Marine Airfield Operations Specialists moving to civilian careers. Includes airport operations, aviation management, FBO operations with $50K-$130K+ salary ranges and required certifications."
 keywords: "7251 Marine career transition, airfield operations civilian jobs, airport operations specialist jobs, aviation management careers"
 ---

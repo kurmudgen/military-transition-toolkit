@@ -1,6 +1,6 @@
 ---
 title: "Illinois Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-02-05"
+date: "2026-01-05"
 description: "Complete guide to Illinois veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Illinois veteran benefits, Illinois property tax exemption veterans, Illinois veteran income tax, Illinois disabled veteran benefits"
 slug: "il-veteran-tax-benefits-2025"

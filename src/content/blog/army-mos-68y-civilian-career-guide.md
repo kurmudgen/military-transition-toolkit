@@ -1,7 +1,7 @@
 ---
 title: "Army 68Y Eye Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-06-10"
-date: ""
+date: "2025-12-16"
 description: "Real career options for Army Eye Specialists transitioning to civilian life. Includes salary ranges $42K-$100K+, ophthalmic technician, COA/COT/COMT certification, LASIK technician, optometry assistant, and clinical coordinator opportunities."
 keywords: "Army 68Y civilian jobs, Eye Specialist career transition, ophthalmic technician salary, COA COT COMT certification, optometry technician JCAHPO"
 ---

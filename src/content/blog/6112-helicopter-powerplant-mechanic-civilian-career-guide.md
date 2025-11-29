@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6112 Helicopter Powerplant Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-05-27"
-date: ""
+date: "2025-12-30"
 description: "Real career options for 6112 Helicopter/Tiltrotor Powerplant Mechanics transitioning to civilian aviation. Includes A&P license pathway, turbine engine careers, defense contractor roles with salaries $58K-$100K+."
 keywords: "6112 MOS civilian jobs, helicopter powerplant mechanic civilian career, Marine engine mechanic transition, turbine mechanic A&P license"
 ---

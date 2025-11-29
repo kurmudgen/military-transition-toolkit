@@ -1,7 +1,7 @@
 ---
 title: "MOS 6153 Helicopter/Tiltrotor Mechanic to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-06-24"
-date: ""
+date: "2025-12-31"
 description: "Real career options for Marine 6153 Helicopter/Tiltrotor Mechanics transitioning to civilian aviation. Includes salary ranges $55K-$120K+, A&P license requirements, and airline opportunities."
 keywords: "6153 MOS civilian jobs, helicopter mechanic career transition, Marine aviation maintenance careers, A&P license for veterans"
 ---

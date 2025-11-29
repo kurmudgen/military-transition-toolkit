@@ -1,7 +1,7 @@
 ---
 title: "Navy LS (Logistics Specialist) to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-05-06"
-date: ""
+date: "2025-11-29"
 description: "Real civilian career paths for Navy LSs transitioning to supply chain management, procurement, logistics coordination, and inventory management. Includes salary ranges $45K-$125K+, required certifications, and skills translation."
 keywords: "Navy LS civilian jobs, Logistics Specialist career transition, Navy supply chain civilian career, LS to civilian"
 ---

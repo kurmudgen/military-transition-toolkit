@@ -1,7 +1,7 @@
 ---
 title: "Army 25V Combat Documentation/Production Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-03-18"
-date: ""
+date: "2025-12-12"
 description: "Comprehensive career transition guide for Army 25V Combat Documentation/Production Specialists. Includes videographer/photographer salary ranges $45K-$120K+, video editor jobs, corporate video production, media certifications (Adobe Premiere, Final Cut), and 80+ companies hiring veterans in film and media."
 keywords: "Army 25V civilian jobs, Combat Documentation Specialist career transition, military videographer to civilian, video editor veteran jobs, photography careers military, Adobe certification"
 ---

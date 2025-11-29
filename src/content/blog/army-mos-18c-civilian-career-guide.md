@@ -1,7 +1,7 @@
 ---
 title: "Army Special Forces Engineer Sergeant (18C) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-11"
-date: ""
+date: "2025-12-10"
 description: "Real career options for Special Forces Engineer Sergeants (18C) transitioning to civilian life. Includes salary ranges $75K-$180K+, demolition, construction management, explosives engineering, project management, and federal contracting opportunities."
 keywords: "18C civilian jobs, Special Forces Engineer career, Green Beret engineer jobs, demolition career, explosives engineer salary, construction management veterans"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Army 17C Cyber Operations Specialist to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-04"
-date: ""
+date: "2025-11-28"
 description: "Complete transition roadmap for Army 17C Cyber Operations Specialists. Includes salary ranges $100K-$200K+, offensive security, penetration testing, red team operations, and cybersecurity companies actively hiring 17C veterans."
 keywords: "Army 17C civilian jobs, Cyber Operations Specialist transition, penetration tester salary, red team jobs, offensive security careers, 17C to OSCP"
 ---

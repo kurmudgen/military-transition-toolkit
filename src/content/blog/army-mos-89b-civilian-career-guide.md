@@ -1,7 +1,7 @@
 ---
 title: "Army 89B (Ammunition Specialist) to Civilian Career: Complete Transition Guide With Salary Data"
 publishDate: "2026-07-01"
-date: ""
+date: "2025-12-18"
 description: "Comprehensive career transition guide for Army MOS 89B Ammunition Specialists. Includes salary data $42K-$120K+, warehouse operations, quality control, ammunition plant careers, and 75+ companies actively hiring veterans."
 keywords: "Army 89B civilian jobs, ammunition specialist career transition, 89B to warehouse operations, material handler careers for veterans, ammunition technician salary, ordnance careers civilian"
 ---

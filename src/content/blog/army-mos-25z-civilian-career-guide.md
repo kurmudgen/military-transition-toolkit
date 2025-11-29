@@ -1,7 +1,7 @@
 ---
 title: "Army 25Z Visual Information Operations Chief to Civilian: Senior Leadership Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-03-18"
-date: ""
+date: "2025-12-12"
 description: "Senior career transition guide for Army 25Z Visual Information Operations Chiefs. Includes creative director salaries $100K-$200K+, multimedia manager jobs, content strategy roles, public affairs director positions, and executive-level media careers for military visual information leaders."
 keywords: "Army 25Z civilian jobs, Visual Information Operations Chief career transition, creative director military, multimedia manager veteran, public affairs director, senior media careers"
 ---

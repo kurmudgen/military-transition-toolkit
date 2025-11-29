@@ -1,7 +1,7 @@
 ---
 title: "Army 68V Respiratory Specialist to Civilian: Complete Career Transition Guide (RRT Certification & $80K+ Salaries)"
 publishDate: "2026-06-03"
-date: ""
+date: "2025-12-16"
 description: "Comprehensive career roadmap for Army 68V Respiratory Specialists transitioning to civilian respiratory therapy careers. Earn $80K-$108K+ with RRT certification, work in ICUs, ERs, and NICUs with 12% job growth projected through 2034."
 keywords: "68V civilian jobs, Respiratory Specialist transition, RRT certification, respiratory therapist salary, NBRC certification, military to respiratory therapy"
 slug: "army-mos-68v-civilian-career-guide"

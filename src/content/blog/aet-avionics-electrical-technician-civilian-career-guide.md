@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard AET to Civilian: Your Complete Avionics Career Transition Guide (2024 Salary Data)"
 publishDate: "2025-12-10"
-date: ""
+date: "2025-12-24"
 description: "Coast Guard Avionics Electrical Technicians transitioning to civilian aviation careers. FAA certification pathways, avionics jobs, salary ranges $60K-$115K+, and certification requirements."
 keywords: "Coast Guard AET civilian jobs, avionics technician career transition, FAA avionics certification, AET to civilian aviation"
 ---

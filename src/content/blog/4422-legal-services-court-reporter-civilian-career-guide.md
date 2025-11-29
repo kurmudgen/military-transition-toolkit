@@ -1,7 +1,7 @@
 ---
 title: "4422 Legal Services Court Reporter to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-04-15"
-date: ""
+date: "2025-12-29"
 description: "Real career options for Marine Corps 4422 Legal Services Court Reporters transitioning to civilian careers. Includes salary ranges $50K-$110K+, certification paths, and direct skills translation to court reporting, legal transcription, and closed captioning careers."
 keywords: "4422 legal services court reporter civilian jobs, Marine Corps court reporter career transition, military stenographer to civilian career"
 ---

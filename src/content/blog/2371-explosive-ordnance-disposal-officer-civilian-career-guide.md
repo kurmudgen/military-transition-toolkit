@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 2371 EOD Officer to Civilian: Complete Career Guide (2025 Six-Figure Salaries)"
 publishDate: "2026-04-01"
-date: ""
+date: "2025-12-28"
 description: "Senior EOD career guide for 2371 officers. Program manager roles $150K-$230K+, senior EOD contractors $180K-$280K, federal agencies $105K-$170K, UXO management $160K-$220K with 2025 executive-level salary data."
 keywords: "2371 MOS civilian jobs, EOD officer careers, Marine EOD platoon commander jobs, explosive ordnance disposal officer transition, senior bomb technician careers"
 ---

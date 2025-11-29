@@ -1,7 +1,7 @@
 ---
 title: "Army 88L Watercraft Engineer to Civilian: Complete Marine Engineering Career Guide (2024-2025)"
 publishDate: "2026-06-17"
-date: ""
+date: "2025-12-17"
 description: "Real marine engineering careers for Army 88L Watercraft Engineers. Marine engineer salaries $65K-$145K+, chief engineer earnings $100K-$180K+, maritime propulsion, vessel maintenance, and technical careers for veterans."
 keywords: "88L Watercraft Engineer civilian jobs, Army marine engineer career, USCG marine engineer license, third assistant engineer salary, maritime engineering jobs"
 ---

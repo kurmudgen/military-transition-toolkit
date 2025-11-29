@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6122 Helicopter Crew Chief to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-06-10"
-date: ""
+date: "2025-12-30"
 description: "Real career options for 6122 Helicopter/Tiltrotor Crew Chiefs transitioning to civilian aviation. Includes A&P license pathway, crew chief roles, airline careers, defense contractor positions with salaries $65K-$110K+."
 keywords: "6122 MOS civilian jobs, helicopter crew chief civilian career, Marine crew chief transition, aviation crew chief A&P license"
 ---

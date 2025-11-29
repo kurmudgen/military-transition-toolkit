@@ -1,7 +1,7 @@
 ---
 title: "Army 42R Musician to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-05-06"
-date: ""
+date: "2025-12-14"
 description: "Real career options for Army 42R Musicians transitioning to civilian life. Includes salary ranges $40K-$120K+, music education, orchestra performance, studio work, music therapy careers, and certification requirements."
 keywords: "Army 42R civilian jobs, military musician career transition, Army band to civilian, music teacher jobs for veterans, professional musician careers"
 ---

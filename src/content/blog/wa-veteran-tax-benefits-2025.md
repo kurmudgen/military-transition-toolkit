@@ -1,6 +1,6 @@
 ---
 title: "Washington Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-07-28"
+date: "2026-01-12"
 description: "Complete guide to Washington state veteran tax benefits for 2025, including NO state income tax, property tax exemptions up to $84,000+ in savings, disabled veteran vehicle fee waivers, and county-by-county comparison of King, Pierce, and Spokane benefits."
 keywords: "Washington veteran tax benefits, WA property tax exemption veterans, disabled veteran vehicle fee waiver Washington, King County veteran benefits, Pierce County veteran tax, Spokane veteran property tax, Washington state income tax veterans, 100% disabled veteran benefits WA"
 slug: "wa-veteran-tax-benefits-2025"

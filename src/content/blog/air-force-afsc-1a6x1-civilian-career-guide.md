@@ -1,7 +1,7 @@
 ---
 title: "1A6X1 Flight Attendant to Civilian Career: Jobs, Salary & Certifications"
 publishDate: "2025-12-24"
-date: ""
+date: "2025-12-07"
 description: "Complete transition guide for Air Force 1A6X1: civilian job options, salary ranges, required certifications, and companies hiring Flight Attendant veterans."
 keywords: "1A6X1 civilian jobs, 1A6X1 to civilian, Air Force Flight Attendant transition, flight attendant salary, airline careers"
 slug: "air-force-afsc-1a6x1-civilian-career-guide"

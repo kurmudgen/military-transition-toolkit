@@ -1,7 +1,7 @@
 ---
 title: "Navy PS (Personnel Specialist) to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-07-01"
-date: ""
+date: "2025-12-27"
 description: "Real civilian career paths for Navy Personnel Specialists transitioning to HR, payroll, benefits administration, and personnel management. Includes salary ranges $45K-$120K+, required certifications, and skills translation."
 keywords: "Navy Personnel Specialist civilian jobs, PS career transition, Navy PS to HR, PS payroll career"
 ---

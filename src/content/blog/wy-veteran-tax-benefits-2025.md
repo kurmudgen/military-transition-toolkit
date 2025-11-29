@@ -1,6 +1,6 @@
 ---
 title: "Wyoming Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-08-13"
+date: "2026-01-12"
 description: "Complete guide to Wyoming veteran tax benefits including no state income tax, $6,000 property tax exemption, vehicle registration exemptions, county-by-county breakdown, and 20-year savings projections compared to Montana, Colorado, and Idaho."
 keywords: "Wyoming veteran tax benefits, Wyoming property tax exemption veterans, Wyoming no income tax veterans, Laramie County property tax, Natrona County veterans, Campbell County tax exemption, Wyoming vehicle registration veterans, disabled veteran tax breaks Wyoming"
 slug: "wy-veteran-tax-benefits-2025"

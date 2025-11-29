@@ -1,7 +1,7 @@
 ---
 title: "Marine 0681 Information Assurance Technician to Civilian: Complete Cybersecurity Career Guide (2025 Salary Data)"
 publishDate: "2026-03-18"
-date: ""
+date: "2025-12-23"
 description: "Real career options for Marine 0681 Information Assurance Technicians. Entry-level $85K-$110K, experienced $120K-$165K+. IAT Level II positions $135K-$216K with clearance. DoD 8570/8140 experience critical."
 keywords: "0681 information assurance technician civilian jobs, Marine Corps 0681 career transition, information assurance to civilian"
 ---

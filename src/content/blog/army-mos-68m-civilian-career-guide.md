@@ -1,7 +1,7 @@
 ---
 title: "Army 68M Nutrition Care Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-20"
-date: ""
+date: "2025-12-15"
 description: "Real career options for Army Nutrition Care Specialists transitioning to civilian life. Includes salary ranges $39K-$143K+, dietetic technician careers, DTR/RD certification ($140-$200), major employers including Sodexo and Aramark, and VA nutrition services opportunities."
 keywords: "Army 68M civilian jobs, nutrition care specialist career transition, dietetic technician salary, DTR certification, registered dietitian, 68M to civilian nutrition career"
 ---

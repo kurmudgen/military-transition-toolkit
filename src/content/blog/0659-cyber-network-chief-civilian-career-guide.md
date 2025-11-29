@@ -1,7 +1,7 @@
 ---
 title: "Marine 0659 Cyber Network Chief to Civilian: Complete Senior IT Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-03-11"
-date: ""
+date: "2025-12-23"
 description: "Senior career options for Marine 0659 Cyber Network Chiefs. IT Manager $120K-$160K, Network Director $160K-$200K+, CTO path $200K-$300K+. TS/SCI clearance adds $40K premium. Leadership experience critical."
 keywords: "0659 cyber network chief civilian jobs, Marine Corps 0659 career transition, network chief to civilian"
 ---

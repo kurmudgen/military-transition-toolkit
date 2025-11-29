@@ -1,6 +1,6 @@
 ---
 title: "Wisconsin Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-07-31"
+date: "2026-01-12"
 description: "Comprehensive 2025 guide to Wisconsin veteran healthcare (VA Medical Centers, CBOCs, Veterans Homes), education benefits (Wisconsin GI Bill covering full tuition at UW System and technical colleges), and employment services with specific addresses, phone numbers, and program details."
 keywords: "Wisconsin veteran healthcare, Wisconsin VA hospitals, Wisconsin GI Bill, UW System veteran benefits, Wisconsin technical colleges veterans, Wisconsin veteran employment, Milwaukee VA Medical Center, Madison VA"
 slug: "wi-veteran-healthcare-education-jobs"

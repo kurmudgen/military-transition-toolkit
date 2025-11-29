@@ -1,7 +1,7 @@
 ---
 title: "Navy GM (Gunner's Mate) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-11"
-date: ""
+date: "2025-11-29"
 description: "Real career options for Navy Gunner's Mates transitioning to civilian life. Includes salary ranges $45K-$95K+, required certifications, and weapons systems skills translation."
 keywords: "Navy GM civilian jobs, Gunner's Mate career transition, GM to civilian career, Navy weapons technician jobs"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Navy PR (Aircrew Survival Equipmentman) to Civilian: Complete Career Transition Guide (With 2025 Salary Data)"
 publishDate: "2026-06-24"
-date: ""
+date: "2025-12-27"
 description: "Real career options for Navy PR transitioning to civilian safety equipment careers. Includes salary ranges $45K-$100K+, parachute rigger, aviation life support, and aerospace safety careers."
 keywords: "Navy PR civilian jobs, aircrew survival equipmentman career transition, parachute rigger salary, aviation life support technician, PR to civilian career"
 ---

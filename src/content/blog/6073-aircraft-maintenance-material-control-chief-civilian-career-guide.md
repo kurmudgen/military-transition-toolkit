@@ -1,7 +1,7 @@
 ---
 title: "MOS 6073 Aircraft Maintenance Material Control Chief to Civilian: Production Control & Planning Career Guide"
 publishDate: "2026-05-13"
-date: ""
+date: "2025-12-30"
 description: "Career paths for 6073 Material Control Chiefs. Includes salary data $75K-$135K+, maintenance planning, production control, and aviation operations management."
 keywords: "6073 MOS civilian jobs, maintenance material control chief transition, aviation production control careers, maintenance planning jobs"
 ---

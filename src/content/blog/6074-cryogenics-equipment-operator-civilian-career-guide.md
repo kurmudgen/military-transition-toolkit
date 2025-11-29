@@ -1,7 +1,7 @@
 ---
 title: "MOS 6074 Cryogenics Equipment Operator to Civilian: Specialized Technical Career Transition Guide"
 publishDate: "2026-05-13"
-date: ""
+date: "2025-12-30"
 description: "Career paths for 6074 Cryogenics Equipment Operators. Includes salary data $55K-$110K+, industrial gas careers, HVAC-R, aviation oxygen systems, and technical roles."
 keywords: "6074 MOS civilian jobs, cryogenics operator transition, industrial gas careers, oxygen systems technician jobs"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Army 38A Civil Affairs Officer to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-22"
-date: ""
+date: "2025-12-14"
 description: "Real career options for Army Civil Affairs Officers transitioning to civilian life. Includes salary ranges $75K-$200K+, USAID, State Department, international development, NGO careers, and humanitarian program management opportunities."
 keywords: "38A civilian jobs, Civil Affairs Officer career transition, USAID careers, international development jobs, NGO program manager salary, State Department careers"
 ---

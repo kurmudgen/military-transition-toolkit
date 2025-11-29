@@ -1,7 +1,7 @@
 ---
 title: "How to Find Remote Work as a Veteran: Complete Job Search Guide"
 description: "Find remote work opportunities tailored to veteran skills. Strategies, job boards, and tips for landing remote positions with flexible work-from-home options."
-date: "2025-11-19"
+date: "2025-12-06"
 author: "Military Transition Toolkit"
 category: "Career Transition"
 tags: ["remote-work", "job-search", "veteran-employment", "flexible-work"]

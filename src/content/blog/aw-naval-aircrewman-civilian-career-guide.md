@@ -1,7 +1,7 @@
 ---
 title: "Navy AW (Naval Aircrewman) to Civilian: Complete Career Transition Guide (With 2025 Salary Data)"
 publishDate: "2026-01-14"
-date: ""
+date: "2025-12-24"
 description: "Real career options for Navy Aircrewman transitioning to civilian aviation. Includes salary ranges $45K-$130K+, pilot certifications, loadmaster, and UAV operator careers."
 keywords: "Navy AW civilian jobs, naval aircrewman career transition, flight crew jobs civilian, AW to civilian career"
 ---

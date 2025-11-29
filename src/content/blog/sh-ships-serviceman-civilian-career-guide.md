@@ -1,7 +1,7 @@
 ---
 title: "SH Ship's Serviceman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-22"
-date: ""
+date: "2025-12-27"
 description: "Real career options for SH Ship's Serviceman (Retail Services Specialist) transitioning to civilian life. Includes salary ranges $35K-$95K+, required certifications, and skills translation."
 keywords: "SH ships serviceman civilian jobs, SH career transition, retail services specialist to civilian career, Navy SH jobs"
 ---

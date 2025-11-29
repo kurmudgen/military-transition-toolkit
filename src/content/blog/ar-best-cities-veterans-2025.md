@@ -1,6 +1,6 @@
 ---
 title: "Arkansas Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-12-05"
+date: "2025-12-01"
 description: "Where to retire in Arkansas as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Arkansas best cities for veterans, Arkansas military retirement, Arkansas cost of living veterans, where to retire Arkansas"
 slug: "ar-best-cities-veterans-2025"

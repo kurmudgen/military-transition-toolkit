@@ -1,6 +1,6 @@
 ---
 title: "Best Cities for Veterans in New Mexico 2025: Cost of Living & Benefits"
-date: "2026-05-07"
+date: "2025-12-04"
 description: "Compare the best New Mexico cities for veterans: Albuquerque, Santa Fe, Las Cruces, Roswell, and Farmington—cost of living, healthcare access, employment, and quality of life."
 keywords: "best cities for veterans new mexico, albuquerque veterans, santa fe veterans, las cruces cost of living, new mexico veteran communities"
 slug: "nm-best-cities-veterans-2025"

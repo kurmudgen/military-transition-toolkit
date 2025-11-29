@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0431 Logistics/Embarkation Specialist to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-21"
-date: ""
+date: "2025-12-21"
 description: "Real career options for 0431 Logistics/Embarkation Specialists transitioning to civilian life. Includes salary ranges $50K-$110K+, required certifications, and skills translation for supply chain and freight careers."
 keywords: "0431 logistics embarkation specialist civilian jobs, 0431 career transition, Marine logistics to civilian career, freight coordinator jobs, embarkation specialist"
 ---

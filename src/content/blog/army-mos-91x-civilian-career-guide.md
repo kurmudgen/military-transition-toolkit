@@ -1,7 +1,7 @@
 ---
 title: "Army 91X (Maintenance Supervisor) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-22"
-date: ""
+date: "2025-12-19"
 description: "Complete transition roadmap for Army 91X Maintenance Supervisors. Includes verified salary ranges $70K-$145K+, fleet maintenance manager, service manager, operations manager careers with certifications including PMP, Lean Six Sigma, and 85+ companies hiring veteran supervisors."
 keywords: "91X civilian jobs, Army Maintenance Supervisor career transition, fleet maintenance manager salary, service manager, operations manager, 91X to civilian career"
 ---

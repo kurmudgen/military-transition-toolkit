@@ -1,7 +1,7 @@
 ---
 title: "Army Special Forces Candidate (18X) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-18"
-date: ""
+date: "2025-12-10"
 description: "Real career options for 18X Special Forces candidates transitioning to civilian life. Includes salary ranges $60K-$150K+, law enforcement, tactical careers, fitness industry, security, and transition paths whether SF-qualified or not."
 keywords: "18X civilian jobs, Special Forces candidate career, 18X to law enforcement, tactical fitness careers, military veteran jobs, infantry to civilian"
 ---

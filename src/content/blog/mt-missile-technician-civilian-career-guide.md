@@ -1,7 +1,7 @@
 ---
 title: "Navy MT (Missile Technician) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-06-10"
-date: ""
+date: "2025-12-27"
 description: "Real career options for Navy Missile Technicians transitioning to civilian life. Includes salary ranges $60K-$120K+, required certifications, and strategic weapons systems skills translation."
 keywords: "Navy MT civilian jobs, Missile Technician career transition, MT to civilian career, ballistic missile technician jobs, submarine weapons systems"
 ---

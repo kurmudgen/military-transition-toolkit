@@ -1,7 +1,7 @@
 ---
 title: "Back Pain VA Rating Guide (2025)"
 description: "Comprehensive guide to VA back pain ratings (10%-100%), monthly compensation, evidence requirements, and proven filing strategies for lumbar spine claims."
-date: 2025-11-13
+date: "2025-11-30"
 category: "VA Benefits"
 tags: ["back-pain", "lumbar-spine", "va-rating", "musculoskeletal", "disability", "claims"]
 author: "Military Transition Toolkit"

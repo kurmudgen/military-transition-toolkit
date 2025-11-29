@@ -1,7 +1,7 @@
 ---
 title: "Army 25N (Nodal Network Systems Operator-Maintainer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-11"
-date: ""
+date: "2025-12-11"
 description: "Real career options for Army 25N Nodal Network Systems Operator-Maintainers transitioning to civilian network engineering careers. Includes salary ranges $75K-$180K+, network operations, telecommunications, and IT infrastructure opportunities with certification guidance."
 keywords: "Army 25N civilian jobs, Nodal Network Systems career transition, 25N to network engineer, telecommunications jobs salary, CCNA certification, network operations center jobs"
 ---

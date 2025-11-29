@@ -1,7 +1,7 @@
 ---
 title: "Navy EM Electrician's Mate to Civilian: Your Career Transition Roadmap (2024 Salary Guide)"
 publishDate: "2026-02-11"
-date: ""
+date: "2025-12-25"
 description: "Navy EM transition guide with proven paths. Industrial electrician, power plant tech, commercial electrician roles paying $60K-$95K+. Journeyman license requirements, certifications, and top employers."
 keywords: "Navy EM civilian jobs, Electrician's Mate career transition, EM to electrician, Navy electrician journeyman license"
 ---

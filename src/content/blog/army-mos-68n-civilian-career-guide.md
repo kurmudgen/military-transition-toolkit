@@ -1,7 +1,7 @@
 ---
 title: "Army 68N (Cardiovascular Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-27"
-date: ""
+date: "2025-12-16"
 description: "Real career options for Army 68N Cardiovascular Specialists transitioning to civilian life. Includes salary ranges $55K-$145K+, cardiac catheterization lab jobs, echocardiography, VA hospitals, and healthcare certifications with costs."
 keywords: "Army 68N civilian jobs, cardiovascular specialist career transition, 68N to civilian, cardiac catheterization lab jobs, echocardiography technologist salary, RCIS certification"
 ---

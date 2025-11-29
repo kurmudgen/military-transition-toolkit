@@ -1,7 +1,7 @@
 ---
 title: "Army 25R (Visual Information Equipment Operator-Maintainer) to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-03-11"
-date: ""
+date: "2025-12-12"
 description: "Real career options for Army 25R Visual Information Equipment Operator-Maintainers transitioning to civilian AV technician, broadcast technician, and video production careers. Salary ranges $50K-$110K+ with certification guidance."
 keywords: "Army 25R civilian jobs, Visual Information Equipment Operator career transition, 25R to AV technician, broadcast technician salary, video production technician jobs"
 ---

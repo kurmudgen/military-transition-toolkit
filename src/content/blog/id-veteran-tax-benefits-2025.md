@@ -1,6 +1,6 @@
 ---
 title: "Idaho Veteran Benefits 2025: Property Tax Reduction, Income Tax Exemption & Affordable Living"
-date: "2026-01-30"
+date: "2026-01-05"
 description: "Complete guide to Idaho veteran tax benefits: 100% exempt military retirement income, up to $1,500 property tax reduction for disabled veterans, and the reality of affordable living in one of America's fastest-growing states."
 keywords: "Idaho veteran benefits, Idaho property tax exemption veterans, Idaho veteran income tax, Idaho disabled veteran benefits, Idaho military retirement tax"
 slug: "id-veteran-tax-benefits-2025"

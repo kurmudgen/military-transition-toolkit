@@ -1,7 +1,7 @@
 ---
 title: "Marine 0372 Critical Skills Operator (MARSOC) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-01-14"
-date: ""
+date: "2025-11-29"
 description: "Real career options for 0372 Marine Raiders transitioning to civilian life. Includes salary ranges $80K-$250K+, elite federal law enforcement, contractor opportunities, and special operations skills translation."
 keywords: "0372 Marine civilian jobs, MARSOC career transition, Marine Raider civilian career, critical skills operator jobs, CSO transition"
 ---

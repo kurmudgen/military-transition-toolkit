@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 15B (Aircraft Powerplant Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-01-07"
-date: ""
+date: "2025-12-08"
 description: "Real career options for 15B aircraft powerplant repairers transitioning to civilian life. Includes salary ranges $50K-$155K+, A&P mechanic, airlines, cargo, MRO, and helicopter maintenance opportunities."
 keywords: "15B civilian jobs, aircraft powerplant repairer career transition, A&P mechanic salary, turbine engine mechanic jobs, 15B to civilian career"
 ---

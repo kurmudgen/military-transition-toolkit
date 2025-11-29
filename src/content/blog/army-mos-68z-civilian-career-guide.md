@@ -1,7 +1,7 @@
 ---
 title: "Army 68Z Chief Medical NCO to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-06-10"
-date: ""
+date: "2025-12-17"
 description: "Real career options for Army Chief Medical NCOs transitioning to civilian life. Includes salary ranges $70K-$219K+, healthcare administrator, medical practice manager, clinic operations director, hospital administrator, and healthcare executive opportunities."
 keywords: "Army 68Z civilian jobs, Chief Medical NCO career transition, healthcare administrator salary, medical practice manager, healthcare operations director"
 ---

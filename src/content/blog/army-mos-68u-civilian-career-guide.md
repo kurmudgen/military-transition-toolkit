@@ -1,7 +1,7 @@
 ---
 title: "Army 68U ENT Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-06-03"
-date: ""
+date: "2025-12-16"
 description: "Real career options for Army ENT Specialists transitioning to civilian life. Includes salary ranges $30K-$94K+, audiology assistant, hearing aid specialist, ENT medical assistant, and clinical coordinator opportunities."
 keywords: "Army 68U civilian jobs, ENT Specialist career transition, audiology assistant salary, hearing aid specialist certification, otolaryngology medical assistant"
 ---

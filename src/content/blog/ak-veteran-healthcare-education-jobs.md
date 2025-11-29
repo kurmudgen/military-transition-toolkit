@@ -1,6 +1,6 @@
 ---
 title: "Alaska Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2025-11-27"
+date: "2026-01-02"
 description: "Complete directory of Alaska VA facilities, education programs at University of Alaska, veteran employment opportunities, and support services across the Last Frontier."
 keywords: "Alaska VA hospital, Alaska veteran education, Alaska veteran jobs, Alaska GI Bill schools, University of Alaska veterans"
 slug: "ak-veteran-healthcare-education-jobs"

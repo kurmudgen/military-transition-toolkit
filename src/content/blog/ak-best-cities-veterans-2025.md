@@ -1,6 +1,6 @@
 ---
 title: "Alaska Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-11-25"
+date: "2025-12-01"
 description: "Where to retire in Alaska as a veteran: best cities ranked by benefits, housing costs, veteran population, jobs, and extreme climate considerations for 2025."
 keywords: "Alaska best cities for veterans, Alaska military retirement, Alaska cost of living veterans, where to retire Alaska, Anchorage veterans, Fairbanks veterans"
 slug: "ak-best-cities-veterans-2025"

@@ -1,7 +1,7 @@
 ---
 title: "Marine 7236 Tactical Systems Controller to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-08-12"
-date: ""
+date: "2026-01-01"
 description: "Career transition guide for Marine Tactical Systems Controllers moving to civilian careers. Includes defense contractor tactical coordination, operations management, IT leadership roles with $85K-$180K+ salary ranges."
 keywords: "7236 Marine career transition, tactical systems controller civilian jobs, tactical air defense controller civilian career, operations management jobs"
 ---

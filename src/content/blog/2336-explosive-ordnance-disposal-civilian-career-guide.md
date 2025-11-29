@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 2336 EOD to Civilian: Complete Career Transition Guide (2025 High-Salary Data)"
 publishDate: "2026-04-01"
-date: ""
+date: "2025-12-28"
 description: "High-earning career guide for 2336 EOD techs. Law enforcement bomb squads $80K-$130K, defense EOD contractors $120K-$220K+, UXO remediation $90K-$150K, federal agencies $85K-$145K with 2025 salary data."
 keywords: "2336 MOS civilian jobs, EOD technician careers, Marine EOD civilian jobs, explosive ordnance disposal career transition, bomb technician jobs"
 ---

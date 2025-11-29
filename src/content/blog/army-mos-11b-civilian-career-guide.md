@@ -1,7 +1,7 @@
 ---
 title: "Army 11B Infantryman to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-11-26"
-date: "2024-11-11"
+date: "2025-11-28"
 description: "Real career options for Army 11B Infantrymen transitioning to civilian life. Includes salary ranges $45K-$180K+, law enforcement, security, skilled trades, and leadership opportunities with 100+ companies hiring."
 keywords: "11B Infantryman civilian jobs, infantry career transition, 11B to police officer, infantry veteran security jobs, 11B salary civilian, Army infantry transition guide"
 slug: "army-mos-11b-civilian-career-guide"

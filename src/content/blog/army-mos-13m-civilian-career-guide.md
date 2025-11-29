@@ -1,7 +1,7 @@
 ---
 title: "Army 13M MLRS/HIMARS Crewmember to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-24"
-date: ""
+date: "2025-12-07"
 description: "Real career options for 13M MLRS crewmembers transitioning to civilian life. Includes heavy equipment operator roles $55K-$95K, defense contractor positions $75K-$140K+, trucking careers, and industrial mechanic jobs with certification paths."
 keywords: "13M civilian jobs, MLRS HIMARS career transition, 13M to heavy equipment operator, Army 13M civilian salary, missile systems contractor jobs"
 ---

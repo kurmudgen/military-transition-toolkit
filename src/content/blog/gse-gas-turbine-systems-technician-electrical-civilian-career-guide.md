@@ -1,7 +1,7 @@
 ---
 title: "Navy GSE (Gas Turbine Systems Technician - Electrical) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-18"
-date: ""
+date: "2025-12-26"
 description: "Real career options for Navy GSE Gas Turbine Systems Technicians transitioning to civilian life. Includes salary ranges $55K-$110K+, required certifications, and power generation career paths."
 keywords: "Navy GSE civilian jobs, Gas Turbine Systems Technician Electrical career transition, GSE to civilian career, power plant electrician"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0291 Intelligence Chief to Civilian: Complete Career Transition Guide (2025 Salaries)"
 publishDate: "2025-12-17"
-date: ""
+date: "2025-12-20"
 description: "Senior-level career guide for 0291 Intelligence Chiefs. Program manager roles $120K-$180K+, senior analyst positions $110K-$150K, federal GS-13/14 $105K-$155K, leveraging 10+ years intelligence leadership with 2025 salary data."
 keywords: "0291 MOS civilian jobs, intelligence chief careers, senior intelligence analyst jobs, 0291 career transition, intelligence program manager positions"
 ---

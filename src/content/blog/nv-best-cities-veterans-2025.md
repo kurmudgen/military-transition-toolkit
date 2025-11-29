@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in Nevada for Veterans 2025: Cost of Living & Quality of Life"
-date: "2026-05-12"
+date: "2025-12-04"
 description: "Nevada's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities nevada veterans, nevada cost of living veterans, where to live nevada military, nevada veteran population"
 slug: "best-cities-nv-veterans-2025"

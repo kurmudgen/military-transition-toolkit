@@ -1,7 +1,7 @@
 ---
 title: "Marine 0352 Anti-Tank Missile Gunner to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-01-07"
-date: ""
+date: "2025-12-21"
 description: "Real career options for 0352 Marines transitioning to civilian life. Includes salary ranges $55K-$95K+, required certifications, and weapons systems skills translation."
 keywords: "0352 Marine civilian jobs, anti-tank missile gunner career transition, TOW gunner civilian career, Javelin gunner jobs"
 ---

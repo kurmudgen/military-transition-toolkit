@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard ME to Civilian: Complete Law Enforcement Career Transition Guide (2024 Salaries)"
 publishDate: "2026-05-13"
-date: ""
+date: "2025-12-26"
 description: "Coast Guard Maritime Enforcement Specialists transitioning to federal law enforcement, police, border patrol, and security careers. Salary ranges $50K-$135K+, tactical training, clearance advantage."
 keywords: "Coast Guard ME civilian jobs, maritime enforcement specialist career, federal law enforcement, CBP careers, police officer jobs"
 ---

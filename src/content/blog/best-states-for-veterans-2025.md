@@ -1,6 +1,6 @@
 ---
 title: "Best States for Veterans 2025: Top 10 Ranked by Benefits (No Income Tax Winners)"
-date: "2026-08-14"
+date: "2026-01-02"
 description: "Texas and Florida lead, but Alaska pays you to live there. We rank the top 10 veteran-friendly states by taxes, benefits, and healthcare access."
 keywords: "best states for veterans, veteran benefits by state, no income tax states veterans, veteran property tax exemption, veteran-friendly states 2025"
 ---

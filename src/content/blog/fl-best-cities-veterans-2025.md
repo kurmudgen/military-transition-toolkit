@@ -1,6 +1,6 @@
 ---
 title: "Florida Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2026-01-06"
+date: "2025-12-01"
 description: "Where to retire in Florida as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Florida best cities for veterans, Florida military retirement, Florida cost of living veterans, where to retire Florida"
 slug: "fl-best-cities-veterans-2025"

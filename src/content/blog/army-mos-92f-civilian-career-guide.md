@@ -1,7 +1,7 @@
 ---
 title: "Army 92F Petroleum Supply Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-07-29"
-date: ""
+date: "2025-12-19"
 description: "Complete career roadmap for 92F Petroleum Supply Specialists transitioning to civilian fuel operations, petroleum distribution, and energy sector careers. Includes salary data $46K-$130K+, fuel operations manager, petroleum distribution, energy logistics roles with 60+ companies actively hiring veterans."
 keywords: "92F civilian jobs, Petroleum Supply Specialist career transition, fuel operations manager salary, petroleum distribution careers, energy sector jobs, aviation fuel jobs"
 ---

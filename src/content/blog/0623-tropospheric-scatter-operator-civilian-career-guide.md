@@ -1,7 +1,7 @@
 ---
 title: "Marine 0623 Tropospheric Scatter Operator to Civilian: Your Complete Career Transition Roadmap (With 2025 Salary Data)"
 publishDate: "2026-03-04"
-date: ""
+date: "2025-12-22"
 description: "Real career options for 0623 Tropospheric Scatter/SATCOM operators transitioning to civilian life. Includes salary ranges $65K-$140K+, required certifications, and skills translation for RF engineering and satellite communications careers."
 keywords: "0623 tropospheric scatter civilian jobs, 0623 career transition, marine SATCOM to civilian career, RF engineer satellite communications technician jobs"
 ---

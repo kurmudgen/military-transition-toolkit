@@ -1,6 +1,6 @@
 ---
 title: "Oklahoma Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-05-29"
+date: "2026-01-09"
 description: "Guide to Oklahoma veteran resources: VA medical centers in Oklahoma City and Muskogee, GI Bill schools, Tinker AFB jobs, and veteran employment programs."
 keywords: "oklahoma veteran healthcare, oklahoma GI Bill schools, oklahoma veteran jobs, oklahoma VA hospital"
 slug: "ok-veteran-healthcare-education-jobs"

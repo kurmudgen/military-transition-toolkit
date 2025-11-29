@@ -1,7 +1,7 @@
 ---
 title: "Marine 7257 Air Traffic Controller to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-08-12"
-date: ""
+date: "2026-01-01"
 description: "Career transition guide for Marine Air Traffic Controllers moving to FAA ATC careers. Includes FAA hiring process, contract towers, defense contractors with $70K-$180K+ salary ranges and qualification requirements."
 keywords: "7257 Marine career transition, Marine ATC to FAA, air traffic controller civilian jobs, FAA air traffic controller salary"
 ---

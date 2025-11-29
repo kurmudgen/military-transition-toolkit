@@ -1,7 +1,7 @@
 ---
 title: "Navy AD (Aviation Machinist's Mate) to Civilian: Complete A&P Career Transition Guide (With Real Salaries)"
 publishDate: "2025-12-03"
-date: ""
+date: "2025-12-23"
 description: "Real career options for Navy ADs transitioning to civilian aircraft mechanic jobs. Includes A&P salary ranges $65K-$120K+, FAA certification paths, and airline hiring data for 2024-2025."
 keywords: "Navy AD civilian jobs, Aviation Machinist's Mate career transition, A&P mechanic salary, Navy aircraft mechanic to civilian"
 ---

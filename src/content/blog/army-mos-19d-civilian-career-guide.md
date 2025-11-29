@@ -1,7 +1,7 @@
 ---
 title: "Army 19D Cavalry Scout to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-02-25"
-date: "2024-11-11"
+date: "2025-12-11"
 description: "Real career options for Army 19D Cavalry Scouts transitioning to civilian life. Includes salary ranges $50K-$180K+, law enforcement, intelligence analysis, skilled trades, surveying, and 100+ companies hiring."
 keywords: "19D Cavalry Scout civilian jobs, scout career transition, 19D to police, cavalry scout veteran jobs, 19D salary civilian, Army scout transition guide"
 slug: "army-mos-19d-civilian-career-guide"

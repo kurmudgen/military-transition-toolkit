@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0513 Civil Affairs NCO to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-02-04"
-date: ""
+date: "2025-12-22"
 description: "Real career options for 0513 Civil Affairs NCOs transitioning to civilian life. Includes salary ranges $60K-$150K+, certifications, and direct skills translation for emergency management, government relations, and international development."
 keywords: "0513 civil affairs civilian jobs, Marine Corps civil affairs career transition, emergency management salary, government relations jobs"
 ---

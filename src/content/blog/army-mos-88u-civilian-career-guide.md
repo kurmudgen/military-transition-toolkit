@@ -1,7 +1,7 @@
 ---
 title: "Army 88U Railway Operations Crewmember to Civilian: Complete Railroad Career Guide (2024-2025)"
 publishDate: "2026-06-24"
-date: ""
+date: "2025-12-17"
 description: "Real railroad careers for Army 88U Railway Operations Crewmembers. Railroad conductor salaries $70K-$90K+, locomotive engineer earnings $85K-$110K+, train operations, freight railroad careers for veterans."
 keywords: "88U Railway Operations Crewmember civilian jobs, railroad conductor salary, locomotive engineer pay, BNSF Union Pacific careers, train operations jobs"
 ---

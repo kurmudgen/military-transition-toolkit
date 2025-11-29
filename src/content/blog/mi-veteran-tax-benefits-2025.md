@@ -1,6 +1,6 @@
 ---
 title: "Michigan Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-03-19"
+date: "2026-01-06"
 description: "Complete guide to Michigan veteran tax benefits: property tax exemptions for disabled veterans, income tax treatment, and financial benefits including the 100% exemption for 100% disabled vets."
 keywords: "Michigan veteran benefits, Michigan property tax exemption veterans, Michigan veteran income tax, Michigan disabled veteran benefits"
 slug: "mi-veteran-tax-benefits-2025"

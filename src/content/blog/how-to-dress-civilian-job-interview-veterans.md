@@ -1,7 +1,7 @@
 ---
 title: "How to Dress for Civilian Job Interview: Complete Guide for Veterans"
 description: "Navigate civilian dress codes for job interviews. Expert guide on interview attire, industry expectations, and making powerful first impressions."
-date: "2025-11-20"
+date: "2025-12-06"
 author: "Military Transition Toolkit"
 category: "Career Transition"
 tags: ["job-interview", "dress-code", "professional-appearance", "interview-tips"]
