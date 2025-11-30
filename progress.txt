@@ -1,0 +1,66 @@
+# VA Disability Guides Generation Progress
+# Started: 2025-11-30
+# Target: 50 guides
+
+## BATCH 1 - TOP 10 CLAIMED (Most searched)
+- [✓] 1. Tinnitus - complete
+- [✓] 2. PTSD - complete
+- [✓] 3. Lower Back Strain (Lumbosacral Strain) - complete
+- [✓] 4. Knee Conditions (Limitation of Flexion) - complete
+- [✓] 5. Migraines/Headaches - complete
+- [✓] 6. Sleep Apnea - complete
+- [✓] 7. Scars (General) - complete
+- [✓] 8. Radiculopathy (Upper and Lower) - complete
+- [✓] 9. Shoulder Conditions (Limitation of Motion) - complete
+- [✓] 10. Hearing Loss (Bilateral) - complete
+
+## BATCH 2 - MENTAL HEALTH
+- [ ] 11. Major Depressive Disorder
+- [ ] 12. Generalized Anxiety Disorder
+- [ ] 13. Adjustment Disorder
+- [ ] 14. Bipolar Disorder
+- [ ] 15. Traumatic Brain Injury (TBI)
+- [ ] 16. Military Sexual Trauma (MST)
+- [ ] 17. Panic Disorder
+- [ ] 18. Insomnia
+- [ ] 19. Somatic Symptom Disorder
+- [ ] 20. Cognitive Disorder
+
+## BATCH 3 - MUSCULOSKELETAL
+- [ ] 21. Plantar Fasciitis
+- [ ] 22. Ankle Conditions
+- [ ] 23. Hip Conditions
+- [ ] 24. Cervical Strain (Neck)
+- [ ] 25. Thoracolumbar Strain
+- [ ] 26. Flat Feet (Pes Planus)
+- [ ] 27. Carpal Tunnel Syndrome
+- [ ] 28. Degenerative Arthritis
+- [ ] 29. Fibromyalgia
+- [ ] 30. Gout
+
+## BATCH 4 - INTERNAL/ORGAN
+- [ ] 31. GERD/Acid Reflux
+- [ ] 32. Irritable Bowel Syndrome (IBS)
+- [ ] 33. Hypertension
+- [ ] 34. Diabetes Type 2
+- [ ] 35. Asthma
+- [ ] 36. Sinusitis/Rhinitis
+- [ ] 37. Sleep Disorders (other than apnea)
+- [ ] 38. Kidney Conditions
+- [ ] 39. Liver Conditions
+- [ ] 40. Heart Conditions
+
+## BATCH 5 - SECONDARY & OTHER
+- [ ] 41. Erectile Dysfunction (Secondary)
+- [ ] 42. Peripheral Neuropathy
+- [ ] 43. Vertigo
+- [ ] 44. Chronic Fatigue Syndrome
+- [ ] 45. Skin Conditions (Eczema, Psoriasis)
+- [ ] 46. Burn Pit Exposure (PACT Act)
+- [ ] 47. Agent Orange Presumptives
+- [ ] 48. Gulf War Syndrome
+- [ ] 49. Cold Injury Residuals
+- [ ] 50. Dental Conditions
+
+## COMMIT LOG
+- Batch 1 committed: 2025-11-30
