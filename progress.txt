@@ -27,16 +27,16 @@
 - [✓] 20. Cognitive Disorder - complete
 
 ## BATCH 3 - MUSCULOSKELETAL
-- [ ] 21. Plantar Fasciitis
-- [ ] 22. Ankle Conditions
-- [ ] 23. Hip Conditions
-- [ ] 24. Cervical Strain (Neck)
-- [ ] 25. Thoracolumbar Strain
-- [ ] 26. Flat Feet (Pes Planus)
-- [ ] 27. Carpal Tunnel Syndrome
-- [ ] 28. Degenerative Arthritis
-- [ ] 29. Fibromyalgia
-- [ ] 30. Gout
+- [✓] 21. Plantar Fasciitis - complete
+- [✓] 22. Ankle Conditions - complete
+- [✓] 23. Hip Conditions - complete
+- [✓] 24. Cervical Strain (Neck) - complete
+- [✓] 25. Thoracolumbar Strain - complete
+- [✓] 26. Flat Feet (Pes Planus) - complete
+- [✓] 27. Carpal Tunnel Syndrome - complete
+- [✓] 28. Degenerative Arthritis - complete
+- [✓] 29. Fibromyalgia - complete
+- [✓] 30. Gout - complete
 
 ## BATCH 4 - INTERNAL/ORGAN
 - [ ] 31. GERD/Acid Reflux
@@ -65,3 +65,4 @@
 ## COMMIT LOG
 - Batch 1 committed: 2025-11-30
 - Batch 2 committed: 2025-11-30
+- Batch 3 committed: 2025-11-30
