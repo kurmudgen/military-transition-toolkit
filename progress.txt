@@ -39,16 +39,16 @@
 - [✓] 30. Gout - complete
 
 ## BATCH 4 - INTERNAL/ORGAN
-- [ ] 31. GERD/Acid Reflux
-- [ ] 32. Irritable Bowel Syndrome (IBS)
-- [ ] 33. Hypertension
-- [ ] 34. Diabetes Type 2
-- [ ] 35. Asthma
-- [ ] 36. Sinusitis/Rhinitis
-- [ ] 37. Sleep Disorders (other than apnea)
-- [ ] 38. Kidney Conditions
-- [ ] 39. Liver Conditions
-- [ ] 40. Heart Conditions
+- [✓] 31. GERD/Acid Reflux - complete
+- [✓] 32. Irritable Bowel Syndrome (IBS) - complete
+- [✓] 33. Hypertension - complete
+- [✓] 34. Diabetes Type 2 - complete
+- [✓] 35. Asthma - complete
+- [✓] 36. Sinusitis/Rhinitis - complete
+- [✓] 37. Sleep Disorders (other than apnea) - complete
+- [✓] 38. Kidney Conditions - complete
+- [✓] 39. Liver Conditions - complete
+- [✓] 40. Heart Conditions - complete
 
 ## BATCH 5 - SECONDARY & OTHER
 - [ ] 41. Erectile Dysfunction (Secondary)
@@ -66,3 +66,4 @@
 - Batch 1 committed: 2025-11-30
 - Batch 2 committed: 2025-11-30
 - Batch 3 committed: 2025-11-30
+- Batch 4 committed: 2025-11-30
