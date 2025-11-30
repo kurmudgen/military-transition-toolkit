@@ -17,18 +17,18 @@ BATCH 1 - IT/CYBER (1-10) ✓ COMPLETE
 [✓] 10. CEH (Certified Ethical Hacker) - complete
 
 ═══════════════════════════════════════════════════════════════
-BATCH 2 - PROJECT MANAGEMENT & BUSINESS (11-20)
+BATCH 2 - PROJECT MANAGEMENT & BUSINESS (11-20) ✓ COMPLETE
 ═══════════════════════════════════════════════════════════════
-[ ] 11. PMP
-[ ] 12. CAPM
-[ ] 13. Lean Six Sigma Green Belt
-[ ] 14. Lean Six Sigma Black Belt
-[ ] 15. Scrum Master (CSM)
-[ ] 16. ITIL Foundation
-[ ] 17. SHRM-CP
-[ ] 18. PHR
-[ ] 19. CSCP
-[ ] 20. CLP
+[✓] 11. PMP - complete
+[✓] 12. CAPM - complete
+[✓] 13. Lean Six Sigma Green Belt - complete
+[✓] 14. Lean Six Sigma Black Belt - complete
+[✓] 15. Scrum Master (CSM) - complete
+[✓] 16. ITIL Foundation - complete
+[✓] 17. SHRM-CP - complete
+[✓] 18. PHR - complete
+[✓] 19. CSCP - complete
+[✓] 20. CLP - complete
 
 ═══════════════════════════════════════════════════════════════
 BATCH 3 - TRADES & TECHNICAL (21-30)
@@ -73,5 +73,5 @@ BATCH 5 - SPECIALIZED & SECURITY (41-50)
 [ ] 50. CFPS
 
 ═══════════════════════════════════════════════════════════════
-STATUS: Batch 1 complete (10/50). Starting Batch 2...
+STATUS: Batch 2 complete (20/50). Starting Batch 3...
 ═══════════════════════════════════════════════════════════════
