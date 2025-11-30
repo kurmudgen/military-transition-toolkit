@@ -1,7 +1,7 @@
 ---
 title: "Navy EOD to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-02-18"
-date: "2025-12-26"
+date: "2026-01-08"
 description: "Real career options for Navy EOD technicians transitioning to civilian life. Includes salary ranges $55K-$135K+, required certifications, and skills translation for bomb disposal professionals."
 keywords: "Navy EOD civilian jobs, EOD career transition, explosive ordnance disposal civilian career, EOD to FBI, bomb technician civilian jobs"
 ---

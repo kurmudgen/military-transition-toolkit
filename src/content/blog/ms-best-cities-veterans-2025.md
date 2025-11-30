@@ -1,6 +1,6 @@
 ---
 title: "Mississippi Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-12-03"
+date: "2025-12-12"
 description: "Where to retire in Mississippi as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Mississippi best cities for veterans, Mississippi military retirement, Mississippi cost of living veterans, where to retire Mississippi"
 slug: "ms-best-cities-veterans-2025"

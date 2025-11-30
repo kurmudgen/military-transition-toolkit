@@ -1,7 +1,7 @@
 ---
 title: "Army 91S (Stryker Systems Maintainer) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-22"
-date: "2025-12-19"
+date: "2026-01-01"
 description: "Complete transition roadmap for Army 91S Stryker Systems Maintainers. Includes verified salary ranges $55K-$115K+, diesel mechanic, heavy equipment technician, defense contractor, armored vehicle careers with certifications and 90+ companies hiring veterans."
 keywords: "91S civilian jobs, Army Stryker Systems Maintainer career transition, diesel mechanic salary, armored vehicle technician, defense contractor jobs, 91S to civilian career"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Army 25D (Cyber Network Defender) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-04"
-date: "2025-12-11"
+date: "2025-12-24"
 description: "Real career options for Army 25D Cyber Network Defenders transitioning to civilian cybersecurity careers. Includes salary ranges $85K-$310K+, SOC analyst, penetration testing, security engineering, and incident response opportunities with certification guidance."
 keywords: "Army 25D civilian jobs, Cyber Network Defender career transition, 25D to cybersecurity career, SOC analyst salary, CISSP CEH certification, security clearance jobs"
 ---

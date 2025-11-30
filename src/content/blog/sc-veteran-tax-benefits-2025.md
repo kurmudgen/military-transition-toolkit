@@ -1,6 +1,6 @@
 ---
 title: "South Carolina Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-01-10"
+date: "2026-03-08"
 description: "Complete guide to South Carolina veteran tax benefits: property tax exemptions for disabled veterans, full military retirement exemption, vehicle benefits, and financial analysis."
 keywords: "south carolina veteran benefits, south carolina property tax exemption veterans, south carolina veteran tax benefits, military retirement south carolina"
 slug: "sc-veteran-tax-benefits-2025"

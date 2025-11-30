@@ -1,7 +1,7 @@
 ---
 title: "MOS 6152 CH-53E Helicopter Maintenance Chief to Civilian: Rotary Wing Aviation Career Guide"
 publishDate: "2026-06-24"
-date: "2025-12-31"
+date: "2026-01-14"
 description: "Career paths for 6152 CH-53E Helicopter Maintenance Chiefs. Includes salary data $75K-$145K+, helicopter MRO, offshore aviation, EMS, and heavy-lift operations."
 keywords: "6152 MOS civilian jobs, CH-53 maintenance chief transition, helicopter maintenance careers, rotary wing aviation jobs"
 ---

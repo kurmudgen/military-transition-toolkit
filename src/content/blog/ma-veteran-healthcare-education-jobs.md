@@ -1,6 +1,6 @@
 ---
 title: "Massachusetts Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-01-06"
+date: "2026-02-18"
 description: "Complete directory of Massachusetts VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Massachusetts VA hospital, Massachusetts veteran education, Massachusetts veteran jobs, Massachusetts GI Bill schools"
 slug: "ma-veteran-healthcare-education-jobs"

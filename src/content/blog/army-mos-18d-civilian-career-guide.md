@@ -1,7 +1,7 @@
 ---
 title: "Army Special Forces Medical Sergeant (18D) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-11"
-date: "2025-12-10"
+date: "2025-12-23"
 description: "Real career options for Special Forces Medical Sergeants (18D) transitioning to civilian life. Includes salary ranges $60K-$180K+, paramedic, physician assistant, registered nurse, flight medic, and emergency medicine career paths."
 keywords: "18D civilian jobs, Special Forces medic career, Green Beret 18D to PA, paramedic salary, physician assistant IPAP, 18D to nurse"
 ---

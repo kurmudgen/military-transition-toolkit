@@ -1,6 +1,6 @@
 ---
 title: "Maine Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-12-03"
+date: "2025-12-11"
 description: "Where to retire in Maine as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Maine best cities for veterans, Maine military retirement, Maine cost of living veterans, where to retire Maine"
 slug: "me-best-cities-veterans-2025"

@@ -1,7 +1,7 @@
 ---
 title: "Army 38B Civil Affairs Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-22"
-date: "2025-12-14"
+date: "2025-12-27"
 description: "Real career options for Army Civil Affairs Specialists transitioning to civilian life. Includes salary ranges $60K-$150K+, USAID contractor jobs, NGO field positions, program coordination, and humanitarian response careers."
 keywords: "38B civilian jobs, Civil Affairs Specialist career transition, international development contractor jobs, NGO field officer salary, humanitarian response careers"
 ---

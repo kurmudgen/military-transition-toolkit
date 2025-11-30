@@ -1,7 +1,7 @@
 ---
 title: "Marine 0622 Multi-Channel Equipment Operator to Civilian: Your Complete Career Transition Roadmap (With 2025 Salary Data)"
 publishDate: "2026-02-25"
-date: "2025-12-22"
+date: "2026-01-05"
 description: "Real career options for 0622 Multi-Channel Equipment Operator transitioning to civilian life. Includes salary ranges $58K-$120K+, required certifications, and skills translation for network operations and IT infrastructure careers."
 keywords: "0622 multi-channel operator civilian jobs, 0622 career transition, marine communications to network operations, NOC technician jobs"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Coast Guard EM to Civilian: Complete Career Transition Guide for Electrician's Mates (2024-2025 Salaries)"
-date: "2025-12-28"
+date: "2026-01-11"
 description: "Real career options for Coast Guard Electrician's Mates transitioning to civilian life. Industrial electrician, power plant, marine electrical careers with salary ranges $50K-$110K+."
 keywords: "Coast Guard EM civilian jobs, Electrician's Mate career transition, military electrician to civilian, industrial electrical careers"
 ---

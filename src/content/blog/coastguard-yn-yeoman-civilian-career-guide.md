@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard YN to Civilian: Complete HR & Admin Career Transition Guide (2024 Salaries)"
 publishDate: "2025-12-10"
-date: "2025-11-29"
+date: "2025-11-30"
 description: "Coast Guard Yeomen transitioning to civilian HR, administrative, payroll, and office management careers. Salary ranges $45K-$130K+, HR certification pathways including SHRM-CP and PHR."
 keywords: "Coast Guard YN civilian jobs, yeoman career transition, HR specialist jobs, administrative careers, payroll specialist"
 ---

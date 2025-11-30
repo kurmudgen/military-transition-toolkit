@@ -1,7 +1,7 @@
 ---
 title: "Army 35M Human Intelligence Collector to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-04-01"
-date: "2025-12-13"
+date: "2025-12-26"
 description: "Real career options for Army 35M HUMINT Collectors transitioning to civilian life. Includes salary ranges $90K-$250K+, CIA, FBI, defense contractor opportunities, and human intelligence operations careers with security clearance advantages."
 keywords: "35M civilian jobs, HUMINT collector career transition, 35M to CIA career, human intelligence jobs, intelligence officer salary"
 ---

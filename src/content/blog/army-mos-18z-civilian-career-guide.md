@@ -1,7 +1,7 @@
 ---
 title: "Army Special Forces Senior Sergeant (18Z) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-18"
-date: "2025-12-10"
+date: "2025-12-24"
 description: "Real career options for Special Forces Senior Sergeants (18Z) transitioning to civilian life. Includes salary ranges $100K-$300K+, executive leadership, management consulting, defense contracting, program management, and senior advisory opportunities."
 keywords: "18Z civilian jobs, Special Forces senior sergeant career, Green Beret 18Z leadership, executive consulting veterans, defense program manager, senior cleared positions"
 ---

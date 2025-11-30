@@ -1,7 +1,7 @@
 ---
 title: "Navy AC (Air Traffic Controller) to Civilian: Complete Career Transition Roadmap (With Six-Figure Salaries)"
 publishDate: "2025-12-03"
-date: "2025-12-23"
+date: "2026-01-06"
 description: "Real career options for Navy ACs transitioning to civilian ATC jobs. Includes FAA salary data $80K-$180K+, tower certifications, and the easiest military-to-civilian transition in aviation."
 keywords: "Navy AC civilian jobs, Air Traffic Controller career transition, Navy ATC to FAA, military air traffic controller civilian salary"
 ---

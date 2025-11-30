@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0521 Psychological Operations Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-02-11"
-date: "2025-12-22"
+date: "2026-01-04"
 description: "Real career options for 0521 PSYOP/MISO Specialists transitioning to civilian life. Includes salary ranges $60K-$170K+, certifications, and direct skills translation for communications, content creation, and defense contractor roles."
 keywords: "0521 PSYOP specialist civilian jobs, Marine Corps psychological operations career transition, strategic communications jobs, MISO contractor salary"
 ---

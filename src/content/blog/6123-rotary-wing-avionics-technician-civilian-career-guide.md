@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6123 Rotary Wing Avionics Technician to Civilian: Complete Career Transition Guide (2025)"
 publishDate: "2026-06-17"
-date: "2025-12-31"
+date: "2026-01-14"
 description: "Real career options for 6123 Rotary Wing Avionics Technicians transitioning to civilian aviation. Includes A&P license pathway, avionics specialist careers, defense contractor roles with salaries $65K-$115K+."
 keywords: "6123 MOS civilian jobs, rotary wing avionics technician civilian career, Marine avionics tech transition, helicopter avionics A&P"
 ---

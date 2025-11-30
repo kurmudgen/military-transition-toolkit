@@ -1,7 +1,7 @@
 ---
 title: "Navy CE Construction Electrician to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-01-21"
-date: "2025-12-25"
+date: "2026-01-07"
 description: "Real career options for Navy Construction Electricians transitioning to civilian electrical work. Includes salary ranges $52K-$110K+, licensing requirements, and direct path from Seabees to journeyman electrician."
 keywords: "Navy CE Construction Electrician civilian jobs, Seabees electrician career transition, CE to civilian electrician, veteran electrician jobs"
 ---

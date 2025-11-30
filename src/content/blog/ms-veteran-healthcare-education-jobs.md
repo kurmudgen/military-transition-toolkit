@@ -1,6 +1,6 @@
 ---
 title: "Mississippi Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-01-07"
+date: "2026-02-21"
 description: "Complete directory of Mississippi VA medical centers in Jackson and Biloxi, education programs, veteran employment resources, and support services across the state."
 keywords: "Mississippi VA hospital, Mississippi veteran education, Mississippi veteran jobs, Mississippi GI Bill schools"
 slug: "ms-veteran-healthcare-education-jobs"

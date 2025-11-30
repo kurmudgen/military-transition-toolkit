@@ -1,7 +1,7 @@
 ---
 title: "Army 170B/170D Cyber Capabilities Developer Technician to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-04"
-date: "2025-12-09"
+date: "2025-12-23"
 description: "Complete transition roadmap for Army 170B/170D Cyber Capabilities Developer Technicians. Includes salary ranges $95K-$200K+, software development, DevOps, cyber tool engineering, and tech companies hiring military developers."
 keywords: "Army 170B civilian jobs, 170D Cyber Developer Technician transition, software developer salary, DevOps engineer career, cyber tool developer"
 ---

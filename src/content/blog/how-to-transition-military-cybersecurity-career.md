@@ -1,6 +1,6 @@
 ---
 title: "How to Transition to Cybersecurity: Military IT to Security Career Path"
-date: "2025-12-06"
+date: "2025-12-18"
 description: "17C cyber ops to cybersecurity professional, Security+, CEH, incident response careers, salary expectations, and why military cyber experience is gold."
 keywords: "military cybersecurity, 17C career transition, Security+ certification, CEH, cybersecurity careers, incident response"
 slug: "how-to-transition-military-cybersecurity-career"

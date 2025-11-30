@@ -1,6 +1,6 @@
 ---
 title: "Arkansas Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-01-02"
+date: "2026-01-25"
 description: "Complete guide to Arkansas veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Arkansas veteran benefits, Arkansas property tax exemption veterans, Arkansas veteran income tax, Arkansas disabled veteran benefits"
 slug: "ar-veteran-tax-benefits-2025"

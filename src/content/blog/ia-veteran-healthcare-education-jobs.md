@@ -1,6 +1,6 @@
 ---
 title: "Iowa Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-01-04"
+date: "2026-02-12"
 description: "Complete directory of Iowa VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Iowa VA hospital, Iowa veteran education, Iowa veteran jobs, Iowa GI Bill schools"
 slug: "ia-veteran-healthcare-education-jobs"

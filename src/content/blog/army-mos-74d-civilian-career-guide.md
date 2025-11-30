@@ -1,7 +1,7 @@
 ---
 title: "Army 74D CBRN Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-06-10"
-date: "2025-12-17"
+date: "2025-12-30"
 description: "Real career options for Army CBRN Specialists transitioning to civilian life. Includes salary ranges $55K-$150K+, hazmat specialist, industrial hygiene, EHS careers, emergency management, safety specialist, and environmental consulting opportunities."
 keywords: "74D civilian jobs, CBRN Specialist career transition, hazmat specialist salary, industrial hygienist jobs, EHS specialist careers, emergency management jobs"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Army 25B (Information Technology Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2025-12-03"
-date: "2025-11-28"
+date: "2025-11-29"
 description: "Real career options for Army 25B Information Technology Specialists transitioning to civilian IT careers. Includes salary ranges $58K-$155K+, network engineering, systems administration, cybersecurity, and cloud computing opportunities with certification guidance."
 keywords: "Army 25B civilian jobs, Information Technology Specialist career transition, 25B to IT career, Army IT jobs salary, CompTIA Security+ certification, network administrator jobs"
 ---

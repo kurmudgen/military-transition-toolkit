@@ -1,6 +1,6 @@
 ---
 title: "Idaho Military Retirement: Best Cities, Housing Costs & Affordable Living Reality 2025"
-date: "2025-12-02"
+date: "2025-12-10"
 description: "Where to retire in Idaho as a veteran: Boise vs smaller cities, housing costs by location, VA healthcare access, Mountain Home AFB proximity, and honest assessment of who can afford each area."
 keywords: "Idaho best cities for veterans, Idaho military retirement, Idaho cost of living veterans, where to retire Idaho, Boise veterans, Idaho Falls military retirees"
 slug: "id-best-cities-veterans-2025"

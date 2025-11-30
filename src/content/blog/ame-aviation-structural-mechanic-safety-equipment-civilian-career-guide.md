@@ -1,7 +1,7 @@
 ---
 title: "Navy AME to Civilian: Aviation Safety Equipment Career Transition Guide (With Salary Data)"
 publishDate: "2025-12-24"
-date: "2025-12-24"
+date: "2026-01-06"
 description: "Career guide for Navy AME transitioning to civilian life. Includes salary ranges $43K-$145K, FAA certifications, and life support equipment jobs at Boeing, Lockheed Martin."
 keywords: "Navy AME civilian jobs, AME career transition, aviation safety equipment technician, parachute rigger FAA"
 ---

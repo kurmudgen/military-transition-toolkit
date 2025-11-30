@@ -1,7 +1,7 @@
 ---
 title: "Army 35G Geospatial Intelligence Imagery Analyst to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-04-01"
-date: "2025-12-12"
+date: "2025-12-26"
 description: "Real career options for Army 35G GEOINT analysts transitioning to civilian life. Includes salary ranges $80K-$180K+, NGA careers, satellite imagery companies, defense contractors, and geospatial technology opportunities."
 keywords: "35G civilian jobs, GEOINT analyst career transition, geospatial intelligence salary, 35G to NGA career, imagery analyst jobs"
 ---

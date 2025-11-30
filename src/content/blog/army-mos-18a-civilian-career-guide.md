@@ -1,7 +1,7 @@
 ---
 title: "Army Special Forces Officer (18A) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-11"
-date: "2025-12-10"
+date: "2025-12-23"
 description: "Real career options for Special Forces Officers (18A) transitioning to civilian life. Includes salary ranges $90K-$300K+, federal law enforcement, defense contracting, management consulting, and executive leadership opportunities."
 keywords: "18A civilian jobs, Special Forces Officer career transition, Green Beret officer careers, SF officer to FBI, SF officer to CIA, Special Forces consulting"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "MOS 6176 Helicopter/Tiltrotor Systems Maintenance Chief to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-15"
-date: "2025-12-31"
+date: "2026-01-15"
 description: "Real career options for Marine 6176 Systems Maintenance Chiefs transitioning to civilian aviation leadership. Includes salary ranges $80K-$165K+, Director of Maintenance roles, and executive aviation careers."
 keywords: "6176 MOS civilian jobs, helicopter systems chief career transition, Marine aviation director of maintenance, rotorcraft management careers"
 ---

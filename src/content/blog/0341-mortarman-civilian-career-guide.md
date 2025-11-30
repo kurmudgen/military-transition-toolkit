@@ -1,7 +1,7 @@
 ---
 title: "0341 Mortarman to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2025-12-31"
-date: "2025-12-21"
+date: "2026-01-03"
 description: "Real career options for Marine Corps 0341 Mortarmen transitioning to civilian life. Includes salary ranges $45K-$95K+, required certifications, and precision skills translation."
 keywords: "0341 mortarman civilian jobs, Marine mortarman career transition, 0341 to civilian career, indirect fire career"
 ---

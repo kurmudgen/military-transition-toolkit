@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in Texas for Veterans 2025: Cost of Living & Quality of Life"
-date: "2025-12-05"
+date: "2025-12-14"
 description: "Texas's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons for military retirees."
 keywords: "best cities texas veterans, texas cost of living veterans, where to live texas military, texas veteran population by city"
 slug: "tx-best-cities-veterans-2025"

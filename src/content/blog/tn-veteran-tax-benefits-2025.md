@@ -1,6 +1,6 @@
 ---
 title: "Tennessee Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-01-11"
+date: "2026-03-09"
 description: "Complete guide to Tennessee veteran tax benefits: property tax relief for disabled veterans, income tax treatment, vehicle exemptions, and financial analysis."
 keywords: "tennessee veteran benefits, tennessee property tax relief veterans, tennessee veteran tax benefits, military retirement tennessee"
 slug: "tn-veteran-tax-benefits-2025"

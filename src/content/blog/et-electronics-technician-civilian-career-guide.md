@@ -1,7 +1,7 @@
 ---
 title: "Navy ET Electronics Technician to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-02-25"
-date: "2025-12-26"
+date: "2026-01-08"
 description: "Real career options for Navy Electronics Technicians transitioning to civilian life. Includes salary ranges $55K-$120K+, required certifications, and defense contractor opportunities."
 keywords: "Navy ET civilian jobs, Electronics Technician career transition, Navy ET to civilian, radar technician jobs, telecommunications careers"
 ---

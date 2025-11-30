@@ -1,7 +1,7 @@
 ---
 title: "Army 88T Railway Section Repairer to Civilian: Complete Railroad Career Guide (2024-2025)"
 publishDate: "2026-06-24"
-date: "2025-12-17"
+date: "2025-12-30"
 description: "Real railroad careers for Army 88T Railway Section Repairers. Track maintenance worker salaries $45K-$65K+, track supervisor $65K-$90K, maintenance of way careers, transit maintenance for veterans."
 keywords: "88T Railway Section Repairer civilian jobs, Army railroad career, track maintenance worker salary, railroad jobs BNSF Union Pacific, MOW maintenance of way"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Navy IS (Intelligence Specialist) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-22"
-date: "2025-12-26"
+date: "2026-01-09"
 description: "Navy IS rating civilian career roadmap. Real salaries $75K-$145K+. Intelligence analyst, GEOINT analyst, threat analyst, defense contractor roles. TS/SCI clearance worth $20K-$40K premium."
 keywords: "Navy IS civilian jobs, Intelligence Specialist career transition, Navy IS to civilian, intelligence analyst jobs, geospatial intelligence GEOINT"
 ---

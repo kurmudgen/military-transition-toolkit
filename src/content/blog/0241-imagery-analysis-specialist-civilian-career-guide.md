@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0241 Imagery Analysis Specialist to Civilian: Complete Career Guide (2025 Salaries)"
 publishDate: "2025-12-10"
-date: "2025-12-20"
+date: "2026-01-02"
 description: "Career transition guide for 0241 Imagery Analysts. NGA positions $70K-$135K, GEOINT contractor roles $80K-$150K+, commercial imagery analysis $75K-$125K, with current 2025 salary data and certification requirements."
 keywords: "0241 MOS civilian jobs, imagery analyst careers, GEOINT specialist transition, Marine imagery intelligence jobs, 0241 career transition"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Army 91J (Quartermaster & Chemical Equipment Repairer) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-15"
-date: "2025-12-18"
+date: "2026-01-01"
 description: "Complete transition roadmap for Army 91J Quartermaster and Chemical Equipment Repairers. Includes verified salary ranges $45K-$95K+, HVAC technician, water treatment operator, industrial maintenance careers with certification requirements and companies actively hiring veterans."
 keywords: "91J civilian jobs, Army Quartermaster Chemical Equipment Repairer career transition, HVAC technician salary, water treatment operator, 91J to civilian career"
 ---

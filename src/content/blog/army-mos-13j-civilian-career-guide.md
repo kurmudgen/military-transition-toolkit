@@ -1,7 +1,7 @@
 ---
 title: "Army 13J Fire Control Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-24"
-date: "2025-12-07"
+date: "2025-12-21"
 description: "Proven career paths for 13J Fire Control Specialists transitioning to civilian jobs. Includes defense contractor roles $70K-$140K+, IT systems positions, electronics technician careers, and certifications that boost your salary."
 keywords: "13J civilian jobs, Fire Control Specialist career transition, 13J to defense contractor, Army fire control civilian salary, 13J certifications"
 ---

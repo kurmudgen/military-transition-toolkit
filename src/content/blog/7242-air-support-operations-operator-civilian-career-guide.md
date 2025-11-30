@@ -1,7 +1,7 @@
 ---
 title: "Marine 7242 Air Support Operations Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-08-12"
-date: "2026-01-01"
+date: "2026-01-16"
 description: "Career transition guide for Marine Air Support Operations Operators moving to civilian careers. Includes defense contractor tactical coordination, aviation operations, emergency management roles with $70K-$165K+ salary ranges."
 keywords: "7242 Marine career transition, air support operations civilian jobs, tactical coordination civilian career, aviation operations jobs"
 ---

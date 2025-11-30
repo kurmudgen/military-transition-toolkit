@@ -1,7 +1,7 @@
 ---
 title: "Marine 0689 Cyber Space Chief to Civilian: Complete Senior Cybersecurity Career Guide (2025 Salary Data)"
 publishDate: "2026-03-18"
-date: "2025-12-23"
+date: "2026-01-05"
 description: "Senior leadership career options for Marine 0689 Cyber Space Chiefs. Security management $130K-$175K, CISO/Director roles $175K-$250K+. TS/SCI clearance worth $40K+ premium. 10+ years experience critical."
 keywords: "0689 cyber space chief civilian jobs, Marine Corps 0689 career transition, cyber chief to civilian"
 ---

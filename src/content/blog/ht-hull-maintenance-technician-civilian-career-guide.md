@@ -1,7 +1,7 @@
 ---
 title: "Navy HT (Hull Maintenance Technician) to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-04-08"
-date: "2025-12-26"
+date: "2026-01-09"
 description: "Real civilian career paths for Navy HTs transitioning to welding, pipefitting, HVAC, and maritime trades. Includes salary ranges $45K-$110K+, required certifications, and skills translation."
 keywords: "Navy HT civilian jobs, Hull Maintenance Technician career transition, Navy welder civilian career, HT to civilian"
 ---

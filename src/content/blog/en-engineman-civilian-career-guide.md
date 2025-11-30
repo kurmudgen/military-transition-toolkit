@@ -1,7 +1,7 @@
 ---
 title: "Navy EN Engineman to Civilian: Complete Career Transition Roadmap (2024 Salary Guide)"
 publishDate: "2026-02-11"
-date: "2025-12-25"
+date: "2026-01-08"
 description: "Navy Engineman EN transition guide with proven paths. Diesel mechanic, power generation tech, marine mechanic roles paying $55K-$95K+. ASE certifications, top employers, and success stories."
 keywords: "Navy EN civilian jobs, Engineman career transition, EN to diesel mechanic, Navy Engineman civilian careers"
 ---

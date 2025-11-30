@@ -1,7 +1,7 @@
 ---
 title: "MOS 6174 Fixed-Wing Avionics Maintenance Chief to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-08"
-date: "2025-12-31"
+date: "2026-01-15"
 description: "Real career options for Marine 6174 Fixed-Wing Avionics Chiefs transitioning to civilian aviation electronics. Includes salary ranges $70K-$155K+, FCC licenses, and airline avionics management."
 keywords: "6174 MOS civilian jobs, fixed-wing avionics chief career transition, Marine avionics management careers, airline avionics supervisor jobs"
 ---

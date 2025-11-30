@@ -1,7 +1,7 @@
 ---
 title: "Army 25E (Electromagnetic Spectrum Manager) to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-03-04"
-date: "2025-12-11"
+date: "2025-12-24"
 description: "Real career options for Army 25E Electromagnetic Spectrum Managers transitioning to civilian RF engineering, spectrum management, and telecommunications careers. Salary ranges $75K-$150K+ with certification guidance."
 keywords: "Army 25E civilian jobs, Electromagnetic Spectrum Manager career transition, 25E to RF engineer, spectrum manager salary, frequency coordinator jobs"
 ---

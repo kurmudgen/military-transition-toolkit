@@ -1,7 +1,7 @@
 ---
 title: "Navy AM (Aviation Structural Mechanic) to Civilian: Your Complete Career Transition Guide (With 2025 Salary Data)"
 publishDate: "2025-12-17"
-date: "2025-12-24"
+date: "2026-01-06"
 description: "Real career options for Navy AM Aviation Structural Mechanic transitioning to civilian life. Includes salary ranges $55K-$110K+, A&P certification pathway, and aerospace careers."
 keywords: "Navy AM civilian jobs, Aviation Structural Mechanic career transition, AM to civilian career, Navy aircraft mechanic jobs"
 ---

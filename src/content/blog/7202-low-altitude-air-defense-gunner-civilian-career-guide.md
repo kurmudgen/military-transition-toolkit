@@ -1,7 +1,7 @@
 ---
 title: "Marine 7202 Low Altitude Air Defense to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-22"
-date: "2026-01-01"
+date: "2026-01-15"
 description: "Career transition guide for Marine Low Altitude Air Defense specialists moving to civilian careers. Includes defense contractor jobs, radar operations, security roles with $55K-$160K+ salary ranges and required certifications."
 keywords: "7202 Marine career transition, LAAD civilian jobs, air defense to civilian career, military air defense jobs"
 ---

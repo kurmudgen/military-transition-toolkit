@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in New Hampshire for Veterans 2025: Cost of Living & Quality of Life"
-date: "2025-12-04"
+date: "2025-12-13"
 description: "New Hampshire's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities new hampshire veterans, new hampshire cost of living veterans, where to live new hampshire military, new hampshire veteran population"
 slug: "nh-best-cities-veterans-2025"

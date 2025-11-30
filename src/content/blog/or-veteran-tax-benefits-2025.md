@@ -1,6 +1,6 @@
 ---
 title: "Oregon Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-01-09"
+date: "2026-02-24"
 description: "Complete guide to Oregon veteran tax benefits: property tax exemptions, military retirement income tax, no sales tax savings, and financial analysis for disabled veterans."
 keywords: "oregon veteran benefits, oregon property tax exemption veterans, oregon veteran tax benefits, military retirement oregon"
 slug: "or-veteran-tax-benefits-2025"

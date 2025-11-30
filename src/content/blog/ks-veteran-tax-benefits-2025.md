@@ -1,6 +1,6 @@
 ---
 title: "Kansas Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-01-05"
+date: "2026-02-14"
 description: "Complete guide to Kansas veteran tax benefits: property tax relief, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Kansas veteran benefits, Kansas property tax exemption veterans, Kansas veteran income tax, Kansas disabled veteran benefits"
 slug: "ks-veteran-tax-benefits-2025"

@@ -1,7 +1,7 @@
 ---
 title: "Army 15Y AH-64D Armament/Electrical/Avionics Systems Repairer to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-01-28"
-date: "2025-12-09"
+date: "2025-12-22"
 description: "Real career options for Army 15Y Apache avionics/electrical repairers transitioning to civilian life. Includes salary ranges $60K-$140K+, avionics technician careers, Boeing Apache support, A&P certification, FCC licenses, and specialized electronics opportunities."
 keywords: "Army 15Y civilian jobs, Apache avionics technician career transition, avionics technician salary, aircraft electrical systems jobs, FCC license aviation"
 ---

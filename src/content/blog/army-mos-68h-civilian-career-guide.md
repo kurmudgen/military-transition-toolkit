@@ -1,7 +1,7 @@
 ---
 title: "Army 68H Optical Laboratory Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-20"
-date: "2025-12-15"
+date: "2025-12-28"
 description: "Real career options for Army Optical Laboratory Specialists transitioning to civilian life. Includes salary ranges $47K-$84K+, optician careers, ABO-NCLE certification ($225 each), major employers like LensCrafters and Pearle Vision, and VA optical laboratory opportunities."
 keywords: "Army 68H civilian jobs, optical laboratory specialist career transition, optician salary, ABO-NCLE certification, 68H to civilian optical career"
 ---

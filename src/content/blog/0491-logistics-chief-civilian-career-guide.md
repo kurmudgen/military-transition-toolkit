@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0491 Logistics Chief to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-28"
-date: "2025-12-22"
+date: "2026-01-04"
 description: "Senior-level career options for 0491 Logistics Chiefs transitioning to civilian life. Includes salary ranges $90K-$180K+, required certifications, and skills translation for supply chain leadership roles."
 keywords: "0491 logistics chief civilian jobs, 0491 career transition, senior Marine logistics to civilian career, supply chain manager jobs, logistics director"
 ---

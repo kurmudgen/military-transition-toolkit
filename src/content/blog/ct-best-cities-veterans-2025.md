@@ -1,6 +1,6 @@
 ---
 title: "Connecticut Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-12-01"
+date: "2025-12-09"
 description: "Where to retire in Connecticut as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Connecticut best cities for veterans, Connecticut military retirement, Connecticut cost of living veterans, where to retire Connecticut"
 slug: "ct-best-cities-veterans-2025"

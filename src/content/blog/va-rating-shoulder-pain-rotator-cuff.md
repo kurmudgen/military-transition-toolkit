@@ -1,7 +1,7 @@
 ---
 title: "VA Rating for Shoulder Pain and Rotator Cuff: Complete Disability Guide"
 description: "Comprehensive guide to VA shoulder pain and rotator cuff ratings, monthly compensation, evidence requirements, and successful filing strategies for shoulder claims."
-date: "2025-11-30"
+date: "2025-12-08"
 category: "VA Benefits"
 tags: ["shoulder-pain", "rotator-cuff", "musculoskeletal", "va-rating", "disability", "claims"]
 author: "Military Transition Toolkit"

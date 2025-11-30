@@ -1,6 +1,6 @@
 ---
 title: "New Mexico Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-01-08"
+date: "2026-02-23"
 description: "Guide to New Mexico veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "new mexico veteran healthcare, new mexico GI Bill schools, new mexico veteran jobs, new mexico VA hospital"
 slug: "nm-veteran-healthcare-education-jobs"

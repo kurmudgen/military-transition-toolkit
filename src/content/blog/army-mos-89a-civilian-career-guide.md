@@ -1,7 +1,7 @@
 ---
 title: "Army 89A (Ammunition Stock Control Specialist) to Civilian Career: Complete Transition Guide With Salary Data"
 publishDate: "2026-07-01"
-date: "2025-12-17"
+date: "2025-12-31"
 description: "Comprehensive career transition guide for Army MOS 89A Ammunition Stock Control and Accounting Specialists. Includes salary data $45K-$115K+, logistics careers, supply chain certifications, and 50+ companies actively hiring veterans."
 keywords: "Army 89A civilian jobs, ammunition specialist career transition, 89A to logistics, supply chain careers for veterans, inventory control specialist salary, ammunition stock control civilian career"
 ---

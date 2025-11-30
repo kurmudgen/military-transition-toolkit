@@ -1,6 +1,6 @@
 ---
 title: "Hawaii Veterans: VA Healthcare, University Programs & Military Employment 2025"
-date: "2026-01-04"
+date: "2026-02-12"
 description: "Complete guide to Hawaii VA facilities, education benefits at University of Hawaii, veteran employment at JBPHH and military bases, and support services across the islands."
 keywords: "Hawaii VA hospital, Hawaii veteran education, Hawaii veteran jobs, University of Hawaii veterans, Hawaii military bases employment"
 slug: "hi-veteran-healthcare-education-jobs"

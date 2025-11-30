@@ -1,7 +1,7 @@
 ---
 title: "Army 25Q (Multichannel Transmission Systems Operator-Maintainer) to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-03-11"
-date: "2025-12-12"
+date: "2025-12-25"
 description: "Real career options for Army 25Q Multichannel Transmission Systems Operator-Maintainers transitioning to civilian telecommunications, microwave technician, and transmission engineering careers. Salary ranges $55K-$120K+ with certification guidance."
 keywords: "Army 25Q civilian jobs, Multichannel Transmission Systems career transition, 25Q to telecommunications engineer, microwave technician salary, transmission systems jobs"
 ---

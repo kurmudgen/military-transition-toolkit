@@ -1,7 +1,7 @@
 ---
 title: "C&P Exam for Sleep Apnea: DBQ Questions and Preparation Guide"
 description: "Expert guide to VA C&P exams for sleep apnea, likely DBQ (Disability Benefits Questionnaire) questions, preparation strategies, and exam day tips for maximum rating."
-date: "2025-11-30"
+date: "2025-12-06"
 category: "C&P Exams"
 tags: ["sleep-apnea", "cp-exam", "dbq", "va-exam", "preparation", "sleep-disorder"]
 author: "Military Transition Toolkit"

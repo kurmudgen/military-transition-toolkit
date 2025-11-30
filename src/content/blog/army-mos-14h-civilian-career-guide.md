@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 14H (Air Defense Enhanced Early Warning System Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2025-12-31"
-date: "2025-12-08"
+date: "2025-12-21"
 description: "Real career options for 14H Early Warning System operators transitioning to civilian life. Includes salary ranges $55K-$130K+, radar technician, defense contracting, FAA, weather services, and aviation radar opportunities."
 keywords: "14H civilian jobs, Sentinel radar operator career transition, early warning system jobs, radar technician salary, 14H to civilian career"
 ---

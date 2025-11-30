@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0211 Counterintelligence/HUMINT Specialist to Civilian: Complete Career Guide (2025 Salaries)"
 publishDate: "2025-12-03"
-date: "2025-12-20"
+date: "2026-01-02"
 description: "Career transition roadmap for 0211 CI/HUMINT Specialists. Defense contractor positions $80K-$140K+, FBI analyst roles $70K-$120K, federal law enforcement, and investigative careers with current 2025 salary data."
 keywords: "0211 MOS civilian jobs, CI HUMINT specialist careers, Marine counterintelligence jobs, 0211 career transition, HUMINT analyst civilian jobs"
 ---

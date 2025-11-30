@@ -1,6 +1,6 @@
 ---
 title: "New York Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-01-09"
+date: "2026-02-24"
 description: "Complete guide to New York veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans."
 keywords: "new york veteran benefits, new york property tax exemption veterans, new york veteran tax benefits, military retirement new york"
 slug: "ny-veteran-tax-benefits-2025"

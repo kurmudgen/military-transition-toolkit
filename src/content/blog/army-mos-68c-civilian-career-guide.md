@@ -1,7 +1,7 @@
 ---
 title: "Army 68C (Licensed Practical Nurse) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-06"
-date: "2025-12-15"
+date: "2025-12-28"
 description: "Real career options for Army 68C LPNs transitioning to civilian life. Includes salary ranges $50K-$85K+, hospital systems, skilled nursing facilities, VA careers, LPN to RN bridge programs, and state licensing requirements."
 keywords: "Army 68C civilian jobs, LPN career transition, 68C to civilian nursing, LPN salary by state, NCLEX-PN, LPN to RN bridge program"
 slug: "army-mos-68c-civilian-career-guide"

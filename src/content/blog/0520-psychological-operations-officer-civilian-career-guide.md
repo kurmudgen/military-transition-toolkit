@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0520 Psychological Operations Officer to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-02-11"
-date: "2025-12-22"
+date: "2026-01-04"
 description: "Real career options for 0520 PSYOP/MISO Officers transitioning to civilian life. Includes salary ranges $75K-$180K+, certifications, and direct skills translation for strategic communications, influence analysis, and defense contractor roles."
 keywords: "0520 PSYOP officer civilian jobs, Marine Corps psychological operations career transition, strategic communications salary, influence operations jobs"
 ---

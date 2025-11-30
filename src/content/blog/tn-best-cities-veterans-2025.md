@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in Tennessee for Veterans 2025: Cost of Living & Quality of Life"
-date: "2025-12-05"
+date: "2025-12-14"
 description: "Tennessee's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities tennessee veterans, tennessee cost of living veterans, where to live tennessee military, tennessee veteran population"
 slug: "tn-best-cities-veterans-2025"

@@ -1,7 +1,7 @@
 ---
 title: "Army 91L (Construction Equipment Repairer) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-15"
-date: "2025-12-19"
+date: "2026-01-01"
 description: "Complete transition roadmap for Army 91L Construction Equipment Repairers. Includes verified salary ranges $55K-$105K+, heavy equipment mechanic, diesel technician, field service careers with ASE certifications and 100+ companies hiring veterans including Caterpillar, Komatsu, John Deere dealers."
 keywords: "91L civilian jobs, Army Construction Equipment Repairer career transition, heavy equipment mechanic salary, diesel technician, Caterpillar jobs, 91L to civilian career"
 ---

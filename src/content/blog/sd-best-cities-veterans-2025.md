@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in South Dakota for Veterans 2025: Cost of Living & Quality of Life"
-date: "2025-12-05"
+date: "2025-12-14"
 description: "South Dakota's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities south dakota veterans, south dakota cost of living veterans, where to live south dakota military, south dakota veteran population"
 slug: "best-cities-south-dakota-veterans-2025"

@@ -1,7 +1,7 @@
 ---
 title: "Marine 0651 Cyber Network Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-03-04"
-date: "2025-12-23"
+date: "2026-01-05"
 description: "Real career options for Marine 0651 Cyber Network Operators transitioning to civilian cybersecurity and IT. Entry-level $70K-$90K, experienced $120K-$160K+. Active clearance worth $30K salary premium."
 keywords: "0651 cyber network operator civilian jobs, Marine Corps 0651 career transition, cyber network operator to civilian"
 ---

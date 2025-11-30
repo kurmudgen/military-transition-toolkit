@@ -1,7 +1,7 @@
 ---
 title: "MOS 6154 Rotary Wing Avionics Maintenance Chief to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-01"
-date: "2025-12-31"
+date: "2026-01-14"
 description: "Real career options for Marine 6154 Avionics Chiefs transitioning to civilian aviation electronics. Includes salary ranges $65K-$135K+, FCC licenses, and avionics management roles."
 keywords: "6154 MOS civilian jobs, avionics maintenance chief career transition, Marine avionics careers, aviation electronics management"
 ---

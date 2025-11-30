@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0411 Maintenance Management Specialist to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-14"
-date: "2025-12-21"
+date: "2026-01-03"
 description: "Real career options for 0411 Maintenance Management Specialists transitioning to civilian life. Includes salary ranges $55K-$120K+, required certifications, and skills translation for logistics careers."
 keywords: "0411 maintenance management specialist civilian jobs, 0411 career transition, Marine logistics to civilian career, maintenance planner jobs"
 ---

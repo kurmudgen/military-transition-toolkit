@@ -1,7 +1,7 @@
 ---
 title: "Army 68K Medical Laboratory Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-20"
-date: "2025-12-15"
+date: "2025-12-29"
 description: "Real career options for Army Medical Laboratory Specialists transitioning to civilian life. Includes salary ranges $46K-$98K+, medical lab tech careers, ASCP MLT certification ($350), major employers including Quest Diagnostics and LabCorp, and VA laboratory opportunities."
 keywords: "Army 68K civilian jobs, medical laboratory specialist career transition, medical lab technician salary, ASCP MLT certification, 68K to civilian lab career"
 ---

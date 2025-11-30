@@ -1,7 +1,7 @@
 ---
 title: "Army 91C (Utilities Equipment Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-08"
-date: "2025-12-18"
+date: "2025-12-31"
 description: "Real career options for 91C Utilities Equipment Repairers transitioning to civilian life. Includes salary ranges $52K-$95K+, HVAC technician careers, refrigeration mechanics, EPA 608 certification, industrial maintenance, and building systems paths."
 keywords: "91C civilian jobs, utilities equipment repairer career transition, HVAC technician salary, EPA 608 certification, refrigeration mechanic, building maintenance jobs"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in Ohio for Veterans 2025: Cost of Living & Quality of Life"
-date: "2025-12-04"
+date: "2025-12-13"
 description: "Ohio's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities ohio veterans, ohio cost of living veterans, where to live ohio military, ohio veteran population"
 slug: "oh-best-cities-veterans-2025"

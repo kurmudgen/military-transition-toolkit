@@ -1,6 +1,6 @@
 ---
 title: "Illinois Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-01-05"
+date: "2026-02-13"
 description: "Complete directory of Illinois VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Illinois VA hospital, Illinois veteran education, Illinois veteran jobs, Illinois GI Bill schools"
 slug: "il-veteran-healthcare-education-jobs"

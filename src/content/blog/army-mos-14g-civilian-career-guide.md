@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 14G (Air Defense Battle Management System Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2025-12-31"
-date: "2025-12-08"
+date: "2025-12-21"
 description: "Real career options for 14G Air Defense Battle Management System operators transitioning to civilian life. Includes salary ranges $70K-$190K+, defense contracting, command and control, emergency management, and operations center opportunities."
 keywords: "14G civilian jobs, Air Defense Battle Management career transition, FAAD C2 contractor salary, command and control specialist jobs, 14G to civilian career"
 ---

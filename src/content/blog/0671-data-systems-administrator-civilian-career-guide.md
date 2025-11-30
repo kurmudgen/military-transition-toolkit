@@ -1,7 +1,7 @@
 ---
 title: "Marine 0671 Data Systems Administrator to Civilian: Complete IT Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-03-11"
-date: "2025-12-23"
+date: "2026-01-05"
 description: "Real career options for Marine 0671 Data Systems Administrators. Entry-level $65K-$85K, experienced sysadmins $95K-$130K+. Linux specialists add $10K-$15K premium. Active clearance worth $25K+."
 keywords: "0671 data systems administrator civilian jobs, Marine Corps 0671 career transition, data systems admin to civilian"
 ---

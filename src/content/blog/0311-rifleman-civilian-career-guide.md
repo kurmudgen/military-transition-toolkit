@@ -1,7 +1,7 @@
 ---
 title: "Marine 0311 Rifleman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2025-11-26"
-date: "2025-12-21"
+date: "2026-01-03"
 description: "Real career options for Marine 0311 Rifleman transitioning to civilian life. Includes salary ranges $45K-$85K+, required certifications, and skills translation."
 keywords: "0311 Rifleman civilian jobs, 0311 career transition, Marine infantry to civilian career, Marine Rifleman jobs"
 ---

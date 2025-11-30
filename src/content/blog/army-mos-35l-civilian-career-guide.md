@@ -1,7 +1,7 @@
 ---
 title: "Army 35L Counterintelligence Agent to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-04-01"
-date: "2025-12-13"
+date: "2025-12-26"
 description: "Real career options for Army 35L Counterintelligence Agents transitioning to civilian life. Includes salary ranges $85K-$200K+, FBI, CIA, DSS careers, corporate security, and counterintelligence opportunities with security clearance advantages."
 keywords: "35L civilian jobs, counterintelligence agent career transition, 35L to FBI career, CI agent salary, counterintelligence jobs"
 ---

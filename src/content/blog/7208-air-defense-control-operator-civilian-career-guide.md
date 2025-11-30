@@ -1,7 +1,7 @@
 ---
 title: "Marine 7208 Air Defense Control Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-29"
-date: "2026-01-01"
+date: "2026-01-15"
 description: "Career transition guide for Marine Air Defense Control Operators moving to civilian careers. Includes defense contractor radar operations, tactical coordination roles, federal aviation with $70K-$180K+ salary ranges."
 keywords: "7208 Marine career transition, air defense control civilian jobs, tactical air operations civilian career, radar operator jobs"
 ---

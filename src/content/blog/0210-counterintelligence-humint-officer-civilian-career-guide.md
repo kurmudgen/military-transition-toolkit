@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0210 Counterintelligence/HUMINT Officer to Civilian: Complete Career Transition Guide (2025)"
 publishDate: "2025-12-03"
-date: "2025-12-20"
+date: "2026-01-02"
 description: "Career transition guide for 0210 CI/HUMINT Officers. Includes FBI counterintelligence $100K-$160K, CIA operations $90K-$150K+, defense contractor CI roles, and investigative careers with current salary data."
 keywords: "0210 MOS civilian jobs, counterintelligence officer careers, HUMINT specialist transition, Marine CI officer civilian jobs, counterintelligence careers"
 ---

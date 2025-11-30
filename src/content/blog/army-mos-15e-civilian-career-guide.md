@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 15E (Unmanned Aircraft Systems Repairer) to Civilian Career: Your Complete Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-14"
-date: "2025-12-08"
+date: "2025-12-21"
 description: "Real career options for Army 15E UAS Repairers transitioning to civilian life. Includes salary ranges $55K-$130K+, drone technician roles, defense contractors, FAA certifications, and companies actively hiring veterans."
 keywords: "Army 15E civilian jobs, UAS repairer career transition, drone technician salary, UAV maintenance jobs, Army to civilian aviation careers"
 ---

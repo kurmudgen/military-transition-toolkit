@@ -1,7 +1,7 @@
 ---
 title: "Army 92S Shower/Laundry and Clothing Repair Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-08-05"
-date: "2025-12-20"
+date: "2026-01-02"
 description: "Complete career roadmap for 92S Shower/Laundry and Clothing Repair Specialists transitioning to civilian facility operations, laundry management, equipment maintenance, and textile services careers. Includes salary data $35K-$95K+, laundry manager, facility operations roles with companies actively hiring veterans."
 keywords: "92S civilian jobs, Shower Laundry Specialist career transition, laundry manager salary, facility operations, textile services, equipment maintenance technician, hospitality laundry careers"
 ---

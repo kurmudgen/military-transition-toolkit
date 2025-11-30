@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 6314 UAS Avionics Technician to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-07-22"
-date: "2026-01-01"
+date: "2026-01-15"
 description: "Career transition guide for Marine Corps MOS 6314 UAS Avionics/Maintenance Technicians. Includes salary ranges $50K-$130K+, defense contractor opportunities, required certifications, and direct skills translation for drone repair careers."
 keywords: "MOS 6314 civilian jobs, UAS technician career transition, drone repair technician, Marine Corps avionics technician, military to civilian aviation"
 ---

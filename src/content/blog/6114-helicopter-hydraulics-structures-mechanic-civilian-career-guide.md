@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6114 Helicopter Hydraulics & Structures Mechanic to Civilian: Complete Career Transition Guide (2025)"
 publishDate: "2026-06-03"
-date: "2025-12-30"
+date: "2026-01-13"
 description: "Real career options for 6114 Helicopter/Tiltrotor Hydraulics and Structures Mechanics transitioning to civilian aviation. Includes A&P license pathway, hydraulics specialist careers, structural repair roles with salaries $58K-$95K+."
 keywords: "6114 MOS civilian jobs, helicopter hydraulics mechanic civilian career, Marine structures mechanic transition, aircraft hydraulics A&P"
 ---

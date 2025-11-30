@@ -1,7 +1,7 @@
 ---
 title: "Army 31B Military Police to Civilian: Complete Law Enforcement Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-03-25"
-date: "2025-11-28"
+date: "2025-11-29"
 description: "Comprehensive career transition guide for Army 31B Military Police. Includes federal law enforcement salaries $50K-$130K+ (CBP, ICE, DEA, US Marshals), state/local police jobs, corporate security careers, and 100+ agencies hiring MP veterans."
 keywords: "Army 31B civilian jobs, Military Police career transition, federal law enforcement veteran, police officer MP, CBP Border Patrol, corporate security, law enforcement careers"
 ---

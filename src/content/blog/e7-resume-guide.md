@@ -1,6 +1,6 @@
 ---
 title: "E7/Chief to Six-Figure Civilian: The Senior NCO Resume Guide That Gets Interviews"
-date: "2026-01-03"
+date: "2026-02-09"
 description: "E7s aren't middle management—you ran divisions. Learn how to translate 10+ years of leadership into $75K-$150K civilian roles that recognize your value."
 keywords: "E7 resume, chief petty officer resume, senior NCO resume, military to civilian resume"
 slug: "e7-resume-guide"

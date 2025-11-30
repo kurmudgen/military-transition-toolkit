@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 15F (Aircraft Electrician) to Civilian Career: Your Complete Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-14"
-date: "2025-12-08"
+date: "2025-12-22"
 description: "Real career options for Army 15F Aircraft Electricians transitioning to civilian life. Includes salary ranges $65K-$120K+, avionics technician roles, airline jobs, FAA A&P certification, and 100+ companies actively hiring veterans."
 keywords: "Army 15F civilian jobs, aircraft electrician career transition, avionics technician salary, Army to civilian aviation, A&P mechanic jobs"
 ---

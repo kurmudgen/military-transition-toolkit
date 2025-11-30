@@ -1,6 +1,6 @@
 ---
 title: "North Carolina Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-01-07"
+date: "2026-02-22"
 description: "Guide to North Carolina veteran resources: VA healthcare facilities in Durham, Asheville, Fayetteville, Salisbury, GI Bill schools, and veteran employment programs."
 keywords: "north carolina veteran healthcare, north carolina GI Bill schools, north carolina veteran jobs, north carolina VA hospital"
 slug: "nc-veteran-healthcare-education-jobs"

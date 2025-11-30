@@ -1,6 +1,6 @@
 ---
 title: "South Dakota Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-01-10"
+date: "2026-03-08"
 description: "Guide to South Dakota veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "south dakota veteran healthcare, south dakota GI Bill schools, south dakota veteran jobs, south dakota VA hospital"
 slug: "sd-veteran-healthcare-education-jobs"

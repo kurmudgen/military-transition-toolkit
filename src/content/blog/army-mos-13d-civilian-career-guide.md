@@ -1,7 +1,7 @@
 ---
 title: "Army 13D Field Artillery ATADS Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-17"
-date: "2025-12-07"
+date: "2025-12-20"
 description: "Real career options for Army 13D Field Artillery Automated Tactical Data Systems Specialists transitioning to civilian life. Includes salary ranges $60K-$150K+, IT careers, data analysis, systems administration, and 100+ companies hiring."
 keywords: "13D ATADS Specialist civilian jobs, field artillery IT transition, 13D to systems administrator, artillery data specialist jobs, 13D salary civilian, Army artillery tech transition"
 slug: "army-mos-13d-civilian-career-guide"

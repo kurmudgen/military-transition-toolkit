@@ -1,7 +1,7 @@
 ---
 title: "Army 91P (Artillery Mechanic) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-22"
-date: "2025-12-19"
+date: "2026-01-01"
 description: "Complete transition roadmap for Army 91P Artillery Mechanics. Includes verified salary ranges $52K-$105K+, heavy equipment mechanic, diesel technician, field service careers with ASE certifications and 95+ companies hiring veterans including defense contractors and equipment dealers."
 keywords: "91P civilian jobs, Army Artillery Mechanic career transition, heavy equipment mechanic salary, diesel technician, field artillery system, 91P to civilian career"
 ---

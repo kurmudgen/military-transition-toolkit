@@ -1,6 +1,6 @@
 ---
 title: "Coast Guard IT to Civilian: Complete Information Systems Career Transition Guide (2024 Salaries)"
-date: "2025-11-29"
+date: "2025-11-30"
 description: "Coast Guard Information Systems Technicians transitioning to civilian IT and cybersecurity careers. Network admin, cybersecurity analyst jobs, salary ranges $60K-$130K+, certifications required."
 keywords: "Coast Guard IT civilian jobs, information systems technician career transition, IT specialist to cybersecurity, Coast Guard IT certifications"
 ---

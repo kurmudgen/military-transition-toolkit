@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 14E (Patriot Fire Control Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2025-12-31"
-date: "2025-12-08"
+date: "2025-12-21"
 description: "Real career options for 14E Patriot Fire Control operators transitioning to civilian life. Includes salary ranges $60K-$170K+, defense contracting, radar systems, avionics, and federal technician opportunities."
 keywords: "14E civilian jobs, Patriot Fire Control career transition, air defense contractor salary, radar technician jobs, 14E to civilian career"
 ---

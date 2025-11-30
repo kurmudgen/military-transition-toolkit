@@ -1,7 +1,7 @@
 ---
 title: "C&P Exam for Tinnitus and Hearing Loss: Complete Preparation Guide"
 description: "Comprehensive guide to VA C&P exams for hearing loss and tinnitus claims, what audiometric testing to expect, preparation strategies, and exam day tips."
-date: "2025-11-30"
+date: "2025-12-07"
 category: "C&P Exams"
 tags: ["tinnitus", "hearing-loss", "cp-exam", "audiometric", "va-exam", "preparation"]
 author: "Military Transition Toolkit"

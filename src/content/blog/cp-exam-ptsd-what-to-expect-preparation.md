@@ -1,7 +1,7 @@
 ---
 title: "C&P Exam for PTSD: What to Expect and Complete Preparation Guide"
 description: "Comprehensive guide to VA C&P exams for PTSD claims, what to expect, preparation strategies, and how to present symptoms effectively for higher ratings."
-date: "2025-11-30"
+date: "2025-12-06"
 category: "C&P Exams"
 tags: ["ptsd", "cp-exam", "compensation-pension", "va-exam", "preparation", "mental-health"]
 author: "Military Transition Toolkit"

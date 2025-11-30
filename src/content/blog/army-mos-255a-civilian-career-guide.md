@@ -1,7 +1,7 @@
 ---
 title: "Army 255A Information Services Technician to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-25"
-date: "2025-12-11"
+date: "2025-12-24"
 description: "Complete transition roadmap for Army 255A Information Services Technicians. Includes salary ranges $110K-$220K+, IT management, cybersecurity, systems administration, and tech companies hiring military IT professionals."
 keywords: "Army 255A civilian jobs, Information Services Technician transition, IT manager salary, systems administrator career, network engineer jobs"
 ---

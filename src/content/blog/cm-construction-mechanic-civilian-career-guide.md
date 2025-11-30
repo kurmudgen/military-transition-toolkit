@@ -1,7 +1,7 @@
 ---
 title: "Navy CM Construction Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-01-28"
-date: "2025-12-25"
+date: "2026-01-07"
 description: "Real career options for Navy Construction Mechanics transitioning to civilian trades. Includes salary ranges $55K-$95K+, ASE certifications, and direct path from Seabees to diesel mechanic, HVAC tech, or heavy equipment careers."
 keywords: "Navy CM Construction Mechanic civilian jobs, Seabees mechanic career transition, CM to civilian mechanic, diesel mechanic veteran jobs"
 ---

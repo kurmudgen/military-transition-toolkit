@@ -1,7 +1,7 @@
 ---
 title: "Navy IC (Interior Communications Electrician) to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-04-15"
-date: "2025-12-26"
+date: "2026-01-09"
 description: "Real civilian career paths for Navy ICs transitioning to telecommunications, IT infrastructure, network technician, and systems integration roles. Includes salary ranges $50K-$120K+, required certifications, and skills translation."
 keywords: "Navy IC civilian jobs, Interior Communications Electrician career transition, Navy telecommunications civilian career, IC to civilian"
 ---

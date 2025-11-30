@@ -1,7 +1,7 @@
 ---
 title: "Army 91M (Bradley Fighting Vehicle System Maintainer) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-15"
-date: "2025-12-19"
+date: "2026-01-01"
 description: "Complete transition roadmap for Army 91M Bradley Fighting Vehicle System Maintainers. Includes verified salary ranges $55K-$110K+, diesel mechanic, heavy equipment technician, defense contractor, armored vehicle careers with certifications and companies actively hiring veterans."
 keywords: "91M civilian jobs, Army Bradley Fighting Vehicle Maintainer career transition, diesel mechanic salary, heavy equipment technician, defense contractor jobs, 91M to civilian career"
 ---

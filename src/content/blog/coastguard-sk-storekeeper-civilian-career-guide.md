@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard SK to Civilian: Complete Logistics Career Transition Guide (2024 Salaries)"
 publishDate: "2025-12-03"
-date: "2025-12-28"
+date: "2026-01-11"
 description: "Coast Guard Storekeepers transitioning to civilian supply chain, logistics, procurement, and inventory management careers. Salary ranges $45K-$110K+, certification pathways including APICS CSCP."
 keywords: "Coast Guard SK civilian jobs, storekeeper career transition, supply chain jobs, logistics specialist, procurement careers"
 ---

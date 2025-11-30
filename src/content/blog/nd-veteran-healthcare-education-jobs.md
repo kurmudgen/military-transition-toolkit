@@ -1,6 +1,6 @@
 ---
 title: "North Dakota Veteran Healthcare, Education & Jobs Guide 2025"
-date: "2026-01-07"
+date: "2026-02-22"
 description: "Complete guide to North Dakota veteran resources: VA Medical Center in Fargo, 10 clinics statewide, GI Bill benefits at UND and NDSU, oil industry jobs, and military base employment."
 keywords: "north dakota veteran healthcare, north dakota va medical center, north dakota veteran education, north dakota veteran jobs"
 slug: "nd-veteran-healthcare-education-jobs-2025"

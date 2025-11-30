@@ -1,6 +1,6 @@
 ---
 title: "California Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-01-02"
+date: "2026-01-29"
 description: "Complete directory of California VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "California VA hospital, California veteran education, California veteran jobs, California GI Bill schools"
 slug: "ca-veteran-healthcare-education-jobs"

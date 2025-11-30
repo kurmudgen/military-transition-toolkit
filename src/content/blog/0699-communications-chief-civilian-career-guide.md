@@ -1,7 +1,7 @@
 ---
 title: "Marine 0699 Communications Chief to Civilian: Complete Senior IT/Telecom Leadership Career Guide (2025 Salary Data)"
 publishDate: "2026-03-25"
-date: "2025-12-23"
+date: "2026-01-05"
 description: "Executive leadership paths for Marine 0699 Communications Chiefs. IT Director $165K-$220K, CIO/CTO $200K-$350K+. TS/SCI clearance worth $50K+ premium. 15+ years experience opens C-suite."
 keywords: "0699 communications chief civilian jobs, Marine Corps 0699 career transition, communications chief to civilian"
 ---

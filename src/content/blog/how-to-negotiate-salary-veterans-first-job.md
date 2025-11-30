@@ -1,7 +1,7 @@
 ---
 title: "How to Negotiate Salary for Your First Civilian Job: Complete Guide"
 description: "Master salary negotiation as a veteran transitioning to civilian work. Learn strategies, research methods, and scripts for getting paid what you're worth."
-date: "2025-12-06"
+date: "2025-12-18"
 author: "Military Transition Toolkit"
 category: "Career Transition"
 tags: ["salary-negotiation", "first-job", "career-transition", "compensation"]

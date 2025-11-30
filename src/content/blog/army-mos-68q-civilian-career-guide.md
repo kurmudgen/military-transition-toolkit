@@ -1,7 +1,7 @@
 ---
 title: "Army 68Q (Pharmacy Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-27"
-date: "2025-12-16"
+date: "2025-12-29"
 description: "Real career options for Army 68Q Pharmacy Specialists transitioning to civilian life. Includes salary ranges $40K-$75K+, hospital pharmacy jobs, sterile compounding, VA positions, and PTCB certification with costs."
 keywords: "Army 68Q civilian jobs, pharmacy specialist career transition, 68Q to civilian, PTCB certification cost, pharmacy technician salary, hospital pharmacy jobs, sterile compounding technician"
 ---

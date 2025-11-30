@@ -1,6 +1,6 @@
 ---
 title: "Utah Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-01-11"
+date: "2026-03-10"
 description: "Complete guide to Utah veteran tax benefits: property tax exemptions up to $521,620, military retirement income tax treatment, vehicle exemptions, and financial analysis for disabled veterans."
 keywords: "utah veteran benefits, utah property tax exemption veterans, utah veteran tax benefits, military retirement utah"
 slug: "utah-veteran-tax-benefits-2025"

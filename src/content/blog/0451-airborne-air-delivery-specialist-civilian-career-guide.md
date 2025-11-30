@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0451 Airborne and Air Delivery Specialist to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
 publishDate: "2026-01-21"
-date: "2025-12-21"
+date: "2026-01-04"
 description: "Real career options for 0451 Airborne and Air Delivery Specialists transitioning to civilian life. Includes salary ranges $40K-$100K+, required certifications like FAA Parachute Rigger, and skills translation."
 keywords: "0451 airborne air delivery specialist civilian jobs, 0451 career transition, parachute rigger civilian jobs, Marine air delivery to civilian career"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Terminal Leave Calculator: Should You Use It or Sell It?"
-date: "2026-01-10"
+date: "2026-03-09"
 description: "Calculate whether taking terminal leave or selling it back gives you more value. Free calculator for active duty service members."
 keywords: "terminal leave calculator, military terminal leave, sell terminal leave, terminal leave vs sell back"
 slug: "terminal-leave-calculator"

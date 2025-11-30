@@ -1,7 +1,7 @@
 ---
 title: "Army 38G Civil Affairs Planning/Operations NCO to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-29"
-date: "2025-12-14"
+date: "2025-12-27"
 description: "Real career options for Army 38G Civil Affairs Planning/Operations NCOs transitioning to civilian life. Includes salary ranges $85K-$180K+, senior program management, operations director, USAID chief of party, and strategic advisory roles."
 keywords: "38G civilian jobs, Civil Affairs NCO career transition, senior program manager jobs, operations director salary, USAID chief of party, international development careers"
 ---

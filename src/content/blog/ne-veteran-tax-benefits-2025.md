@@ -1,6 +1,6 @@
 ---
 title: "Nebraska Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-01-08"
+date: "2026-02-22"
 description: "Complete guide to Nebraska veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans."
 keywords: "nebraska veteran benefits, nebraska property tax exemption veterans, nebraska veteran tax benefits, military retirement nebraska"
 slug: "nebraska-veteran-tax-benefits-2025"

@@ -1,7 +1,7 @@
 ---
 title: "Army 13F Fire Support Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-24"
-date: "2025-12-07"
+date: "2025-12-20"
 description: "Real career options for Army 13F Fire Support Specialists transitioning to civilian life. Includes salary ranges $60K-$180K+, intelligence analysis, law enforcement, operations coordination, JTAC contractor roles, and 100+ companies hiring."
 keywords: "13F Fire Support Specialist civilian jobs, JTAC contractor, 13F to intelligence analyst, fire support veteran jobs, 13F salary civilian, Army FiSTer transition guide"
 slug: "army-mos-13f-civilian-career-guide"

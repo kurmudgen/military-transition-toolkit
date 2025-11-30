@@ -1,6 +1,6 @@
 ---
 title: "Virginia Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-01-11"
+date: "2026-03-13"
 description: "Comprehensive 2025 guide to Virginia veteran benefits including VA medical centers in Hampton, Richmond, and Salem with addresses and phone numbers, state veteran care centers, VMSDEP education program, in-state tuition benefits, V3 employment certification, and major defense contractors hiring veterans."
 keywords: "Virginia VA medical centers, Hampton VA hospital, Hunter Holmes McGuire VAMC, VMSDEP education benefits, Virginia veteran jobs, Virginia Values Veterans V3, Virginia in-state tuition veterans"
 slug: "va-veteran-healthcare-education-jobs"

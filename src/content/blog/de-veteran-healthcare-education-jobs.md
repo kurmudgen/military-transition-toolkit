@@ -1,6 +1,6 @@
 ---
 title: "Delaware Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-01-03"
+date: "2026-02-08"
 description: "Complete directory of Delaware VA medical centers, education programs, veteran employment resources, and support services across the First State."
 keywords: "Delaware VA hospital, Delaware veteran education, Delaware veteran jobs, Delaware GI Bill schools"
 slug: "de-veteran-healthcare-education-jobs"

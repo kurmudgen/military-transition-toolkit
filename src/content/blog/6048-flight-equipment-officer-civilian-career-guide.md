@@ -1,7 +1,7 @@
 ---
 title: "MOS 6048 Flight Equipment Officer to Civilian: Aviation Safety and Support Equipment Career Guide"
 publishDate: "2026-04-29"
-date: "2025-12-29"
+date: "2026-01-13"
 description: "Career paths for 6048 Flight Equipment Officers. Includes salary data $65K-$120K+, aviation safety careers, life support systems, and technical management roles."
 keywords: "6048 MOS civilian jobs, flight equipment officer transition, aviation safety careers, life support systems jobs"
 ---

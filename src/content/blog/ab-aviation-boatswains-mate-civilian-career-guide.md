@@ -1,7 +1,7 @@
 ---
 title: "Navy AB (Aviation Boatswain's Mate) to Civilian: Complete Career Transition Guide (With Real Salary Data)"
 publishDate: "2025-11-26"
-date: "2025-12-23"
+date: "2026-01-05"
 description: "Real career options for Navy ABs transitioning to civilian aviation jobs. Includes salary ranges $45K-$85K+, FAA certifications, and skills translation for aircraft handlers."
 keywords: "Navy AB civilian jobs, Aviation Boatswain's Mate career transition, aircraft handler civilian career, Navy aviation to civilian"
 ---

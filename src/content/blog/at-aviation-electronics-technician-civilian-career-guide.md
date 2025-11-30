@@ -1,7 +1,7 @@
 ---
 title: "Navy AT (Aviation Electronics Technician) to Civilian: Complete Career Transition Guide (With 2025 Salary Data)"
 publishDate: "2026-01-07"
-date: "2025-12-24"
+date: "2026-01-07"
 description: "Real career options for Navy AT transitioning to civilian avionics careers. Includes salary ranges $55K-$91K+, FAA certifications, and defense contractor opportunities."
 keywords: "Navy AT civilian jobs, aviation electronics technician career transition, avionics technician salary, AT to civilian career"
 ---

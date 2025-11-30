@@ -1,7 +1,7 @@
 ---
 title: "VA Rating for Knee Pain: Compensation and Rating Guide"
 description: "Complete guide to VA knee pain ratings from 0%-100%, monthly compensation amounts, evidence requirements, and successful filing strategies."
-date: "2025-11-30"
+date: "2025-12-07"
 category: "VA Benefits"
 tags: ["knee-pain", "musculoskeletal", "va-rating", "disability", "orthopedic", "claims"]
 author: "Military Transition Toolkit"

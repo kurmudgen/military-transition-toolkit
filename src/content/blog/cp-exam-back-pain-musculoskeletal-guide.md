@@ -1,7 +1,7 @@
 ---
 title: "C&P Exam for Back Pain and Musculoskeletal Injuries: Complete Preparation"
 description: "Comprehensive guide to VA C&P exams for back pain, knee pain, and musculoskeletal conditions, what physical exams to expect, preparation strategies, and exam day tips."
-date: "2025-11-30"
+date: "2025-12-06"
 category: "C&P Exams"
 tags: ["back-pain", "musculoskeletal", "cp-exam", "physical-exam", "va-exam", "preparation"]
 author: "Military Transition Toolkit"

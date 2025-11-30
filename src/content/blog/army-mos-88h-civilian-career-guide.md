@@ -1,7 +1,7 @@
 ---
 title: "Army 88H Cargo Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-06-17"
-date: "2025-12-17"
+date: "2025-12-30"
 description: "Real career options for Army 88H Cargo Specialists transitioning to civilian life. Includes salary ranges $45K-$120K+, warehouse operations, logistics coordination, supply chain management, and freight forwarding opportunities."
 keywords: "88H Cargo Specialist civilian jobs, Army cargo specialist career transition, warehouse manager salary, logistics coordinator jobs, supply chain careers for veterans"
 ---

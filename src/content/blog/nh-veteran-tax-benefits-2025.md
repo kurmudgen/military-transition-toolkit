@@ -1,6 +1,6 @@
 ---
 title: "New Hampshire Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-01-08"
+date: "2026-02-23"
 description: "Complete guide to New Hampshire veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans."
 keywords: "new hampshire veteran benefits, new hampshire property tax exemption veterans, new hampshire veteran tax benefits, military retirement new hampshire"
 slug: "nh-veteran-tax-benefits-2025"

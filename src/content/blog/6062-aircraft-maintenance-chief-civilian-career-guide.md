@@ -1,7 +1,7 @@
 ---
 title: "MOS 6062 Aircraft Maintenance Chief to Civilian: Senior Aviation Leadership Career Guide"
 publishDate: "2026-05-06"
-date: "2025-12-29"
+date: "2026-01-13"
 description: "Career transition guide for 6062 Aircraft Maintenance Chiefs. Includes salary data $75K-$140K+, senior maintenance leadership, A&P pathways, and airline careers."
 keywords: "6062 MOS civilian jobs, aircraft maintenance chief transition, Marine aviation SNCO careers, aviation maintenance leadership"
 ---

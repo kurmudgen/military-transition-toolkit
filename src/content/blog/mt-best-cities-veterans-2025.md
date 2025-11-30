@@ -1,6 +1,6 @@
 ---
 title: "Montana Military Retirement: Best Cities, Housing Costs & Quality of Life"
-date: "2025-12-03"
+date: "2025-12-12"
 description: "Where to retire in Montana as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025."
 keywords: "Montana best cities for veterans, Montana military retirement, Montana cost of living veterans, where to retire Montana"
 slug: "mt-best-cities-veterans-2025"

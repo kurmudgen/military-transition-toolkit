@@ -1,7 +1,7 @@
 ---
 title: "Army 35F Intelligence Analyst to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-04-01"
-date: "2025-11-28"
+date: "2025-11-29"
 description: "Real career options for Army 35F Intelligence Analysts transitioning to civilian life. Includes salary ranges $75K-$200K+, federal intelligence agencies, defense contractors, and private sector opportunities with security clearance advantages."
 keywords: "35F civilian jobs, Intelligence Analyst career transition, 35F contractor salary, Intelligence Analyst to CIA career, defense contractor intelligence jobs"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Army 92R Parachute Rigger to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-08-05"
-date: "2025-12-20"
+date: "2026-01-02"
 description: "Complete career roadmap for 92R Parachute Riggers transitioning to civilian aviation safety, rigging technician, quality control, and aerospace careers. Includes salary data $40K-$113K+, FAA rigging jobs, aviation maintenance, skydiving operations with companies hiring veterans."
 keywords: "92R civilian jobs, Parachute Rigger career transition, FAA rigger license, aviation safety inspector, rigging technician salary, skydiving instructor, aerospace quality control"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "MOS 6212 Fixed-Wing Aircraft Power Plants Mechanic to Civilian: Aviation Engine Career Guide"
 publishDate: "2026-07-15"
-date: "2025-12-31"
+date: "2026-01-15"
 description: "Career paths for 6212 Power Plants Mechanics. Includes salary data $60K-$120K+, A&P pathways, airline engine shops, MRO careers, and field service engineering."
 keywords: "6212 MOS civilian jobs, power plants mechanic transition, aircraft engine mechanic careers, A&P mechanic jobs"
 ---

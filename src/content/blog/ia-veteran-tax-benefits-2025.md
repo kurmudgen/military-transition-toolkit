@@ -1,6 +1,6 @@
 ---
 title: "Iowa Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-01-04"
+date: "2026-02-12"
 description: "Complete guide to Iowa veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Iowa veteran benefits, Iowa property tax exemption veterans, Iowa veteran income tax, Iowa disabled veteran benefits"
 slug: "ia-veteran-tax-benefits-2025"

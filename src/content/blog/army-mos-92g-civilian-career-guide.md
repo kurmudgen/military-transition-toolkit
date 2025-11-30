@@ -1,7 +1,7 @@
 ---
 title: "Army 92G Culinary Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-07-29"
-date: "2025-12-19"
+date: "2026-01-02"
 description: "Complete career roadmap for 92G Culinary Specialists transitioning to civilian chef, food service management, and hospitality careers. Includes salary data $38K-$115K+, executive chef, food service director, corporate chef roles with 70+ companies actively hiring veterans."
 keywords: "92G civilian jobs, Culinary Specialist career transition, military chef civilian salary, executive chef jobs, food service director, hospitality careers, culinary certifications"
 ---

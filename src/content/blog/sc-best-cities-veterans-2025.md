@@ -1,6 +1,6 @@
 ---
 title: "Best Cities in South Carolina for Veterans 2025: Cost of Living & Quality of Life"
-date: "2025-12-05"
+date: "2025-12-14"
 description: "South Carolina's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons."
 keywords: "best cities south carolina veterans, south carolina cost of living veterans, where to live south carolina military, south carolina veteran population"
 slug: "sc-best-cities-veterans-2025"
