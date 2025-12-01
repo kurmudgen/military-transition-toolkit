@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-05"
 ---# Data Visualization Specification #012: State Vehicle Registration Fee Exemptions for Veterans
 

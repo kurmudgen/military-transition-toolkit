@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-21"
 ---# 2A7X3 - Aircraft Structural Maintenance Career Transition Guide
 

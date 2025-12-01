@@ -1,7 +1,7 @@
 ---
 title: "Knee Pain Secondary to Back Injury: Complete Filing and Nexus Guide"
 description: "Expert guide to filing knee pain as secondary to back injury, compensation increase calculations, nexus requirements, and proven filing strategies."
-date: "2026-02-13"
+date: "2026-02-14"
 category: "Secondary Conditions"
 tags: ["knee-pain", "back-injury", "secondary-condition", "compensation", "va-claims", "disability"]
 author: "Military Transition Toolkit"

@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Flat Feet (Pes Planus): Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-12"
 description: "How to get VA disability rating for flat feet (pes planus). Rating criteria from 0% to 50%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability flat feet, pes planus VA rating, flat feet VA claim, fallen arches VA disability"
 category: "va-disability"

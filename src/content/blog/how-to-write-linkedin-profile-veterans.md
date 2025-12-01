@@ -1,7 +1,7 @@
 ---
 title: "How to Write a LinkedIn Profile That Gets Hired: Complete Veteran Guide"
 description: "Create a LinkedIn profile that attracts employers and recruiters. Complete guide with templates and examples for military professionals."
-date: "2025-12-19"
+date: "2025-12-20"
 author: "Military Transition Toolkit"
 category: "Career Transition"
 tags: ["linkedin", "networking", "job-search", "professional-branding"]

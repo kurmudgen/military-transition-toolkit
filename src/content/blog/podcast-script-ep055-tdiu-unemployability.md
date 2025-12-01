@@ -1,6 +1,6 @@
 ---
 EPISODE #055: TDIU - How to Get 100% VA Pay at Lower Ratings
-date: "2026-03-02"
+date: "2026-03-03"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)
 KEYWORDS: TDIU, individual unemployability, VA 100 percent, substantially gainful employment, VA Form 21-8940

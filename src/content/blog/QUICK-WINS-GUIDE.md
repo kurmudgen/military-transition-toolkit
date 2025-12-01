@@ -1,5 +1,4 @@
 ---
-
 date: "2026-03-07"
 ---# Quick Wins Implementation Guide
 ## High-Impact Actions for Weeks 1-2

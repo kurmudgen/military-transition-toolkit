@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-16"
 ---# Air Force AFSCs - All 30 Career Transition Scripts
 

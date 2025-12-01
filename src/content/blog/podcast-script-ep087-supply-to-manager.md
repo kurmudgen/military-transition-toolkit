@@ -1,6 +1,6 @@
 ---
 EPISODE #087: Supply Sergeant to Supply Chain Manager - $115K Fortune 500 Career
-date: "2026-03-05"
+date: "2026-03-06"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 HOST: Jacob

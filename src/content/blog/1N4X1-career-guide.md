@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-20"
 ---# 1N4X1 - Fusion Analyst Career Transition Guide
 

@@ -1,6 +1,6 @@
 ---
 title: "89D EOD Specialist to Civilian Bomb Technician: Complete Career Transition Guide (2025)"
-date: "2026-01-23"
+date: "2026-01-24"
 description: "Transform your 89D EOD experience into $70K-$150K+ civilian bomb technician career. Includes federal, state, and private sector opportunities with certification requirements."
 keywords: "89D to civilian bomb tech, EOD civilian career, military bomb technician jobs, EOD specialist transition"
 slug: "89d-eod-to-bomb-technician"

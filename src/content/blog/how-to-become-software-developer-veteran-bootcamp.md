@@ -1,6 +1,6 @@
 ---
 title: "How to Become a Software Developer: Complete Veteran Bootcamp Guide (2025)"
-date: "2025-12-16"
+date: "2025-12-17"
 description: "Bootcamp vs self-taught vs degree. Exact timeline, cost breakdown, coding languages to learn, best bootcamps for veterans, job guarantee programs, and salary negotiation tactics."
 keywords: "coding bootcamp veteran, software developer bootcamp, learn to code, career change bootcamp, programming for beginners, bootcamp vs degree"
 slug: "how-to-become-software-developer-veteran-bootcamp"

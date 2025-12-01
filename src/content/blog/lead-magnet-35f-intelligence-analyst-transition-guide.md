@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# 35F Intelligence Analyst to Civilian Career Guide
 ## Turn Your Intel Experience Into $70K-$140K Careers in Analysis, Cybersecurity & Business Intelligence

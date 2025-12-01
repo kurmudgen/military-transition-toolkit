@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Cold Injury Residuals: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2025-12-06"
 description: "How to get VA disability rating for cold injury residuals (frostbite). Rating criteria from 10% to 30%, evidence needed, and secondary conditions."
 keywords: "VA disability cold injury, frostbite VA rating, cold injury residuals VA claim, Korean War frostbite"
 category: "va-disability"

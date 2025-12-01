@@ -1,7 +1,7 @@
 ---
 title: "VA Disability: Unemployability (TDIU) vs 100% Rating - Which Should You Pursue?"
 description: "Compare TDIU vs 100% rating. Understand differences, approval rates, monthly payments, and which path best for your situation."
-date: "2026-03-13"
+date: "2026-03-17"
 author: "Veteran Benefits Specialist"
 category: "VA Disability"
 tags: ["VA Disability", "TDIU", "100 Percent Rating", "Employability", "Compensation"]

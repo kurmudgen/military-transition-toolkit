@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-16"
 ---# Coast Guard Ratings - All 15 Career Transition Scripts
 

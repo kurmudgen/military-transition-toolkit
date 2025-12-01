@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Cognitive Disorder: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-12"
 description: "How to get VA disability rating for cognitive disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and connections to TBI."
 keywords: "VA disability cognitive disorder, cognitive impairment VA rating, memory problems VA claim, TBI cognitive disorder"
 category: "va-disability"

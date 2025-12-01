@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-14"
 ---# Landing Page Variant 01: Pain-Point Focused
 

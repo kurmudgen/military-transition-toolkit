@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-14"
+date: "2026-02-15"
 ---# Landing Page Variant 04: Comparison/Alternative
 
 ## Hero Section

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-16"
 ---# State-by-State Property Tax Guide for Veterans
 ## Complete 2025 Exemption Comparison

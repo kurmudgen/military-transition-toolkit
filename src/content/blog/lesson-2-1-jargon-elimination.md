@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-17"
 ---# Lesson 2.1: Jargon Elimination Strategy
 

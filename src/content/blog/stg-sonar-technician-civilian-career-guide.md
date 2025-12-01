@@ -1,7 +1,7 @@
 ---
 title: "Navy STG (Sonar Technician - Surface) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-08-05"
-date: "2026-01-10"
+date: "2026-01-11"
 description: "Real career options for Navy Sonar Technicians (STG) transitioning to civilian life. Includes salary ranges $55K-$110K+, required certifications, and underwater acoustics skills translation."
 keywords: "Navy STG civilian jobs, Sonar Technician career transition, STG to civilian career, underwater acoustics jobs, sonar analyst careers"
 ---

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-22"
 ---# 3E7X1 - Fire Protection Career Transition Guide
 

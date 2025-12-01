@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-17"
+date: "2026-02-18"
 ---# Lesson 4.2: Salary Negotiation with Military Background
 
 **Course:** Military Resume Mastery

@@ -1,7 +1,7 @@
 ---
 title: "Washington vs Oregon Veterans Comparison: Complete Guide 2025"
 description: "Compare Washington and Oregon for military retirees. Analyze tax treatment, cost of living, VA healthcare, and job opportunities for Pacific Northwest veterans."
-date: "2026-03-14"
+date: "2026-03-19"
 category: "State Comparisons"
 tags: ["Washington", "Oregon", "Veterans Benefits", "Military Retirement", "Pacific Northwest"]
 author: "Military Transition Toolkit"

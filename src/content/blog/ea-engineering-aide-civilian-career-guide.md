@@ -1,7 +1,7 @@
 ---
 title: "Navy EA Engineering Aide to Civilian: Complete Career Transition Guide (2024 Salary Data)"
 publishDate: "2026-02-04"
-date: "2026-01-07"
+date: "2026-01-08"
 description: "Navy Seabee EA transition guide with proven career paths. Civil engineering tech, surveying, CAD roles paying $47K-$75K+. Skills translation, certifications, and hiring companies."
 keywords: "Navy EA civilian jobs, Engineering Aide career transition, Seabee EA to civilian, surveying technician jobs"
 ---

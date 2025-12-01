@@ -1,6 +1,6 @@
 ---
 DOCUMENT: Understanding Military Skills: Hiring Manager Guide
-date: "2026-02-26"
+date: "2026-02-27"
 TYPE: Training Guide
 AUDIENCE: Hiring Managers
 PAGES: 12

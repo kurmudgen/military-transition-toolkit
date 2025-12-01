@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-24"
 ---# AFSC Career Guide Completion Tracker
 

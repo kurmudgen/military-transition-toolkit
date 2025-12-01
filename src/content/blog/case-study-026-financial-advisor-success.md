@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-30"
 ---# Infantry Officer to $130K Financial Advisor (Series 65, CFP)
 

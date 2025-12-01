@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-17"
 ---# Lesson 1.1: The Civilian Resume Mindset Shift
 

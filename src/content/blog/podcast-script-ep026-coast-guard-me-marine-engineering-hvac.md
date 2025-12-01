@@ -1,6 +1,6 @@
 ---
 EPISODE #026: Coast Guard ME to Marine Engineering and HVAC Careers
-date: "2026-01-16"
+date: "2026-01-17"
 CATEGORY: Career Transition
 TARGET LENGTH: 12-14 minutes
 KEYWORDS: Coast Guard ME, machinery technician, marine engineering, HVAC, refrigeration

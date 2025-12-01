@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-06"
 ---# Data Visualization Specification #028: Geographic Salary Variations for Veterans
 

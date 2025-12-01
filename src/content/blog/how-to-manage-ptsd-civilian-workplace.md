@@ -1,6 +1,6 @@
 ---
 title: "How to Manage PTSD in Civilian Workplace: Veteran Mental Health at Work"
-date: "2025-12-17"
+date: "2025-12-18"
 description: "Veterans managing PTSD at work, workplace accommodations, talking to managers, therapy options, and maintaining mental health during transition."
 keywords: "veteran PTSD workplace, military trauma adjustment, mental health at work, workplace accommodations, PTSD management"
 slug: "how-to-manage-ptsd-civilian-workplace"

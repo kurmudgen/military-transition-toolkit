@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-10"
 ---# Education & GI Bill FAQ
 

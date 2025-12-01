@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-04"
+date: "2026-02-05"
 ---# Data Visualization Specification 009: Healthcare Access Scores
 
 ## Overview

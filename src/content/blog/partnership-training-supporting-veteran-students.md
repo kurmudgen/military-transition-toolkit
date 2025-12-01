@@ -1,6 +1,6 @@
 ---
 DOCUMENT: Supporting Veteran Students: Academic Advisor Guide
-date: "2026-02-26"
+date: "2026-02-27"
 TYPE: Training Guide
 AUDIENCE: Academic Advisors, Student Success Staff, Faculty
 PAGES: 14

@@ -1,7 +1,7 @@
 ---
 title: "Best Rust Belt States for Veterans 2025"
 description: "Guide to best Rust Belt states for military retirees. Compare Pennsylvania, Ohio, Michigan, Wisconsin for veteran benefits and affordability."
-date: "2026-01-28"
+date: "2026-01-29"
 category: "Regional Guides"
 tags: ["Rust Belt", "Veterans Benefits", "Military Retirement", "Affordable Housing", "Cost of Living"]
 author: "Military Transition Toolkit"

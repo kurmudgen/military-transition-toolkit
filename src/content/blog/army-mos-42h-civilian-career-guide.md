@@ -1,7 +1,7 @@
 ---
 title: "Army Senior HR NCO (42A E-7 to E-9) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-29"
-date: "2025-12-27"
+date: "2025-12-28"
 description: "Real career options for Army Senior HR NCOs transitioning to civilian life. Includes salary ranges $75K-$180K+, HR Manager, Director roles, HR Business Partner careers, and leadership-focused certification requirements."
 keywords: "Army senior HR NCO civilian jobs, 42A senior sergeant career transition, HR manager jobs for veterans, military HR leadership to civilian"
 ---

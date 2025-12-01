@@ -1,6 +1,6 @@
 ---
 title: "Virginia Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-03-13"
+date: "2026-03-18"
 description: "Complete guide to Virginia veteran tax benefits including 100% property tax exemptions for disabled veterans, $40,000 military retirement income subtraction for 2025, vehicle tax relief, and county-specific benefits in Fairfax, Virginia Beach, Norfolk, and Arlington."
 keywords: "Virginia veteran tax benefits, Virginia property tax exemption, Virginia military retirement tax, disabled veteran tax relief, Fairfax County veteran benefits, Virginia Beach tax exemption, Norfolk veteran taxes"
 slug: "va-veteran-tax-benefits-2025"

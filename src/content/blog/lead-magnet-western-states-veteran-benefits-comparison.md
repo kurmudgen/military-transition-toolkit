@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-11"
 ---# Western States Veterans Benefits Comparison Guide
 ## Compare CA, AZ, NV, OR, WA, ID, MT, WY, UT, CO, NM, HI, AK - Find Your Best Western State

@@ -1,7 +1,7 @@
 ---
 title: "Army 42F HRIS Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-04-29"
-date: "2025-12-27"
+date: "2025-12-28"
 description: "Real career options for Army 42F Human Resources Information Systems Management Specialists transitioning to civilian life. Includes salary ranges $60K-$130K+, HRIS analyst, systems administrator, HR technology careers, and certification requirements."
 keywords: "Army 42F civilian jobs, HRIS specialist career transition, 42F to HRIS analyst, military HR systems to civilian, HR technology jobs for veterans"
 ---

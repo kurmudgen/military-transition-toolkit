@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Scars: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-16"
 description: "How to get VA disability rating for scars. Rating criteria for burn scars, deep scars, unstable scars, and painful scars. Evidence needed and C&P exam tips."
 keywords: "VA disability scars, scars VA rating, scar C&P exam, VA claim scars, surgical scars VA disability"
 category: "va-disability"

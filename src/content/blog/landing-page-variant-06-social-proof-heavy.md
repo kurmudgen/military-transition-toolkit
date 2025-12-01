@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-15"
 ---# Landing Page Variant 06: Social Proof Heavy
 

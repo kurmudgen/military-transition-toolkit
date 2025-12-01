@@ -1,6 +1,6 @@
 ---
 title: "How to Transition to Law Enforcement: Police Officer Career Path for Veterans"
-date: "2025-12-18"
+date: "2025-12-19"
 description: "Military to police officer, detective, federal law enforcement. Academy requirements, hiring timeline, salary expectations, and veteran preference advantages in law enforcement."
 keywords: "military to police, law enforcement career, police academy, federal law enforcement, veteran hiring, background investigation"
 slug: "how-to-transition-military-law-enforcement-complete"

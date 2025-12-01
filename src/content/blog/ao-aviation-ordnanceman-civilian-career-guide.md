@@ -1,7 +1,7 @@
 ---
 title: "Navy AO to Civilian: Aviation Ordnance Career Transition Guide (With Salary Data)"
 publishDate: "2025-12-31"
-date: "2026-01-06"
+date: "2026-01-07"
 description: "Career guide for Navy Aviation Ordnanceman transitioning to civilian jobs. Includes salary ranges $46K-$130K, explosives certifications, ammunition handling, and defense contractor opportunities."
 keywords: "Navy AO civilian jobs, Aviation Ordnanceman career transition, ordnance technician jobs, explosives handler certification"
 ---

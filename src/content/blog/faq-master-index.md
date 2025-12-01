@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-10"
 ---# Military Transition Toolkit - Master FAQ Index
 

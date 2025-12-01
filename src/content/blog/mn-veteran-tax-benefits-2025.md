@@ -1,6 +1,6 @@
 ---
 title: "Minnesota Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-02-19"
+date: "2026-02-20"
 description: "Complete guide to Minnesota veteran tax benefits: property tax Market Value Exclusion, military retirement partial exemption, and financial benefits for disabled veterans."
 keywords: "Minnesota veteran benefits, Minnesota property tax exemption veterans, Minnesota veteran income tax, Minnesota disabled veteran benefits"
 slug: "mn-veteran-tax-benefits-2025"

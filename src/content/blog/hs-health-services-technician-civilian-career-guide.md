@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard HS to Civilian: Complete Healthcare Career Transition Guide (2024 Salaries)"
 publishDate: "2026-04-01"
-date: "2026-01-08"
+date: "2026-01-09"
 description: "Coast Guard Health Services Technicians transitioning to civilian healthcare careers. EMT, paramedic, nursing, medical assistant jobs. Salary ranges $40K-$130K+, certification pathways."
 keywords: "Coast Guard HS civilian jobs, health services technician career transition, EMT to paramedic, HS to nurse, military medic careers"
 ---

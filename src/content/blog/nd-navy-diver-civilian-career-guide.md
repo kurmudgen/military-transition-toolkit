@@ -1,6 +1,6 @@
 ---
 title: "Navy Diver (ND) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
-date: "2026-01-09"
+date: "2026-01-10"
 description: "Real career options for Navy Divers transitioning to civilian life. Includes salary ranges $50K-$180K+, commercial diving certifications, and skills translation for underwater construction professionals."
 keywords: "Navy Diver civilian jobs, ND career transition, commercial diving career, underwater welding jobs, saturation diver salary"
 ---

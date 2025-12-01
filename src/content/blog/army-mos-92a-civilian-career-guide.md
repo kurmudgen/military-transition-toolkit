@@ -1,7 +1,7 @@
 ---
 title: "Army 92A Automated Logistical Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-07-29"
-date: "2026-01-01"
+date: "2026-01-02"
 description: "Complete career roadmap for 92A Automated Logistical Specialists transitioning to civilian supply chain careers. Includes salary data $46K-$120K+, logistics coordinator, warehouse operations, inventory management roles with 50+ companies actively hiring veterans."
 keywords: "92A civilian jobs, Automated Logistical Specialist career transition, Army supply specialist salary, logistics coordinator jobs, warehouse management careers, supply chain certifications"
 ---

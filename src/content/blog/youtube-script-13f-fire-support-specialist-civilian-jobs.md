@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 13F Fire Support: Emergency Services & Defense $85K 2025
-date: "2026-03-14"
+date: "2026-03-19"
 TARGET LENGTH: 5-7 minutes
 TARGET KEYWORDS: 13F fire support specialist civilian jobs, emergency services, defense contractor
 VIDEO FILE NAME: youtube-script-13f-fire-support-specialist-civilian-jobs.md

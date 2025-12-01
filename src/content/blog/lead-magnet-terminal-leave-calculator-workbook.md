@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-16"
 ---# Terminal Leave Decision Calculator Workbook
 ## Should You Sell Back Leave or Take Terminal Leave?

@@ -1,6 +1,5 @@
 ---
-
-date: "2025-12-10"
+date: "2025-12-11"
 ---# Complete Arizona Veteran Benefits Guide 2025
 ## Your Total Roadmap to Maximizing Arizona's Veteran Benefits
 **By Jacob, Navy E6 | Formation Labs**

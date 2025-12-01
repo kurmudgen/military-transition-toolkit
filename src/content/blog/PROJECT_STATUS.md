@@ -1,5 +1,4 @@
 ---
-
 date: "2026-03-07"
 ---# YouTube Video Scripts Project - Status Report
 

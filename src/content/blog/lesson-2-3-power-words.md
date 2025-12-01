@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-17"
 ---# Lesson 2.3: Power Words and Action Verbs
 

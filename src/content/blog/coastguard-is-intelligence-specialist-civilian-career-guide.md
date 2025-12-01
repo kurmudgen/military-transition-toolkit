@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard IS to Civilian: Complete Intelligence Career Transition Guide (2024 Salaries)"
 publishDate: "2025-11-26"
-date: "2026-01-11"
+date: "2026-01-12"
 description: "Coast Guard Intelligence Specialists transitioning to civilian intelligence analyst, defense contractor, and federal intelligence careers. Salary ranges $70K-$150K+ with clearance. Certification pathways."
 keywords: "Coast Guard IS civilian jobs, intelligence specialist career transition, intelligence analyst jobs, defense contractor intelligence, clearance jobs"
 ---

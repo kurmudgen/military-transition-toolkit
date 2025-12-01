@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Panic Disorder: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-15"
 description: "How to get VA disability rating for panic disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability panic disorder, panic attacks VA rating, panic disorder C&P exam, VA claim panic disorder"
 category: "va-disability"

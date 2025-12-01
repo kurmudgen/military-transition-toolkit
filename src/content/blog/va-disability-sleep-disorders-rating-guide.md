@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Sleep Disorders (Other Than Apnea): Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-17"
 description: "How to get VA disability rating for sleep disorders other than sleep apnea. Rating criteria for narcolepsy, insomnia, and other sleep conditions."
 keywords: "VA disability sleep disorder, narcolepsy VA rating, hypersomnia VA claim, sleep disorder VA disability"
 category: "va-disability"

@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Radiation Exposure: Complete Guide"
 description: "How to file VA disability claim for conditions caused by atomic/nuclear radiation exposure. Presumptive conditions and evidence requirements."
-date: "2026-03-12"
+date: "2026-03-16"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Radiation Exposure", "Nuclear Testing", "Atomic Veterans", "Presumptive Conditions"]

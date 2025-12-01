@@ -1,7 +1,7 @@
 ---
 title: "Army CID Special Agent (31D) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-25"
-date: "2025-12-25"
+date: "2025-12-26"
 description: "Real career options for Army CID Special Agents transitioning to civilian life. Includes salary ranges $70K-$180K+, federal law enforcement, corporate investigations, fraud examination, and private sector opportunities."
 keywords: "Army CID civilian jobs, 31D career transition, CID to FBI career, criminal investigator salary, CID agent to DEA, corporate fraud investigator"
 ---

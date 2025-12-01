@@ -1,6 +1,5 @@
 ---
-
-date: "2026-03-12"
+date: "2026-03-16"
 ---# VA Disability Rating Guide: Shoulder Conditions
 
 ## Bottom Line Up Front (BLUF)

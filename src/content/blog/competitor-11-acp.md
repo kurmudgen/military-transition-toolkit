@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-02"
 ---# Competitor Analysis: American Corporate Partners (ACP)
 

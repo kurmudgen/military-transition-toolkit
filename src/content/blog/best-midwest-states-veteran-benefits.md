@@ -1,7 +1,7 @@
 ---
 title: "Best Midwest States for Veterans: Tax Benefits & Cost of Living 2025"
 description: "Complete guide to best Midwest states for military retirees. Compare military retirement tax, cost of living, VA healthcare, and regional opportunities."
-date: "2025-12-08"
+date: "2025-12-09"
 category: "Regional Guides"
 tags: ["Midwest", "Veterans Benefits", "Military Retirement", "Cost of Living", "Tax Benefits"]
 author: "Military Transition Toolkit"

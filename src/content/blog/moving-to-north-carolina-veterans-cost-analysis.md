@@ -2,7 +2,7 @@
 title: "Moving to North Carolina for Veterans: Cost Analysis and Financial Guide 2025"
 description: "Complete relocation guide for veterans moving to North Carolina with housing costs, military installations, VA healthcare, job market analysis, and budgeting."
 author: "Military Transition Toolkit"
-date: "2026-02-20"
+date: "2026-02-21"
 tags: ["North Carolina", "Relocation", "Veteran Costs", "Housing", "Cost of Living"]
 category: "State Relocation Guides"
 featured: true

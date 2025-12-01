@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-17"
 ---# Lesson 3.2: Targeting Different Industries
 

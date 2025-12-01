@@ -1,6 +1,6 @@
 ---
 DOCUMENT: How to Hire Veterans: Corporate Training Guide
-date: "2025-12-19"
+date: "2025-12-20"
 TYPE: Training Guide
 AUDIENCE: Corporate Recruiters, Hiring Managers, HR Professionals
 PAGES: 22

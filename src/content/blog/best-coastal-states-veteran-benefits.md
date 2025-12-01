@@ -1,7 +1,7 @@
 ---
 title: "Best Coastal States for Veteran Benefits 2025"
 description: "Complete guide to best coastal states for military retirees. Compare Atlantic, Pacific, and Gulf Coast states for tax benefits and beach lifestyle."
-date: "2025-12-08"
+date: "2025-12-09"
 category: "Regional Guides"
 tags: ["Coastal States", "Military Retirement", "Beach Lifestyle", "Veteran Benefits", "Naval Heritage"]
 author: "Military Transition Toolkit"

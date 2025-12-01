@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-04"
 ---# Data Visualization Specification: Property Tax Exemptions by Disability Rating Across States
 

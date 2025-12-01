@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 27D Paralegal Specialist to $95K Legal Careers 2025
-date: "2026-03-15"
+date: "2026-03-20"
 TARGET LENGTH: 5-7 minutes
 KEYWORDS: 27D paralegal specialist civilian jobs, paralegal salary
 FILE NAME: youtube-script-27d-paralegal-specialist-civilian-jobs.md

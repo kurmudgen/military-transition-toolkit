@@ -1,6 +1,6 @@
 ---
 title: "46Q Public Affairs Specialist to Communications Director: Complete Career Guide (2025)"
-date: "2026-01-22"
+date: "2026-01-23"
 description: "Leverage your 46Q public affairs experience into $75K-$150K+ corporate communications career. Media relations, crisis communication, and strategic messaging translate directly."
 keywords: "46Q to communications, public affairs civilian career, military PA corporate jobs, 46Q PR manager"
 slug: "46q-public-affairs-to-communications-director"

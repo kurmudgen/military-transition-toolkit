@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-01"
 ---# Test File: Army 11B Career Guide
 

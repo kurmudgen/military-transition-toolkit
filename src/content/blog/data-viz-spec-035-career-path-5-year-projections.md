@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-07"
 ---# Data Visualization Specification #035: Career Path 5-Year Salary Projections
 

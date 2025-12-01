@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-17"
 ---# Feature Gap Matrix - Military Transition Platforms
 

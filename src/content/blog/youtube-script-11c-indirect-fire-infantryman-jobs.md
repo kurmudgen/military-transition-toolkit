@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 11C Indirect Fire Infantryman to $75K Careers 2025
-date: "2026-03-14"
+date: "2026-03-19"
 TARGET LENGTH: 5-7 minutes
 KEYWORDS: 11C mortar infantry civilian jobs
 FILE NAME: youtube-script-11c-indirect-fire-infantryman-jobs.md

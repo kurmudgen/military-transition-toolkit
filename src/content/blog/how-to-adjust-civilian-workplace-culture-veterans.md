@@ -1,6 +1,6 @@
 ---
 title: "How to Adjust to Civilian Workplace Culture: Veterans Guide to Success"
-date: "2025-12-15"
+date: "2025-12-16"
 description: "Military to civilian workplace culture shock, navigating hierarchy differences, communication styles, dress codes, and succeeding in civilian corporate environment."
 keywords: "military to civilian job, workplace culture, workplace transition, corporate culture, military to civilian adjustment"
 slug: "how-to-adjust-civilian-workplace-culture-veterans"

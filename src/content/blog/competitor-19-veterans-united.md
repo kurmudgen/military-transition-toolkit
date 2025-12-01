@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-03"
 ---# Competitor Analysis: Veterans United Home Loans
 

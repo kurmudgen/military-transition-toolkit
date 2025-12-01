@@ -1,6 +1,6 @@
 ---
 title: "42A Human Resources Specialist to Corporate HR Manager: Complete Career Guide (2025)"
-date: "2026-01-22"
+date: "2026-01-23"
 description: "Leverage your 42A experience into $75K-$120K+ corporate HR career. Complete roadmap including certifications (PHR, SHRM-CP), timeline, and salary progression."
 keywords: "42A to HR manager, military HR civilian career, 42A HR certifications, Army HR specialist corporate jobs"
 slug: "42a-human-resources-to-corporate-hr-manager"

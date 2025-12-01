@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 25U Signal Support: $80K Network Tech Jobs 2025
-date: "2026-03-15"
+date: "2026-03-20"
 TARGET LENGTH: 6-8 minutes
 TARGET KEYWORDS: 25U signal support specialist civilian jobs, network technician salary, IT support
 VIDEO FILE NAME: youtube-script-25u-signal-support-specialist-civilian-jobs.md

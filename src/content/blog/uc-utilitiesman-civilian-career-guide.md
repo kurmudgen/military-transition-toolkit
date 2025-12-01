@@ -1,7 +1,7 @@
 ---
 title: "Navy UC (Utilitiesman) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-08-12"
-date: "2026-01-10"
+date: "2026-01-11"
 description: "Real career paths for Navy Utilitiesmen transitioning to civilian life. Includes salary ranges $40K-$121K+, trade certifications, HVAC/plumbing/electrical careers, and licensing requirements."
 keywords: "Navy UC civilian jobs, Utilitiesman career transition, UC to civilian career, Navy Seabee utilities jobs"
 ---

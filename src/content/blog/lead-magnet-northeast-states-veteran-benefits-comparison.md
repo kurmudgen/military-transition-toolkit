@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-11"
 ---# Northeast States Veterans Benefits Comparison Guide
 ## Compare NY, NJ, PA, MA, CT, RI, VT, NH, ME - Find the Best Benefits for You

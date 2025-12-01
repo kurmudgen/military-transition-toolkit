@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-01"
+date: "2026-02-02"
 ---# Competitor Analysis: Military.com Transition Center
 
 **Category:** Comprehensive Platform (Career + Resources)

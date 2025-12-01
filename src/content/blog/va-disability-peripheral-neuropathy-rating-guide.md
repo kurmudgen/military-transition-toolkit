@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Peripheral Neuropathy: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-15"
 description: "How to get VA disability rating for peripheral neuropathy. Rating criteria from 10% to 80%, evidence needed, and Agent Orange presumptive conditions."
 keywords: "VA disability peripheral neuropathy, neuropathy VA rating, diabetic neuropathy VA claim, Agent Orange neuropathy"
 category: "va-disability"

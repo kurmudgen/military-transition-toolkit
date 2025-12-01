@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Gout: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-13"
 description: "How to get VA disability rating for gout. Rating criteria from 20% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability gout, gout VA rating, gout C&P exam, VA claim gout"
 category: "va-disability"

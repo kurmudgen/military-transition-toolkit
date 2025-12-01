@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-07"
 ---# Data Visualization Specification #040: VA Claim Success Rates by Evidence Type
 

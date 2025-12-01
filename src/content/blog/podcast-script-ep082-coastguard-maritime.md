@@ -1,6 +1,6 @@
 ---
 EPISODE #082: Coast Guard to Maritime Security - $105K Private Sector Navigation Career
-date: "2026-01-16"
+date: "2026-01-17"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories  
 TARGET LENGTH: 16-18 minutes

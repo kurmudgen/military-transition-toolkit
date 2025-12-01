@@ -1,7 +1,7 @@
 ---
 title: "VA Rating for Plantar Fasciitis and Foot Pain: Complete Disability Guide"
 description: "Comprehensive guide to VA plantar fasciitis and foot pain ratings, monthly compensation, evidence requirements, and successful filing strategies for foot injury claims."
-date: "2025-12-07"
+date: "2025-12-08"
 category: "VA Benefits"
 tags: ["plantar-fasciitis", "foot-pain", "musculoskeletal", "va-rating", "disability", "claims"]
 author: "Military Transition Toolkit"

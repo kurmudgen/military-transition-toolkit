@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-09"
+date: "2026-02-10"
 ---# Career Transition FAQ
 
 **Last Updated:** November 11, 2024

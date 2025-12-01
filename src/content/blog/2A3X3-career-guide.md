@@ -1,6 +1,5 @@
 ---
-
-date: "2026-01-20"
+date: "2026-01-21"
 ---# 2A3X3 - Tactical Aircraft Maintenance Career Transition Guide
 
 ## Overview

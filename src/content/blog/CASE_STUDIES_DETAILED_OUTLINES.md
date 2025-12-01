@@ -1,6 +1,5 @@
 ---
-
-date: "2026-01-30"
+date: "2026-01-31"
 ---# Detailed Outlines for Remaining Case Studies
 
 ## Overview

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-16"
 ---# LinkedIn Profile Optimization for Veterans
 ## Turn Your Profile Into a Job-Generating Machine

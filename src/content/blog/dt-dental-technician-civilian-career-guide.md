@@ -1,7 +1,7 @@
 ---
 title: "Navy Dental Technician (DT) to Civilian Careers: Complete Transition Roadmap (2024-2025 Salary Data)"
 publishDate: "2026-02-04"
-date: "2026-01-07"
+date: "2026-01-08"
 description: "Real career options for Navy Dental Technicians transitioning to civilian dental careers. Includes salary ranges $38K-$94K+, certification requirements, and pathways to dental hygienist, assistant, and lab tech roles."
 keywords: "Navy Dental Technician civilian jobs, DT to dental hygienist, dental assistant certification, dental lab technician career"
 ---

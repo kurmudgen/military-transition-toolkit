@@ -1,6 +1,6 @@
 ---
 title: "New York Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-02-23"
+date: "2026-02-24"
 description: "Guide to New York veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs."
 keywords: "new york veteran healthcare, new york GI Bill schools, new york veteran jobs, new york VA hospital"
 slug: "ny-veteran-healthcare-education-jobs"

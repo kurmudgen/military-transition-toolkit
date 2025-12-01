@@ -1,5 +1,4 @@
 ---
-
 date: "2025-11-28"
 ---# 25B IT Specialist to Civilian Career Playbook
 ## Your Complete Roadmap from Military IT to High-Paying Tech Careers

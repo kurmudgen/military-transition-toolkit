@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# Landing Page Variant 02: Benefit-Focused
 

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-30"
 ---# California to Texas: $47K in Annual Savings (The Math)
 

@@ -1,6 +1,6 @@
 ---
 title: "12B Combat Engineer to Construction Manager: Complete Career Transition Guide (2025)"
-date: "2026-01-17"
+date: "2026-01-18"
 description: "Transform your 12B Combat Engineer skills into $85K-$140K+ construction management career. Includes certifications, project management paths, and commercial construction opportunities."
 keywords: "12B to construction manager, combat engineer civilian jobs, 12B construction career, military engineer to CM"
 slug: "12b-to-construction-manager"

@@ -1,6 +1,5 @@
 ---
-
-date: "2026-01-19"
+date: "2026-01-20"
 ---# 1N1X1 - Geospatial Intelligence Analyst Career Transition Guide
 
 ## Overview

@@ -1,7 +1,7 @@
 ---
 title: "Navy GSM (Gas Turbine Systems Technician - Mechanical) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-25"
-date: "2026-01-08"
+date: "2026-01-09"
 description: "Real career options for Navy GSM Gas Turbine Systems Technicians transitioning to civilian life. Includes salary ranges $55K-$130K+, required certifications, and mechanical technician career paths."
 keywords: "Navy GSM civilian jobs, Gas Turbine Systems Technician Mechanical career transition, GSM to civilian career, industrial mechanic millwright"
 ---

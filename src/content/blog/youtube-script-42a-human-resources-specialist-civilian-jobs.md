@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 42A HR Specialist: $98K Corporate HR Careers 2025
-date: "2026-03-15"
+date: "2026-03-20"
 TARGET LENGTH: 7-9 minutes
 TARGET KEYWORDS: 42A human resources specialist civilian jobs, veteran HR jobs, HR manager salary
 VIDEO FILE NAME: youtube-script-42a-human-resources-specialist-civilian-jobs.md

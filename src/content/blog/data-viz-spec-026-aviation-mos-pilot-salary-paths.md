@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-06"
 ---# Data Visualization Specification #026: Aviation MOS Pilot Salary Paths
 

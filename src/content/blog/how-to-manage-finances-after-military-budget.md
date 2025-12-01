@@ -1,6 +1,6 @@
 ---
 title: "How to Manage Your Finances After Military: Veteran Budget and Money Guide"
-date: "2025-12-17"
+date: "2025-12-18"
 description: "Veterans' financial planning, budgeting after military, managing military pay-off, VA disability income, separation pay, long-term financial strategy."
 keywords: "veteran finances, military budget, financial planning, managing separation pay, VA disability income, veteran budget guide"
 slug: "how-to-manage-finances-after-military-budget"

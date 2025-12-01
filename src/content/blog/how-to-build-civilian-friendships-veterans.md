@@ -1,6 +1,6 @@
 ---
 title: "How to Build Civilian Friendships After Military: Veteran Social Life Guide"
-date: "2025-12-16"
+date: "2025-12-17"
 description: "Making friends as veteran transitioning to civilian life, overcoming isolation, finding community, why military bonds differ from civilian friendships."
 keywords: "veteran friendships, military social transition, loneliness after military, building community, veteran support networks"
 slug: "how-to-build-civilian-friendships-veterans"

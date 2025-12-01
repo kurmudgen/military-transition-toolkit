@@ -1,6 +1,5 @@
 ---
-
-date: "2026-03-10"
+date: "2026-03-11"
 ---# VA Disability Rating Guide: Back Conditions (Spine/Lumbar/Thoracic)
 
 ## Bottom Line Up Front (BLUF)

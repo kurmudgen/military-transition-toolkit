@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-07"
 ---# Data Visualization Specification #032: Military Leadership Corporate Value
 

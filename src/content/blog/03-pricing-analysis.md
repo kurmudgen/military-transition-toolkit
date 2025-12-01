@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-17"
 ---# Pricing Landscape Analysis - Military Transition Market
 

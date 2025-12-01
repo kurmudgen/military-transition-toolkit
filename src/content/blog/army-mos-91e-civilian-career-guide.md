@@ -1,7 +1,7 @@
 ---
 title: "Army 91E (Allied Trades Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-08"
-date: "2025-12-31"
+date: "2026-01-01"
 description: "Real career options for 91E Allied Trades Specialists transitioning to civilian life. Includes salary ranges $52K-$100K+, welder fabricator careers, machinist jobs, AWS certification, industrial maintenance, and skilled trades paths."
 keywords: "91E civilian jobs, allied trades specialist career transition, welder salary, machinist career, AWS welding certification, fabrication jobs"
 ---

@@ -1,6 +1,6 @@
 ---
 EPISODE #041: When to Walk Away - Red Flags in Job Offers and Company Culture
-date: "2026-03-01"
+date: "2026-03-02"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: red flags, toxic workplace, job offer, company culture, glassdoor, interview warning signs

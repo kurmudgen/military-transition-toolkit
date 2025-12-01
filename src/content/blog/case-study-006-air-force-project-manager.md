@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-30"
 ---# Air Force Logistics Planner to $115K Project Manager in 7 Months
 

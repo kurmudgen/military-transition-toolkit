@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-22"
 ---# 3E5X1 - Engineering Career Transition Guide
 

@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-09"
+date: "2026-02-10"
 ---# 90-Day Veteran SaaS Deployment Strategy
 ## Executive Summary (BLUF)
 

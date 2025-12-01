@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Kidney Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-14"
 description: "How to get VA disability rating for kidney conditions. Rating criteria from 0% to 100%, evidence needed, and C&P exam tips."
 keywords: "VA disability kidney, kidney disease VA rating, nephropathy VA claim, kidney VA disability"
 category: "va-disability"

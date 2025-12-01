@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 15T Helicopter Repairer: $155K Aviation Mechanic 2025
-date: "2026-03-15"
+date: "2026-03-20"
 TARGET LENGTH: 7-9 minutes
 TARGET KEYWORDS: 15T helicopter repairer civilian jobs, A&P mechanic salary, aviation maintenance
 VIDEO FILE NAME: youtube-script-15t-helicopter-repairer-civilian-jobs.md

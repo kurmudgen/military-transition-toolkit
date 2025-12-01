@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-27"
 ---# PENETRATION TEST EXECUTION MANUAL
 ## Military Transition Application - Pre-Launch Security Testing

@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Military Sexual Trauma (MST): Complete Guide"
 description: "How to file VA disability claim for PTSD resulting from military sexual trauma. Evidence, filing strategies, and proof of trauma requirements."
-date: "2026-03-12"
+date: "2026-03-15"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Military Sexual Trauma", "MST", "PTSD", "Sexual Assault"]

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-05"
 ---# Data Visualization Specification #018: State Park and Recreation Access for Veterans
 

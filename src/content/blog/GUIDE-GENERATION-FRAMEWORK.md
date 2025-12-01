@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-12"
 ---# Air Force AFSC Career Guide Generation Framework
 

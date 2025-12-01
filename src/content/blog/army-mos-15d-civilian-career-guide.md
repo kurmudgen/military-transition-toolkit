@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 15D (Aircraft Powertrain Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-01-07"
-date: "2025-12-21"
+date: "2025-12-22"
 description: "Real career options for 15D aircraft powertrain repairers transitioning to civilian life. Includes salary ranges $50K-$155K+, A&P mechanic, helicopter transmission, drivetrain specialist, and aviation opportunities."
 keywords: "15D civilian jobs, aircraft powertrain repairer career transition, helicopter transmission mechanic, A&P mechanic salary, 15D to civilian career"
 ---

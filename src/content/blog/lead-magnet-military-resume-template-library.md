@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-16"
 ---# Military to Civilian Resume Template Library
 ## 15 Battle-Tested Resume Templates for Every MOS and Career Path

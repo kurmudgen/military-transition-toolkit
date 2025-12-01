@@ -1,6 +1,5 @@
 ---
-
-date: "2026-01-24"
+date: "2026-01-25"
 ---# Quick Reference: Web Search Queries by AFSC Category
 
 ## Copy-Paste Search Query Templates

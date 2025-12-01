@@ -1,7 +1,7 @@
 ---
 title: "VA Rating for Migraines and Headaches: Compensation Guide"
 description: "Complete guide to VA migraine and headache ratings (10%-100%), compensation amounts, evidence requirements, and proven filing strategies."
-date: "2025-12-07"
+date: "2025-12-08"
 category: "VA Benefits"
 tags: ["migraines", "headaches", "va-rating", "pain-management", "disability", "claims"]
 author: "Military Transition Toolkit"

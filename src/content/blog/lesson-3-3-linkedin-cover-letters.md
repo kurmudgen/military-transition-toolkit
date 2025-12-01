@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-17"
 ---# Lesson 3.3: Cover Letters and LinkedIn
 

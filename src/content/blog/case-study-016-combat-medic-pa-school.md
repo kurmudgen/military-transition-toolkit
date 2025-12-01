@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-30"
 ---# Combat Medic to PA School: The 2-Year Journey to $110K
 

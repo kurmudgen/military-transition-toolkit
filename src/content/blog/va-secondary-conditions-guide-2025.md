@@ -1,6 +1,6 @@
 ---
 title: "VA Secondary Conditions: Complete Database of What You Can Claim (2025)"
-date: "2026-03-13"
+date: "2026-03-18"
 description: "Complete guide to VA secondary conditions. Common pathways (PTSD→sleep apnea, back pain→knee injury), medical nexus requirements, and how to file successful claims."
 keywords: "VA secondary conditions, secondary conditions VA, VA secondary claims"
 ---

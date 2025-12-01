@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-02"
+date: "2026-02-03"
 ---# Competitor Analysis: Veterati (Now Sunset - MilMentor Successor)
 
 **Category:** Career Services - Mentorship Platform

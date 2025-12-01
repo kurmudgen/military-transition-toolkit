@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-22"
 ---# MVP Testing Report - Military Transition Toolkit
 

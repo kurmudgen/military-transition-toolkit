@@ -1,7 +1,7 @@
 ---
 title: "MOS 6156 Helicopter/Tiltrotor Airframe/Powerplant/Hydraulics Branch Chief to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-01"
-date: "2026-01-14"
+date: "2026-01-15"
 description: "Real career options for Marine 6156 APH Branch Chiefs transitioning to civilian aviation. Includes salary ranges $70K-$145K+, A&P license pathways, and maintenance management roles."
 keywords: "6156 MOS civilian jobs, helicopter airframe chief career transition, Marine aviation maintenance management, A&P license leadership roles"
 ---

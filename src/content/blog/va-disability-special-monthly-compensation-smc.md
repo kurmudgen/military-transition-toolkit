@@ -1,7 +1,7 @@
 ---
 title: "VA Special Monthly Compensation (SMC): Complete Guide to Higher Payments"
 description: "Guide to VA Special Monthly Compensation. Learn SMC rating schedules, when you qualify, and how to increase monthly payments beyond standard rates."
-date: "2026-03-12"
+date: "2026-03-17"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Special Monthly Compensation", "SMC", "Higher Payments", "Compensation Rates"]

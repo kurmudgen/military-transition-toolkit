@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Major Depressive Disorder: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-15"
 description: "How to get VA disability rating for major depressive disorder (depression). Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability depression, major depressive disorder VA rating, depression C&P exam, VA claim depression, MDD rating"
 category: "va-disability"

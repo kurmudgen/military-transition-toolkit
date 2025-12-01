@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-26"
 ---# BAH Comparison Tool - Build Research
 

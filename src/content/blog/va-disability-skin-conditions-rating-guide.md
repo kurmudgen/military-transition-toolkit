@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Skin Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-16"
 description: "How to get VA disability rating for skin conditions including eczema, psoriasis, dermatitis. Rating criteria from 0% to 60%, evidence needed, and C&P exam tips."
 keywords: "VA disability skin conditions, eczema VA rating, psoriasis VA claim, dermatitis VA disability"
 category: "va-disability"

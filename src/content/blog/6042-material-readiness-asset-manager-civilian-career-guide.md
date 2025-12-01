@@ -1,7 +1,7 @@
 ---
 title: "MOS 6042 Individual Material Readiness List Asset Manager to Civilian: Complete Aviation Career Transition Guide"
 publishDate: "2026-04-22"
-date: "2026-01-12"
+date: "2026-01-13"
 description: "Career paths for 6042 IMRL Asset Managers transitioning to civilian aviation. Includes salary data $55K-$95K+, A&P pathways, and aviation logistics careers."
 keywords: "6042 MOS civilian jobs, Marine aviation logistics careers, IMRL asset manager transition, aviation supply chain jobs"
 ---

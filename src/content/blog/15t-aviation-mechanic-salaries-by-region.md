@@ -3,7 +3,7 @@ title: "15T Aviation Mechanic Salaries by Region: Commercial Airlines, Cargo, an
 description: "Complete salary analysis for 15T aviation mechanics by region, airline type, and specialization earning potential"
 slug: "15t-aviation-mechanic-salaries-by-region"
 author: "Military Transition Toolkit"
-date: "2026-01-18"
+date: "2026-01-19"
 category: "Salaries"
 tags: ["15T", "Aviation Mechanic", "Salaries", "Region"]
 ---

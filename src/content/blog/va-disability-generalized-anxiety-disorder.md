@@ -1,6 +1,5 @@
 ---
-
-date: "2026-03-11"
+date: "2026-03-13"
 ---# VA Disability Rating Guide: Generalized Anxiety Disorder (GAD)
 
 ## Bottom Line Up Front (BLUF)

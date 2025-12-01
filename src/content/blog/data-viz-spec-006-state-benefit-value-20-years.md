@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# Data Visualization Specification 006: State Benefit Value Over 20 Years
 

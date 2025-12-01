@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# 92Y Supply Specialist to Civilian Career Guide
 ## Turn Your Logistics Experience Into $45K-$110K Supply Chain, Warehouse & Procurement Careers

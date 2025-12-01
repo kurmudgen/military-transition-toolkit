@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-05"
+date: "2026-02-06"
 ---# Data Visualization Specification #020: Top 10 States for Overall Veteran Benefits
 
 ## Overview

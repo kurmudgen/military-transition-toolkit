@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Fibromyalgia: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-12"
 description: "How to get VA disability rating for fibromyalgia. Rating criteria from 10% to 40%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability fibromyalgia, fibromyalgia VA rating, fibromyalgia C&P exam, VA claim fibromyalgia"
 category: "va-disability"

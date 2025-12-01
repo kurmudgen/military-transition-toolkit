@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-15"
 ---# Landing Page Variant 05: Urgency/Scarcity
 

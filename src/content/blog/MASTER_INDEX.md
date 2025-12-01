@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-18"
 ---# Master Index - 200 YouTube Video Scripts for Veteran Transition
 

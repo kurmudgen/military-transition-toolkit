@@ -1,6 +1,5 @@
 ---
-
-date: "2026-01-29"
+date: "2026-01-30"
 ---# E7 Supply Sergeant to $120K Logistics Manager Without a Degree
 
 ## Quick Facts

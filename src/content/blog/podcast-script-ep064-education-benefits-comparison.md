@@ -1,6 +1,6 @@
 ---
 EPISODE #064: Education Benefits Comparison - GI Bill, VR&E, and Tuition Assistance Strategy
-date: "2026-03-03"
+date: "2026-03-04"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 24-26 minutes (3,600-3,900 words)
 KEYWORDS: GI Bill comparison, Tuition Assistance, education benefits strategy, Montgomery GI Bill, Post 9/11 GI Bill

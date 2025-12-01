@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-19"
 ---# 1D7X1 - Cyber Defense Operations Career Transition Guide
 

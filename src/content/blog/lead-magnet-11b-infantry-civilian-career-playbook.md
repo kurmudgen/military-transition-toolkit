@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# 11B Infantry to Civilian Career Playbook
 ## Your Complete Roadmap from Combat Arms to High-Paying Civilian Career

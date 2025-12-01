@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Lower Back Strain: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-14"
 description: "How to get VA disability rating for lower back strain (lumbosacral strain). Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability lower back, lumbosacral strain VA rating, back pain VA claim, VA disability back injury, back strain C&P exam"
 category: "va-disability"

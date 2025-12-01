@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Diabetes Type 2: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-12"
 description: "How to get VA disability rating for Type 2 diabetes. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability diabetes, Type 2 diabetes VA rating, diabetes C&P exam, VA claim diabetes, Agent Orange diabetes"
 category: "va-disability"

@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Hearing Loss: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-13"
 description: "How to get VA disability rating for hearing loss. Rating criteria from 0% to 100%, how the VA calculates ratings, evidence needed, and C&P exam tips."
 keywords: "VA disability hearing loss, hearing loss VA rating, hearing loss C&P exam, VA claim hearing loss, bilateral hearing loss rating"
 category: "va-disability"

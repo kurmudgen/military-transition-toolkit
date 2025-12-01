@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-17"
 ---# Executive Summary: Competitive Analysis of Military Transition Platforms
 

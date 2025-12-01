@@ -1,7 +1,7 @@
 ---
 title: "Army 68J Medical Logistics Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-20"
-date: "2025-12-28"
+date: "2025-12-29"
 description: "Real career options for Army Medical Logistics Specialists transitioning to civilian life. Includes salary ranges $49K-$137K+, healthcare supply chain careers, CMRP/CPSM certification ($275-$1,485), major employers including HCA Healthcare and Kaiser Permanente, and VA logistics opportunities."
 keywords: "Army 68J civilian jobs, medical logistics specialist career transition, healthcare supply chain salary, CMRP certification, 68J to civilian supply chain career"
 ---

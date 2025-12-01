@@ -1,7 +1,7 @@
 ---
 title: "Army Internment/Resettlement Specialist (31E) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-25"
-date: "2025-12-25"
+date: "2025-12-26"
 description: "Real career options for Army I/R Specialists transitioning to civilian life. Includes salary ranges $55K-$120K+, corrections officer, probation/parole, federal Bureau of Prisons, detention facilities, and security management opportunities."
 keywords: "Army 31E civilian jobs, corrections officer career, internment resettlement specialist transition, federal BOP career, detention officer salary, probation officer jobs"
 ---

@@ -1,6 +1,6 @@
 ---
 DOCUMENT: VSO Partnership One-Pager
-date: "2026-02-25"
+date: "2026-02-26"
 TYPE: One-Pager
 AUDIENCE: Veterans Service Organizations
 PAGES: 1 (front/back)

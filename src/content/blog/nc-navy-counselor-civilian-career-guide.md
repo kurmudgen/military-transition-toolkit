@@ -1,6 +1,6 @@
 ---
 title: "Navy NC (Counselor) to Civilian: Complete Career Transition Guide (With 2024-2025 Salary Data)"
-date: "2026-01-09"
+date: "2026-01-10"
 description: "Real civilian career paths for Navy Counselors transitioning to career counseling, HR management, recruiting, and talent acquisition. Includes salary ranges $45K-$125K+, required certifications, and skills translation."
 keywords: "Navy Counselor civilian jobs, NC career transition, Navy NC to HR, NC recruiter career"
 ---

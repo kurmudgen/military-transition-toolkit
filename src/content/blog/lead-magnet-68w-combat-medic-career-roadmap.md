@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# 68W Combat Medic Career Roadmap
 ## Your Path from Combat Medicine to High-Paying Healthcare Careers

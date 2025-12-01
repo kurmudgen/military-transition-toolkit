@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Cervical Strain (Neck): Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-11"
 description: "How to get VA disability rating for cervical strain and neck conditions. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability neck, cervical strain VA rating, neck pain VA claim, cervical spine VA disability"
 category: "va-disability"

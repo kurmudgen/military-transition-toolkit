@@ -1,6 +1,6 @@
 ---
 title: "15T Aviation Mechanic to Aviation Maintenance Manager: Complete Career Transition Guide (2025)"
-date: "2026-01-18"
+date: "2026-01-19"
 description: "Transform your 15T UH-60 maintenance skills into $75K-$145K+ aviation management career. Includes A&P certification roadmap, FAA pathways, and aviation industry roles."
 keywords: "15T to aviation manager, UH-60 mechanic civilian career, 15T A&P license, military aviation to civilian"
 slug: "15t-aviation-mechanic-to-aviation-maintenance-manager"

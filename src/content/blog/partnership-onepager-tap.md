@@ -1,6 +1,6 @@
 ---
 DOCUMENT: TAP Integration One-Pager
-date: "2026-02-25"
+date: "2026-02-26"
 TYPE: One-Pager
 AUDIENCE: Military Installations
 PAGES: 1

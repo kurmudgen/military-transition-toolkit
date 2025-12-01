@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0231 Intelligence Specialist to Civilian: Complete Career Transition Guide (2025 Salaries)"
 publishDate: "2025-12-10"
-date: "2026-01-02"
+date: "2026-01-03"
 description: "Comprehensive career guide for 0231 Intelligence Specialists. Defense contractor analyst roles $75K-$135K+, federal intelligence positions $65K-$130K, private sector intelligence, and analytical careers with 2025 salary data."
 keywords: "0231 MOS civilian jobs, intelligence specialist careers, Marine intelligence analyst jobs, 0231 career transition, all-source intelligence analyst"
 ---

@@ -1,6 +1,6 @@
 ---
 EPISODE #054: Filing for VA Rating Increases - When Your Condition Gets Worse
-date: "2026-03-02"
+date: "2026-03-03"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 20-22 minutes (3,000-3,500 words)
 KEYWORDS: VA rating increase, claim for increase, worsening condition, effective date, VA backpay

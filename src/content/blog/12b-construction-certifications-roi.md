@@ -3,7 +3,7 @@ title: "12B Combat Engineer to Construction Manager: PMP, DBIA, and Certificatio
 description: "Comprehensive ROI analysis for 12B combat engineers transitioning to construction management with PMP, DBIA, and professional certifications"
 slug: "12b-construction-certifications-roi"
 author: "Military Transition Toolkit"
-date: "2026-01-17"
+date: "2026-01-18"
 category: "Certifications"
 tags: ["12B", "Combat Engineer", "PMP", "DBIA", "Construction Manager"]
 ---

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-15"
 ---# Best States for 100% Disabled Veterans
 ## Complete 2025 Rankings & Comparison Guide

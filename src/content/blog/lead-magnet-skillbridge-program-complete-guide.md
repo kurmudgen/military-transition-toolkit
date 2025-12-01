@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-16"
 ---# SkillBridge Program Complete Guide
 ## How to Land a Corporate Internship During Your Last 180 Days of Service (60-80% Get Hired!)

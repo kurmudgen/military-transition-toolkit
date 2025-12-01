@@ -1,6 +1,5 @@
 ---
-
-date: "2026-03-08"
+date: "2026-03-09"
 ---# State Veteran Benefits - All 30 Video Scripts
 
 Complete guides for veteran benefits across all 50 states, organized by priority and topic.

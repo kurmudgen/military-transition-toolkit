@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Ankle Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-11"
 description: "How to get VA disability rating for ankle conditions. Rating criteria for limitation of motion, instability, and ankle injuries. Evidence needed and C&P exam tips."
 keywords: "VA disability ankle, ankle VA rating, ankle injury VA claim, ankle instability VA disability"
 category: "va-disability"

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-22"
 ---# Navy Ratings - All 30 Career Transition Scripts
 

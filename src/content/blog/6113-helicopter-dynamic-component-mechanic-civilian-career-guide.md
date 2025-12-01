@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6113 Helicopter Dynamic Component Mechanic to Civilian: Complete Career Transition Guide (2025)"
 publishDate: "2026-05-27"
-date: "2026-01-13"
+date: "2026-01-14"
 description: "Real career options for 6113 Helicopter/Tiltrotor Dynamic Component Mechanics transitioning to civilian aviation. Includes A&P license pathway, transmission specialist careers, MRO roles with salaries $60K-$95K+."
 keywords: "6113 MOS civilian jobs, helicopter dynamic component mechanic civilian career, Marine transmission mechanic transition, helicopter mechanic A&P"
 ---

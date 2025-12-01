@@ -1,6 +1,5 @@
 ---
-
-date: "2026-03-11"
+date: "2026-03-12"
 ---# VA Disability Rating Guide: Diabetes Mellitus (Type 1 & Type 2)
 
 ## Bottom Line Up Front (BLUF)

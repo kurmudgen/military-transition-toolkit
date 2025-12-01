@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-03"
 ---# COMPLETED LEAD MAGNET GUIDES - MASTER INDEX
 ## 27 Comprehensive Guides Complete | 23 Remaining in Outline Form

@@ -1,6 +1,5 @@
 ---
-
-date: "2026-01-20"
+date: "2026-01-21"
 ---# 2A5X1 - Airlift/Special Mission Aircraft Maintenance Career Transition Guide
 
 ## Overview

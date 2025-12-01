@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-11"
 ---# Complete Texas Veteran Benefits Guide 2025
 ## Your Total Roadmap to Maximizing Texas's Veteran Benefits

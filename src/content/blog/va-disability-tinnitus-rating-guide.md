@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Tinnitus: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-17"
 description: "How to get VA disability rating for tinnitus. Rating criteria, evidence needed, C&P exam tips, and secondary conditions. The #1 most claimed VA disability explained."
 keywords: "VA disability tinnitus, tinnitus VA rating, tinnitus C&P exam, VA claim tinnitus, 10 percent tinnitus"
 category: "va-disability"

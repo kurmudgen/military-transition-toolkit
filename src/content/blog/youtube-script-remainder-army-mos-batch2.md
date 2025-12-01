@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-16"
 ---# Remaining Army MOS Scripts - Batch 2 (Final Army MOSs)
 

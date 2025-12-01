@@ -1,7 +1,7 @@
 ---
 title: "Best Southeast States for Military Retirees 2025"
 description: "Complete guide to best Southeast states for military retirement. Compare military retirement tax benefits, cost of living, healthcare, and lifestyle."
-date: "2026-01-28"
+date: "2026-01-29"
 category: "Regional Guides"
 tags: ["Military Retirement", "Southeast", "Veterans Benefits", "State Comparison", "Cost of Living"]
 author: "Military Transition Toolkit"

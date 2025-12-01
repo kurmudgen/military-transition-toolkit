@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Dental Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-12"
 description: "How to get VA disability rating and dental treatment for dental conditions. Rating criteria, service-connected dental trauma, and VA dental eligibility."
 keywords: "VA disability dental, dental trauma VA rating, VA dental care, jaw condition VA claim"
 category: "va-disability"

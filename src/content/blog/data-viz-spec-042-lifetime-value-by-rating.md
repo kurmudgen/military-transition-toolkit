@@ -1,6 +1,5 @@
 ---
-
-date: "2026-02-07"
+date: "2026-02-08"
 ---# Data Visualization Specification #042: Lifetime Value of VA Disability by Rating Level
 
 ## 1. Overview

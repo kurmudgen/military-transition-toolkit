@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Degenerative Arthritis: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-12"
 description: "How to get VA disability rating for degenerative arthritis (osteoarthritis). Rating criteria, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability arthritis, degenerative arthritis VA rating, osteoarthritis VA claim, DJD VA disability"
 category: "va-disability"

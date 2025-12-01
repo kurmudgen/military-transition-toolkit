@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Knee Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-14"
 description: "How to get VA disability rating for knee conditions. Rating criteria for limitation of flexion, extension, instability, and other knee problems. Evidence needed and C&P exam tips."
 keywords: "VA disability knee, knee VA rating, knee C&P exam, VA claim knee injury, knee flexion rating"
 category: "va-disability"

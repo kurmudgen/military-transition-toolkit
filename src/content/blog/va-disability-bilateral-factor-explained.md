@@ -1,7 +1,7 @@
 ---
 title: "VA Bilateral Factor Explained: How It Increases Your Disability Rating"
 description: "Complete guide to VA bilateral factor rating adjustments. Learn how having conditions on both sides increases disability compensation."
-date: "2026-03-10"
+date: "2026-03-11"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Bilateral Factor", "Rating Increase", "Compensation"]

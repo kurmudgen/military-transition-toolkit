@@ -1,7 +1,7 @@
 ---
 title: "Kentucky vs Indiana Veterans Guide: Comparison 2025"
 description: "Compare Kentucky and Indiana for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and Appalachian/Midwest opportunities."
-date: "2026-02-13"
+date: "2026-02-14"
 category: "State Comparisons"
 tags: ["Kentucky", "Indiana", "Veterans Benefits", "Upper South", "Military Retirement"]
 author: "Military Transition Toolkit"

@@ -1,6 +1,6 @@
 ---
 title: "How to Transition to Supply Chain Management: Military Logistics to Civilian Career"
-date: "2025-12-18"
+date: "2025-12-19"
 description: "92A, 92Y logistics to supply chain manager, procurement specialist, APICS certification, salary expectations and career progression."
 keywords: "supply chain management, logistics career, APICS CSCP, procurement specialist, supply chain certification, military logistics"
 slug: "how-to-transition-military-logistics-supply-chain"

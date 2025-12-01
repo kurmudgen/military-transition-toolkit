@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-05"
 ---# Data Visualization Specification #015: State Tuition Waiver Programs for Veterans and Dependents
 

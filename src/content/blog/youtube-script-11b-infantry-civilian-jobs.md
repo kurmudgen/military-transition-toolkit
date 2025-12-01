@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 11B Infantry to Civilian Jobs: $80K+ Career Path 2025
-date: "2025-12-05"
+date: "2025-12-06"
 TARGET LENGTH: 8-10 minutes
 TARGET KEYWORDS: 11B infantry civilian jobs, infantry veteran careers, military transition jobs
 VIDEO FILE NAME: youtube-script-11b-infantry-civilian-jobs.md

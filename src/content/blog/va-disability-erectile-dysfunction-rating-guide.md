@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Erectile Dysfunction: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-12"
 description: "How to get VA disability rating for erectile dysfunction (ED). Rating criteria, SMC-K, evidence needed, and secondary conditions."
 keywords: "VA disability erectile dysfunction, ED VA rating, erectile dysfunction VA claim, SMC-K"
 category: "va-disability"

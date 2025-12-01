@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Irritable Bowel Syndrome (IBS): Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-14"
 description: "How to get VA disability rating for IBS. Rating criteria from 0% to 30%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability IBS, irritable bowel syndrome VA rating, IBS C&P exam, VA claim IBS"
 category: "va-disability"

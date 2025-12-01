@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for PTSD: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-15"
 description: "How to get VA disability rating for PTSD. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and stressor documentation requirements."
 keywords: "VA disability PTSD, PTSD VA rating, PTSD C&P exam, VA claim PTSD, combat PTSD rating"
 category: "va-disability"

@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 74D CBRN Specialist: $95K Hazmat & Emergency Mgmt 2025
-date: "2026-03-15"
+date: "2026-03-20"
 TARGET LENGTH: 6-8 minutes
 TARGET KEYWORDS: 74D CBRN specialist civilian jobs, hazmat technician salary, emergency management
 VIDEO FILE NAME: youtube-script-74d-cbrn-specialist-civilian-jobs.md

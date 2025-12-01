@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-21"
 ---# 3D0X2 - Cyber Systems Operations Career Transition Guide
 

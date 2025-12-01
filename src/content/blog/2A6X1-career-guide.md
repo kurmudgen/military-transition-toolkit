@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-21"
 ---# 2A6X1 - Aerospace Propulsion Career Transition Guide
 

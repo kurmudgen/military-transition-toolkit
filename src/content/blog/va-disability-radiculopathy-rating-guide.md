@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Radiculopathy: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-16"
 description: "How to get VA disability rating for radiculopathy (upper and lower extremities). Rating criteria from 10% to 80%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability radiculopathy, radiculopathy VA rating, nerve pain VA claim, sciatica VA disability, lumbar radiculopathy rating"
 category: "va-disability"

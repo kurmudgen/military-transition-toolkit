@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-23"
 ---# 4N0X1 - Aerospace Medical Service Career Transition Guide
 

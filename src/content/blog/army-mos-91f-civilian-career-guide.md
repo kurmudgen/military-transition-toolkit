@@ -1,7 +1,7 @@
 ---
 title: "Army 91F (Small Arms/Artillery Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-08"
-date: "2025-12-31"
+date: "2026-01-01"
 description: "Real career options for 91F Small Arms/Artillery Repairers transitioning to civilian life. Includes salary ranges $45K-$85K+, gunsmith careers, firearms manufacturing, defense contractors, law enforcement armorer jobs, and sporting goods opportunities."
 keywords: "91F civilian jobs, small arms repairer career transition, gunsmith salary, firearms technician, armorer jobs, defense contractor careers"
 ---

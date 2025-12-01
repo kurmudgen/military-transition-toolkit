@@ -1,6 +1,6 @@
 ---
 title: "VA Nexus Letters: What They Are, When You Need One, and How to Get One (2025)"
-date: "2026-03-13"
+date: "2026-03-18"
 description: "Nexus letters cost $400-$2K but can make or break your VA claim. Learn what makes a valid nexus letter, which conditions need them, and how to avoid scams."
 keywords: "nexus letter, VA nexus letter, nexus letter VA, what is a nexus letter, nexus letter cost, nexus letter example"
 slug: "va-nexus-letter-complete-guide"

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-18"
 ---# Military Transition Toolkit - Premium Courses Master Summary
 

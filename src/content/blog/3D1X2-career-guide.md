@@ -1,6 +1,5 @@
 ---
-
-date: "2026-01-21"
+date: "2026-01-22"
 ---# 3D1X2 - Cyber Transport Systems Career Transition Guide
 
 ## Overview

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-22"
 ---# 3E0X2 - Electrical Power Production Career Transition Guide
 

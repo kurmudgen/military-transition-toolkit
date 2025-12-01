@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-16"
 ---# VA Appeal Strategy Workbook
 ## HLR vs. Supplemental vs. Board Appeal - Which Path Gets You the Rating You Deserve?

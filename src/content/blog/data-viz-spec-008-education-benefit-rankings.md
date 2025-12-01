@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# Data Visualization Specification 008: Education Benefit Rankings
 

@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-09"
 ---# Example: Speed Generation Walkthrough for 11F Fighter Pilot
 

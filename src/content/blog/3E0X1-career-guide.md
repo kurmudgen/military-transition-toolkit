@@ -1,5 +1,4 @@
 ---
-
 date: "2026-01-22"
 ---# 3E0X1 - Electrical Systems Career Transition Guide
 

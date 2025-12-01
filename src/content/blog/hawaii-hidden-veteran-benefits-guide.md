@@ -2,7 +2,7 @@
 title: "Hawaii Hidden Veteran Benefits Guide: Tax Breaks and Exclusive Programs 2025"
 description: "Discover Hawaii's secret veteran benefits including military pension tax exemptions, medical benefits, housing programs, and state-specific financial advantages for service members."
 author: "Military Transition Toolkit"
-date: "2025-12-09"
+date: "2025-12-10"
 tags: ["Hawaii", "Veteran Benefits", "Tax Exemptions", "Military Housing", "Island Benefits"]
 category: "State Benefits"
 featured: true

@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-11"
 ---# Complete Virginia Veteran Benefits Guide 2025
 ## Your Total Roadmap to Maximizing Virginia's Veteran Benefits

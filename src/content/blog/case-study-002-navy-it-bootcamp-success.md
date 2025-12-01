@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-04"
 ---# Navy IT to Software Developer: How Bootcamp Changed Everything
 

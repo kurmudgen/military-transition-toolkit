@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Plantar Fasciitis: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-15"
 description: "How to get VA disability rating for plantar fasciitis. Rating criteria from 0% to 50%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability plantar fasciitis, plantar fasciitis VA rating, foot pain VA claim, heel pain VA disability"
 category: "va-disability"

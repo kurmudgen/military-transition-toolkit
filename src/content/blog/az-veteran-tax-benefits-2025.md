@@ -1,6 +1,6 @@
 ---
 title: "Arizona Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-01-25"
+date: "2026-01-26"
 description: "Complete guide to Arizona veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans."
 keywords: "Arizona veteran benefits, Arizona property tax exemption veterans, Arizona veteran income tax, Arizona disabled veteran benefits"
 slug: "az-veteran-tax-benefits-2025"

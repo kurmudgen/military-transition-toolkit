@@ -1,6 +1,6 @@
 ---
 title: "Best Companies for 89D EOD Technicians: Top Employers (2025)"
-date: "2026-01-27"
+date: "2026-01-28"
 description: "Top 15+ companies actively hiring 89D EOD veterans with salaries $85K-$200K+. Includes federal agencies, contracting firms, and hazmat specialists."
 keywords: "89D EOD technician jobs, ordnance disposal, hazmat careers, federal employment"
 slug: "best-companies-89d-eod-technicians"

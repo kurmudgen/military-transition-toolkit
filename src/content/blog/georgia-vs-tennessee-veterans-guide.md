@@ -1,7 +1,7 @@
 ---
 title: "Georgia vs Tennessee Veterans Guide: Complete Comparison 2025"
 description: "Compare Georgia and Tennessee for military retirees. Analyze military retirement tax benefits, cost of living, VA healthcare, and job opportunities."
-date: "2026-02-11"
+date: "2026-02-12"
 category: "State Comparisons"
 tags: ["Georgia", "Tennessee", "Veterans Benefits", "Military Retirement", "Southeast"]
 author: "Military Transition Toolkit"

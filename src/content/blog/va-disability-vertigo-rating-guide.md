@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Vertigo: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-18"
 description: "How to get VA disability rating for vertigo and vestibular disorders. Rating criteria from 10% to 100%, evidence needed, and C&P exam tips."
 keywords: "VA disability vertigo, vertigo VA rating, Meniere's disease VA claim, vestibular disorder VA disability"
 category: "va-disability"

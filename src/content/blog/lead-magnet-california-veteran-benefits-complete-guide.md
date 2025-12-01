@@ -1,6 +1,5 @@
 ---
-
-date: "2025-12-10"
+date: "2025-12-11"
 ---# Complete California Veteran Benefits Guide 2025
 ## Your Total Roadmap to Maximizing California's Veteran Benefits
 **By Jacob, Navy E6 | Formation Labs**

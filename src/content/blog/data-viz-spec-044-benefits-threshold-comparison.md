@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-08"
 ---# Data Visualization Specification #044: VA Disability Benefits Threshold Comparison
 

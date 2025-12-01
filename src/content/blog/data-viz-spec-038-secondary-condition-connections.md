@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-07"
 ---# Data Visualization Specification #038: Secondary Condition Connections Network Diagram
 

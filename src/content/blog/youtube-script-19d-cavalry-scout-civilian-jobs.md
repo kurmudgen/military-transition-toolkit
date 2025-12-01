@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 19D Cavalry Scout: Law Enforcement & Security $80K 2025
-date: "2026-03-15"
+date: "2026-03-20"
 TARGET LENGTH: 6-8 minutes
 TARGET KEYWORDS: 19D cavalry scout civilian jobs, veteran security jobs, scout to police
 VIDEO FILE NAME: youtube-script-19d-cavalry-scout-civilian-jobs.md

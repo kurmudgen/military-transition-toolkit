@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-11"
 ---# Southern States Veterans Benefits Comparison Guide
 ## Compare TX, FL, GA, NC, SC, VA, TN, AL, MS, LA, AR, KY, WV - Find the Best Benefits

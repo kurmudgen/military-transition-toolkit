@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-18"
 ---# Marine Corps MOSs - All 25 Career Transition Scripts
 

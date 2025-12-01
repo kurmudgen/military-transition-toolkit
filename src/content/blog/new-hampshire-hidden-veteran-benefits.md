@@ -2,7 +2,7 @@
 title: "New Hampshire Hidden Veteran Benefits: No Sales Tax + Tax Breaks 2025"
 description: "Discover New Hampshire's overlooked veteran benefits including no sales tax advantage, property tax exemptions, education credits, and military hiring preferences."
 author: "Military Transition Toolkit"
-date: "2025-12-12"
+date: "2025-12-13"
 tags: ["New Hampshire", "Veteran Benefits", "Tax Exemptions", "No Sales Tax", "Property Tax"]
 category: "State Benefits"
 featured: true

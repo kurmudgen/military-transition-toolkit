@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Asthma: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-01"
+date: "2026-03-11"
 description: "How to get VA disability rating for asthma. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability asthma, asthma VA rating, asthma C&P exam, VA claim asthma, bronchial asthma"
 category: "va-disability"

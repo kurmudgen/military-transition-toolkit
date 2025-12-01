@@ -1,5 +1,4 @@
 ---
-
 date: "2025-12-07"
 ---# C&P Exam Preparation Guide for Veterans
 ## How to Properly Prepare for Your Compensation & Pension Exam and Maximize Your VA Rating

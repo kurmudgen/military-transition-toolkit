@@ -1,7 +1,7 @@
 ---
 title: "MOS 6173 Fixed-Wing Aircraft Maintenance Chief to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-08"
-date: "2026-01-14"
+date: "2026-01-15"
 description: "Real career options for Marine 6173 Fixed-Wing Maintenance Chiefs transitioning to airlines and aviation. Includes salary ranges $75K-$150K+, A&P license pathways, and airline management careers."
 keywords: "6173 MOS civilian jobs, fixed-wing maintenance chief career transition, Marine aviation management careers, airline maintenance supervisor jobs"
 ---

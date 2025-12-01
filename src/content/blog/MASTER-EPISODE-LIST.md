@@ -1,5 +1,4 @@
 ---
-
 date: "2026-02-18"
 ---# Veteran Transition Blueprint Podcast - Master Episode List
 ## 100 Complete Episodes

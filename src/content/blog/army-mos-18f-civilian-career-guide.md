@@ -1,7 +1,7 @@
 ---
 title: "Army Special Forces Intelligence Sergeant (18F) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-18"
-date: "2025-12-23"
+date: "2025-12-24"
 description: "Real career options for Special Forces Intelligence Sergeants (18F) transitioning to civilian life. Includes salary ranges $90K-$200K+, intelligence analyst, CIA careers, defense intelligence, cybersecurity, and federal intelligence opportunities."
 keywords: "18F civilian jobs, Special Forces Intelligence career, Green Beret intel jobs, CIA analyst salary, defense intelligence contractor, cleared intelligence analyst"
 ---
