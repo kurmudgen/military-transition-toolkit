@@ -1,0 +1,155 @@
+Air Force AFSC Guide Generation - Started: 2025-11-28 07:44 UTC
+═══════════════════════════════════════════════════════════════
+COMPLETED:
+✓ 1B4X1 - Cyberspace Defense Operations - 2025-11-28 07:45
+✓ 3D0X1 - Knowledge Operations Management - 2025-11-28 07:46
+✓ 3D0X2 - Cyber Systems Operations - 2025-11-28 07:47
+✓ 3D0X3 - Cyber Surety - 2025-11-28 07:48
+✓ 3D0X4 - Computer Systems Programming - 2025-11-28 07:49
+✓ 3D1X1 - Client Systems - 2025-11-28 07:50
+✓ 3D1X2 - Cyber Transport Systems - 2025-11-28 07:51
+✓ 3D1X3 - RF Transmission Systems - 2025-11-28 07:52
+✓ 3D1X4 - Spectrum Operations - 2025-11-28 07:53
+✓ 3D1X7 - Cable and Antenna Systems - 2025-11-28 07:54
+
+BATCH 1 COMPLETE - Cyber/IT (10 guides)
+
+✓ 1N0X1 - Operations Intelligence - 2025-11-28 07:56
+✓ 1N1X1 - Geospatial Intelligence - 2025-11-28 07:57
+✓ 1N2X1 - Signals Intelligence Analyst - 2025-11-28 07:58
+✓ 1N3X1 - Cryptologic Language Analyst - 2025-11-28 07:59
+✓ 1N4X1 - Fusion Analyst - 2025-11-28 08:00
+✓ 1N7X1 - Human Intelligence Specialist - 2025-11-28 08:01
+✓ 1N8X1 - Targeting Analyst - 2025-11-28 08:02
+
+BATCH 2 COMPLETE - Intel (7 guides)
+
+✓ 1A0X1 - In-Flight Refueling - 2025-11-28 08:05
+✓ 1A1X1 - Flight Engineer - 2025-11-28 08:06
+✓ 1A2X1 - Aircraft Loadmaster - 2025-11-28 08:07
+✓ 1A3X1 - Airborne Mission Systems - 2025-11-28 08:08
+✓ 1A6X1 - Flight Attendant - 2025-11-28 08:09
+✓ 1A8X1 - Airborne Cryptologic Language Analyst - 2025-11-28 08:10
+✓ 1A8X2 - Airborne ISR Operator - 2025-11-28 08:11
+✓ 1A9X1 - Special Mission Aviator - 2025-11-28 08:12
+✓ 1C0X2 - Aviation Resource Management - 2025-11-28 08:13
+✓ 1C1X1 - Air Traffic Control - 2025-11-28 08:14
+✓ 1C3X1 - Command Post - 2025-11-28 08:15
+✓ 1C4X1 - Tactical Air Control Party - 2025-11-28 08:16
+✓ 1C5X1 - Command and Control Battle Management - 2025-11-28 08:17
+✓ 1C6X1 - Space Systems Operations - 2025-11-28 08:18
+✓ 1C7X1 - Airfield Management - 2025-11-28 08:19
+
+BATCH 3 COMPLETE - Operations/Aircrew (15 guides)
+
+✓ 2A3X3 - Tactical Aircraft Maintenance - 2025-11-28 08:25
+✓ 2A3X5 - Fighter Avionics Systems - 2025-11-28 08:26
+✓ 2A3X7 - F-35 Integrated Avionics - 2025-11-28 08:27
+✓ 2A5X1 - Airlift/Tanker Aircraft Maintenance - 2025-11-28 08:28
+✓ 2A5X2 - Helicopter/Tiltrotor Aircraft Maintenance - 2025-11-28 08:29
+✓ 2A5X3 - Bomber/Special Integrated Avionics - 2025-11-28 08:30
+✓ 2A5X4 - Refuel/Bomber Aircraft Maintenance - 2025-11-28 08:45
+✓ 2A6X1 - Aerospace Propulsion - 2025-11-28 08:46
+✓ 2A6X2 - Aerospace Ground Equipment - 2025-11-28 08:47
+✓ 2A6X3 - Aircrew Egress Systems - 2025-11-28 08:48
+✓ 2A6X4 - Aircraft Fuel Systems - 2025-11-28 08:49
+✓ 2A6X5 - Aircraft Hydraulic Systems - 2025-11-28 08:50
+✓ 2A6X6 - Aircraft Electrical and Environmental - 2025-11-28 08:51
+
+BATCH 4 COMPLETE - Aircraft Maintenance (13 guides)
+
+✓ 2A7X1 - Aircraft Metals Technology - 2025-11-28 09:10
+✓ 2A7X2 - Nondestructive Inspection - 2025-11-28 09:11
+✓ 2A7X3 - Aircraft Structural Maintenance - 2025-11-28 09:12
+✓ 2A7X5 - Low Observable Aircraft Structural - 2025-11-28 09:13
+✓ 2W0X1 - Munitions Systems - 2025-11-28 09:14
+✓ 2W1X1 - Aircraft Armament Systems - 2025-11-28 09:15
+✓ 2W2X1 - Nuclear Weapons - 2025-11-28 09:16
+✓ 2M0X1 - Missile/Space Electronic Maintenance - 2025-11-28 09:17
+✓ 2M0X2 - Missile/Space Systems Maintenance - 2025-11-28 09:18
+✓ 2M0X3 - Missile/Space Facilities - 2025-11-28 09:19
+
+BATCH 5 COMPLETE - Fabrication/Munitions/Missiles (10 guides)
+
+✓ 2S0X1 - Materiel Management - 2025-11-28 09:35
+✓ 2S0X2 - Supply Management - 2025-11-28 09:36
+✓ 2T0X1 - Traffic Management - 2025-11-28 09:37
+✓ 2T1X1 - Vehicle Operations - 2025-11-28 09:38
+✓ 2T2X1 - Air Transportation - 2025-11-28 09:39
+✓ 2T3X1 - Vehicle Maintenance Special Purpose - 2025-11-28 09:40
+✓ 2T3X2 - Vehicle Maintenance Management - 2025-11-28 09:41
+✓ 2T3X5 - Vehicle Body Maintenance - 2025-11-28 09:42
+✓ 2T3X7 - Vehicle Management and Analysis - 2025-11-28 09:43
+✓ 2F0X1 - Fuels - 2025-11-28 09:44
+✓ 6C0X1 - Contracting - 2025-11-28 09:45
+✓ 2G0X1 - Logistics Plans - 2025-11-28 09:46
+
+BATCH 6 COMPLETE - Logistics (12 guides)
+
+✓ 3F0X1 - Personnel - 2025-11-28 10:05
+✓ 3F1X1 - Services - 2025-11-28 10:06
+✓ 3F2X1 - Education and Training - 2025-11-28 10:15
+✓ 3F3X1 - Manpower - 2025-11-28 10:16
+✓ 3F4X1 - Equal Opportunity - 2025-11-28 10:17
+✓ 3F5X1 - Administration - 2025-11-28 10:18
+✓ 3A0X1 - Knowledge Operations Management - 2025-11-28 10:19
+✓ 3A1X1 - Information Management - 2025-11-28 10:20
+✓ 3E0X1 - Electrical Systems - 2025-11-28 10:21
+✓ 3E7X1 - Fire Protection - 2025-11-28 10:22
+✓ 3E9X1 - Emergency Management - 2025-11-28 10:23
+✓ 3E5X1 - Engineering - 2025-11-28 10:24
+
+BATCH 7 COMPLETE - Support/Services (12 guides)
+
+✓ 3N0X1 - Broadcasting - 2025-11-28 10:40
+✓ 3N0X2 - Radio and Television Broadcasting - 2025-11-28 10:41
+✓ 3N0X5 - Photojournalist - 2025-11-28 10:42
+✓ 3N0X6 - Public Affairs - 2025-11-28 10:43
+✓ 3N1X1 - Regional Band Member - 2025-11-28 10:44
+✓ 6F0X1 - Financial Management - 2025-11-28 10:45
+
+BATCH 8 COMPLETE - Public Affairs/Finance (6 guides)
+
+✓ 4A0X1 - Health Services Management - 2025-11-28 11:00
+✓ 4A1X1 - Medical Materiel - 2025-11-28 11:01
+✓ 4A2X1 - Biomedical Equipment - 2025-11-28 11:02
+✓ 4E0X1 - Public Health - 2025-11-28 11:03
+✓ 4H0X1 - Cardiopulmonary Laboratory - 2025-11-28 11:04
+✓ 4J0X2 - Physical Medicine - 2025-11-28 11:05
+✓ 4M0X1 - Aerospace and Operational Physiology - 2025-11-28 11:06
+✓ 4N0X1 - Aerospace Medical Service - 2025-11-28 11:07
+✓ 4N1X1 - Surgical Service - 2025-11-28 11:08
+✓ 4P0X1 - Pharmacy - 2025-11-28 11:09
+✓ 4R0X1 - Diagnostic Imaging - 2025-11-28 11:10
+✓ 4T0X1 - Medical Laboratory - 2025-11-28 11:11
+✓ 4T0X2 - Histopathology - 2025-11-28 11:12
+✓ 4V0X1 - Optics - 2025-11-28 11:13
+
+BATCH 9 COMPLETE - Medical (14 guides)
+
+✓ 5J0X1 - Paralegal - 2025-11-28 11:30
+✓ 3P0X1 - Security Forces - 2025-11-28 11:31
+✓ 5R0X1 - Chaplain Assistant - 2025-11-28 11:32
+
+BATCH 10 COMPLETE - Legal/Security (3 guides)
+
+═══════════════════════════════════════════════════════════════
+ALL BATCHES COMPLETE!
+═══════════════════════════════════════════════════════════════
+
+FINAL SUMMARY:
+- Batch 1: Cyber/IT - 10 guides
+- Batch 2: Intelligence - 7 guides
+- Batch 3: Operations/Aircrew - 15 guides
+- Batch 4: Aircraft Maintenance - 13 guides
+- Batch 5: Fabrication/Munitions/Missiles - 10 guides
+- Batch 6: Logistics - 12 guides
+- Batch 7: Support/Services - 12 guides
+- Batch 8: Public Affairs/Finance - 6 guides
+- Batch 9: Medical - 14 guides
+- Batch 10: Legal/Security - 3 guides
+
+═══════════════════════════════════════════════════════════════
+TOTAL: 102 Air Force AFSC Career Transition Guides Complete
+Completed: 2025-11-28
+═══════════════════════════════════════════════════════════════
