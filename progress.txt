@@ -14,19 +14,19 @@
 [X] 9. VRA (Veterans Recruitment Appointment) Guide
 [X] 10. 30% or More Disabled Veteran Hiring
 
-## BATCH 2 - FEDERAL AGENCIES HIRING VETS (11-20)
-[ ] 11. Careers at Department of Defense (DoD Civilian)
-[ ] 12. Careers at Department of Veterans Affairs
-[ ] 13. Careers at Department of Homeland Security
-[ ] 14. Careers at FBI for Veterans
-[ ] 15. Careers at DEA for Veterans
-[ ] 16. Careers at ATF for Veterans
-[ ] 17. Careers at US Marshals for Veterans
-[ ] 18. Careers at Secret Service for Veterans
-[ ] 19. Careers at TSA for Veterans
-[ ] 20. Careers at CBP for Veterans
+## BATCH 2 - FEDERAL AGENCIES HIRING VETS (11-20) ✓ COMPLETED
+[X] 11. Careers at Department of Defense (DoD Civilian)
+[X] 12. Careers at Department of Veterans Affairs
+[X] 13. Careers at Department of Homeland Security
+[X] 14. Careers at FBI for Veterans
+[X] 15. Careers at DEA for Veterans
+[X] 16. Careers at ATF for Veterans
+[X] 17. Careers at US Marshals for Veterans
+[X] 18. Careers at Secret Service for Veterans
+[X] 19. Careers at TSA for Veterans
+[X] 20. Careers at CBP for Veterans
 
-## BATCH 3 - MORE FEDERAL AGENCIES (21-30)
+## BATCH 3 - MORE FEDERAL AGENCIES (21-30) - IN PROGRESS
 [ ] 21. Careers at CIA for Veterans
 [ ] 22. Careers at NSA for Veterans
 [ ] 23. Careers at State Department for Veterans
@@ -63,5 +63,5 @@
 [ ] 50. GSA Schedule Contracts for Veteran Businesses
 
 ## COMPLETION STATUS
-Completed: 10/50
-Last Updated: Batch 1 complete
+Completed: 20/50
+Last Updated: Batch 3 in progress
