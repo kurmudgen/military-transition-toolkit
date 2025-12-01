@@ -17,18 +17,18 @@ BATCH 1 - TECH (1-10) - COMPLETED
 [X] 10. Military to Network Engineering
 
 ═══════════════════════════════════════════════════════════════
-BATCH 2 - HEALTHCARE (11-20)
+BATCH 2 - HEALTHCARE (11-20) - COMPLETED
 ═══════════════════════════════════════════════════════════════
-[ ] 11. Military to Hospital Administration
-[ ] 12. Military to Pharmaceutical Sales
-[ ] 13. Military to Medical Device Sales
-[ ] 14. Military to Healthcare IT
-[ ] 15. Military to Emergency Management
-[ ] 16. Military to Physical Therapy
-[ ] 17. Military to Nursing (RN Programs)
-[ ] 18. Military to Healthcare Compliance
-[ ] 19. Military to Medical Coding/Billing
-[ ] 20. Military to Mental Health Counseling
+[X] 11. Military to Hospital Administration
+[X] 12. Military to Pharmaceutical Sales
+[X] 13. Military to Medical Device Sales
+[X] 14. Military to Healthcare IT
+[X] 15. Military to Emergency Management
+[X] 16. Military to Physical Therapy
+[X] 17. Military to Nursing (RN Programs)
+[X] 18. Military to Healthcare Compliance
+[X] 19. Military to Medical Coding/Billing
+[X] 20. Military to Mental Health Counseling
 
 ═══════════════════════════════════════════════════════════════
 BATCH 3 - BUSINESS & FINANCE (21-30)
