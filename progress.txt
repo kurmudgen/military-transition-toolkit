@@ -31,32 +31,32 @@ BATCH 2 - HEALTHCARE (11-20) - COMPLETED
 [X] 20. Military to Mental Health Counseling
 
 ═══════════════════════════════════════════════════════════════
-BATCH 3 - BUSINESS & FINANCE (21-30)
+BATCH 3 - BUSINESS & FINANCE (21-30) - COMPLETED
 ═══════════════════════════════════════════════════════════════
-[ ] 21. Military to Management Consulting
-[ ] 22. Military to Financial Planning
-[ ] 23. Military to Investment Banking
-[ ] 24. Military to Corporate Training
-[ ] 25. Military to Human Resources
-[ ] 26. Military to Supply Chain Management
-[ ] 27. Military to Operations Management
-[ ] 28. Military to Business Development
-[ ] 29. Military to Commercial Real Estate
-[ ] 30. Military to Insurance Industry
+[X] 21. Military to Management Consulting
+[X] 22. Military to Financial Planning
+[X] 23. Military to Investment Banking
+[X] 24. Military to Corporate Training
+[X] 25. Military to Human Resources
+[X] 26. Military to Supply Chain Management
+[X] 27. Military to Operations Management
+[X] 28. Military to Business Development
+[X] 29. Military to Commercial Real Estate
+[X] 30. Military to Insurance Industry
 
 ═══════════════════════════════════════════════════════════════
-BATCH 4 - TRADES & INDUSTRIAL (31-40)
+BATCH 4 - TRADES & INDUSTRIAL (31-40) - COMPLETED
 ═══════════════════════════════════════════════════════════════
-[ ] 31. Military to Construction Management
-[ ] 32. Military to Utility Companies
-[ ] 33. Military to Oil & Gas
-[ ] 34. Military to Renewable Energy
-[ ] 35. Military to Manufacturing Leadership
-[ ] 36. Military to Transportation/Logistics
-[ ] 37. Military to Aviation (Commercial)
-[ ] 38. Military to Maritime Industry
-[ ] 39. Military to Aerospace Industry
-[ ] 40. Military to Automotive Industry
+[X] 31. Military to Construction Management
+[X] 32. Military to Utility Companies
+[X] 33. Military to Oil & Gas
+[X] 34. Military to Renewable Energy
+[X] 35. Military to Manufacturing Leadership
+[X] 36. Military to Transportation/Logistics
+[X] 37. Military to Aviation (Commercial)
+[X] 38. Military to Maritime Industry
+[X] 39. Military to Aerospace Industry
+[X] 40. Military to Automotive Industry
 
 ═══════════════════════════════════════════════════════════════
 BATCH 5 - GOVERNMENT & SECURITY (41-50)
