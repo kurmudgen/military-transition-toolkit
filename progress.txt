@@ -26,31 +26,31 @@
 [X] 19. Careers at TSA for Veterans
 [X] 20. Careers at CBP for Veterans
 
-## BATCH 3 - MORE FEDERAL AGENCIES (21-30) - IN PROGRESS
-[ ] 21. Careers at CIA for Veterans
-[ ] 22. Careers at NSA for Veterans
-[ ] 23. Careers at State Department for Veterans
-[ ] 24. Careers at USAID for Veterans
-[ ] 25. Careers at FAA for Veterans
-[ ] 26. Careers at NASA for Veterans
-[ ] 27. Careers at DOE for Veterans
-[ ] 28. Careers at FEMA for Veterans
-[ ] 29. Careers at NPS (National Park Service) for Veterans
-[ ] 30. Careers at USPS for Veterans
+## BATCH 3 - MORE FEDERAL AGENCIES (21-30) ✓ COMPLETED
+[X] 21. Careers at CIA for Veterans
+[X] 22. Careers at NSA for Veterans
+[X] 23. Careers at State Department for Veterans
+[X] 24. Careers at USAID for Veterans
+[X] 25. Careers at FAA for Veterans
+[X] 26. Careers at NASA for Veterans
+[X] 27. Careers at DOE for Veterans
+[X] 28. Careers at FEMA for Veterans
+[X] 29. Careers at NPS (National Park Service) for Veterans
+[X] 30. Careers at USPS for Veterans
 
-## BATCH 4 - GOVERNMENT CONTRACTING (31-40)
-[ ] 31. Government Contracting 101 for Veterans
-[ ] 32. Top 25 Defense Contractors Hiring Veterans
-[ ] 33. Security Clearance Jobs: Complete Guide
-[ ] 34. TS/SCI Clearance: What It's Worth
-[ ] 35. How to Maintain Your Clearance After Separation
-[ ] 36. Booz Allen Hamilton Careers for Veterans
-[ ] 37. Lockheed Martin Careers for Veterans
-[ ] 38. Raytheon Careers for Veterans
-[ ] 39. Northrop Grumman Careers for Veterans
-[ ] 40. General Dynamics Careers for Veterans
+## BATCH 4 - GOVERNMENT CONTRACTING (31-40) ✓ COMPLETED
+[X] 31. Government Contracting 101 for Veterans
+[X] 32. Top 25 Defense Contractors Hiring Veterans
+[X] 33. Security Clearance Jobs: Complete Guide
+[X] 34. TS/SCI Clearance: What It's Worth
+[X] 35. How to Maintain Your Clearance After Separation
+[X] 36. Booz Allen Hamilton Careers for Veterans
+[X] 37. Lockheed Martin Careers for Veterans
+[X] 38. Raytheon Careers for Veterans
+[X] 39. Northrop Grumman Careers for Veterans
+[X] 40. General Dynamics Careers for Veterans
 
-## BATCH 5 - MORE GOVCON & SPECIALIZED (41-50)
+## BATCH 5 - MORE GOVCON & SPECIALIZED (41-50) - IN PROGRESS
 [ ] 41. SAIC Careers for Veterans
 [ ] 42. Leidos Careers for Veterans
 [ ] 43. BAE Systems Careers for Veterans
@@ -63,5 +63,5 @@
 [ ] 50. GSA Schedule Contracts for Veteran Businesses
 
 ## COMPLETION STATUS
-Completed: 20/50
-Last Updated: Batch 3 in progress
+Completed: 40/50
+Last Updated: Batch 5 in progress
