@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 
 export default function PublicNav({ currentPage = '' }) {
-  const { user } = useAuth()
+  const { user, loading } = useAuth()
   const [activeDropdown, setActiveDropdown] = useState(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -383,7 +383,13 @@ export default function PublicNav({ currentPage = '' }) {
 
           {/* Auth Buttons */}
           <div className="hidden lg:flex lg:items-center lg:space-x-2">
-            {user ? (
+            {loading ? (
+              // Loading skeleton - matches button dimensions to prevent shift
+              <div className="flex items-center space-x-2">
+                <div className="w-20 h-10 bg-slate-700/50 rounded-lg animate-pulse"></div>
+                <div className="w-28 h-10 bg-slate-700/50 rounded-lg animate-pulse"></div>
+              </div>
+            ) : user ? (
               <Link
                 to="/app"
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
@@ -666,7 +672,13 @@ export default function PublicNav({ currentPage = '' }) {
 
               {/* Mobile Auth Buttons */}
               <div className="mt-4 pt-4 border-t border-slate-700 space-y-2">
-                {user ? (
+                {loading ? (
+                  // Loading skeleton for mobile
+                  <div className="space-y-2">
+                    <div className="h-10 bg-slate-700/50 rounded-lg animate-pulse"></div>
+                    <div className="h-10 bg-slate-700/50 rounded-lg animate-pulse"></div>
+                  </div>
+                ) : user ? (
                   <Link
                     to="/app"
                     className="block px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition-colors font-medium"

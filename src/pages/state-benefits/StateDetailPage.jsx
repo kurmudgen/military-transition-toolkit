@@ -1,45 +1,21 @@
 import { useParams, Link } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
-import Layout from '../../components/Layout';
 import { statesData } from '../../data/stateBenefitsData';
 import PublicNav from '../../components/Navigation/PublicNav';
 
 export default function StateDetailPage() {
-  const { user } = useAuth();
   const { stateCode } = useParams();
   const state = statesData[stateCode?.toUpperCase()];
 
   // "State Not Found" content
   const NotFoundContent = () => (
     <div className="max-w-7xl mx-auto px-4 py-16 text-center">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">State Not Found</h1>
-      <p className="text-gray-600 dark:text-gray-400 mb-6">The state you're looking for doesn't exist in our database yet.</p>
+      <h1 className="text-4xl font-bold text-white mb-4">State Not Found</h1>
+      <p className="text-gray-400 mb-6">The state you're looking for doesn't exist in our database yet.</p>
       <Link to="/state-benefits" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-semibold">
-        ← Back to Comparison
+        ← Back to State Benefits
       </Link>
     </div>
   );
-
-  if (!state) {
-    // If user is logged in, use Layout
-    if (user) {
-      return (
-        <Layout>
-          <NotFoundContent />
-        </Layout>
-      );
-    }
-
-    // If not logged in, use public navigation
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <PublicNav currentPage="/state-benefits" />
-        <div className="dark">
-          <NotFoundContent />
-        </div>
-      </div>
-    );
-  }
 
   const formatCurrency = (amount) => {
     if (amount >= 999999) return 'Full Exemption';
@@ -263,21 +239,14 @@ export default function StateDetailPage() {
     </div>
   );
 
-  // If user is logged in, use Layout.jsx for consistent navigation
-  if (user) {
-    return (
-      <Layout>
-        <StateDetailContent />
-      </Layout>
-    );
-  }
-
-  // If not logged in, use public marketing navigation
+  // Use same public navigation for EVERYONE (logged in or out)
+  // This avoids Layout.jsx issues with dark mode and content visibility
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <PublicNav currentPage="/state-benefits" />
+
       <div className="dark">
-        <StateDetailContent />
+        {!state ? <NotFoundContent /> : <StateDetailContent />}
       </div>
     </div>
   );
