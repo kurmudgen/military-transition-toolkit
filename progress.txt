@@ -13,17 +13,17 @@ BATCH 1 - LINKEDIN FOR VETERANS (10/10): COMPLETE
 [X] 9. LinkedIn Groups Every Transitioning Service Member Should Join
 [X] 10. How to Connect with Recruiters on LinkedIn as a Veteran
 
-BATCH 2 - RESUME & APPLICATION (0/10):
-[ ] 11. Federal Resume vs Private Sector Resume: Key Differences
-[ ] 12. How to Write Achievement Bullets for Military Experience
-[ ] 13. Quantifying Military Experience on Your Resume
-[ ] 14. Action Verbs for Veteran Resumes (200+ Examples)
-[ ] 15. How to Address Employment Gaps Due to Deployment
-[ ] 16. Resume Keywords That Get Past ATS Systems for Veterans
-[ ] 17. One-Page vs Two-Page Resume: What Works for Veterans
-[ ] 18. How to List Security Clearance on Your Resume
-[ ] 19. Cover Letter Template for Veterans (5 Industries)
-[ ] 20. How to Tailor Your Resume for Different Industries
+BATCH 2 - RESUME & APPLICATION (10/10): COMPLETE
+[X] 11. Federal Resume vs Private Sector Resume: Key Differences
+[X] 12. How to Write Achievement Bullets for Military Experience
+[X] 13. Quantifying Military Experience on Your Resume
+[X] 14. Action Verbs for Veteran Resumes (200+ Examples)
+[X] 15. How to Address Employment Gaps Due to Deployment
+[X] 16. Resume Keywords That Get Past ATS Systems for Veterans
+[X] 17. One-Page vs Two-Page Resume: What Works for Veterans
+[X] 18. How to List Security Clearance on Your Resume
+[X] 19. Cover Letter Template for Veterans (5 Industries)
+[X] 20. How to Tailor Your Resume for Different Industries
 
 BATCH 3 - JOB SEARCH STRATEGY (0/10):
 [ ] 21. Hidden Job Market: How Veterans Find Unadvertised Jobs
@@ -61,5 +61,5 @@ BATCH 5 - FIRST 90 DAYS & CULTURE (0/10):
 [ ] 49. Performance Review Tips for Veterans in First Civilian Job
 [ ] 50. 90-Day Plan for Veterans in New Civilian Job
 
-OVERALL PROGRESS: 10/50 Guides Complete (20%)
-Last Updated: Batch 1 Complete - Committing
+OVERALL PROGRESS: 20/50 Guides Complete (40%)
+Last Updated: Batch 2 Complete - Committing
