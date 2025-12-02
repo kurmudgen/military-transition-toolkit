@@ -12,7 +12,7 @@ export default function PublicNav({ currentPage = '' }) {
     planning: {
       title: 'Planning',
       items: [
-        { name: 'Transition Checklist', path: '/app/checklist' },
+        { name: 'Transition Checklist', path: '/app/progress' },
         { name: 'Timeline Tracker', path: '/app' },
         { name: 'Appointments', path: '/app#appointments', isHashLink: true }
       ]
