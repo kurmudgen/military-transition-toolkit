@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Gulf War Syndrome: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-13"
+date: "2026-03-28"
 description: "How to get VA disability rating for Gulf War Syndrome and undiagnosed illnesses. Presumptive conditions, evidence needed, and claim tips."
 keywords: "VA disability Gulf War Syndrome, Gulf War illness VA claim, undiagnosed illness VA, Persian Gulf veteran VA"
 category: "va-disability"

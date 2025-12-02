@@ -1,7 +1,7 @@
 ---
 title: "USPS Careers for Veterans: Complete Guide to Postal Service Employment"
 description: "Comprehensive guide to USPS careers for veterans. Learn about mail carrier, clerk, maintenance positions, hiring process, salary, benefits, and veteran hiring advantages at the Postal Service."
-date: "2025-12-01"
+date: "2026-03-24"
 category: "federal-employment"
 keywords: "USPS careers veterans, postal service jobs, mail carrier veteran, USPS hiring, postal worker jobs, USPS benefits, postal service careers veterans"
 slug: "usps-careers-veterans-guide"

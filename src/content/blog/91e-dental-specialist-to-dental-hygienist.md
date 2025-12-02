@@ -2,7 +2,7 @@
 title: "91E Dental Specialist to Dental Hygienist: Complete Transition Guide"
 description: "Expert guide for transitioning from Army 91E Dental Specialist to civilian Dental Hygienist with salary data, certifications, and career pathways."
 author: "Military Transition Toolkit"
-date: "2026-01-24"
+date: "2026-01-25"
 image: "/images/91e-dental-specialist.jpg"
 category: "Career Transitions"
 tags: ["91E", "Dental Hygienist", "Healthcare", "Certifications"]

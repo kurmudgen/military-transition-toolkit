@@ -1,6 +1,6 @@
 ---
 EPISODE #012: From 12B Combat Engineer to Construction Management and Civil Engineering
-date: "2026-02-27"
+date: "2026-03-10"
 CATEGORY: Career Transition
 TARGET LENGTH: 20-22 minutes
 KEYWORDS: 12B, combat engineer, construction management, civil engineering, project management, heavy equipment

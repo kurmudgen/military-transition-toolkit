@@ -1,5 +1,5 @@
 ---
-date: "2026-01-31"
+date: "2026-02-01"
 ---# Veteran Transition Case Studies - Complete Manifest
 
 ## Overview

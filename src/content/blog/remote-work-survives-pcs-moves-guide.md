@@ -1,7 +1,7 @@
 ---
 title: "Finding Remote Work That Survives PCS Moves: Complete Guide"
 description: "How to find and secure remote jobs that travel with you through military PCS moves. Companies, strategies, and tips for building a truly portable career."
-date: "2025-12-02"
+date: "2026-03-19"
 category: "military-spouse"
 keywords: "remote work PCS, portable remote jobs, military spouse remote work, work from anywhere military, remote career PCS moves"
 slug: "remote-work-survives-pcs-moves-guide"

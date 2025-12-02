@@ -1,7 +1,7 @@
 ---
 title: "Mental Health and Career Stress for Military Spouses"
 description: "Managing the mental health impact of career challenges as a military spouse. Recognizing stress, coping strategies, when to seek help, and building career resilience."
-date: "2025-12-02"
+date: "2026-02-25"
 category: "military-spouse"
 keywords: "military spouse mental health, career stress military, burnout military spouse, anxiety career military, coping military spouse career"
 slug: "mental-health-career-stress-military-spouse-guide"

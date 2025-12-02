@@ -1,7 +1,7 @@
 ---
 title: "Marine Corps 0204 Air Intelligence Officer to Civilian: Your Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2025-11-26"
-date: "2026-01-02"
+date: "2026-01-03"
 description: "Comprehensive career guide for 0204 Air Intelligence Officers transitioning to civilian careers. Includes defense contractor roles $85K-$150K+, three-letter agencies, and aviation intelligence analysis opportunities."
 keywords: "0204 MOS civilian jobs, air intelligence officer career transition, Marine intelligence officer careers, aviation intelligence analyst jobs"
 ---

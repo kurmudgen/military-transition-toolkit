@@ -1,6 +1,6 @@
 ---
 EPISODE #057: SMC - Special Monthly Compensation for Severe Disabilities
-date: "2026-03-03"
+date: "2026-03-14"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 24-26 minutes (3,600-3,900 words)
 KEYWORDS: SMC, special monthly compensation, SMC-K, SMC-S, aid and attendance, housebound, loss of use

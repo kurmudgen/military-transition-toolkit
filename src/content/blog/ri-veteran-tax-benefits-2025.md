@@ -1,6 +1,6 @@
 ---
 title: "Rhode Island Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-03-08"
+date: "2026-03-19"
 description: "Complete guide to Rhode Island veteran tax benefits: property tax exemptions up to $3,000, full military retirement income exemption, and free vehicle registration for 100% disabled veterans."
 keywords: "rhode island veteran benefits, rhode island property tax exemption veterans, rhode island veteran tax benefits, military retirement rhode island"
 slug: "ri-veteran-tax-benefits-2025"

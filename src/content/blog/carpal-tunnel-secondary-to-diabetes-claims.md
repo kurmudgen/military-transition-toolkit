@@ -1,7 +1,7 @@
 ---
 title: "Carpal Tunnel Secondary to Diabetes: Complete VA Claims Filing Guide"
 description: "Expert guide to filing carpal tunnel syndrome as secondary to diabetes, evidence strategies, nexus requirements, and compensation calculations."
-date: "2026-01-29"
+date: "2026-01-31"
 category: "Secondary Conditions"
 tags: ["carpal-tunnel", "diabetes", "secondary-condition", "neuropathy", "va-claims", "disability"]
 author: "Military Transition Toolkit"

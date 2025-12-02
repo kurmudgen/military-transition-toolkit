@@ -2,7 +2,7 @@
 title: "Best Companies for 68X Mental Health Specialists: Healthcare Career Guide"
 description: "Top healthcare and mental health companies hiring 68X mental health specialists for counselor and therapist roles with compensation and advancement data."
 author: "Military Transition Toolkit"
-date: "2026-01-27"
+date: "2026-01-28"
 image: "/images/68x-mental-health.jpg"
 category: "Best Companies"
 tags: ["68X", "Mental Health", "Healthcare", "Best Companies"]

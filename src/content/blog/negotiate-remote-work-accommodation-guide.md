@@ -1,7 +1,7 @@
 ---
 title: "How to Negotiate Remote Work Accommodation as a Military Spouse"
 description: "Scripts and strategies for negotiating remote work arrangements with employers. How to make the case for remote work, handle objections, and structure agreements that protect your career."
-date: "2025-12-02"
+date: "2026-03-06"
 category: "military-spouse"
 keywords: "negotiate remote work, remote work accommodation, military spouse remote request, work from home negotiation, flexible work military spouse"
 slug: "negotiate-remote-work-accommodation-guide"

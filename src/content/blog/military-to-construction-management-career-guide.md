@@ -1,7 +1,7 @@
 ---
 title: "Military to Construction Management: Complete Transition Guide for Veterans"
 description: "How to transition from military service to construction management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-26"
 category: "industry-transition"
 keywords: "military to construction management, veteran construction jobs, construction management careers for veterans"
 slug: "military-to-construction-management-career-guide"

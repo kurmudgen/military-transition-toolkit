@@ -1,7 +1,7 @@
 ---
 title: "VA Rating for Hearing Loss: Complete Compensation and Benefits Guide"
 description: "Comprehensive guide to VA hearing loss ratings (10%-100%), monthly compensation amounts, evidence requirements, and successful filing strategies for audiometric claims."
-date: "2025-12-07"
+date: "2025-12-08"
 category: "VA Benefits"
 tags: ["hearing-loss", "audiometric", "va-rating", "disability", "compensation", "claims"]
 author: "Military Transition Toolkit"

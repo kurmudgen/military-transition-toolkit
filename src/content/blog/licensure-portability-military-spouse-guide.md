@@ -1,7 +1,7 @@
 ---
 title: "Licensure Portability for Military Spouses by State: Complete Guide"
 description: "State-by-state guide to professional license portability for military spouses. Teaching, nursing, counseling, and other licensed professions - how to transfer your credentials when you PCS."
-date: "2025-12-02"
+date: "2026-02-23"
 category: "military-spouse"
 keywords: "military spouse license transfer, professional license portability, state licensing military spouse, license reciprocity military, PCS license transfer"
 slug: "licensure-portability-military-spouse-guide"

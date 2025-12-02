@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Gulf War Syndrome: Complete Guide to Presumptive Conditions"
 description: "How to file VA disability claim for Gulf War Syndrome and related presumptive conditions. Eligibility, evidence requirements, and rating strategies."
-date: "2026-03-13"
+date: "2026-03-28"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Gulf War Syndrome", "Presumptive Conditions", "Gulf War Veterans", "Chemical Exposure"]

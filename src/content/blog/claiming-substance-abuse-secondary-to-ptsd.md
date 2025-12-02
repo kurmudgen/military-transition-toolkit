@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Substance Abuse Disorder Secondary to PTSD"
 description: "Guide to claiming drug abuse and substance use disorder secondary to PTSD. Nexus letters, medical evidence, and VA ratings."
-date: "2026-02-01"
+date: "2026-02-03"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Substance Abuse", "Drug Addiction", "Secondary Conditions"]

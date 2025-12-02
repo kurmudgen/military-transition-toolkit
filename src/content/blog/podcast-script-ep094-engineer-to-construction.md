@@ -1,6 +1,6 @@
 ---
 EPISODE #094: Combat Engineer to Construction Manager - $120K Building Industry Leadership
-date: "2026-03-06"
+date: "2026-03-17"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 HOST: Jacob

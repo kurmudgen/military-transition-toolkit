@@ -1,7 +1,7 @@
 ---
 title: "How to Use Your GI Bill and Maximize Education Benefits: Complete Guide"
 description: "Master your VA education benefits and maximize your GI Bill. Learn about Yellow Ribbon, housing allowance, and strategies to get most value."
-date: "2025-12-19"
+date: "2025-12-20"
 author: "Military Transition Toolkit"
 category: "Education & Benefits"
 tags: ["gi-bill", "va-benefits", "education", "financial-planning"]

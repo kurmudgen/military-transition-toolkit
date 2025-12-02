@@ -1,6 +1,6 @@
 ---
 EPISODE #072: VA Disability + Social Security Disability - How to Get Both Benefits Simultaneously
-date: "2026-03-04"
+date: "2026-03-15"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 24-26 minutes (3,600-3,900 words)

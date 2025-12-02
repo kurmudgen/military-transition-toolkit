@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Carpal Tunnel Syndrome: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-11"
+date: "2026-03-26"
 description: "How to get VA disability rating for carpal tunnel syndrome. Rating criteria from 10% to 70%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability carpal tunnel, carpal tunnel VA rating, CTS VA claim, wrist pain VA disability"
 category: "va-disability"

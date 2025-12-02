@@ -1,7 +1,7 @@
 ---
 title: "Army 91B (Wheeled Vehicle Mechanic) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-01"
-date: "2025-12-31"
+date: "2026-01-01"
 description: "Real career options for 91B Wheeled Vehicle Mechanics transitioning to civilian life. Includes salary ranges $48K-$95K+, diesel mechanic careers, fleet maintenance, ASE certifications, dealership opportunities, and truck technician paths."
 keywords: "91B civilian jobs, wheeled vehicle mechanic career transition, diesel mechanic salary, ASE certification, fleet maintenance jobs, truck technician career"
 ---

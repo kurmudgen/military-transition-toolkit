@@ -1,6 +1,6 @@
 ---
 EPISODE #005: Air Force Aircraft Maintenance to Six-Figure Aviation Careers
-date: "2026-02-27"
+date: "2026-03-10"
 CATEGORY: Career Transition
 TARGET LENGTH: 24-26 minutes
 KEYWORDS: Air Force, 2A6X1, aircraft maintenance, aviation careers, A&P license, aircraft mechanic salary, aerospace propulsion

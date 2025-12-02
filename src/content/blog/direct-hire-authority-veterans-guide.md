@@ -1,7 +1,7 @@
 ---
 title: "Direct Hire Authority for Veterans: Fast-Track to Federal Employment"
 description: "Learn how Direct Hire Authority accelerates federal hiring for veterans. Understand which positions use DHA, how it bypasses normal processes, and how to find DHA opportunities."
-date: "2025-12-01"
+date: "2026-02-12"
 category: "federal-employment"
 keywords: "direct hire authority veterans, DHA federal jobs, fast track federal hiring, federal direct hire, USAJOBS direct hire, expedited federal hiring veterans"
 slug: "direct-hire-authority-veterans-guide"

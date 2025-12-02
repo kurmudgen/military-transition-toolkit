@@ -1,5 +1,5 @@
 ---
-date: "2026-02-10"
+date: "2026-02-13"
 ---# Military Transition Toolkit - Master FAQ Index
 
 **Complete Database of 500 Veteran Transition Questions**

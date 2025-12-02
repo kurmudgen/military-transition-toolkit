@@ -1,6 +1,6 @@
 ---
 title: "Coast Guard MK to Civilian: Complete Career Transition Guide for Machinery Technicians (2024-2025 Salaries)"
-date: "2026-01-11"
+date: "2026-01-12"
 description: "Real career options for Coast Guard Machinery Technicians transitioning to civilian life. HVAC, diesel mechanic, marine tech careers with salary ranges $45K-$95K+."
 keywords: "Coast Guard MK civilian jobs, Machinery Technician career transition, marine mechanic to civilian, HVAC diesel technician careers"
 ---

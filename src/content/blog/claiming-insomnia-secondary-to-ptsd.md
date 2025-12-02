@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Insomnia Secondary to PTSD: Complete Guide"
 description: "Step-by-step guide to claiming sleep disorder as secondary to service-connected PTSD. Includes evidence requirements, nexus letters, and VA ratings."
-date: "2026-01-31"
+date: "2026-02-02"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Insomnia", "Sleep Disorder", "Secondary Conditions"]

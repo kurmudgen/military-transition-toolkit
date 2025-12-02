@@ -2,7 +2,7 @@
 title: "Moving to Nevada for Veterans: Financial Guide and Complete Cost Analysis 2025"
 description: "Comprehensive relocation guide for Nevada veterans including no income tax, no sales tax on groceries, housing costs, VA healthcare, job market, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-03"
 tags: ["Nevada", "Relocation", "Veteran Costs", "Housing", "No Income Tax"]
 category: "State Relocation Guides"
 featured: true

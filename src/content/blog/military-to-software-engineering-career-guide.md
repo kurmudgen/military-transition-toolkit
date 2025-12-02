@@ -1,7 +1,7 @@
 ---
 title: "Military to Software Engineering: Complete Transition Guide for Veterans"
 description: "How to transition from military service to software engineering. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-02"
 category: "industry-transition"
 keywords: "military to software engineering, veteran software developer jobs, software engineering careers for veterans"
 slug: "military-to-software-engineering-career-guide"

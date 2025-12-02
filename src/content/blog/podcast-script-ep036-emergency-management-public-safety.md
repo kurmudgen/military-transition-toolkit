@@ -1,6 +1,6 @@
 ---
 EPISODE #036: Emergency Management and Public Safety Careers
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: emergency management, FEMA, paramedic, firefighter, public safety, 911 dispatcher

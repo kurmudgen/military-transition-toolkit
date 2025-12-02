@@ -1,7 +1,7 @@
 ---
 title: "Continuing Education While PCSing: Online Options Guide"
 description: "How to maintain and advance your education through PCS moves. Online programs, interrupted studies strategies, credit transfer, and completing degrees despite military moves."
-date: "2025-12-02"
+date: "2026-02-06"
 category: "military-spouse"
 keywords: "continuing education PCS, online education military spouse, degree during PCS, online learning military move, education continuity military"
 slug: "continuing-education-pcs-online-guide"

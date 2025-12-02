@@ -1,6 +1,6 @@
 ---
 title: "Coast Guard MST to Civilian: Complete Career Transition Guide for Marine Science Technicians (2024-2025 Salaries)"
-date: "2026-01-11"
+date: "2026-01-12"
 description: "Real career options for Coast Guard Marine Science Technicians transitioning to civilian life. Environmental careers, HAZMAT, pollution response with salary ranges $50K-$115K+."
 keywords: "Coast Guard MST civilian jobs, Marine Science Technician career transition, environmental careers, HAZMAT oil spill response"
 ---

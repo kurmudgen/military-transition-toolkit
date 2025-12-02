@@ -1,7 +1,7 @@
 ---
 title: "Military to Transportation/Logistics: Complete Transition Guide for Veterans"
 description: "How to transition from military service to transportation and logistics. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-02"
 category: "industry-transition"
 keywords: "military to transportation, veteran logistics jobs, trucking careers for veterans"
 slug: "military-to-transportation-logistics-career-guide"

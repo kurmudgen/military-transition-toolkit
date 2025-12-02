@@ -1,5 +1,5 @@
 ---
-date: "2026-01-22"
+date: "2026-01-23"
 ---# 3E2X1 - Pavements & Construction Equipment Career Transition Guide
 
 ## Overview

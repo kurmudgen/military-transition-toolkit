@@ -1,6 +1,6 @@
 ---
 EPISODE #048: Understanding VA Disability Ratings - The Math Behind Combined Ratings
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 20-22 minutes
 KEYWORDS: VA math, combined ratings, bilateral factor, pyramiding, disability calculator, ratings table

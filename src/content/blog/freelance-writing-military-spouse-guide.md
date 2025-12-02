@@ -1,7 +1,7 @@
 ---
 title: "Freelance Writing for Military Spouses: Getting First Clients"
 description: "Launch a freelance writing career as a military spouse. Find your first clients, set rates, build a portfolio, and create location-independent income from any duty station."
-date: "2025-12-02"
+date: "2026-02-16"
 category: "military-spouse"
 keywords: "military spouse freelance writer, freelance writing career, work from home writer military, content writing military spouse, writing clients military spouse"
 slug: "freelance-writing-military-spouse-guide"

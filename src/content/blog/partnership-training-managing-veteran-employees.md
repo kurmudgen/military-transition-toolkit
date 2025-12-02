@@ -1,6 +1,6 @@
 ---
 DOCUMENT: Managing Veteran Employees: Leadership Guide
-date: "2026-02-26"
+date: "2026-03-09"
 TYPE: Training Guide
 AUDIENCE: People Managers, Team Leads, Directors
 PAGES: 16

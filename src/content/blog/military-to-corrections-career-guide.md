@@ -1,7 +1,7 @@
 ---
 title: "Military to Corrections: Complete Transition Guide for Veterans"
 description: "How to transition from military service to corrections careers. Federal and state options, requirements, salary expectations, and advancement opportunities."
-date: "2025-12-01"
+date: "2026-02-26"
 category: "industry-transition"
 keywords: "military to corrections officer, veteran prison jobs, corrections careers for veterans"
 slug: "military-to-corrections-career-guide"

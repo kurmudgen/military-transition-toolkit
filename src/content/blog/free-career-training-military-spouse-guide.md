@@ -1,7 +1,7 @@
 ---
 title: "Free Career Training for Military Spouses: All Programs Guide"
 description: "Complete list of free career training programs for military spouses. Scholarships, fellowships, employer-sponsored training, and resources that cost nothing but time."
-date: "2025-12-02"
+date: "2026-02-15"
 category: "military-spouse"
 keywords: "free training military spouse, military spouse scholarships, free career programs, no cost education military, spouse training programs"
 slug: "free-career-training-military-spouse-guide"

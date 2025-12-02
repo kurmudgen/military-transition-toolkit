@@ -1,6 +1,6 @@
 ---
 EPISODE #085: Military Intelligence to FBI Special Agent - $130K Federal Law Enforcement
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 HOST: Jacob

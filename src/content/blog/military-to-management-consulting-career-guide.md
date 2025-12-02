@@ -1,7 +1,7 @@
 ---
 title: "Military to Management Consulting: Complete Transition Guide for Veterans"
 description: "How to transition from military service to management consulting. Best MOS backgrounds, MBA paths, salary expectations, and top consulting firms hiring veterans."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to management consulting, veteran consulting jobs, management consulting careers for veterans"
 slug: "military-to-management-consulting-career-guide"

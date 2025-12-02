@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Graphic Designer: Portfolio Building Guide"
 description: "Build a graphic design career as a military spouse. Learn design fundamentals, create a portfolio that wins clients, find remote work, and develop skills that transfer to every duty station."
-date: "2025-12-02"
+date: "2026-02-16"
 category: "military-spouse"
 keywords: "military spouse graphic design, remote designer military spouse, portfolio military spouse, freelance design career, work from home designer"
 slug: "graphic-designer-military-spouse-guide"

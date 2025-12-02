@@ -1,6 +1,6 @@
 ---
 EPISODE #075: GI Bill Housing Allowance Strategies - Maximizing Your BAH to Add $50,000+ in Value
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)

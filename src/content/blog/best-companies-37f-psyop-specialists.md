@@ -2,7 +2,7 @@
 title: "Best Companies for 37F PSYOP Specialists: Marketing & Communications Career Guide"
 description: "Top companies hiring 37F psychological operations specialists for marketing, communications, and strategy roles with salary data and career advancement."
 author: "Military Transition Toolkit"
-date: "2026-01-27"
+date: "2026-01-28"
 image: "/images/37f-psyop.jpg"
 category: "Best Companies"
 tags: ["37F", "PSYOP", "Marketing", "Communications"]

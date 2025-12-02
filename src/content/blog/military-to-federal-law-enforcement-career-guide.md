@@ -1,7 +1,7 @@
 ---
 title: "Military to Federal Law Enforcement: Complete Transition Guide for Veterans"
 description: "How to transition from military service to federal law enforcement. Best MOS backgrounds, agency requirements, salary expectations, and hiring process details."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to federal law enforcement, veteran FBI jobs, federal agent careers for veterans"
 slug: "military-to-federal-law-enforcement-career-guide"

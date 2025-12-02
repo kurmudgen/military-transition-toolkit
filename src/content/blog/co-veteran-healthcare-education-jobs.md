@@ -1,6 +1,6 @@
 ---
 title: "Colorado Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-01"
+date: "2026-02-03"
 description: "Complete directory of Colorado VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Colorado VA hospital, Colorado veteran education, Colorado veteran jobs, Colorado GI Bill schools"
 slug: "co-veteran-healthcare-education-jobs"

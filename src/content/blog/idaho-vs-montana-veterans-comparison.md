@@ -1,7 +1,7 @@
 ---
 title: "Idaho vs Montana Veterans Comparison: Complete Guide 2025"
 description: "Compare Idaho and Montana for military retirees. Analyze military retirement tax, cost of living, outdoor recreation, and Northern Rockies opportunities."
-date: "2026-02-13"
+date: "2026-02-18"
 category: "State Comparisons"
 tags: ["Idaho", "Montana", "Veterans Benefits", "Northern Rockies", "Military Retirement"]
 author: "Military Transition Toolkit"

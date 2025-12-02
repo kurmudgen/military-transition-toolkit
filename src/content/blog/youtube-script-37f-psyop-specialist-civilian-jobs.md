@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 37F PSYOP: $179K MISO Contractor & Strategic Comms 2025
-date: "2026-03-20"
+date: "2026-04-04"
 TARGET LENGTH: 6-8 minutes
 TARGET KEYWORDS: 37F PSYOP civilian jobs, MISO contractor salary, strategic communications
 VIDEO FILE NAME: youtube-script-37f-psyop-specialist-civilian-jobs.md

@@ -1,7 +1,7 @@
 ---
 title: "Military to Supply Chain Management: Complete Transition Guide for Veterans"
 description: "How to transition from military service to supply chain management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-02"
 category: "industry-transition"
 keywords: "military to supply chain, veteran logistics jobs, supply chain management careers for veterans"
 slug: "military-to-supply-chain-management-career-guide"

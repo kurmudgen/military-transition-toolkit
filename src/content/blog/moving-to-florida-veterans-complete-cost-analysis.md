@@ -2,7 +2,7 @@
 title: "Moving to Florida for Veterans: Complete Cost Analysis and Financial Guide 2025"
 description: "Comprehensive veteran relocation guide to Florida including housing costs, tax implications, VA healthcare, job market analysis, and month-by-month transition budget."
 author: "Military Transition Toolkit"
-date: "2026-02-20"
+date: "2026-03-03"
 tags: ["Florida", "Relocation", "Veteran Costs", "Housing", "Cost of Living"]
 category: "State Relocation Guides"
 featured: true

@@ -1,6 +1,6 @@
 ---
 title: "Navy FT (Fire Control Technician - Submarine) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
-date: "2026-01-08"
+date: "2026-01-09"
 description: "Real career options for Navy FT Fire Control Technicians transitioning to civilian life. Includes salary ranges $55K-$147K+, required certifications, and skills translation for submarine veterans."
 keywords: "Navy FT civilian jobs, Fire Control Technician career transition, submarine veteran careers, FT to civilian career"
 ---

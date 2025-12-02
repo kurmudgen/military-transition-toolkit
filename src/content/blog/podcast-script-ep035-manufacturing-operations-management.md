@@ -1,6 +1,6 @@
 ---
 EPISODE #035: Manufacturing and Operations Management for Veterans
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: operations manager, manufacturing, production manager, lean six sigma, supply chain

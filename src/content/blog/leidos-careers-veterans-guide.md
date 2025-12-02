@@ -1,7 +1,7 @@
 ---
 title: "Leidos Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to Leidos careers for veterans. Learn about defense, intelligence, health IT, and civil engineering positions, veteran hiring programs, clearance requirements, and how to land jobs at this major contractor."
-date: "2025-12-01"
+date: "2026-02-22"
 category: "federal-employment"
 keywords: "Leidos careers veterans, Leidos jobs, defense contractor careers, health IT jobs, Leidos veteran hiring, intelligence careers veterans"
 slug: "leidos-careers-veterans-guide"

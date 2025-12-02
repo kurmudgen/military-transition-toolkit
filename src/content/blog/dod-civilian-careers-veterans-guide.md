@@ -1,7 +1,7 @@
 ---
 title: "Department of Defense Civilian Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to DoD civilian careers for veterans. Learn about positions, hiring programs, locations, salary ranges, and how to transition from military to DoD civilian employment."
-date: "2025-12-01"
+date: "2026-01-17"
 category: "federal-employment"
 keywords: "DoD civilian jobs, Department of Defense careers, DoD civilian employment veterans, military to DoD civilian, defense civilian jobs, Army civilian, Navy civilian, Air Force civilian"
 slug: "dod-civilian-careers-veterans-guide"

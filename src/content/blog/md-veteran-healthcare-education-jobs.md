@@ -1,6 +1,6 @@
 ---
 title: "Maryland Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-18"
+date: "2026-02-24"
 description: "Complete directory of Maryland VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Maryland VA hospital, Maryland veteran education, Maryland veteran jobs, Maryland GI Bill schools"
 slug: "md-veteran-healthcare-education-jobs"

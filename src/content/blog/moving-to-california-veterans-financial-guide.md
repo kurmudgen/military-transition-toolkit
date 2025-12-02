@@ -2,7 +2,7 @@
 title: "Moving to California for Veterans: Financial Guide and Complete Cost Analysis 2025"
 description: "Comprehensive veteran relocation guide to California with housing costs, tax strategies, VA healthcare, job market analysis, and financial planning for military families."
 author: "Military Transition Toolkit"
-date: "2026-02-20"
+date: "2026-03-03"
 tags: ["California", "Relocation", "Veteran Costs", "Housing", "Cost of Living"]
 category: "State Relocation Guides"
 featured: true

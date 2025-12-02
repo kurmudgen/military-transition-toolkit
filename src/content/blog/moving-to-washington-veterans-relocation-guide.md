@@ -2,7 +2,7 @@
 title: "Moving to Washington for Veterans: Relocation Guide and Cost Analysis 2025"
 description: "Complete relocation guide for Washington veterans including no income tax, housing costs, Pacific Northwest lifestyle, military installations, VA healthcare, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["Washington", "Relocation", "Veteran Costs", "No Income Tax", "Pacific Northwest"]
 category: "State Relocation Guides"
 featured: true

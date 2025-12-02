@@ -1,5 +1,5 @@
 ---
-date: "2026-02-17"
+date: "2026-02-22"
 ---# Lesson 1.1: The Civilian Resume Mindset Shift
 
 **Course:** Military Resume Mastery

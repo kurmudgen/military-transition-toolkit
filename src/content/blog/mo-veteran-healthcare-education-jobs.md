@@ -1,6 +1,6 @@
 ---
 title: "Missouri Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-20"
+date: "2026-03-03"
 description: "Complete directory of Missouri VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Missouri VA hospital, Missouri veteran education, Missouri veteran jobs, Missouri GI Bill schools"
 slug: "mo-veteran-healthcare-education-jobs"

@@ -1,6 +1,6 @@
 ---
 title: "Best Companies for 13F Fire Support Specialists: Top Employers (2025)"
-date: "2026-01-26"
+date: "2026-01-27"
 description: "Top 15+ companies actively hiring 13F Fire Support veterans with salaries $75K-$160K+. Includes defense contractors, operations, and government agencies."
 keywords: "13F fire support specialist jobs, defense contractor careers, military operations, government employment"
 slug: "best-companies-13f-fire-support-specialists"

@@ -1,7 +1,7 @@
 ---
 title: "Salary Negotiation Guide for Veterans (2025)"
 description: "Master salary negotiation as a veteran transitioning to civilian work. Learn strategies, research methods, and scripts for getting paid what you're worth."
-date: "2026-03-08"
+date: "2026-03-20"
 author: "Military Transition Toolkit"
 category: "Career Transition"
 tags: ["salary-negotiation", "first-job", "career-transition", "compensation"]

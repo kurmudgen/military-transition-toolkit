@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Teacher: Licensing Across States"
 description: "Navigate teaching licensure as a military spouse. State reciprocity guide, alternative certification, online teaching options, and strategies for career continuity through PCS moves."
-date: "2025-12-02"
+date: "2026-03-22"
 category: "military-spouse"
 keywords: "military spouse teacher, teaching license transfer, teacher certification military spouse, teaching across states, military spouse teaching jobs"
 slug: "teacher-licensing-military-spouse-guide"

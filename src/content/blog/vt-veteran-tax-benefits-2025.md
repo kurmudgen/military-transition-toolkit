@@ -1,6 +1,6 @@
 ---
 title: "Vermont Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-03-18"
+date: "2026-04-02"
 description: "Complete guide to Vermont veteran tax benefits for 2025: property tax exemptions up to $40,000, new military retirement income exemptions, vehicle registration waivers, combat pay treatment, and 20-year savings projections compared to NH, MA, NY."
 keywords: "Vermont veteran tax benefits, VT property tax exemption, military retirement income tax Vermont, veteran vehicle registration Vermont, combat pay Vermont, Alternative Veterans Property Tax Credit"
 slug: "vt-veteran-tax-benefits-2025"

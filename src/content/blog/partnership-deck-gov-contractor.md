@@ -1,6 +1,6 @@
 ---
 DOCUMENT: Government Contractor Partnership Deck
-date: "2026-02-25"
+date: "2026-03-08"
 TYPE: Pitch Deck
 AUDIENCE: Government Contractors (VEVRAA Compliance Officers, HR, Talent Acquisition)
 SLIDES: 12

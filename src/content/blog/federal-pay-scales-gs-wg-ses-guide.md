@@ -1,7 +1,7 @@
 ---
 title: "Understanding Federal Pay Scales: GS, WG, and SES Explained for Veterans"
 description: "Complete guide to federal pay scales including GS (General Schedule), WG (Wage Grade), and SES (Senior Executive Service). Learn how locality pay works and what you can expect to earn."
-date: "2025-12-01"
+date: "2026-02-14"
 category: "federal-employment"
 keywords: "federal pay scale, GS pay scale, WG wage grade, SES salary, federal salary, government pay grades, GS-11 salary, GS-12 salary, locality pay"
 slug: "federal-pay-scales-gs-wg-ses-guide"

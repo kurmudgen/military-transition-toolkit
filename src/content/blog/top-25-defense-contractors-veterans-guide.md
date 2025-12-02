@@ -1,7 +1,7 @@
 ---
 title: "Top 25 Defense Contractors Hiring Veterans: Complete Guide"
 description: "Comprehensive guide to the top 25 defense contractors hiring veterans. Learn about major defense companies, what they do, veteran programs, clearance requirements, and how to land jobs at these companies."
-date: "2025-12-01"
+date: "2026-03-23"
 category: "federal-employment"
 keywords: "defense contractors hiring veterans, top defense contractors, military contractor jobs, cleared defense jobs, government contractor veterans, defense industry careers"
 slug: "top-25-defense-contractors-veterans-guide"

@@ -1,5 +1,5 @@
 ---
-date: "2026-02-02"
+date: "2026-02-05"
 ---# Competitor Analysis: American Corporate Partners (ACP)
 
 **Category:** Career Services - Mentorship

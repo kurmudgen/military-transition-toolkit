@@ -1,6 +1,6 @@
 ---
 EPISODE #043: Writing Achievement-Based Resumes - Quantifying Your Military Impact
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: resume writing, military translation, achievements, quantify, ATS optimization, veterans

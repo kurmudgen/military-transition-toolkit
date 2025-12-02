@@ -1,7 +1,7 @@
 ---
 title: "Virginia vs Maryland for Veterans: Complete Benefits Comparison 2025"
 description: "Compare Virginia and Maryland for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and job opportunities for veterans."
-date: "2026-03-18"
+date: "2026-04-02"
 category: "State Comparisons"
 tags: ["Virginia", "Maryland", "Veterans Benefits", "Military Retirement", "Northeast"]
 author: "Military Transition Toolkit"

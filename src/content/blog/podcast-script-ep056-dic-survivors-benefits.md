@@ -1,6 +1,6 @@
 ---
 EPISODE #056: DIC - Dependency and Indemnity Compensation for Survivors
-date: "2026-03-03"
+date: "2026-03-14"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)
 KEYWORDS: DIC, dependency indemnity compensation, surviving spouse, survivor benefits, VA Form 21P-534EZ

@@ -1,6 +1,6 @@
 ---
 EPISODE #039: Negotiating Remote Work and Flexible Schedules as a Veteran
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 14-16 minutes
 KEYWORDS: remote work, flexible schedule, hybrid work, negotiation, work from home, veterans

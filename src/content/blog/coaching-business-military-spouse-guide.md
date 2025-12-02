@@ -1,7 +1,7 @@
 ---
 title: "Coaching Business for Military Spouses: Building a Remote Practice"
 description: "Launch a coaching business as a military spouse. Life coaching, career coaching, wellness coaching certifications, finding clients, and building location-independent income."
-date: "2025-12-02"
+date: "2026-02-03"
 category: "military-spouse"
 keywords: "military spouse coach, life coaching military spouse, career coaching business, wellness coach military, remote coaching career"
 slug: "coaching-business-military-spouse-guide"

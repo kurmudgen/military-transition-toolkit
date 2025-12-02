@@ -1,6 +1,6 @@
 ---
 EPISODE #047: VA Disability Claims 101 - Understanding Your Rights and the Claims Process
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 20-22 minutes
 KEYWORDS: VA disability, claims process, service connection, compensation, ratings, veterans benefits

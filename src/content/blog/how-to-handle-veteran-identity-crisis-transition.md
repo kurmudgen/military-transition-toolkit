@@ -1,6 +1,6 @@
 ---
 title: "How to Handle Veteran Identity Crisis During Transition: Finding Purpose After Military"
-date: "2025-12-17"
+date: "2025-12-18"
 description: "Identity crisis after military, losing military identity, finding new purpose, personal values beyond military, redefining yourself as veteran."
 keywords: "veteran identity crisis, finding purpose after military, military identity transition, life after military service, veteran purpose"
 slug: "how-to-handle-veteran-identity-crisis-transition"

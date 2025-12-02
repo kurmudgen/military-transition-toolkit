@@ -1,6 +1,6 @@
 ---
 EPISODE #002: How to Win Your VA PTSD Claim - Complete Evidence and Exam Strategy
-date: "2026-02-27"
+date: "2026-03-10"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 28-30 minutes
 KEYWORDS: VA disability, PTSD claim, C&P exam, VA rating, PTSD evidence, DBQ, PTSD percentage, VA benefits

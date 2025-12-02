@@ -2,7 +2,7 @@
 title: "Moving to Georgia for Veterans: Cost Analysis and Financial Guide 2025"
 description: "Complete relocation guide for Georgia veterans including military installations, housing costs, job market, VA healthcare, tax benefits, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-20"
+date: "2026-03-03"
 tags: ["Georgia", "Relocation", "Veteran Costs", "Housing", "Military"]
 category: "State Relocation Guides"
 featured: true

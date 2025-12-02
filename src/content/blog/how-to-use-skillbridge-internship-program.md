@@ -1,7 +1,7 @@
 ---
 title: "How to Use SkillBridge Internship Program: Complete Application Guide"
 description: "Leverage SkillBridge to gain civilian internship experience while still in military. Step-by-step guide to applying, selecting programs, and maximizing the benefit."
-date: "2025-12-19"
+date: "2025-12-20"
 author: "Military Transition Toolkit"
 category: "Career Transition"
 tags: ["skillbridge", "internship", "transition-program", "career-transition"]

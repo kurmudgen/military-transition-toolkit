@@ -1,5 +1,5 @@
 ---
-date: "2026-02-01"
+date: "2026-02-03"
 ---# Cost of Living Calculator - Build Research
 
 ## Overview

@@ -2,7 +2,7 @@
 title: "Moving to Texas for Veterans: Cost Breakdown and Financial Analysis 2025"
 description: "Complete veteran relocation guide to Texas with housing costs, tax advantages, military installations, VA healthcare, job market analysis, and transition planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["Texas", "Relocation", "Veteran Costs", "Housing", "Cost of Living"]
 category: "State Relocation Guides"
 featured: true

@@ -1,7 +1,7 @@
 ---
 title: "Resume Writing for Military Spouses: Addressing Gaps Guide"
 description: "Create a compelling resume as a military spouse. Address employment gaps, translate diverse experience, and position yourself competitively despite frequent moves."
-date: "2025-12-02"
+date: "2026-03-19"
 category: "military-spouse"
 keywords: "military spouse resume, employment gaps resume, resume address gaps, military spouse job application, career gaps resume"
 slug: "resume-writing-military-spouse-guide"

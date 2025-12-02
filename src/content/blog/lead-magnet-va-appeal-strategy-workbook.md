@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-22"
 ---# VA Appeal Strategy Workbook
 ## HLR vs. Supplemental vs. Board Appeal - Which Path Gets You the Rating You Deserve?
 **By Jacob, Navy E6 | Formation Labs**

@@ -1,7 +1,7 @@
 ---
 title: "Hypertension Secondary to Sleep Apnea: Complete VA Claims Filing Guide"
 description: "Expert guide to filing hypertension as secondary to sleep apnea, pathophysiology nexus, evidence requirements, and compensation impact calculations."
-date: "2026-02-12"
+date: "2026-02-17"
 category: "Secondary Conditions"
 tags: ["hypertension", "sleep-apnea", "secondary-condition", "cardiac", "va-claims", "disability"]
 author: "Military Transition Toolkit"

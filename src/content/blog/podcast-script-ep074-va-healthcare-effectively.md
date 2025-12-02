@@ -1,6 +1,6 @@
 ---
 EPISODE #074: Using VA Healthcare Effectively - Enrollment, Copays, Community Care, and Getting the Care You Deserve
-date: "2026-03-04"
+date: "2026-03-15"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)

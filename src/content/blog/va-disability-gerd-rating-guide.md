@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for GERD/Acid Reflux: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-13"
+date: "2026-03-27"
 description: "How to get VA disability rating for GERD (acid reflux). Rating criteria from 10% to 60%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability GERD, acid reflux VA rating, GERD C&P exam, VA claim GERD, hiatal hernia VA"
 category: "va-disability"

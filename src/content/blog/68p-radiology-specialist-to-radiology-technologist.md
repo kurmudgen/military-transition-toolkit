@@ -1,6 +1,6 @@
 ---
 title: "68P Radiology Specialist to Radiology Technologist: Complete Career Guide (2025)"
-date: "2026-01-23"
+date: "2026-01-24"
 description: "Transform your 68P radiology expertise into radiology technologist career earning $55K-$100K+. Includes ARRT certification paths, clinical advancement, and imaging technology opportunities."
 keywords: "68P to radiology technologist, military radiology to civilian, ARRT certification, radiology technologist salary"
 slug: "68p-radiology-specialist-to-radiology-technologist"

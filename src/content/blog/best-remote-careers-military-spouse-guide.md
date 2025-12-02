@@ -1,7 +1,7 @@
 ---
 title: "Best Remote Careers for Military Spouses (2025): Complete Guide"
 description: "Discover the top 15 remote careers for military spouses in 2025. Portable jobs that survive PCS moves, pay $40K-$120K+, and offer flexibility for military life."
-date: "2025-12-02"
+date: "2026-01-30"
 category: "military-spouse"
 keywords: "military spouse remote jobs, portable careers military spouse, work from home military spouse, remote careers PCS, military spouse employment"
 slug: "best-remote-careers-military-spouse-guide"

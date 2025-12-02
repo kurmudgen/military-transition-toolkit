@@ -1,7 +1,7 @@
 ---
 title: "Using Spouse GI Bill Benefits: Chapter 35 & Transfer Guide"
 description: "Complete guide to GI Bill education benefits for military spouses. Post-9/11 GI Bill transfer, Chapter 35 DEA benefits, eligibility, and maximizing your education funding."
-date: "2025-12-02"
+date: "2026-02-16"
 category: "military-spouse"
 keywords: "military spouse GI Bill, Post-9/11 GI Bill transfer, Chapter 35 DEA, spouse education benefits, GI Bill spouse transfer"
 slug: "gi-bill-benefits-spouse-transfer-guide"

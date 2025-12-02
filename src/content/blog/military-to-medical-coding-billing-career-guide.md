@@ -1,7 +1,7 @@
 ---
 title: "Military to Medical Coding/Billing: Complete Transition Guide for Veterans"
 description: "How to transition from military service to medical coding and billing. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to medical coding, veteran medical billing jobs, medical coding careers for veterans"
 slug: "military-to-medical-coding-billing-career-guide"

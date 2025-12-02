@@ -1,6 +1,6 @@
 ---
 title: "19D Cavalry Scout to Intelligence Analyst: Complete Career Transition Guide (2025)"
-date: "2026-01-19"
+date: "2026-01-20"
 description: "Transform your 19D reconnaissance and intelligence skills into $60K-$130K+ analyst career. Includes security clearance leverage, GEOINT/HUMINT paths, and cleared contractor roles."
 keywords: "19D to intelligence analyst, cavalry scout analyst career, 19D security clearance jobs, military intelligence civilian"
 slug: "19d-cavalry-scout-to-intelligence-analyst"

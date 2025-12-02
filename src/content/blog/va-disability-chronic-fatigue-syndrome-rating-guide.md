@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Chronic Fatigue Syndrome: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-11"
+date: "2026-03-26"
 description: "How to get VA disability rating for chronic fatigue syndrome (CFS). Rating criteria from 10% to 100%, Gulf War presumptive, and evidence needed."
 keywords: "VA disability chronic fatigue syndrome, CFS VA rating, myalgic encephalomyelitis VA claim, Gulf War illness fatigue"
 category: "va-disability"

@@ -3,7 +3,7 @@ title: "15T Aviation Mechanic Certifications ROI: A&P, Type Ratings, and Manufac
 description: "Complete ROI analysis for 15T aviation mechanics transitioning to civilian aviation with A&P, type ratings, and manufacturer certifications"
 slug: "15t-aviation-certifications-cost-salary-analysis"
 author: "Military Transition Toolkit"
-date: "2026-01-18"
+date: "2026-01-19"
 category: "Certifications"
 tags: ["15T", "Aviation Mechanic", "A&P", "Type Rating", "ROI Analysis"]
 ---

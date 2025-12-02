@@ -1,6 +1,6 @@
 ---
 title: "Terminal Leave Guide: How to Maximize Your Final Military Days (2025)"
-date: "2026-03-09"
+date: "2026-03-23"
 description: "Terminal leave strategy, maximizing final leave days, out-processing timeline, separation checklist, and making the most of your final weeks in military."
 keywords: "terminal leave, military separation, final leave days, out-processing, separation checklist, military transition preparation"
 slug: "terminal-leave-guide-maximize-final-military-days"

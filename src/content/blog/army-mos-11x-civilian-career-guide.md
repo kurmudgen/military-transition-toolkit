@@ -1,7 +1,7 @@
 ---
 title: "Army 11X Infantry Enlistment Option to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-10"
-date: "2025-12-20"
+date: "2025-12-21"
 description: "Real career options for Army 11X Infantry soldiers transitioning to civilian life. Covers both 11B and 11C paths with salary ranges $50K-$180K+, law enforcement, security, skilled trades, and 100+ companies hiring."
 keywords: "11X Infantry civilian jobs, Army infantry career transition, 11X to police officer, infantry veteran jobs, 11X salary civilian, Army infantry transition guide"
 slug: "army-mos-11x-civilian-career-guide"

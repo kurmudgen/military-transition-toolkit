@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse Preference Hiring: How It Actually Works"
 description: "Complete guide to military spouse hiring preference programs. Federal MSP, DoD preference, state programs, and how to actually use these benefits to get hired."
-date: "2025-12-02"
+date: "2026-02-25"
 category: "military-spouse"
 keywords: "military spouse preference, MSP federal hiring, spouse hiring preference, DoD spouse hiring, federal jobs military spouse"
 slug: "military-spouse-preference-hiring-guide"

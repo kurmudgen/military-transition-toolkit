@@ -1,6 +1,6 @@
 ---
 title: "Connecticut Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-04"
+date: "2026-02-06"
 description: "Complete directory of Connecticut VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Connecticut VA hospital, Connecticut veteran education, Connecticut veteran jobs, Connecticut GI Bill schools"
 slug: "ct-veteran-healthcare-education-jobs"

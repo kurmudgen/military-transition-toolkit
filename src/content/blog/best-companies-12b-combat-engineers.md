@@ -1,6 +1,6 @@
 ---
 title: "Best Companies for 12B Combat Engineers: Top Construction Employers (2025)"
-date: "2026-01-26"
+date: "2026-01-27"
 description: "Top 25+ companies actively hiring 12B Combat Engineer veterans with salaries $70K-$180K+. Includes construction, engineering firms, infrastructure, and project management."
 keywords: "12B combat engineer jobs, construction companies, engineering firms, construction management salary"
 slug: "best-companies-12b-combat-engineers"

@@ -1,5 +1,5 @@
 ---
-date: "2026-01-16"
+date: "2026-01-17"
 ---# Air Force AFSCs - All 30 Career Transition Scripts
 
 Complete career guidance for top 30 Air Force Specialty Codes.

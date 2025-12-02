@@ -2,7 +2,7 @@
 title: "Moving to Colorado for Veterans: Relocation Guide and Cost Analysis 2025"
 description: "Complete cost analysis for veterans relocating to Colorado including housing, outdoor lifestyle, military installations, VA healthcare, job market, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-20"
+date: "2026-03-03"
 tags: ["Colorado", "Relocation", "Veteran Costs", "Housing", "Outdoor Lifestyle"]
 category: "State Relocation Guides"
 featured: true

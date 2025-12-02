@@ -1,7 +1,7 @@
 ---
 title: "LinkedIn Profile for Military Spouses: Complete Guide with Examples"
 description: "Optimize your LinkedIn profile as a military spouse. Address employment gaps, highlight transferable skills, and attract recruiters with these proven strategies and examples."
-date: "2025-12-02"
+date: "2026-02-23"
 category: "military-spouse"
 keywords: "LinkedIn military spouse, military spouse profile, LinkedIn employment gaps, military spouse networking, LinkedIn optimization spouse"
 slug: "linkedin-profile-military-spouse-guide"

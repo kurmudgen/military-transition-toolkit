@@ -1,7 +1,7 @@
 ---
 title: "Networking as a Military Spouse: Digital + Local Strategies"
 description: "Build and maintain a professional network despite frequent moves. Digital networking, local connections at each duty station, and strategies that survive PCS relocations."
-date: "2025-12-02"
+date: "2026-03-06"
 category: "military-spouse"
 keywords: "military spouse networking, professional network PCS, networking frequent moves, military spouse career network, digital networking military"
 slug: "networking-military-spouse-guide"

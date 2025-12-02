@@ -1,6 +1,6 @@
 ---
 EPISODE #020: Marine 6046 Aircraft Maintenance to Aviation Careers
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 14-16 minutes
 KEYWORDS: Marine 6046, aviation maintenance, aircraft mechanic, A&P license

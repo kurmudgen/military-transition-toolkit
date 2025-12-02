@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Memory Loss and Cognitive Issues Secondary to PTSD"
 description: "Complete guide to claiming cognitive impairment, memory loss, and brain fog secondary to service-connected PTSD. Evidence and nexus requirements."
-date: "2026-01-31"
+date: "2026-02-02"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Memory Loss", "Cognitive Impairment", "Brain Fog", "Secondary Conditions"]

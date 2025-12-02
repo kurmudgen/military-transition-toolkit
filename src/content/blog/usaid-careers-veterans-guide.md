@@ -1,7 +1,7 @@
 ---
 title: "USAID Careers for Veterans: Complete Guide to International Development"
 description: "Comprehensive guide to USAID careers for veterans. Learn about Foreign Service, Civil Service, and development positions, hiring process, worldwide assignments, and how military experience helps."
-date: "2025-12-01"
+date: "2026-03-24"
 category: "federal-employment"
 keywords: "USAID careers veterans, USAID jobs, international development careers, USAID Foreign Service, USAID hiring, development jobs overseas, humanitarian careers veterans"
 slug: "usaid-careers-veterans-guide"

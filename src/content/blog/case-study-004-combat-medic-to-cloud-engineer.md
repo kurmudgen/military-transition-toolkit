@@ -1,5 +1,5 @@
 ---
-date: "2026-01-30"
+date: "2026-01-31"
 ---# Combat Medic to $110K Cloud Security Engineer in 10 Months
 
 ## Quick Facts

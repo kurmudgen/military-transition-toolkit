@@ -1,6 +1,6 @@
 ---
 EPISODE #080: Air Force Pararescue to Firefighter/Paramedic - $95K Public Safety Career
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 TARGET LENGTH: 16-18 minutes

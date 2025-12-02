@@ -3,7 +3,7 @@ title: "35M Imagery Intelligence to Forensics, Digital Investigation Certificati
 description: "Complete ROI analysis for 35M imagery intelligence specialists pursuing digital forensics and investigation certifications"
 slug: "35m-investigation-certifications-roi"
 author: "Military Transition Toolkit"
-date: "2026-01-21"
+date: "2026-01-22"
 category: "Certifications"
 tags: ["35M", "Imagery Intelligence", "Forensics", "Digital Investigation"]
 ---

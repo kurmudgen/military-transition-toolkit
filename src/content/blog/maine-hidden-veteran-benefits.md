@@ -2,7 +2,7 @@
 title: "Maine Hidden Veteran Benefits: Property Tax Relief and Education Advantages 2025"
 description: "Uncover Maine's exclusive veteran benefits including property tax exemptions, education credits, hunting/fishing discounts, and coastal state programs for military families."
 author: "Military Transition Toolkit"
-date: "2025-12-11"
+date: "2025-12-12"
 tags: ["Maine", "Veteran Benefits", "Property Tax", "Education", "Hunting Fishing"]
 category: "State Benefits"
 featured: true

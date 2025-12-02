@@ -1,7 +1,7 @@
 ---
 title: "Military to Border Patrol/CBP: Complete Transition Guide for Veterans"
 description: "How to transition from military service to Customs and Border Protection careers. Border Patrol Agent and CBP Officer paths, requirements, salary, and hiring process."
-date: "2025-12-01"
+date: "2026-02-26"
 category: "industry-transition"
 keywords: "military to border patrol, veteran CBP jobs, customs officer careers for veterans"
 slug: "military-to-border-patrol-cbp-career-guide"

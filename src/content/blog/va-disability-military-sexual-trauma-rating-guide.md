@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Military Sexual Trauma (MST): Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-15"
+date: "2026-03-30"
 description: "How to get VA disability rating for conditions related to Military Sexual Trauma (MST). Rating criteria, evidence requirements, and special claims procedures."
 keywords: "VA disability MST, military sexual trauma VA rating, MST claim, VA claim sexual assault, MST PTSD rating"
 category: "va-disability"

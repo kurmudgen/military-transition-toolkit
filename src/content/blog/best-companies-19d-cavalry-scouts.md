@@ -2,7 +2,7 @@
 title: "Best Companies for 19D Cavalry Scouts: Law Enforcement & Security Career Guide"
 description: "Top law enforcement, security, and government agencies hiring 19D cavalry scouts for investigative and protection roles with career advancement data."
 author: "Military Transition Toolkit"
-date: "2026-01-26"
+date: "2026-01-27"
 image: "/images/19d-cavalry-scout.jpg"
 category: "Best Companies"
 tags: ["19D", "Cavalry Scout", "Law Enforcement", "Best Companies"]

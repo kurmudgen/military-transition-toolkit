@@ -1,5 +1,5 @@
 ---
-date: "2026-02-12"
+date: "2026-02-17"
 ---# Air Force AFSC Career Guide Generation Framework
 
 ## Completion Status

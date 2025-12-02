@@ -1,5 +1,5 @@
 ---
-date: "2026-01-30"
+date: "2026-02-01"
 ---# From 0% to 90% Rating in 14 Months: The Secondary Conditions Strategy
 
 ## Quick Facts

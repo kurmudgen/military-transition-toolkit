@@ -1,6 +1,6 @@
 ---
 EPISODE #051: Secondary Conditions Strategy - How to Maximize Your VA Rating
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 20-22 minutes
 KEYWORDS: secondary conditions, VA disability, nexus letter, service connection, cascading disabilities

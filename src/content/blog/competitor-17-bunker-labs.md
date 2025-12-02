@@ -1,5 +1,5 @@
 ---
-date: "2026-02-03"
+date: "2026-02-05"
 ---# Competitor Analysis: Bunker Labs
 
 **Category:** Specialized Service - Veteran Entrepreneurship

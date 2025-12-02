@@ -1,7 +1,7 @@
 ---
 title: "Claiming IBS as Secondary to PTSD: Complete VA Disability Guide"
 description: "Learn how to file a successful VA disability claim for IBS secondary to PTSD with evidence requirements, nexus letters, and rating percentages."
-date: "2026-01-31"
+date: "2026-02-02"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Secondary Conditions", "IBS", "Claims Process"]

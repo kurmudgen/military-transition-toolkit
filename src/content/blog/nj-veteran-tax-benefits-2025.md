@@ -1,6 +1,6 @@
 ---
 title: "New Jersey Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-02-23"
+date: "2026-03-06"
 description: "Complete guide to New Jersey veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans."
 keywords: "new jersey veteran benefits, new jersey property tax exemption veterans, new jersey veteran tax benefits, military retirement new jersey"
 slug: "new-jersey-veteran-tax-benefits-2025"

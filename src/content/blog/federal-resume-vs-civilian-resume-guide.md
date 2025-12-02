@@ -1,7 +1,7 @@
 ---
 title: "Federal Resume vs Civilian Resume: Key Differences Veterans Must Know"
 description: "Learn the critical differences between federal and civilian resumes. This guide shows veterans exactly how to transform their experience into a federal resume that gets referred."
-date: "2025-12-01"
+date: "2026-02-15"
 category: "federal-employment"
 keywords: "federal resume, federal resume vs civilian resume, USAJOBS resume, federal resume format, federal resume for veterans, federal resume example, government resume"
 slug: "federal-resume-vs-civilian-resume-guide"

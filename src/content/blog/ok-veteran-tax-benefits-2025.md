@@ -1,6 +1,6 @@
 ---
 title: "Oklahoma Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-02-24"
+date: "2026-03-08"
 description: "Complete guide to Oklahoma veteran tax benefits: full property tax exemption for 100% disabled veterans, military retirement tax exemption, and sales tax benefits."
 keywords: "oklahoma veteran benefits, oklahoma property tax exemption veterans, oklahoma veteran tax benefits, military retirement oklahoma"
 slug: "ok-veteran-tax-benefits-2025"

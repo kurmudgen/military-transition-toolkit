@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Virtual Assistant: Complete Business Guide"
 description: "Start a virtual assistant business as a military spouse. Learn how to find clients, set rates, manage PCS moves, and build a location-independent income of $35-100+/hour."
-date: "2025-12-02"
+date: "2026-04-02"
 category: "military-spouse"
 keywords: "military spouse virtual assistant, VA business military spouse, work from home military spouse, virtual assistant PCS, remote business military spouse"
 slug: "virtual-assistant-military-spouse-guide"

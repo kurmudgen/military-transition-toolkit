@@ -1,7 +1,7 @@
 ---
 title: "CBP Careers for Veterans: Complete Guide to Customs and Border Protection"
 description: "Comprehensive guide to CBP careers for veterans. Learn about Border Patrol Agent, CBP Officer, Air and Marine Operations, hiring process, salary, and how military experience helps at CBP."
-date: "2025-12-01"
+date: "2026-02-01"
 category: "federal-employment"
 keywords: "CBP careers veterans, Border Patrol veteran, CBP Officer jobs, customs careers, border security careers, CBP hiring process, CBP salary, Air Marine Operations"
 slug: "cbp-careers-veterans-guide"

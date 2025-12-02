@@ -1,7 +1,7 @@
 ---
 title: "KBR Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to KBR careers for veterans. Learn about engineering, government services, international operations positions, veteran hiring programs, and how to land jobs at this global services company."
-date: "2025-12-01"
+date: "2026-02-18"
 category: "federal-employment"
 keywords: "KBR careers veterans, KBR jobs, defense contractor careers, engineering careers veterans, international contractor jobs, KBR veteran hiring"
 slug: "kbr-careers-veterans-guide"

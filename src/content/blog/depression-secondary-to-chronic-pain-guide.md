@@ -1,7 +1,7 @@
 ---
 title: "Depression Secondary to Chronic Pain: Complete VA Claims Guide"
 description: "Expert guide to filing depression as secondary to chronic pain conditions, nexus strategies, evidence requirements, and compensation calculations."
-date: "2026-02-09"
+date: "2026-02-11"
 category: "Secondary Conditions"
 tags: ["depression", "chronic-pain", "secondary-condition", "mental-health", "va-claims", "disability"]
 author: "Military Transition Toolkit"

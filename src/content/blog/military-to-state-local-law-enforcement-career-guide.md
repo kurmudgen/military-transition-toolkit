@@ -1,7 +1,7 @@
 ---
 title: "Military to State/Local Law Enforcement: Complete Transition Guide for Veterans"
 description: "How to transition from military service to state and local police. Academy requirements, salary expectations, best departments hiring veterans, and hiring process."
-date: "2025-12-01"
+date: "2026-03-02"
 category: "industry-transition"
 keywords: "military to police, veteran cop jobs, law enforcement careers for veterans"
 slug: "military-to-state-local-law-enforcement-career-guide"

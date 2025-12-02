@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Thoracolumbar Strain: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-17"
+date: "2026-04-01"
 description: "How to get VA disability rating for thoracolumbar strain (mid and lower back). Rating criteria from 10% to 100%, evidence needed, C&P exam tips."
 keywords: "VA disability thoracolumbar, mid back VA rating, thoracolumbar strain VA claim"
 category: "va-disability"

@@ -1,6 +1,6 @@
 ---
 EPISODE #030: Real Estate Careers for Veterans - From Agent to Property Management
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: real estate agent, property manager, real estate appraiser, veterans, MRP certification

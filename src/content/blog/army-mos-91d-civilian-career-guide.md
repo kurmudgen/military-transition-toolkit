@@ -1,7 +1,7 @@
 ---
 title: "Army 91D (Power Generation Equipment Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-08"
-date: "2025-12-31"
+date: "2026-01-01"
 description: "Real career options for 91D Power Generation Equipment Repairers transitioning to civilian life. Includes salary ranges $58K-$110K+, generator technician careers, power plant operators, diesel mechanics, electrician paths, and Cummins/Generac/CAT opportunities."
 keywords: "91D civilian jobs, power generation repairer career transition, generator technician salary, power plant electrician, diesel generator mechanic, Cummins careers"
 ---

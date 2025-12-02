@@ -1,6 +1,6 @@
 ---
 title: "Florida Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-11"
+date: "2026-02-15"
 description: "Complete directory of Florida's 7 VA medical centers, education programs, veteran employment resources, and support services across the Sunshine State."
 keywords: "Florida VA hospital, Florida veteran education, Florida veteran jobs, Florida GI Bill schools"
 slug: "fl-veteran-healthcare-education-jobs"

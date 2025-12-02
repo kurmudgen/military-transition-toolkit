@@ -1,5 +1,5 @@
 ---
-date: "2026-02-17"
+date: "2026-02-22"
 ---# Lesson 2.2: Quantification and Impact
 
 **Course:** Military Resume Mastery

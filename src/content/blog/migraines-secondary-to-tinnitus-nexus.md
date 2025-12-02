@@ -1,7 +1,7 @@
 ---
 title: "Migraines Secondary to Tinnitus: Complete Nexus and Filing Strategy"
 description: "Expert guide to filing migraines as a secondary condition to tinnitus, nexus requirements, evidence strategies, and compensation impact calculations."
-date: "2026-02-19"
+date: "2026-02-25"
 category: "Secondary Conditions"
 tags: ["migraines", "tinnitus", "secondary-condition", "nexus", "va-claims", "disability"]
 author: "Military Transition Toolkit"

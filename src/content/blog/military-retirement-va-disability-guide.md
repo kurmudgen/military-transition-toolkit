@@ -1,6 +1,6 @@
 ---
 title: "Military Retirement + VA Disability: Can You Get Both? (CRDP vs CRSC Explained 2025)"
-date: "2026-02-19"
+date: "2026-02-25"
 description: "Complete guide to receiving military retirement pay and VA disability compensation simultaneously. Explains CRDP, CRSC, VA offset elimination, and how to maximize your benefits."
 keywords: "military retirement VA disability, CRDP, CRSC, concurrent retirement disability pay, VA offset, military retirement and disability"
 slug: "military-retirement-va-disability-guide"

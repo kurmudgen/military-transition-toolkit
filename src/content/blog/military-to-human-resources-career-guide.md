@@ -1,7 +1,7 @@
 ---
 title: "Military to Human Resources: Complete Transition Guide for Veterans"
 description: "How to transition from military service to human resources. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to human resources, veteran HR jobs, human resources careers for veterans"
 slug: "military-to-human-resources-career-guide"

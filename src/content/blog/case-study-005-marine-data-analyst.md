@@ -1,5 +1,5 @@
 ---
-date: "2026-01-30"
+date: "2026-01-31"
 ---# Marine Intelligence Analyst to $98K Data Analyst in 6 Months
 
 ## Quick Facts

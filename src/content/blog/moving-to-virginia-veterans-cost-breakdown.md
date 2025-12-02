@@ -2,7 +2,7 @@
 title: "Moving to Virginia for Veterans: Cost Breakdown and Complete Analysis 2025"
 description: "Veteran relocation guide to Virginia including military installations, housing costs, VA healthcare, federal employment, job market analysis, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["Virginia", "Relocation", "Veteran Costs", "Military", "Federal Jobs"]
 category: "State Relocation Guides"
 featured: true

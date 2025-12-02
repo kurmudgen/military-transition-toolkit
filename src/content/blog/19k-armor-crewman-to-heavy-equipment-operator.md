@@ -2,7 +2,7 @@
 title: "19K Armor Crewman to Heavy Equipment Operator: Career Transition Guide"
 description: "Complete guide for Army 19K Armor Crewmen transitioning to heavy equipment operator roles with salary data, certifications, and advancement opportunities."
 author: "Military Transition Toolkit"
-date: "2026-01-19"
+date: "2026-01-20"
 image: "/images/19k-armor-crewman.jpg"
 category: "Career Transitions"
 tags: ["19K", "Heavy Equipment", "Construction", "Equipment Operator"]

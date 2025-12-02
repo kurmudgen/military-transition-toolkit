@@ -1,6 +1,6 @@
 ---
 title: "Pennsylvania Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-02-25"
+date: "2026-03-08"
 description: "Complete guide to Pennsylvania veteran tax benefits: property tax exemptions for 100% disabled veterans, military retirement tax exemption, and financial analysis."
 keywords: "pennsylvania veteran benefits, pennsylvania property tax exemption veterans, pennsylvania veteran tax benefits, military retirement pennsylvania"
 slug: "pa-veteran-tax-benefits-2025"

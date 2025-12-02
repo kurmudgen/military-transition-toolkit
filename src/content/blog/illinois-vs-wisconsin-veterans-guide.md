@@ -1,7 +1,7 @@
 ---
 title: "Illinois vs Wisconsin Veterans Guide: Comparison 2025"
 description: "Compare Illinois and Wisconsin for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and Midwest employment opportunities."
-date: "2026-02-13"
+date: "2026-02-18"
 category: "State Comparisons"
 tags: ["Illinois", "Wisconsin", "Veterans Benefits", "Midwest", "Military Retirement"]
 author: "Military Transition Toolkit"

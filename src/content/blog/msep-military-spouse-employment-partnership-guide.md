@@ -1,7 +1,7 @@
 ---
 title: "MSEP Guide: Military Spouse Employment Partnership Explained"
 description: "Complete guide to the Military Spouse Employment Partnership. How MSEP works, partner companies, job search strategies, and maximizing this DoD program for career success."
-date: "2025-12-02"
+date: "2026-03-05"
 category: "military-spouse"
 keywords: "MSEP military spouse, military spouse employment partnership, MSEP jobs, MSEP partners, DoD spouse employment"
 slug: "msep-military-spouse-employment-partnership-guide"

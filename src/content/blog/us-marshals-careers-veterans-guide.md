@@ -1,7 +1,7 @@
 ---
 title: "US Marshals Service Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to US Marshals Service careers for veterans. Learn about Deputy US Marshal positions, requirements, hiring process, salary, and how military experience helps at USMS."
-date: "2025-12-01"
+date: "2025-12-06"
 category: "federal-employment"
 keywords: "US Marshals careers veterans, Deputy US Marshal veteran, USMS jobs, US Marshals hiring, US Marshals requirements, US Marshals salary, federal marshal careers"
 slug: "us-marshals-careers-veterans-guide"

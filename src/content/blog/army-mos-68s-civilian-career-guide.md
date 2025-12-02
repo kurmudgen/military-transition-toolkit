@@ -1,7 +1,7 @@
 ---
 title: "Army 68S (Preventive Medicine Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-06-03"
-date: "2025-12-29"
+date: "2025-12-30"
 description: "Real career options for Army 68S Preventive Medicine Specialists transitioning to civilian life. Includes salary ranges $56K-$135K+, epidemiologist jobs, infection preventionist, occupational health, and certifications with costs."
 keywords: "Army 68S civilian jobs, preventive medicine specialist career transition, 68S to civilian, epidemiologist salary, infection preventionist CIC certification, occupational health safety specialist, public health jobs"
 ---

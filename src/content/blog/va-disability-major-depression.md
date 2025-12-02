@@ -1,5 +1,5 @@
 ---
-date: "2026-03-15"
+date: "2026-03-29"
 ---# VA Disability Rating Guide: Major Depressive Disorder (MDD)
 
 ## Bottom Line Up Front (BLUF)

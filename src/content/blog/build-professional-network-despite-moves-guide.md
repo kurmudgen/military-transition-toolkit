@@ -1,7 +1,7 @@
 ---
 title: "How to Build a Professional Network Despite Moves"
 description: "Strategies for building and maintaining professional relationships through frequent military relocations. Create a portable network that supports your career everywhere."
-date: "2025-12-02"
+date: "2026-01-30"
 category: "military-spouse"
 keywords: "professional network military spouse, networking military moves, portable network, career networking PCS, military spouse connections"
 slug: "build-professional-network-despite-moves-guide"

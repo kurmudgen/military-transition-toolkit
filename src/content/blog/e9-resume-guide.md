@@ -1,6 +1,6 @@
 ---
 title: "E9/Master Chief Resume: Commanding Your Civilian Career Transition"
-date: "2026-02-09"
+date: "2026-02-12"
 description: "You're in the top 1% of enlisted leadership. Learn how to position yourself for C-suite equivalent roles, consulting, and executive positions worth $120K-$250K+."
 keywords: "E9 resume, master chief resume, command master chief resume, senior enlisted advisor resume"
 slug: "e9-resume-guide"

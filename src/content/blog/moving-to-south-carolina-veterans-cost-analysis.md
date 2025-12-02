@@ -2,7 +2,7 @@
 title: "Moving to South Carolina for Veterans: Cost Analysis and Complete Guide 2025"
 description: "Comprehensive veteran relocation guide to South Carolina including military benefits, housing costs, job market, VA healthcare, coastal lifestyle, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["South Carolina", "Relocation", "Veteran Costs", "Housing", "Military"]
 category: "State Relocation Guides"
 featured: true

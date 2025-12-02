@@ -1,6 +1,6 @@
 ---
 title: "Michigan Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-19"
+date: "2026-02-25"
 description: "Complete directory of Michigan VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Michigan VA hospital, Michigan veteran education, Michigan veteran jobs, Michigan GI Bill schools"
 slug: "mi-veteran-healthcare-education-jobs"

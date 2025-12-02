@@ -1,5 +1,5 @@
 ---
-date: "2026-01-16"
+date: "2026-01-17"
 ---# Remaining Army MOS Scripts - Batch 1
 
 This file contains streamlined scripts for additional Army MOSs to complete the 50 total needed.

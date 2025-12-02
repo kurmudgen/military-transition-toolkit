@@ -1,6 +1,6 @@
 ---
 title: "Best Cities for Veterans in Kansas 2025: Jobs, Housing & Quality of Life"
-date: "2025-12-10"
+date: "2025-12-11"
 description: "Comprehensive guide to the best Kansas cities for veterans in 2025, comparing cost of living, job opportunities, VA healthcare access, and veteran communities."
 keywords: "best cities Kansas veterans, Kansas veteran jobs, affordable Kansas cities, Fort Riley Manhattan veterans"
 slug: "ks-best-cities-veterans-2025"

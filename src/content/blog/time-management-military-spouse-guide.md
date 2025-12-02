@@ -1,7 +1,7 @@
 ---
 title: "Time Management for Military Spouses Balancing Everything"
 description: "Practical time management strategies for military spouses juggling career, family, household management, and military life unpredictability. Systems that actually work."
-date: "2025-12-02"
+date: "2026-03-23"
 category: "military-spouse"
 keywords: "time management military spouse, work life balance military, military spouse schedule, balancing work family military, productivity military spouse"
 slug: "time-management-military-spouse-guide"

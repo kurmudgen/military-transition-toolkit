@@ -1,6 +1,6 @@
 ---
 title: "35M HUMINT to Corporate Investigator: Complete Career Guide (2025)"
-date: "2026-01-21"
+date: "2026-01-22"
 description: "Transform your 35M human intelligence expertise into corporate investigator career earning $70K-$160K+. Includes investigative specializations, security clearance benefits, and advancement paths."
 keywords: "35M HUMINT to corporate investigator, intelligence analyst to corporate security, investigator salary, corporate security jobs"
 slug: "35m-humint-to-corporate-investigator"

@@ -1,7 +1,7 @@
 ---
 title: "Military to Network Engineering: Complete Transition Guide for Veterans"
 description: "How to transition from military service to network engineering. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to network engineering, veteran network engineer jobs, network engineering careers for veterans"
 slug: "military-to-network-engineering-career-guide"

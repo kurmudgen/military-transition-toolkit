@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Teletherapy Counselor: Complete Guide"
 description: "Become a remote therapist as a military spouse. Navigate PSYPACT licensure, online counseling platforms, master's programs, and build a therapy practice that moves with you."
-date: "2025-12-02"
+date: "2026-03-22"
 category: "military-spouse"
 keywords: "military spouse therapist, teletherapy military spouse, online counselor license, PSYPACT military spouse, remote therapy career"
 slug: "teletherapy-counselor-military-spouse-guide"

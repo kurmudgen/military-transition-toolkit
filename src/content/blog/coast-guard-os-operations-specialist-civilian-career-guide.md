@@ -1,6 +1,6 @@
 ---
 title: "Coast Guard OS to Civilian: Complete Career Transition Guide for Operations Specialists (2024-2025 Salaries)"
-date: "2026-01-11"
+date: "2026-01-12"
 description: "Real career options for Coast Guard Operations Specialists transitioning to civilian life. Air traffic control, 911 dispatch, logistics careers with salary ranges $40K-$145K+."
 keywords: "Coast Guard OS civilian jobs, Operations Specialist career transition, military dispatcher to civilian, air traffic controller careers"
 ---

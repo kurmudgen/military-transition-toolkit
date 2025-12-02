@@ -1,5 +1,5 @@
 ---
-date: "2026-02-03"
+date: "2026-02-06"
 ---# Military Transition Toolkit - Content Inventory
 
 **Generated:** 2025-11-30

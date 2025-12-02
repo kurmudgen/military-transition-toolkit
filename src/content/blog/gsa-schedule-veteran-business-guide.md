@@ -1,7 +1,7 @@
 ---
 title: "GSA Schedule Contracts for Veteran Businesses: Complete Guide"
 description: "Comprehensive guide to GSA Schedule contracts for veteran-owned businesses. Learn what GSA Schedules are, how to get one, benefits for SDVOSB/VOSB, requirements, and how to succeed with your GSA contract."
-date: "2025-12-01"
+date: "2026-02-17"
 category: "federal-employment"
 keywords: "GSA Schedule veterans, GSA contract veteran business, Multiple Award Schedule, SDVOSB GSA, government contracts veterans, GSA Schedule requirements"
 slug: "gsa-schedule-veteran-business-guide"

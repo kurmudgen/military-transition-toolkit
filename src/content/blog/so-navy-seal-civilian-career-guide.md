@@ -1,6 +1,6 @@
 ---
 title: "Navy SEAL (SO) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
-date: "2026-01-10"
+date: "2026-01-11"
 description: "Real career options for Navy SEALs transitioning to civilian life. Includes salary ranges $80K-$300K+, executive protection, federal law enforcement, contracting, and leadership development opportunities."
 keywords: "Navy SEAL civilian jobs, SO career transition, SEAL executive protection, SEAL contractor salary, SEAL to FBI career"
 ---

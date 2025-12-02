@@ -1,6 +1,6 @@
 ---
 title: "15Q Air Traffic Controller to FAA Controller: Complete Career Guide (2025)"
-date: "2026-01-18"
+date: "2026-01-19"
 description: "Transform your 15Q air traffic control skills into FAA controller career earning $65K-$140K+. Includes certification paths, facility rankings, and controller advancement strategies."
 keywords: "15Q to FAA air traffic controller, military ATC to civilian, air traffic controller salary, ATC career transition"
 slug: "15q-air-traffic-controller-to-faa-controller"

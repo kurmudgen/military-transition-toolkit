@@ -1,7 +1,7 @@
 ---
 title: "Career Continuity Through PCS Moves: Complete Strategy Guide"
 description: "Build a career that survives military moves. Strategies for maintaining career momentum, portable skills, remote work, and professional development through every PCS."
-date: "2025-12-02"
+date: "2026-01-31"
 category: "military-spouse"
 keywords: "career continuity PCS, military spouse career strategy, portable career military, maintain career military moves, career planning PCS"
 slug: "career-continuity-pcs-moves-strategy-guide"

@@ -1,5 +1,5 @@
 ---
-date: "2026-02-06"
+date: "2026-02-08"
 ---# Data Visualization Specification #019: Sales Tax Exemptions for Veterans
 
 ## Overview

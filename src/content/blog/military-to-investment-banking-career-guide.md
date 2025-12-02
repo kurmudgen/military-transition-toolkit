@@ -1,7 +1,7 @@
 ---
 title: "Military to Investment Banking: Complete Transition Guide for Veterans"
 description: "How to transition from military service to investment banking. Best MOS backgrounds, MBA requirements, salary expectations, and top banks hiring veterans."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to investment banking, veteran investment banking jobs, investment banking careers for veterans"
 slug: "military-to-investment-banking-career-guide"

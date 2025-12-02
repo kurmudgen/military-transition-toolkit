@@ -1,7 +1,7 @@
 ---
 title: "Building a Career During Deployment: Military Spouse Guide"
 description: "How to maintain and grow your career while your spouse is deployed. Managing work as a single parent, communicating with employers, and finding opportunity in challenging times."
-date: "2025-12-02"
+date: "2026-01-30"
 category: "military-spouse"
 keywords: "career during deployment, working during deployment, military spouse deployment, single parent working deployment, maintain career deployment"
 slug: "building-career-during-deployment-guide"

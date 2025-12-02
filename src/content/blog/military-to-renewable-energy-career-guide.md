@@ -1,7 +1,7 @@
 ---
 title: "Military to Renewable Energy: Complete Transition Guide for Veterans"
 description: "How to transition from military service to renewable energy. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to renewable energy, veteran solar jobs, wind energy careers for veterans"
 slug: "military-to-renewable-energy-career-guide"

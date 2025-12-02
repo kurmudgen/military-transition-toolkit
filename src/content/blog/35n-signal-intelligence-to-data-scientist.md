@@ -2,7 +2,7 @@
 title: "35N Signal Intelligence to Data Scientist: Technical Career Transition Guide"
 description: "Complete guide for Army 35N Signal Intelligence Analysts transitioning to data science and analytics roles with salary data, certifications, and technical advancement paths."
 author: "Military Transition Toolkit"
-date: "2026-01-21"
+date: "2026-01-22"
 image: "/images/35n-signal-intelligence.jpg"
 category: "Career Transitions"
 tags: ["35N", "Data Scientist", "Signal Intelligence", "Analytics"]

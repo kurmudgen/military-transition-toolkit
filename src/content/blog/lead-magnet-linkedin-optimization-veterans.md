@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-21"
 ---# LinkedIn Profile Optimization for Veterans
 ## Turn Your Profile Into a Job-Generating Machine
 **By Jacob, Navy E6 | Formation Labs**

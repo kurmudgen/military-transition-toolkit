@@ -1,6 +1,6 @@
 ---
 EPISODE #022: Air Force 1N0X1 All-Source Intelligence to Defense Contracting
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 14-16 minutes
 KEYWORDS: Air Force 1N0X1, intelligence analyst, defense contractor, all-source analyst

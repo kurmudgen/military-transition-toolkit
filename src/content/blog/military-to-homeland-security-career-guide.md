@@ -1,7 +1,7 @@
 ---
 title: "Military to Homeland Security: Complete Transition Guide for Veterans"
 description: "How to transition from military service to DHS and homeland security careers. Agency options, requirements, salary expectations, and top opportunities for veterans."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to DHS, veteran homeland security jobs, DHS careers for veterans"
 slug: "military-to-homeland-security-career-guide"

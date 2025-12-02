@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Agent Orange Presumptive Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-11"
+date: "2026-03-25"
 description: "Complete list of Agent Orange presumptive conditions, qualifying locations, rating criteria, and how to file VA disability claims."
 keywords: "VA disability Agent Orange, Agent Orange presumptive conditions, Vietnam veteran VA claim, herbicide exposure VA"
 category: "va-disability"

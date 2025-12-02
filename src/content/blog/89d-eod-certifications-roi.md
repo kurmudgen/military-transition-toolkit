@@ -3,7 +3,7 @@ title: "89D Explosive Ordnance Disposal to Federal Security Careers: Certificati
 description: "Complete ROI analysis for 89D EOD specialists transitioning to federal security and bomb technician civilian roles"
 slug: "89d-eod-certifications-roi"
 author: "Military Transition Toolkit"
-date: "2026-01-23"
+date: "2026-01-24"
 category: "Certifications"
 tags: ["89D", "EOD", "Explosive Ordnance", "Federal Security"]
 ---

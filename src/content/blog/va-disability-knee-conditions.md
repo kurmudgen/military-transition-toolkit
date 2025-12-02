@@ -1,5 +1,5 @@
 ---
-date: "2026-03-14"
+date: "2026-03-29"
 ---# VA Disability Rating Guide: Knee Conditions
 
 ## Bottom Line Up Front (BLUF)

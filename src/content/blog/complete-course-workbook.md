@@ -1,5 +1,5 @@
 ---
-date: "2026-02-03"
+date: "2026-02-05"
 ---# Military Resume Mastery - Complete Course Workbook
 
 **92-Page Comprehensive Workbook**

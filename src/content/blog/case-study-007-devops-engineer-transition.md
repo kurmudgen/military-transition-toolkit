@@ -1,5 +1,5 @@
 ---
-date: "2026-01-30"
+date: "2026-02-01"
 ---# Air Force Cyber to $115K DevOps Engineer via Cloud Certifications
 
 ## Quick Facts

@@ -1,6 +1,6 @@
 ---
 title: "How to Transition from Military to Healthcare: RN, PA, Physician Assistant Guide"
-date: "2025-12-18"
+date: "2025-12-19"
 description: "Combat medic to nurse, physician assistant, or healthcare administrator. Fastest paths, certification requirements, salary expectations, and accelerated programs for veterans."
 keywords: "military to healthcare, combat medic transition, 68W to nurse, physician assistant veteran, healthcare careers, nursing school"
 slug: "how-to-transition-military-healthcare-careers"

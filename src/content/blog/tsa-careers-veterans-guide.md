@@ -1,7 +1,7 @@
 ---
 title: "TSA Careers for Veterans: Complete Guide to Transportation Security"
 description: "Comprehensive guide to TSA careers for veterans. Learn about Transportation Security Officer, Federal Air Marshal, and other positions, hiring process, salary, and career advancement."
-date: "2025-12-01"
+date: "2026-03-24"
 category: "federal-employment"
 keywords: "TSA careers veterans, TSA jobs, Transportation Security Officer, Federal Air Marshal veteran, TSA hiring, airport security jobs, TSA salary"
 slug: "tsa-careers-veterans-guide"

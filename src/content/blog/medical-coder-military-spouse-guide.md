@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Medical Coder: Work from Home Career"
 description: "Become a medical coder as a military spouse. 100% remote career with $45K-$65K salary, MyCAA-funded training, and certifications that work at every duty station."
-date: "2025-12-02"
+date: "2026-02-25"
 category: "military-spouse"
 keywords: "military spouse medical coding, remote medical coder, CPC certification military spouse, work from home healthcare, medical billing military spouse"
 slug: "medical-coder-military-spouse-guide"

@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 36B Financial Management: $90K Accounting Jobs 2025
-date: "2026-03-20"
+date: "2026-04-04"
 TARGET LENGTH: 5-7 minutes
 KEYWORDS: 36B financial management civilian jobs, accounting careers
 FILE NAME: youtube-script-36b-financial-management-technician-jobs.md

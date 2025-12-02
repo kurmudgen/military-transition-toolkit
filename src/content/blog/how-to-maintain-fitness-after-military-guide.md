@@ -1,6 +1,6 @@
 ---
 title: "How to Maintain Fitness After Military: Veteran Workout Guide (2025)"
-date: "2025-12-17"
+date: "2025-12-18"
 description: "Staying fit after leaving military, transitioning from military PT to civilian fitness, building sustainable habits, gyms, motivation, and preventing injuries."
 keywords: "veteran fitness, military PT transition, staying in shape after military, workout routine, fitness goals"
 slug: "how-to-maintain-fitness-after-military-guide"

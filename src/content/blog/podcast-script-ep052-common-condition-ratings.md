@@ -1,6 +1,6 @@
 ---
 EPISODE #052: Ratings for Common VA Disability Conditions - PTSD, TBI, Tinnitus, Sleep Apnea
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes
 KEYWORDS: PTSD rating, TBI rating, tinnitus, sleep apnea, VA disability, rating criteria, symptoms

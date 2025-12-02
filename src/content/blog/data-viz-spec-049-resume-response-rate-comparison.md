@@ -1,5 +1,5 @@
 ---
-date: "2026-02-08"
+date: "2026-02-11"
 ---# Data Visualization Specification #049: Resume Response Rate Comparison
 
 ## Overview

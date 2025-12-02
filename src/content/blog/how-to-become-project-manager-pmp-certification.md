@@ -1,6 +1,6 @@
 ---
 title: "How to Become a Project Manager: PMP Certification Complete Guide for Veterans"
-date: "2025-12-16"
+date: "2025-12-17"
 description: "PMP certification, CAPM, Agile/Scrum certifications. Requirements, study timeline, salary expectations, and how military leadership translates to civilian project management."
 keywords: "PMP certification, project manager, CAPM, Agile Scrum, project management certification, veteran project manager"
 slug: "how-to-become-project-manager-pmp-certification"

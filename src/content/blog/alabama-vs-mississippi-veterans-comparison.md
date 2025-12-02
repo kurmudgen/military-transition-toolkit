@@ -1,7 +1,7 @@
 ---
 title: "Alabama vs Mississippi Veterans Comparison 2025"
 description: "Compare Alabama and Mississippi for military retirees. Deep South state comparison for veteran relocation with tax, cost, and benefit analysis."
-date: "2026-01-25"
+date: "2026-01-26"
 category: "State Comparisons"
 tags: ["Alabama", "Mississippi", "Veterans Benefits", "Deep South", "Military Retirement"]
 author: "Military Transition Toolkit"

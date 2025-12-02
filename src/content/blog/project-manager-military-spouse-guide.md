@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Project Manager: Remote Certification Path"
 description: "Become a certified project manager as a military spouse. PMP and CAPM certification guide, remote PM jobs, leveraging military experience, and building a location-independent career."
-date: "2025-12-02"
+date: "2026-03-18"
 category: "military-spouse"
 keywords: "military spouse project manager, PMP certification military spouse, remote project manager, CAPM military spouse, project management career"
 slug: "project-manager-military-spouse-guide"

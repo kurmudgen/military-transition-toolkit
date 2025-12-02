@@ -1,7 +1,7 @@
 ---
 title: "Military to Private Security: Complete Transition Guide for Veterans"
 description: "How to transition from military service to private security careers. Contract security, corporate security, consulting opportunities, and salary expectations."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to private security, veteran security jobs, security contractor careers"
 slug: "military-to-private-security-career-guide"

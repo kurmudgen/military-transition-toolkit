@@ -2,7 +2,7 @@
 title: "Best Companies for 46Q Public Affairs Specialists: Communications Career Guide"
 description: "Top companies and agencies hiring 46Q public affairs specialists for strategic communications roles with compensation and career advancement data."
 author: "Military Transition Toolkit"
-date: "2026-01-27"
+date: "2026-01-28"
 image: "/images/46q-public-affairs.jpg"
 category: "Best Companies"
 tags: ["46Q", "Public Affairs", "Communications", "Best Companies"]

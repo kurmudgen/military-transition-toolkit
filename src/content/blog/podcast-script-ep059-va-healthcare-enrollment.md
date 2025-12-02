@@ -1,6 +1,6 @@
 ---
 EPISODE #059: VA Healthcare Enrollment - Priority Groups and Benefits Beyond Disability Compensation
-date: "2026-03-03"
+date: "2026-03-14"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)
 KEYWORDS: VA healthcare, priority groups, VA Form 10-10EZ, healthcare enrollment, copay exemptions

@@ -1,7 +1,7 @@
 ---
 title: "Home-Based Bakery for Military Spouses: Base Regulations Guide"
 description: "Start a home bakery business as a military spouse. Navigate cottage food laws, base housing rules, build local clientele, and create income through baked goods."
-date: "2025-12-02"
+date: "2026-02-17"
 category: "military-spouse"
 keywords: "military spouse bakery, home baking business military, cottage food military spouse, baking from base housing, military spouse food business"
 slug: "home-bakery-military-spouse-guide"

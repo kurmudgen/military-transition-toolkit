@@ -1,5 +1,5 @@
 ---
-date: "2026-02-18"
+date: "2026-02-24"
 ---# Military Transition Toolkit - Premium Courses Master Summary
 
 **Complete Course Catalog and Content Inventory**

@@ -1,6 +1,6 @@
 ---
 title: "37F Psychological Operations Specialist to Marketing Manager: Complete Career Guide (2025)"
-date: "2026-01-21"
+date: "2026-01-22"
 description: "Convert your 37F PSYOP skills into $75K-$140K+ marketing career. Audience analysis, messaging strategy, and campaign management translate directly to corporate marketing."
 keywords: "37F to marketing, PSYOP civilian career, psychological operations marketing, 37F brand manager"
 slug: "37f-psyop-to-marketing-manager"

@@ -1,6 +1,6 @@
 ---
 EPISODE #097: Terminal Leave Strategies - Maximizing Your Final Days and Getting Paid to Job Hunt
-date: "2026-03-07"
+date: "2026-03-18"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Transition Tactics
 TARGET LENGTH: 20-22 minutes (3,000-3,300 words)

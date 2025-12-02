@@ -2,7 +2,7 @@
 title: "94E Radio Communications to RF Engineer: Technical Career Transition Guide"
 description: "Complete guide for Army 94E Radio Communications Specialists transitioning to RF/Communications Engineer roles with salary data, certifications, and technical advancement strategies."
 author: "Military Transition Toolkit"
-date: "2026-01-24"
+date: "2026-01-25"
 image: "/images/94e-radio-communications.jpg"
 category: "Career Transitions"
 tags: ["94E", "RF Engineer", "Communications", "Technical"]

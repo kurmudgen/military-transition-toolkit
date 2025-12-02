@@ -1,7 +1,7 @@
 ---
 title: "Military to Executive Protection: Complete Transition Guide for Veterans"
 description: "How to transition from military service to executive protection careers. Training requirements, certifications, salary expectations, and career paths."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to executive protection, veteran bodyguard jobs, EP careers for veterans"
 slug: "military-to-executive-protection-career-guide"

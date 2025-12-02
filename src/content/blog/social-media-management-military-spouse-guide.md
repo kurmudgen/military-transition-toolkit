@@ -1,7 +1,7 @@
 ---
 title: "Social Media Management for Military Spouses: Complete Business Guide"
 description: "Launch a social media management business as a military spouse. Learn to manage accounts, find clients, price services, and build remote income managing brands' social presence."
-date: "2025-12-02"
+date: "2026-03-22"
 category: "military-spouse"
 keywords: "military spouse social media manager, social media management business, remote social media career, SMM military spouse, social media freelance"
 slug: "social-media-management-military-spouse-guide"

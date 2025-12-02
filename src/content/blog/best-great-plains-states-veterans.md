@@ -1,7 +1,7 @@
 ---
 title: "Best Great Plains States for Veterans 2025"
 description: "Guide to best Great Plains states for military retirees. Compare Texas, Kansas, Missouri for veteran benefits, cost of living, and job opportunities."
-date: "2026-01-28"
+date: "2026-01-29"
 category: "Regional Guides"
 tags: ["Great Plains", "Veterans Benefits", "Military Retirement", "Cost of Living", "Tax Benefits"]
 author: "Military Transition Toolkit"

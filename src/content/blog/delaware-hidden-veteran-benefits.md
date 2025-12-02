@@ -2,7 +2,7 @@
 title: "Delaware Hidden Veteran Benefits: Tax Breaks and Exclusive Programs 2025"
 description: "Uncover Delaware's lesser-known veteran benefits including property tax exemptions, veteran hiring preferences, education credits, and financial assistance programs."
 author: "Military Transition Toolkit"
-date: "2025-12-09"
+date: "2025-12-10"
 tags: ["Delaware", "Veteran Benefits", "Tax Exemptions", "Small Business", "Healthcare"]
 category: "State Benefits"
 featured: true

@@ -1,6 +1,6 @@
 ---
 DOCUMENT: VSO Bulk Licensing Proposal
-date: "2026-02-26"
+date: "2026-03-09"
 TYPE: Partnership Proposal
 AUDIENCE: Veterans Service Organizations
 PAGES: 10

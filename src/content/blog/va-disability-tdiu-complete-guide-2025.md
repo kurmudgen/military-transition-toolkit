@@ -1,7 +1,7 @@
 ---
 title: "VA Total Disability Individual Unemployability (TDIU): Complete 2025 Guide"
 description: "Comprehensive guide to TDIU claims. Learn how to qualify for 100% compensation without 100% rating. TDIU requirements, evidence, and approval strategies."
-date: "2026-03-17"
+date: "2026-04-01"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "TDIU", "Total Disability", "Unemployability", "100 Percent"]

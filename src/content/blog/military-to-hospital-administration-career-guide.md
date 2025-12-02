@@ -1,7 +1,7 @@
 ---
 title: "Military to Hospital Administration: Complete Transition Guide for Veterans"
 description: "How to transition from military service to hospital administration. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to hospital administration, veteran healthcare management jobs, hospital administration careers for veterans"
 slug: "military-to-hospital-administration-career-guide"

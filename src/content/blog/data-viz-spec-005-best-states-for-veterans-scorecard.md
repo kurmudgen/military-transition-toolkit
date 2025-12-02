@@ -1,5 +1,5 @@
 ---
-date: "2026-02-04"
+date: "2026-02-07"
 ---# Data Visualization Specification: Best States for Veterans - Multi-Metric Scorecard
 
 ## Document Information

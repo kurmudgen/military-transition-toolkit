@@ -1,7 +1,7 @@
 ---
 title: "Military to Mental Health Counseling: Complete Transition Guide for Veterans"
 description: "How to transition from military service to mental health counseling. Best MOS backgrounds, degree requirements, licensure paths, and top employers hiring veteran counselors."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to mental health counseling, veteran counselor jobs, mental health careers for veterans"
 slug: "military-to-mental-health-counseling-career-guide"

@@ -1,7 +1,7 @@
 ---
 title: "Navy BU Builder to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-01-21"
-date: "2026-01-07"
+date: "2026-01-08"
 description: "Real career options for Navy Builders transitioning to civilian construction. Includes salary ranges $50K-$95K+, certifications, and direct path from Seabees to civilian trades."
 keywords: "Navy BU Builder civilian jobs, Seabees to civilian career, Builder career transition, construction careers for veterans"
 ---

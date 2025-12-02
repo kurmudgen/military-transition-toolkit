@@ -1,7 +1,7 @@
 ---
 title: "Best Sun Belt States for Military Retirees 2025"
 description: "Complete guide to best Sun Belt states for military retirement. Compare warm-weather states with tax benefits, cost of living, and recreation."
-date: "2026-01-29"
+date: "2026-01-30"
 category: "Regional Guides"
 tags: ["Sun Belt", "Military Retirement", "Warm Weather", "Veterans Benefits", "Cost of Living"]
 author: "Military Transition Toolkit"

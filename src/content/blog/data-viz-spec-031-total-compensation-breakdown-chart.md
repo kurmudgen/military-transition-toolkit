@@ -1,5 +1,5 @@
 ---
-date: "2026-02-07"
+date: "2026-02-09"
 ---# Data Visualization Specification #031: Total Compensation Breakdown Chart
 
 ## Overview

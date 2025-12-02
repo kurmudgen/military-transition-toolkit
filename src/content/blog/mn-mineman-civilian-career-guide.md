@@ -1,7 +1,7 @@
 ---
 title: "Navy MN (Mineman) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-27"
-date: "2026-01-09"
+date: "2026-01-10"
 description: "Real career options for Navy Minemen transitioning to civilian life. Includes salary ranges $50K-$100K+, required certifications, and underwater systems skills translation."
 keywords: "Navy MN civilian jobs, Mineman career transition, MN to civilian career, Navy mine warfare jobs, underwater systems technician"
 ---

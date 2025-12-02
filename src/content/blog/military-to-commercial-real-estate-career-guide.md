@@ -1,7 +1,7 @@
 ---
 title: "Military to Commercial Real Estate: Complete Transition Guide for Veterans"
 description: "How to transition from military service to commercial real estate. Best MOS backgrounds, licensing needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-26"
 category: "industry-transition"
 keywords: "military to commercial real estate, veteran CRE jobs, commercial real estate careers for veterans"
 slug: "military-to-commercial-real-estate-career-guide"

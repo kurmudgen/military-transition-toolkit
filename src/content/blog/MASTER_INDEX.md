@@ -1,5 +1,5 @@
 ---
-date: "2026-02-18"
+date: "2026-02-24"
 ---# Master Index - 200 YouTube Video Scripts for Veteran Transition
 
 **Project:** Military Transition Toolkit YouTube Content Library

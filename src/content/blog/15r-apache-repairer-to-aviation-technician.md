@@ -1,6 +1,6 @@
 ---
 title: "15R Apache Repairer to Aviation Technician: Complete Career Guide (2025)"
-date: "2026-01-18"
+date: "2026-01-19"
 description: "Transform your 15R aircraft maintenance expertise into aviation technician career earning $60K-$140K+. Includes FAA A&P certification paths, aviation maintenance careers, and aerospace advancement."
 keywords: "15R to aircraft mechanic, Apache maintenance to civilian aviation, FAA A&P certification, aviation technician salary"
 slug: "15r-apache-repairer-to-aviation-technician"

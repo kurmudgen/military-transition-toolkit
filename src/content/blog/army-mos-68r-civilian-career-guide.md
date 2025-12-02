@@ -1,7 +1,7 @@
 ---
 title: "Army 68R (Veterinary Food Inspection Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-05-27"
-date: "2025-12-29"
+date: "2025-12-30"
 description: "Real career options for Army 68R Veterinary Food Inspection Specialists transitioning to civilian life. Includes salary ranges $42K-$94K+, USDA inspector jobs, quality assurance, food safety specialist, and certifications with costs."
 keywords: "Army 68R civilian jobs, veterinary food inspection specialist career transition, 68R to civilian, USDA food inspector salary, food safety specialist jobs, quality assurance food manufacturing, ServSafe certification"
 ---

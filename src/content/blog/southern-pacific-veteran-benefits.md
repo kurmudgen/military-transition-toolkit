@@ -1,6 +1,6 @@
 ---
 title: "Southern & Pacific Veteran Benefits: Final 6 States Compared"
-date: "2025-12-14"
+date: "2025-12-15"
 description: "Deep South offers cheap living but mixed benefits. California's tax nightmare vs. world-class VA care. Hawaii is paradise if you can afford it."
 keywords: "california veteran benefits, hawaii veteran benefits, alabama veteran benefits, mississippi veteran benefits, oregon veteran benefits, deep south veterans"
 ---

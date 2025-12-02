@@ -1,7 +1,7 @@
 ---
 title: "FBI Careers for Veterans: Complete Guide to Joining the Bureau"
 description: "Comprehensive guide to FBI careers for veterans. Learn about Special Agent positions, professional staff roles, hiring process, salary, requirements, and how military experience helps at the FBI."
-date: "2025-12-01"
+date: "2026-02-14"
 category: "federal-employment"
 keywords: "FBI careers veterans, FBI special agent veteran, FBI jobs, FBI hiring process, FBI requirements, FBI salary, join FBI military veteran"
 slug: "fbi-careers-veterans-guide"

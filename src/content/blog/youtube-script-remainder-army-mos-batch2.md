@@ -1,5 +1,5 @@
 ---
-date: "2026-01-16"
+date: "2026-01-17"
 ---# Remaining Army MOS Scripts - Batch 2 (Final Army MOSs)
 
 Completing the 50 Army MOS scripts with streamlined career guidance.

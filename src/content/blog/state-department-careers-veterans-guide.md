@@ -1,7 +1,7 @@
 ---
 title: "State Department Careers for Veterans: Complete Guide to Foreign Service and Civil Service"
 description: "Comprehensive guide to State Department careers for veterans. Learn about Foreign Service Officer, Diplomatic Security, Civil Service positions, hiring process, and worldwide assignments."
-date: "2025-12-01"
+date: "2026-03-22"
 category: "federal-employment"
 keywords: "State Department careers veterans, Foreign Service Officer veteran, diplomatic careers, State Department jobs, Diplomatic Security, DS Agent, Foreign Service Specialist"
 slug: "state-department-careers-veterans-guide"

@@ -1,6 +1,6 @@
 ---
 EPISODE #077: From Army Ranger to Tech Startup Founder - Building a $5M Business Post-Service
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 TARGET LENGTH: 18-20 minutes (2,700-3,000 words)

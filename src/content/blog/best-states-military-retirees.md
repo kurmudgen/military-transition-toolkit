@@ -1,6 +1,6 @@
 ---
 title: "Best States for Military Retirees 2025: Tax-Free Living and VA Healthcare Access"
-date: "2026-01-29"
+date: "2026-01-30"
 description: "Complete ranking of the best states for military retirees based on tax treatment, cost of living, VA healthcare access, and military retiree community. Includes comparison tables and real cost breakdowns."
 keywords: "best states for military retirees, military retirement taxes by state, no tax on military retirement, VA hospital locations, military retiree states"
 slug: "best-states-military-retirees"

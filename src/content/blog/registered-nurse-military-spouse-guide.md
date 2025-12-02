@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Registered Nurse: Complete Career Path"
 description: "Complete guide for military spouses pursuing nursing careers. Navigate Nurse Licensure Compact, accelerated BSN programs, ADN pathways, and telehealth opportunities that survive PCS moves."
-date: "2025-12-02"
+date: "2026-03-19"
 category: "military-spouse"
 keywords: "military spouse nurse, nursing career military spouse, nurse licensure compact, RN military spouse, BSN military spouse, nursing school PCS"
 slug: "registered-nurse-military-spouse-guide"

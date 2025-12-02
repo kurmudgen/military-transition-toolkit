@@ -1,6 +1,6 @@
 ---
 title: "How to Increase Your VA Disability Rating in 2025: Secondary Conditions Strategy"
-date: "2026-02-13"
+date: "2026-02-18"
 description: "The difference between 70% and 100% VA disability is $1,000-$2,000/month. Learn how secondary conditions are your fastest path to increasing your rating."
 keywords: "increase VA disability rating, VA rating increase, secondary conditions VA, 100% VA disability, increase VA rating, VA disability secondary conditions"
 slug: "increase-va-disability-rating-guide"

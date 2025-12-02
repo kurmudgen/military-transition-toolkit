@@ -1,6 +1,6 @@
 ---
 EPISODE #027: Breaking Into Tech - Complete Guide for Non-Technical MOSs
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: tech careers, non-technical MOS, coding bootcamp, VET TEC, product management, technical sales

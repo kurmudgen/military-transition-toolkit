@@ -1,5 +1,5 @@
 ---
-date: "2026-02-01"
+date: "2026-02-04"
 ---# Competitor Analysis: DOD SkillBridge
 
 **Category:** Comprehensive Platform (Career + Resources)

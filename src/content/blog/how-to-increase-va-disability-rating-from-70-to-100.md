@@ -1,7 +1,7 @@
 ---
 title: "How to Increase VA Disability Rating from 70 to 100: Complete Strategy Guide"
 description: "Strategic guide to increasing VA disability from 70% to 100%. Evidence requirements, conditions to emphasize, and TDIU alternative explained."
-date: "2025-12-17"
+date: "2025-12-18"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Rating Increase", "100 Percent", "TDIU", "70 Percent"]

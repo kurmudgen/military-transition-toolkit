@@ -1,6 +1,6 @@
 ---
 EPISODE #060: TRICARE for Retirees and Family Members - Coverage After Military Service
-date: "2026-03-03"
+date: "2026-03-14"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)
 KEYWORDS: TRICARE retiree, TRICARE Prime, TRICARE Select, TRICARE for Life, military healthcare

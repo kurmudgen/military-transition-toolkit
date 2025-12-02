@@ -1,7 +1,7 @@
 ---
 title: "Secret Service Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to US Secret Service careers for veterans. Learn about Special Agent and Uniformed Division positions, requirements, hiring process, salary, and protection careers."
-date: "2025-12-01"
+date: "2026-03-20"
 category: "federal-employment"
 keywords: "Secret Service careers veterans, Secret Service special agent, Secret Service uniformed division, USSS jobs, Secret Service hiring, Secret Service requirements, protection careers veterans"
 slug: "secret-service-careers-veterans-guide"

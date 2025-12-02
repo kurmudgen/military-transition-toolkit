@@ -1,7 +1,7 @@
 ---
 title: "General Dynamics Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to General Dynamics careers for veterans. Learn about shipbuilding, land systems, IT services (GDIT), veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor."
-date: "2025-12-01"
+date: "2026-02-16"
 category: "federal-employment"
 keywords: "General Dynamics careers veterans, GDIT jobs, General Dynamics shipbuilding, Abrams tank careers, defense contractor jobs, submarine careers veterans"
 slug: "general-dynamics-careers-veterans-guide"

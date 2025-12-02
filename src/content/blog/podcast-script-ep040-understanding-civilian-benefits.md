@@ -1,6 +1,6 @@
 ---
 EPISODE #040: Understanding Civilian Benefits - Health Insurance, 401k, PTO Explained
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: civilian benefits, health insurance, 401k vesting, HSA, FSA, PTO accrual, open enrollment

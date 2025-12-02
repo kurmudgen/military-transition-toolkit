@@ -1,6 +1,6 @@
 ---
 EPISODE #049: PACT Act and Toxic Exposure Claims - Burn Pits, Agent Orange, and Presumptive Conditions
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes
 KEYWORDS: PACT Act, burn pits, toxic exposure, Agent Orange, presumptive conditions, Gulf War, Afghanistan, Iraq

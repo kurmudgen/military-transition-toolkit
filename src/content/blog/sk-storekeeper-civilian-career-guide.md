@@ -1,7 +1,7 @@
 ---
 title: "SK Storekeeper to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-07-29"
-date: "2026-01-10"
+date: "2026-01-11"
 description: "Real career options for SK Storekeeper (Logistics Specialist) transitioning to civilian life. Includes salary ranges $50K-$100K+, required certifications, and skills translation."
 keywords: "SK storekeeper civilian jobs, SK career transition, logistics specialist to civilian career, Navy SK jobs, military logistics to civilian"
 ---

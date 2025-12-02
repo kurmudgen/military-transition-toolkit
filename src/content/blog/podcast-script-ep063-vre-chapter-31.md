@@ -1,6 +1,6 @@
 ---
 EPISODE #063: VR&E Chapter 31 - Vocational Rehabilitation and Employment Benefits
-date: "2026-03-03"
+date: "2026-03-14"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)
 KEYWORDS: VR&E, Chapter 31, Vocational Rehabilitation, employment training, VA education benefits

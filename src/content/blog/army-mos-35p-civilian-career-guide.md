@@ -1,7 +1,7 @@
 ---
 title: "Army 35P Cryptologic Linguist to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-04-08"
-date: "2025-12-26"
+date: "2025-12-27"
 description: "Real career options for Army 35P Cryptologic Linguists transitioning to civilian life. Includes salary ranges $90K-$200K+, NSA careers, defense contractors, translation services, and language analyst opportunities with security clearance advantages."
 keywords: "35P civilian jobs, cryptologic linguist career transition, 35P to NSA career, linguist salary, military translator jobs"
 ---

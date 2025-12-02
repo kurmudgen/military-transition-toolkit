@@ -2,7 +2,7 @@
 title: "Best Companies for 18-Series Special Forces Soldiers: Leadership Transition Guide"
 description: "Top companies hiring 18-series special forces operators with compensation data, leadership opportunities, and career advancement for elite military talent."
 author: "Military Transition Toolkit"
-date: "2026-01-26"
+date: "2026-01-27"
 image: "/images/18-series-special-forces.jpg"
 category: "Best Companies"
 tags: ["18-Series", "Special Forces", "Leadership", "Best Companies"]

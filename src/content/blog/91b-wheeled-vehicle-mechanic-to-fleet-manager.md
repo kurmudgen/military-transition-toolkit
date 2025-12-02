@@ -1,6 +1,6 @@
 ---
 title: "91B Wheeled Vehicle Mechanic to Fleet Manager: Complete Career Guide (2025)"
-date: "2026-01-24"
+date: "2026-01-25"
 description: "Transform your 91B maintenance expertise into fleet manager career earning $60K-$140K+. Includes fleet supervisor pathways, company rankings, and management advancement strategies."
 keywords: "91B to fleet manager, vehicle mechanic to management, fleet supervisor salary, automotive career transition"
 slug: "91b-wheeled-vehicle-mechanic-to-fleet-manager"

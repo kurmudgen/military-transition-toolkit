@@ -1,5 +1,5 @@
 ---
-date: "2026-02-17"
+date: "2026-02-23"
 ---# Lesson 3.3: Cover Letters and LinkedIn
 
 **Course:** Military Resume Mastery

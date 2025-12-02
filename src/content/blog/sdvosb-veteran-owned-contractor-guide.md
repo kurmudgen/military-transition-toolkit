@@ -1,7 +1,7 @@
 ---
 title: "Starting a Veteran-Owned Government Contractor (SDVOSB): Complete Guide"
 description: "Comprehensive guide to starting a Service-Disabled Veteran-Owned Small Business. Learn about SDVOSB certification, government contracting opportunities, set-asides, compliance requirements, and how to build a successful veteran-owned contractor."
-date: "2025-12-01"
+date: "2026-03-20"
 category: "federal-employment"
 keywords: "SDVOSB, veteran-owned business, service-disabled veteran business, government contractor, VOSB certification, veteran entrepreneurship, veteran small business"
 slug: "sdvosb-veteran-owned-contractor-guide"

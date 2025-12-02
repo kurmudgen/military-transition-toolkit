@@ -1,6 +1,6 @@
 ---
 title: "North Dakota Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-02-22"
+date: "2026-03-06"
 description: "Complete guide to North Dakota veteran tax benefits: property tax credits by disability rating, military retirement pay exemption, vehicle benefits, and financial analysis."
 keywords: "north dakota veteran benefits, north dakota property tax exemption veterans, north dakota veteran tax benefits, military retirement north dakota"
 slug: "nd-veteran-tax-benefits-2025"

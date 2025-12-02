@@ -1,6 +1,6 @@
 ---
 EPISODE #004: The 7 Resume Mistakes Costing Veterans Job Interviews
-date: "2026-02-27"
+date: "2026-03-10"
 CATEGORY: Transition Tactics
 TARGET LENGTH: 24-26 minutes
 KEYWORDS: military resume, veteran resume mistakes, resume writing, ATS systems, military to civilian resume, job search, resume keywords

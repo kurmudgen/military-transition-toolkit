@@ -3,7 +3,7 @@ title: "68P Radiology Specialist: ARRT Certification, Registries & Healthcare Ce
 description: "Complete ROI analysis for 68P radiology specialists pursuing ARRT certification and advanced radiologic technologist credentials"
 slug: "68p-radiology-certifications-investment-analysis"
 author: "Military Transition Toolkit"
-date: "2026-01-23"
+date: "2026-01-24"
 category: "Certifications"
 tags: ["68P", "Radiology", "ARRT", "Radiologic Technologist"]
 ---

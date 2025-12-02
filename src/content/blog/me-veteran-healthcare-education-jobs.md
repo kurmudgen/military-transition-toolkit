@@ -1,6 +1,6 @@
 ---
 title: "Maine Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-19"
+date: "2026-02-24"
 description: "Complete directory of Maine VA medical centers, education programs, veteran employment resources, and support services across the Pine Tree State."
 keywords: "Maine VA hospital, Maine veteran education, Maine veteran jobs, Maine GI Bill schools"
 slug: "me-veteran-healthcare-education-jobs"

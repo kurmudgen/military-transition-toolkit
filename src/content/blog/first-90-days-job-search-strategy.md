@@ -1,7 +1,7 @@
 ---
 title: "First 90 Days of Job Search: Strategic Guide to Landing Offers"
 description: "Master your job search in first 90 days after separation. Strategies, timelines, and proven tactics for landing civilian employment."
-date: "2026-02-11"
+date: "2026-02-15"
 author: "Military Transition Toolkit"
 category: "Job Search"
 tags: ["job-search", "employment", "career-transition", "first-90-days"]

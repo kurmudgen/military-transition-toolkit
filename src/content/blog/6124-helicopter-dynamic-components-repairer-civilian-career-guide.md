@@ -1,7 +1,7 @@
 ---
 title: "Marine MOS 6124 Helicopter Dynamic Components Repairer to Civilian: Complete Career Transition Guide (2025)"
 publishDate: "2026-06-17"
-date: "2026-01-14"
+date: "2026-01-15"
 description: "Real career options for 6124 Helicopter/Tiltrotor Dynamic Components Repairers transitioning to civilian aviation. Includes A&P license pathway, component overhaul specialist careers, MRO roles with salaries $62K-$105K+."
 keywords: "6124 MOS civilian jobs, helicopter dynamic components repairer civilian career, Marine rotor repairer transition, helicopter component overhaul A&P"
 ---

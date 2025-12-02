@@ -1,6 +1,6 @@
 ---
 EPISODE #091: Navy Pilot to Commercial Airline Captain - $250K+ Aviation Career
-date: "2026-03-06"
+date: "2026-03-17"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 HOST: Jacob

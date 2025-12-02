@@ -1,6 +1,6 @@
 ---
 EPISODE #024: Air Force 4A0X1 Health Services to Healthcare Administration
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 12-14 minutes
 KEYWORDS: Air Force 4A0X1, health services, healthcare administration, medical management

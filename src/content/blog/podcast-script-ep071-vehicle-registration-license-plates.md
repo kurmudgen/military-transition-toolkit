@@ -1,6 +1,6 @@
 ---
 EPISODE #071: State Vehicle Registration and License Plate Benefits for Veterans - Free Plates, Parking, and Tolls
-date: "2026-03-04"
+date: "2026-03-15"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)

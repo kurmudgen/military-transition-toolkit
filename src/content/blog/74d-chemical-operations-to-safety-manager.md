@@ -1,6 +1,6 @@
 ---
 title: "74D Chemical Operations to Safety Manager: Complete Career Guide (2025)"
-date: "2026-01-23"
+date: "2026-01-24"
 description: "Transform your 74D chemical expertise into safety manager career earning $65K-$150K+. Includes OSHA certification paths, industrial safety advancement, and environmental compliance."
 keywords: "74D to safety manager, chemical specialist to occupational safety, OSHA certification, industrial safety career"
 slug: "74d-chemical-operations-to-safety-manager"

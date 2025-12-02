@@ -1,5 +1,5 @@
 ---
-date: "2026-03-16"
+date: "2026-03-30"
 ---# VA Disability Rating Guide: Post-Traumatic Stress Disorder (PTSD)
 
 ## Bottom Line Up Front (BLUF)

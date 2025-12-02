@@ -1,7 +1,7 @@
 ---
 title: "Coast Guard AMT to Civilian: Your Complete Aviation Mechanic Career Roadmap (With 2024 Salary Data)"
 publishDate: "2025-12-24"
-date: "2026-01-06"
+date: "2026-01-07"
 description: "Coast Guard Aviation Maintenance Technicians transitioning to civilian aviation careers. FAA A&P license pathways, airline jobs, salary ranges $55K-$120K+, and certification requirements."
 keywords: "Coast Guard AMT civilian jobs, aviation maintenance technician career transition, FAA A&P license, AMT to civilian"
 ---

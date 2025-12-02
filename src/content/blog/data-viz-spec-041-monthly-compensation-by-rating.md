@@ -1,5 +1,5 @@
 ---
-date: "2026-02-08"
+date: "2026-02-10"
 ---# Data Visualization Specification #041: Monthly VA Disability Compensation by Rating Percentage
 
 ## 1. Overview

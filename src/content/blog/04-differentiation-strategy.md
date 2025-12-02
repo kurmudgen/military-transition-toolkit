@@ -1,5 +1,5 @@
 ---
-date: "2026-01-17"
+date: "2026-01-18"
 ---# MTT Differentiation Strategy
 
 **How to Win in the Crowded Military Transition Market**

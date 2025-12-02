@@ -1,5 +1,5 @@
 ---
-date: "2026-02-04"
+date: "2026-02-06"
 ---# Data Visualization Specification: State Property Tax Savings Comparison for Veterans
 
 ## Document Information

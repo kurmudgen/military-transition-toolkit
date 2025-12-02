@@ -1,6 +1,6 @@
 ---
 EPISODE #084: Aviation Mechanic to FAA Inspector - $110K Regulatory Career
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 HOST: Jacob

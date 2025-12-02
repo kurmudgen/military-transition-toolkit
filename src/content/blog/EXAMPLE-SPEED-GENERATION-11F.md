@@ -1,5 +1,5 @@
 ---
-date: "2026-02-09"
+date: "2026-02-13"
 ---# Example: Speed Generation Walkthrough for 11F Fighter Pilot
 
 **This document demonstrates the complete process for generating one AFSC guide in approximately 2-2.5 hours.**

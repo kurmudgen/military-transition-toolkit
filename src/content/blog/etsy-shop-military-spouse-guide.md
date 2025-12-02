@@ -1,7 +1,7 @@
 ---
 title: "Etsy Shop Success for Military Spouses: Complete Guide"
 description: "Build a profitable Etsy shop as a military spouse. Best products for PCS life, managing inventory through moves, digital vs physical products, and growing a portable craft business."
-date: "2025-12-02"
+date: "2026-02-12"
 category: "military-spouse"
 keywords: "military spouse Etsy, Etsy shop military, handmade business military spouse, craft business PCS, digital products Etsy"
 slug: "etsy-shop-military-spouse-guide"

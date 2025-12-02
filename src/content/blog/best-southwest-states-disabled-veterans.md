@@ -1,7 +1,7 @@
 ---
 title: "Best Southwest States for Disabled Veterans 2025"
 description: "Guide to best Southwest states for 100% disabled military retirees. Compare disability benefits, VA healthcare, cost of living, and tax advantages."
-date: "2026-01-29"
+date: "2026-01-30"
 category: "Regional Guides"
 tags: ["Disabled Veterans", "Southwest", "Military Retirement", "Tax Benefits", "Disability Benefits"]
 author: "Military Transition Toolkit"

@@ -1,5 +1,5 @@
 ---
-date: "2026-02-15"
+date: "2026-02-21"
 ---# 0311 Marine Rifleman to Civilian Career Guide
 ## Turn Your Infantry Skills Into $40K-$120K+ Law Enforcement, Security, Construction & Sales Careers
 **By Jacob, Navy E6 | Formation Labs**

@@ -1,7 +1,7 @@
 ---
 title: "How to Maintain Your Security Clearance After Military Separation"
 description: "Complete guide to maintaining your security clearance after leaving the military. Learn about clearance currency, reactivation, gaps in cleared employment, and strategies to protect your clearance value."
-date: "2025-12-01"
+date: "2026-02-24"
 category: "federal-employment"
 keywords: "maintain security clearance, clearance after military, security clearance transition, keep clearance active, reactivate security clearance, clearance gap employment"
 slug: "maintain-clearance-after-separation-guide"

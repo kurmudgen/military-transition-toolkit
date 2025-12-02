@@ -1,7 +1,7 @@
 ---
 title: "Photography Business for Military Spouses: On-Base Clients Guide"
 description: "Start a photography business as a military spouse. Build clientele on military installations, create portable income, specialize in military milestones, and manage business through PCS moves."
-date: "2025-12-02"
+date: "2026-03-10"
 category: "military-spouse"
 keywords: "military spouse photographer, photography business military, on-base photography, deployment photography, military family photographer"
 slug: "photography-business-military-spouse-guide"

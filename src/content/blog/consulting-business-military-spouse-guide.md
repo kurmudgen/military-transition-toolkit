@@ -1,7 +1,7 @@
 ---
 title: "Consulting Business for Military Spouses: Building Expertise-Based Income"
 description: "Launch a consulting business as a military spouse. Leverage your expertise, find clients remotely, price your services, and build a location-independent practice."
-date: "2025-12-02"
+date: "2026-02-06"
 category: "military-spouse"
 keywords: "military spouse consultant, consulting business military, freelance consultant military spouse, remote consulting career, expertise business portable"
 slug: "consulting-business-military-spouse-guide"

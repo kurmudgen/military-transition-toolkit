@@ -1,7 +1,7 @@
 ---
 title: "Military to Emergency Services: Complete Transition Guide for Veterans"
 description: "How to transition from military service to fire, EMS, and emergency services careers. Requirements, certifications, salary expectations, and hiring tips."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to firefighter, veteran EMS jobs, emergency services careers for veterans"
 slug: "military-to-emergency-services-career-guide"

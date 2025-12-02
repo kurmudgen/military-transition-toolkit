@@ -1,6 +1,6 @@
 ---
 EPISODE #062: GI Bill Transferability - Using Education Benefits for Family
-date: "2026-03-03"
+date: "2026-03-14"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)
 KEYWORDS: GI Bill transfer, TEB, milConnect, education benefits, spouse dependents

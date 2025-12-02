@@ -1,7 +1,7 @@
 ---
 title: "Army 88N Transportation Management Coordinator to Civilian: Complete Logistics Career Guide (2024-2025)"
 publishDate: "2026-06-24"
-date: "2025-12-30"
+date: "2025-12-31"
 description: "Real logistics management careers for Army 88N Transportation Management Coordinators. Supply chain manager salaries $75K-$115K+, logistics coordinator $55K-$85K, transportation planner, operations manager careers for veterans."
 keywords: "88N Transportation Management Coordinator civilian jobs, Army logistics career, supply chain manager salary, transportation coordinator jobs, logistics management veterans"
 ---

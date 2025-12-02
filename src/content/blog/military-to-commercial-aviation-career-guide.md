@@ -1,7 +1,7 @@
 ---
 title: "Military to Aviation (Commercial): Complete Transition Guide for Veterans"
 description: "How to transition from military service to commercial aviation. Pilot paths, maintenance careers, certifications needed, salary expectations, and top employers."
-date: "2025-12-01"
+date: "2026-02-26"
 category: "industry-transition"
 keywords: "military to commercial aviation, veteran airline pilot jobs, aviation careers for veterans"
 slug: "military-to-commercial-aviation-career-guide"

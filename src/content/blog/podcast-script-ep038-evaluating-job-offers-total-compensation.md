@@ -1,6 +1,6 @@
 ---
 EPISODE #038: Evaluating Job Offers - Salary, Benefits, and Total Compensation Breakdown
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: total compensation, job offer evaluation, benefits, 401k, health insurance, RSU, stock options

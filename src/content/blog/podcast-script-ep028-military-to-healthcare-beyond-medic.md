@@ -1,6 +1,6 @@
 ---
 EPISODE #028: Military to Healthcare Careers - Opportunities Beyond Combat Medic
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: healthcare careers, non-medical MOS, medical device sales, radiology tech, respiratory therapist

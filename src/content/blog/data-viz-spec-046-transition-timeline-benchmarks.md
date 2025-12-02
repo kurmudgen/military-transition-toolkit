@@ -1,5 +1,5 @@
 ---
-date: "2026-02-08"
+date: "2026-02-10"
 ---# Data Visualization Specification #046: Transition Timeline Benchmarks
 
 ## Overview

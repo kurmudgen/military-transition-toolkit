@@ -1,7 +1,7 @@
 ---
 title: "Medical Retirement Transition: Complete Guide for Medically Retired Veterans"
 description: "Navigate medical retirement from military. Manage disability benefits, transition planning, and career options with service-connected disability."
-date: "2026-02-19"
+date: "2026-02-25"
 author: "Military Transition Toolkit"
 category: "Transition Special Cases"
 tags: ["medical-retirement", "disability-benefits", "va-benefits", "transition"]

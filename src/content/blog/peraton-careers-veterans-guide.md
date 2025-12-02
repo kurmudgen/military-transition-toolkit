@@ -1,7 +1,7 @@
 ---
 title: "Peraton Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to Peraton careers for veterans. Learn about space, intelligence, cyber, and mission support positions, veteran hiring programs, clearance requirements, and how to land jobs at this major contractor."
-date: "2025-12-01"
+date: "2026-03-10"
 category: "federal-employment"
 keywords: "Peraton careers veterans, Peraton jobs, space systems careers, intelligence contractor jobs, Peraton veteran hiring, cyber careers veterans"
 slug: "peraton-careers-veterans-guide"

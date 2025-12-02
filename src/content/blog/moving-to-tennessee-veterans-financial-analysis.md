@@ -2,7 +2,7 @@
 title: "Moving to Tennessee for Veterans: Financial Analysis and Complete Cost Guide 2025"
 description: "Complete relocation guide for veterans moving to Tennessee including housing costs, military benefits, job market, VA healthcare, no income tax advantage, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["Tennessee", "Relocation", "Veteran Costs", "Housing", "No Income Tax"]
 category: "State Relocation Guides"
 featured: true

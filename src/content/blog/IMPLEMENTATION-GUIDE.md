@@ -1,5 +1,5 @@
 ---
-date: "2026-02-13"
+date: "2026-02-18"
 ---# Military Jobs Database - Implementation Guide
 
 ## Overview

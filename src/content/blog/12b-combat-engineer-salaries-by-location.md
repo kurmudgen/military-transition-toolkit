@@ -3,7 +3,7 @@ title: "12B Combat Engineer Salaries by Location: Construction & Federal Contrac
 description: "Comprehensive salary analysis for 12B combat engineers by location, construction markets, and federal contracting opportunity"
 slug: "12b-combat-engineer-salaries-by-location"
 author: "Military Transition Toolkit"
-date: "2026-01-17"
+date: "2026-01-18"
 category: "Salaries"
 tags: ["12B", "Combat Engineer", "Construction", "Salaries", "Location"]
 ---

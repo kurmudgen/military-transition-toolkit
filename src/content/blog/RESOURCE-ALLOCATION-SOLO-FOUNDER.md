@@ -1,5 +1,5 @@
 ---
-date: "2026-03-07"
+date: "2026-03-19"
 ---# Resource Allocation Guide for Solo Founders
 ## Managing Time, Money, and Energy While on Active Duty
 

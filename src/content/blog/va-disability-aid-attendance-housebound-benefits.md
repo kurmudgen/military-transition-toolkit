@@ -1,7 +1,7 @@
 ---
 title: "VA Aid and Attendance and Housebound Benefits: Complete Guide"
 description: "Learn about VA Aid and Attendance and Housebound benefits. Eligibility requirements, evidence needs, and additional monthly payments for severe disabilities."
-date: "2026-03-11"
+date: "2026-03-25"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Aid and Attendance", "Housebound", "SMC", "Additional Benefits"]

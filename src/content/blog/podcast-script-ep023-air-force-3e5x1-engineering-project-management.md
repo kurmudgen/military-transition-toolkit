@@ -1,6 +1,6 @@
 ---
 EPISODE #023: Air Force 3E5X1 Engineering to Project Management and Facilities
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 12-14 minutes
 KEYWORDS: Air Force 3E5X1, engineering, project management, facilities management, construction

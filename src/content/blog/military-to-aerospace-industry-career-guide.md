@@ -1,7 +1,7 @@
 ---
 title: "Military to Aerospace Industry: Complete Transition Guide for Veterans"
 description: "How to transition from military service to the aerospace industry. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-25"
 category: "industry-transition"
 keywords: "military to aerospace, veteran aerospace jobs, aerospace industry careers for veterans"
 slug: "military-to-aerospace-industry-career-guide"

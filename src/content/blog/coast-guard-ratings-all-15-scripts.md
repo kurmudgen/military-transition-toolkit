@@ -1,5 +1,5 @@
 ---
-date: "2026-01-16"
+date: "2026-01-17"
 ---# Coast Guard Ratings - All 15 Career Transition Scripts
 
 Complete career guidance for top 15 Coast Guard ratings.

@@ -1,6 +1,6 @@
 ---
 title: "How to Become a Real Estate Agent: Veteran Realtor Guide (2025)"
-date: "2025-12-16"
+date: "2025-12-17"
 description: "Military to real estate license, broker career, commission structure, veteran advantage, and building client base as real estate professional."
 keywords: "real estate agent veteran, realtor license, real estate career, commission income, real estate business"
 slug: "how-to-become-real-estate-agent-veteran"

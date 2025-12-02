@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Sinusitis and Rhinitis: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-16"
+date: "2026-03-31"
 description: "How to get VA disability rating for sinusitis and allergic rhinitis. Rating criteria from 0% to 50%, evidence needed, and C&P exam tips."
 keywords: "VA disability sinusitis, rhinitis VA rating, sinusitis C&P exam, VA claim sinus, allergic rhinitis VA"
 category: "va-disability"

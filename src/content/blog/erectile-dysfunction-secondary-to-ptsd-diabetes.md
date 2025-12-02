@@ -1,7 +1,7 @@
 ---
 title: "Erectile Dysfunction Secondary to PTSD or Diabetes: Complete VA Claims Guide"
 description: "Expert guide to filing erectile dysfunction as secondary to PTSD or diabetes, nexus strategies, evidence requirements, and compensation calculations."
-date: "2026-02-09"
+date: "2026-02-12"
 category: "Secondary Conditions"
 tags: ["erectile-dysfunction", "ptsd", "diabetes", "secondary-condition", "nexus", "va-claims"]
 author: "Military Transition Toolkit"

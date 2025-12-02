@@ -1,6 +1,6 @@
 ---
 EPISODE #033: Project Management Careers - From Squad Leader to PMP
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: project manager, PMP certification, PMI, squad leader, agile, scrum master

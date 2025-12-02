@@ -3,7 +3,7 @@ title: "15Q Air Traffic Control to FAA Controller: Certification, Training & Car
 description: "Complete ROI analysis for 15Q air traffic controllers transitioning to FAA civilian air traffic control with certification pathways"
 slug: "15q-faa-air-traffic-controller-certification"
 author: "Military Transition Toolkit"
-date: "2026-01-18"
+date: "2026-01-19"
 category: "Certifications"
 tags: ["15Q", "Air Traffic Control", "FAA", "ATC"]
 ---

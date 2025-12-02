@@ -1,7 +1,7 @@
 ---
 title: "Military to Intelligence Community: Complete Transition Guide for Veterans"
 description: "How to transition from military service to the Intelligence Community. Agency options, clearance requirements, salary expectations, and hiring process details."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to intelligence community, veteran CIA jobs, IC careers for veterans"
 slug: "military-to-intelligence-community-career-guide"

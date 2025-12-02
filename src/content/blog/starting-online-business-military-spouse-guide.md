@@ -1,7 +1,7 @@
 ---
 title: "Starting an Online Business as a Military Spouse: Complete Guide"
 description: "Launch a successful online business as a military spouse. Business structure, legal requirements, PCS-proof strategies, and building income that travels with you."
-date: "2025-12-02"
+date: "2026-03-22"
 category: "military-spouse"
 keywords: "military spouse online business, start business military spouse, entrepreneurship military spouse, work from home business, portable business military"
 slug: "starting-online-business-military-spouse-guide"

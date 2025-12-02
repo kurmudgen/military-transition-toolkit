@@ -2,7 +2,7 @@
 title: "15P Aviation Operations Specialist to Operations Manager: Career Transition Guide"
 description: "Complete guide for Army 15P Aviation Operations Specialists transitioning to civilian Operations Manager roles with salary data, certifications, and advancement strategies."
 author: "Military Transition Toolkit"
-date: "2026-01-18"
+date: "2026-01-19"
 image: "/images/15p-aviation-operations.jpg"
 category: "Career Transitions"
 tags: ["15P", "Operations Manager", "Aviation", "Management"]

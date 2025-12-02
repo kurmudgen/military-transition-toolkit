@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Burn Pit Exposure: Complete Guide 2025"
 description: "How to file VA disability claim for conditions caused by burn pit exposure. Presumptive conditions, required evidence, and approval strategies."
-date: "2025-12-05"
+date: "2025-12-06"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Burn Pit Exposure", "Presumptive Conditions", "PACT Act", "Military Burn Pits"]

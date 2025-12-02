@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Software Developer: Self-Taught Guide"
 description: "Complete self-taught path for military spouses becoming software developers. Free and low-cost resources, realistic timelines, portfolio strategies, and remote job hunting that survives PCS."
-date: "2025-12-02"
+date: "2026-03-22"
 category: "military-spouse"
 keywords: "military spouse software developer, learn to code military spouse, self-taught programmer military, remote developer military spouse, coding bootcamp military spouse"
 slug: "software-developer-military-spouse-guide"

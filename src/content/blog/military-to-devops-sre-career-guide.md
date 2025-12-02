@@ -1,7 +1,7 @@
 ---
 title: "Military to DevOps/SRE: Complete Transition Guide for Veterans"
 description: "How to transition from military service to DevOps and Site Reliability Engineering. Best MOS backgrounds, certifications needed, salary expectations, and top employers."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to DevOps, veteran SRE jobs, DevOps careers for veterans, site reliability engineering"
 slug: "military-to-devops-sre-career-guide"

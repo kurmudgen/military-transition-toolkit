@@ -1,7 +1,7 @@
 ---
 title: "Best Online Degrees for Military Spouses (Fully Remote)"
 description: "Top online degree programs for military spouses. Military-friendly universities, portable credentials, flexible scheduling, and programs that survive PCS moves."
-date: "2025-12-02"
+date: "2026-03-08"
 category: "military-spouse"
 keywords: "military spouse online degree, best online colleges military spouse, remote degree programs, military spouse education, online university PCS"
 slug: "online-degrees-military-spouse-guide"

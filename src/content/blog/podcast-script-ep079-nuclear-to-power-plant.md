@@ -1,6 +1,6 @@
 ---
 EPISODE #079: Navy Nuclear Engineer to Civilian Power Plant - $140K Technical Career Without a Degree
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 TARGET LENGTH: 16-18 minutes (2,400-2,700 words)

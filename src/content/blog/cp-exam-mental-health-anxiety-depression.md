@@ -1,7 +1,7 @@
 ---
 title: "C&P Exam for Mental Health: Anxiety and Depression Preparation Guide"
 description: "Complete guide to VA C&P exams for anxiety and depression claims, what to expect during mental health evaluations, preparation strategies, and exam day tips."
-date: "2025-12-06"
+date: "2025-12-07"
 category: "C&P Exams"
 tags: ["anxiety", "depression", "mental-health", "cp-exam", "va-exam", "preparation"]
 author: "Military Transition Toolkit"

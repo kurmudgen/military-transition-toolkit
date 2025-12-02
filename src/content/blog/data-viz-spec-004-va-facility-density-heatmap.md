@@ -1,5 +1,5 @@
 ---
-date: "2026-02-04"
+date: "2026-02-07"
 ---# Data Visualization Specification: VA Facility Density and Access Heatmap
 
 ## Document Information

@@ -1,5 +1,5 @@
 ---
-date: "2026-03-17"
+date: "2026-04-01"
 ---# VA Disability Rating Guide: Tinnitus
 
 ## Bottom Line Up Front (BLUF)

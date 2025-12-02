@@ -1,7 +1,7 @@
 ---
 title: "Tinnitus Secondary to PTSD: Complete Connection Guide for VA Claims"
 description: "Expert guide to filing tinnitus as a secondary condition to PTSD, nexus requirements, evidence strategies, and compensation calculations."
-date: "2026-03-09"
+date: "2026-03-23"
 category: "Secondary Conditions"
 tags: ["tinnitus", "ptsd", "secondary-condition", "nexus", "va-claims", "disability"]
 author: "Military Transition Toolkit"

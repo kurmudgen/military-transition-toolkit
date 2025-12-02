@@ -1,7 +1,7 @@
 ---
 title: "Military to Cybersecurity: Complete Transition Guide for Veterans"
 description: "How to transition from military service to cybersecurity. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to cybersecurity, veteran cybersecurity jobs, cybersecurity careers for veterans"
 slug: "military-to-cybersecurity-career-guide"

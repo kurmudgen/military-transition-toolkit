@@ -1,6 +1,6 @@
 ---
 title: "18B Special Forces Weapons Sergeant to Firearms Instructor: Complete Career Guide (2025)"
-date: "2026-01-19"
+date: "2026-01-20"
 description: "Convert your 18B Special Forces weapons expertise into $60K-$150K+ firearms instruction career. Includes academy, private sector, and contractor opportunities."
 keywords: "18B to firearms instructor, Special Forces civilian career, weapons sergeant instructor jobs, SF firearms training"
 slug: "18b-special-forces-to-firearms-instructor"

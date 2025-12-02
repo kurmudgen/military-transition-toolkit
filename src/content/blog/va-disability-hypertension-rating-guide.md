@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Hypertension: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-14"
+date: "2026-03-28"
 description: "How to get VA disability rating for hypertension (high blood pressure). Rating criteria from 10% to 60%, evidence needed, C&P exam tips."
 keywords: "VA disability hypertension, high blood pressure VA rating, hypertension C&P exam, VA claim hypertension"
 category: "va-disability"

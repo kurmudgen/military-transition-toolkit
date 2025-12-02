@@ -1,5 +1,5 @@
 ---
-date: "2026-02-02"
+date: "2026-02-04"
 ---# Competitor Analysis: Onward to Opportunity (O2O) - Syracuse IVMF
 
 **Category:** Comprehensive Platform (Career + Training)

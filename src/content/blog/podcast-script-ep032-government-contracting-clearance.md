@@ -1,6 +1,6 @@
 ---
 EPISODE #032: Government Contracting Careers - Leveraging Your Clearance
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: government contractor, security clearance, defense contractors, cleared jobs, TS/SCI

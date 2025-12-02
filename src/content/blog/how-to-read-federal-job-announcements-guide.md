@@ -1,7 +1,7 @@
 ---
 title: "How to Read Federal Job Announcements: A Veteran's Decoder Guide"
 description: "Learn to decode federal job announcements on USAJOBS. Understand who can apply, qualification requirements, and what the announcement really tells you about the position."
-date: "2025-12-01"
+date: "2025-12-18"
 category: "federal-employment"
 keywords: "federal job announcements, USAJOBS job posting, how to read job announcement, federal job qualifications, specialized experience, who may apply federal jobs"
 slug: "how-to-read-federal-job-announcements-guide"

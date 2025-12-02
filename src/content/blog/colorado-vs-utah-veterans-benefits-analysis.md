@@ -1,7 +1,7 @@
 ---
 title: "Colorado vs Utah Veterans Benefits: Comprehensive Analysis 2025"
 description: "Compare Colorado and Utah for military retirees. Analyze tax treatment, cost of living, outdoor recreation, and job opportunities for veterans."
-date: "2026-02-01"
+date: "2026-02-03"
 category: "State Comparisons"
 tags: ["Colorado", "Utah", "Veterans Benefits", "Military Retirement Tax", "Mountain West"]
 author: "Military Transition Toolkit"

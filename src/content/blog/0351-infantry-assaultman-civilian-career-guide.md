@@ -1,7 +1,7 @@
 ---
 title: "0351 Infantry Assaultman to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2025-12-31"
-date: "2026-01-03"
+date: "2026-01-04"
 description: "Real career options for Marine Corps 0351 Infantry Assaultmen transitioning to civilian life. Includes salary ranges $45K-$120K+, required certifications, demolitions and breaching skills translation."
 keywords: "0351 assaultman civilian jobs, Marine assaultman career transition, 0351 to civilian career, demolitions career, breaching specialist jobs"
 ---

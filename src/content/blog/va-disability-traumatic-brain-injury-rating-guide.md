@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Traumatic Brain Injury (TBI): Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-17"
+date: "2026-04-01"
 description: "How to get VA disability rating for traumatic brain injury (TBI). Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and residual conditions."
 keywords: "VA disability TBI, traumatic brain injury VA rating, TBI C&P exam, VA claim TBI, concussion VA disability"
 category: "va-disability"

@@ -1,7 +1,7 @@
 ---
 title: "USAJOBS Complete Guide for Veterans: Land Your Federal Career in 2025"
 description: "Master USAJOBS with this comprehensive veteran's guide. Learn profile optimization, resume upload strategies, veteran preference, and insider tips to land federal jobs faster."
-date: "2025-12-01"
+date: "2026-03-24"
 category: "federal-employment"
 keywords: "USAJOBS veterans guide, federal jobs for veterans, USAJOBS profile optimization, veteran federal employment, USAJOBS tips, government jobs veterans, federal resume USAJOBS"
 slug: "usajobs-complete-guide-veterans"

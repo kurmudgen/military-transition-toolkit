@@ -1,7 +1,7 @@
 ---
 title: "Military Retirement Transition: Complete Guide for 20+ Year Veterans"
 description: "Navigate transition from 20+ years military service. Plan for retirement income, civilian career, and post-military life strategy."
-date: "2026-03-07"
+date: "2026-03-19"
 author: "Military Transition Toolkit"
 category: "Retirement Transition"
 tags: ["military-retirement", "retirement-planning", "pension", "transition"]

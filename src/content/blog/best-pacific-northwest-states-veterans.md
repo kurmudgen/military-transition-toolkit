@@ -1,7 +1,7 @@
 ---
 title: "Best Pacific Northwest States for Veterans 2025"
 description: "Guide to best Pacific Northwest states for military retirees. Compare Washington and Oregon for veteran benefits, tax treatment, and outdoor recreation."
-date: "2026-01-28"
+date: "2026-01-29"
 category: "Regional Guides"
 tags: ["Pacific Northwest", "Veterans Benefits", "Military Retirement", "Washington Oregon", "Outdoor Recreation"]
 author: "Military Transition Toolkit"

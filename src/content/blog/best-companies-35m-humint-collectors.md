@@ -1,6 +1,6 @@
 ---
 title: "Best Companies for 35M HUMINT Collectors: Top Intelligence Employers (2025)"
-date: "2026-01-27"
+date: "2026-01-28"
 description: "Top 15+ companies actively hiring 35M HUMINT Collector veterans with salaries $85K-$220K+. Includes intelligence agencies, contractors, and security firms."
 keywords: "35M HUMINT collector jobs, intelligence analyst careers, security clearance positions, federal intelligence"
 slug: "best-companies-35m-humint-collectors"

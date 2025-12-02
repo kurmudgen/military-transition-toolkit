@@ -1,7 +1,7 @@
 ---
 title: "Navy CT (Cryptologic Technician) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-01-28"
-date: "2026-01-07"
+date: "2026-01-08"
 description: "Navy CT transition roadmap with real civilian jobs. Salaries $75K-$150K+. Covers CTR, CTN, CTI, CTT paths to NSA, defense contractors, cybersecurity. TS/SCI clearance worth $20K-40K premium."
 keywords: "Navy CT civilian jobs, Cryptologic Technician career transition, CT to civilian career, Navy CTR CTN CTI CTT jobs"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Military TSP: How Much to Contribute and Which Funds to Choose (2025 Guide)"
-date: "2026-03-09"
+date: "2026-03-24"
 description: "Complete TSP guide for military members. Learn contribution strategies, fund allocation, Roth vs Traditional, BRS matching, and common mistakes to avoid."
 keywords: "TSP military, military TSP, thrift savings plan military, TSP funds, military retirement savings, BRS TSP matching"
 slug: "tsp-military-guide"

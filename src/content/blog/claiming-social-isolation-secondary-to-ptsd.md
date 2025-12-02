@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Social Isolation Secondary to PTSD"
 description: "Guide to claiming social withdrawal and isolation as secondary disability to service-connected PTSD. Evidence and functional impairment documentation."
-date: "2026-01-31"
+date: "2026-02-03"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Social Isolation", "Avoidance", "Secondary Conditions"]

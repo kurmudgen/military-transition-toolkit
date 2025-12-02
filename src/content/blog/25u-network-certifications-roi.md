@@ -3,7 +3,7 @@ title: "25U Network Specialist: CCNA, Security+, and Network Security Certificat
 description: "Complete ROI analysis for 25U network specialists pursuing CCNA, Security+, and advanced network certifications"
 slug: "25u-network-certifications-roi"
 author: "Military Transition Toolkit"
-date: "2026-01-20"
+date: "2026-01-21"
 category: "Certifications"
 tags: ["25U", "Network Specialist", "CCNA", "Security Plus", "Networking"]
 ---

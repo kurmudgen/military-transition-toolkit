@@ -1,5 +1,5 @@
 ---
-date: "2026-01-22"
+date: "2026-01-23"
 ---# 3E5X1 - Engineering Career Transition Guide
 
 ## Overview

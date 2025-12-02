@@ -1,7 +1,7 @@
 ---
 title: "Missouri vs Kansas Veterans Benefits Comparison 2025"
 description: "Compare Missouri and Kansas for military retirees. Analyze military retirement tax treatment, cost of living, VA healthcare, and Great Plains opportunities."
-date: "2026-02-19"
+date: "2026-03-02"
 category: "State Comparisons"
 tags: ["Missouri", "Kansas", "Veterans Benefits", "Great Plains", "Military Retirement"]
 author: "Military Transition Toolkit"

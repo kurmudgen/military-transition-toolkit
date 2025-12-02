@@ -1,7 +1,7 @@
 ---
 title: "Best Companies Hiring Military Spouses (2025): Complete Guide"
 description: "Top employers actively recruiting military spouses in 2025. MSEP partners, remote-friendly companies, military spouse programs, and how to get hired."
-date: "2025-12-02"
+date: "2026-01-29"
 category: "military-spouse"
 keywords: "companies hiring military spouses, military spouse employers, MSEP companies, military spouse friendly employers, remote jobs military spouse"
 slug: "best-companies-hiring-military-spouses-2025-guide"

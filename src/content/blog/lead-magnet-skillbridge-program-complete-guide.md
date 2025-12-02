@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-21"
 ---# SkillBridge Program Complete Guide
 ## How to Land a Corporate Internship During Your Last 180 Days of Service (60-80% Get Hired!)
 **By Jacob, Navy E6 | Formation Labs**

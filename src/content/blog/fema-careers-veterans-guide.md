@@ -1,7 +1,7 @@
 ---
 title: "FEMA Careers for Veterans: Complete Guide to Emergency Management"
 description: "Comprehensive guide to FEMA careers for veterans. Learn about Emergency Management Specialist positions, disaster response, reservist programs, hiring process, and how military experience helps."
-date: "2025-12-01"
+date: "2026-02-15"
 category: "federal-employment"
 keywords: "FEMA careers veterans, FEMA jobs, emergency management careers, disaster response jobs, FEMA reservist, FEMA hiring, emergency management specialist"
 slug: "fema-careers-veterans-guide"

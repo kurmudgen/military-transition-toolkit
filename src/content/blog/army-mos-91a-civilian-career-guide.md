@@ -1,7 +1,7 @@
 ---
 title: "Army 91A (M1 Abrams Tank System Maintainer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2025-12-03"
-date: "2025-12-31"
+date: "2026-01-01"
 description: "Real career options for 91A M1 Abrams Tank System Maintainers transitioning to civilian life. Includes salary ranges $45K-$85K+, heavy equipment careers, defense contractors, diesel mechanics, and ASE certification paths."
 keywords: "91A civilian jobs, M1 Abrams mechanic career transition, tank maintainer civilian salary, heavy equipment mechanic, defense contractor jobs"
 ---

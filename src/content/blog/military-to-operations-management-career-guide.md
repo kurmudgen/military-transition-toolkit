@@ -1,7 +1,7 @@
 ---
 title: "Military to Operations Management: Complete Transition Guide for Veterans"
 description: "How to transition from military service to operations management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to operations management, veteran operations jobs, operations management careers for veterans"
 slug: "military-to-operations-management-career-guide"

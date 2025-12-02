@@ -1,7 +1,7 @@
 ---
 title: "KSAs and Questionnaires: How to Score High on Federal Applications"
 description: "Master federal job questionnaires and KSA statements. Learn how to rate yourself accurately, support claims with evidence, and avoid disqualification pitfalls."
-date: "2025-12-01"
+date: "2026-02-19"
 category: "federal-employment"
 keywords: "federal job questionnaire, KSA statements, federal application scoring, USAJOBS questionnaire, how to answer federal job questions, self-assessment federal jobs"
 slug: "ksas-questionnaires-scoring-guide"

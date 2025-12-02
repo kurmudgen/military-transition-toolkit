@@ -1,7 +1,7 @@
 ---
 title: "Navy MM (Machinist's Mate) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2026-05-20"
-date: "2026-01-09"
+date: "2026-01-10"
 description: "Real career paths for Navy Machinist's Mates transitioning to civilian life. Includes salary ranges $45K-$105K+, certifications, nuclear power opportunities, and skills translation."
 keywords: "Navy MM civilian jobs, Machinist's Mate career transition, MM to civilian career, Navy nuclear machinist civilian jobs"
 ---

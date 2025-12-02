@@ -1,5 +1,5 @@
 ---
-date: "2026-02-15"
+date: "2026-02-21"
 ---# Best States for 100% Disabled Veterans
 ## Complete 2025 Rankings & Comparison Guide
 **By Jacob, Navy E6 | Formation Labs**

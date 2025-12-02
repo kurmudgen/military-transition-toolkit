@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-21"
 ---# Military to Civilian Resume Template Library
 ## 15 Battle-Tested Resume Templates for Every MOS and Career Path
 **By Jacob, Navy E6 | Formation Labs**

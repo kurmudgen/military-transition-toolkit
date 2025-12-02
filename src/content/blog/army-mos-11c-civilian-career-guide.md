@@ -1,7 +1,7 @@
 ---
 title: "Army 11C Indirect Fire Infantryman to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-10"
-date: "2025-12-20"
+date: "2025-12-21"
 description: "Real career options for Army 11C Indirect Fire Infantrymen transitioning to civilian life. Includes salary ranges $50K-$180K+, law enforcement, technical fields, skilled trades, and defense contracting with 100+ companies hiring."
 keywords: "11C Indirect Fire Infantryman civilian jobs, mortar crew career transition, 11C to police, artillery veteran jobs, 11C salary civilian, Army mortar specialist transition"
 slug: "army-mos-11c-civilian-career-guide"

@@ -1,6 +1,6 @@
 ---
 EPISODE #014: Navy MA Master-at-Arms to Law Enforcement and Security
-date: "2026-02-27"
+date: "2026-03-10"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: Navy MA, Master-at-Arms, law enforcement, police, federal agent, security

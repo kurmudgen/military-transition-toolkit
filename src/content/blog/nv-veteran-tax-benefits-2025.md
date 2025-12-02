@@ -1,6 +1,6 @@
 ---
 title: "Nevada Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-02-24"
+date: "2026-03-07"
 description: "Complete guide to Nevada veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans."
 keywords: "nevada veteran benefits, nevada property tax exemption veterans, nevada veteran tax benefits, military retirement nevada"
 slug: "nevada-veteran-tax-benefits-2025"

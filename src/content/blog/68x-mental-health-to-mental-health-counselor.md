@@ -2,7 +2,7 @@
 title: "68X Mental Health Specialist to Licensed Mental Health Counselor: Career Transition Guide"
 description: "Complete guide for Army 68X Mental Health Specialists transitioning to Licensed Professional Counselor (LPC) or Licensed Mental Health Counselor (LMHC) roles with salary data and certification pathways."
 author: "Military Transition Toolkit"
-date: "2026-01-23"
+date: "2026-01-24"
 image: "/images/68x-mental-health.jpg"
 category: "Career Transitions"
 tags: ["68X", "Mental Health Counselor", "LPC", "Healthcare"]

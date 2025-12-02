@@ -2,7 +2,7 @@
 title: "Alaska Hidden Veteran Benefits 2025: Complete Guide to State-Specific Advantages"
 description: "Discover Alaska's overlooked veteran benefits including property tax exemptions, education benefits, hunting/fishing discounts, and healthcare programs that service members rarely know about."
 author: "Military Transition Toolkit"
-date: "2025-12-08"
+date: "2025-12-09"
 tags: ["Alaska", "Veteran Benefits", "State Benefits", "Tax Exemptions", "Healthcare"]
 category: "State Benefits"
 featured: true

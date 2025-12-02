@@ -1,6 +1,6 @@
 ---
 EPISODE #029: Finance and Banking Careers for Veterans - No Finance Degree Required
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: finance careers, banking, financial advisor, credit analyst, operations, veterans

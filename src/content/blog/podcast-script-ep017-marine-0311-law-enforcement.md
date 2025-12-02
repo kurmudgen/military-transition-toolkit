@@ -1,6 +1,6 @@
 ---
 EPISODE #017: Marine 0311 Rifleman to Law Enforcement and Security
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: Marine 0311, rifleman, police, law enforcement, security, protective services

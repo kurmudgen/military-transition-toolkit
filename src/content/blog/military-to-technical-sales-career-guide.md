@@ -1,7 +1,7 @@
 ---
 title: "Military to Technical Sales: Complete Transition Guide for Veterans"
 description: "How to transition from military service to technical sales. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-02"
 category: "industry-transition"
 keywords: "military to technical sales, veteran sales engineer jobs, tech sales careers for veterans"
 slug: "military-to-technical-sales-career-guide"

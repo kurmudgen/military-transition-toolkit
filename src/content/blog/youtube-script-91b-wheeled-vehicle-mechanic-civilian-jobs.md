@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 91B Vehicle Mechanic to $75K Diesel Technician 2025
-date: "2026-03-21"
+date: "2026-04-05"
 TARGET LENGTH: 6-8 minutes
 TARGET KEYWORDS: 91B wheeled vehicle mechanic civilian jobs, diesel technician salary, ASE certification
 VIDEO FILE NAME: youtube-script-91b-wheeled-vehicle-mechanic-civilian-jobs.md

@@ -1,7 +1,7 @@
 ---
 title: "CACI Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to CACI careers for veterans. Learn about IT services, intelligence, cybersecurity positions, veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor."
-date: "2025-12-01"
+date: "2026-01-31"
 category: "federal-employment"
 keywords: "CACI careers veterans, CACI jobs, intelligence contractor careers, IT services veterans, CACI veteran hiring, defense IT jobs"
 slug: "caci-careers-veterans-guide"

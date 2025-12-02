@@ -1,6 +1,6 @@
 ---
 title: "Coast Guard CS (Culinary Specialist) to Civilian: Complete Career Transition Guide (2024-2025 Salaries)"
-date: "2026-01-11"
+date: "2026-01-12"
 description: "Real career options for Coast Guard Culinary Specialists (FS) transitioning to civilian life. Restaurant, healthcare, hospitality careers with salary ranges $35K-$90K+."
 keywords: "Coast Guard CS civilian jobs, Culinary Specialist career transition, military cook to civilian chef, food service careers"
 ---

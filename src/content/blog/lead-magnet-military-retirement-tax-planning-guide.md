@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-21"
 ---# Military Retirement Tax Planning Guide
 ## State-by-State Tax Treatment + Strategies to Save $50,000-$150,000 in Lifetime Taxes
 **By Jacob, Navy E6 | Formation Labs**

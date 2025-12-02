@@ -1,7 +1,7 @@
 ---
 title: "L3Harris Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to L3Harris careers for veterans. Learn about communications, electronic warfare, ISR systems positions, veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor."
-date: "2025-12-01"
+date: "2026-02-19"
 category: "federal-employment"
 keywords: "L3Harris careers veterans, L3Harris jobs, communications careers, electronic warfare careers, ISR systems jobs, defense contractor veterans"
 slug: "l3harris-careers-veterans-guide"

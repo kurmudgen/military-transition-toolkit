@@ -1,6 +1,6 @@
 ---
 EPISODE #086: Combat Medic to Nurse Practitioner - $125K Medical Career Advancement
-date: "2026-03-06"
+date: "2026-03-17"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 HOST: Jacob

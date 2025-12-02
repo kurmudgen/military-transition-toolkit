@@ -1,5 +1,5 @@
 ---
-date: "2026-02-05"
+date: "2026-02-07"
 ---# Data Visualization Specification #011: State Income Tax Exemption on Military Retirement Pay
 
 ## 1. Overview

@@ -1,7 +1,7 @@
 ---
 title: "Raytheon (RTX) Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to Raytheon/RTX careers for veterans. Learn about missile systems, radar, cybersecurity positions, veteran hiring programs, and how to land jobs at this major defense contractor."
-date: "2025-12-01"
+date: "2026-03-18"
 category: "federal-employment"
 keywords: "Raytheon careers veterans, RTX jobs, Raytheon missiles careers, Raytheon veteran hiring, defense contractor jobs, radar engineering careers"
 slug: "raytheon-careers-veterans-guide"

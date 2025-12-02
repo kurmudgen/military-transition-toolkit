@@ -1,7 +1,7 @@
 ---
 title: "30% or More Disabled Veteran Hiring: Your Direct Path to Any Federal Job"
 description: "Complete guide to the 30% or More Disabled Veteran hiring authority. Learn how this powerful tool lets you bypass competition for federal positions at any grade level."
-date: "2025-12-01"
+date: "2026-01-22"
 category: "federal-employment"
 keywords: "30 percent disabled veteran hiring, disabled veteran federal jobs, schedule A hiring veterans, non-competitive federal hiring disabled veteran, VA disability federal employment"
 slug: "30-percent-disabled-veteran-hiring-guide"

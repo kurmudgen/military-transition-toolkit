@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Hip Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-13"
+date: "2026-03-28"
 description: "How to get VA disability rating for hip conditions. Rating criteria for limitation of motion, arthritis, and hip replacement. Evidence needed and C&P exam tips."
 keywords: "VA disability hip, hip VA rating, hip pain VA claim, hip arthritis VA disability"
 category: "va-disability"

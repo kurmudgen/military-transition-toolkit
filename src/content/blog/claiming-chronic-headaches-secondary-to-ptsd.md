@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Chronic Headaches Secondary to PTSD: Complete Guide"
 description: "How to file VA disability claim for migraines and tension headaches secondary to service-connected PTSD. Evidence, nexus letters, and ratings."
-date: "2026-01-31"
+date: "2026-02-02"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Chronic Headaches", "Migraines", "Secondary Conditions"]

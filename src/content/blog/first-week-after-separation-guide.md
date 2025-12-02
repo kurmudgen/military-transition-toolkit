@@ -1,7 +1,7 @@
 ---
 title: "First Week After Separation: Complete Survivor Guide"
 description: "Navigate your first week as a civilian. Handle first day success, manage emotions, establish routines, and start your new career strong."
-date: "2026-02-11"
+date: "2026-02-15"
 author: "Military Transition Toolkit"
 category: "Post-Separation"
 tags: ["first-week", "post-separation", "civilian-life", "career-start"]

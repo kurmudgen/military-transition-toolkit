@@ -1,5 +1,5 @@
 ---
-date: "2026-01-24"
+date: "2026-01-25"
 ---# AFSC Career Guide Completion Tracker
 
 **Last Updated:** [Current Date]

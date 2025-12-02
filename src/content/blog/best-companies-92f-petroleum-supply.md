@@ -2,7 +2,7 @@
 title: "Best Companies for 92F Petroleum Supply Specialists: Energy Career Guide"
 description: "Top energy, refining, and fuel distribution companies hiring 92F petroleum supply specialists with salary data and career advancement to management roles."
 author: "Military Transition Toolkit"
-date: "2026-01-28"
+date: "2026-01-29"
 image: "/images/92f-petroleum-supply.jpg"
 category: "Best Companies"
 tags: ["92F", "Petroleum Supply", "Energy", "Best Companies"]

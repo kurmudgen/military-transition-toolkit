@@ -1,7 +1,7 @@
 ---
 title: "How to Transfer Professional Licenses During PCS: Step-by-Step Guide"
 description: "Complete step-by-step process for transferring professional licenses when you PCS. Timeline, documents needed, expediting strategies, and handling common problems."
-date: "2025-12-02"
+date: "2026-03-23"
 category: "military-spouse"
 keywords: "transfer professional license PCS, license transfer military spouse, relicensing military move, state license military, PCS licensing steps"
 slug: "transfer-professional-license-pcs-guide"

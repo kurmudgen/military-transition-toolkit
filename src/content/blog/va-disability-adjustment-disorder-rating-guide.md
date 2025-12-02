@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Adjustment Disorder: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-10"
+date: "2026-03-25"
 description: "How to get VA disability rating for adjustment disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability adjustment disorder, adjustment disorder VA rating, adjustment disorder C&P exam, VA claim adjustment disorder"
 category: "va-disability"

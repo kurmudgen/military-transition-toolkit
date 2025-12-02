@@ -1,6 +1,6 @@
 ---
 EPISODE #019: Marine 3531 Motor Vehicle Operator to Commercial Driving and Logistics
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 14-16 minutes
 KEYWORDS: Marine 3531, motor vehicle operator, CDL, truck driver, logistics

@@ -1,7 +1,7 @@
 ---
 title: "Certifications Under $4,000 Covered by MyCAA: Complete List"
 description: "All certifications covered by MyCAA's $4,000 spouse education benefit. Career paths, costs, time to complete, and job prospects for each credential."
-date: "2025-12-02"
+date: "2026-02-01"
 category: "military-spouse"
 keywords: "MyCAA certifications, military spouse certifications, MyCAA approved programs, spouse career certification, $4000 education benefit"
 slug: "certifications-mycaa-covered-guide"

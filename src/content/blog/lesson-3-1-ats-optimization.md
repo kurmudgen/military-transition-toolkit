@@ -1,5 +1,5 @@
 ---
-date: "2026-02-17"
+date: "2026-02-23"
 ---# Lesson 3.1: ATS Optimization
 
 **Course:** Military Resume Mastery

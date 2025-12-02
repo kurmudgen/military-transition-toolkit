@@ -1,7 +1,7 @@
 ---
 title: "Army Special Forces Weapons Sergeant (18B) to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-02-11"
-date: "2025-12-23"
+date: "2025-12-24"
 description: "Real career options for Special Forces Weapons Sergeants (18B) transitioning to civilian life. Includes salary ranges $80K-$300K+, federal law enforcement tactical units, firearms instruction, private security contracting, and executive protection opportunities."
 keywords: "18B civilian jobs, Special Forces Weapons Sergeant career, Green Beret 18B careers, SF weapons sergeant to FBI, tactical trainer jobs, firearms instructor salary"
 ---

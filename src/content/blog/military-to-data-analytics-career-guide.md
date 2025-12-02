@@ -1,7 +1,7 @@
 ---
 title: "Military to Data Analytics: Complete Transition Guide for Veterans"
 description: "How to transition from military service to data analytics. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to data analytics, veteran data analyst jobs, data analytics careers for veterans"
 slug: "military-to-data-analytics-career-guide"

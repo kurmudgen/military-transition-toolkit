@@ -1,7 +1,7 @@
 ---
 title: "How to Use Your VA Home Loan to Buy a House: Complete Guide"
 description: "Master your VA home loan benefit. Learn how to get pre-approval, choose a property, and close on your home with zero down payment."
-date: "2025-12-19"
+date: "2025-12-20"
 author: "Military Transition Toolkit"
 category: "Housing & Benefits"
 tags: ["va-home-loan", "home-buying", "benefits", "housing"]

@@ -1,7 +1,7 @@
 ---
 title: "NASA Careers for Veterans: Complete Guide to Space Agency Employment"
 description: "Comprehensive guide to NASA careers for veterans. Learn about engineering, technical, mission operations positions, hiring process, salary, and how military aerospace experience helps at NASA."
-date: "2025-12-01"
+date: "2026-03-05"
 category: "federal-employment"
 keywords: "NASA careers veterans, NASA jobs, NASA engineering careers, space careers veterans, NASA hiring process, aerospace careers veterans, NASA mission operations"
 slug: "nasa-careers-veterans-guide"

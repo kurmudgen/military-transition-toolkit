@@ -1,7 +1,7 @@
 ---
 title: "BAE Systems Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to BAE Systems careers for veterans. Learn about electronic warfare, combat vehicles, naval ships, veteran hiring programs, clearance requirements, and how to land jobs at this global defense company."
-date: "2025-12-01"
+date: "2026-01-27"
 category: "federal-employment"
 keywords: "BAE Systems careers veterans, BAE Systems jobs, electronic warfare careers, combat vehicles careers, defense contractor jobs veterans, BAE veteran hiring"
 slug: "bae-systems-careers-veterans-guide"

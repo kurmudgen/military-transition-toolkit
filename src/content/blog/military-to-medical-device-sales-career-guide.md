@@ -1,7 +1,7 @@
 ---
 title: "Military to Medical Device Sales: Complete Transition Guide for Veterans"
 description: "How to transition from military service to medical device sales. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to medical device sales, veteran medical device jobs, medical device sales careers for veterans"
 slug: "military-to-medical-device-sales-career-guide"

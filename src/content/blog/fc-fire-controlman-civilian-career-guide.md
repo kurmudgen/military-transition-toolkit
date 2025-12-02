@@ -1,7 +1,7 @@
 ---
 title: "Navy FC Fire Controlman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-03-04"
-date: "2026-01-08"
+date: "2026-01-09"
 description: "Real career options for Navy Fire Controlmen transitioning to civilian life. Includes salary ranges $70K-$145K+, defense contractor opportunities, and clearance-based careers."
 keywords: "Navy FC civilian jobs, Fire Controlman career transition, Navy FC to civilian, weapons systems technician, defense contractor jobs"
 ---

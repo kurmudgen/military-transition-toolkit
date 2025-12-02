@@ -1,7 +1,7 @@
 ---
 title: "Department of Veterans Affairs Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to VA careers for veterans. Learn about healthcare, benefits, and administrative positions, hiring programs, salary ranges, and how to serve those who served."
-date: "2025-12-01"
+date: "2026-03-25"
 category: "federal-employment"
 keywords: "VA careers veterans, Department of Veterans Affairs jobs, VA hospital jobs, VHA careers, VBA careers, VA employment veterans, veterans helping veterans"
 slug: "va-careers-veterans-guide"

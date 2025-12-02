@@ -1,7 +1,7 @@
 ---
 title: "MyCAA Spouse Education Benefits: Complete Guide 2025"
 description: "Everything military spouses need to know about MyCAA education benefits. Eligibility, approved programs, application process, and maximizing your $4,000 education funding."
-date: "2025-12-02"
+date: "2026-03-05"
 category: "military-spouse"
 keywords: "MyCAA military spouse, MyCAA benefits 2025, military spouse education funding, MyCAA eligible programs, spouse career advancement"
 slug: "mycaa-spouse-education-benefits-guide"

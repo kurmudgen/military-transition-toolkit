@@ -1,6 +1,6 @@
 ---
 EPISODE #065: VA Home Loans - Zero Down Payment, No PMI, Lifetime Benefit
-date: "2026-03-04"
+date: "2026-03-15"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 24-26 minutes (3,600-3,900 words)
 KEYWORDS: VA home loan, zero down payment, no PMI, VA funding fee, entitlement, IRRRL refinance

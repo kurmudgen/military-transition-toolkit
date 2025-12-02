@@ -1,7 +1,7 @@
 ---
 title: "First Year Out of Military: Complete Transition Guide for Veterans"
 description: "Navigate your first year after military separation. Month-by-month guide covering career, finances, identity, and adjustment."
-date: "2026-02-11"
+date: "2026-02-15"
 author: "Military Transition Toolkit"
 category: "Post-Separation"
 tags: ["first-year", "post-separation", "transition", "veteran-guide"]

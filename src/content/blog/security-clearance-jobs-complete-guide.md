@@ -1,7 +1,7 @@
 ---
 title: "Security Clearance Jobs: Complete Guide for Veterans"
 description: "Comprehensive guide to security clearance jobs for veterans. Learn about clearance levels, how to maintain clearance after separation, salary premiums, job opportunities, and maximizing your clearance value."
-date: "2025-12-01"
+date: "2026-03-20"
 category: "federal-employment"
 keywords: "security clearance jobs veterans, cleared jobs, secret clearance jobs, top secret clearance jobs, TS/SCI jobs, clearance salary, security clearance careers"
 slug: "security-clearance-jobs-complete-guide"

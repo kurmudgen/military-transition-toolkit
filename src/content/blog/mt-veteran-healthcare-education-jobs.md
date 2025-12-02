@@ -1,6 +1,6 @@
 ---
 title: "Montana Veterans: Healthcare Facilities, Education Benefits & Job Resources"
-date: "2026-02-22"
+date: "2026-03-05"
 description: "Complete directory of Montana VA medical centers, education programs, veteran employment resources, and support services across the state."
 keywords: "Montana VA hospital, Montana veteran education, Montana veteran jobs, Montana GI Bill schools"
 slug: "mt-veteran-healthcare-education-jobs"

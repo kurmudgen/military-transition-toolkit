@@ -1,7 +1,7 @@
 ---
 title: "How to Choose a Career Field as a Military Spouse: Complete Guide"
 description: "Strategic guide to choosing the right career as a military spouse. Portability factors, self-assessment frameworks, best career fields for military life, and avoiding common mistakes."
-date: "2025-12-02"
+date: "2026-02-02"
 category: "military-spouse"
 keywords: "military spouse career choice, choosing career military, career field military spouse, portable career selection, career planning military family"
 slug: "choosing-career-field-military-spouse-guide"

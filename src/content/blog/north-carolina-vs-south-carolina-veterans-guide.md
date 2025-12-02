@@ -1,7 +1,7 @@
 ---
 title: "North Carolina vs South Carolina Veterans: State Comparison Guide 2025"
 description: "Compare North Carolina and South Carolina for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and job markets."
-date: "2026-02-23"
+date: "2026-03-07"
 category: "State Comparisons"
 tags: ["North Carolina", "South Carolina", "Veterans Benefits", "Military Retirement", "Southeast"]
 author: "Military Transition Toolkit"

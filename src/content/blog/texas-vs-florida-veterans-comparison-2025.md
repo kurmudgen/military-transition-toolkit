@@ -1,7 +1,7 @@
 ---
 title: "Texas vs Florida for Veterans 2025: Complete Comparison Guide"
 description: "Comprehensive comparison of Texas vs Florida for military retirees and disabled veterans. Analyze taxes, benefits, cost of living, and job opportunities."
-date: "2026-03-09"
+date: "2026-03-23"
 category: "State Comparisons"
 tags: ["Texas", "Florida", "Veterans Benefits", "Military Retirement", "State Comparison"]
 author: "Military Transition Toolkit"

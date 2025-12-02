@@ -1,7 +1,7 @@
 ---
 title: "How to Use VR&E Vocational Rehabilitation Benefits: Complete Guide"
 description: "Leverage VR&E benefits for career training and education. Complete guide to vocational rehabilitation programs, eligibility, and maximizing your benefits."
-date: "2025-12-19"
+date: "2025-12-20"
 author: "Military Transition Toolkit"
 category: "Education & Benefits"
 tags: ["vr-e", "vocational-rehabilitation", "benefits", "career-training"]

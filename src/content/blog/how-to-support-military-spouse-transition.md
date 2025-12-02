@@ -1,6 +1,6 @@
 ---
 title: "How to Support Your Military Spouse During Transition: Family Guide"
-date: "2025-12-18"
+date: "2025-12-19"
 description: "Military family transition, supporting spouse through transition, children's adjustment, family finances, and keeping marriage strong during transition."
 keywords: "military spouse transition, family adjustment, military family resources, supporting spouse transition, family finances"
 slug: "how-to-support-military-spouse-transition"

@@ -1,7 +1,7 @@
 ---
 title: "Sciatica Secondary to Lumbar Spine Condition: Complete Filing Strategy"
 description: "Expert guide to filing sciatica as secondary to lumbar spine injury, nexus strategies, evidence requirements, and compensation impact."
-date: "2026-03-08"
+date: "2026-03-20"
 category: "Secondary Conditions"
 tags: ["sciatica", "lumbar-spine", "secondary-condition", "nerve-pain", "va-claims", "disability"]
 author: "Military Transition Toolkit"

@@ -33,7 +33,7 @@ const blogPosts = [
   {
     "slug": "washington-vs-oregon-veterans-comparison",
     "title": "Washington vs Oregon Veterans Comparison: Complete Guide 2025",
-    "date": "2026-03-19",
+    "date": "2026-04-03",
     "description": "Compare Washington and Oregon for military retirees. Analyze tax treatment, cost of living, VA healthcare, and job opportunities for Pacific Northwest veterans.",
     "keywords": "",
     "excerpt": "",
@@ -42,7 +42,7 @@ const blogPosts = [
   {
     "slug": "wi-veteran-healthcare-education-jobs",
     "title": "Wisconsin Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-19",
+    "date": "2026-04-03",
     "description": "Comprehensive 2025 guide to Wisconsin veteran healthcare (VA Medical Centers, CBOCs, Veterans Homes), education benefits (Wisconsin GI Bill covering full tuition at UW System and technical colleges), and employment services with specific addresses, phone numbers, and program details.",
     "keywords": "Wisconsin veteran healthcare, Wisconsin VA hospitals, Wisconsin GI Bill, UW System veteran benefits, Wisconsin technical colleges veterans, Wisconsin veteran employment, Milwaukee VA Medical Center, Madison VA",
     "excerpt": "",
@@ -52,7 +52,7 @@ const blogPosts = [
   {
     "slug": "wi-veteran-tax-benefits-2025",
     "title": "Wisconsin Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-19",
+    "date": "2026-04-03",
     "description": "Complete guide to Wisconsin veteran tax benefits including property tax credits up to 100% for disabled veterans, full military retirement income exemption, vehicle registration waivers, and combat pay exemptions. Includes 20-year savings projections and specific dollar amounts.",
     "keywords": "Wisconsin veteran tax benefits, Wisconsin property tax credit disabled veterans, Wisconsin military retirement income tax, Wisconsin veteran vehicle registration, Wisconsin veteran tax exemptions 2025",
     "excerpt": "",
@@ -62,7 +62,7 @@ const blogPosts = [
   {
     "slug": "wv-veteran-healthcare-education-jobs",
     "title": "West Virginia Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-19",
+    "date": "2026-04-03",
     "description": "Comprehensive guide to West Virginia veteran resources including VA Medical Centers in Beckley, Clarksburg, Huntington, and Martinsburg, community clinics, WVU and Marshall University benefits, state tuition waivers, employment programs, and job opportunities across the state.",
     "keywords": "West Virginia VA healthcare, WVU veteran benefits, Marshall University veterans, WV veteran jobs, West Virginia veteran education, VA clinics WV",
     "excerpt": "",
@@ -72,7 +72,7 @@ const blogPosts = [
   {
     "slug": "wv-veteran-tax-benefits-2025",
     "title": "West Virginia Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-19",
+    "date": "2026-04-03",
     "description": "Complete guide to West Virginia veteran tax benefits including property tax exemptions for disabled veterans, military retirement income tax treatment, homestead exemptions, and 20-year savings projections with county-by-county comparisons.",
     "keywords": "West Virginia veteran tax benefits, WV property tax exemption veterans, West Virginia military retirement tax, WV homestead exemption, disabled veteran tax benefits WV",
     "excerpt": "",
@@ -82,7 +82,7 @@ const blogPosts = [
   {
     "slug": "wy-veteran-healthcare-education-jobs",
     "title": "Wyoming Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-19",
+    "date": "2026-04-03",
     "description": "Comprehensive guide to Wyoming veteran resources including Cheyenne and Sheridan VA Medical Centers, telehealth services, Veterans Home in Buffalo, University of Wyoming GI Bill benefits, employment programs, and major employers in energy, tourism, and ranching sectors.",
     "keywords": "Wyoming veteran healthcare, Cheyenne VA Medical Center, Sheridan VA Medical Center, Wyoming Veterans Home Buffalo, University of Wyoming GI Bill, Wyoming veteran jobs, Wyoming Veterans Commission employment, veteran unemployment Wyoming",
     "excerpt": "",
@@ -92,7 +92,7 @@ const blogPosts = [
   {
     "slug": "wy-veteran-tax-benefits-2025",
     "title": "Wyoming Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-19",
+    "date": "2026-04-03",
     "description": "Complete guide to Wyoming veteran tax benefits including no state income tax, $6,000 property tax exemption, vehicle registration exemptions, county-by-county breakdown, and 20-year savings projections compared to Montana, Colorado, and Idaho.",
     "keywords": "Wyoming veteran tax benefits, Wyoming property tax exemption veterans, Wyoming no income tax veterans, Laramie County property tax, Natrona County veterans, Campbell County tax exemption, Wyoming vehicle registration veterans, disabled veteran tax breaks Wyoming",
     "excerpt": "",
@@ -100,49 +100,9 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-vertigo-rating-guide",
-    "title": "VA Disability Rating for Vertigo: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-18",
-    "description": "How to get VA disability rating for vertigo and vestibular disorders. Rating criteria from 10% to 100%, evidence needed, and C&P exam tips.",
-    "keywords": "VA disability vertigo, vertigo VA rating, Meniere's disease VA claim, vestibular disorder VA disability",
-    "excerpt": "",
-    "category": "va-disability",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-nexus-letter-complete-guide",
-    "title": "VA Nexus Letters: What They Are, When You Need One, and How to Get One (2025)",
-    "date": "2026-03-18",
-    "description": "Nexus letters cost $400-$2K but can make or break your VA claim. Learn what makes a valid nexus letter, which conditions need them, and how to avoid scams.",
-    "keywords": "nexus letter, VA nexus letter, nexus letter VA, what is a nexus letter, nexus letter cost, nexus letter example",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-secondary-conditions-guide-2025",
-    "title": "VA Secondary Conditions: Complete Database of What You Can Claim (2025)",
-    "date": "2026-03-18",
-    "description": "Complete guide to VA secondary conditions. Common pathways (PTSD→sleep apnea, back pain→knee injury), medical nexus requirements, and how to file successful claims.",
-    "keywords": "VA secondary conditions, secondary conditions VA, VA secondary claims",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-veteran-healthcare-education-jobs",
-    "title": "Virginia Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-18",
-    "description": "Comprehensive 2025 guide to Virginia veteran benefits including VA medical centers in Hampton, Richmond, and Salem with addresses and phone numbers, state veteran care centers, VMSDEP education program, in-state tuition benefits, V3 employment certification, and major defense contractors hiring veterans.",
-    "keywords": "Virginia VA medical centers, Hampton VA hospital, Hunter Holmes McGuire VAMC, VMSDEP education benefits, Virginia veteran jobs, Virginia Values Veterans V3, Virginia in-state tuition veterans",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
     "slug": "va-veteran-tax-benefits-2025",
     "title": "Virginia Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-18",
+    "date": "2026-04-02",
     "description": "Complete guide to Virginia veteran tax benefits including 100% property tax exemptions for disabled veterans, $40,000 military retirement income subtraction for 2025, vehicle tax relief, and county-specific benefits in Fairfax, Virginia Beach, Norfolk, and Arlington.",
     "keywords": "Virginia veteran tax benefits, Virginia property tax exemption, Virginia military retirement tax, disabled veteran tax relief, Fairfax County veteran benefits, Virginia Beach tax exemption, Norfolk veteran taxes",
     "excerpt": "",
@@ -150,18 +110,54 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "veterans-preference-explained-guide",
+    "title": "Veterans Preference Explained: 5-Point, 10-Point, CPS, and XP Decoded",
+    "date": "2026-04-02",
+    "description": "Comprehensive guide to federal veterans preference. Learn the differences between 5-point and 10-point preference, how CPS and XP work, and how to claim your preference correctly.",
+    "keywords": "veterans preference federal jobs, 5-point preference, 10-point preference, CPS preference, XP preference, federal hiring veterans, SF-15, veterans preference eligibility",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "virginia-vs-maryland-veterans-comparison",
     "title": "Virginia vs Maryland for Veterans: Complete Benefits Comparison 2025",
-    "date": "2026-03-18",
+    "date": "2026-04-02",
     "description": "Compare Virginia and Maryland for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and job opportunities for veterans.",
     "keywords": "",
     "excerpt": "",
     "category": "State Comparisons"
   },
   {
+    "slug": "virtual-assistant-military-spouse-guide",
+    "title": "Military Spouse to Virtual Assistant: Complete Business Guide",
+    "date": "2026-04-02",
+    "description": "Start a virtual assistant business as a military spouse. Learn how to find clients, set rates, manage PCS moves, and build a location-independent income of $35-100+/hour.",
+    "keywords": "military spouse virtual assistant, VA business military spouse, work from home military spouse, virtual assistant PCS, remote business military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "virtual-bookkeeping-military-spouse-guide",
+    "title": "Virtual Bookkeeping Business for Military Spouses: Complete Guide",
+    "date": "2026-04-02",
+    "description": "Start a virtual bookkeeping business as a military spouse. Certification paths, finding clients, pricing services, and building location-independent income managing books remotely.",
+    "keywords": "military spouse bookkeeper, virtual bookkeeping business, remote bookkeeping career, QuickBooks military spouse, bookkeeping from home",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "vra-veterans-recruitment-appointment-guide",
+    "title": "VRA (Veterans Recruitment Appointment) Guide: Non-Competitive Federal Hiring",
+    "date": "2026-04-02",
+    "description": "Complete guide to Veterans Recruitment Appointment (VRA). Learn eligibility requirements, how VRA hiring works, and strategies to get hired without competing against the public.",
+    "keywords": "VRA veterans recruitment appointment, non-competitive federal hiring, VRA eligibility, VRA federal jobs, veterans appointment authority, VRA USAJOBS",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "vt-veteran-healthcare-education-jobs",
     "title": "Vermont Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-18",
+    "date": "2026-04-02",
     "description": "Complete Vermont veteran resource guide for 2025: VA Medical Center White River Junction services, 5 CBOCs statewide, Vermont State Veterans' Home, National Guard tuition benefits, Vermont State Colleges programs, employment resources, state hiring preference, and unemployment statistics.",
     "keywords": "Vermont veteran healthcare, White River Junction VA, Vermont CBOC, Vermont State Veterans Home, Vermont National Guard tuition, Vermont State Colleges veterans, Vermont veteran jobs, state hiring preference Vermont",
     "excerpt": "",
@@ -171,7 +167,7 @@ const blogPosts = [
   {
     "slug": "vt-veteran-tax-benefits-2025",
     "title": "Vermont Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-18",
+    "date": "2026-04-02",
     "description": "Complete guide to Vermont veteran tax benefits for 2025: property tax exemptions up to $40,000, new military retirement income exemptions, vehicle registration waivers, combat pay treatment, and 20-year savings projections compared to NH, MA, NY.",
     "keywords": "Vermont veteran tax benefits, VT property tax exemption, military retirement income tax Vermont, veteran vehicle registration Vermont, combat pay Vermont, Alternative Veterans Property Tax Credit",
     "excerpt": "",
@@ -181,7 +177,7 @@ const blogPosts = [
   {
     "slug": "wa-veteran-healthcare-education-jobs",
     "title": "Washington Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-18",
+    "date": "2026-04-02",
     "description": "Comprehensive 2025 guide to Washington veteran healthcare (VA Puget Sound, Spokane, Walla Walla with addresses and phones), education benefits (100% tuition waivers for dependents, state programs), employment with Microsoft/Amazon/Boeing, JBLM transition support, and state veteran homes.",
     "keywords": "VA Puget Sound Healthcare, Spokane VA Medical Center, Washington veteran education benefits, tuition waiver veterans Washington, Microsoft veteran hiring, Amazon veteran jobs, Boeing veteran employment, JBLM transition, Washington state veteran homes, UW veteran benefits, WSU veteran programs",
     "excerpt": "",
@@ -191,7 +187,7 @@ const blogPosts = [
   {
     "slug": "wa-veteran-tax-benefits-2025",
     "title": "Washington Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-18",
+    "date": "2026-04-02",
     "description": "Complete guide to Washington state veteran tax benefits for 2025, including NO state income tax, property tax exemptions up to $84,000+ in savings, disabled veteran vehicle fee waivers, and county-by-county comparison of King, Pierce, and Spokane benefits.",
     "keywords": "Washington veteran tax benefits, WA property tax exemption veterans, disabled veteran vehicle fee waiver Washington, King County veteran benefits, Pierce County veteran tax, Spokane veteran property tax, Washington state income tax veterans, 100% disabled veteran benefits WA",
     "excerpt": "",
@@ -199,39 +195,9 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-sleep-disorders-rating-guide",
-    "title": "VA Disability Rating for Sleep Disorders (Other Than Apnea): Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-17",
-    "description": "How to get VA disability rating for sleep disorders other than sleep apnea. Rating criteria for narcolepsy, insomnia, and other sleep conditions.",
-    "keywords": "VA disability sleep disorder, narcolepsy VA rating, hypersomnia VA claim, sleep disorder VA disability",
-    "excerpt": "",
-    "category": "va-disability",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-disability-somatic-symptom-disorder-rating-guide",
-    "title": "VA Disability Rating for Somatic Symptom Disorder: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-17",
-    "description": "How to get VA disability rating for somatic symptom disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips.",
-    "keywords": "VA disability somatic symptom disorder, somatoform disorder VA rating, VA claim somatic disorder",
-    "excerpt": "",
-    "category": "va-disability",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-disability-special-monthly-compensation-smc",
-    "title": "VA Special Monthly Compensation (SMC): Complete Guide to Higher Payments",
-    "date": "2026-03-17",
-    "description": "Guide to VA Special Monthly Compensation. Learn SMC rating schedules, when you qualify, and how to increase monthly payments beyond standard rates.",
-    "keywords": "VA special monthly compensation, SMC ratings, higher VA payments, compensation increase",
-    "excerpt": "",
-    "category": "VA Claims",
-    "branch": "Navy"
-  },
-  {
     "slug": "va-disability-tdiu-complete-guide-2025",
     "title": "VA Total Disability Individual Unemployability (TDIU): Complete 2025 Guide",
-    "date": "2026-03-17",
+    "date": "2026-04-01",
     "description": "Comprehensive guide to TDIU claims. Learn how to qualify for 100% compensation without 100% rating. TDIU requirements, evidence, and approval strategies.",
     "keywords": "TDIU VA disability, total disability individual unemployability, 100 percent rating, cannot work",
     "excerpt": "",
@@ -241,7 +207,7 @@ const blogPosts = [
   {
     "slug": "va-disability-thoracolumbar-strain-rating-guide",
     "title": "VA Disability Rating for Thoracolumbar Strain: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-17",
+    "date": "2026-04-01",
     "description": "How to get VA disability rating for thoracolumbar strain (mid and lower back). Rating criteria from 10% to 100%, evidence needed, C&P exam tips.",
     "keywords": "VA disability thoracolumbar, mid back VA rating, thoracolumbar strain VA claim",
     "excerpt": "",
@@ -251,7 +217,7 @@ const blogPosts = [
   {
     "slug": "va-disability-tinnitus-rating-guide",
     "title": "VA Disability Rating for Tinnitus: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-17",
+    "date": "2026-04-01",
     "description": "How to get VA disability rating for tinnitus. Rating criteria, evidence needed, C&P exam tips, and secondary conditions. The #1 most claimed VA disability explained.",
     "keywords": "VA disability tinnitus, tinnitus VA rating, tinnitus C&P exam, VA claim tinnitus, 10 percent tinnitus",
     "excerpt": "",
@@ -261,7 +227,7 @@ const blogPosts = [
   {
     "slug": "va-disability-traumatic-brain-injury-rating-guide",
     "title": "VA Disability Rating for Traumatic Brain Injury (TBI): Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-17",
+    "date": "2026-04-01",
     "description": "How to get VA disability rating for traumatic brain injury (TBI). Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and residual conditions.",
     "keywords": "VA disability TBI, traumatic brain injury VA rating, TBI C&P exam, VA claim TBI, concussion VA disability",
     "excerpt": "",
@@ -271,7 +237,7 @@ const blogPosts = [
   {
     "slug": "va-disability-unemployability-vs-100-percent",
     "title": "VA Disability: Unemployability (TDIU) vs 100% Rating - Which Should You Pursue?",
-    "date": "2026-03-17",
+    "date": "2026-04-01",
     "description": "Compare TDIU vs 100% rating. Understand differences, approval rates, monthly payments, and which path best for your situation.",
     "keywords": "TDIU vs 100 percent disability, unemployability rating, total disability, which is better",
     "excerpt": "",
@@ -279,39 +245,49 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-radiation-exposure-claims",
-    "title": "VA Disability Claim for Radiation Exposure: Complete Guide",
-    "date": "2026-03-16",
-    "description": "How to file VA disability claim for conditions caused by atomic/nuclear radiation exposure. Presumptive conditions and evidence requirements.",
-    "keywords": "radiation exposure VA disability, atomic veterans, nuclear testing, presumptive conditions, atomic bomb radiation",
-    "excerpt": "",
-    "category": "VA Claims",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-disability-radiculopathy-rating-guide",
-    "title": "VA Disability Rating for Radiculopathy: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-16",
-    "description": "How to get VA disability rating for radiculopathy (upper and lower extremities). Rating criteria from 10% to 80%, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability radiculopathy, radiculopathy VA rating, nerve pain VA claim, sciatica VA disability, lumbar radiculopathy rating",
+    "slug": "va-disability-vertigo-rating-guide",
+    "title": "VA Disability Rating for Vertigo: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-04-01",
+    "description": "How to get VA disability rating for vertigo and vestibular disorders. Rating criteria from 10% to 100%, evidence needed, and C&P exam tips.",
+    "keywords": "VA disability vertigo, vertigo VA rating, Meniere's disease VA claim, vestibular disorder VA disability",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-scars-rating-guide",
-    "title": "VA Disability Rating for Scars: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-16",
-    "description": "How to get VA disability rating for scars. Rating criteria for burn scars, deep scars, unstable scars, and painful scars. Evidence needed and C&P exam tips.",
-    "keywords": "VA disability scars, scars VA rating, scar C&P exam, VA claim scars, surgical scars VA disability",
+    "slug": "va-nexus-letter-complete-guide",
+    "title": "VA Nexus Letters: What They Are, When You Need One, and How to Get One (2025)",
+    "date": "2026-04-01",
+    "description": "Nexus letters cost $400-$2K but can make or break your VA claim. Learn what makes a valid nexus letter, which conditions need them, and how to avoid scams.",
+    "keywords": "nexus letter, VA nexus letter, nexus letter VA, what is a nexus letter, nexus letter cost, nexus letter example",
     "excerpt": "",
-    "category": "va-disability",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-secondary-conditions-guide-2025",
+    "title": "VA Secondary Conditions: Complete Database of What You Can Claim (2025)",
+    "date": "2026-04-01",
+    "description": "Complete guide to VA secondary conditions. Common pathways (PTSD→sleep apnea, back pain→knee injury), medical nexus requirements, and how to file successful claims.",
+    "keywords": "VA secondary conditions, secondary conditions VA, VA secondary claims",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-veteran-healthcare-education-jobs",
+    "title": "Virginia Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-04-01",
+    "description": "Comprehensive 2025 guide to Virginia veteran benefits including VA medical centers in Hampton, Richmond, and Salem with addresses and phone numbers, state veteran care centers, VMSDEP education program, in-state tuition benefits, V3 employment certification, and major defense contractors hiring veterans.",
+    "keywords": "Virginia VA medical centers, Hampton VA hospital, Hunter Holmes McGuire VAMC, VMSDEP education benefits, Virginia veteran jobs, Virginia Values Veterans V3, Virginia in-state tuition veterans",
+    "excerpt": "",
+    "category": "Guides",
     "branch": "Navy"
   },
   {
     "slug": "va-disability-shoulder-conditions-rating-guide",
     "title": "VA Disability Rating for Shoulder Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-16",
+    "date": "2026-03-31",
     "description": "How to get VA disability rating for shoulder conditions. Rating criteria for limitation of motion, rotator cuff tears, and instability. Evidence needed and C&P exam tips.",
     "keywords": "VA disability shoulder, shoulder VA rating, rotator cuff VA claim, shoulder C&P exam, shoulder limitation motion",
     "excerpt": "",
@@ -321,7 +297,7 @@ const blogPosts = [
   {
     "slug": "va-disability-sinusitis-rhinitis-rating-guide",
     "title": "VA Disability Rating for Sinusitis and Rhinitis: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-16",
+    "date": "2026-03-31",
     "description": "How to get VA disability rating for sinusitis and allergic rhinitis. Rating criteria from 0% to 50%, evidence needed, and C&P exam tips.",
     "keywords": "VA disability sinusitis, rhinitis VA rating, sinusitis C&P exam, VA claim sinus, allergic rhinitis VA",
     "excerpt": "",
@@ -331,7 +307,7 @@ const blogPosts = [
   {
     "slug": "va-disability-skin-conditions-rating-guide",
     "title": "VA Disability Rating for Skin Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-16",
+    "date": "2026-03-31",
     "description": "How to get VA disability rating for skin conditions including eczema, psoriasis, dermatitis. Rating criteria from 0% to 60%, evidence needed, and C&P exam tips.",
     "keywords": "VA disability skin conditions, eczema VA rating, psoriasis VA claim, dermatitis VA disability",
     "excerpt": "",
@@ -341,7 +317,7 @@ const blogPosts = [
   {
     "slug": "va-disability-sleep-apnea-rating-guide",
     "title": "VA Disability Rating for Sleep Apnea: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-16",
+    "date": "2026-03-31",
     "description": "How to get VA disability rating for sleep apnea. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability sleep apnea, sleep apnea VA rating, sleep apnea C&P exam, VA claim sleep apnea, CPAP rating VA",
     "excerpt": "",
@@ -349,29 +325,39 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-major-depressive-disorder-rating-guide",
-    "title": "VA Disability Rating for Major Depressive Disorder: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-15",
-    "description": "How to get VA disability rating for major depressive disorder (depression). Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability depression, major depressive disorder VA rating, depression C&P exam, VA claim depression, MDD rating",
+    "slug": "va-disability-sleep-disorders-rating-guide",
+    "title": "VA Disability Rating for Sleep Disorders (Other Than Apnea): Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-31",
+    "description": "How to get VA disability rating for sleep disorders other than sleep apnea. Rating criteria for narcolepsy, insomnia, and other sleep conditions.",
+    "keywords": "VA disability sleep disorder, narcolepsy VA rating, hypersomnia VA claim, sleep disorder VA disability",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-migraines-rating-guide",
-    "title": "VA Disability Rating for Migraines: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-15",
-    "description": "How to get VA disability rating for migraines and headaches. Rating criteria from 0% to 50%, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability migraines, migraines VA rating, headaches C&P exam, VA claim migraines, migraine disability rating",
+    "slug": "va-disability-somatic-symptom-disorder-rating-guide",
+    "title": "VA Disability Rating for Somatic Symptom Disorder: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-31",
+    "description": "How to get VA disability rating for somatic symptom disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips.",
+    "keywords": "VA disability somatic symptom disorder, somatoform disorder VA rating, VA claim somatic disorder",
     "excerpt": "",
     "category": "va-disability",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-disability-special-monthly-compensation-smc",
+    "title": "VA Special Monthly Compensation (SMC): Complete Guide to Higher Payments",
+    "date": "2026-03-31",
+    "description": "Guide to VA Special Monthly Compensation. Learn SMC rating schedules, when you qualify, and how to increase monthly payments beyond standard rates.",
+    "keywords": "VA special monthly compensation, SMC ratings, higher VA payments, compensation increase",
+    "excerpt": "",
+    "category": "VA Claims",
     "branch": "Navy"
   },
   {
     "slug": "va-disability-military-sexual-trauma-mst-claims",
     "title": "VA Disability Claim for Military Sexual Trauma (MST): Complete Guide",
-    "date": "2026-03-15",
+    "date": "2026-03-30",
     "description": "How to file VA disability claim for PTSD resulting from military sexual trauma. Evidence, filing strategies, and proof of trauma requirements.",
     "keywords": "military sexual trauma VA disability, MST PTSD claim, sexual assault veteran, filing MST claim",
     "excerpt": "",
@@ -381,7 +367,7 @@ const blogPosts = [
   {
     "slug": "va-disability-military-sexual-trauma-rating-guide",
     "title": "VA Disability Rating for Military Sexual Trauma (MST): Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-15",
+    "date": "2026-03-30",
     "description": "How to get VA disability rating for conditions related to Military Sexual Trauma (MST). Rating criteria, evidence requirements, and special claims procedures.",
     "keywords": "VA disability MST, military sexual trauma VA rating, MST claim, VA claim sexual assault, MST PTSD rating",
     "excerpt": "",
@@ -391,7 +377,7 @@ const blogPosts = [
   {
     "slug": "va-disability-panic-disorder-rating-guide",
     "title": "VA Disability Rating for Panic Disorder: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-15",
+    "date": "2026-03-30",
     "description": "How to get VA disability rating for panic disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability panic disorder, panic attacks VA rating, panic disorder C&P exam, VA claim panic disorder",
     "excerpt": "",
@@ -401,7 +387,7 @@ const blogPosts = [
   {
     "slug": "va-disability-peripheral-neuropathy-rating-guide",
     "title": "VA Disability Rating for Peripheral Neuropathy: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-15",
+    "date": "2026-03-30",
     "description": "How to get VA disability rating for peripheral neuropathy. Rating criteria from 10% to 80%, evidence needed, and Agent Orange presumptive conditions.",
     "keywords": "VA disability peripheral neuropathy, neuropathy VA rating, diabetic neuropathy VA claim, Agent Orange neuropathy",
     "excerpt": "",
@@ -411,7 +397,7 @@ const blogPosts = [
   {
     "slug": "va-disability-plantar-fasciitis-rating-guide",
     "title": "VA Disability Rating for Plantar Fasciitis: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-15",
+    "date": "2026-03-30",
     "description": "How to get VA disability rating for plantar fasciitis. Rating criteria from 0% to 50%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability plantar fasciitis, plantar fasciitis VA rating, foot pain VA claim, heel pain VA disability",
     "excerpt": "",
@@ -421,7 +407,7 @@ const blogPosts = [
   {
     "slug": "va-disability-ptsd-rating-guide",
     "title": "VA Disability Rating for PTSD: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-15",
+    "date": "2026-03-30",
     "description": "How to get VA disability rating for PTSD. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and stressor documentation requirements.",
     "keywords": "VA disability PTSD, PTSD VA rating, PTSD C&P exam, VA claim PTSD, combat PTSD rating",
     "excerpt": "",
@@ -429,21 +415,31 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-hypertension-rating-guide",
-    "title": "VA Disability Rating for Hypertension: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-14",
-    "description": "How to get VA disability rating for hypertension (high blood pressure). Rating criteria from 10% to 60%, evidence needed, C&P exam tips.",
-    "keywords": "VA disability hypertension, high blood pressure VA rating, hypertension C&P exam, VA claim hypertension",
+    "slug": "va-disability-radiation-exposure-claims",
+    "title": "VA Disability Claim for Radiation Exposure: Complete Guide",
+    "date": "2026-03-30",
+    "description": "How to file VA disability claim for conditions caused by atomic/nuclear radiation exposure. Presumptive conditions and evidence requirements.",
+    "keywords": "radiation exposure VA disability, atomic veterans, nuclear testing, presumptive conditions, atomic bomb radiation",
+    "excerpt": "",
+    "category": "VA Claims",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-disability-radiculopathy-rating-guide",
+    "title": "VA Disability Rating for Radiculopathy: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-30",
+    "description": "How to get VA disability rating for radiculopathy (upper and lower extremities). Rating criteria from 10% to 80%, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability radiculopathy, radiculopathy VA rating, nerve pain VA claim, sciatica VA disability, lumbar radiculopathy rating",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-insomnia-rating-guide",
-    "title": "VA Disability Rating for Insomnia: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-14",
-    "description": "How to get VA disability rating for insomnia and sleep disorders. Rating criteria, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability insomnia, insomnia VA rating, sleep disorder VA claim, insomnia C&P exam",
+    "slug": "va-disability-scars-rating-guide",
+    "title": "VA Disability Rating for Scars: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-30",
+    "description": "How to get VA disability rating for scars. Rating criteria for burn scars, deep scars, unstable scars, and painful scars. Evidence needed and C&P exam tips.",
+    "keywords": "VA disability scars, scars VA rating, scar C&P exam, VA claim scars, surgical scars VA disability",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
@@ -451,7 +447,7 @@ const blogPosts = [
   {
     "slug": "va-disability-irritable-bowel-syndrome-rating-guide",
     "title": "VA Disability Rating for Irritable Bowel Syndrome (IBS): Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-14",
+    "date": "2026-03-29",
     "description": "How to get VA disability rating for IBS. Rating criteria from 0% to 30%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability IBS, irritable bowel syndrome VA rating, IBS C&P exam, VA claim IBS",
     "excerpt": "",
@@ -461,7 +457,7 @@ const blogPosts = [
   {
     "slug": "va-disability-kidney-conditions-rating-guide",
     "title": "VA Disability Rating for Kidney Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-14",
+    "date": "2026-03-29",
     "description": "How to get VA disability rating for kidney conditions. Rating criteria from 0% to 100%, evidence needed, and C&P exam tips.",
     "keywords": "VA disability kidney, kidney disease VA rating, nephropathy VA claim, kidney VA disability",
     "excerpt": "",
@@ -471,7 +467,7 @@ const blogPosts = [
   {
     "slug": "va-disability-knee-conditions-rating-guide",
     "title": "VA Disability Rating for Knee Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-14",
+    "date": "2026-03-29",
     "description": "How to get VA disability rating for knee conditions. Rating criteria for limitation of flexion, extension, instability, and other knee problems. Evidence needed and C&P exam tips.",
     "keywords": "VA disability knee, knee VA rating, knee C&P exam, VA claim knee injury, knee flexion rating",
     "excerpt": "",
@@ -481,7 +477,7 @@ const blogPosts = [
   {
     "slug": "va-disability-liver-conditions-rating-guide",
     "title": "VA Disability Rating for Liver Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-14",
+    "date": "2026-03-29",
     "description": "How to get VA disability rating for liver conditions. Rating criteria from 0% to 100%, evidence needed, and C&P exam tips.",
     "keywords": "VA disability liver, liver disease VA rating, hepatitis VA claim, cirrhosis VA disability",
     "excerpt": "",
@@ -491,7 +487,7 @@ const blogPosts = [
   {
     "slug": "va-disability-lower-back-strain-rating-guide",
     "title": "VA Disability Rating for Lower Back Strain: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-14",
+    "date": "2026-03-29",
     "description": "How to get VA disability rating for lower back strain (lumbosacral strain). Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability lower back, lumbosacral strain VA rating, back pain VA claim, VA disability back injury, back strain C&P exam",
     "excerpt": "",
@@ -499,21 +495,21 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-gerd-rating-guide",
-    "title": "VA Disability Rating for GERD/Acid Reflux: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-13",
-    "description": "How to get VA disability rating for GERD (acid reflux). Rating criteria from 10% to 60%, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability GERD, acid reflux VA rating, GERD C&P exam, VA claim GERD, hiatal hernia VA",
+    "slug": "va-disability-major-depressive-disorder-rating-guide",
+    "title": "VA Disability Rating for Major Depressive Disorder: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-29",
+    "description": "How to get VA disability rating for major depressive disorder (depression). Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability depression, major depressive disorder VA rating, depression C&P exam, VA claim depression, MDD rating",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-gout-rating-guide",
-    "title": "VA Disability Rating for Gout: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-13",
-    "description": "How to get VA disability rating for gout. Rating criteria from 20% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability gout, gout VA rating, gout C&P exam, VA claim gout",
+    "slug": "va-disability-migraines-rating-guide",
+    "title": "VA Disability Rating for Migraines: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-29",
+    "description": "How to get VA disability rating for migraines and headaches. Rating criteria from 0% to 50%, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability migraines, migraines VA rating, headaches C&P exam, VA claim migraines, migraine disability rating",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
@@ -521,7 +517,7 @@ const blogPosts = [
   {
     "slug": "va-disability-gulf-war-syndrome-claims",
     "title": "VA Disability Claim for Gulf War Syndrome: Complete Guide to Presumptive Conditions",
-    "date": "2026-03-13",
+    "date": "2026-03-28",
     "description": "How to file VA disability claim for Gulf War Syndrome and related presumptive conditions. Eligibility, evidence requirements, and rating strategies.",
     "keywords": "Gulf War Syndrome VA disability, presumptive conditions Gulf War, chemical exposure claim",
     "excerpt": "",
@@ -531,7 +527,7 @@ const blogPosts = [
   {
     "slug": "va-disability-gulf-war-syndrome-rating-guide",
     "title": "VA Disability Rating for Gulf War Syndrome: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-13",
+    "date": "2026-03-28",
     "description": "How to get VA disability rating for Gulf War Syndrome and undiagnosed illnesses. Presumptive conditions, evidence needed, and claim tips.",
     "keywords": "VA disability Gulf War Syndrome, Gulf War illness VA claim, undiagnosed illness VA, Persian Gulf veteran VA",
     "excerpt": "",
@@ -541,7 +537,7 @@ const blogPosts = [
   {
     "slug": "va-disability-hearing-loss-rating-guide",
     "title": "VA Disability Rating for Hearing Loss: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-13",
+    "date": "2026-03-28",
     "description": "How to get VA disability rating for hearing loss. Rating criteria from 0% to 100%, how the VA calculates ratings, evidence needed, and C&P exam tips.",
     "keywords": "VA disability hearing loss, hearing loss VA rating, hearing loss C&P exam, VA claim hearing loss, bilateral hearing loss rating",
     "excerpt": "",
@@ -551,7 +547,7 @@ const blogPosts = [
   {
     "slug": "va-disability-heart-conditions-rating-guide",
     "title": "VA Disability Rating for Heart Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-13",
+    "date": "2026-03-28",
     "description": "How to get VA disability rating for heart conditions. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability heart disease, heart condition VA rating, cardiac VA claim, coronary artery disease VA disability",
     "excerpt": "",
@@ -561,7 +557,7 @@ const blogPosts = [
   {
     "slug": "va-disability-hip-conditions-rating-guide",
     "title": "VA Disability Rating for Hip Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-13",
+    "date": "2026-03-28",
     "description": "How to get VA disability rating for hip conditions. Rating criteria for limitation of motion, arthritis, and hip replacement. Evidence needed and C&P exam tips.",
     "keywords": "VA disability hip, hip VA rating, hip pain VA claim, hip arthritis VA disability",
     "excerpt": "",
@@ -569,31 +565,21 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-cognitive-disorder-rating-guide",
-    "title": "VA Disability Rating for Cognitive Disorder: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
-    "description": "How to get VA disability rating for cognitive disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and connections to TBI.",
-    "keywords": "VA disability cognitive disorder, cognitive impairment VA rating, memory problems VA claim, TBI cognitive disorder",
+    "slug": "va-disability-hypertension-rating-guide",
+    "title": "VA Disability Rating for Hypertension: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-28",
+    "description": "How to get VA disability rating for hypertension (high blood pressure). Rating criteria from 10% to 60%, evidence needed, C&P exam tips.",
+    "keywords": "VA disability hypertension, high blood pressure VA rating, hypertension C&P exam, VA claim hypertension",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-degenerative-arthritis-rating-guide",
-    "title": "VA Disability Rating for Degenerative Arthritis: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
-    "description": "How to get VA disability rating for degenerative arthritis (osteoarthritis). Rating criteria, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability arthritis, degenerative arthritis VA rating, osteoarthritis VA claim, DJD VA disability",
-    "excerpt": "",
-    "category": "va-disability",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-disability-dental-conditions-rating-guide",
-    "title": "VA Disability Rating for Dental Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
-    "description": "How to get VA disability rating and dental treatment for dental conditions. Rating criteria, service-connected dental trauma, and VA dental eligibility.",
-    "keywords": "VA disability dental, dental trauma VA rating, VA dental care, jaw condition VA claim",
+    "slug": "va-disability-insomnia-rating-guide",
+    "title": "VA Disability Rating for Insomnia: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-28",
+    "description": "How to get VA disability rating for insomnia and sleep disorders. Rating criteria, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability insomnia, insomnia VA rating, sleep disorder VA claim, insomnia C&P exam",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
@@ -601,7 +587,7 @@ const blogPosts = [
   {
     "slug": "va-disability-diabetes-type-2-rating-guide",
     "title": "VA Disability Rating for Diabetes Type 2: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
+    "date": "2026-03-27",
     "description": "How to get VA disability rating for Type 2 diabetes. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability diabetes, Type 2 diabetes VA rating, diabetes C&P exam, VA claim diabetes, Agent Orange diabetes",
     "excerpt": "",
@@ -611,7 +597,7 @@ const blogPosts = [
   {
     "slug": "va-disability-effective-date-backpay-guide",
     "title": "VA Disability Effective Date and Back Pay: Complete Guide to Maximizing Retroactive Payments",
-    "date": "2026-03-12",
+    "date": "2026-03-27",
     "description": "How VA effective dates work, back pay calculations, and strategies to maximize retroactive disability compensation. Earliest possible dates explained.",
     "keywords": "VA effective date, disability back pay, retroactive compensation, earliest effective date",
     "excerpt": "",
@@ -621,7 +607,7 @@ const blogPosts = [
   {
     "slug": "va-disability-erectile-dysfunction-rating-guide",
     "title": "VA Disability Rating for Erectile Dysfunction: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
+    "date": "2026-03-27",
     "description": "How to get VA disability rating for erectile dysfunction (ED). Rating criteria, SMC-K, evidence needed, and secondary conditions.",
     "keywords": "VA disability erectile dysfunction, ED VA rating, erectile dysfunction VA claim, SMC-K",
     "excerpt": "",
@@ -631,7 +617,7 @@ const blogPosts = [
   {
     "slug": "va-disability-fibromyalgia-rating-guide",
     "title": "VA Disability Rating for Fibromyalgia: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
+    "date": "2026-03-27",
     "description": "How to get VA disability rating for fibromyalgia. Rating criteria from 10% to 40%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability fibromyalgia, fibromyalgia VA rating, fibromyalgia C&P exam, VA claim fibromyalgia",
     "excerpt": "",
@@ -641,7 +627,7 @@ const blogPosts = [
   {
     "slug": "va-disability-flat-feet-rating-guide",
     "title": "VA Disability Rating for Flat Feet (Pes Planus): Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
+    "date": "2026-03-27",
     "description": "How to get VA disability rating for flat feet (pes planus). Rating criteria from 0% to 50%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability flat feet, pes planus VA rating, flat feet VA claim, fallen arches VA disability",
     "excerpt": "",
@@ -651,7 +637,7 @@ const blogPosts = [
   {
     "slug": "va-disability-generalized-anxiety-disorder-rating-guide",
     "title": "VA Disability Rating for Generalized Anxiety Disorder: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-12",
+    "date": "2026-03-27",
     "description": "How to get VA disability rating for generalized anxiety disorder (GAD). Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability anxiety, generalized anxiety disorder VA rating, anxiety C&P exam, VA claim anxiety, GAD rating",
     "excerpt": "",
@@ -659,41 +645,21 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-agent-orange-presumptives-rating-guide",
-    "title": "VA Disability Rating for Agent Orange Presumptive Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-11",
-    "description": "Complete list of Agent Orange presumptive conditions, qualifying locations, rating criteria, and how to file VA disability claims.",
-    "keywords": "VA disability Agent Orange, Agent Orange presumptive conditions, Vietnam veteran VA claim, herbicide exposure VA",
+    "slug": "va-disability-gerd-rating-guide",
+    "title": "VA Disability Rating for GERD/Acid Reflux: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-27",
+    "description": "How to get VA disability rating for GERD (acid reflux). Rating criteria from 10% to 60%, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability GERD, acid reflux VA rating, GERD C&P exam, VA claim GERD, hiatal hernia VA",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-aid-attendance-housebound-benefits",
-    "title": "VA Aid and Attendance and Housebound Benefits: Complete Guide",
-    "date": "2026-03-11",
-    "description": "Learn about VA Aid and Attendance and Housebound benefits. Eligibility requirements, evidence needs, and additional monthly payments for severe disabilities.",
-    "keywords": "VA aid and attendance, housebound benefits, SMC benefits, attendant care payment",
-    "excerpt": "",
-    "category": "VA Claims",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-disability-ankle-conditions-rating-guide",
-    "title": "VA Disability Rating for Ankle Conditions: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-11",
-    "description": "How to get VA disability rating for ankle conditions. Rating criteria for limitation of motion, instability, and ankle injuries. Evidence needed and C&P exam tips.",
-    "keywords": "VA disability ankle, ankle VA rating, ankle injury VA claim, ankle instability VA disability",
-    "excerpt": "",
-    "category": "va-disability",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-disability-asthma-rating-guide",
-    "title": "VA Disability Rating for Asthma: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-11",
-    "description": "How to get VA disability rating for asthma. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
-    "keywords": "VA disability asthma, asthma VA rating, asthma C&P exam, VA claim asthma, bronchial asthma",
+    "slug": "va-disability-gout-rating-guide",
+    "title": "VA Disability Rating for Gout: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-27",
+    "description": "How to get VA disability rating for gout. Rating criteria from 20% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability gout, gout VA rating, gout C&P exam, VA claim gout",
     "excerpt": "",
     "category": "va-disability",
     "branch": "Navy"
@@ -701,7 +667,7 @@ const blogPosts = [
   {
     "slug": "va-disability-bilateral-factor-explained",
     "title": "VA Bilateral Factor Explained: How It Increases Your Disability Rating",
-    "date": "2026-03-11",
+    "date": "2026-03-26",
     "description": "Complete guide to VA bilateral factor rating adjustments. Learn how having conditions on both sides increases disability compensation.",
     "keywords": "bilateral factor VA disability, both sides condition rating, higher rating bilateral",
     "excerpt": "",
@@ -711,7 +677,7 @@ const blogPosts = [
   {
     "slug": "va-disability-bipolar-disorder-rating-guide",
     "title": "VA Disability Rating for Bipolar Disorder: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-11",
+    "date": "2026-03-26",
     "description": "How to get VA disability rating for bipolar disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability bipolar disorder, bipolar VA rating, bipolar C&P exam, VA claim bipolar, manic depression VA",
     "excerpt": "",
@@ -721,7 +687,7 @@ const blogPosts = [
   {
     "slug": "va-disability-carpal-tunnel-syndrome-rating-guide",
     "title": "VA Disability Rating for Carpal Tunnel Syndrome: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-11",
+    "date": "2026-03-26",
     "description": "How to get VA disability rating for carpal tunnel syndrome. Rating criteria from 10% to 70%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability carpal tunnel, carpal tunnel VA rating, CTS VA claim, wrist pain VA disability",
     "excerpt": "",
@@ -731,7 +697,7 @@ const blogPosts = [
   {
     "slug": "va-disability-cervical-strain-rating-guide",
     "title": "VA Disability Rating for Cervical Strain (Neck): Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-11",
+    "date": "2026-03-26",
     "description": "How to get VA disability rating for cervical strain and neck conditions. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability neck, cervical strain VA rating, neck pain VA claim, cervical spine VA disability",
     "excerpt": "",
@@ -741,7 +707,7 @@ const blogPosts = [
   {
     "slug": "va-disability-chronic-fatigue-syndrome-rating-guide",
     "title": "VA Disability Rating for Chronic Fatigue Syndrome: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-11",
+    "date": "2026-03-26",
     "description": "How to get VA disability rating for chronic fatigue syndrome (CFS). Rating criteria from 10% to 100%, Gulf War presumptive, and evidence needed.",
     "keywords": "VA disability chronic fatigue syndrome, CFS VA rating, myalgic encephalomyelitis VA claim, Gulf War illness fatigue",
     "excerpt": "",
@@ -749,29 +715,39 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "tx-veteran-healthcare-education-jobs",
-    "title": "Texas Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-10",
-    "description": "Guide to Texas veteran resources: VA healthcare facilities across the state, Hazlewood Act free tuition, GI Bill schools, and veteran employment programs.",
-    "keywords": "texas veteran healthcare, texas GI Bill schools, texas veteran jobs, texas VA hospital, hazlewood act texas",
+    "slug": "va-disability-cognitive-disorder-rating-guide",
+    "title": "VA Disability Rating for Cognitive Disorder: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-26",
+    "description": "How to get VA disability rating for cognitive disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and connections to TBI.",
+    "keywords": "VA disability cognitive disorder, cognitive impairment VA rating, memory problems VA claim, TBI cognitive disorder",
     "excerpt": "",
-    "category": "Guides",
+    "category": "va-disability",
     "branch": "Navy"
   },
   {
-    "slug": "tx-veteran-tax-benefits-2025",
-    "title": "Texas Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-10",
-    "description": "Complete guide to Texas veteran tax benefits: property tax exemptions up to 100%, no state income tax, vehicle registration discounts, and financial analysis for disabled veterans.",
-    "keywords": "texas veteran benefits, texas property tax exemption veterans, texas veteran tax benefits, military retirement texas, disabled veteran texas",
+    "slug": "va-disability-degenerative-arthritis-rating-guide",
+    "title": "VA Disability Rating for Degenerative Arthritis: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-26",
+    "description": "How to get VA disability rating for degenerative arthritis (osteoarthritis). Rating criteria, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability arthritis, degenerative arthritis VA rating, osteoarthritis VA claim, DJD VA disability",
     "excerpt": "",
-    "category": "Guides",
+    "category": "va-disability",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-disability-dental-conditions-rating-guide",
+    "title": "VA Disability Rating for Dental Conditions: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-26",
+    "description": "How to get VA disability rating and dental treatment for dental conditions. Rating criteria, service-connected dental trauma, and VA dental eligibility.",
+    "keywords": "VA disability dental, dental trauma VA rating, VA dental care, jaw condition VA claim",
+    "excerpt": "",
+    "category": "va-disability",
     "branch": "Navy"
   },
   {
     "slug": "ut-veteran-healthcare-education-jobs",
     "title": "Utah Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-10",
+    "date": "2026-03-25",
     "description": "Guide to Utah veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs including Hill Air Force Base opportunities.",
     "keywords": "utah veteran healthcare, utah GI Bill schools, utah veteran jobs, utah VA hospital",
     "excerpt": "",
@@ -781,7 +757,7 @@ const blogPosts = [
   {
     "slug": "ut-veteran-tax-benefits-2025",
     "title": "Utah Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-10",
+    "date": "2026-03-25",
     "description": "Complete guide to Utah veteran tax benefits: property tax exemptions up to $521,620, military retirement income tax treatment, vehicle exemptions, and financial analysis for disabled veterans.",
     "keywords": "utah veteran benefits, utah property tax exemption veterans, utah veteran tax benefits, military retirement utah",
     "excerpt": "",
@@ -789,9 +765,19 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "va-careers-veterans-guide",
+    "title": "Department of Veterans Affairs Careers for Veterans: Complete Guide",
+    "date": "2026-03-25",
+    "description": "Comprehensive guide to VA careers for veterans. Learn about healthcare, benefits, and administrative positions, hiring programs, salary ranges, and how to serve those who served.",
+    "keywords": "VA careers veterans, Department of Veterans Affairs jobs, VA hospital jobs, VHA careers, VBA careers, VA employment veterans, veterans helping veterans",
+    "excerpt": "",
+    "category": "federal-employment",
+    "branch": "Navy"
+  },
+  {
     "slug": "va-disability-adjustment-disorder-rating-guide",
     "title": "VA Disability Rating for Adjustment Disorder: Complete Guide to Getting Your Claim Approved",
-    "date": "2026-03-10",
+    "date": "2026-03-25",
     "description": "How to get VA disability rating for adjustment disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
     "keywords": "VA disability adjustment disorder, adjustment disorder VA rating, adjustment disorder C&P exam, VA claim adjustment disorder",
     "excerpt": "",
@@ -801,7 +787,7 @@ const blogPosts = [
   {
     "slug": "va-disability-agent-orange-presumptive-conditions",
     "title": "VA Disability Claim for Agent Orange Exposure: Presumptive Conditions Guide",
-    "date": "2026-03-10",
+    "date": "2026-03-25",
     "description": "Complete guide to Agent Orange presumptive conditions. Vietnam-era exposure, proven conditions, and how to file for maximum compensation.",
     "keywords": "Agent Orange VA disability, presumptive conditions, Vietnam exposure, dioxin exposure",
     "excerpt": "",
@@ -809,18 +795,114 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "supplemental-claim-vs-higher-level-review-vs-board-appeal",
-    "title": "Supplemental Claim vs Higher-Level Review vs Board Appeal: Which Should You Choose?",
-    "date": "2026-03-09",
-    "description": "Comparison of three VA appeal options. When to file each, pros/cons, approval rates, and decision matrix for choosing the right appeal type.",
-    "keywords": "supplemental claim vs higher-level review, board appeal vs HLR, which appeal type best",
+    "slug": "va-disability-agent-orange-presumptives-rating-guide",
+    "title": "VA Disability Rating for Agent Orange Presumptive Conditions: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-25",
+    "description": "Complete list of Agent Orange presumptive conditions, qualifying locations, rating criteria, and how to file VA disability claims.",
+    "keywords": "VA disability Agent Orange, Agent Orange presumptive conditions, Vietnam veteran VA claim, herbicide exposure VA",
     "excerpt": "",
-    "category": "VA Appeals"
+    "category": "va-disability",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-disability-aid-attendance-housebound-benefits",
+    "title": "VA Aid and Attendance and Housebound Benefits: Complete Guide",
+    "date": "2026-03-25",
+    "description": "Learn about VA Aid and Attendance and Housebound benefits. Eligibility requirements, evidence needs, and additional monthly payments for severe disabilities.",
+    "keywords": "VA aid and attendance, housebound benefits, SMC benefits, attendant care payment",
+    "excerpt": "",
+    "category": "VA Claims",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-disability-ankle-conditions-rating-guide",
+    "title": "VA Disability Rating for Ankle Conditions: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-25",
+    "description": "How to get VA disability rating for ankle conditions. Rating criteria for limitation of motion, instability, and ankle injuries. Evidence needed and C&P exam tips.",
+    "keywords": "VA disability ankle, ankle VA rating, ankle injury VA claim, ankle instability VA disability",
+    "excerpt": "",
+    "category": "va-disability",
+    "branch": "Navy"
+  },
+  {
+    "slug": "va-disability-asthma-rating-guide",
+    "title": "VA Disability Rating for Asthma: Complete Guide to Getting Your Claim Approved",
+    "date": "2026-03-25",
+    "description": "How to get VA disability rating for asthma. Rating criteria from 10% to 100%, evidence needed, C&P exam tips, and secondary conditions.",
+    "keywords": "VA disability asthma, asthma VA rating, asthma C&P exam, VA claim asthma, bronchial asthma",
+    "excerpt": "",
+    "category": "va-disability",
+    "branch": "Navy"
+  },
+  {
+    "slug": "tsa-careers-veterans-guide",
+    "title": "TSA Careers for Veterans: Complete Guide to Transportation Security",
+    "date": "2026-03-24",
+    "description": "Comprehensive guide to TSA careers for veterans. Learn about Transportation Security Officer, Federal Air Marshal, and other positions, hiring process, salary, and career advancement.",
+    "keywords": "TSA careers veterans, TSA jobs, Transportation Security Officer, Federal Air Marshal veteran, TSA hiring, airport security jobs, TSA salary",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "tsp-military-guide",
+    "title": "Military TSP: How Much to Contribute and Which Funds to Choose (2025 Guide)",
+    "date": "2026-03-24",
+    "description": "Complete TSP guide for military members. Learn contribution strategies, fund allocation, Roth vs Traditional, BRS matching, and common mistakes to avoid.",
+    "keywords": "TSP military, military TSP, thrift savings plan military, TSP funds, military retirement savings, BRS TSP matching",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "tx-veteran-healthcare-education-jobs",
+    "title": "Texas Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-03-24",
+    "description": "Guide to Texas veteran resources: VA healthcare facilities across the state, Hazlewood Act free tuition, GI Bill schools, and veteran employment programs.",
+    "keywords": "texas veteran healthcare, texas GI Bill schools, texas veteran jobs, texas VA hospital, hazlewood act texas",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "tx-veteran-tax-benefits-2025",
+    "title": "Texas Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-24",
+    "description": "Complete guide to Texas veteran tax benefits: property tax exemptions up to 100%, no state income tax, vehicle registration discounts, and financial analysis for disabled veterans.",
+    "keywords": "texas veteran benefits, texas property tax exemption veterans, texas veteran tax benefits, military retirement texas, disabled veteran texas",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "usaid-careers-veterans-guide",
+    "title": "USAID Careers for Veterans: Complete Guide to International Development",
+    "date": "2026-03-24",
+    "description": "Comprehensive guide to USAID careers for veterans. Learn about Foreign Service, Civil Service, and development positions, hiring process, worldwide assignments, and how military experience helps.",
+    "keywords": "USAID careers veterans, USAID jobs, international development careers, USAID Foreign Service, USAID hiring, development jobs overseas, humanitarian careers veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "usajobs-complete-guide-veterans",
+    "title": "USAJOBS Complete Guide for Veterans: Land Your Federal Career in 2025",
+    "date": "2026-03-24",
+    "description": "Master USAJOBS with this comprehensive veteran's guide. Learn profile optimization, resume upload strategies, veteran preference, and insider tips to land federal jobs faster.",
+    "keywords": "USAJOBS veterans guide, federal jobs for veterans, USAJOBS profile optimization, veteran federal employment, USAJOBS tips, government jobs veterans, federal resume USAJOBS",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "usps-careers-veterans-guide",
+    "title": "USPS Careers for Veterans: Complete Guide to Postal Service Employment",
+    "date": "2026-03-24",
+    "description": "Comprehensive guide to USPS careers for veterans. Learn about mail carrier, clerk, maintenance positions, hiring process, salary, benefits, and veteran hiring advantages at the Postal Service.",
+    "keywords": "USPS careers veterans, postal service jobs, mail carrier veteran, USPS hiring, postal worker jobs, USPS benefits, postal service careers veterans",
+    "excerpt": "",
+    "category": "federal-employment"
   },
   {
     "slug": "terminal-leave-calculator",
     "title": "Terminal Leave Calculator: Should You Use It or Sell It?",
-    "date": "2026-03-09",
+    "date": "2026-03-23",
     "description": "Calculate whether taking terminal leave or selling it back gives you more value. Free calculator for active duty service members.",
     "keywords": "terminal leave calculator, military terminal leave, sell terminal leave, terminal leave vs sell back",
     "excerpt": "",
@@ -829,7 +911,7 @@ const blogPosts = [
   {
     "slug": "terminal-leave-guide-maximize-final-military-days",
     "title": "Terminal Leave Guide: How to Maximize Your Final Military Days (2025)",
-    "date": "2026-03-09",
+    "date": "2026-03-23",
     "description": "Terminal leave strategy, maximizing final leave days, out-processing timeline, separation checklist, and making the most of your final weeks in military.",
     "keywords": "terminal leave, military separation, final leave days, out-processing, separation checklist, military transition preparation",
     "excerpt": "",
@@ -838,16 +920,25 @@ const blogPosts = [
   {
     "slug": "texas-vs-florida-veterans-comparison-2025",
     "title": "Texas vs Florida for Veterans 2025: Complete Comparison Guide",
-    "date": "2026-03-09",
+    "date": "2026-03-23",
     "description": "Comprehensive comparison of Texas vs Florida for military retirees and disabled veterans. Analyze taxes, benefits, cost of living, and job opportunities.",
     "keywords": "",
     "excerpt": "",
     "category": "State Comparisons"
   },
   {
+    "slug": "time-management-military-spouse-guide",
+    "title": "Time Management for Military Spouses Balancing Everything",
+    "date": "2026-03-23",
+    "description": "Practical time management strategies for military spouses juggling career, family, household management, and military life unpredictability. Systems that actually work.",
+    "keywords": "time management military spouse, work life balance military, military spouse schedule, balancing work family military, productivity military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "tinnitus-secondary-to-ptsd-connection-guide",
     "title": "Tinnitus Secondary to PTSD: Complete Connection Guide for VA Claims",
-    "date": "2026-03-09",
+    "date": "2026-03-23",
     "description": "Expert guide to filing tinnitus as a secondary condition to PTSD, nexus requirements, evidence strategies, and compensation calculations.",
     "keywords": "",
     "excerpt": "",
@@ -856,7 +947,7 @@ const blogPosts = [
   {
     "slug": "tn-veteran-healthcare-education-jobs",
     "title": "Tennessee Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-09",
+    "date": "2026-03-23",
     "description": "Guide to Tennessee veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
     "keywords": "tennessee veteran healthcare, tennessee GI Bill schools, tennessee veteran jobs, tennessee VA hospital",
     "excerpt": "",
@@ -866,7 +957,7 @@ const blogPosts = [
   {
     "slug": "tn-veteran-tax-benefits-2025",
     "title": "Tennessee Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-09",
+    "date": "2026-03-23",
     "description": "Complete guide to Tennessee veteran tax benefits: property tax relief for disabled veterans, income tax treatment, vehicle exemptions, and financial analysis.",
     "keywords": "tennessee veteran benefits, tennessee property tax relief veterans, tennessee veteran tax benefits, military retirement tennessee",
     "excerpt": "",
@@ -874,38 +965,126 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "tsp-military-guide",
-    "title": "Military TSP: How Much to Contribute and Which Funds to Choose (2025 Guide)",
-    "date": "2026-03-09",
-    "description": "Complete TSP guide for military members. Learn contribution strategies, fund allocation, Roth vs Traditional, BRS matching, and common mistakes to avoid.",
-    "keywords": "TSP military, military TSP, thrift savings plan military, TSP funds, military retirement savings, BRS TSP matching",
+    "slug": "top-25-defense-contractors-veterans-guide",
+    "title": "Top 25 Defense Contractors Hiring Veterans: Complete Guide",
+    "date": "2026-03-23",
+    "description": "Comprehensive guide to the top 25 defense contractors hiring veterans. Learn about major defense companies, what they do, veteran programs, clearance requirements, and how to land jobs at these companies.",
+    "keywords": "defense contractors hiring veterans, top defense contractors, military contractor jobs, cleared defense jobs, government contractor veterans, defense industry careers",
     "excerpt": "",
-    "category": "Guides"
+    "category": "federal-employment"
   },
   {
-    "slug": "ri-veteran-healthcare-education-jobs",
-    "title": "Rhode Island Veteran Healthcare, Education & Jobs 2025: Complete Guide",
-    "date": "2026-03-08",
-    "description": "Comprehensive guide to Rhode Island veteran benefits: Providence VA Medical Center services, free tuition for disabled veterans, Naval Station Newport jobs, and top employers hiring veterans.",
-    "keywords": "rhode island veterans healthcare, providence va medical center, rhode island veteran education, rhode island veteran jobs, naval station newport",
+    "slug": "transfer-professional-license-pcs-guide",
+    "title": "How to Transfer Professional Licenses During PCS: Step-by-Step Guide",
+    "date": "2026-03-23",
+    "description": "Complete step-by-step process for transferring professional licenses when you PCS. Timeline, documents needed, expediting strategies, and handling common problems.",
+    "keywords": "transfer professional license PCS, license transfer military spouse, relicensing military move, state license military, PCS licensing steps",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "military-spouse"
   },
   {
-    "slug": "ri-veteran-tax-benefits-2025",
-    "title": "Rhode Island Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-08",
-    "description": "Complete guide to Rhode Island veteran tax benefits: property tax exemptions up to $3,000, full military retirement income exemption, and free vehicle registration for 100% disabled veterans.",
-    "keywords": "rhode island veteran benefits, rhode island property tax exemption veterans, rhode island veteran tax benefits, military retirement rhode island",
+    "slug": "ts-sci-clearance-value-guide",
+    "title": "TS/SCI Clearance: What It's Worth and How to Maximize It",
+    "date": "2026-03-23",
+    "description": "Complete guide to TS/SCI clearance value for veterans. Learn what TS/SCI is worth in salary, job opportunities, polygraph premiums, and how to leverage your clearance for maximum career benefit.",
+    "keywords": "TS/SCI clearance value, top secret SCI jobs, TS/SCI salary, polygraph clearance jobs, intelligence clearance careers, TS/SCI job opportunities",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "federal-employment"
+  },
+  {
+    "slug": "social-media-management-military-spouse-guide",
+    "title": "Social Media Management for Military Spouses: Complete Business Guide",
+    "date": "2026-03-22",
+    "description": "Launch a social media management business as a military spouse. Learn to manage accounts, find clients, price services, and build remote income managing brands' social presence.",
+    "keywords": "military spouse social media manager, social media management business, remote social media career, SMM military spouse, social media freelance",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "software-developer-military-spouse-guide",
+    "title": "Military Spouse to Software Developer: Self-Taught Guide",
+    "date": "2026-03-22",
+    "description": "Complete self-taught path for military spouses becoming software developers. Free and low-cost resources, realistic timelines, portfolio strategies, and remote job hunting that survives PCS.",
+    "keywords": "military spouse software developer, learn to code military spouse, self-taught programmer military, remote developer military spouse, coding bootcamp military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "starting-online-business-military-spouse-guide",
+    "title": "Starting an Online Business as a Military Spouse: Complete Guide",
+    "date": "2026-03-22",
+    "description": "Launch a successful online business as a military spouse. Business structure, legal requirements, PCS-proof strategies, and building income that travels with you.",
+    "keywords": "military spouse online business, start business military spouse, entrepreneurship military spouse, work from home business, portable business military",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "state-department-careers-veterans-guide",
+    "title": "State Department Careers for Veterans: Complete Guide to Foreign Service and Civil Service",
+    "date": "2026-03-22",
+    "description": "Comprehensive guide to State Department careers for veterans. Learn about Foreign Service Officer, Diplomatic Security, Civil Service positions, hiring process, and worldwide assignments.",
+    "keywords": "State Department careers veterans, Foreign Service Officer veteran, diplomatic careers, State Department jobs, Diplomatic Security, DS Agent, Foreign Service Specialist",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "supplemental-claim-vs-higher-level-review-vs-board-appeal",
+    "title": "Supplemental Claim vs Higher-Level Review vs Board Appeal: Which Should You Choose?",
+    "date": "2026-03-22",
+    "description": "Comparison of three VA appeal options. When to file each, pros/cons, approval rates, and decision matrix for choosing the right appeal type.",
+    "keywords": "supplemental claim vs higher-level review, board appeal vs HLR, which appeal type best",
+    "excerpt": "",
+    "category": "VA Appeals"
+  },
+  {
+    "slug": "teacher-licensing-military-spouse-guide",
+    "title": "Military Spouse to Teacher: Licensing Across States",
+    "date": "2026-03-22",
+    "description": "Navigate teaching licensure as a military spouse. State reciprocity guide, alternative certification, online teaching options, and strategies for career continuity through PCS moves.",
+    "keywords": "military spouse teacher, teaching license transfer, teacher certification military spouse, teaching across states, military spouse teaching jobs",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "teletherapy-counselor-military-spouse-guide",
+    "title": "Military Spouse to Teletherapy Counselor: Complete Guide",
+    "date": "2026-03-22",
+    "description": "Become a remote therapist as a military spouse. Navigate PSYPACT licensure, online counseling platforms, master's programs, and build a therapy practice that moves with you.",
+    "keywords": "military spouse therapist, teletherapy military spouse, online counselor license, PSYPACT military spouse, remote therapy career",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "ten-year-career-plan-military-spouse-guide",
+    "title": "Creating a 10-Year Career Plan as a Military Spouse",
+    "date": "2026-03-22",
+    "description": "Long-term career planning despite military uncertainty. How to set direction, build portable skills, prepare for post-military life, and create career you want over time.",
+    "keywords": "military spouse career plan, long term career planning military, career goals military spouse, post military spouse career, career strategy military family",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "sleep-apnea-secondary-to-ptsd-claims",
+    "title": "Sleep Apnea Secondary to PTSD: Complete Filing Guide and Nexus Strategy",
+    "date": "2026-03-21",
+    "description": "Expert guide to filing sleep apnea as a secondary condition to PTSD, including nexus requirements, evidence strategies, and compensation calculations.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Secondary Conditions"
+  },
+  {
+    "slug": "saic-careers-veterans-guide",
+    "title": "SAIC Careers for Veterans: Complete Guide",
+    "date": "2026-03-20",
+    "description": "Comprehensive guide to SAIC careers for veterans. Learn about IT modernization, engineering, space systems positions, veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor.",
+    "keywords": "SAIC careers veterans, SAIC jobs, IT modernization careers, defense IT jobs, SAIC veteran hiring, government contractor careers",
+    "excerpt": "",
+    "category": "federal-employment"
   },
   {
     "slug": "salary-negotiation-guide-veterans",
     "title": "Salary Negotiation Guide for Veterans (2025)",
-    "date": "2026-03-08",
+    "date": "2026-03-20",
     "description": "Master salary negotiation as a veteran transitioning to civilian work. Learn strategies, research methods, and scripts for getting paid what you're worth.",
     "keywords": "",
     "excerpt": "",
@@ -914,7 +1093,7 @@ const blogPosts = [
   {
     "slug": "sc-veteran-healthcare-education-jobs",
     "title": "South Carolina Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-08",
+    "date": "2026-03-20",
     "description": "Guide to South Carolina veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs with 1.7% unemployment.",
     "keywords": "south carolina veteran healthcare, south carolina GI Bill schools, south carolina veteran jobs, south carolina VA hospital",
     "excerpt": "",
@@ -924,7 +1103,7 @@ const blogPosts = [
   {
     "slug": "sc-veteran-tax-benefits-2025",
     "title": "South Carolina Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-03-08",
+    "date": "2026-03-20",
     "description": "Complete guide to South Carolina veteran tax benefits: property tax exemptions for disabled veterans, full military retirement exemption, vehicle benefits, and financial analysis.",
     "keywords": "south carolina veteran benefits, south carolina property tax exemption veterans, south carolina veteran tax benefits, military retirement south carolina",
     "excerpt": "",
@@ -934,7 +1113,7 @@ const blogPosts = [
   {
     "slug": "sciatica-secondary-to-lumbar-spine-condition",
     "title": "Sciatica Secondary to Lumbar Spine Condition: Complete Filing Strategy",
-    "date": "2026-03-08",
+    "date": "2026-03-20",
     "description": "Expert guide to filing sciatica as secondary to lumbar spine injury, nexus strategies, evidence requirements, and compensation impact.",
     "keywords": "",
     "excerpt": "",
@@ -943,7 +1122,7 @@ const blogPosts = [
   {
     "slug": "sd-veteran-healthcare-education-jobs",
     "title": "South Dakota Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-03-08",
+    "date": "2026-03-20",
     "description": "Guide to South Dakota veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
     "keywords": "south dakota veteran healthcare, south dakota GI Bill schools, south dakota veteran jobs, south dakota VA hospital",
     "excerpt": "",
@@ -953,7 +1132,7 @@ const blogPosts = [
   {
     "slug": "sd-veteran-tax-benefits-2025",
     "title": "South Dakota Veteran Tax Benefits 2025: No Income Tax, Property Tax & Exemptions",
-    "date": "2026-03-08",
+    "date": "2026-03-20",
     "description": "Complete guide to South Dakota veteran tax benefits: no state income tax, property tax exemptions for disabled veterans, vehicle fees, and financial analysis.",
     "keywords": "south dakota veteran benefits, south dakota property tax exemption veterans, south dakota veteran tax benefits, military retirement south dakota",
     "excerpt": "",
@@ -961,86 +1140,146 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "sleep-apnea-secondary-to-ptsd-claims",
-    "title": "Sleep Apnea Secondary to PTSD: Complete Filing Guide and Nexus Strategy",
-    "date": "2026-03-08",
-    "description": "Expert guide to filing sleep apnea as a secondary condition to PTSD, including nexus requirements, evidence strategies, and compensation calculations.",
-    "keywords": "",
+    "slug": "sdvosb-veteran-owned-contractor-guide",
+    "title": "Starting a Veteran-Owned Government Contractor (SDVOSB): Complete Guide",
+    "date": "2026-03-20",
+    "description": "Comprehensive guide to starting a Service-Disabled Veteran-Owned Small Business. Learn about SDVOSB certification, government contracting opportunities, set-asides, compliance requirements, and how to build a successful veteran-owned contractor.",
+    "keywords": "SDVOSB, veteran-owned business, service-disabled veteran business, government contractor, VOSB certification, veteran entrepreneurship, veteran small business",
     "excerpt": "",
-    "category": "Secondary Conditions"
+    "category": "federal-employment"
+  },
+  {
+    "slug": "secret-service-careers-veterans-guide",
+    "title": "Secret Service Careers for Veterans: Complete Guide",
+    "date": "2026-03-20",
+    "description": "Comprehensive guide to US Secret Service careers for veterans. Learn about Special Agent and Uniformed Division positions, requirements, hiring process, salary, and protection careers.",
+    "keywords": "Secret Service careers veterans, Secret Service special agent, Secret Service uniformed division, USSS jobs, Secret Service hiring, Secret Service requirements, protection careers veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "security-clearance-jobs-complete-guide",
+    "title": "Security Clearance Jobs: Complete Guide for Veterans",
+    "date": "2026-03-20",
+    "description": "Comprehensive guide to security clearance jobs for veterans. Learn about clearance levels, how to maintain clearance after separation, salary premiums, job opportunities, and maximizing your clearance value.",
+    "keywords": "security clearance jobs veterans, cleared jobs, secret clearance jobs, top secret clearance jobs, TS/SCI jobs, clearance salary, security clearance careers",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "registered-nurse-military-spouse-guide",
+    "title": "Military Spouse to Registered Nurse: Complete Career Path",
+    "date": "2026-03-19",
+    "description": "Complete guide for military spouses pursuing nursing careers. Navigate Nurse Licensure Compact, accelerated BSN programs, ADN pathways, and telehealth opportunities that survive PCS moves.",
+    "keywords": "military spouse nurse, nursing career military spouse, nurse licensure compact, RN military spouse, BSN military spouse, nursing school PCS",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "remote-work-survives-pcs-moves-guide",
+    "title": "Finding Remote Work That Survives PCS Moves: Complete Guide",
+    "date": "2026-03-19",
+    "description": "How to find and secure remote jobs that travel with you through military PCS moves. Companies, strategies, and tips for building a truly portable career.",
+    "keywords": "remote work PCS, portable remote jobs, military spouse remote work, work from anywhere military, remote career PCS moves",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "resume-writing-military-spouse-guide",
+    "title": "Resume Writing for Military Spouses: Addressing Gaps Guide",
+    "date": "2026-03-19",
+    "description": "Create a compelling resume as a military spouse. Address employment gaps, translate diverse experience, and position yourself competitively despite frequent moves.",
+    "keywords": "military spouse resume, employment gaps resume, resume address gaps, military spouse job application, career gaps resume",
+    "excerpt": "",
+    "category": "military-spouse"
   },
   {
     "slug": "retirement-transition-20-year-career-guide",
     "title": "Military Retirement Transition: Complete Guide for 20+ Year Veterans",
-    "date": "2026-03-07",
+    "date": "2026-03-19",
     "description": "Navigate transition from 20+ years military service. Plan for retirement income, civilian career, and post-military life strategy.",
     "keywords": "",
     "excerpt": "",
     "category": "Retirement Transition"
   },
   {
+    "slug": "ri-veteran-healthcare-education-jobs",
+    "title": "Rhode Island Veteran Healthcare, Education & Jobs 2025: Complete Guide",
+    "date": "2026-03-19",
+    "description": "Comprehensive guide to Rhode Island veteran benefits: Providence VA Medical Center services, free tuition for disabled veterans, Naval Station Newport jobs, and top employers hiring veterans.",
+    "keywords": "rhode island veterans healthcare, providence va medical center, rhode island veteran education, rhode island veteran jobs, naval station newport",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "ri-veteran-tax-benefits-2025",
+    "title": "Rhode Island Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-19",
+    "description": "Complete guide to Rhode Island veteran tax benefits: property tax exemptions up to $3,000, full military retirement income exemption, and free vehicle registration for 100% disabled veterans.",
+    "keywords": "rhode island veteran benefits, rhode island property tax exemption veterans, rhode island veteran tax benefits, military retirement rhode island",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "project-manager-military-spouse-guide",
+    "title": "Military Spouse to Project Manager: Remote Certification Path",
+    "date": "2026-03-18",
+    "description": "Become a certified project manager as a military spouse. PMP and CAPM certification guide, remote PM jobs, leveraging military experience, and building a location-independent career.",
+    "keywords": "military spouse project manager, PMP certification military spouse, remote project manager, CAPM military spouse, project management career",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "raytheon-careers-veterans-guide",
+    "title": "Raytheon (RTX) Careers for Veterans: Complete Guide",
+    "date": "2026-03-18",
+    "description": "Comprehensive guide to Raytheon/RTX careers for veterans. Learn about missile systems, radar, cybersecurity positions, veteran hiring programs, and how to land jobs at this major defense contractor.",
+    "keywords": "Raytheon careers veterans, RTX jobs, Raytheon missiles careers, Raytheon veteran hiring, defense contractor jobs, radar engineering careers",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "real-estate-agent-military-spouse-guide",
+    "title": "Military Spouse to Real Estate Agent: State-by-State Guide",
+    "date": "2026-03-18",
+    "description": "Launch a real estate career as a military spouse. Navigate licensure across states, build clientele on military installations, leverage PCS moves, and create location-flexible income.",
+    "keywords": "military spouse real estate, real estate license military spouse, realtor military spouse, real estate PCS, military relocation agent",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "pennsylvania-vs-new-jersey-veterans-comparison",
     "title": "Pennsylvania vs New Jersey Veterans Comparison 2025",
-    "date": "2026-02-27",
+    "date": "2026-03-10",
     "description": "Compare Pennsylvania and New Jersey for military retirees. Analyze tax treatment, cost of living, VA healthcare, and Northeast employment opportunities.",
     "keywords": "",
     "excerpt": "",
     "category": "State Comparisons"
   },
   {
-    "slug": "pa-veteran-healthcare-education-jobs",
-    "title": "Pennsylvania Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-25",
-    "description": "Guide to Pennsylvania veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
-    "keywords": "pennsylvania veteran healthcare, pennsylvania GI Bill schools, pennsylvania veteran jobs, pennsylvania VA hospital",
+    "slug": "peraton-careers-veterans-guide",
+    "title": "Peraton Careers for Veterans: Complete Guide",
+    "date": "2026-03-10",
+    "description": "Comprehensive guide to Peraton careers for veterans. Learn about space, intelligence, cyber, and mission support positions, veteran hiring programs, clearance requirements, and how to land jobs at this major contractor.",
+    "keywords": "Peraton careers veterans, Peraton jobs, space systems careers, intelligence contractor jobs, Peraton veteran hiring, cyber careers veterans",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "federal-employment"
   },
   {
-    "slug": "pa-veteran-tax-benefits-2025",
-    "title": "Pennsylvania Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-25",
-    "description": "Complete guide to Pennsylvania veteran tax benefits: property tax exemptions for 100% disabled veterans, military retirement tax exemption, and financial analysis.",
-    "keywords": "pennsylvania veteran benefits, pennsylvania property tax exemption veterans, pennsylvania veteran tax benefits, military retirement pennsylvania",
+    "slug": "photography-business-military-spouse-guide",
+    "title": "Photography Business for Military Spouses: On-Base Clients Guide",
+    "date": "2026-03-10",
+    "description": "Start a photography business as a military spouse. Build clientele on military installations, create portable income, specialize in military milestones, and manage business through PCS moves.",
+    "keywords": "military spouse photographer, photography business military, on-base photography, deployment photography, military family photographer",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "nv-veteran-tax-benefits-2025",
-    "title": "Nevada Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-24",
-    "description": "Complete guide to Nevada veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
-    "keywords": "nevada veteran benefits, nevada property tax exemption veterans, nevada veteran tax benefits, military retirement nevada",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "ny-veteran-healthcare-education-jobs",
-    "title": "New York Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-24",
-    "description": "Guide to New York veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
-    "keywords": "new york veteran healthcare, new york GI Bill schools, new york veteran jobs, new york VA hospital",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "ny-veteran-tax-benefits-2025",
-    "title": "New York Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-24",
-    "description": "Complete guide to New York veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
-    "keywords": "new york veteran benefits, new york property tax exemption veterans, new york veteran tax benefits, military retirement new york",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "military-spouse"
   },
   {
     "slug": "oh-veteran-healthcare-education-jobs",
     "title": "Ohio Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-24",
+    "date": "2026-03-08",
     "description": "Guide to Ohio veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
     "keywords": "ohio veteran healthcare, ohio GI Bill schools, ohio veteran jobs, ohio VA hospital",
     "excerpt": "",
@@ -1050,7 +1289,7 @@ const blogPosts = [
   {
     "slug": "oh-veteran-tax-benefits-2025",
     "title": "Ohio Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-24",
+    "date": "2026-03-08",
     "description": "Complete guide to Ohio veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
     "keywords": "ohio veteran benefits, ohio property tax exemption veterans, ohio veteran tax benefits, military retirement ohio",
     "excerpt": "",
@@ -1060,7 +1299,7 @@ const blogPosts = [
   {
     "slug": "ohio-vs-michigan-veterans-benefits",
     "title": "Ohio vs Michigan Veterans Benefits Comparison 2025",
-    "date": "2026-02-24",
+    "date": "2026-03-08",
     "description": "Compare Ohio and Michigan for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and Rust Belt employment opportunities.",
     "keywords": "",
     "excerpt": "",
@@ -1069,7 +1308,7 @@ const blogPosts = [
   {
     "slug": "ok-veteran-healthcare-education-jobs",
     "title": "Oklahoma Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-24",
+    "date": "2026-03-08",
     "description": "Guide to Oklahoma veteran resources: VA medical centers in Oklahoma City and Muskogee, GI Bill schools, Tinker AFB jobs, and veteran employment programs.",
     "keywords": "oklahoma veteran healthcare, oklahoma GI Bill schools, oklahoma veteran jobs, oklahoma VA hospital",
     "excerpt": "",
@@ -1079,7 +1318,7 @@ const blogPosts = [
   {
     "slug": "ok-veteran-tax-benefits-2025",
     "title": "Oklahoma Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-24",
+    "date": "2026-03-08",
     "description": "Complete guide to Oklahoma veteran tax benefits: full property tax exemption for 100% disabled veterans, military retirement tax exemption, and sales tax benefits.",
     "keywords": "oklahoma veteran benefits, oklahoma property tax exemption veterans, oklahoma veteran tax benefits, military retirement oklahoma",
     "excerpt": "",
@@ -1087,9 +1326,18 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "online-degrees-military-spouse-guide",
+    "title": "Best Online Degrees for Military Spouses (Fully Remote)",
+    "date": "2026-03-08",
+    "description": "Top online degree programs for military spouses. Military-friendly universities, portable credentials, flexible scheduling, and programs that survive PCS moves.",
+    "keywords": "military spouse online degree, best online colleges military spouse, remote degree programs, military spouse education, online university PCS",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "or-veteran-healthcare-education-jobs",
     "title": "Oregon Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-24",
+    "date": "2026-03-08",
     "description": "Guide to Oregon veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
     "keywords": "oregon veteran healthcare, oregon GI Bill schools, oregon veteran jobs, portland VA hospital",
     "excerpt": "",
@@ -1099,7 +1347,7 @@ const blogPosts = [
   {
     "slug": "or-veteran-tax-benefits-2025",
     "title": "Oregon Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-24",
+    "date": "2026-03-08",
     "description": "Complete guide to Oregon veteran tax benefits: property tax exemptions, military retirement income tax, no sales tax savings, and financial analysis for disabled veterans.",
     "keywords": "oregon veteran benefits, oregon property tax exemption veterans, oregon veteran tax benefits, military retirement oregon",
     "excerpt": "",
@@ -1107,61 +1355,21 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "ne-veteran-healthcare-education-jobs",
-    "title": "Nebraska Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-23",
-    "description": "Guide to Nebraska veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
-    "keywords": "nebraska veteran healthcare, nebraska GI Bill schools, nebraska veteran jobs, nebraska VA hospital",
+    "slug": "pa-veteran-healthcare-education-jobs",
+    "title": "Pennsylvania Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-03-08",
+    "description": "Guide to Pennsylvania veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
+    "keywords": "pennsylvania veteran healthcare, pennsylvania GI Bill schools, pennsylvania veteran jobs, pennsylvania VA hospital",
     "excerpt": "",
     "category": "Guides",
     "branch": "Navy"
   },
   {
-    "slug": "ne-veteran-tax-benefits-2025",
-    "title": "Nebraska Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-23",
-    "description": "Complete guide to Nebraska veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
-    "keywords": "nebraska veteran benefits, nebraska property tax exemption veterans, nebraska veteran tax benefits, military retirement nebraska",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "nh-veteran-healthcare-education-jobs",
-    "title": "New Hampshire Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-23",
-    "description": "Guide to New Hampshire veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
-    "keywords": "new hampshire veteran healthcare, new hampshire GI Bill schools, new hampshire veteran jobs, new hampshire VA hospital",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "nh-veteran-tax-benefits-2025",
-    "title": "New Hampshire Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-23",
-    "description": "Complete guide to New Hampshire veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
-    "keywords": "new hampshire veteran benefits, new hampshire property tax exemption veterans, new hampshire veteran tax benefits, military retirement new hampshire",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "nj-veteran-healthcare-education-jobs",
-    "title": "New Jersey Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-23",
-    "description": "Guide to New Jersey veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
-    "keywords": "new jersey veteran healthcare, new jersey GI Bill schools, new jersey veteran jobs, new jersey VA hospital",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "nj-veteran-tax-benefits-2025",
-    "title": "New Jersey Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-23",
-    "description": "Complete guide to New Jersey veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
-    "keywords": "new jersey veteran benefits, new jersey property tax exemption veterans, new jersey veteran tax benefits, military retirement new jersey",
+    "slug": "pa-veteran-tax-benefits-2025",
+    "title": "Pennsylvania Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-08",
+    "description": "Complete guide to Pennsylvania veteran tax benefits: property tax exemptions for 100% disabled veterans, military retirement tax exemption, and financial analysis.",
+    "keywords": "pennsylvania veteran benefits, pennsylvania property tax exemption veterans, pennsylvania veteran tax benefits, military retirement pennsylvania",
     "excerpt": "",
     "category": "Guides",
     "branch": "Navy"
@@ -1169,7 +1377,7 @@ const blogPosts = [
   {
     "slug": "nm-veteran-healthcare-education-jobs",
     "title": "New Mexico Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-23",
+    "date": "2026-03-07",
     "description": "Guide to New Mexico veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
     "keywords": "new mexico veteran healthcare, new mexico GI Bill schools, new mexico veteran jobs, new mexico VA hospital",
     "excerpt": "",
@@ -1179,7 +1387,7 @@ const blogPosts = [
   {
     "slug": "nm-veteran-tax-benefits-2025",
     "title": "New Mexico Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-23",
+    "date": "2026-03-07",
     "description": "Complete guide to New Mexico veteran tax benefits: property tax exemptions, military retirement income treatment, vehicle registration discounts, and financial analysis for disabled veterans.",
     "keywords": "new mexico veteran benefits, new mexico property tax exemption veterans, new mexico veteran tax benefits, military retirement new mexico",
     "excerpt": "",
@@ -1189,16 +1397,43 @@ const blogPosts = [
   {
     "slug": "north-carolina-vs-south-carolina-veterans-guide",
     "title": "North Carolina vs South Carolina Veterans: State Comparison Guide 2025",
-    "date": "2026-02-23",
+    "date": "2026-03-07",
     "description": "Compare North Carolina and South Carolina for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and job markets.",
     "keywords": "",
     "excerpt": "",
     "category": "State Comparisons"
   },
   {
+    "slug": "northrop-grumman-careers-veterans-guide",
+    "title": "Northrop Grumman Careers for Veterans: Complete Guide",
+    "date": "2026-03-07",
+    "description": "Comprehensive guide to Northrop Grumman careers for veterans. Learn about aerospace, cyber, space systems positions, veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor.",
+    "keywords": "Northrop Grumman careers veterans, Northrop Grumman jobs, B-21 careers, space systems careers, cyber defense jobs, aerospace engineering veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "nps-careers-veterans-guide",
+    "title": "National Park Service Careers for Veterans: Complete Guide",
+    "date": "2026-03-07",
+    "description": "Comprehensive guide to NPS careers for veterans. Learn about Park Ranger, Law Enforcement, maintenance positions, hiring process, and how military experience helps in America's national parks.",
+    "keywords": "National Park Service careers veterans, NPS jobs, park ranger veteran, NPS law enforcement, national parks careers, NPS hiring, park ranger jobs",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "nsa-careers-veterans-guide",
+    "title": "NSA Careers for Veterans: Complete Guide to National Security Agency",
+    "date": "2026-03-07",
+    "description": "Comprehensive guide to NSA careers for veterans. Learn about cryptologic, cyber, and intelligence positions, hiring process, salary, and how military SIGINT and cyber experience helps at NSA.",
+    "keywords": "NSA careers veterans, NSA jobs, National Security Agency careers, NSA cybersecurity, NSA analyst, SIGINT careers, NSA hiring process, NSA Fort Meade",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "nv-veteran-healthcare-education-jobs",
     "title": "Nevada Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-23",
+    "date": "2026-03-07",
     "description": "Guide to Nevada veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
     "keywords": "nevada veteran healthcare, nevada GI Bill schools, nevada veteran jobs, nevada VA hospital",
     "excerpt": "",
@@ -1206,61 +1441,31 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "ms-veteran-healthcare-education-jobs",
-    "title": "Mississippi Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-22",
-    "description": "Complete directory of Mississippi VA medical centers in Jackson and Biloxi, education programs, veteran employment resources, and support services across the state.",
-    "keywords": "Mississippi VA hospital, Mississippi veteran education, Mississippi veteran jobs, Mississippi GI Bill schools",
+    "slug": "nv-veteran-tax-benefits-2025",
+    "title": "Nevada Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-07",
+    "description": "Complete guide to Nevada veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
+    "keywords": "nevada veteran benefits, nevada property tax exemption veterans, nevada veteran tax benefits, military retirement nevada",
     "excerpt": "",
     "category": "Guides",
     "branch": "Navy"
   },
   {
-    "slug": "ms-veteran-tax-benefits-2025",
-    "title": "Mississippi Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-22",
-    "description": "Complete guide to Mississippi veteran tax benefits: 100% property tax exemption for disabled veterans, income tax treatment, and financial benefits with the lowest cost of living in America.",
-    "keywords": "Mississippi veteran benefits, Mississippi property tax exemption veterans, Mississippi veteran income tax, Mississippi disabled veteran benefits",
+    "slug": "ny-veteran-healthcare-education-jobs",
+    "title": "New York Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-03-07",
+    "description": "Guide to New York veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
+    "keywords": "new york veteran healthcare, new york GI Bill schools, new york veteran jobs, new york VA hospital",
     "excerpt": "",
     "category": "Guides",
     "branch": "Navy"
   },
   {
-    "slug": "mt-veteran-healthcare-education-jobs",
-    "title": "Montana Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-22",
-    "description": "Complete directory of Montana VA medical centers, education programs, veteran employment resources, and support services across the state.",
-    "keywords": "Montana VA hospital, Montana veteran education, Montana veteran jobs, Montana GI Bill schools",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "mt-veteran-tax-benefits-2025",
-    "title": "Montana Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-22",
-    "description": "Complete guide to Montana veteran tax benefits: property tax reduction for 100% disabled, 50% military retirement exemption starting 2026, financial benefits, and money-saving strategies for disabled veterans.",
-    "keywords": "Montana veteran benefits, Montana property tax exemption veterans, Montana veteran income tax, Montana disabled veteran benefits",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "nc-veteran-healthcare-education-jobs",
-    "title": "North Carolina Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
-    "date": "2026-02-22",
-    "description": "Guide to North Carolina veteran resources: VA healthcare facilities in Durham, Asheville, Fayetteville, Salisbury, GI Bill schools, and veteran employment programs.",
-    "keywords": "north carolina veteran healthcare, north carolina GI Bill schools, north carolina veteran jobs, north carolina VA hospital",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "nc-veteran-tax-benefits-2025",
-    "title": "North Carolina Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-22",
-    "description": "Complete guide to North Carolina veteran tax benefits: $45,000 property tax exemption for disabled veterans, military retirement fully exempt, vehicle benefits, and financial analysis.",
-    "keywords": "north carolina veteran benefits, north carolina property tax exemption veterans, north carolina veteran tax benefits, military retirement north carolina",
+    "slug": "ny-veteran-tax-benefits-2025",
+    "title": "New York Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-07",
+    "description": "Complete guide to New York veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
+    "keywords": "new york veteran benefits, new york property tax exemption veterans, new york veteran tax benefits, military retirement new york",
     "excerpt": "",
     "category": "Guides",
     "branch": "Navy"
@@ -1268,7 +1473,7 @@ const blogPosts = [
   {
     "slug": "nd-veteran-healthcare-education-jobs",
     "title": "North Dakota Veteran Healthcare, Education & Jobs Guide 2025",
-    "date": "2026-02-22",
+    "date": "2026-03-06",
     "description": "Complete guide to North Dakota veteran resources: VA Medical Center in Fargo, 10 clinics statewide, GI Bill benefits at UND and NDSU, oil industry jobs, and military base employment.",
     "keywords": "north dakota veteran healthcare, north dakota va medical center, north dakota veteran education, north dakota veteran jobs",
     "excerpt": "",
@@ -1278,7 +1483,7 @@ const blogPosts = [
   {
     "slug": "nd-veteran-tax-benefits-2025",
     "title": "North Dakota Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
-    "date": "2026-02-22",
+    "date": "2026-03-06",
     "description": "Complete guide to North Dakota veteran tax benefits: property tax credits by disability rating, military retirement pay exemption, vehicle benefits, and financial analysis.",
     "keywords": "north dakota veteran benefits, north dakota property tax exemption veterans, north dakota veteran tax benefits, military retirement north dakota",
     "excerpt": "",
@@ -1286,18 +1491,164 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "moving-to-nevada-veterans-financial-guide",
-    "title": "Moving to Nevada for Veterans: Financial Guide and Complete Cost Analysis 2025",
-    "date": "2026-02-21",
-    "description": "Comprehensive relocation guide for Nevada veterans including no income tax, no sales tax on groceries, housing costs, VA healthcare, job market, and financial planning.",
-    "keywords": "",
+    "slug": "ne-veteran-healthcare-education-jobs",
+    "title": "Nebraska Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-03-06",
+    "description": "Guide to Nebraska veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
+    "keywords": "nebraska veteran healthcare, nebraska GI Bill schools, nebraska veteran jobs, nebraska VA hospital",
     "excerpt": "",
-    "category": "State Relocation Guides"
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "ne-veteran-tax-benefits-2025",
+    "title": "Nebraska Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-06",
+    "description": "Complete guide to Nebraska veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
+    "keywords": "nebraska veteran benefits, nebraska property tax exemption veterans, nebraska veteran tax benefits, military retirement nebraska",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "negotiate-remote-work-accommodation-guide",
+    "title": "How to Negotiate Remote Work Accommodation as a Military Spouse",
+    "date": "2026-03-06",
+    "description": "Scripts and strategies for negotiating remote work arrangements with employers. How to make the case for remote work, handle objections, and structure agreements that protect your career.",
+    "keywords": "negotiate remote work, remote work accommodation, military spouse remote request, work from home negotiation, flexible work military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "networking-military-spouse-guide",
+    "title": "Networking as a Military Spouse: Digital + Local Strategies",
+    "date": "2026-03-06",
+    "description": "Build and maintain a professional network despite frequent moves. Digital networking, local connections at each duty station, and strategies that survive PCS relocations.",
+    "keywords": "military spouse networking, professional network PCS, networking frequent moves, military spouse career network, digital networking military",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "nh-veteran-healthcare-education-jobs",
+    "title": "New Hampshire Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-03-06",
+    "description": "Guide to New Hampshire veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
+    "keywords": "new hampshire veteran healthcare, new hampshire GI Bill schools, new hampshire veteran jobs, new hampshire VA hospital",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "nh-veteran-tax-benefits-2025",
+    "title": "New Hampshire Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-06",
+    "description": "Complete guide to New Hampshire veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
+    "keywords": "new hampshire veteran benefits, new hampshire property tax exemption veterans, new hampshire veteran tax benefits, military retirement new hampshire",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "nj-veteran-healthcare-education-jobs",
+    "title": "New Jersey Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-03-06",
+    "description": "Guide to New Jersey veteran resources: VA healthcare facilities, GI Bill schools, state education benefits, and veteran employment programs.",
+    "keywords": "new jersey veteran healthcare, new jersey GI Bill schools, new jersey veteran jobs, new jersey VA hospital",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "nj-veteran-tax-benefits-2025",
+    "title": "New Jersey Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-06",
+    "description": "Complete guide to New Jersey veteran tax benefits: property tax exemptions, income tax treatment, vehicle fees, and financial analysis for disabled veterans.",
+    "keywords": "new jersey veteran benefits, new jersey property tax exemption veterans, new jersey veteran tax benefits, military retirement new jersey",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "ms-veteran-tax-benefits-2025",
+    "title": "Mississippi Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-03-05",
+    "description": "Complete guide to Mississippi veteran tax benefits: 100% property tax exemption for disabled veterans, income tax treatment, and financial benefits with the lowest cost of living in America.",
+    "keywords": "Mississippi veteran benefits, Mississippi property tax exemption veterans, Mississippi veteran income tax, Mississippi disabled veteran benefits",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "msep-military-spouse-employment-partnership-guide",
+    "title": "MSEP Guide: Military Spouse Employment Partnership Explained",
+    "date": "2026-03-05",
+    "description": "Complete guide to the Military Spouse Employment Partnership. How MSEP works, partner companies, job search strategies, and maximizing this DoD program for career success.",
+    "keywords": "MSEP military spouse, military spouse employment partnership, MSEP jobs, MSEP partners, DoD spouse employment",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "mt-veteran-healthcare-education-jobs",
+    "title": "Montana Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-03-05",
+    "description": "Complete directory of Montana VA medical centers, education programs, veteran employment resources, and support services across the state.",
+    "keywords": "Montana VA hospital, Montana veteran education, Montana veteran jobs, Montana GI Bill schools",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "mt-veteran-tax-benefits-2025",
+    "title": "Montana Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-03-05",
+    "description": "Complete guide to Montana veteran tax benefits: property tax reduction for 100% disabled, 50% military retirement exemption starting 2026, financial benefits, and money-saving strategies for disabled veterans.",
+    "keywords": "Montana veteran benefits, Montana property tax exemption veterans, Montana veteran income tax, Montana disabled veteran benefits",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "mycaa-spouse-education-benefits-guide",
+    "title": "MyCAA Spouse Education Benefits: Complete Guide 2025",
+    "date": "2026-03-05",
+    "description": "Everything military spouses need to know about MyCAA education benefits. Eligibility, approved programs, application process, and maximizing your $4,000 education funding.",
+    "keywords": "MyCAA military spouse, MyCAA benefits 2025, military spouse education funding, MyCAA eligible programs, spouse career advancement",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "nasa-careers-veterans-guide",
+    "title": "NASA Careers for Veterans: Complete Guide to Space Agency Employment",
+    "date": "2026-03-05",
+    "description": "Comprehensive guide to NASA careers for veterans. Learn about engineering, technical, mission operations positions, hiring process, salary, and how military aerospace experience helps at NASA.",
+    "keywords": "NASA careers veterans, NASA jobs, NASA engineering careers, space careers veterans, NASA hiring process, aerospace careers veterans, NASA mission operations",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "nc-veteran-healthcare-education-jobs",
+    "title": "North Carolina Veteran Healthcare, Education & Jobs: Complete 2025 Guide",
+    "date": "2026-03-05",
+    "description": "Guide to North Carolina veteran resources: VA healthcare facilities in Durham, Asheville, Fayetteville, Salisbury, GI Bill schools, and veteran employment programs.",
+    "keywords": "north carolina veteran healthcare, north carolina GI Bill schools, north carolina veteran jobs, north carolina VA hospital",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "nc-veteran-tax-benefits-2025",
+    "title": "North Carolina Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions",
+    "date": "2026-03-05",
+    "description": "Complete guide to North Carolina veteran tax benefits: $45,000 property tax exemption for disabled veterans, military retirement fully exempt, vehicle benefits, and financial analysis.",
+    "keywords": "north carolina veteran benefits, north carolina property tax exemption veterans, north carolina veteran tax benefits, military retirement north carolina",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
   },
   {
     "slug": "moving-to-north-carolina-veterans-cost-analysis",
     "title": "Moving to North Carolina for Veterans: Cost Analysis and Financial Guide 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Complete relocation guide for veterans moving to North Carolina with housing costs, military installations, VA healthcare, job market analysis, and budgeting.",
     "keywords": "",
     "excerpt": "",
@@ -1306,7 +1657,7 @@ const blogPosts = [
   {
     "slug": "moving-to-ohio-veterans-complete-cost-analysis",
     "title": "Moving to Ohio for Veterans: Complete Cost Analysis and Financial Guide 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Comprehensive relocation guide for veterans moving to Ohio including military pension tax treatment, affordable housing, job market, VA healthcare, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1315,7 +1666,7 @@ const blogPosts = [
   {
     "slug": "moving-to-oregon-veterans-cost-breakdown",
     "title": "Moving to Oregon for Veterans: Cost Breakdown and Financial Analysis 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Complete relocation guide for Oregon veterans including no sales tax advantage, housing costs, outdoor lifestyle, VA healthcare, job market, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1324,7 +1675,7 @@ const blogPosts = [
   {
     "slug": "moving-to-south-carolina-veterans-cost-analysis",
     "title": "Moving to South Carolina for Veterans: Cost Analysis and Complete Guide 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Comprehensive veteran relocation guide to South Carolina including military benefits, housing costs, job market, VA healthcare, coastal lifestyle, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1333,7 +1684,7 @@ const blogPosts = [
   {
     "slug": "moving-to-tennessee-veterans-financial-analysis",
     "title": "Moving to Tennessee for Veterans: Financial Analysis and Complete Cost Guide 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Complete relocation guide for veterans moving to Tennessee including housing costs, military benefits, job market, VA healthcare, no income tax advantage, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1342,7 +1693,7 @@ const blogPosts = [
   {
     "slug": "moving-to-texas-veterans-cost-breakdown",
     "title": "Moving to Texas for Veterans: Cost Breakdown and Financial Analysis 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Complete veteran relocation guide to Texas with housing costs, tax advantages, military installations, VA healthcare, job market analysis, and transition planning.",
     "keywords": "",
     "excerpt": "",
@@ -1351,7 +1702,7 @@ const blogPosts = [
   {
     "slug": "moving-to-utah-veterans-relocation-guide",
     "title": "Moving to Utah for Veterans: Relocation Guide and Complete Cost Analysis 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Comprehensive veteran relocation guide to Utah including favorable income taxes, housing market, outdoor recreation, job market growth, VA healthcare, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1360,7 +1711,7 @@ const blogPosts = [
   {
     "slug": "moving-to-virginia-veterans-cost-breakdown",
     "title": "Moving to Virginia for Veterans: Cost Breakdown and Complete Analysis 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Veteran relocation guide to Virginia including military installations, housing costs, VA healthcare, federal employment, job market analysis, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1369,18 +1720,18 @@ const blogPosts = [
   {
     "slug": "moving-to-washington-veterans-relocation-guide",
     "title": "Moving to Washington for Veterans: Relocation Guide and Cost Analysis 2025",
-    "date": "2026-02-21",
+    "date": "2026-03-04",
     "description": "Complete relocation guide for Washington veterans including no income tax, housing costs, Pacific Northwest lifestyle, military installations, VA healthcare, and financial planning.",
     "keywords": "",
     "excerpt": "",
     "category": "State Relocation Guides"
   },
   {
-    "slug": "mn-veteran-healthcare-education-jobs",
-    "title": "Minnesota Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-20",
-    "description": "Complete directory of Minnesota VA medical centers, education programs, veteran employment resources, and support services across the state.",
-    "keywords": "Minnesota VA hospital, Minnesota veteran education, Minnesota veteran jobs, Minnesota GI Bill schools",
+    "slug": "ms-veteran-healthcare-education-jobs",
+    "title": "Mississippi Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-03-04",
+    "description": "Complete directory of Mississippi VA medical centers in Jackson and Biloxi, education programs, veteran employment resources, and support services across the state.",
+    "keywords": "Mississippi VA hospital, Mississippi veteran education, Mississippi veteran jobs, Mississippi GI Bill schools",
     "excerpt": "",
     "category": "Guides",
     "branch": "Navy"
@@ -1388,7 +1739,7 @@ const blogPosts = [
   {
     "slug": "mn-veteran-tax-benefits-2025",
     "title": "Minnesota Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Complete guide to Minnesota veteran tax benefits: property tax Market Value Exclusion, military retirement partial exemption, and financial benefits for disabled veterans.",
     "keywords": "Minnesota veteran benefits, Minnesota property tax exemption veterans, Minnesota veteran income tax, Minnesota disabled veteran benefits",
     "excerpt": "",
@@ -1398,7 +1749,7 @@ const blogPosts = [
   {
     "slug": "mo-veteran-healthcare-education-jobs",
     "title": "Missouri Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Complete directory of Missouri VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Missouri VA hospital, Missouri veteran education, Missouri veteran jobs, Missouri GI Bill schools",
     "excerpt": "",
@@ -1407,7 +1758,7 @@ const blogPosts = [
   {
     "slug": "mo-veteran-tax-benefits-2025",
     "title": "Missouri Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Complete guide to Missouri veteran tax benefits: property tax credit up to $1,100, 100% military retirement exemption, financial benefits, and money-saving strategies for disabled veterans.",
     "keywords": "Missouri veteran benefits, Missouri property tax credit veterans, Missouri veteran income tax, Missouri disabled veteran benefits",
     "excerpt": "",
@@ -1417,7 +1768,7 @@ const blogPosts = [
   {
     "slug": "moving-to-arizona-veterans-complete-guide",
     "title": "Moving to Arizona for Veterans: Complete Guide and Cost Analysis 2025",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Comprehensive veteran relocation guide to Arizona including desert lifestyle, military installations, housing costs, VA healthcare, job market, retirement benefits, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1426,7 +1777,7 @@ const blogPosts = [
   {
     "slug": "moving-to-california-veterans-financial-guide",
     "title": "Moving to California for Veterans: Financial Guide and Complete Cost Analysis 2025",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Comprehensive veteran relocation guide to California with housing costs, tax strategies, VA healthcare, job market analysis, and financial planning for military families.",
     "keywords": "",
     "excerpt": "",
@@ -1435,7 +1786,7 @@ const blogPosts = [
   {
     "slug": "moving-to-colorado-veterans-relocation-guide",
     "title": "Moving to Colorado for Veterans: Relocation Guide and Cost Analysis 2025",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Complete cost analysis for veterans relocating to Colorado including housing, outdoor lifestyle, military installations, VA healthcare, job market, and financial planning.",
     "keywords": "",
     "excerpt": "",
@@ -1444,7 +1795,7 @@ const blogPosts = [
   {
     "slug": "moving-to-florida-veterans-complete-cost-analysis",
     "title": "Moving to Florida for Veterans: Complete Cost Analysis and Financial Guide 2025",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Comprehensive veteran relocation guide to Florida including housing costs, tax implications, VA healthcare, job market analysis, and month-by-month transition budget.",
     "keywords": "",
     "excerpt": "",
@@ -1453,45 +1804,503 @@ const blogPosts = [
   {
     "slug": "moving-to-georgia-veterans-cost-analysis",
     "title": "Moving to Georgia for Veterans: Cost Analysis and Financial Guide 2025",
-    "date": "2026-02-20",
+    "date": "2026-03-03",
     "description": "Complete relocation guide for Georgia veterans including military installations, housing costs, job market, VA healthcare, tax benefits, and financial planning.",
     "keywords": "",
     "excerpt": "",
     "category": "State Relocation Guides"
   },
   {
-    "slug": "me-veteran-healthcare-education-jobs",
-    "title": "Maine Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-19",
-    "description": "Complete directory of Maine VA medical centers, education programs, veteran employment resources, and support services across the Pine Tree State.",
-    "keywords": "Maine VA hospital, Maine veteran education, Maine veteran jobs, Maine GI Bill schools",
+    "slug": "moving-to-nevada-veterans-financial-guide",
+    "title": "Moving to Nevada for Veterans: Financial Guide and Complete Cost Analysis 2025",
+    "date": "2026-03-03",
+    "description": "Comprehensive relocation guide for Nevada veterans including no income tax, no sales tax on groceries, housing costs, VA healthcare, job market, and financial planning.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "State Relocation Guides"
+  },
+  {
+    "slug": "military-to-software-engineering-career-guide",
+    "title": "Military to Software Engineering: Complete Transition Guide for Veterans",
+    "date": "2026-03-02",
+    "description": "How to transition from military service to software engineering. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to software engineering, veteran software developer jobs, software engineering careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-state-local-law-enforcement-career-guide",
+    "title": "Military to State/Local Law Enforcement: Complete Transition Guide for Veterans",
+    "date": "2026-03-02",
+    "description": "How to transition from military service to state and local police. Academy requirements, salary expectations, best departments hiring veterans, and hiring process.",
+    "keywords": "military to police, veteran cop jobs, law enforcement careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-supply-chain-management-career-guide",
+    "title": "Military to Supply Chain Management: Complete Transition Guide for Veterans",
+    "date": "2026-03-02",
+    "description": "How to transition from military service to supply chain management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to supply chain, veteran logistics jobs, supply chain management careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-technical-sales-career-guide",
+    "title": "Military to Technical Sales: Complete Transition Guide for Veterans",
+    "date": "2026-03-02",
+    "description": "How to transition from military service to technical sales. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to technical sales, veteran sales engineer jobs, tech sales careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-transportation-logistics-career-guide",
+    "title": "Military to Transportation/Logistics: Complete Transition Guide for Veterans",
+    "date": "2026-03-02",
+    "description": "How to transition from military service to transportation and logistics. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to transportation, veteran logistics jobs, trucking careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-utility-companies-career-guide",
+    "title": "Military to Utility Companies: Complete Transition Guide for Veterans",
+    "date": "2026-03-02",
+    "description": "How to transition from military service to utility companies. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to utilities, veteran utility jobs, utility company careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-ux-ui-design-career-guide",
+    "title": "Military to UX/UI Design: Complete Transition Guide for Veterans",
+    "date": "2026-03-02",
+    "description": "How to transition from military service to UX/UI design. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to UX design, veteran UI designer jobs, UX design careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-transition-checklist-2025",
+    "title": "Military Transition Checklist: Your Complete 12-Month Separation Timeline (2025)",
+    "date": "2026-03-02",
+    "description": "Step-by-step military separation checklist from 12 months to final out-processing. Required appointments, documents, benefits, and common mistakes to avoid.",
+    "keywords": "military transition checklist, military separation checklist, ETS checklist",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "missouri-vs-kansas-veterans-benefits",
+    "title": "Missouri vs Kansas Veterans Benefits Comparison 2025",
+    "date": "2026-03-02",
+    "description": "Compare Missouri and Kansas for military retirees. Analyze military retirement tax treatment, cost of living, VA healthcare, and Great Plains opportunities.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "State Comparisons"
+  },
+  {
+    "slug": "mn-veteran-healthcare-education-jobs",
+    "title": "Minnesota Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-03-02",
+    "description": "Complete directory of Minnesota VA medical centers, education programs, veteran employment resources, and support services across the state.",
+    "keywords": "Minnesota VA hospital, Minnesota veteran education, Minnesota veteran jobs, Minnesota GI Bill schools",
     "excerpt": "",
     "category": "Guides",
     "branch": "Navy"
   },
   {
-    "slug": "me-veteran-tax-benefits-2025",
-    "title": "Maine Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-19",
-    "description": "Complete guide to Maine veteran tax benefits: property tax exemptions up to $50K, full military retirement income tax exemption, and financial benefits for disabled veterans.",
-    "keywords": "Maine veteran benefits, Maine property tax exemption veterans, Maine veteran income tax, Maine disabled veteran benefits",
+    "slug": "military-to-medical-device-sales-career-guide",
+    "title": "Military to Medical Device Sales: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to medical device sales. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to medical device sales, veteran medical device jobs, medical device sales careers for veterans",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-mental-health-counseling-career-guide",
+    "title": "Military to Mental Health Counseling: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to mental health counseling. Best MOS backgrounds, degree requirements, licensure paths, and top employers hiring veteran counselors.",
+    "keywords": "military to mental health counseling, veteran counselor jobs, mental health careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-network-engineering-career-guide",
+    "title": "Military to Network Engineering: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to network engineering. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to network engineering, veteran network engineer jobs, network engineering careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-nursing-career-guide",
+    "title": "Military to Nursing (RN Programs): Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to nursing. Best MOS backgrounds, degree programs, salary expectations, and top employers hiring veteran nurses.",
+    "keywords": "military to nursing, veteran RN programs, nursing careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-oil-gas-career-guide",
+    "title": "Military to Oil & Gas: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to the oil and gas industry. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to oil and gas, veteran oilfield jobs, oil and gas careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-operations-management-career-guide",
+    "title": "Military to Operations Management: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to operations management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to operations management, veteran operations jobs, operations management careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-pharmaceutical-sales-career-guide",
+    "title": "Military to Pharmaceutical Sales: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to pharmaceutical sales. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to pharmaceutical sales, veteran pharma sales jobs, pharmaceutical sales careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-physical-therapy-career-guide",
+    "title": "Military to Physical Therapy: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to physical therapy. Best MOS backgrounds, degree requirements, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to physical therapy, veteran physical therapist jobs, physical therapy careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-private-security-career-guide",
+    "title": "Military to Private Security: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to private security careers. Contract security, corporate security, consulting opportunities, and salary expectations.",
+    "keywords": "military to private security, veteran security jobs, security contractor careers",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-renewable-energy-career-guide",
+    "title": "Military to Renewable Energy: Complete Transition Guide for Veterans",
+    "date": "2026-03-01",
+    "description": "How to transition from military service to renewable energy. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to renewable energy, veteran solar jobs, wind energy careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-homeland-security-career-guide",
+    "title": "Military to Homeland Security: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to DHS and homeland security careers. Agency options, requirements, salary expectations, and top opportunities for veterans.",
+    "keywords": "military to DHS, veteran homeland security jobs, DHS careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-hospital-administration-career-guide",
+    "title": "Military to Hospital Administration: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to hospital administration. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to hospital administration, veteran healthcare management jobs, hospital administration careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-human-resources-career-guide",
+    "title": "Military to Human Resources: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to human resources. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to human resources, veteran HR jobs, human resources careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-insurance-industry-career-guide",
+    "title": "Military to Insurance Industry: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to the insurance industry. Best MOS backgrounds, licensing needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to insurance, veteran insurance jobs, insurance careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-intelligence-community-career-guide",
+    "title": "Military to Intelligence Community: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to the Intelligence Community. Agency options, clearance requirements, salary expectations, and hiring process details.",
+    "keywords": "military to intelligence community, veteran CIA jobs, IC careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-investment-banking-career-guide",
+    "title": "Military to Investment Banking: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to investment banking. Best MOS backgrounds, MBA requirements, salary expectations, and top banks hiring veterans.",
+    "keywords": "military to investment banking, veteran investment banking jobs, investment banking careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-management-consulting-career-guide",
+    "title": "Military to Management Consulting: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to management consulting. Best MOS backgrounds, MBA paths, salary expectations, and top consulting firms hiring veterans.",
+    "keywords": "military to management consulting, veteran consulting jobs, management consulting careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-manufacturing-leadership-career-guide",
+    "title": "Military to Manufacturing Leadership: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to manufacturing leadership. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to manufacturing, veteran manufacturing jobs, manufacturing leadership careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-maritime-industry-career-guide",
+    "title": "Military to Maritime Industry: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to the maritime industry. Best ratings, credentials needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to maritime, veteran merchant marine jobs, maritime careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-medical-coding-billing-career-guide",
+    "title": "Military to Medical Coding/Billing: Complete Transition Guide for Veterans",
+    "date": "2026-02-28",
+    "description": "How to transition from military service to medical coding and billing. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to medical coding, veteran medical billing jobs, medical coding careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-cybersecurity-career-guide",
+    "title": "Military to Cybersecurity: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to cybersecurity. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to cybersecurity, veteran cybersecurity jobs, cybersecurity careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-data-analytics-career-guide",
+    "title": "Military to Data Analytics: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to data analytics. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to data analytics, veteran data analyst jobs, data analytics careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-devops-sre-career-guide",
+    "title": "Military to DevOps/SRE: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to DevOps and Site Reliability Engineering. Best MOS backgrounds, certifications needed, salary expectations, and top employers.",
+    "keywords": "military to DevOps, veteran SRE jobs, DevOps careers for veterans, site reliability engineering",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-diplomatic-security-career-guide",
+    "title": "Military to Diplomatic Security: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to Diplomatic Security Service and related careers. Requirements, application process, salary expectations, and career paths.",
+    "keywords": "military to diplomatic security, veteran DSS jobs, state department security careers",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-emergency-management-career-guide",
+    "title": "Military to Emergency Management: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to emergency management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to emergency management, veteran emergency management jobs, emergency management careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-emergency-services-career-guide",
+    "title": "Military to Emergency Services: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to fire, EMS, and emergency services careers. Requirements, certifications, salary expectations, and hiring tips.",
+    "keywords": "military to firefighter, veteran EMS jobs, emergency services careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-executive-protection-career-guide",
+    "title": "Military to Executive Protection: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to executive protection careers. Training requirements, certifications, salary expectations, and career paths.",
+    "keywords": "military to executive protection, veteran bodyguard jobs, EP careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-federal-law-enforcement-career-guide",
+    "title": "Military to Federal Law Enforcement: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to federal law enforcement. Best MOS backgrounds, agency requirements, salary expectations, and hiring process details.",
+    "keywords": "military to federal law enforcement, veteran FBI jobs, federal agent careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-financial-planning-career-guide",
+    "title": "Military to Financial Planning: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to financial planning. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to financial planning, veteran financial advisor jobs, financial planning careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-healthcare-compliance-career-guide",
+    "title": "Military to Healthcare Compliance: Complete Transition Guide for Veterans",
+    "date": "2026-02-27",
+    "description": "How to transition from military service to healthcare compliance. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to healthcare compliance, veteran healthcare compliance jobs, healthcare compliance careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-ai-machine-learning-career-guide",
+    "title": "Military to AI/Machine Learning: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to AI and machine learning. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to AI, veteran machine learning jobs, AI careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-automotive-industry-career-guide",
+    "title": "Military to Automotive Industry: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to the automotive industry. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to automotive, veteran automotive jobs, automotive industry careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-border-patrol-cbp-career-guide",
+    "title": "Military to Border Patrol/CBP: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to Customs and Border Protection careers. Border Patrol Agent and CBP Officer paths, requirements, salary, and hiring process.",
+    "keywords": "military to border patrol, veteran CBP jobs, customs officer careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-business-development-career-guide",
+    "title": "Military to Business Development: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to business development. Best MOS backgrounds, skills needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to business development, veteran BD jobs, business development careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-cloud-computing-career-guide",
+    "title": "Military to Cloud Computing: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to cloud computing. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to cloud computing, veteran cloud engineer jobs, cloud computing careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-commercial-aviation-career-guide",
+    "title": "Military to Aviation (Commercial): Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to commercial aviation. Pilot paths, maintenance careers, certifications needed, salary expectations, and top employers.",
+    "keywords": "military to commercial aviation, veteran airline pilot jobs, aviation careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-commercial-real-estate-career-guide",
+    "title": "Military to Commercial Real Estate: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to commercial real estate. Best MOS backgrounds, licensing needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to commercial real estate, veteran CRE jobs, commercial real estate careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-construction-management-career-guide",
+    "title": "Military to Construction Management: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to construction management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to construction management, veteran construction jobs, construction management careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-corporate-training-career-guide",
+    "title": "Military to Corporate Training: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to corporate training and learning & development. Best MOS backgrounds, certifications, salary expectations, and top employers.",
+    "keywords": "military to corporate training, veteran L&D jobs, corporate training careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "military-to-corrections-career-guide",
+    "title": "Military to Corrections: Complete Transition Guide for Veterans",
+    "date": "2026-02-26",
+    "description": "How to transition from military service to corrections careers. Federal and state options, requirements, salary expectations, and advancement opportunities.",
+    "keywords": "military to corrections officer, veteran prison jobs, corrections careers for veterans",
+    "excerpt": "",
+    "category": "industry-transition"
+  },
+  {
+    "slug": "medical-coder-military-spouse-guide",
+    "title": "Military Spouse to Medical Coder: Work from Home Career",
+    "date": "2026-02-25",
+    "description": "Become a medical coder as a military spouse. 100% remote career with $45K-$65K salary, MyCAA-funded training, and certifications that work at every duty station.",
+    "keywords": "military spouse medical coding, remote medical coder, CPC certification military spouse, work from home healthcare, medical billing military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
   },
   {
     "slug": "medical-retirement-transition-complete-guide",
     "title": "Medical Retirement Transition: Complete Guide for Medically Retired Veterans",
-    "date": "2026-02-19",
+    "date": "2026-02-25",
     "description": "Navigate medical retirement from military. Manage disability benefits, transition planning, and career options with service-connected disability.",
     "keywords": "",
     "excerpt": "",
     "category": "Transition Special Cases"
   },
   {
+    "slug": "mental-health-career-stress-military-spouse-guide",
+    "title": "Mental Health and Career Stress for Military Spouses",
+    "date": "2026-02-25",
+    "description": "Managing the mental health impact of career challenges as a military spouse. Recognizing stress, coping strategies, when to seek help, and building career resilience.",
+    "keywords": "military spouse mental health, career stress military, burnout military spouse, anxiety career military, coping military spouse career",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "mi-veteran-healthcare-education-jobs",
     "title": "Michigan Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-19",
+    "date": "2026-02-25",
     "description": "Complete directory of Michigan VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Michigan VA hospital, Michigan veteran education, Michigan veteran jobs, Michigan GI Bill schools",
     "excerpt": "",
@@ -1501,7 +2310,7 @@ const blogPosts = [
   {
     "slug": "mi-veteran-tax-benefits-2025",
     "title": "Michigan Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-19",
+    "date": "2026-02-25",
     "description": "Complete guide to Michigan veteran tax benefits: property tax exemptions for disabled veterans, income tax treatment, and financial benefits including the 100% exemption for 100% disabled vets.",
     "keywords": "Michigan veteran benefits, Michigan property tax exemption veterans, Michigan veteran income tax, Michigan disabled veteran benefits",
     "excerpt": "",
@@ -1511,7 +2320,7 @@ const blogPosts = [
   {
     "slug": "migraines-secondary-to-tinnitus-nexus",
     "title": "Migraines Secondary to Tinnitus: Complete Nexus and Filing Strategy",
-    "date": "2026-02-19",
+    "date": "2026-02-25",
     "description": "Expert guide to filing migraines as a secondary condition to tinnitus, nexus requirements, evidence strategies, and compensation impact calculations.",
     "keywords": "",
     "excerpt": "",
@@ -1520,54 +2329,52 @@ const blogPosts = [
   {
     "slug": "military-retirement-va-disability-guide",
     "title": "Military Retirement + VA Disability: Can You Get Both? (CRDP vs CRSC Explained 2025)",
-    "date": "2026-02-19",
+    "date": "2026-02-25",
     "description": "Complete guide to receiving military retirement pay and VA disability compensation simultaneously. Explains CRDP, CRSC, VA offset elimination, and how to maximize your benefits.",
     "keywords": "military retirement VA disability, CRDP, CRSC, concurrent retirement disability pay, VA offset, military retirement and disability",
     "excerpt": "",
     "category": "VA Disability"
   },
   {
-    "slug": "military-transition-checklist-2025",
-    "title": "Military Transition Checklist: Your Complete 12-Month Separation Timeline (2025)",
-    "date": "2026-02-19",
-    "description": "Step-by-step military separation checklist from 12 months to final out-processing. Required appointments, documents, benefits, and common mistakes to avoid.",
-    "keywords": "military transition checklist, military separation checklist, ETS checklist",
+    "slug": "military-spouse-preference-hiring-guide",
+    "title": "Military Spouse Preference Hiring: How It Actually Works",
+    "date": "2026-02-25",
+    "description": "Complete guide to military spouse hiring preference programs. Federal MSP, DoD preference, state programs, and how to actually use these benefits to get hired.",
+    "keywords": "military spouse preference, MSP federal hiring, spouse hiring preference, DoD spouse hiring, federal jobs military spouse",
     "excerpt": "",
-    "category": "Guides"
+    "category": "military-spouse"
   },
   {
-    "slug": "missouri-vs-kansas-veterans-benefits",
-    "title": "Missouri vs Kansas Veterans Benefits Comparison 2025",
-    "date": "2026-02-19",
-    "description": "Compare Missouri and Kansas for military retirees. Analyze military retirement tax treatment, cost of living, VA healthcare, and Great Plains opportunities.",
-    "keywords": "",
+    "slug": "military-to-aerospace-industry-career-guide",
+    "title": "Military to Aerospace Industry: Complete Transition Guide for Veterans",
+    "date": "2026-02-25",
+    "description": "How to transition from military service to the aerospace industry. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to aerospace, veteran aerospace jobs, aerospace industry careers for veterans",
     "excerpt": "",
-    "category": "State Comparisons"
+    "category": "industry-transition"
   },
   {
-    "slug": "ma-veteran-healthcare-education-jobs",
-    "title": "Massachusetts Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-18",
-    "description": "Complete directory of Massachusetts VA medical centers, education programs, veteran employment resources, and support services across the state.",
-    "keywords": "Massachusetts VA hospital, Massachusetts veteran education, Massachusetts veteran jobs, Massachusetts GI Bill schools",
+    "slug": "maintain-clearance-after-separation-guide",
+    "title": "How to Maintain Your Security Clearance After Military Separation",
+    "date": "2026-02-24",
+    "description": "Complete guide to maintaining your security clearance after leaving the military. Learn about clearance currency, reactivation, gaps in cleared employment, and strategies to protect your clearance value.",
+    "keywords": "maintain security clearance, clearance after military, security clearance transition, keep clearance active, reactivate security clearance, clearance gap employment",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "federal-employment"
   },
   {
-    "slug": "ma-veteran-tax-benefits-2025",
-    "title": "Massachusetts Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-18",
-    "description": "Complete guide to Massachusetts veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
-    "keywords": "Massachusetts veteran benefits, Massachusetts property tax exemption veterans, Massachusetts veteran income tax, Massachusetts disabled veteran benefits",
+    "slug": "mantech-careers-veterans-guide",
+    "title": "ManTech Careers for Veterans: Complete Guide",
+    "date": "2026-02-24",
+    "description": "Comprehensive guide to ManTech careers for veterans. Learn about IT services, cyber operations, intelligence positions, veteran hiring programs, clearance requirements, and how to land jobs at this defense contractor.",
+    "keywords": "ManTech careers veterans, ManTech jobs, cyber operations careers, intelligence contractor jobs, ManTech veteran hiring, cleared IT jobs",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "federal-employment"
   },
   {
     "slug": "md-veteran-healthcare-education-jobs",
     "title": "Maryland Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-18",
+    "date": "2026-02-24",
     "description": "Complete directory of Maryland VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Maryland VA hospital, Maryland veteran education, Maryland veteran jobs, Maryland GI Bill schools",
     "excerpt": "",
@@ -1577,7 +2384,7 @@ const blogPosts = [
   {
     "slug": "md-veteran-tax-benefits-2025",
     "title": "Maryland Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-18",
+    "date": "2026-02-24",
     "description": "Complete guide to Maryland veteran tax benefits: full property tax exemption for 100% disabled veterans, partial military retirement income exclusion, and county-specific benefits.",
     "keywords": "Maryland veteran benefits, Maryland property tax exemption veterans, Maryland veteran income tax, Maryland disabled veteran benefits",
     "excerpt": "",
@@ -1585,9 +2392,85 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "me-veteran-healthcare-education-jobs",
+    "title": "Maine Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-02-24",
+    "description": "Complete directory of Maine VA medical centers, education programs, veteran employment resources, and support services across the Pine Tree State.",
+    "keywords": "Maine VA hospital, Maine veteran education, Maine veteran jobs, Maine GI Bill schools",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "me-veteran-tax-benefits-2025",
+    "title": "Maine Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-02-24",
+    "description": "Complete guide to Maine veteran tax benefits: property tax exemptions up to $50K, full military retirement income tax exemption, and financial benefits for disabled veterans.",
+    "keywords": "Maine veteran benefits, Maine property tax exemption veterans, Maine veteran income tax, Maine disabled veteran benefits",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "licensure-portability-military-spouse-guide",
+    "title": "Licensure Portability for Military Spouses by State: Complete Guide",
+    "date": "2026-02-23",
+    "description": "State-by-state guide to professional license portability for military spouses. Teaching, nursing, counseling, and other licensed professions - how to transfer your credentials when you PCS.",
+    "keywords": "military spouse license transfer, professional license portability, state licensing military spouse, license reciprocity military, PCS license transfer",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "linkedin-profile-military-spouse-guide",
+    "title": "LinkedIn Profile for Military Spouses: Complete Guide with Examples",
+    "date": "2026-02-23",
+    "description": "Optimize your LinkedIn profile as a military spouse. Address employment gaps, highlight transferable skills, and attract recruiters with these proven strategies and examples.",
+    "keywords": "LinkedIn military spouse, military spouse profile, LinkedIn employment gaps, military spouse networking, LinkedIn optimization spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "lockheed-martin-careers-veterans-guide",
+    "title": "Lockheed Martin Careers for Veterans: Complete Guide",
+    "date": "2026-02-23",
+    "description": "Comprehensive guide to Lockheed Martin careers for veterans. Learn about engineering, technical, and program management positions, veteran hiring programs, clearance requirements, and how to land a job at the world's largest defense contractor.",
+    "keywords": "Lockheed Martin careers veterans, Lockheed Martin jobs, defense contractor careers, F-35 careers, aerospace engineering veterans, Lockheed Martin veteran hiring",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "ma-veteran-healthcare-education-jobs",
+    "title": "Massachusetts Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-02-23",
+    "description": "Complete directory of Massachusetts VA medical centers, education programs, veteran employment resources, and support services across the state.",
+    "keywords": "Massachusetts VA hospital, Massachusetts veteran education, Massachusetts veteran jobs, Massachusetts GI Bill schools",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "ma-veteran-tax-benefits-2025",
+    "title": "Massachusetts Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-02-23",
+    "description": "Complete guide to Massachusetts veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
+    "keywords": "Massachusetts veteran benefits, Massachusetts property tax exemption veterans, Massachusetts veteran income tax, Massachusetts disabled veteran benefits",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "leidos-careers-veterans-guide",
+    "title": "Leidos Careers for Veterans: Complete Guide",
+    "date": "2026-02-22",
+    "description": "Comprehensive guide to Leidos careers for veterans. Learn about defense, intelligence, health IT, and civil engineering positions, veteran hiring programs, clearance requirements, and how to land jobs at this major contractor.",
+    "keywords": "Leidos careers veterans, Leidos jobs, defense contractor careers, health IT jobs, Leidos veteran hiring, intelligence careers veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "kentucky-vs-indiana-veterans-guide",
     "title": "Kentucky vs Indiana Veterans Guide: Comparison 2025",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Compare Kentucky and Indiana for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and Appalachian/Midwest opportunities.",
     "keywords": "",
     "excerpt": "",
@@ -1596,7 +2479,7 @@ const blogPosts = [
   {
     "slug": "knee-pain-secondary-to-back-injury-claims",
     "title": "Knee Pain Secondary to Back Injury: Complete Filing and Nexus Guide",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Expert guide to filing knee pain as secondary to back injury, compensation increase calculations, nexus requirements, and proven filing strategies.",
     "keywords": "",
     "excerpt": "",
@@ -1605,7 +2488,7 @@ const blogPosts = [
   {
     "slug": "ks-veteran-healthcare-education-jobs",
     "title": "Kansas Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Complete directory of Kansas VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Kansas VA hospital, Kansas veteran education, Kansas veteran jobs, Kansas GI Bill schools",
     "excerpt": "",
@@ -1615,7 +2498,7 @@ const blogPosts = [
   {
     "slug": "ks-veteran-tax-benefits-2025",
     "title": "Kansas Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Complete guide to Kansas veteran tax benefits: property tax relief, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
     "keywords": "Kansas veteran benefits, Kansas property tax exemption veterans, Kansas veteran income tax, Kansas disabled veteran benefits",
     "excerpt": "",
@@ -1623,9 +2506,18 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "ksas-questionnaires-scoring-guide",
+    "title": "KSAs and Questionnaires: How to Score High on Federal Applications",
+    "date": "2026-02-19",
+    "description": "Master federal job questionnaires and KSA statements. Learn how to rate yourself accurately, support claims with evidence, and avoid disqualification pitfalls.",
+    "keywords": "federal job questionnaire, KSA statements, federal application scoring, USAJOBS questionnaire, how to answer federal job questions, self-assessment federal jobs",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "ky-veteran-healthcare-education-jobs",
     "title": "Kentucky Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Complete directory of Kentucky VA medical centers, education programs, veteran employment resources, and support services across the Commonwealth.",
     "keywords": "Kentucky VA hospital, Kentucky veteran education, Kentucky veteran jobs, Kentucky GI Bill schools",
     "excerpt": "",
@@ -1635,7 +2527,7 @@ const blogPosts = [
   {
     "slug": "ky-veteran-tax-benefits-2025",
     "title": "Kentucky Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Complete guide to Kentucky veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
     "keywords": "Kentucky veteran benefits, Kentucky property tax exemption veterans, Kentucky veteran income tax, Kentucky disabled veteran benefits",
     "excerpt": "",
@@ -1643,9 +2535,18 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "l3harris-careers-veterans-guide",
+    "title": "L3Harris Careers for Veterans: Complete Guide",
+    "date": "2026-02-19",
+    "description": "Comprehensive guide to L3Harris careers for veterans. Learn about communications, electronic warfare, ISR systems positions, veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor.",
+    "keywords": "L3Harris careers veterans, L3Harris jobs, communications careers, electronic warfare careers, ISR systems jobs, defense contractor veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "la-veteran-healthcare-education-jobs",
     "title": "Louisiana Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Complete directory of Louisiana VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Louisiana VA hospital, Louisiana veteran education, Louisiana veteran jobs, Louisiana GI Bill schools",
     "excerpt": "",
@@ -1655,7 +2556,7 @@ const blogPosts = [
   {
     "slug": "la-veteran-tax-benefits-2025",
     "title": "Louisiana Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-14",
+    "date": "2026-02-19",
     "description": "Complete guide to Louisiana veteran tax benefits: property tax exemption for disabled veterans, income tax treatment, financial benefits, and money-saving strategies.",
     "keywords": "Louisiana veteran benefits, Louisiana property tax exemption veterans, Louisiana veteran income tax, Louisiana disabled veteran benefits",
     "excerpt": "",
@@ -1663,29 +2564,9 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "id-veteran-healthcare-education-jobs",
-    "title": "Idaho Veterans: VA Healthcare, University Programs & Military Employment 2025",
-    "date": "2026-02-13",
-    "description": "Complete guide to Idaho VA facilities, education benefits at Boise State and University of Idaho, veteran employment at Mountain Home AFB and federal agencies, and support services across the state.",
-    "keywords": "Idaho VA hospital, Idaho veteran education, Idaho veteran jobs, Boise State veterans, Mountain Home Air Force Base employment",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "id-veteran-tax-benefits-2025",
-    "title": "Idaho Veteran Benefits 2025: Property Tax Reduction, Income Tax Exemption & Affordable Living",
-    "date": "2026-02-13",
-    "description": "Complete guide to Idaho veteran tax benefits: 100% exempt military retirement income, up to $1,500 property tax reduction for disabled veterans, and the reality of affordable living in one of America's fastest-growing states.",
-    "keywords": "Idaho veteran benefits, Idaho property tax exemption veterans, Idaho veteran income tax, Idaho disabled veteran benefits, Idaho military retirement tax",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
     "slug": "idaho-vs-montana-veterans-comparison",
     "title": "Idaho vs Montana Veterans Comparison: Complete Guide 2025",
-    "date": "2026-02-13",
+    "date": "2026-02-18",
     "description": "Compare Idaho and Montana for military retirees. Analyze military retirement tax, cost of living, outdoor recreation, and Northern Rockies opportunities.",
     "keywords": "",
     "excerpt": "",
@@ -1694,7 +2575,7 @@ const blogPosts = [
   {
     "slug": "il-veteran-healthcare-education-jobs",
     "title": "Illinois Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-13",
+    "date": "2026-02-18",
     "description": "Complete directory of Illinois VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Illinois VA hospital, Illinois veteran education, Illinois veteran jobs, Illinois GI Bill schools",
     "excerpt": "",
@@ -1704,7 +2585,7 @@ const blogPosts = [
   {
     "slug": "il-veteran-tax-benefits-2025",
     "title": "Illinois Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-13",
+    "date": "2026-02-18",
     "description": "Complete guide to Illinois veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
     "keywords": "Illinois veteran benefits, Illinois property tax exemption veterans, Illinois veteran income tax, Illinois disabled veteran benefits",
     "excerpt": "",
@@ -1714,7 +2595,7 @@ const blogPosts = [
   {
     "slug": "illinois-vs-wisconsin-veterans-guide",
     "title": "Illinois vs Wisconsin Veterans Guide: Comparison 2025",
-    "date": "2026-02-13",
+    "date": "2026-02-18",
     "description": "Compare Illinois and Wisconsin for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and Midwest employment opportunities.",
     "keywords": "",
     "excerpt": "",
@@ -1723,7 +2604,7 @@ const blogPosts = [
   {
     "slug": "in-veteran-healthcare-education-jobs",
     "title": "Indiana Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-13",
+    "date": "2026-02-18",
     "description": "Complete directory of Indiana VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Indiana VA hospital, Indiana veteran education, Indiana veteran jobs, Indiana GI Bill schools",
     "excerpt": "",
@@ -1733,7 +2614,7 @@ const blogPosts = [
   {
     "slug": "in-veteran-tax-benefits-2025",
     "title": "Indiana Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-13",
+    "date": "2026-02-18",
     "description": "Complete guide to Indiana veteran tax benefits: property tax deductions, income tax exemptions, financial benefits, and money-saving strategies for disabled veterans.",
     "keywords": "Indiana veteran benefits, Indiana property tax exemption veterans, Indiana veteran income tax, Indiana disabled veteran benefits",
     "excerpt": "",
@@ -1743,44 +2624,43 @@ const blogPosts = [
   {
     "slug": "increase-va-disability-rating-guide",
     "title": "How to Increase Your VA Disability Rating in 2025: Secondary Conditions Strategy",
-    "date": "2026-02-13",
+    "date": "2026-02-18",
     "description": "The difference between 70% and 100% VA disability is $1,000-$2,000/month. Learn how secondary conditions are your fastest path to increasing your rating.",
     "keywords": "increase VA disability rating, VA rating increase, secondary conditions VA, 100% VA disability, increase VA rating, VA disability secondary conditions",
     "excerpt": "",
     "category": "VA Disability"
   },
   {
-    "slug": "ga-veteran-tax-benefits-2025",
-    "title": "Georgia Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-12",
-    "description": "Complete guide to Georgia veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
-    "keywords": "Georgia veteran benefits, Georgia property tax exemption veterans, Georgia veteran income tax, Georgia disabled veteran benefits",
+    "slug": "kbr-careers-veterans-guide",
+    "title": "KBR Careers for Veterans: Complete Guide",
+    "date": "2026-02-18",
+    "description": "Comprehensive guide to KBR careers for veterans. Learn about engineering, government services, international operations positions, veteran hiring programs, and how to land jobs at this global services company.",
+    "keywords": "KBR careers veterans, KBR jobs, defense contractor careers, engineering careers veterans, international contractor jobs, KBR veteran hiring",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "federal-employment"
   },
   {
-    "slug": "georgia-vs-tennessee-veterans-guide",
-    "title": "Georgia vs Tennessee Veterans Guide: Complete Comparison 2025",
-    "date": "2026-02-12",
-    "description": "Compare Georgia and Tennessee for military retirees. Analyze military retirement tax benefits, cost of living, VA healthcare, and job opportunities.",
-    "keywords": "",
+    "slug": "keep-job-through-pcs-guide",
+    "title": "How to Keep Your Job Through a PCS: Complete Guide",
+    "date": "2026-02-18",
+    "description": "Strategies and scripts for negotiating with your employer when facing PCS orders. How to transition to remote work, transfer, or maintain your position through a military move.",
+    "keywords": "keep job PCS, military spouse job relocation, remote work PCS, negotiate remote military, job through military move",
     "excerpt": "",
-    "category": "State Comparisons"
+    "category": "military-spouse"
   },
   {
-    "slug": "gerd-secondary-to-ptsd-medication-nexus",
-    "title": "GERD Secondary to PTSD: Complete Nexus and Medication Strategy Guide",
-    "date": "2026-02-12",
-    "description": "Expert guide to filing GERD as secondary to PTSD, medication nexus strategies, evidence requirements, and compensation impact calculations.",
-    "keywords": "",
+    "slug": "gsa-schedule-veteran-business-guide",
+    "title": "GSA Schedule Contracts for Veteran Businesses: Complete Guide",
+    "date": "2026-02-17",
+    "description": "Comprehensive guide to GSA Schedule contracts for veteran-owned businesses. Learn what GSA Schedules are, how to get one, benefits for SDVOSB/VOSB, requirements, and how to succeed with your GSA contract.",
+    "keywords": "GSA Schedule veterans, GSA contract veteran business, Multiple Award Schedule, SDVOSB GSA, government contracts veterans, GSA Schedule requirements",
     "excerpt": "",
-    "category": "Secondary Conditions"
+    "category": "federal-employment"
   },
   {
     "slug": "hi-veteran-healthcare-education-jobs",
     "title": "Hawaii Veterans: VA Healthcare, University Programs & Military Employment 2025",
-    "date": "2026-02-12",
+    "date": "2026-02-17",
     "description": "Complete guide to Hawaii VA facilities, education benefits at University of Hawaii, veteran employment at JBPHH and military bases, and support services across the islands.",
     "keywords": "Hawaii VA hospital, Hawaii veteran education, Hawaii veteran jobs, University of Hawaii veterans, Hawaii military bases employment",
     "excerpt": "",
@@ -1790,7 +2670,7 @@ const blogPosts = [
   {
     "slug": "hi-veteran-tax-benefits-2025",
     "title": "Hawaii Veteran Benefits 2025: Property Tax Exemption, Income Tax & Financial Reality",
-    "date": "2026-02-12",
+    "date": "2026-02-17",
     "description": "Complete guide to Hawaii veteran tax benefits: 100% exempt military retirement income, full property tax exemption for disabled veterans, and the brutal reality of living in America's most expensive state.",
     "keywords": "Hawaii veteran benefits, Hawaii property tax exemption veterans, Hawaii veteran income tax, Hawaii disabled veteran benefits, Hawaii military retirement tax",
     "excerpt": "",
@@ -1798,9 +2678,18 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "home-bakery-military-spouse-guide",
+    "title": "Home-Based Bakery for Military Spouses: Base Regulations Guide",
+    "date": "2026-02-17",
+    "description": "Start a home bakery business as a military spouse. Navigate cottage food laws, base housing rules, build local clientele, and create income through baked goods.",
+    "keywords": "military spouse bakery, home baking business military, cottage food military spouse, baking from base housing, military spouse food business",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "hypertension-secondary-to-sleep-apnea-claims",
     "title": "Hypertension Secondary to Sleep Apnea: Complete VA Claims Filing Guide",
-    "date": "2026-02-12",
+    "date": "2026-02-17",
     "description": "Expert guide to filing hypertension as secondary to sleep apnea, pathophysiology nexus, evidence requirements, and compensation impact calculations.",
     "keywords": "",
     "excerpt": "",
@@ -1809,7 +2698,7 @@ const blogPosts = [
   {
     "slug": "ia-veteran-healthcare-education-jobs",
     "title": "Iowa Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-12",
+    "date": "2026-02-17",
     "description": "Complete directory of Iowa VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Iowa VA hospital, Iowa veteran education, Iowa veteran jobs, Iowa GI Bill schools",
     "excerpt": "",
@@ -1819,7 +2708,7 @@ const blogPosts = [
   {
     "slug": "ia-veteran-tax-benefits-2025",
     "title": "Iowa Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-12",
+    "date": "2026-02-17",
     "description": "Complete guide to Iowa veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
     "keywords": "Iowa veteran benefits, Iowa property tax exemption veterans, Iowa veteran income tax, Iowa disabled veteran benefits",
     "excerpt": "",
@@ -1827,27 +2716,140 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "federal-resume-2-page-limit",
-    "title": "Federal Resume 2-Page Limit: What Changed in September 2025 and How to Adapt Now",
-    "date": "2026-02-11",
-    "description": "Complete guide for E5-E7 veterans: how to adapt your federal resume to the 2-page requirement that took effect September 27, 2025",
-    "keywords": "federal resume 2 page limit, USAJOBS resume requirement 2025, veteran federal resume, military to federal civilian, GS resume writing, OPM merit hiring plan",
-    "excerpt": "If you're walking off active duty in the next 12-24 months and planning to hit USAJOBS, this matters:\r\n\r\n- As of September 27, 2025, USAJOBS now only accepts 2-page resumes\r\n- Resumes longer than 2 pa...",
-    "category": "Career Transition"
+    "slug": "id-veteran-healthcare-education-jobs",
+    "title": "Idaho Veterans: VA Healthcare, University Programs & Military Employment 2025",
+    "date": "2026-02-17",
+    "description": "Complete guide to Idaho VA facilities, education benefits at Boise State and University of Idaho, veteran employment at Mountain Home AFB and federal agencies, and support services across the state.",
+    "keywords": "Idaho VA hospital, Idaho veteran education, Idaho veteran jobs, Boise State veterans, Mountain Home Air Force Base employment",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
   },
   {
-    "slug": "federal-resume-veterans-guide",
-    "title": "USAJOBS Federal Resume for Veterans: The Format That Actually Gets Interviews",
-    "date": "2026-02-11",
-    "description": "47% of transitioning troops target federal jobs, but USAJOBS resumes are weird (5 pages, extensive detail). Here's the exact format, keyword strategy, and veteran preference tactics that work.",
-    "keywords": "federal resume for veterans, USAJOBS resume, veteran federal resume, how to write a federal resume, USAJOBS application tips, veteran preference, federal resume format",
+    "slug": "id-veteran-tax-benefits-2025",
+    "title": "Idaho Veteran Benefits 2025: Property Tax Reduction, Income Tax Exemption & Affordable Living",
+    "date": "2026-02-17",
+    "description": "Complete guide to Idaho veteran tax benefits: 100% exempt military retirement income, up to $1,500 property tax reduction for disabled veterans, and the reality of affordable living in one of America's fastest-growing states.",
+    "keywords": "Idaho veteran benefits, Idaho property tax exemption veterans, Idaho veteran income tax, Idaho disabled veteran benefits, Idaho military retirement tax",
     "excerpt": "",
-    "category": "Guides"
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "freelance-writing-military-spouse-guide",
+    "title": "Freelance Writing for Military Spouses: Getting First Clients",
+    "date": "2026-02-16",
+    "description": "Launch a freelance writing career as a military spouse. Find your first clients, set rates, build a portfolio, and create location-independent income from any duty station.",
+    "keywords": "military spouse freelance writer, freelance writing career, work from home writer military, content writing military spouse, writing clients military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "ga-veteran-healthcare-education-jobs",
+    "title": "Georgia Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-02-16",
+    "description": "Complete directory of Georgia VA medical centers, education programs, veteran employment resources, and support services across the state.",
+    "keywords": "Georgia VA hospital, Georgia veteran education, Georgia veteran jobs, Georgia GI Bill schools",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "ga-veteran-tax-benefits-2025",
+    "title": "Georgia Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-02-16",
+    "description": "Complete guide to Georgia veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
+    "keywords": "Georgia veteran benefits, Georgia property tax exemption veterans, Georgia veteran income tax, Georgia disabled veteran benefits",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "general-dynamics-careers-veterans-guide",
+    "title": "General Dynamics Careers for Veterans: Complete Guide",
+    "date": "2026-02-16",
+    "description": "Comprehensive guide to General Dynamics careers for veterans. Learn about shipbuilding, land systems, IT services (GDIT), veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor.",
+    "keywords": "General Dynamics careers veterans, GDIT jobs, General Dynamics shipbuilding, Abrams tank careers, defense contractor jobs, submarine careers veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "georgia-vs-tennessee-veterans-guide",
+    "title": "Georgia vs Tennessee Veterans Guide: Complete Comparison 2025",
+    "date": "2026-02-16",
+    "description": "Compare Georgia and Tennessee for military retirees. Analyze military retirement tax benefits, cost of living, VA healthcare, and job opportunities.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "State Comparisons"
+  },
+  {
+    "slug": "gerd-secondary-to-ptsd-medication-nexus",
+    "title": "GERD Secondary to PTSD: Complete Nexus and Medication Strategy Guide",
+    "date": "2026-02-16",
+    "description": "Expert guide to filing GERD as secondary to PTSD, medication nexus strategies, evidence requirements, and compensation impact calculations.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Secondary Conditions"
+  },
+  {
+    "slug": "gi-bill-benefits-spouse-transfer-guide",
+    "title": "Using Spouse GI Bill Benefits: Chapter 35 & Transfer Guide",
+    "date": "2026-02-16",
+    "description": "Complete guide to GI Bill education benefits for military spouses. Post-9/11 GI Bill transfer, Chapter 35 DEA benefits, eligibility, and maximizing your education funding.",
+    "keywords": "military spouse GI Bill, Post-9/11 GI Bill transfer, Chapter 35 DEA, spouse education benefits, GI Bill spouse transfer",
+    "excerpt": "",
+    "category": "military-spouse",
+    "branch": "Navy"
+  },
+  {
+    "slug": "government-contracting-101-veterans-guide",
+    "title": "Government Contracting 101 for Veterans: Complete Guide",
+    "date": "2026-02-16",
+    "description": "Comprehensive introduction to government contracting careers for veterans. Learn how GovCon works, types of contractors, clearance requirements, and why military experience is highly valued in defense contracting.",
+    "keywords": "government contracting veterans, GovCon careers, defense contractors, federal contractors hiring veterans, government contractor jobs, cleared jobs veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "graphic-designer-military-spouse-guide",
+    "title": "Military Spouse to Graphic Designer: Portfolio Building Guide",
+    "date": "2026-02-16",
+    "description": "Build a graphic design career as a military spouse. Learn design fundamentals, create a portfolio that wins clients, find remote work, and develop skills that transfer to every duty station.",
+    "keywords": "military spouse graphic design, remote designer military spouse, portfolio military spouse, freelance design career, work from home designer",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "federal-resume-vs-civilian-resume-guide",
+    "title": "Federal Resume vs Civilian Resume: Key Differences Veterans Must Know",
+    "date": "2026-02-15",
+    "description": "Learn the critical differences between federal and civilian resumes. This guide shows veterans exactly how to transform their experience into a federal resume that gets referred.",
+    "keywords": "federal resume, federal resume vs civilian resume, USAJOBS resume, federal resume format, federal resume for veterans, federal resume example, government resume",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "fema-careers-veterans-guide",
+    "title": "FEMA Careers for Veterans: Complete Guide to Emergency Management",
+    "date": "2026-02-15",
+    "description": "Comprehensive guide to FEMA careers for veterans. Learn about Emergency Management Specialist positions, disaster response, reservist programs, hiring process, and how military experience helps.",
+    "keywords": "FEMA careers veterans, FEMA jobs, emergency management careers, disaster response jobs, FEMA reservist, FEMA hiring, emergency management specialist",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "financial-planning-military-spouse-careers-guide",
+    "title": "Financial Planning for Military Spouse Careers",
+    "date": "2026-02-15",
+    "description": "Financial strategies for military spouses navigating career transitions, income gaps, and variable employment. Budgeting for PCS, emergency funds, and long-term planning.",
+    "keywords": "military spouse finances, financial planning military family, income gaps military spouse, budget PCS, career transition finances",
+    "excerpt": "",
+    "category": "military-spouse"
   },
   {
     "slug": "first-30-days-civilian-life-action-plan",
     "title": "First 30 Days of Civilian Life: Action Plan and Success Framework",
-    "date": "2026-02-11",
+    "date": "2026-02-15",
     "description": "Navigate your first month as a civilian. Establish routines, build relationships, perform well, and settle into civilian life.",
     "keywords": "",
     "excerpt": "",
@@ -1856,7 +2858,7 @@ const blogPosts = [
   {
     "slug": "first-90-days-job-search-strategy",
     "title": "First 90 Days of Job Search: Strategic Guide to Landing Offers",
-    "date": "2026-02-11",
+    "date": "2026-02-15",
     "description": "Master your job search in first 90 days after separation. Strategies, timelines, and proven tactics for landing civilian employment.",
     "keywords": "",
     "excerpt": "",
@@ -1865,7 +2867,7 @@ const blogPosts = [
   {
     "slug": "first-week-after-separation-guide",
     "title": "First Week After Separation: Complete Survivor Guide",
-    "date": "2026-02-11",
+    "date": "2026-02-15",
     "description": "Navigate your first week as a civilian. Handle first day success, manage emotions, establish routines, and start your new career strong.",
     "keywords": "",
     "excerpt": "",
@@ -1874,7 +2876,7 @@ const blogPosts = [
   {
     "slug": "first-year-out-military-complete-guide",
     "title": "First Year Out of Military: Complete Transition Guide for Veterans",
-    "date": "2026-02-11",
+    "date": "2026-02-15",
     "description": "Navigate your first year after military separation. Month-by-month guide covering career, finances, identity, and adjustment.",
     "keywords": "",
     "excerpt": "",
@@ -1883,7 +2885,7 @@ const blogPosts = [
   {
     "slug": "fl-veteran-healthcare-education-jobs",
     "title": "Florida Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-11",
+    "date": "2026-02-15",
     "description": "Complete directory of Florida's 7 VA medical centers, education programs, veteran employment resources, and support services across the Sunshine State.",
     "keywords": "Florida VA hospital, Florida veteran education, Florida veteran jobs, Florida GI Bill schools",
     "excerpt": "",
@@ -1893,7 +2895,7 @@ const blogPosts = [
   {
     "slug": "fl-veteran-tax-benefits-2025",
     "title": "Florida Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-11",
+    "date": "2026-02-15",
     "description": "Complete guide to Florida veteran tax benefits: NO state income tax, property tax exemptions for disabled veterans, and financial benefits that save thousands annually.",
     "keywords": "Florida veteran benefits, Florida property tax exemption veterans, Florida no income tax, Florida disabled veteran benefits",
     "excerpt": "",
@@ -1901,47 +2903,108 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "ga-veteran-healthcare-education-jobs",
-    "title": "Georgia Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-11",
-    "description": "Complete directory of Georgia VA medical centers, education programs, veteran employment resources, and support services across the state.",
-    "keywords": "Georgia VA hospital, Georgia veteran education, Georgia veteran jobs, Georgia GI Bill schools",
+    "slug": "free-career-training-military-spouse-guide",
+    "title": "Free Career Training for Military Spouses: All Programs Guide",
+    "date": "2026-02-15",
+    "description": "Complete list of free career training programs for military spouses. Scholarships, fellowships, employer-sponsored training, and resources that cost nothing but time.",
+    "keywords": "free training military spouse, military spouse scholarships, free career programs, no cost education military, spouse training programs",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "military-spouse"
   },
   {
-    "slug": "de-veteran-healthcare-education-jobs",
-    "title": "Delaware Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-09",
-    "description": "Complete directory of Delaware VA medical centers, education programs, veteran employment resources, and support services across the First State.",
-    "keywords": "Delaware VA hospital, Delaware veteran education, Delaware veteran jobs, Delaware GI Bill schools",
+    "slug": "fbi-careers-veterans-guide",
+    "title": "FBI Careers for Veterans: Complete Guide to Joining the Bureau",
+    "date": "2026-02-14",
+    "description": "Comprehensive guide to FBI careers for veterans. Learn about Special Agent positions, professional staff roles, hiring process, salary, requirements, and how military experience helps at the FBI.",
+    "keywords": "FBI careers veterans, FBI special agent veteran, FBI jobs, FBI hiring process, FBI requirements, FBI salary, join FBI military veteran",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "federal-hiring-process-timeline-guide",
+    "title": "Federal Hiring Process Timeline: What to Expect from Application to Start Date",
+    "date": "2026-02-14",
+    "description": "Understand the federal hiring timeline from USAJOBS application to your first day. Learn typical timeframes, status meanings, and how to navigate delays in government hiring.",
+    "keywords": "federal hiring timeline, how long federal hiring, USAJOBS application status, federal job process, government hiring process, federal onboarding timeline",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "federal-job-search-ppp-military-spouse-guide",
+    "title": "Federal Job Search for Military Spouses: PPP Hiring Guide",
+    "date": "2026-02-14",
+    "description": "Complete guide to finding federal jobs as a military spouse. USA Jobs, Priority Placement Program, GS pay scales, application strategies, and navigating the federal hiring system.",
+    "keywords": "federal jobs military spouse, USA Jobs military spouse, PPP hiring, federal employment spouse, government jobs military family",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "federal-pay-scales-gs-wg-ses-guide",
+    "title": "Understanding Federal Pay Scales: GS, WG, and SES Explained for Veterans",
+    "date": "2026-02-14",
+    "description": "Complete guide to federal pay scales including GS (General Schedule), WG (Wage Grade), and SES (Senior Executive Service). Learn how locality pay works and what you can expect to earn.",
+    "keywords": "federal pay scale, GS pay scale, WG wage grade, SES salary, federal salary, government pay grades, GS-11 salary, GS-12 salary, locality pay",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "federal-resume-2-page-limit",
+    "title": "Federal Resume 2-Page Limit: What Changed in September 2025 and How to Adapt Now",
+    "date": "2026-02-14",
+    "description": "Complete guide for E5-E7 veterans: how to adapt your federal resume to the 2-page requirement that took effect September 27, 2025",
+    "keywords": "federal resume 2 page limit, USAJOBS resume requirement 2025, veteran federal resume, military to federal civilian, GS resume writing, OPM merit hiring plan",
+    "excerpt": "If you're walking off active duty in the next 12-24 months and planning to hit USAJOBS, this matters:\r\n\r\n- As of September 27, 2025, USAJOBS now only accepts 2-page resumes\r\n- Resumes longer than 2 pa...",
+    "category": "Career Transition"
+  },
+  {
+    "slug": "federal-resume-veterans-guide",
+    "title": "USAJOBS Federal Resume for Veterans: The Format That Actually Gets Interviews",
+    "date": "2026-02-14",
+    "description": "47% of transitioning troops target federal jobs, but USAJOBS resumes are weird (5 pages, extensive detail). Here's the exact format, keyword strategy, and veteran preference tactics that work.",
+    "keywords": "federal resume for veterans, USAJOBS resume, veteran federal resume, how to write a federal resume, USAJOBS application tips, veteran preference, federal resume format",
     "excerpt": "",
     "category": "Guides"
   },
   {
-    "slug": "de-veteran-tax-benefits-2025",
-    "title": "Delaware Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-09",
-    "description": "Complete guide to Delaware veteran tax benefits: no sales tax, property tax exemptions for disabled veterans, military retirement tax treatment, and cost-saving strategies.",
-    "keywords": "Delaware veteran benefits, Delaware property tax exemption veterans, Delaware military retirement tax, Delaware disabled veteran benefits",
+    "slug": "explain-frequent-moves-interview-guide",
+    "title": "How to Explain Frequent Moves in Job Interviews: Military Spouse Guide",
+    "date": "2026-02-13",
+    "description": "Turn PCS moves from liability to asset in job interviews. Scripts, strategies, and responses that position military spouses as adaptable, committed professionals.",
+    "keywords": "military spouse interview, explain job gaps interview, frequent moves interview, PCS interview questions, military spouse job interview",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
+    "category": "military-spouse"
   },
   {
-    "slug": "depression-secondary-to-chronic-pain-guide",
-    "title": "Depression Secondary to Chronic Pain: Complete VA Claims Guide",
-    "date": "2026-02-09",
-    "description": "Expert guide to filing depression as secondary to chronic pain conditions, nexus strategies, evidence requirements, and compensation calculations.",
-    "keywords": "",
+    "slug": "faa-careers-veterans-guide",
+    "title": "FAA Careers for Veterans: Complete Guide to Federal Aviation Administration",
+    "date": "2026-02-13",
+    "description": "Comprehensive guide to FAA careers for veterans. Learn about Air Traffic Controller positions, aviation safety, technical operations, hiring process, salary, and how military aviation experience helps.",
+    "keywords": "FAA careers veterans, air traffic controller veteran, FAA jobs, aviation careers veterans, FAA hiring, ATC military, FAA technical operations",
     "excerpt": "",
-    "category": "Secondary Conditions"
+    "category": "federal-employment"
+  },
+  {
+    "slug": "direct-hire-authority-veterans-guide",
+    "title": "Direct Hire Authority for Veterans: Fast-Track to Federal Employment",
+    "date": "2026-02-12",
+    "description": "Learn how Direct Hire Authority accelerates federal hiring for veterans. Understand which positions use DHA, how it bypasses normal processes, and how to find DHA opportunities.",
+    "keywords": "direct hire authority veterans, DHA federal jobs, fast track federal hiring, federal direct hire, USAJOBS direct hire, expedited federal hiring veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "doe-careers-veterans-guide",
+    "title": "Department of Energy Careers for Veterans: Complete Guide",
+    "date": "2026-02-12",
+    "description": "Comprehensive guide to DOE careers for veterans. Learn about National Labs, NNSA, energy programs, nuclear security positions, hiring process, and how military technical experience helps at DOE.",
+    "keywords": "DOE careers veterans, Department of Energy jobs, national laboratory careers, NNSA careers, nuclear security jobs, energy careers veterans, DOE hiring",
+    "excerpt": "",
+    "category": "federal-employment"
   },
   {
     "slug": "e7-resume-guide",
     "title": "E7/Chief to Six-Figure Civilian: The Senior NCO Resume Guide That Gets Interviews",
-    "date": "2026-02-09",
+    "date": "2026-02-12",
     "description": "E7s aren't middle management—you ran divisions. Learn how to translate 10+ years of leadership into $75K-$150K civilian roles that recognize your value.",
     "keywords": "E7 resume, chief petty officer resume, senior NCO resume, military to civilian resume",
     "excerpt": "",
@@ -1950,7 +3013,7 @@ const blogPosts = [
   {
     "slug": "e8-resume-guide",
     "title": "E8/Senior Chief Resume: From Mess Deck to Boardroom",
-    "date": "2026-02-09",
+    "date": "2026-02-12",
     "description": "E8s manage 50+ people and multi-million dollar operations. Learn how to position yourself for executive-level civilian roles worth $90K-$175K.",
     "keywords": "E8 resume, senior chief resume, first sergeant resume, military executive resume",
     "excerpt": "",
@@ -1959,25 +3022,116 @@ const blogPosts = [
   {
     "slug": "e9-resume-guide",
     "title": "E9/Master Chief Resume: Commanding Your Civilian Career Transition",
-    "date": "2026-02-09",
+    "date": "2026-02-12",
     "description": "You're in the top 1% of enlisted leadership. Learn how to position yourself for C-suite equivalent roles, consulting, and executive positions worth $120K-$250K+.",
     "keywords": "E9 resume, master chief resume, command master chief resume, senior enlisted advisor resume",
     "excerpt": "",
     "category": "Guides"
   },
   {
+    "slug": "ecommerce-dropshipping-fba-military-spouse-guide",
+    "title": "E-commerce for Military Spouses: Dropshipping vs FBA Guide",
+    "date": "2026-02-12",
+    "description": "Compare dropshipping and Amazon FBA for military spouses. Pros, cons, startup costs, PCS considerations, and realistic income expectations for each e-commerce model.",
+    "keywords": "military spouse e-commerce, dropshipping military spouse, Amazon FBA military spouse, online store PCS, e-commerce business portable",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "erectile-dysfunction-secondary-to-ptsd-diabetes",
     "title": "Erectile Dysfunction Secondary to PTSD or Diabetes: Complete VA Claims Guide",
-    "date": "2026-02-09",
+    "date": "2026-02-12",
     "description": "Expert guide to filing erectile dysfunction as secondary to PTSD or diabetes, nexus strategies, evidence requirements, and compensation calculations.",
     "keywords": "",
     "excerpt": "",
     "category": "Secondary Conditions"
   },
   {
+    "slug": "etsy-shop-military-spouse-guide",
+    "title": "Etsy Shop Success for Military Spouses: Complete Guide",
+    "date": "2026-02-12",
+    "description": "Build a profitable Etsy shop as a military spouse. Best products for PCS life, managing inventory through moves, digital vs physical products, and growing a portable craft business.",
+    "keywords": "military spouse Etsy, Etsy shop military, handmade business military spouse, craft business PCS, digital products Etsy",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "de-veteran-healthcare-education-jobs",
+    "title": "Delaware Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-02-11",
+    "description": "Complete directory of Delaware VA medical centers, education programs, veteran employment resources, and support services across the First State.",
+    "keywords": "Delaware VA hospital, Delaware veteran education, Delaware veteran jobs, Delaware GI Bill schools",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "de-veteran-tax-benefits-2025",
+    "title": "Delaware Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-02-11",
+    "description": "Complete guide to Delaware veteran tax benefits: no sales tax, property tax exemptions for disabled veterans, military retirement tax treatment, and cost-saving strategies.",
+    "keywords": "Delaware veteran benefits, Delaware property tax exemption veterans, Delaware military retirement tax, Delaware disabled veteran benefits",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "dea-careers-veterans-guide",
+    "title": "DEA Careers for Veterans: Complete Guide to Drug Enforcement Administration",
+    "date": "2026-02-11",
+    "description": "Comprehensive guide to DEA careers for veterans. Learn about Special Agent positions, Diversion Investigators, Intelligence, hiring process, salary, and how military experience helps at DEA.",
+    "keywords": "DEA careers veterans, DEA special agent veteran, DEA jobs, DEA hiring process, DEA requirements, DEA salary, drug enforcement administration careers",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "dealing-with-underemployment-military-spouse-guide",
+    "title": "Dealing with Underemployment as a Military Spouse",
+    "date": "2026-02-11",
+    "description": "Strategies for military spouses working below their qualifications. How to cope, advance from current position, and build toward career you deserve despite circumstances.",
+    "keywords": "underemployment military spouse, overqualified military spouse, career below potential, military spouse job frustration, career advancement military",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "depression-secondary-to-chronic-pain-guide",
+    "title": "Depression Secondary to Chronic Pain: Complete VA Claims Guide",
+    "date": "2026-02-11",
+    "description": "Expert guide to filing depression as secondary to chronic pain conditions, nexus strategies, evidence requirements, and compensation calculations.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Secondary Conditions"
+  },
+  {
+    "slug": "dhs-careers-veterans-guide",
+    "title": "Department of Homeland Security Careers for Veterans: Complete Guide",
+    "date": "2026-02-11",
+    "description": "Comprehensive guide to DHS careers for veterans. Learn about CBP, TSA, ICE, Secret Service, FEMA, Coast Guard civilian, and more. Salary ranges, hiring programs, and application tips.",
+    "keywords": "DHS careers veterans, Department of Homeland Security jobs, CBP careers, TSA careers, ICE jobs, Secret Service careers, FEMA careers, homeland security jobs veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "consulting-business-military-spouse-guide",
+    "title": "Consulting Business for Military Spouses: Building Expertise-Based Income",
+    "date": "2026-02-06",
+    "description": "Launch a consulting business as a military spouse. Leverage your expertise, find clients remotely, price your services, and build a location-independent practice.",
+    "keywords": "military spouse consultant, consulting business military, freelance consultant military spouse, remote consulting career, expertise business portable",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "continuing-education-pcs-online-guide",
+    "title": "Continuing Education While PCSing: Online Options Guide",
+    "date": "2026-02-06",
+    "description": "How to maintain and advance your education through PCS moves. Online programs, interrupted studies strategies, credit transfer, and completing degrees despite military moves.",
+    "keywords": "continuing education PCS, online education military spouse, degree during PCS, online learning military move, education continuity military",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "ct-veteran-healthcare-education-jobs",
     "title": "Connecticut Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-04",
+    "date": "2026-02-06",
     "description": "Complete directory of Connecticut VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Connecticut VA hospital, Connecticut veteran education, Connecticut veteran jobs, Connecticut GI Bill schools",
     "excerpt": "",
@@ -1987,7 +3141,7 @@ const blogPosts = [
   {
     "slug": "ct-veteran-tax-benefits-2025",
     "title": "Connecticut Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-04",
+    "date": "2026-02-06",
     "description": "Complete guide to Connecticut veteran tax benefits: 100% military retirement tax exemption, new property tax breaks for disabled veterans, and cost-saving strategies.",
     "keywords": "Connecticut veteran benefits, Connecticut property tax exemption veterans, Connecticut military retirement tax, Connecticut disabled veteran benefits",
     "excerpt": "",
@@ -1995,9 +3149,18 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "claiming-social-isolation-secondary-to-ptsd",
+    "title": "VA Disability Claim for Social Isolation Secondary to PTSD",
+    "date": "2026-02-03",
+    "description": "Guide to claiming social withdrawal and isolation as secondary disability to service-connected PTSD. Evidence and functional impairment documentation.",
+    "keywords": "social isolation PTSD, avoidance behavior VA disability, withdrawal secondary condition",
+    "excerpt": "",
+    "category": "VA Claims"
+  },
+  {
     "slug": "claiming-substance-abuse-secondary-to-ptsd",
     "title": "VA Disability Claim for Substance Abuse Disorder Secondary to PTSD",
-    "date": "2026-02-01",
+    "date": "2026-02-03",
     "description": "Guide to claiming drug abuse and substance use disorder secondary to PTSD. Nexus letters, medical evidence, and VA ratings.",
     "keywords": "substance abuse secondary to PTSD, drug abuse VA claim, opioid addiction PTSD, addiction disorder",
     "excerpt": "",
@@ -2006,7 +3169,7 @@ const blogPosts = [
   {
     "slug": "claiming-weight-gain-obesity-secondary-to-ptsd",
     "title": "VA Disability Claim for Weight Gain and Obesity Secondary to PTSD",
-    "date": "2026-02-01",
+    "date": "2026-02-03",
     "description": "Guide to claiming weight gain/obesity as secondary to PTSD. Evidence requirements, nexus letters, rating percentages, and filing process.",
     "keywords": "obesity secondary to PTSD, weight gain VA disability, metabolic syndrome, nexus letter obesity",
     "excerpt": "",
@@ -2015,7 +3178,7 @@ const blogPosts = [
   {
     "slug": "co-veteran-healthcare-education-jobs",
     "title": "Colorado Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-02-01",
+    "date": "2026-02-03",
     "description": "Complete directory of Colorado VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "Colorado VA hospital, Colorado veteran education, Colorado veteran jobs, Colorado GI Bill schools",
     "excerpt": "",
@@ -2025,7 +3188,7 @@ const blogPosts = [
   {
     "slug": "co-veteran-tax-benefits-2025",
     "title": "Colorado Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-02-01",
+    "date": "2026-02-03",
     "description": "Complete guide to Colorado veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
     "keywords": "Colorado veteran benefits, Colorado property tax exemption veterans, Colorado veteran income tax, Colorado disabled veteran benefits",
     "excerpt": "",
@@ -2033,9 +3196,18 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "coaching-business-military-spouse-guide",
+    "title": "Coaching Business for Military Spouses: Building a Remote Practice",
+    "date": "2026-02-03",
+    "description": "Launch a coaching business as a military spouse. Life coaching, career coaching, wellness coaching certifications, finding clients, and building location-independent income.",
+    "keywords": "military spouse coach, life coaching military spouse, career coaching business, wellness coach military, remote coaching career",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "colorado-vs-utah-veterans-benefits-analysis",
     "title": "Colorado vs Utah Veterans Benefits: Comprehensive Analysis 2025",
-    "date": "2026-02-01",
+    "date": "2026-02-03",
     "description": "Compare Colorado and Utah for military retirees. Analyze tax treatment, cost of living, outdoor recreation, and job opportunities for veterans.",
     "keywords": "",
     "excerpt": "",
@@ -2044,16 +3216,43 @@ const blogPosts = [
   {
     "slug": "common-reasons-va-claims-denied-how-fix",
     "title": "Common Reasons VA Claims Are Denied and How to Fix Them",
-    "date": "2026-02-01",
+    "date": "2026-02-03",
     "description": "Most common reasons VA disability claims denied. Specific fixes for each denial reason. Appeal strategies and evidence to overcome denials.",
     "keywords": "VA claim denied reasons, why disability claim denied, how to fix denied claim, appeal denied VA claim",
     "excerpt": "",
     "category": "VA Appeals"
   },
   {
+    "slug": "childcare-solutions-working-military-spouse-guide",
+    "title": "Childcare Solutions for Working Military Spouses: Complete Guide",
+    "date": "2026-02-02",
+    "description": "Navigate childcare challenges as a working military spouse. CDC, FCC, fee assistance programs, backup care options, and strategies for deployments and PCS moves.",
+    "keywords": "military childcare, CDC military, military spouse childcare, child care fee assistance military, working parent military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "choosing-career-field-military-spouse-guide",
+    "title": "How to Choose a Career Field as a Military Spouse: Complete Guide",
+    "date": "2026-02-02",
+    "description": "Strategic guide to choosing the right career as a military spouse. Portability factors, self-assessment frameworks, best career fields for military life, and avoiding common mistakes.",
+    "keywords": "military spouse career choice, choosing career military, career field military spouse, portable career selection, career planning military family",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "cia-careers-veterans-guide",
+    "title": "CIA Careers for Veterans: Complete Guide to Central Intelligence Agency",
+    "date": "2026-02-02",
+    "description": "Comprehensive guide to CIA careers for veterans. Learn about Operations Officers, Analysts, support positions, hiring process, salary, and how military experience helps at the Agency.",
+    "keywords": "CIA careers veterans, CIA jobs, CIA Operations Officer, CIA analyst veteran, intelligence careers, CIA hiring process, CIA requirements, Central Intelligence Agency jobs",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "claiming-alcohol-dependency-secondary-to-ptsd",
     "title": "Claiming Alcohol Dependency Secondary to PTSD: VA Disability Guide",
-    "date": "2026-01-31",
+    "date": "2026-02-02",
     "description": "Complete guide to filing VA disability claim for alcohol use disorder secondary to PTSD. Nexus letters, ratings, and approval strategies.",
     "keywords": "alcohol dependency secondary to PTSD, alcohol use disorder VA disability, nexus letter alcohol",
     "excerpt": "",
@@ -2062,7 +3261,7 @@ const blogPosts = [
   {
     "slug": "claiming-chronic-fatigue-secondary-to-ptsd",
     "title": "VA Disability Claim for Chronic Fatigue Syndrome Secondary to PTSD",
-    "date": "2026-01-31",
+    "date": "2026-02-02",
     "description": "Guide to claiming chronic fatigue and myalgic encephalomyelitis secondary to PTSD. Medical evidence, nexus letters, and VA ratings.",
     "keywords": "chronic fatigue secondary to PTSD, CFS VA disability, myalgic encephalomyelitis, fatigue ratings",
     "excerpt": "",
@@ -2071,7 +3270,7 @@ const blogPosts = [
   {
     "slug": "claiming-chronic-headaches-secondary-to-ptsd",
     "title": "VA Disability Claim for Chronic Headaches Secondary to PTSD: Complete Guide",
-    "date": "2026-01-31",
+    "date": "2026-02-02",
     "description": "How to file VA disability claim for migraines and tension headaches secondary to service-connected PTSD. Evidence, nexus letters, and ratings.",
     "keywords": "chronic headaches secondary to PTSD, migraine VA disability, tension headaches rating, nexus letter headaches",
     "excerpt": "",
@@ -2080,7 +3279,7 @@ const blogPosts = [
   {
     "slug": "claiming-hypertension-secondary-to-ptsd-stress",
     "title": "VA Disability Claim for Hypertension Secondary to PTSD: Complete Guide",
-    "date": "2026-01-31",
+    "date": "2026-02-02",
     "description": "How to file VA disability claim for high blood pressure secondary to service-connected PTSD. Evidence requirements, nexus letters, and ratings.",
     "keywords": "hypertension secondary to PTSD, high blood pressure VA disability, nexus letter hypertension, VA rating hypertension",
     "excerpt": "",
@@ -2089,7 +3288,7 @@ const blogPosts = [
   {
     "slug": "claiming-ibs-secondary-to-ptsd-guide",
     "title": "Claiming IBS as Secondary to PTSD: Complete VA Disability Guide",
-    "date": "2026-01-31",
+    "date": "2026-02-02",
     "description": "Learn how to file a successful VA disability claim for IBS secondary to PTSD with evidence requirements, nexus letters, and rating percentages.",
     "keywords": "IBS secondary to PTSD, VA disability claim, gastrointestinal condition, nexus letter, stress-related IBS",
     "excerpt": "",
@@ -2098,7 +3297,7 @@ const blogPosts = [
   {
     "slug": "claiming-insomnia-secondary-to-ptsd",
     "title": "VA Disability Claim for Insomnia Secondary to PTSD: Complete Guide",
-    "date": "2026-01-31",
+    "date": "2026-02-02",
     "description": "Step-by-step guide to claiming sleep disorder as secondary to service-connected PTSD. Includes evidence requirements, nexus letters, and VA ratings.",
     "keywords": "insomnia secondary to PTSD, sleep disorder VA claim, nexus letter sleep, VA rating insomnia",
     "excerpt": "",
@@ -2107,79 +3306,34 @@ const blogPosts = [
   {
     "slug": "claiming-memory-loss-cognitive-issues-secondary-ptsd",
     "title": "VA Disability Claim for Memory Loss and Cognitive Issues Secondary to PTSD",
-    "date": "2026-01-31",
+    "date": "2026-02-02",
     "description": "Complete guide to claiming cognitive impairment, memory loss, and brain fog secondary to service-connected PTSD. Evidence and nexus requirements.",
     "keywords": "memory loss secondary to PTSD, cognitive impairment VA disability, brain fog, neuropsychological testing",
     "excerpt": "",
     "category": "VA Claims"
   },
   {
-    "slug": "claiming-social-isolation-secondary-to-ptsd",
-    "title": "VA Disability Claim for Social Isolation Secondary to PTSD",
-    "date": "2026-01-31",
-    "description": "Guide to claiming social withdrawal and isolation as secondary disability to service-connected PTSD. Evidence and functional impairment documentation.",
-    "keywords": "social isolation PTSD, avoidance behavior VA disability, withdrawal secondary condition",
+    "slug": "cbp-careers-veterans-guide",
+    "title": "CBP Careers for Veterans: Complete Guide to Customs and Border Protection",
+    "date": "2026-02-01",
+    "description": "Comprehensive guide to CBP careers for veterans. Learn about Border Patrol Agent, CBP Officer, Air and Marine Operations, hiring process, salary, and how military experience helps at CBP.",
+    "keywords": "CBP careers veterans, Border Patrol veteran, CBP Officer jobs, customs careers, border security careers, CBP hiring process, CBP salary, Air Marine Operations",
     "excerpt": "",
-    "category": "VA Claims"
+    "category": "federal-employment"
   },
   {
-    "slug": "best-rust-belt-states-veterans-2025",
-    "title": "Best Rust Belt States for Veterans 2025",
-    "date": "2026-01-29",
-    "description": "Guide to best Rust Belt states for military retirees. Compare Pennsylvania, Ohio, Michigan, Wisconsin for veteran benefits and affordability.",
-    "keywords": "",
+    "slug": "certifications-mycaa-covered-guide",
+    "title": "Certifications Under $4,000 Covered by MyCAA: Complete List",
+    "date": "2026-02-01",
+    "description": "All certifications covered by MyCAA's $4,000 spouse education benefit. Career paths, costs, time to complete, and job prospects for each credential.",
+    "keywords": "MyCAA certifications, military spouse certifications, MyCAA approved programs, spouse career certification, $4000 education benefit",
     "excerpt": "",
-    "category": "Regional Guides"
-  },
-  {
-    "slug": "best-southeast-states-military-retirees",
-    "title": "Best Southeast States for Military Retirees 2025",
-    "date": "2026-01-29",
-    "description": "Complete guide to best Southeast states for military retirement. Compare military retirement tax benefits, cost of living, healthcare, and lifestyle.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Regional Guides"
-  },
-  {
-    "slug": "best-southwest-states-disabled-veterans",
-    "title": "Best Southwest States for Disabled Veterans 2025",
-    "date": "2026-01-29",
-    "description": "Guide to best Southwest states for 100% disabled military retirees. Compare disability benefits, VA healthcare, cost of living, and tax advantages.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Regional Guides"
-  },
-  {
-    "slug": "best-states-for-veterans-2025",
-    "title": "Best States for Veterans 2025: Top 10 Ranked by Benefits (No Income Tax Winners)",
-    "date": "2026-01-29",
-    "description": "Texas and Florida lead, but Alaska pays you to live there. We rank the top 10 veteran-friendly states by taxes, benefits, and healthcare access.",
-    "keywords": "best states for veterans, veteran benefits by state, no income tax states veterans, veteran property tax exemption, veteran-friendly states 2025",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "best-states-military-retirees",
-    "title": "Best States for Military Retirees 2025: Tax-Free Living and VA Healthcare Access",
-    "date": "2026-01-29",
-    "description": "Complete ranking of the best states for military retirees based on tax treatment, cost of living, VA healthcare access, and military retiree community. Includes comparison tables and real cost breakdowns.",
-    "keywords": "best states for military retirees, military retirement taxes by state, no tax on military retirement, VA hospital locations, military retiree states",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "best-sun-belt-states-military-retirees",
-    "title": "Best Sun Belt States for Military Retirees 2025",
-    "date": "2026-01-29",
-    "description": "Complete guide to best Sun Belt states for military retirement. Compare warm-weather states with tax benefits, cost of living, and recreation.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Regional Guides"
+    "category": "military-spouse"
   },
   {
     "slug": "ca-veteran-healthcare-education-jobs",
     "title": "California Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-01-29",
+    "date": "2026-01-31",
     "description": "Complete directory of California VA medical centers, education programs, veteran employment resources, and support services across the state.",
     "keywords": "California VA hospital, California veteran education, California veteran jobs, California GI Bill schools",
     "excerpt": "",
@@ -2189,7 +3343,7 @@ const blogPosts = [
   {
     "slug": "ca-veteran-tax-benefits-2025",
     "title": "California Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-01-29",
+    "date": "2026-01-31",
     "description": "Complete guide to California veteran tax benefits: new military retirement tax exemption, property tax breaks for disabled veterans, and cost-saving strategies.",
     "keywords": "California veteran benefits, California property tax exemption veterans, California military retirement tax, California disabled veteran benefits",
     "excerpt": "",
@@ -2197,22 +3351,301 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
+    "slug": "caci-careers-veterans-guide",
+    "title": "CACI Careers for Veterans: Complete Guide",
+    "date": "2026-01-31",
+    "description": "Comprehensive guide to CACI careers for veterans. Learn about IT services, intelligence, cybersecurity positions, veteran hiring programs, clearance requirements, and how to land jobs at this major defense contractor.",
+    "keywords": "CACI careers veterans, CACI jobs, intelligence contractor careers, IT services veterans, CACI veteran hiring, defense IT jobs",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "california-vs-texas-veterans-benefits-comparison",
     "title": "California vs Texas for Veterans: Comprehensive Benefits Comparison 2025",
-    "date": "2026-01-29",
+    "date": "2026-01-31",
     "description": "Detailed comparison of California vs Texas for military retirees. Analyze tax implications, cost of living, VA healthcare, and job markets for transitioning veterans.",
     "keywords": "",
     "excerpt": "",
     "category": "State Comparisons"
   },
   {
+    "slug": "career-continuity-pcs-moves-strategy-guide",
+    "title": "Career Continuity Through PCS Moves: Complete Strategy Guide",
+    "date": "2026-01-31",
+    "description": "Build a career that survives military moves. Strategies for maintaining career momentum, portable skills, remote work, and professional development through every PCS.",
+    "keywords": "career continuity PCS, military spouse career strategy, portable career military, maintain career military moves, career planning PCS",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
     "slug": "carpal-tunnel-secondary-to-diabetes-claims",
     "title": "Carpal Tunnel Secondary to Diabetes: Complete VA Claims Filing Guide",
-    "date": "2026-01-29",
+    "date": "2026-01-31",
     "description": "Expert guide to filing carpal tunnel syndrome as secondary to diabetes, evidence strategies, nexus requirements, and compensation calculations.",
     "keywords": "",
     "excerpt": "",
     "category": "Secondary Conditions"
+  },
+  {
+    "slug": "best-remote-careers-military-spouse-guide",
+    "title": "Best Remote Careers for Military Spouses (2025): Complete Guide",
+    "date": "2026-01-30",
+    "description": "Discover the top 15 remote careers for military spouses in 2025. Portable jobs that survive PCS moves, pay $40K-$120K+, and offer flexibility for military life.",
+    "keywords": "military spouse remote jobs, portable careers military spouse, work from home military spouse, remote careers PCS, military spouse employment",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "best-rust-belt-states-veterans-2025",
+    "title": "Best Rust Belt States for Veterans 2025",
+    "date": "2026-01-30",
+    "description": "Guide to best Rust Belt states for military retirees. Compare Pennsylvania, Ohio, Michigan, Wisconsin for veteran benefits and affordability.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "best-southeast-states-military-retirees",
+    "title": "Best Southeast States for Military Retirees 2025",
+    "date": "2026-01-30",
+    "description": "Complete guide to best Southeast states for military retirement. Compare military retirement tax benefits, cost of living, healthcare, and lifestyle.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "best-southwest-states-disabled-veterans",
+    "title": "Best Southwest States for Disabled Veterans 2025",
+    "date": "2026-01-30",
+    "description": "Guide to best Southwest states for 100% disabled military retirees. Compare disability benefits, VA healthcare, cost of living, and tax advantages.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "best-states-for-veterans-2025",
+    "title": "Best States for Veterans 2025: Top 10 Ranked by Benefits (No Income Tax Winners)",
+    "date": "2026-01-30",
+    "description": "Texas and Florida lead, but Alaska pays you to live there. We rank the top 10 veteran-friendly states by taxes, benefits, and healthcare access.",
+    "keywords": "best states for veterans, veteran benefits by state, no income tax states veterans, veteran property tax exemption, veteran-friendly states 2025",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "best-states-military-retirees",
+    "title": "Best States for Military Retirees 2025: Tax-Free Living and VA Healthcare Access",
+    "date": "2026-01-30",
+    "description": "Complete ranking of the best states for military retirees based on tax treatment, cost of living, VA healthcare access, and military retiree community. Includes comparison tables and real cost breakdowns.",
+    "keywords": "best states for military retirees, military retirement taxes by state, no tax on military retirement, VA hospital locations, military retiree states",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "best-sun-belt-states-military-retirees",
+    "title": "Best Sun Belt States for Military Retirees 2025",
+    "date": "2026-01-30",
+    "description": "Complete guide to best Sun Belt states for military retirement. Compare warm-weather states with tax benefits, cost of living, and recreation.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "booz-allen-careers-veterans-guide",
+    "title": "Booz Allen Hamilton Careers for Veterans: Complete Guide",
+    "date": "2026-01-30",
+    "description": "Comprehensive guide to Booz Allen Hamilton careers for veterans. Learn about consulting opportunities, cyber and analytics positions, veteran programs, hiring process, salary, and why BAH is a top veteran employer.",
+    "keywords": "Booz Allen Hamilton careers veterans, BAH jobs, Booz Allen veteran hiring, defense consulting careers, Booz Allen cyber jobs, government consulting veterans",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "build-professional-network-despite-moves-guide",
+    "title": "How to Build a Professional Network Despite Moves",
+    "date": "2026-01-30",
+    "description": "Strategies for building and maintaining professional relationships through frequent military relocations. Create a portable network that supports your career everywhere.",
+    "keywords": "professional network military spouse, networking military moves, portable network, career networking PCS, military spouse connections",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "building-career-during-deployment-guide",
+    "title": "Building a Career During Deployment: Military Spouse Guide",
+    "date": "2026-01-30",
+    "description": "How to maintain and grow your career while your spouse is deployed. Managing work as a single parent, communicating with employers, and finding opportunity in challenging times.",
+    "keywords": "career during deployment, working during deployment, military spouse deployment, single parent working deployment, maintain career deployment",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "best-companies-91b-vehicle-mechanics",
+    "title": "Best Companies for 91B Vehicle Mechanics: Top Fleet Employers (2025)",
+    "date": "2026-01-29",
+    "description": "Top 25+ companies actively hiring 91B Vehicle Mechanics with salaries $70K-$155K+. Includes fleet operations, service companies, and truck dealerships.",
+    "keywords": "91B mechanic jobs, vehicle mechanic employment, fleet companies, automotive careers",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "best-companies-91m-bradley-mechanics",
+    "title": "Best Companies for 91M Bradley Mechanics: Maintenance Career Guide",
+    "date": "2026-01-29",
+    "description": "Top manufacturing and government contractors hiring 91M Bradley mechanics for maintenance supervisor and engineering roles with compensation and advancement.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-92f-petroleum-supply",
+    "title": "Best Companies for 92F Petroleum Supply Specialists: Energy Career Guide",
+    "date": "2026-01-29",
+    "description": "Top energy, refining, and fuel distribution companies hiring 92F petroleum supply specialists with salary data and career advancement to management roles.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-94e-radio-repair-specialists",
+    "title": "Best Companies for 94E Radio Repair Specialists: Telecom Career Guide",
+    "date": "2026-01-29",
+    "description": "Top telecommunications and aerospace companies hiring 94E radio communications specialists for RF and electronics roles with career advancement data.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-94f-computer-repair-specialists",
+    "title": "Best Companies for 94F Computer Repair Specialists: Top IT Support Employers (2025)",
+    "date": "2026-01-29",
+    "description": "Top 20+ companies actively hiring 94F Computer Repair veterans with salaries $70K-$150K+. Includes tech support companies, IT firms, and federal contractors.",
+    "keywords": "94F computer repair jobs, IT support careers, tech support employment, IT technician jobs",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "best-companies-hiring-military-spouses-2025-guide",
+    "title": "Best Companies Hiring Military Spouses (2025): Complete Guide",
+    "date": "2026-01-29",
+    "description": "Top employers actively recruiting military spouses in 2025. MSEP partners, remote-friendly companies, military spouse programs, and how to get hired.",
+    "keywords": "companies hiring military spouses, military spouse employers, MSEP companies, military spouse friendly employers, remote jobs military spouse",
+    "excerpt": "",
+    "category": "military-spouse"
+  },
+  {
+    "slug": "best-great-plains-states-veterans",
+    "title": "Best Great Plains States for Veterans 2025",
+    "date": "2026-01-29",
+    "description": "Guide to best Great Plains states for military retirees. Compare Texas, Kansas, Missouri for veteran benefits, cost of living, and job opportunities.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "best-mountain-west-states-veterans",
+    "title": "Best Mountain West States for Veterans 2025",
+    "date": "2026-01-29",
+    "description": "Guide to best Mountain West states for military retirees. Compare Colorado, Utah, Idaho, Montana, Wyoming for veteran benefits and outdoor recreation.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "best-northeast-states-100-disabled-veterans",
+    "title": "Best Northeast States for 100% Disabled Veterans 2025",
+    "date": "2026-01-29",
+    "description": "Complete guide to best Northeast states for 100% disabled military retirees. Compare tax benefits, healthcare, disability support, and cost of living.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "best-pacific-northwest-states-veterans",
+    "title": "Best Pacific Northwest States for Veterans 2025",
+    "date": "2026-01-29",
+    "description": "Guide to best Pacific Northwest states for military retirees. Compare Washington and Oregon for veteran benefits, tax treatment, and outdoor recreation.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Regional Guides"
+  },
+  {
+    "slug": "best-companies-25u-signal-support-veterans",
+    "title": "Best Companies for 25U Signal Support Veterans: Top Telecom Employers (2025)",
+    "date": "2026-01-28",
+    "description": "Top 20+ companies actively hiring 25U Signal Support veterans with salaries $70K-$160K+. Includes telecom leaders, IT companies, contractors, and infrastructure firms.",
+    "keywords": "25U signal support jobs, telecommunications careers, network support, IT contractor employment",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "best-companies-27d-paralegals",
+    "title": "Best Companies for 27D Paralegals: Legal Career Growth Guide",
+    "date": "2026-01-28",
+    "description": "Top law firms and corporate legal departments hiring 27D paralegals with compensation data, benefits, and career advancement to management roles.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-35m-humint-collectors",
+    "title": "Best Companies for 35M HUMINT Collectors: Top Intelligence Employers (2025)",
+    "date": "2026-01-28",
+    "description": "Top 15+ companies actively hiring 35M HUMINT Collector veterans with salaries $85K-$220K+. Includes intelligence agencies, contractors, and security firms.",
+    "keywords": "35M HUMINT collector jobs, intelligence analyst careers, security clearance positions, federal intelligence",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "best-companies-37f-psyop-specialists",
+    "title": "Best Companies for 37F PSYOP Specialists: Marketing & Communications Career Guide",
+    "date": "2026-01-28",
+    "description": "Top companies hiring 37F psychological operations specialists for marketing, communications, and strategy roles with salary data and career advancement.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-42a-hr-specialists",
+    "title": "Best Companies for 42A HR Specialists: Top Human Resources Employers (2025)",
+    "date": "2026-01-28",
+    "description": "Top 20+ companies actively hiring 42A HR Specialist veterans with salaries $70K-$180K+. Includes Fortune 500 companies, tech firms, and HR service providers.",
+    "keywords": "42A HR specialist jobs, human resources careers, talent management, HR officer employment",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "best-companies-46q-public-affairs-specialists",
+    "title": "Best Companies for 46Q Public Affairs Specialists: Communications Career Guide",
+    "date": "2026-01-28",
+    "description": "Top companies and agencies hiring 46Q public affairs specialists for strategic communications roles with compensation and career advancement data.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-68p-radiology-specialists",
+    "title": "Best Companies for 68P Radiology Specialists: Healthcare Career Guide",
+    "date": "2026-01-28",
+    "description": "Top healthcare companies and hospitals hiring 68P radiology specialists with salary data, benefits, and career advancement opportunities for veterans.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-68x-mental-health-specialists",
+    "title": "Best Companies for 68X Mental Health Specialists: Healthcare Career Guide",
+    "date": "2026-01-28",
+    "description": "Top healthcare and mental health companies hiring 68X mental health specialists for counselor and therapist roles with compensation and advancement data.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-74d-chemical-operations",
+    "title": "Best Companies for 74D Chemical Operations Specialists: Industrial Career Guide",
+    "date": "2026-01-28",
+    "description": "Top industrial and chemical companies hiring 74D chemical operations specialists with salary data and career advancement opportunities.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
   },
   {
     "slug": "best-companies-89d-eod-technicians",
@@ -2224,85 +3657,76 @@ const blogPosts = [
     "category": "Guides"
   },
   {
-    "slug": "best-companies-91b-vehicle-mechanics",
-    "title": "Best Companies for 91B Vehicle Mechanics: Top Fleet Employers (2025)",
-    "date": "2026-01-28",
-    "description": "Top 25+ companies actively hiring 91B Vehicle Mechanics with salaries $70K-$155K+. Includes fleet operations, service companies, and truck dealerships.",
-    "keywords": "91B mechanic jobs, vehicle mechanic employment, fleet companies, automotive careers",
+    "slug": "bae-systems-careers-veterans-guide",
+    "title": "BAE Systems Careers for Veterans: Complete Guide",
+    "date": "2026-01-27",
+    "description": "Comprehensive guide to BAE Systems careers for veterans. Learn about electronic warfare, combat vehicles, naval ships, veteran hiring programs, clearance requirements, and how to land jobs at this global defense company.",
+    "keywords": "BAE Systems careers veterans, BAE Systems jobs, electronic warfare careers, combat vehicles careers, defense contractor jobs veterans, BAE veteran hiring",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "best-companies-12b-combat-engineers",
+    "title": "Best Companies for 12B Combat Engineers: Top Construction Employers (2025)",
+    "date": "2026-01-27",
+    "description": "Top 25+ companies actively hiring 12B Combat Engineer veterans with salaries $70K-$180K+. Includes construction, engineering firms, infrastructure, and project management.",
+    "keywords": "12B combat engineer jobs, construction companies, engineering firms, construction management salary",
     "excerpt": "",
     "category": "Guides"
   },
   {
-    "slug": "best-companies-91m-bradley-mechanics",
-    "title": "Best Companies for 91M Bradley Mechanics: Maintenance Career Guide",
-    "date": "2026-01-28",
-    "description": "Top manufacturing and government contractors hiring 91M Bradley mechanics for maintenance supervisor and engineering roles with compensation and advancement.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Best Companies"
-  },
-  {
-    "slug": "best-companies-92f-petroleum-supply",
-    "title": "Best Companies for 92F Petroleum Supply Specialists: Energy Career Guide",
-    "date": "2026-01-28",
-    "description": "Top energy, refining, and fuel distribution companies hiring 92F petroleum supply specialists with salary data and career advancement to management roles.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Best Companies"
-  },
-  {
-    "slug": "best-companies-94e-radio-repair-specialists",
-    "title": "Best Companies for 94E Radio Repair Specialists: Telecom Career Guide",
-    "date": "2026-01-28",
-    "description": "Top telecommunications and aerospace companies hiring 94E radio communications specialists for RF and electronics roles with career advancement data.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Best Companies"
-  },
-  {
-    "slug": "best-companies-94f-computer-repair-specialists",
-    "title": "Best Companies for 94F Computer Repair Specialists: Top IT Support Employers (2025)",
-    "date": "2026-01-28",
-    "description": "Top 20+ companies actively hiring 94F Computer Repair veterans with salaries $70K-$150K+. Includes tech support companies, IT firms, and federal contractors.",
-    "keywords": "94F computer repair jobs, IT support careers, tech support employment, IT technician jobs",
+    "slug": "best-companies-13f-fire-support-specialists",
+    "title": "Best Companies for 13F Fire Support Specialists: Top Employers (2025)",
+    "date": "2026-01-27",
+    "description": "Top 15+ companies actively hiring 13F Fire Support veterans with salaries $75K-$160K+. Includes defense contractors, operations, and government agencies.",
+    "keywords": "13F fire support specialist jobs, defense contractor careers, military operations, government employment",
     "excerpt": "",
     "category": "Guides"
   },
   {
-    "slug": "best-great-plains-states-veterans",
-    "title": "Best Great Plains States for Veterans 2025",
-    "date": "2026-01-28",
-    "description": "Guide to best Great Plains states for military retirees. Compare Texas, Kansas, Missouri for veteran benefits, cost of living, and job opportunities.",
+    "slug": "best-companies-15q-air-traffic-controllers",
+    "title": "Best Companies for 15Q Air Traffic Controllers: Aviation Career Guide",
+    "date": "2026-01-27",
+    "description": "Top aviation companies and federal agencies hiring 15Q air traffic controllers with salary data, benefits, and career advancement for military veterans.",
     "keywords": "",
     "excerpt": "",
-    "category": "Regional Guides"
+    "category": "Best Companies"
   },
   {
-    "slug": "best-mountain-west-states-veterans",
-    "title": "Best Mountain West States for Veterans 2025",
-    "date": "2026-01-28",
-    "description": "Guide to best Mountain West states for military retirees. Compare Colorado, Utah, Idaho, Montana, Wyoming for veteran benefits and outdoor recreation.",
-    "keywords": "",
+    "slug": "best-companies-15t-aviation-mechanics",
+    "title": "Best Companies for 15T Aviation Mechanics: Top Aircraft Employers (2025)",
+    "date": "2026-01-27",
+    "description": "Top 20+ companies actively hiring 15T Aviation Mechanics with salaries $70K-$160K+. Includes airlines, military contractors, maintenance facilities, and manufacturers.",
+    "keywords": "15T aviation mechanic jobs, aircraft maintenance careers, A&P mechanic employers, airline jobs",
     "excerpt": "",
-    "category": "Regional Guides"
+    "category": "Guides"
   },
   {
-    "slug": "best-northeast-states-100-disabled-veterans",
-    "title": "Best Northeast States for 100% Disabled Veterans 2025",
-    "date": "2026-01-28",
-    "description": "Complete guide to best Northeast states for 100% disabled military retirees. Compare tax benefits, healthcare, disability support, and cost of living.",
+    "slug": "best-companies-15w-uav-operators",
+    "title": "Best Companies for 15W UAV Operators: Drone Technology Career Guide",
+    "date": "2026-01-27",
+    "description": "Top companies hiring 15W unmanned aerial vehicle operators for drone operations and technology roles with salary data and career advancement.",
     "keywords": "",
     "excerpt": "",
-    "category": "Regional Guides"
+    "category": "Best Companies"
   },
   {
-    "slug": "best-pacific-northwest-states-veterans",
-    "title": "Best Pacific Northwest States for Veterans 2025",
-    "date": "2026-01-28",
-    "description": "Guide to best Pacific Northwest states for military retirees. Compare Washington and Oregon for veteran benefits, tax treatment, and outdoor recreation.",
+    "slug": "best-companies-18-series-special-forces",
+    "title": "Best Companies for 18-Series Special Forces Soldiers: Leadership Transition Guide",
+    "date": "2026-01-27",
+    "description": "Top companies hiring 18-series special forces operators with compensation data, leadership opportunities, and career advancement for elite military talent.",
     "keywords": "",
     "excerpt": "",
-    "category": "Regional Guides"
+    "category": "Best Companies"
+  },
+  {
+    "slug": "best-companies-19d-cavalry-scouts",
+    "title": "Best Companies for 19D Cavalry Scouts: Law Enforcement & Security Career Guide",
+    "date": "2026-01-27",
+    "description": "Top law enforcement, security, and government agencies hiring 19D cavalry scouts for investigative and protection roles with career advancement data.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Best Companies"
   },
   {
     "slug": "best-companies-25s-satellite-communications",
@@ -2314,85 +3738,70 @@ const blogPosts = [
     "category": "Best Companies"
   },
   {
-    "slug": "best-companies-25u-signal-support-veterans",
-    "title": "Best Companies for 25U Signal Support Veterans: Top Telecom Employers (2025)",
-    "date": "2026-01-27",
-    "description": "Top 20+ companies actively hiring 25U Signal Support veterans with salaries $70K-$160K+. Includes telecom leaders, IT companies, contractors, and infrastructure firms.",
-    "keywords": "25U signal support jobs, telecommunications careers, network support, IT contractor employment",
+    "slug": "al-veteran-tax-benefits-2025",
+    "title": "Alabama Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-01-26",
+    "description": "Complete guide to Alabama veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
+    "keywords": "Alabama veteran benefits, Alabama property tax exemption veterans, Alabama veteran income tax, Alabama disabled veteran benefits",
     "excerpt": "",
-    "category": "Guides"
+    "category": "Guides",
+    "branch": "Navy"
   },
   {
-    "slug": "best-companies-27d-paralegals",
-    "title": "Best Companies for 27D Paralegals: Legal Career Growth Guide",
-    "date": "2026-01-27",
-    "description": "Top law firms and corporate legal departments hiring 27D paralegals with compensation data, benefits, and career advancement to management roles.",
+    "slug": "alabama-vs-mississippi-veterans-comparison",
+    "title": "Alabama vs Mississippi Veterans Comparison 2025",
+    "date": "2026-01-26",
+    "description": "Compare Alabama and Mississippi for military retirees. Deep South state comparison for veteran relocation with tax, cost, and benefit analysis.",
     "keywords": "",
     "excerpt": "",
-    "category": "Best Companies"
+    "category": "State Comparisons"
   },
   {
-    "slug": "best-companies-35m-humint-collectors",
-    "title": "Best Companies for 35M HUMINT Collectors: Top Intelligence Employers (2025)",
-    "date": "2026-01-27",
-    "description": "Top 15+ companies actively hiring 35M HUMINT Collector veterans with salaries $85K-$220K+. Includes intelligence agencies, contractors, and security firms.",
-    "keywords": "35M HUMINT collector jobs, intelligence analyst careers, security clearance positions, federal intelligence",
+    "slug": "ar-veteran-healthcare-education-jobs",
+    "title": "Arkansas Veterans: Healthcare Facilities, Education Benefits & Job Resources",
+    "date": "2026-01-26",
+    "description": "Complete directory of Arkansas VA medical centers, education programs, veteran employment resources, and support services across the state.",
+    "keywords": "Arkansas VA hospital, Arkansas veteran education, Arkansas veteran jobs, Arkansas GI Bill schools",
     "excerpt": "",
-    "category": "Guides"
+    "category": "Guides",
+    "branch": "Navy"
   },
   {
-    "slug": "best-companies-37f-psyop-specialists",
-    "title": "Best Companies for 37F PSYOP Specialists: Marketing & Communications Career Guide",
-    "date": "2026-01-27",
-    "description": "Top companies hiring 37F psychological operations specialists for marketing, communications, and strategy roles with salary data and career advancement.",
+    "slug": "ar-veteran-tax-benefits-2025",
+    "title": "Arkansas Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
+    "date": "2026-01-26",
+    "description": "Complete guide to Arkansas veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
+    "keywords": "Arkansas veteran benefits, Arkansas property tax exemption veterans, Arkansas veteran income tax, Arkansas disabled veteran benefits",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "arizona-vs-nevada-veterans-comparison",
+    "title": "Arizona vs Nevada Veterans Comparison: Complete Guide 2025",
+    "date": "2026-01-26",
+    "description": "Compare Arizona and Nevada for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and retirement benefits for veterans.",
     "keywords": "",
     "excerpt": "",
-    "category": "Best Companies"
+    "category": "State Comparisons"
   },
   {
-    "slug": "best-companies-42a-hr-specialists",
-    "title": "Best Companies for 42A HR Specialists: Top Human Resources Employers (2025)",
-    "date": "2026-01-27",
-    "description": "Top 20+ companies actively hiring 42A HR Specialist veterans with salaries $70K-$180K+. Includes Fortune 500 companies, tech firms, and HR service providers.",
-    "keywords": "42A HR specialist jobs, human resources careers, talent management, HR officer employment",
+    "slug": "associates-degree-career-fast-track-military-spouse-guide",
+    "title": "Associate's Degree to Career: Fast Track Options for Military Spouses",
+    "date": "2026-01-26",
+    "description": "Fast-track associate's degree programs for military spouses. Two-year degrees with immediate career payoff, online options, and paths to high-paying jobs in healthcare, IT, and business.",
+    "keywords": "military spouse associate degree, 2 year degree military spouse, fast degree program, online associate degree military, quick career degree",
     "excerpt": "",
-    "category": "Guides"
+    "category": "military-spouse"
   },
   {
-    "slug": "best-companies-46q-public-affairs-specialists",
-    "title": "Best Companies for 46Q Public Affairs Specialists: Communications Career Guide",
-    "date": "2026-01-27",
-    "description": "Top companies and agencies hiring 46Q public affairs specialists for strategic communications roles with compensation and career advancement data.",
-    "keywords": "",
+    "slug": "atf-careers-veterans-guide",
+    "title": "ATF Careers for Veterans: Complete Guide to Bureau of Alcohol, Tobacco, Firearms and Explosives",
+    "date": "2026-01-26",
+    "description": "Comprehensive guide to ATF careers for veterans. Learn about Special Agent, Industry Operations Inspector positions, hiring process, salary, and how military experience helps at ATF.",
+    "keywords": "ATF careers veterans, ATF special agent veteran, ATF jobs, ATF hiring process, ATF requirements, Bureau of Alcohol Tobacco Firearms Explosives careers",
     "excerpt": "",
-    "category": "Best Companies"
-  },
-  {
-    "slug": "best-companies-68p-radiology-specialists",
-    "title": "Best Companies for 68P Radiology Specialists: Healthcare Career Guide",
-    "date": "2026-01-27",
-    "description": "Top healthcare companies and hospitals hiring 68P radiology specialists with salary data, benefits, and career advancement opportunities for veterans.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Best Companies"
-  },
-  {
-    "slug": "best-companies-68x-mental-health-specialists",
-    "title": "Best Companies for 68X Mental Health Specialists: Healthcare Career Guide",
-    "date": "2026-01-27",
-    "description": "Top healthcare and mental health companies hiring 68X mental health specialists for counselor and therapist roles with compensation and advancement data.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Best Companies"
-  },
-  {
-    "slug": "best-companies-74d-chemical-operations",
-    "title": "Best Companies for 74D Chemical Operations Specialists: Industrial Career Guide",
-    "date": "2026-01-27",
-    "description": "Top industrial and chemical companies hiring 74D chemical operations specialists with salary data and career advancement opportunities.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Best Companies"
+    "category": "federal-employment"
   },
   {
     "slug": "az-veteran-healthcare-education-jobs",
@@ -2415,67 +3824,49 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "best-companies-12b-combat-engineers",
-    "title": "Best Companies for 12B Combat Engineers: Top Construction Employers (2025)",
-    "date": "2026-01-26",
-    "description": "Top 25+ companies actively hiring 12B Combat Engineer veterans with salaries $70K-$180K+. Includes construction, engineering firms, infrastructure, and project management.",
-    "keywords": "12B combat engineer jobs, construction companies, engineering firms, construction management salary",
+    "slug": "91b-wheeled-vehicle-mechanic-to-fleet-manager",
+    "title": "91B Wheeled Vehicle Mechanic to Fleet Manager: Complete Career Guide (2025)",
+    "date": "2026-01-25",
+    "description": "Transform your 91B maintenance expertise into fleet manager career earning $60K-$140K+. Includes fleet supervisor pathways, company rankings, and management advancement strategies.",
+    "keywords": "91B to fleet manager, vehicle mechanic to management, fleet supervisor salary, automotive career transition",
     "excerpt": "",
     "category": "Guides"
   },
   {
-    "slug": "best-companies-13f-fire-support-specialists",
-    "title": "Best Companies for 13F Fire Support Specialists: Top Employers (2025)",
-    "date": "2026-01-26",
-    "description": "Top 15+ companies actively hiring 13F Fire Support veterans with salaries $75K-$160K+. Includes defense contractors, operations, and government agencies.",
-    "keywords": "13F fire support specialist jobs, defense contractor careers, military operations, government employment",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "best-companies-15q-air-traffic-controllers",
-    "title": "Best Companies for 15Q Air Traffic Controllers: Aviation Career Guide",
-    "date": "2026-01-26",
-    "description": "Top aviation companies and federal agencies hiring 15Q air traffic controllers with salary data, benefits, and career advancement for military veterans.",
+    "slug": "91e-dental-specialist-to-dental-hygienist",
+    "title": "91E Dental Specialist to Dental Hygienist: Complete Transition Guide",
+    "date": "2026-01-25",
+    "description": "Expert guide for transitioning from Army 91E Dental Specialist to civilian Dental Hygienist with salary data, certifications, and career pathways.",
     "keywords": "",
     "excerpt": "",
-    "category": "Best Companies"
+    "category": "Career Transitions"
   },
   {
-    "slug": "best-companies-15t-aviation-mechanics",
-    "title": "Best Companies for 15T Aviation Mechanics: Top Aircraft Employers (2025)",
-    "date": "2026-01-26",
-    "description": "Top 20+ companies actively hiring 15T Aviation Mechanics with salaries $70K-$160K+. Includes airlines, military contractors, maintenance facilities, and manufacturers.",
-    "keywords": "15T aviation mechanic jobs, aircraft maintenance careers, A&P mechanic employers, airline jobs",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "best-companies-15w-uav-operators",
-    "title": "Best Companies for 15W UAV Operators: Drone Technology Career Guide",
-    "date": "2026-01-26",
-    "description": "Top companies hiring 15W unmanned aerial vehicle operators for drone operations and technology roles with salary data and career advancement.",
+    "slug": "91m-bradley-mechanic-to-maintenance-supervisor",
+    "title": "91M Bradley Mechanic to Maintenance Supervisor: Career Transition Guide",
+    "date": "2026-01-25",
+    "description": "Complete guide for Army 91M Bradley Vehicle Mechanics transitioning to maintenance supervisor and engineering roles with salary data and advancement pathways.",
     "keywords": "",
     "excerpt": "",
-    "category": "Best Companies"
+    "category": "Career Transitions"
   },
   {
-    "slug": "best-companies-18-series-special-forces",
-    "title": "Best Companies for 18-Series Special Forces Soldiers: Leadership Transition Guide",
-    "date": "2026-01-26",
-    "description": "Top companies hiring 18-series special forces operators with compensation data, leadership opportunities, and career advancement for elite military talent.",
+    "slug": "92f-petroleum-supply-to-fuel-distribution-manager",
+    "title": "92F Petroleum Supply Specialist to Fuel Distribution Manager: Complete Transition Guide",
+    "date": "2026-01-25",
+    "description": "Expert guide for Army 92F Petroleum Supply Specialists transitioning to fuel distribution and energy sector management roles with salary data and certifications.",
     "keywords": "",
     "excerpt": "",
-    "category": "Best Companies"
+    "category": "Career Transitions"
   },
   {
-    "slug": "best-companies-19d-cavalry-scouts",
-    "title": "Best Companies for 19D Cavalry Scouts: Law Enforcement & Security Career Guide",
-    "date": "2026-01-26",
-    "description": "Top law enforcement, security, and government agencies hiring 19D cavalry scouts for investigative and protection roles with career advancement data.",
+    "slug": "94e-radio-communications-to-rf-engineer",
+    "title": "94E Radio Communications to RF Engineer: Technical Career Transition Guide",
+    "date": "2026-01-25",
+    "description": "Complete guide for Army 94E Radio Communications Specialists transitioning to RF/Communications Engineer roles with salary data, certifications, and technical advancement strategies.",
     "keywords": "",
     "excerpt": "",
-    "category": "Best Companies"
+    "category": "Career Transitions"
   },
   {
     "slug": "ak-veteran-healthcare-education-jobs",
@@ -2508,52 +3899,62 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "al-veteran-tax-benefits-2025",
-    "title": "Alabama Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-01-25",
-    "description": "Complete guide to Alabama veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
-    "keywords": "Alabama veteran benefits, Alabama property tax exemption veterans, Alabama veteran income tax, Alabama disabled veteran benefits",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Navy"
-  },
-  {
-    "slug": "alabama-vs-mississippi-veterans-comparison",
-    "title": "Alabama vs Mississippi Veterans Comparison 2025",
-    "date": "2026-01-25",
-    "description": "Compare Alabama and Mississippi for military retirees. Deep South state comparison for veteran relocation with tax, cost, and benefit analysis.",
+    "slug": "68p-radiology-certifications-investment-analysis",
+    "title": "68P Radiology Specialist: ARRT Certification, Registries & Healthcare Certification ROI",
+    "date": "2026-01-24",
+    "description": "Complete ROI analysis for 68P radiology specialists pursuing ARRT certification and advanced radiologic technologist credentials",
     "keywords": "",
     "excerpt": "",
-    "category": "State Comparisons"
+    "category": "Certifications",
+    "branch": "Army"
   },
   {
-    "slug": "ar-veteran-healthcare-education-jobs",
-    "title": "Arkansas Veterans: Healthcare Facilities, Education Benefits & Job Resources",
-    "date": "2026-01-25",
-    "description": "Complete directory of Arkansas VA medical centers, education programs, veteran employment resources, and support services across the state.",
-    "keywords": "Arkansas VA hospital, Arkansas veteran education, Arkansas veteran jobs, Arkansas GI Bill schools",
+    "slug": "68p-radiology-specialist-to-radiology-technologist",
+    "title": "68P Radiology Specialist to Radiology Technologist: Complete Career Guide (2025)",
+    "date": "2026-01-24",
+    "description": "Transform your 68P radiology expertise into radiology technologist career earning $55K-$100K+. Includes ARRT certification paths, clinical advancement, and imaging technology opportunities.",
+    "keywords": "68P to radiology technologist, military radiology to civilian, ARRT certification, radiology technologist salary",
     "excerpt": "",
     "category": "Guides",
-    "branch": "Navy"
+    "branch": "Army"
   },
   {
-    "slug": "ar-veteran-tax-benefits-2025",
-    "title": "Arkansas Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide",
-    "date": "2026-01-25",
-    "description": "Complete guide to Arkansas veteran tax benefits: property tax exemptions, income tax treatment, financial benefits, and money-saving strategies for disabled veterans.",
-    "keywords": "Arkansas veteran benefits, Arkansas property tax exemption veterans, Arkansas veteran income tax, Arkansas disabled veteran benefits",
+    "slug": "68v-respiratory-specialist-to-respiratory-therapist",
+    "title": "68V Respiratory Specialist to Respiratory Therapist: Complete Career Guide (2025)",
+    "date": "2026-01-24",
+    "description": "Transform your 68V respiratory expertise into respiratory therapist career earning $60K-$110K+. Includes RRT certification paths, clinical advancement, and pulmonary care opportunities.",
+    "keywords": "68V to respiratory therapist, military respiratory specialist to RRT, RRT certification, respiratory therapist salary",
     "excerpt": "",
     "category": "Guides",
-    "branch": "Navy"
+    "branch": "Army"
   },
   {
-    "slug": "arizona-vs-nevada-veterans-comparison",
-    "title": "Arizona vs Nevada Veterans Comparison: Complete Guide 2025",
-    "date": "2026-01-25",
-    "description": "Compare Arizona and Nevada for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and retirement benefits for veterans.",
+    "slug": "68x-mental-health-to-mental-health-counselor",
+    "title": "68X Mental Health Specialist to Licensed Mental Health Counselor: Career Transition Guide",
+    "date": "2026-01-24",
+    "description": "Complete guide for Army 68X Mental Health Specialists transitioning to Licensed Professional Counselor (LPC) or Licensed Mental Health Counselor (LMHC) roles with salary data and certification pathways.",
     "keywords": "",
     "excerpt": "",
-    "category": "State Comparisons"
+    "category": "Career Transitions",
+    "branch": "Army"
+  },
+  {
+    "slug": "74d-chemical-operations-to-safety-manager",
+    "title": "74D Chemical Operations to Safety Manager: Complete Career Guide (2025)",
+    "date": "2026-01-24",
+    "description": "Transform your 74D chemical expertise into safety manager career earning $65K-$150K+. Includes OSHA certification paths, industrial safety advancement, and environmental compliance.",
+    "keywords": "74D to safety manager, chemical specialist to occupational safety, OSHA certification, industrial safety career",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "89d-eod-certifications-roi",
+    "title": "89D Explosive Ordnance Disposal to Federal Security Careers: Certification ROI",
+    "date": "2026-01-24",
+    "description": "Complete ROI analysis for 89D EOD specialists transitioning to federal security and bomb technician civilian roles",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Certifications"
   },
   {
     "slug": "89d-eod-to-bomb-technician",
@@ -2583,49 +3984,13 @@ const blogPosts = [
     "category": "Certifications"
   },
   {
-    "slug": "91b-wheeled-vehicle-mechanic-to-fleet-manager",
-    "title": "91B Wheeled Vehicle Mechanic to Fleet Manager: Complete Career Guide (2025)",
-    "date": "2026-01-24",
-    "description": "Transform your 91B maintenance expertise into fleet manager career earning $60K-$140K+. Includes fleet supervisor pathways, company rankings, and management advancement strategies.",
-    "keywords": "91B to fleet manager, vehicle mechanic to management, fleet supervisor salary, automotive career transition",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "91e-dental-specialist-to-dental-hygienist",
-    "title": "91E Dental Specialist to Dental Hygienist: Complete Transition Guide",
-    "date": "2026-01-24",
-    "description": "Expert guide for transitioning from Army 91E Dental Specialist to civilian Dental Hygienist with salary data, certifications, and career pathways.",
+    "slug": "42a-hr-certifications-phr-shrm-roi",
+    "title": "42A Human Resources to SHRM, PHR, and HR Manager: Certification ROI Analysis",
+    "date": "2026-01-23",
+    "description": "Complete ROI analysis for 42A human resources specialists pursuing SHRM-CP, PHR, and HR management certifications",
     "keywords": "",
     "excerpt": "",
-    "category": "Career Transitions"
-  },
-  {
-    "slug": "91m-bradley-mechanic-to-maintenance-supervisor",
-    "title": "91M Bradley Mechanic to Maintenance Supervisor: Career Transition Guide",
-    "date": "2026-01-24",
-    "description": "Complete guide for Army 91M Bradley Vehicle Mechanics transitioning to maintenance supervisor and engineering roles with salary data and advancement pathways.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Career Transitions"
-  },
-  {
-    "slug": "92f-petroleum-supply-to-fuel-distribution-manager",
-    "title": "92F Petroleum Supply Specialist to Fuel Distribution Manager: Complete Transition Guide",
-    "date": "2026-01-24",
-    "description": "Expert guide for Army 92F Petroleum Supply Specialists transitioning to fuel distribution and energy sector management roles with salary data and certifications.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Career Transitions"
-  },
-  {
-    "slug": "94e-radio-communications-to-rf-engineer",
-    "title": "94E Radio Communications to RF Engineer: Technical Career Transition Guide",
-    "date": "2026-01-24",
-    "description": "Complete guide for Army 94E Radio Communications Specialists transitioning to RF/Communications Engineer roles with salary data, certifications, and technical advancement strategies.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Career Transitions"
+    "category": "Certifications"
   },
   {
     "slug": "42a-human-resources-to-corporate-hr-manager",
@@ -2655,71 +4020,97 @@ const blogPosts = [
     "category": "Transition Timeline"
   },
   {
-    "slug": "68p-radiology-certifications-investment-analysis",
-    "title": "68P Radiology Specialist: ARRT Certification, Registries & Healthcare Certification ROI",
-    "date": "2026-01-23",
-    "description": "Complete ROI analysis for 68P radiology specialists pursuing ARRT certification and advanced radiologic technologist credentials",
+    "slug": "30-percent-disabled-veteran-hiring-guide",
+    "title": "30% or More Disabled Veteran Hiring: Your Direct Path to Any Federal Job",
+    "date": "2026-01-22",
+    "description": "Complete guide to the 30% or More Disabled Veteran hiring authority. Learn how this powerful tool lets you bypass competition for federal positions at any grade level.",
+    "keywords": "30 percent disabled veteran hiring, disabled veteran federal jobs, schedule A hiring veterans, non-competitive federal hiring disabled veteran, VA disability federal employment",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
+    "slug": "35m-humint-to-corporate-investigator",
+    "title": "35M HUMINT to Corporate Investigator: Complete Career Guide (2025)",
+    "date": "2026-01-22",
+    "description": "Transform your 35M human intelligence expertise into corporate investigator career earning $70K-$160K+. Includes investigative specializations, security clearance benefits, and advancement paths.",
+    "keywords": "35M HUMINT to corporate investigator, intelligence analyst to corporate security, investigator salary, corporate security jobs",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "35m-investigation-certifications-roi",
+    "title": "35M Imagery Intelligence to Forensics, Digital Investigation Certifications ROI",
+    "date": "2026-01-22",
+    "description": "Complete ROI analysis for 35M imagery intelligence specialists pursuing digital forensics and investigation certifications",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Certifications"
+  },
+  {
+    "slug": "35n-signal-intelligence-to-data-scientist",
+    "title": "35N Signal Intelligence to Data Scientist: Technical Career Transition Guide",
+    "date": "2026-01-22",
+    "description": "Complete guide for Army 35N Signal Intelligence Analysts transitioning to data science and analytics roles with salary data, certifications, and technical advancement paths.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Career Transitions"
+  },
+  {
+    "slug": "37f-psyop-to-marketing-manager",
+    "title": "37F Psychological Operations Specialist to Marketing Manager: Complete Career Guide (2025)",
+    "date": "2026-01-22",
+    "description": "Convert your 37F PSYOP skills into $75K-$140K+ marketing career. Audience analysis, messaging strategy, and campaign management translate directly to corporate marketing.",
+    "keywords": "37F to marketing, PSYOP civilian career, psychological operations marketing, 37F brand manager",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "25s-satellite-communications-to-telecom-engineer",
+    "title": "25S Satellite Communications to Telecom Engineer: Complete Career Guide (2025)",
+    "date": "2026-01-21",
+    "description": "Transform your 25S satellite communications expertise into telecom engineer career earning $75K-$160K+. Includes certifications, network specialization, and telecommunications advancement.",
+    "keywords": "25S to telecom engineer, satellite communications to networking, telecom certification, network engineer salary",
+    "excerpt": "",
+    "category": "Guides",
+    "branch": "Army"
+  },
+  {
+    "slug": "25u-network-certifications-roi",
+    "title": "25U Network Specialist: CCNA, Security+, and Network Security Certification ROI",
+    "date": "2026-01-21",
+    "description": "Complete ROI analysis for 25U network specialists pursuing CCNA, Security+, and advanced network certifications",
     "keywords": "",
     "excerpt": "",
     "category": "Certifications",
     "branch": "Army"
   },
   {
-    "slug": "68p-radiology-specialist-to-radiology-technologist",
-    "title": "68P Radiology Specialist to Radiology Technologist: Complete Career Guide (2025)",
-    "date": "2026-01-23",
-    "description": "Transform your 68P radiology expertise into radiology technologist career earning $55K-$100K+. Includes ARRT certification paths, clinical advancement, and imaging technology opportunities.",
-    "keywords": "68P to radiology technologist, military radiology to civilian, ARRT certification, radiology technologist salary",
+    "slug": "25u-signal-support-to-network-engineer",
+    "title": "25U Signal Support Specialist to Network Engineer: Complete Career Transition Guide (2025)",
+    "date": "2026-01-21",
+    "description": "Convert your 25U experience into $85K-$130K+ network engineering career. Includes certifications (CCNA, Network+), timeline, costs, and proven transition strategies.",
+    "keywords": "25U to network engineer, signal support civilian career, 25U CCNA certification, military network specialist jobs",
     "excerpt": "",
     "category": "Guides",
     "branch": "Army"
   },
   {
-    "slug": "68v-respiratory-specialist-to-respiratory-therapist",
-    "title": "68V Respiratory Specialist to Respiratory Therapist: Complete Career Guide (2025)",
-    "date": "2026-01-23",
-    "description": "Transform your 68V respiratory expertise into respiratory therapist career earning $60K-$110K+. Includes RRT certification paths, clinical advancement, and pulmonary care opportunities.",
-    "keywords": "68V to respiratory therapist, military respiratory specialist to RRT, RRT certification, respiratory therapist salary",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Army"
-  },
-  {
-    "slug": "68x-mental-health-to-mental-health-counselor",
-    "title": "68X Mental Health Specialist to Licensed Mental Health Counselor: Career Transition Guide",
-    "date": "2026-01-23",
-    "description": "Complete guide for Army 68X Mental Health Specialists transitioning to Licensed Professional Counselor (LPC) or Licensed Mental Health Counselor (LMHC) roles with salary data and certification pathways.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Career Transitions",
-    "branch": "Army"
-  },
-  {
-    "slug": "74d-chemical-operations-to-safety-manager",
-    "title": "74D Chemical Operations to Safety Manager: Complete Career Guide (2025)",
-    "date": "2026-01-23",
-    "description": "Transform your 74D chemical expertise into safety manager career earning $65K-$150K+. Includes OSHA certification paths, industrial safety advancement, and environmental compliance.",
-    "keywords": "74D to safety manager, chemical specialist to occupational safety, OSHA certification, industrial safety career",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "89d-eod-certifications-roi",
-    "title": "89D Explosive Ordnance Disposal to Federal Security Careers: Certification ROI",
-    "date": "2026-01-23",
-    "description": "Complete ROI analysis for 89D EOD specialists transitioning to federal security and bomb technician civilian roles",
+    "slug": "27d-paralegal-certifications-roi",
+    "title": "27D Legal Administrative to NALS Certified Paralegal: Legal Career ROI Analysis",
+    "date": "2026-01-21",
+    "description": "Complete ROI analysis for 27D legal administrative specialists pursuing paralegal certifications and legal profession advancement",
     "keywords": "",
     "excerpt": "",
     "category": "Certifications"
   },
   {
-    "slug": "42a-hr-certifications-phr-shrm-roi",
-    "title": "42A Human Resources to SHRM, PHR, and HR Manager: Certification ROI Analysis",
-    "date": "2026-01-22",
-    "description": "Complete ROI analysis for 42A human resources specialists pursuing SHRM-CP, PHR, and HR management certifications",
+    "slug": "27d-paralegal-to-corporate-paralegal",
+    "title": "27D Paralegal to Corporate Paralegal: Complete Transition Guide",
+    "date": "2026-01-21",
+    "description": "Expert guide for Army 27D Paralegals transitioning to corporate legal roles with salary data, certifications, specializations, and 12-month action plan.",
     "keywords": "",
     "excerpt": "",
-    "category": "Certifications"
+    "category": "Career Transitions"
   },
   {
     "slug": "30-days-before-terminal-leave-checklist",
@@ -2731,40 +4122,31 @@ const blogPosts = [
     "category": "Transition Timeline"
   },
   {
-    "slug": "35m-humint-to-corporate-investigator",
-    "title": "35M HUMINT to Corporate Investigator: Complete Career Guide (2025)",
-    "date": "2026-01-21",
-    "description": "Transform your 35M human intelligence expertise into corporate investigator career earning $70K-$160K+. Includes investigative specializations, security clearance benefits, and advancement paths.",
-    "keywords": "35M HUMINT to corporate investigator, intelligence analyst to corporate security, investigator salary, corporate security jobs",
+    "slug": "18b-special-forces-to-firearms-instructor",
+    "title": "18B Special Forces Weapons Sergeant to Firearms Instructor: Complete Career Guide (2025)",
+    "date": "2026-01-20",
+    "description": "Convert your 18B Special Forces weapons expertise into $60K-$150K+ firearms instruction career. Includes academy, private sector, and contractor opportunities.",
+    "keywords": "18B to firearms instructor, Special Forces civilian career, weapons sergeant instructor jobs, SF firearms training",
     "excerpt": "",
     "category": "Guides"
   },
   {
-    "slug": "35m-investigation-certifications-roi",
-    "title": "35M Imagery Intelligence to Forensics, Digital Investigation Certifications ROI",
-    "date": "2026-01-21",
-    "description": "Complete ROI analysis for 35M imagery intelligence specialists pursuing digital forensics and investigation certifications",
-    "keywords": "",
+    "slug": "19d-cavalry-scout-to-intelligence-analyst",
+    "title": "19D Cavalry Scout to Intelligence Analyst: Complete Career Transition Guide (2025)",
+    "date": "2026-01-20",
+    "description": "Transform your 19D reconnaissance and intelligence skills into $60K-$130K+ analyst career. Includes security clearance leverage, GEOINT/HUMINT paths, and cleared contractor roles.",
+    "keywords": "19D to intelligence analyst, cavalry scout analyst career, 19D security clearance jobs, military intelligence civilian",
     "excerpt": "",
-    "category": "Certifications"
+    "category": "Guides"
   },
   {
-    "slug": "35n-signal-intelligence-to-data-scientist",
-    "title": "35N Signal Intelligence to Data Scientist: Technical Career Transition Guide",
-    "date": "2026-01-21",
-    "description": "Complete guide for Army 35N Signal Intelligence Analysts transitioning to data science and analytics roles with salary data, certifications, and technical advancement paths.",
+    "slug": "19k-armor-crewman-to-heavy-equipment-operator",
+    "title": "19K Armor Crewman to Heavy Equipment Operator: Career Transition Guide",
+    "date": "2026-01-20",
+    "description": "Complete guide for Army 19K Armor Crewmen transitioning to heavy equipment operator roles with salary data, certifications, and advancement opportunities.",
     "keywords": "",
     "excerpt": "",
     "category": "Career Transitions"
-  },
-  {
-    "slug": "37f-psyop-to-marketing-manager",
-    "title": "37F Psychological Operations Specialist to Marketing Manager: Complete Career Guide (2025)",
-    "date": "2026-01-21",
-    "description": "Convert your 37F PSYOP skills into $75K-$140K+ marketing career. Audience analysis, messaging strategy, and campaign management translate directly to corporate marketing.",
-    "keywords": "37F to marketing, PSYOP civilian career, psychological operations marketing, 37F brand manager",
-    "excerpt": "",
-    "category": "Guides"
   },
   {
     "slug": "25l-cable-systems-to-telecommunications-technician",
@@ -2787,52 +4169,49 @@ const blogPosts = [
     "branch": "Army"
   },
   {
-    "slug": "25s-satellite-communications-to-telecom-engineer",
-    "title": "25S Satellite Communications to Telecom Engineer: Complete Career Guide (2025)",
-    "date": "2026-01-20",
-    "description": "Transform your 25S satellite communications expertise into telecom engineer career earning $75K-$160K+. Includes certifications, network specialization, and telecommunications advancement.",
-    "keywords": "25S to telecom engineer, satellite communications to networking, telecom certification, network engineer salary",
-    "excerpt": "",
-    "category": "Guides",
-    "branch": "Army"
-  },
-  {
-    "slug": "25u-network-certifications-roi",
-    "title": "25U Network Specialist: CCNA, Security+, and Network Security Certification ROI",
-    "date": "2026-01-20",
-    "description": "Complete ROI analysis for 25U network specialists pursuing CCNA, Security+, and advanced network certifications",
+    "slug": "15p-aviation-operations-to-operations-manager",
+    "title": "15P Aviation Operations Specialist to Operations Manager: Career Transition Guide",
+    "date": "2026-01-19",
+    "description": "Complete guide for Army 15P Aviation Operations Specialists transitioning to civilian Operations Manager roles with salary data, certifications, and advancement strategies.",
     "keywords": "",
     "excerpt": "",
-    "category": "Certifications",
-    "branch": "Army"
+    "category": "Career Transitions"
   },
   {
-    "slug": "25u-signal-support-to-network-engineer",
-    "title": "25U Signal Support Specialist to Network Engineer: Complete Career Transition Guide (2025)",
-    "date": "2026-01-20",
-    "description": "Convert your 25U experience into $85K-$130K+ network engineering career. Includes certifications (CCNA, Network+), timeline, costs, and proven transition strategies.",
-    "keywords": "25U to network engineer, signal support civilian career, 25U CCNA certification, military network specialist jobs",
+    "slug": "15q-air-traffic-controller-to-faa-controller",
+    "title": "15Q Air Traffic Controller to FAA Controller: Complete Career Guide (2025)",
+    "date": "2026-01-19",
+    "description": "Transform your 15Q air traffic control skills into FAA controller career earning $65K-$140K+. Includes certification paths, facility rankings, and controller advancement strategies.",
+    "keywords": "15Q to FAA air traffic controller, military ATC to civilian, air traffic controller salary, ATC career transition",
     "excerpt": "",
-    "category": "Guides",
-    "branch": "Army"
+    "category": "Guides"
   },
   {
-    "slug": "27d-paralegal-certifications-roi",
-    "title": "27D Legal Administrative to NALS Certified Paralegal: Legal Career ROI Analysis",
-    "date": "2026-01-20",
-    "description": "Complete ROI analysis for 27D legal administrative specialists pursuing paralegal certifications and legal profession advancement",
+    "slug": "15q-faa-air-traffic-controller-certification",
+    "title": "15Q Air Traffic Control to FAA Controller: Certification, Training & Career ROI",
+    "date": "2026-01-19",
+    "description": "Complete ROI analysis for 15Q air traffic controllers transitioning to FAA civilian air traffic control with certification pathways",
     "keywords": "",
     "excerpt": "",
     "category": "Certifications"
   },
   {
-    "slug": "27d-paralegal-to-corporate-paralegal",
-    "title": "27D Paralegal to Corporate Paralegal: Complete Transition Guide",
-    "date": "2026-01-20",
-    "description": "Expert guide for Army 27D Paralegals transitioning to corporate legal roles with salary data, certifications, specializations, and 12-month action plan.",
+    "slug": "15r-apache-repairer-to-aviation-technician",
+    "title": "15R Apache Repairer to Aviation Technician: Complete Career Guide (2025)",
+    "date": "2026-01-19",
+    "description": "Transform your 15R aircraft maintenance expertise into aviation technician career earning $60K-$140K+. Includes FAA A&P certification paths, aviation maintenance careers, and aerospace advancement.",
+    "keywords": "15R to aircraft mechanic, Apache maintenance to civilian aviation, FAA A&P certification, aviation technician salary",
+    "excerpt": "",
+    "category": "Guides"
+  },
+  {
+    "slug": "15t-aviation-certifications-cost-salary-analysis",
+    "title": "15T Aviation Mechanic Certifications ROI: A&P, Type Ratings, and Manufacturer Certs",
+    "date": "2026-01-19",
+    "description": "Complete ROI analysis for 15T aviation mechanics transitioning to civilian aviation with A&P, type ratings, and manufacturer certifications",
     "keywords": "",
     "excerpt": "",
-    "category": "Career Transitions"
+    "category": "Certifications"
   },
   {
     "slug": "15t-aviation-mechanic-salaries-by-region",
@@ -2880,31 +4259,23 @@ const blogPosts = [
     "category": "Certifications"
   },
   {
-    "slug": "18b-special-forces-to-firearms-instructor",
-    "title": "18B Special Forces Weapons Sergeant to Firearms Instructor: Complete Career Guide (2025)",
-    "date": "2026-01-19",
-    "description": "Convert your 18B Special Forces weapons expertise into $60K-$150K+ firearms instruction career. Includes academy, private sector, and contractor opportunities.",
-    "keywords": "18B to firearms instructor, Special Forces civilian career, weapons sergeant instructor jobs, SF firearms training",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "19d-cavalry-scout-to-intelligence-analyst",
-    "title": "19D Cavalry Scout to Intelligence Analyst: Complete Career Transition Guide (2025)",
-    "date": "2026-01-19",
-    "description": "Transform your 19D reconnaissance and intelligence skills into $60K-$130K+ analyst career. Includes security clearance leverage, GEOINT/HUMINT paths, and cleared contractor roles.",
-    "keywords": "19D to intelligence analyst, cavalry scout analyst career, 19D security clearance jobs, military intelligence civilian",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "19k-armor-crewman-to-heavy-equipment-operator",
-    "title": "19K Armor Crewman to Heavy Equipment Operator: Career Transition Guide",
-    "date": "2026-01-19",
-    "description": "Complete guide for Army 19K Armor Crewmen transitioning to heavy equipment operator roles with salary data, certifications, and advancement opportunities.",
+    "slug": "12-months-before-separation-checklist",
+    "title": "12 Months Before Separation: Complete Military Transition Checklist",
+    "date": "2026-01-18",
+    "description": "Start your transition 12 months before separation. Comprehensive checklist of actions, planning, and preparation for successful civilian transition.",
     "keywords": "",
     "excerpt": "",
-    "category": "Career Transitions"
+    "category": "Transition Timeline"
+  },
+  {
+    "slug": "12b-combat-engineer-salaries-by-location",
+    "title": "12B Combat Engineer Salaries by Location: Construction & Federal Contracting Markets",
+    "date": "2026-01-18",
+    "description": "Comprehensive salary analysis for 12B combat engineers by location, construction markets, and federal contracting opportunity",
+    "keywords": "",
+    "excerpt": "",
+    "category": "Salaries",
+    "branch": "Army"
   },
   {
     "slug": "12b-construction-certifications-roi",
@@ -2957,68 +4328,49 @@ const blogPosts = [
     "branch": "Army"
   },
   {
-    "slug": "15p-aviation-operations-to-operations-manager",
-    "title": "15P Aviation Operations Specialist to Operations Manager: Career Transition Guide",
-    "date": "2026-01-18",
-    "description": "Complete guide for Army 15P Aviation Operations Specialists transitioning to civilian Operations Manager roles with salary data, certifications, and advancement strategies.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Career Transitions"
-  },
-  {
-    "slug": "15q-air-traffic-controller-to-faa-controller",
-    "title": "15Q Air Traffic Controller to FAA Controller: Complete Career Guide (2025)",
-    "date": "2026-01-18",
-    "description": "Transform your 15Q air traffic control skills into FAA controller career earning $65K-$140K+. Includes certification paths, facility rankings, and controller advancement strategies.",
-    "keywords": "15Q to FAA air traffic controller, military ATC to civilian, air traffic controller salary, ATC career transition",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "15q-faa-air-traffic-controller-certification",
-    "title": "15Q Air Traffic Control to FAA Controller: Certification, Training & Career ROI",
-    "date": "2026-01-18",
-    "description": "Complete ROI analysis for 15Q air traffic controllers transitioning to FAA civilian air traffic control with certification pathways",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Certifications"
-  },
-  {
-    "slug": "15r-apache-repairer-to-aviation-technician",
-    "title": "15R Apache Repairer to Aviation Technician: Complete Career Guide (2025)",
-    "date": "2026-01-18",
-    "description": "Transform your 15R aircraft maintenance expertise into aviation technician career earning $60K-$140K+. Includes FAA A&P certification paths, aviation maintenance careers, and aerospace advancement.",
-    "keywords": "15R to aircraft mechanic, Apache maintenance to civilian aviation, FAA A&P certification, aviation technician salary",
-    "excerpt": "",
-    "category": "Guides"
-  },
-  {
-    "slug": "15t-aviation-certifications-cost-salary-analysis",
-    "title": "15T Aviation Mechanic Certifications ROI: A&P, Type Ratings, and Manufacturer Certs",
-    "date": "2026-01-18",
-    "description": "Complete ROI analysis for 15T aviation mechanics transitioning to civilian aviation with A&P, type ratings, and manufacturer certifications",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Certifications"
-  },
-  {
-    "slug": "12-months-before-separation-checklist",
-    "title": "12 Months Before Separation: Complete Military Transition Checklist",
+    "slug": "dod-civilian-careers-veterans-guide",
+    "title": "Department of Defense Civilian Careers for Veterans: Complete Guide",
     "date": "2026-01-17",
-    "description": "Start your transition 12 months before separation. Comprehensive checklist of actions, planning, and preparation for successful civilian transition.",
-    "keywords": "",
+    "description": "Comprehensive guide to DoD civilian careers for veterans. Learn about positions, hiring programs, locations, salary ranges, and how to transition from military to DoD civilian employment.",
+    "keywords": "DoD civilian jobs, Department of Defense careers, DoD civilian employment veterans, military to DoD civilian, defense civilian jobs, Army civilian, Navy civilian, Air Force civilian",
     "excerpt": "",
-    "category": "Transition Timeline"
+    "category": "federal-employment"
   },
   {
-    "slug": "12b-combat-engineer-salaries-by-location",
-    "title": "12B Combat Engineer Salaries by Location: Construction & Federal Contracting Markets",
-    "date": "2026-01-17",
-    "description": "Comprehensive salary analysis for 12B combat engineers by location, construction markets, and federal contracting opportunity",
-    "keywords": "",
+    "slug": "7202-low-altitude-air-defense-gunner-civilian-career-guide",
+    "title": "Marine 7202 Low Altitude Air Defense to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-16",
+    "description": "Career transition guide for Marine Low Altitude Air Defense specialists moving to civilian careers. Includes defense contractor jobs, radar operations, security roles with $55K-$160K+ salary ranges and required certifications.",
+    "keywords": "7202 Marine career transition, LAAD civilian jobs, air defense to civilian career, military air defense jobs",
     "excerpt": "",
-    "category": "Salaries",
-    "branch": "Army"
+    "category": "Career Guides"
+  },
+  {
+    "slug": "7204-low-altitude-air-defense-gunner-manpads-civilian-career-guide",
+    "title": "Marine 7204 MANPADS Gunner to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-16",
+    "description": "Career transition guide for Marine MANPADS operators moving to civilian careers. Includes defense contractor training, air defense roles, federal security with $60K-$200K+ salary ranges and required certifications.",
+    "keywords": "7204 Marine career transition, MANPADS civilian jobs, Stinger missile operator civilian career, air defense specialist jobs",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "7208-air-defense-control-operator-civilian-career-guide",
+    "title": "Marine 7208 Air Defense Control Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-16",
+    "description": "Career transition guide for Marine Air Defense Control Operators moving to civilian careers. Includes defense contractor radar operations, tactical coordination roles, federal aviation with $70K-$180K+ salary ranges.",
+    "keywords": "7208 Marine career transition, air defense control civilian jobs, tactical air operations civilian career, radar operator jobs",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "7220-unmanned-aerial-system-operator-civilian-career-guide",
+    "title": "Marine 7220 UAS Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-16",
+    "description": "Career transition guide for Marine UAS operators moving to civilian drone careers. Includes commercial drone pilot, defense contractor, mapping/surveying roles with $60K-$185K+ salary ranges and FAA Part 107 requirements.",
+    "keywords": "7220 Marine career transition, UAS operator civilian jobs, military drone pilot civilian career, commercial drone pilot salary",
+    "excerpt": "",
+    "category": "Career Guides"
   },
   {
     "slug": "7234-tactical-systems-operator-civilian-career-guide",
@@ -3071,6 +4423,42 @@ const blogPosts = [
     "date": "2026-01-16",
     "description": "Real career options for senior Marine Corps Legal Services Specialists (E-6 to E-9) transitioning to civilian careers. Includes salary ranges $65K-$140K+, paths to senior paralegal, paralegal manager, legal operations, and skills translation from military legal leadership to civilian legal careers.",
     "keywords": "senior legal services specialist civilian jobs, Marine Corps paralegal chief career transition, senior military paralegal to civilian, E-6 E-7 E-8 E-9 legal services transition",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "6124-helicopter-dynamic-components-repairer-civilian-career-guide",
+    "title": "Marine MOS 6124 Helicopter Dynamic Components Repairer to Civilian: Complete Career Transition Guide (2025)",
+    "date": "2026-01-15",
+    "description": "Real career options for 6124 Helicopter/Tiltrotor Dynamic Components Repairers transitioning to civilian aviation. Includes A&P license pathway, component overhaul specialist careers, MRO roles with salaries $62K-$105K+.",
+    "keywords": "6124 MOS civilian jobs, helicopter dynamic components repairer civilian career, Marine rotor repairer transition, helicopter component overhaul A&P",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "6152-ch53e-helicopter-maintenance-chief-civilian-career-guide",
+    "title": "MOS 6152 CH-53E Helicopter Maintenance Chief to Civilian: Rotary Wing Aviation Career Guide",
+    "date": "2026-01-15",
+    "description": "Career paths for 6152 CH-53E Helicopter Maintenance Chiefs. Includes salary data $75K-$145K+, helicopter MRO, offshore aviation, EMS, and heavy-lift operations.",
+    "keywords": "6152 MOS civilian jobs, CH-53 maintenance chief transition, helicopter maintenance careers, rotary wing aviation jobs",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "6153-helicopter-tiltrotor-mechanic-civilian-career-guide",
+    "title": "MOS 6153 Helicopter/Tiltrotor Mechanic to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-15",
+    "description": "Real career options for Marine 6153 Helicopter/Tiltrotor Mechanics transitioning to civilian aviation. Includes salary ranges $55K-$120K+, A&P license requirements, and airline opportunities.",
+    "keywords": "6153 MOS civilian jobs, helicopter mechanic career transition, Marine aviation maintenance careers, A&P license for veterans",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "6154-rotary-wing-avionics-maintenance-chief-civilian-career-guide",
+    "title": "MOS 6154 Rotary Wing Avionics Maintenance Chief to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-15",
+    "description": "Real career options for Marine 6154 Avionics Chiefs transitioning to civilian aviation electronics. Includes salary ranges $65K-$135K+, FCC licenses, and avionics management roles.",
+    "keywords": "6154 MOS civilian jobs, avionics maintenance chief career transition, Marine avionics careers, aviation electronics management",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -3129,38 +4517,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "7202-low-altitude-air-defense-gunner-civilian-career-guide",
-    "title": "Marine 7202 Low Altitude Air Defense to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-15",
-    "description": "Career transition guide for Marine Low Altitude Air Defense specialists moving to civilian careers. Includes defense contractor jobs, radar operations, security roles with $55K-$160K+ salary ranges and required certifications.",
-    "keywords": "7202 Marine career transition, LAAD civilian jobs, air defense to civilian career, military air defense jobs",
+    "slug": "6074-cryogenics-equipment-operator-civilian-career-guide",
+    "title": "MOS 6074 Cryogenics Equipment Operator to Civilian: Specialized Technical Career Transition Guide",
+    "date": "2026-01-14",
+    "description": "Career paths for 6074 Cryogenics Equipment Operators. Includes salary data $55K-$110K+, industrial gas careers, HVAC-R, aviation oxygen systems, and technical roles.",
+    "keywords": "6074 MOS civilian jobs, cryogenics operator transition, industrial gas careers, oxygen systems technician jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "7204-low-altitude-air-defense-gunner-manpads-civilian-career-guide",
-    "title": "Marine 7204 MANPADS Gunner to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-15",
-    "description": "Career transition guide for Marine MANPADS operators moving to civilian careers. Includes defense contractor training, air defense roles, federal security with $60K-$200K+ salary ranges and required certifications.",
-    "keywords": "7204 Marine career transition, MANPADS civilian jobs, Stinger missile operator civilian career, air defense specialist jobs",
+    "slug": "6092-aircraft-intermediate-level-maintenance-chief-civilian-career-guide",
+    "title": "MOS 6092 Aircraft Intermediate Level Maintenance Chief to Civilian: Depot & Heavy Maintenance Career Guide",
+    "date": "2026-01-14",
+    "description": "Career paths for 6092 Intermediate Level Maintenance Chiefs. Includes salary data $80K-$150K+, MRO management, depot maintenance, and aviation leadership.",
+    "keywords": "6092 MOS civilian jobs, intermediate level maintenance chief transition, MRO management careers, depot maintenance jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "7208-air-defense-control-operator-civilian-career-guide",
-    "title": "Marine 7208 Air Defense Control Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-15",
-    "description": "Career transition guide for Marine Air Defense Control Operators moving to civilian careers. Includes defense contractor radar operations, tactical coordination roles, federal aviation with $70K-$180K+ salary ranges.",
-    "keywords": "7208 Marine career transition, air defense control civilian jobs, tactical air operations civilian career, radar operator jobs",
+    "slug": "6111-helicopter-airframe-mechanic-civilian-career-guide",
+    "title": "Marine MOS 6111 Helicopter Airframe Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-14",
+    "description": "Real career options for 6111 Helicopter/Tiltrotor Airframe Mechanics transitioning to civilian aviation. Includes A&P license pathway, airline careers, defense contractor roles with salaries $55K-$95K+.",
+    "keywords": "6111 MOS civilian jobs, helicopter airframe mechanic civilian career, Marine aircraft mechanic transition, A&P license military",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "7220-unmanned-aerial-system-operator-civilian-career-guide",
-    "title": "Marine 7220 UAS Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-15",
-    "description": "Career transition guide for Marine UAS operators moving to civilian drone careers. Includes commercial drone pilot, defense contractor, mapping/surveying roles with $60K-$185K+ salary ranges and FAA Part 107 requirements.",
-    "keywords": "7220 Marine career transition, UAS operator civilian jobs, military drone pilot civilian career, commercial drone pilot salary",
+    "slug": "6112-helicopter-powerplant-mechanic-civilian-career-guide",
+    "title": "Marine MOS 6112 Helicopter Powerplant Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-14",
+    "description": "Real career options for 6112 Helicopter/Tiltrotor Powerplant Mechanics transitioning to civilian aviation. Includes A&P license pathway, turbine engine careers, defense contractor roles with salaries $58K-$100K+.",
+    "keywords": "6112 MOS civilian jobs, helicopter powerplant mechanic civilian career, Marine engine mechanic transition, turbine mechanic A&P license",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -3219,38 +4607,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "6124-helicopter-dynamic-components-repairer-civilian-career-guide",
-    "title": "Marine MOS 6124 Helicopter Dynamic Components Repairer to Civilian: Complete Career Transition Guide (2025)",
-    "date": "2026-01-14",
-    "description": "Real career options for 6124 Helicopter/Tiltrotor Dynamic Components Repairers transitioning to civilian aviation. Includes A&P license pathway, component overhaul specialist careers, MRO roles with salaries $62K-$105K+.",
-    "keywords": "6124 MOS civilian jobs, helicopter dynamic components repairer civilian career, Marine rotor repairer transition, helicopter component overhaul A&P",
+    "slug": "4402-judge-advocate-civilian-career-guide",
+    "title": "4402 Judge Advocate to Civilian Attorney: Your Complete Legal Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-13",
+    "description": "Real career options for Marine Corps Judge Advocates (4402) transitioning to civilian legal practice. Includes salary ranges $85K-$250K+, paths to corporate counsel, federal positions, private practice, and skills translation from military law to civilian careers.",
+    "keywords": "4402 judge advocate civilian jobs, JAG to civilian attorney, Marine Corps lawyer career transition, military attorney to corporate counsel",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "6152-ch53e-helicopter-maintenance-chief-civilian-career-guide",
-    "title": "MOS 6152 CH-53E Helicopter Maintenance Chief to Civilian: Rotary Wing Aviation Career Guide",
-    "date": "2026-01-14",
-    "description": "Career paths for 6152 CH-53E Helicopter Maintenance Chiefs. Includes salary data $75K-$145K+, helicopter MRO, offshore aviation, EMS, and heavy-lift operations.",
-    "keywords": "6152 MOS civilian jobs, CH-53 maintenance chief transition, helicopter maintenance careers, rotary wing aviation jobs",
+    "slug": "4421-legal-services-specialist-civilian-career-guide",
+    "title": "4421 Legal Services Specialist to Civilian: Your Complete Paralegal Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-13",
+    "description": "Real career options for Marine Corps 4421 Legal Services Specialists transitioning to civilian legal careers. Includes salary ranges $45K-$95K+, certifications, and direct skills translation to paralegal, legal assistant, and federal legal positions.",
+    "keywords": "4421 legal services specialist civilian jobs, Marine Corps paralegal career transition, military legal specialist to civilian",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "6153-helicopter-tiltrotor-mechanic-civilian-career-guide",
-    "title": "MOS 6153 Helicopter/Tiltrotor Mechanic to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-14",
-    "description": "Real career options for Marine 6153 Helicopter/Tiltrotor Mechanics transitioning to civilian aviation. Includes salary ranges $55K-$120K+, A&P license requirements, and airline opportunities.",
-    "keywords": "6153 MOS civilian jobs, helicopter mechanic career transition, Marine aviation maintenance careers, A&P license for veterans",
+    "slug": "4422-legal-services-court-reporter-civilian-career-guide",
+    "title": "4422 Legal Services Court Reporter to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-13",
+    "description": "Real career options for Marine Corps 4422 Legal Services Court Reporters transitioning to civilian careers. Includes salary ranges $50K-$110K+, certification paths, and direct skills translation to court reporting, legal transcription, and closed captioning careers.",
+    "keywords": "4422 legal services court reporter civilian jobs, Marine Corps court reporter career transition, military stenographer to civilian career",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "6154-rotary-wing-avionics-maintenance-chief-civilian-career-guide",
-    "title": "MOS 6154 Rotary Wing Avionics Maintenance Chief to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-14",
-    "description": "Real career options for Marine 6154 Avionics Chiefs transitioning to civilian aviation electronics. Includes salary ranges $65K-$135K+, FCC licenses, and avionics management roles.",
-    "keywords": "6154 MOS civilian jobs, avionics maintenance chief career transition, Marine avionics careers, aviation electronics management",
+    "slug": "4430-legal-administrative-officer-civilian-career-guide",
+    "title": "4430 Legal Administrative Officer to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-13",
+    "description": "Real career options for Marine Corps 4430 Legal Administrative Officers (Warrant Officers) transitioning to civilian careers. Includes salary ranges $75K-$150K+, paths to legal operations management, paralegal management, compliance roles, and skills translation from military legal leadership.",
+    "keywords": "4430 legal administrative officer civilian jobs, Marine Corps warrant officer legal transition, military legal management to civilian career",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -3309,42 +4697,6 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "6074-cryogenics-equipment-operator-civilian-career-guide",
-    "title": "MOS 6074 Cryogenics Equipment Operator to Civilian: Specialized Technical Career Transition Guide",
-    "date": "2026-01-13",
-    "description": "Career paths for 6074 Cryogenics Equipment Operators. Includes salary data $55K-$110K+, industrial gas careers, HVAC-R, aviation oxygen systems, and technical roles.",
-    "keywords": "6074 MOS civilian jobs, cryogenics operator transition, industrial gas careers, oxygen systems technician jobs",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
-    "slug": "6092-aircraft-intermediate-level-maintenance-chief-civilian-career-guide",
-    "title": "MOS 6092 Aircraft Intermediate Level Maintenance Chief to Civilian: Depot & Heavy Maintenance Career Guide",
-    "date": "2026-01-13",
-    "description": "Career paths for 6092 Intermediate Level Maintenance Chiefs. Includes salary data $80K-$150K+, MRO management, depot maintenance, and aviation leadership.",
-    "keywords": "6092 MOS civilian jobs, intermediate level maintenance chief transition, MRO management careers, depot maintenance jobs",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
-    "slug": "6111-helicopter-airframe-mechanic-civilian-career-guide",
-    "title": "Marine MOS 6111 Helicopter Airframe Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-13",
-    "description": "Real career options for 6111 Helicopter/Tiltrotor Airframe Mechanics transitioning to civilian aviation. Includes A&P license pathway, airline careers, defense contractor roles with salaries $55K-$95K+.",
-    "keywords": "6111 MOS civilian jobs, helicopter airframe mechanic civilian career, Marine aircraft mechanic transition, A&P license military",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
-    "slug": "6112-helicopter-powerplant-mechanic-civilian-career-guide",
-    "title": "Marine MOS 6112 Helicopter Powerplant Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-13",
-    "description": "Real career options for 6112 Helicopter/Tiltrotor Powerplant Mechanics transitioning to civilian aviation. Includes A&P license pathway, turbine engine careers, defense contractor roles with salaries $58K-$100K+.",
-    "keywords": "6112 MOS civilian jobs, helicopter powerplant mechanic civilian career, Marine engine mechanic transition, turbine mechanic A&P license",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
     "slug": "2311-ammunition-technician-civilian-career-guide",
     "title": "Marine Corps 2311 Ammunition Technician to Civilian: Complete Career Transition Guide (2025)",
     "date": "2026-01-12",
@@ -3381,38 +4733,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "4402-judge-advocate-civilian-career-guide",
-    "title": "4402 Judge Advocate to Civilian Attorney: Your Complete Legal Career Transition Roadmap (With Salary Data)",
+    "slug": "coast-guard-fs-culinary-specialist-civilian-career-guide",
+    "title": "Coast Guard CS (Culinary Specialist) to Civilian: Complete Career Transition Guide (2024-2025 Salaries)",
     "date": "2026-01-12",
-    "description": "Real career options for Marine Corps Judge Advocates (4402) transitioning to civilian legal practice. Includes salary ranges $85K-$250K+, paths to corporate counsel, federal positions, private practice, and skills translation from military law to civilian careers.",
-    "keywords": "4402 judge advocate civilian jobs, JAG to civilian attorney, Marine Corps lawyer career transition, military attorney to corporate counsel",
+    "description": "Real career options for Coast Guard Culinary Specialists (FS) transitioning to civilian life. Restaurant, healthcare, hospitality careers with salary ranges $35K-$90K+.",
+    "keywords": "Coast Guard CS civilian jobs, Culinary Specialist career transition, military cook to civilian chef, food service careers",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "4421-legal-services-specialist-civilian-career-guide",
-    "title": "4421 Legal Services Specialist to Civilian: Your Complete Paralegal Career Transition Roadmap (With Salary Data)",
+    "slug": "coast-guard-mk-machinery-technician-civilian-career-guide",
+    "title": "Coast Guard MK to Civilian: Complete Career Transition Guide for Machinery Technicians (2024-2025 Salaries)",
     "date": "2026-01-12",
-    "description": "Real career options for Marine Corps 4421 Legal Services Specialists transitioning to civilian legal careers. Includes salary ranges $45K-$95K+, certifications, and direct skills translation to paralegal, legal assistant, and federal legal positions.",
-    "keywords": "4421 legal services specialist civilian jobs, Marine Corps paralegal career transition, military legal specialist to civilian",
+    "description": "Real career options for Coast Guard Machinery Technicians transitioning to civilian life. HVAC, diesel mechanic, marine tech careers with salary ranges $45K-$95K+.",
+    "keywords": "Coast Guard MK civilian jobs, Machinery Technician career transition, marine mechanic to civilian, HVAC diesel technician careers",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "4422-legal-services-court-reporter-civilian-career-guide",
-    "title": "4422 Legal Services Court Reporter to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "slug": "coast-guard-mst-marine-science-technician-civilian-career-guide",
+    "title": "Coast Guard MST to Civilian: Complete Career Transition Guide for Marine Science Technicians (2024-2025 Salaries)",
     "date": "2026-01-12",
-    "description": "Real career options for Marine Corps 4422 Legal Services Court Reporters transitioning to civilian careers. Includes salary ranges $50K-$110K+, certification paths, and direct skills translation to court reporting, legal transcription, and closed captioning careers.",
-    "keywords": "4422 legal services court reporter civilian jobs, Marine Corps court reporter career transition, military stenographer to civilian career",
+    "description": "Real career options for Coast Guard Marine Science Technicians transitioning to civilian life. Environmental careers, HAZMAT, pollution response with salary ranges $50K-$115K+.",
+    "keywords": "Coast Guard MST civilian jobs, Marine Science Technician career transition, environmental careers, HAZMAT oil spill response",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "4430-legal-administrative-officer-civilian-career-guide",
-    "title": "4430 Legal Administrative Officer to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "slug": "coast-guard-os-operations-specialist-civilian-career-guide",
+    "title": "Coast Guard OS to Civilian: Complete Career Transition Guide for Operations Specialists (2024-2025 Salaries)",
     "date": "2026-01-12",
-    "description": "Real career options for Marine Corps 4430 Legal Administrative Officers (Warrant Officers) transitioning to civilian careers. Includes salary ranges $75K-$150K+, paths to legal operations management, paralegal management, compliance roles, and skills translation from military legal leadership.",
-    "keywords": "4430 legal administrative officer civilian jobs, Marine Corps warrant officer legal transition, military legal management to civilian career",
+    "description": "Real career options for Coast Guard Operations Specialists transitioning to civilian life. Air traffic control, 911 dispatch, logistics careers with salary ranges $40K-$145K+.",
+    "keywords": "Coast Guard OS civilian jobs, Operations Specialist career transition, military dispatcher to civilian, air traffic controller careers",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -3471,40 +4823,44 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "coast-guard-fs-culinary-specialist-civilian-career-guide",
-    "title": "Coast Guard CS (Culinary Specialist) to Civilian: Complete Career Transition Guide (2024-2025 Salaries)",
+    "slug": "sb-swcc-special-warfare-boat-operator-civilian-career-guide",
+    "title": "Navy SWCC/SB (Special Warfare Boat Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
     "date": "2026-01-11",
-    "description": "Real career options for Coast Guard Culinary Specialists (FS) transitioning to civilian life. Restaurant, healthcare, hospitality careers with salary ranges $35K-$90K+.",
-    "keywords": "Coast Guard CS civilian jobs, Culinary Specialist career transition, military cook to civilian chef, food service careers",
+    "description": "Real career options for Navy SWCC/Special Warfare Boat Operators transitioning to civilian life. Includes salary ranges $60K-$170K+, maritime security, law enforcement, and boat operations careers.",
+    "keywords": "Navy SWCC civilian jobs, Special Warfare Boat Operator career transition, SWCC maritime security, boat operator civilian career, SB rating transition",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Career Guides",
+    "branch": "Navy"
   },
   {
-    "slug": "coast-guard-mk-machinery-technician-civilian-career-guide",
-    "title": "Coast Guard MK to Civilian: Complete Career Transition Guide for Machinery Technicians (2024-2025 Salaries)",
+    "slug": "sh-ships-serviceman-civilian-career-guide",
+    "title": "SH Ship's Serviceman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
     "date": "2026-01-11",
-    "description": "Real career options for Coast Guard Machinery Technicians transitioning to civilian life. HVAC, diesel mechanic, marine tech careers with salary ranges $45K-$95K+.",
-    "keywords": "Coast Guard MK civilian jobs, Machinery Technician career transition, marine mechanic to civilian, HVAC diesel technician careers",
+    "description": "Real career options for SH Ship's Serviceman (Retail Services Specialist) transitioning to civilian life. Includes salary ranges $35K-$95K+, required certifications, and skills translation.",
+    "keywords": "SH ships serviceman civilian jobs, SH career transition, retail services specialist to civilian career, Navy SH jobs",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Career Guides",
+    "branch": "Navy"
   },
   {
-    "slug": "coast-guard-mst-marine-science-technician-civilian-career-guide",
-    "title": "Coast Guard MST to Civilian: Complete Career Transition Guide for Marine Science Technicians (2024-2025 Salaries)",
+    "slug": "sk-storekeeper-civilian-career-guide",
+    "title": "SK Storekeeper to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
     "date": "2026-01-11",
-    "description": "Real career options for Coast Guard Marine Science Technicians transitioning to civilian life. Environmental careers, HAZMAT, pollution response with salary ranges $50K-$115K+.",
-    "keywords": "Coast Guard MST civilian jobs, Marine Science Technician career transition, environmental careers, HAZMAT oil spill response",
+    "description": "Real career options for SK Storekeeper (Logistics Specialist) transitioning to civilian life. Includes salary ranges $50K-$100K+, required certifications, and skills translation.",
+    "keywords": "SK storekeeper civilian jobs, SK career transition, logistics specialist to civilian career, Navy SK jobs, military logistics to civilian",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Career Guides",
+    "branch": "Navy"
   },
   {
-    "slug": "coast-guard-os-operations-specialist-civilian-career-guide",
-    "title": "Coast Guard OS to Civilian: Complete Career Transition Guide for Operations Specialists (2024-2025 Salaries)",
+    "slug": "so-navy-seal-civilian-career-guide",
+    "title": "Navy SEAL (SO) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
     "date": "2026-01-11",
-    "description": "Real career options for Coast Guard Operations Specialists transitioning to civilian life. Air traffic control, 911 dispatch, logistics careers with salary ranges $40K-$145K+.",
-    "keywords": "Coast Guard OS civilian jobs, Operations Specialist career transition, military dispatcher to civilian, air traffic controller careers",
+    "description": "Real career options for Navy SEALs transitioning to civilian life. Includes salary ranges $80K-$300K+, executive protection, federal law enforcement, contracting, and leadership development opportunities.",
+    "keywords": "Navy SEAL civilian jobs, SO career transition, SEAL executive protection, SEAL contractor salary, SEAL to FBI career",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Career Guides",
+    "branch": "Navy"
   },
   {
     "slug": "stg-sonar-technician-civilian-career-guide",
@@ -3521,6 +4877,46 @@ const blogPosts = [
     "date": "2026-01-11",
     "description": "Real career paths for Navy Utilitiesmen transitioning to civilian life. Includes salary ranges $40K-$121K+, trade certifications, HVAC/plumbing/electrical careers, and licensing requirements.",
     "keywords": "Navy UC civilian jobs, Utilitiesman career transition, UC to civilian career, Navy Seabee utilities jobs",
+    "excerpt": "",
+    "category": "Career Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "mm-machinists-mate-civilian-career-guide",
+    "title": "Navy MM (Machinist's Mate) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2026-01-10",
+    "description": "Real career paths for Navy Machinist's Mates transitioning to civilian life. Includes salary ranges $45K-$105K+, certifications, nuclear power opportunities, and skills translation.",
+    "keywords": "Navy MM civilian jobs, Machinist's Mate career transition, MM to civilian career, Navy nuclear machinist civilian jobs",
+    "excerpt": "",
+    "category": "Career Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "mn-mineman-civilian-career-guide",
+    "title": "Navy MN (Mineman) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-10",
+    "description": "Real career options for Navy Minemen transitioning to civilian life. Includes salary ranges $50K-$100K+, required certifications, and underwater systems skills translation.",
+    "keywords": "Navy MN civilian jobs, Mineman career transition, MN to civilian career, Navy mine warfare jobs, underwater systems technician",
+    "excerpt": "",
+    "category": "Career Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "mr-machinery-repairman-civilian-career-guide",
+    "title": "Navy MR (Machinery Repairman) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2026-01-10",
+    "description": "Real career paths for Navy Machinery Repairmen transitioning to civilian life. Includes salary ranges $45K-$95K+, machining certifications, welding credentials, and precision manufacturing jobs.",
+    "keywords": "Navy MR civilian jobs, Machinery Repairman career transition, MR to civilian career, Navy machinist civilian jobs",
+    "excerpt": "",
+    "category": "Career Guides",
+    "branch": "Navy"
+  },
+  {
+    "slug": "mt-missile-technician-civilian-career-guide",
+    "title": "Navy MT (Missile Technician) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-10",
+    "description": "Real career options for Navy Missile Technicians transitioning to civilian life. Includes salary ranges $60K-$120K+, required certifications, and strategic weapons systems skills translation.",
+    "keywords": "Navy MT civilian jobs, Missile Technician career transition, MT to civilian career, ballistic missile technician jobs, submarine weapons systems",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
@@ -3586,44 +4982,43 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "sb-swcc-special-warfare-boat-operator-civilian-career-guide",
-    "title": "Navy SWCC/SB (Special Warfare Boat Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-10",
-    "description": "Real career options for Navy SWCC/Special Warfare Boat Operators transitioning to civilian life. Includes salary ranges $60K-$170K+, maritime security, law enforcement, and boat operations careers.",
-    "keywords": "Navy SWCC civilian jobs, Special Warfare Boat Operator career transition, SWCC maritime security, boat operator civilian career, SB rating transition",
+    "slug": "et-electronics-technician-civilian-career-guide",
+    "title": "Navy ET Electronics Technician to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-09",
+    "description": "Real career options for Navy Electronics Technicians transitioning to civilian life. Includes salary ranges $55K-$120K+, required certifications, and defense contractor opportunities.",
+    "keywords": "Navy ET civilian jobs, Electronics Technician career transition, Navy ET to civilian, radar technician jobs, telecommunications careers",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "sh-ships-serviceman-civilian-career-guide",
-    "title": "SH Ship's Serviceman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-10",
-    "description": "Real career options for SH Ship's Serviceman (Retail Services Specialist) transitioning to civilian life. Includes salary ranges $35K-$95K+, required certifications, and skills translation.",
-    "keywords": "SH ships serviceman civilian jobs, SH career transition, retail services specialist to civilian career, Navy SH jobs",
+    "slug": "fc-fire-controlman-civilian-career-guide",
+    "title": "Navy FC Fire Controlman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-09",
+    "description": "Real career options for Navy Fire Controlmen transitioning to civilian life. Includes salary ranges $70K-$145K+, defense contractor opportunities, and clearance-based careers.",
+    "keywords": "Navy FC civilian jobs, Fire Controlman career transition, Navy FC to civilian, weapons systems technician, defense contractor jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "sk-storekeeper-civilian-career-guide",
-    "title": "SK Storekeeper to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-10",
-    "description": "Real career options for SK Storekeeper (Logistics Specialist) transitioning to civilian life. Includes salary ranges $50K-$100K+, required certifications, and skills translation.",
-    "keywords": "SK storekeeper civilian jobs, SK career transition, logistics specialist to civilian career, Navy SK jobs, military logistics to civilian",
+    "slug": "ft-fire-control-technician-submarine-civilian-career-guide",
+    "title": "Navy FT (Fire Control Technician - Submarine) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-09",
+    "description": "Real career options for Navy FT Fire Control Technicians transitioning to civilian life. Includes salary ranges $55K-$147K+, required certifications, and skills translation for submarine veterans.",
+    "keywords": "Navy FT civilian jobs, Fire Control Technician career transition, submarine veteran careers, FT to civilian career",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "so-navy-seal-civilian-career-guide",
-    "title": "Navy SEAL (SO) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-10",
-    "description": "Real career options for Navy SEALs transitioning to civilian life. Includes salary ranges $80K-$300K+, executive protection, federal law enforcement, contracting, and leadership development opportunities.",
-    "keywords": "Navy SEAL civilian jobs, SO career transition, SEAL executive protection, SEAL contractor salary, SEAL to FBI career",
+    "slug": "gse-gas-turbine-systems-technician-electrical-civilian-career-guide",
+    "title": "Navy GSE (Gas Turbine Systems Technician - Electrical) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-09",
+    "description": "Real career options for Navy GSE Gas Turbine Systems Technicians transitioning to civilian life. Includes salary ranges $55K-$110K+, required certifications, and power generation career paths.",
+    "keywords": "Navy GSE civilian jobs, Gas Turbine Systems Technician Electrical career transition, GSE to civilian career, power plant electrician",
     "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Navy"
+    "category": "Career Guides"
   },
   {
     "slug": "gsm-gas-turbine-systems-technician-mechanical-civilian-career-guide",
@@ -3685,41 +5080,41 @@ const blogPosts = [
     "branch": "Coast Guard"
   },
   {
-    "slug": "mm-machinists-mate-civilian-career-guide",
-    "title": "Navy MM (Machinist's Mate) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-09",
-    "description": "Real career paths for Navy Machinist's Mates transitioning to civilian life. Includes salary ranges $45K-$105K+, certifications, nuclear power opportunities, and skills translation.",
-    "keywords": "Navy MM civilian jobs, Machinist's Mate career transition, MM to civilian career, Navy nuclear machinist civilian jobs",
+    "slug": "bu-builder-civilian-career-guide",
+    "title": "Navy BU Builder to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-08",
+    "description": "Real career options for Navy Builders transitioning to civilian construction. Includes salary ranges $50K-$95K+, certifications, and direct path from Seabees to civilian trades.",
+    "keywords": "Navy BU Builder civilian jobs, Seabees to civilian career, Builder career transition, construction careers for veterans",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "mn-mineman-civilian-career-guide",
-    "title": "Navy MN (Mineman) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-09",
-    "description": "Real career options for Navy Minemen transitioning to civilian life. Includes salary ranges $50K-$100K+, required certifications, and underwater systems skills translation.",
-    "keywords": "Navy MN civilian jobs, Mineman career transition, MN to civilian career, Navy mine warfare jobs, underwater systems technician",
+    "slug": "ce-construction-electrician-civilian-career-guide",
+    "title": "Navy CE Construction Electrician to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-08",
+    "description": "Real career options for Navy Construction Electricians transitioning to civilian electrical work. Includes salary ranges $52K-$110K+, licensing requirements, and direct path from Seabees to journeyman electrician.",
+    "keywords": "Navy CE Construction Electrician civilian jobs, Seabees electrician career transition, CE to civilian electrician, veteran electrician jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "mr-machinery-repairman-civilian-career-guide",
-    "title": "Navy MR (Machinery Repairman) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-09",
-    "description": "Real career paths for Navy Machinery Repairmen transitioning to civilian life. Includes salary ranges $45K-$95K+, machining certifications, welding credentials, and precision manufacturing jobs.",
-    "keywords": "Navy MR civilian jobs, Machinery Repairman career transition, MR to civilian career, Navy machinist civilian jobs",
+    "slug": "cm-construction-mechanic-civilian-career-guide",
+    "title": "Navy CM Construction Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-08",
+    "description": "Real career options for Navy Construction Mechanics transitioning to civilian trades. Includes salary ranges $55K-$95K+, ASE certifications, and direct path from Seabees to diesel mechanic, HVAC tech, or heavy equipment careers.",
+    "keywords": "Navy CM Construction Mechanic civilian jobs, Seabees mechanic career transition, CM to civilian mechanic, diesel mechanic veteran jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "mt-missile-technician-civilian-career-guide",
-    "title": "Navy MT (Missile Technician) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-09",
-    "description": "Real career options for Navy Missile Technicians transitioning to civilian life. Includes salary ranges $60K-$120K+, required certifications, and strategic weapons systems skills translation.",
-    "keywords": "Navy MT civilian jobs, Missile Technician career transition, MT to civilian career, ballistic missile technician jobs, submarine weapons systems",
+    "slug": "ct-cryptologic-technician-civilian-career-guide",
+    "title": "Navy CT (Cryptologic Technician) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2026-01-08",
+    "description": "Navy CT transition roadmap with real civilian jobs. Salaries $75K-$150K+. Covers CTR, CTN, CTI, CTT paths to NSA, defense contractors, cybersecurity. TS/SCI clearance worth $20K-40K premium.",
+    "keywords": "Navy CT civilian jobs, Cryptologic Technician career transition, CT to civilian career, Navy CTR CTN CTI CTT jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
@@ -3784,41 +5179,40 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "et-electronics-technician-civilian-career-guide",
-    "title": "Navy ET Electronics Technician to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-08",
-    "description": "Real career options for Navy Electronics Technicians transitioning to civilian life. Includes salary ranges $55K-$120K+, required certifications, and defense contractor opportunities.",
-    "keywords": "Navy ET civilian jobs, Electronics Technician career transition, Navy ET to civilian, radar technician jobs, telecommunications careers",
+    "slug": "ag-aerographers-mate-civilian-career-guide",
+    "title": "Navy AG (Aerographer's Mate) to Civilian: Your Complete Meteorology Career Transition Guide (With 2025 Salary Data)",
+    "date": "2026-01-07",
+    "description": "Real career options for Navy AG Aerographer's Mate transitioning to civilian meteorology careers. Includes salary ranges $55K-$130K+, required education, and NOAA pathways.",
+    "keywords": "Navy AG civilian jobs, Aerographer's Mate career transition, AG to meteorologist, Navy weather forecaster jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "fc-fire-controlman-civilian-career-guide",
-    "title": "Navy FC Fire Controlman to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-08",
-    "description": "Real career options for Navy Fire Controlmen transitioning to civilian life. Includes salary ranges $70K-$145K+, defense contractor opportunities, and clearance-based careers.",
-    "keywords": "Navy FC civilian jobs, Fire Controlman career transition, Navy FC to civilian, weapons systems technician, defense contractor jobs",
+    "slug": "am-aviation-structural-mechanic-civilian-career-guide",
+    "title": "Navy AM (Aviation Structural Mechanic) to Civilian: Your Complete Career Transition Guide (With 2025 Salary Data)",
+    "date": "2026-01-07",
+    "description": "Real career options for Navy AM Aviation Structural Mechanic transitioning to civilian life. Includes salary ranges $55K-$110K+, A&P certification pathway, and aerospace careers.",
+    "keywords": "Navy AM civilian jobs, Aviation Structural Mechanic career transition, AM to civilian career, Navy aircraft mechanic jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Navy"
   },
   {
-    "slug": "ft-fire-control-technician-submarine-civilian-career-guide",
-    "title": "Navy FT (Fire Control Technician - Submarine) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-08",
-    "description": "Real career options for Navy FT Fire Control Technicians transitioning to civilian life. Includes salary ranges $55K-$147K+, required certifications, and skills translation for submarine veterans.",
-    "keywords": "Navy FT civilian jobs, Fire Control Technician career transition, submarine veteran careers, FT to civilian career",
+    "slug": "ame-aviation-structural-mechanic-safety-equipment-civilian-career-guide",
+    "title": "Navy AME to Civilian: Aviation Safety Equipment Career Transition Guide (With Salary Data)",
+    "date": "2026-01-07",
+    "description": "Career guide for Navy AME transitioning to civilian life. Includes salary ranges $43K-$145K, FAA certifications, and life support equipment jobs at Boeing, Lockheed Martin.",
+    "keywords": "Navy AME civilian jobs, AME career transition, aviation safety equipment technician, parachute rigger FAA",
     "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Navy"
+    "category": "Career Guides"
   },
   {
-    "slug": "gse-gas-turbine-systems-technician-electrical-civilian-career-guide",
-    "title": "Navy GSE (Gas Turbine Systems Technician - Electrical) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2026-01-08",
-    "description": "Real career options for Navy GSE Gas Turbine Systems Technicians transitioning to civilian life. Includes salary ranges $55K-$110K+, required certifications, and power generation career paths.",
-    "keywords": "Navy GSE civilian jobs, Gas Turbine Systems Technician Electrical career transition, GSE to civilian career, power plant electrician",
+    "slug": "amt-aviation-maintenance-technician-civilian-career-guide",
+    "title": "Coast Guard AMT to Civilian: Your Complete Aviation Mechanic Career Roadmap (With 2024 Salary Data)",
+    "date": "2026-01-07",
+    "description": "Coast Guard Aviation Maintenance Technicians transitioning to civilian aviation careers. FAA A&P license pathways, airline jobs, salary ranges $55K-$120K+, and certification requirements.",
+    "keywords": "Coast Guard AMT civilian jobs, aviation maintenance technician career transition, FAA A&P license, AMT to civilian",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -3882,44 +5276,44 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "bu-builder-civilian-career-guide",
-    "title": "Navy BU Builder to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-07",
-    "description": "Real career options for Navy Builders transitioning to civilian construction. Includes salary ranges $50K-$95K+, certifications, and direct path from Seabees to civilian trades.",
-    "keywords": "Navy BU Builder civilian jobs, Seabees to civilian career, Builder career transition, construction careers for veterans",
+    "slug": "0659-cyber-network-chief-civilian-career-guide",
+    "title": "Marine 0659 Cyber Network Chief to Civilian: Complete Senior IT Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-06",
+    "description": "Senior career options for Marine 0659 Cyber Network Chiefs. IT Manager $120K-$160K, Network Director $160K-$200K+, CTO path $200K-$300K+. TS/SCI clearance adds $40K premium. Leadership experience critical.",
+    "keywords": "0659 cyber network chief civilian jobs, Marine Corps 0659 career transition, network chief to civilian",
     "excerpt": "",
     "category": "Career Guides",
-    "branch": "Navy"
+    "branch": "Marines"
   },
   {
-    "slug": "ce-construction-electrician-civilian-career-guide",
-    "title": "Navy CE Construction Electrician to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-07",
-    "description": "Real career options for Navy Construction Electricians transitioning to civilian electrical work. Includes salary ranges $52K-$110K+, licensing requirements, and direct path from Seabees to journeyman electrician.",
-    "keywords": "Navy CE Construction Electrician civilian jobs, Seabees electrician career transition, CE to civilian electrician, veteran electrician jobs",
+    "slug": "0671-data-systems-administrator-civilian-career-guide",
+    "title": "Marine 0671 Data Systems Administrator to Civilian: Complete IT Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-06",
+    "description": "Real career options for Marine 0671 Data Systems Administrators. Entry-level $65K-$85K, experienced sysadmins $95K-$130K+. Linux specialists add $10K-$15K premium. Active clearance worth $25K+.",
+    "keywords": "0671 data systems administrator civilian jobs, Marine Corps 0671 career transition, data systems admin to civilian",
     "excerpt": "",
     "category": "Career Guides",
-    "branch": "Navy"
+    "branch": "Marines"
   },
   {
-    "slug": "cm-construction-mechanic-civilian-career-guide",
-    "title": "Navy CM Construction Mechanic to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-07",
-    "description": "Real career options for Navy Construction Mechanics transitioning to civilian trades. Includes salary ranges $55K-$95K+, ASE certifications, and direct path from Seabees to diesel mechanic, HVAC tech, or heavy equipment careers.",
-    "keywords": "Navy CM Construction Mechanic civilian jobs, Seabees mechanic career transition, CM to civilian mechanic, diesel mechanic veteran jobs",
+    "slug": "0681-information-assurance-technician-civilian-career-guide",
+    "title": "Marine 0681 Information Assurance Technician to Civilian: Complete Cybersecurity Career Guide (2025 Salary Data)",
+    "date": "2026-01-06",
+    "description": "Real career options for Marine 0681 Information Assurance Technicians. Entry-level $85K-$110K, experienced $120K-$165K+. IAT Level II positions $135K-$216K with clearance. DoD 8570/8140 experience critical.",
+    "keywords": "0681 information assurance technician civilian jobs, Marine Corps 0681 career transition, information assurance to civilian",
     "excerpt": "",
     "category": "Career Guides",
-    "branch": "Navy"
+    "branch": "Marines"
   },
   {
-    "slug": "ct-cryptologic-technician-civilian-career-guide",
-    "title": "Navy CT (Cryptologic Technician) to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-07",
-    "description": "Navy CT transition roadmap with real civilian jobs. Salaries $75K-$150K+. Covers CTR, CTN, CTI, CTT paths to NSA, defense contractors, cybersecurity. TS/SCI clearance worth $20K-40K premium.",
-    "keywords": "Navy CT civilian jobs, Cryptologic Technician career transition, CT to civilian career, Navy CTR CTN CTI CTT jobs",
+    "slug": "0689-cyber-space-chief-civilian-career-guide",
+    "title": "Marine 0689 Cyber Space Chief to Civilian: Complete Senior Cybersecurity Career Guide (2025 Salary Data)",
+    "date": "2026-01-06",
+    "description": "Senior leadership career options for Marine 0689 Cyber Space Chiefs. Security management $130K-$175K, CISO/Director roles $175K-$250K+. TS/SCI clearance worth $40K+ premium. 10+ years experience critical.",
+    "keywords": "0689 cyber space chief civilian jobs, Marine Corps 0689 career transition, cyber chief to civilian",
     "excerpt": "",
     "category": "Career Guides",
-    "branch": "Navy"
+    "branch": "Marines"
   },
   {
     "slug": "0699-communications-chief-civilian-career-guide",
@@ -3981,42 +5375,44 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "ag-aerographers-mate-civilian-career-guide",
-    "title": "Navy AG (Aerographer's Mate) to Civilian: Your Complete Meteorology Career Transition Guide (With 2025 Salary Data)",
-    "date": "2026-01-06",
-    "description": "Real career options for Navy AG Aerographer's Mate transitioning to civilian meteorology careers. Includes salary ranges $55K-$130K+, required education, and NOAA pathways.",
-    "keywords": "Navy AG civilian jobs, Aerographer's Mate career transition, AG to meteorologist, Navy weather forecaster jobs",
+    "slug": "0511-magtf-planning-specialist-civilian-career-guide",
+    "title": "Marine Corps 0511 MAGTF Planning Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2026-01-05",
+    "description": "Real career options for 0511 MAGTF Planning Specialists transitioning to civilian life. Includes salary ranges $60K-$145K+, certifications, and direct skills translation for operations analysts and project managers.",
+    "keywords": "0511 MAGTF planning specialist civilian jobs, Marine Corps planner career transition, operations analyst salary, defense contractor jobs",
     "excerpt": "",
     "category": "Career Guides",
-    "branch": "Navy"
+    "branch": "Marines"
   },
   {
-    "slug": "am-aviation-structural-mechanic-civilian-career-guide",
-    "title": "Navy AM (Aviation Structural Mechanic) to Civilian: Your Complete Career Transition Guide (With 2025 Salary Data)",
-    "date": "2026-01-06",
-    "description": "Real career options for Navy AM Aviation Structural Mechanic transitioning to civilian life. Includes salary ranges $55K-$110K+, A&P certification pathway, and aerospace careers.",
-    "keywords": "Navy AM civilian jobs, Aviation Structural Mechanic career transition, AM to civilian career, Navy aircraft mechanic jobs",
+    "slug": "0513-civil-affairs-nco-civilian-career-guide",
+    "title": "Marine Corps 0513 Civil Affairs NCO to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2026-01-05",
+    "description": "Real career options for 0513 Civil Affairs NCOs transitioning to civilian life. Includes salary ranges $60K-$150K+, certifications, and direct skills translation for emergency management, government relations, and international development.",
+    "keywords": "0513 civil affairs civilian jobs, Marine Corps civil affairs career transition, emergency management salary, government relations jobs",
     "excerpt": "",
     "category": "Career Guides",
-    "branch": "Navy"
+    "branch": "Marines"
   },
   {
-    "slug": "ame-aviation-structural-mechanic-safety-equipment-civilian-career-guide",
-    "title": "Navy AME to Civilian: Aviation Safety Equipment Career Transition Guide (With Salary Data)",
-    "date": "2026-01-06",
-    "description": "Career guide for Navy AME transitioning to civilian life. Includes salary ranges $43K-$145K, FAA certifications, and life support equipment jobs at Boeing, Lockheed Martin.",
-    "keywords": "Navy AME civilian jobs, AME career transition, aviation safety equipment technician, parachute rigger FAA",
+    "slug": "0520-psychological-operations-officer-civilian-career-guide",
+    "title": "Marine Corps 0520 Psychological Operations Officer to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2026-01-05",
+    "description": "Real career options for 0520 PSYOP/MISO Officers transitioning to civilian life. Includes salary ranges $75K-$180K+, certifications, and direct skills translation for strategic communications, influence analysis, and defense contractor roles.",
+    "keywords": "0520 PSYOP officer civilian jobs, Marine Corps psychological operations career transition, strategic communications salary, influence operations jobs",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Career Guides",
+    "branch": "Marines"
   },
   {
-    "slug": "amt-aviation-maintenance-technician-civilian-career-guide",
-    "title": "Coast Guard AMT to Civilian: Your Complete Aviation Mechanic Career Roadmap (With 2024 Salary Data)",
-    "date": "2026-01-06",
-    "description": "Coast Guard Aviation Maintenance Technicians transitioning to civilian aviation careers. FAA A&P license pathways, airline jobs, salary ranges $55K-$120K+, and certification requirements.",
-    "keywords": "Coast Guard AMT civilian jobs, aviation maintenance technician career transition, FAA A&P license, AMT to civilian",
+    "slug": "0521-psychological-operations-specialist-civilian-career-guide",
+    "title": "Marine Corps 0521 Psychological Operations Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2026-01-05",
+    "description": "Real career options for 0521 PSYOP/MISO Specialists transitioning to civilian life. Includes salary ranges $60K-$170K+, certifications, and direct skills translation for communications, content creation, and defense contractor roles.",
+    "keywords": "0521 PSYOP specialist civilian jobs, Marine Corps psychological operations career transition, strategic communications jobs, MISO contractor salary",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Career Guides",
+    "branch": "Marines"
   },
   {
     "slug": "0612-field-wireman-civilian-career-guide",
@@ -4079,41 +5475,41 @@ const blogPosts = [
     "branch": "Marines"
   },
   {
-    "slug": "0659-cyber-network-chief-civilian-career-guide",
-    "title": "Marine 0659 Cyber Network Chief to Civilian: Complete Senior IT Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-05",
-    "description": "Senior career options for Marine 0659 Cyber Network Chiefs. IT Manager $120K-$160K, Network Director $160K-$200K+, CTO path $200K-$300K+. TS/SCI clearance adds $40K premium. Leadership experience critical.",
-    "keywords": "0659 cyber network chief civilian jobs, Marine Corps 0659 career transition, network chief to civilian",
+    "slug": "0321-reconnaissance-marine-civilian-career-guide",
+    "title": "Marine 0321 Reconnaissance Marine to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-04",
+    "description": "Real career options for Marine 0321 Reconnaissance Marine transitioning to civilian life. Includes salary ranges $55K-$200K+, federal law enforcement, special operations contracting, and elite tactical careers.",
+    "keywords": "0321 Reconnaissance Marine civilian jobs, 0321 Recon career transition, Marine Recon to civilian career, special operations transition",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Marines"
   },
   {
-    "slug": "0671-data-systems-administrator-civilian-career-guide",
-    "title": "Marine 0671 Data Systems Administrator to Civilian: Complete IT Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-05",
-    "description": "Real career options for Marine 0671 Data Systems Administrators. Entry-level $65K-$85K, experienced sysadmins $95K-$130K+. Linux specialists add $10K-$15K premium. Active clearance worth $25K+.",
-    "keywords": "0671 data systems administrator civilian jobs, Marine Corps 0671 career transition, data systems admin to civilian",
+    "slug": "0331-machine-gunner-civilian-career-guide",
+    "title": "0331 Machine Gunner to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-04",
+    "description": "Real career options for Marine Corps 0331 Machine Gunners transitioning to civilian life. Includes salary ranges $45K-$90K+, required certifications, and Marine skills translation.",
+    "keywords": "0331 machine gunner civilian jobs, Marine machine gunner career transition, 0331 to civilian career",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Marines"
   },
   {
-    "slug": "0681-information-assurance-technician-civilian-career-guide",
-    "title": "Marine 0681 Information Assurance Technician to Civilian: Complete Cybersecurity Career Guide (2025 Salary Data)",
-    "date": "2026-01-05",
-    "description": "Real career options for Marine 0681 Information Assurance Technicians. Entry-level $85K-$110K, experienced $120K-$165K+. IAT Level II positions $135K-$216K with clearance. DoD 8570/8140 experience critical.",
-    "keywords": "0681 information assurance technician civilian jobs, Marine Corps 0681 career transition, information assurance to civilian",
+    "slug": "0341-mortarman-civilian-career-guide",
+    "title": "0341 Mortarman to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-04",
+    "description": "Real career options for Marine Corps 0341 Mortarmen transitioning to civilian life. Includes salary ranges $45K-$95K+, required certifications, and precision skills translation.",
+    "keywords": "0341 mortarman civilian jobs, Marine mortarman career transition, 0341 to civilian career, indirect fire career",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Marines"
   },
   {
-    "slug": "0689-cyber-space-chief-civilian-career-guide",
-    "title": "Marine 0689 Cyber Space Chief to Civilian: Complete Senior Cybersecurity Career Guide (2025 Salary Data)",
-    "date": "2026-01-05",
-    "description": "Senior leadership career options for Marine 0689 Cyber Space Chiefs. Security management $130K-$175K, CISO/Director roles $175K-$250K+. TS/SCI clearance worth $40K+ premium. 10+ years experience critical.",
-    "keywords": "0689 cyber space chief civilian jobs, Marine Corps 0689 career transition, cyber chief to civilian",
+    "slug": "0351-infantry-assaultman-civilian-career-guide",
+    "title": "0351 Infantry Assaultman to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-04",
+    "description": "Real career options for Marine Corps 0351 Infantry Assaultmen transitioning to civilian life. Includes salary ranges $45K-$120K+, required certifications, demolitions and breaching skills translation.",
+    "keywords": "0351 assaultman civilian jobs, Marine assaultman career transition, 0351 to civilian career, demolitions career, breaching specialist jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Marines"
@@ -4179,41 +5575,31 @@ const blogPosts = [
     "branch": "Marines"
   },
   {
-    "slug": "0511-magtf-planning-specialist-civilian-career-guide",
-    "title": "Marine Corps 0511 MAGTF Planning Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-04",
-    "description": "Real career options for 0511 MAGTF Planning Specialists transitioning to civilian life. Includes salary ranges $60K-$145K+, certifications, and direct skills translation for operations analysts and project managers.",
-    "keywords": "0511 MAGTF planning specialist civilian jobs, Marine Corps planner career transition, operations analyst salary, defense contractor jobs",
+    "slug": "0204-air-intelligence-officer-civilian-career-guide",
+    "title": "Marine Corps 0204 Air Intelligence Officer to Civilian: Your Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-03",
+    "description": "Comprehensive career guide for 0204 Air Intelligence Officers transitioning to civilian careers. Includes defense contractor roles $85K-$150K+, three-letter agencies, and aviation intelligence analysis opportunities.",
+    "keywords": "0204 MOS civilian jobs, air intelligence officer career transition, Marine intelligence officer careers, aviation intelligence analyst jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Marines"
   },
   {
-    "slug": "0513-civil-affairs-nco-civilian-career-guide",
-    "title": "Marine Corps 0513 Civil Affairs NCO to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-04",
-    "description": "Real career options for 0513 Civil Affairs NCOs transitioning to civilian life. Includes salary ranges $60K-$150K+, certifications, and direct skills translation for emergency management, government relations, and international development.",
-    "keywords": "0513 civil affairs civilian jobs, Marine Corps civil affairs career transition, emergency management salary, government relations jobs",
+    "slug": "0210-counterintelligence-humint-officer-civilian-career-guide",
+    "title": "Marine Corps 0210 Counterintelligence/HUMINT Officer to Civilian: Complete Career Transition Guide (2025)",
+    "date": "2026-01-03",
+    "description": "Career transition guide for 0210 CI/HUMINT Officers. Includes FBI counterintelligence $100K-$160K, CIA operations $90K-$150K+, defense contractor CI roles, and investigative careers with current salary data.",
+    "keywords": "0210 MOS civilian jobs, counterintelligence officer careers, HUMINT specialist transition, Marine CI officer civilian jobs, counterintelligence careers",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Marines"
   },
   {
-    "slug": "0520-psychological-operations-officer-civilian-career-guide",
-    "title": "Marine Corps 0520 Psychological Operations Officer to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-04",
-    "description": "Real career options for 0520 PSYOP/MISO Officers transitioning to civilian life. Includes salary ranges $75K-$180K+, certifications, and direct skills translation for strategic communications, influence analysis, and defense contractor roles.",
-    "keywords": "0520 PSYOP officer civilian jobs, Marine Corps psychological operations career transition, strategic communications salary, influence operations jobs",
-    "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
-  },
-  {
-    "slug": "0521-psychological-operations-specialist-civilian-career-guide",
-    "title": "Marine Corps 0521 Psychological Operations Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-04",
-    "description": "Real career options for 0521 PSYOP/MISO Specialists transitioning to civilian life. Includes salary ranges $60K-$170K+, certifications, and direct skills translation for communications, content creation, and defense contractor roles.",
-    "keywords": "0521 PSYOP specialist civilian jobs, Marine Corps psychological operations career transition, strategic communications jobs, MISO contractor salary",
+    "slug": "0211-counterintelligence-humint-specialist-civilian-career-guide",
+    "title": "Marine Corps 0211 Counterintelligence/HUMINT Specialist to Civilian: Complete Career Guide (2025 Salaries)",
+    "date": "2026-01-03",
+    "description": "Career transition roadmap for 0211 CI/HUMINT Specialists. Defense contractor positions $80K-$140K+, FBI analyst roles $70K-$120K, federal law enforcement, and investigative careers with current 2025 salary data.",
+    "keywords": "0211 MOS civilian jobs, CI HUMINT specialist careers, Marine counterintelligence jobs, 0211 career transition, HUMINT analyst civilian jobs",
     "excerpt": "",
     "category": "Career Guides",
     "branch": "Marines"
@@ -4279,74 +5665,49 @@ const blogPosts = [
     "branch": "Marines"
   },
   {
-    "slug": "0321-reconnaissance-marine-civilian-career-guide",
-    "title": "Marine 0321 Reconnaissance Marine to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "slug": "army-mos-92w-civilian-career-guide",
+    "title": "Army 92W Water Treatment Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
     "date": "2026-01-03",
-    "description": "Real career options for Marine 0321 Reconnaissance Marine transitioning to civilian life. Includes salary ranges $55K-$200K+, federal law enforcement, special operations contracting, and elite tactical careers.",
-    "keywords": "0321 Reconnaissance Marine civilian jobs, 0321 Recon career transition, Marine Recon to civilian career, special operations transition",
+    "description": "Complete career roadmap for 92W Water Treatment Specialists transitioning to civilian water utilities, wastewater management, and environmental careers. Includes salary data $47K-$106K+, water plant operator, utilities manager roles with companies actively hiring veterans.",
+    "keywords": "92W civilian jobs, Water Treatment Specialist career transition, water plant operator salary, wastewater treatment careers, utilities jobs, water quality technician, environmental compliance",
     "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
+    "category": "Career Guides"
   },
   {
-    "slug": "0331-machine-gunner-civilian-career-guide",
-    "title": "0331 Machine Gunner to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-03",
-    "description": "Real career options for Marine Corps 0331 Machine Gunners transitioning to civilian life. Includes salary ranges $45K-$90K+, required certifications, and Marine skills translation.",
-    "keywords": "0331 machine gunner civilian jobs, Marine machine gunner career transition, 0331 to civilian career",
-    "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
-  },
-  {
-    "slug": "0341-mortarman-civilian-career-guide",
-    "title": "0341 Mortarman to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-03",
-    "description": "Real career options for Marine Corps 0341 Mortarmen transitioning to civilian life. Includes salary ranges $45K-$95K+, required certifications, and precision skills translation.",
-    "keywords": "0341 mortarman civilian jobs, Marine mortarman career transition, 0341 to civilian career, indirect fire career",
-    "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
-  },
-  {
-    "slug": "0351-infantry-assaultman-civilian-career-guide",
-    "title": "0351 Infantry Assaultman to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-03",
-    "description": "Real career options for Marine Corps 0351 Infantry Assaultmen transitioning to civilian life. Includes salary ranges $45K-$120K+, required certifications, demolitions and breaching skills translation.",
-    "keywords": "0351 assaultman civilian jobs, Marine assaultman career transition, 0351 to civilian career, demolitions career, breaching specialist jobs",
-    "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
-  },
-  {
-    "slug": "0204-air-intelligence-officer-civilian-career-guide",
-    "title": "Marine Corps 0204 Air Intelligence Officer to Civilian: Your Complete Career Transition Guide (2025 Salary Data)",
+    "slug": "army-mos-91p-civilian-career-guide",
+    "title": "Army 91P (Artillery Mechanic) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
     "date": "2026-01-02",
-    "description": "Comprehensive career guide for 0204 Air Intelligence Officers transitioning to civilian careers. Includes defense contractor roles $85K-$150K+, three-letter agencies, and aviation intelligence analysis opportunities.",
-    "keywords": "0204 MOS civilian jobs, air intelligence officer career transition, Marine intelligence officer careers, aviation intelligence analyst jobs",
+    "description": "Complete transition roadmap for Army 91P Artillery Mechanics. Includes verified salary ranges $52K-$105K+, heavy equipment mechanic, diesel technician, field service careers with ASE certifications and 95+ companies hiring veterans including defense contractors and equipment dealers.",
+    "keywords": "91P civilian jobs, Army Artillery Mechanic career transition, heavy equipment mechanic salary, diesel technician, field artillery system, 91P to civilian career",
     "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
+    "category": "Career Guides"
   },
   {
-    "slug": "0210-counterintelligence-humint-officer-civilian-career-guide",
-    "title": "Marine Corps 0210 Counterintelligence/HUMINT Officer to Civilian: Complete Career Transition Guide (2025)",
+    "slug": "army-mos-91s-civilian-career-guide",
+    "title": "Army 91S (Stryker Systems Maintainer) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
     "date": "2026-01-02",
-    "description": "Career transition guide for 0210 CI/HUMINT Officers. Includes FBI counterintelligence $100K-$160K, CIA operations $90K-$150K+, defense contractor CI roles, and investigative careers with current salary data.",
-    "keywords": "0210 MOS civilian jobs, counterintelligence officer careers, HUMINT specialist transition, Marine CI officer civilian jobs, counterintelligence careers",
+    "description": "Complete transition roadmap for Army 91S Stryker Systems Maintainers. Includes verified salary ranges $55K-$115K+, diesel mechanic, heavy equipment technician, defense contractor, armored vehicle careers with certifications and 90+ companies hiring veterans.",
+    "keywords": "91S civilian jobs, Army Stryker Systems Maintainer career transition, diesel mechanic salary, armored vehicle technician, defense contractor jobs, 91S to civilian career",
     "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
+    "category": "Career Guides"
   },
   {
-    "slug": "0211-counterintelligence-humint-specialist-civilian-career-guide",
-    "title": "Marine Corps 0211 Counterintelligence/HUMINT Specialist to Civilian: Complete Career Guide (2025 Salaries)",
+    "slug": "army-mos-91x-civilian-career-guide",
+    "title": "Army 91X (Maintenance Supervisor) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
     "date": "2026-01-02",
-    "description": "Career transition roadmap for 0211 CI/HUMINT Specialists. Defense contractor positions $80K-$140K+, FBI analyst roles $70K-$120K, federal law enforcement, and investigative careers with current 2025 salary data.",
-    "keywords": "0211 MOS civilian jobs, CI HUMINT specialist careers, Marine counterintelligence jobs, 0211 career transition, HUMINT analyst civilian jobs",
+    "description": "Complete transition roadmap for Army 91X Maintenance Supervisors. Includes verified salary ranges $70K-$145K+, fleet maintenance manager, service manager, operations manager careers with certifications including PMP, Lean Six Sigma, and 85+ companies hiring veteran supervisors.",
+    "keywords": "91X civilian jobs, Army Maintenance Supervisor career transition, fleet maintenance manager salary, service manager, operations manager, 91X to civilian career",
     "excerpt": "",
-    "category": "Career Guides",
-    "branch": "Marines"
+    "category": "Career Guides"
+  },
+  {
+    "slug": "army-mos-91z-civilian-career-guide",
+    "title": "Army 91Z (Mechanical Maintenance Supervisor) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2026-01-02",
+    "description": "Complete transition roadmap for Army 91Z Senior Maintenance Supervisors. Includes verified salary ranges $95K-$175K+, director of maintenance, operations manager, VP-level careers with executive certifications and 75+ companies hiring senior veteran leaders for $120K-$180K+ positions.",
+    "keywords": "91Z civilian jobs, Army Mechanical Maintenance Supervisor career transition, director of maintenance salary, operations manager, VP operations, 91Z to civilian career",
+    "excerpt": "",
+    "category": "Career Guides"
   },
   {
     "slug": "army-mos-92a-civilian-career-guide",
@@ -4403,11 +5764,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-92w-civilian-career-guide",
-    "title": "Army 92W Water Treatment Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2026-01-02",
-    "description": "Complete career roadmap for 92W Water Treatment Specialists transitioning to civilian water utilities, wastewater management, and environmental careers. Includes salary data $47K-$106K+, water plant operator, utilities manager roles with companies actively hiring veterans.",
-    "keywords": "92W civilian jobs, Water Treatment Specialist career transition, water plant operator salary, wastewater treatment careers, utilities jobs, water quality technician, environmental compliance",
+    "slug": "army-mos-91a-civilian-career-guide",
+    "title": "Army 91A (M1 Abrams Tank System Maintainer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-01",
+    "description": "Real career options for 91A M1 Abrams Tank System Maintainers transitioning to civilian life. Includes salary ranges $45K-$85K+, heavy equipment careers, defense contractors, diesel mechanics, and ASE certification paths.",
+    "keywords": "91A civilian jobs, M1 Abrams mechanic career transition, tank maintainer civilian salary, heavy equipment mechanic, defense contractor jobs",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "army-mos-91b-civilian-career-guide",
+    "title": "Army 91B (Wheeled Vehicle Mechanic) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-01",
+    "description": "Real career options for 91B Wheeled Vehicle Mechanics transitioning to civilian life. Includes salary ranges $48K-$95K+, diesel mechanic careers, fleet maintenance, ASE certifications, dealership opportunities, and truck technician paths.",
+    "keywords": "91B civilian jobs, wheeled vehicle mechanic career transition, diesel mechanic salary, ASE certification, fleet maintenance jobs, truck technician career",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "army-mos-91c-civilian-career-guide",
+    "title": "Army 91C (Utilities Equipment Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-01",
+    "description": "Real career options for 91C Utilities Equipment Repairers transitioning to civilian life. Includes salary ranges $52K-$95K+, HVAC technician careers, refrigeration mechanics, EPA 608 certification, industrial maintenance, and building systems paths.",
+    "keywords": "91C civilian jobs, utilities equipment repairer career transition, HVAC technician salary, EPA 608 certification, refrigeration mechanic, building maintenance jobs",
+    "excerpt": "",
+    "category": "Career Guides"
+  },
+  {
+    "slug": "army-mos-91d-civilian-career-guide",
+    "title": "Army 91D (Power Generation Equipment Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2026-01-01",
+    "description": "Real career options for 91D Power Generation Equipment Repairers transitioning to civilian life. Includes salary ranges $58K-$110K+, generator technician careers, power plant operators, diesel mechanics, electrician paths, and Cummins/Generac/CAT opportunities.",
+    "keywords": "91D civilian jobs, power generation repairer career transition, generator technician salary, power plant electrician, diesel generator mechanic, Cummins careers",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -4466,38 +5854,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91p-civilian-career-guide",
-    "title": "Army 91P (Artillery Mechanic) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-01",
-    "description": "Complete transition roadmap for Army 91P Artillery Mechanics. Includes verified salary ranges $52K-$105K+, heavy equipment mechanic, diesel technician, field service careers with ASE certifications and 95+ companies hiring veterans including defense contractors and equipment dealers.",
-    "keywords": "91P civilian jobs, Army Artillery Mechanic career transition, heavy equipment mechanic salary, diesel technician, field artillery system, 91P to civilian career",
+    "slug": "army-mos-88h-civilian-career-guide",
+    "title": "Army 88H Cargo Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-31",
+    "description": "Real career options for Army 88H Cargo Specialists transitioning to civilian life. Includes salary ranges $45K-$120K+, warehouse operations, logistics coordination, supply chain management, and freight forwarding opportunities.",
+    "keywords": "88H Cargo Specialist civilian jobs, Army cargo specialist career transition, warehouse manager salary, logistics coordinator jobs, supply chain careers for veterans",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91s-civilian-career-guide",
-    "title": "Army 91S (Stryker Systems Maintainer) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-01",
-    "description": "Complete transition roadmap for Army 91S Stryker Systems Maintainers. Includes verified salary ranges $55K-$115K+, diesel mechanic, heavy equipment technician, defense contractor, armored vehicle careers with certifications and 90+ companies hiring veterans.",
-    "keywords": "91S civilian jobs, Army Stryker Systems Maintainer career transition, diesel mechanic salary, armored vehicle technician, defense contractor jobs, 91S to civilian career",
+    "slug": "army-mos-88k-civilian-career-guide",
+    "title": "Army 88K Watercraft Operator to Civilian: Complete Maritime Career Guide (2024-2025)",
+    "date": "2025-12-31",
+    "description": "Real maritime careers for Army 88K Watercraft Operators. Tugboat operator salaries $50K-$90K+, merchant marine captain earnings $80K-$140K+, port operations, inland waterways, and commercial vessel careers for veterans.",
+    "keywords": "88K Watercraft Operator civilian jobs, Army maritime career transition, tugboat operator salary, merchant mariner credentials, USCG MMC, watercraft operator jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91x-civilian-career-guide",
-    "title": "Army 91X (Maintenance Supervisor) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-01",
-    "description": "Complete transition roadmap for Army 91X Maintenance Supervisors. Includes verified salary ranges $70K-$145K+, fleet maintenance manager, service manager, operations manager careers with certifications including PMP, Lean Six Sigma, and 85+ companies hiring veteran supervisors.",
-    "keywords": "91X civilian jobs, Army Maintenance Supervisor career transition, fleet maintenance manager salary, service manager, operations manager, 91X to civilian career",
+    "slug": "army-mos-88l-civilian-career-guide",
+    "title": "Army 88L Watercraft Engineer to Civilian: Complete Marine Engineering Career Guide (2024-2025)",
+    "date": "2025-12-31",
+    "description": "Real marine engineering careers for Army 88L Watercraft Engineers. Marine engineer salaries $65K-$145K+, chief engineer earnings $100K-$180K+, maritime propulsion, vessel maintenance, and technical careers for veterans.",
+    "keywords": "88L Watercraft Engineer civilian jobs, Army marine engineer career, USCG marine engineer license, third assistant engineer salary, maritime engineering jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91z-civilian-career-guide",
-    "title": "Army 91Z (Mechanical Maintenance Supervisor) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2026-01-01",
-    "description": "Complete transition roadmap for Army 91Z Senior Maintenance Supervisors. Includes verified salary ranges $95K-$175K+, director of maintenance, operations manager, VP-level careers with executive certifications and 75+ companies hiring senior veteran leaders for $120K-$180K+ positions.",
-    "keywords": "91Z civilian jobs, Army Mechanical Maintenance Supervisor career transition, director of maintenance salary, operations manager, VP operations, 91Z to civilian career",
+    "slug": "army-mos-88n-civilian-career-guide",
+    "title": "Army 88N Transportation Management Coordinator to Civilian: Complete Logistics Career Guide (2024-2025)",
+    "date": "2025-12-31",
+    "description": "Real logistics management careers for Army 88N Transportation Management Coordinators. Supply chain manager salaries $75K-$115K+, logistics coordinator $55K-$85K, transportation planner, operations manager careers for veterans.",
+    "keywords": "88N Transportation Management Coordinator civilian jobs, Army logistics career, supply chain manager salary, transportation coordinator jobs, logistics management veterans",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -4556,38 +5944,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91a-civilian-career-guide",
-    "title": "Army 91A (M1 Abrams Tank System Maintainer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-31",
-    "description": "Real career options for 91A M1 Abrams Tank System Maintainers transitioning to civilian life. Includes salary ranges $45K-$85K+, heavy equipment careers, defense contractors, diesel mechanics, and ASE certification paths.",
-    "keywords": "91A civilian jobs, M1 Abrams mechanic career transition, tank maintainer civilian salary, heavy equipment mechanic, defense contractor jobs",
+    "slug": "army-mos-68q-civilian-career-guide",
+    "title": "Army 68Q (Pharmacy Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-30",
+    "description": "Real career options for Army 68Q Pharmacy Specialists transitioning to civilian life. Includes salary ranges $40K-$75K+, hospital pharmacy jobs, sterile compounding, VA positions, and PTCB certification with costs.",
+    "keywords": "Army 68Q civilian jobs, pharmacy specialist career transition, 68Q to civilian, PTCB certification cost, pharmacy technician salary, hospital pharmacy jobs, sterile compounding technician",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91b-civilian-career-guide",
-    "title": "Army 91B (Wheeled Vehicle Mechanic) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-31",
-    "description": "Real career options for 91B Wheeled Vehicle Mechanics transitioning to civilian life. Includes salary ranges $48K-$95K+, diesel mechanic careers, fleet maintenance, ASE certifications, dealership opportunities, and truck technician paths.",
-    "keywords": "91B civilian jobs, wheeled vehicle mechanic career transition, diesel mechanic salary, ASE certification, fleet maintenance jobs, truck technician career",
+    "slug": "army-mos-68r-civilian-career-guide",
+    "title": "Army 68R (Veterinary Food Inspection Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-30",
+    "description": "Real career options for Army 68R Veterinary Food Inspection Specialists transitioning to civilian life. Includes salary ranges $42K-$94K+, USDA inspector jobs, quality assurance, food safety specialist, and certifications with costs.",
+    "keywords": "Army 68R civilian jobs, veterinary food inspection specialist career transition, 68R to civilian, USDA food inspector salary, food safety specialist jobs, quality assurance food manufacturing, ServSafe certification",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91c-civilian-career-guide",
-    "title": "Army 91C (Utilities Equipment Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-31",
-    "description": "Real career options for 91C Utilities Equipment Repairers transitioning to civilian life. Includes salary ranges $52K-$95K+, HVAC technician careers, refrigeration mechanics, EPA 608 certification, industrial maintenance, and building systems paths.",
-    "keywords": "91C civilian jobs, utilities equipment repairer career transition, HVAC technician salary, EPA 608 certification, refrigeration mechanic, building maintenance jobs",
+    "slug": "army-mos-68s-civilian-career-guide",
+    "title": "Army 68S (Preventive Medicine Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-30",
+    "description": "Real career options for Army 68S Preventive Medicine Specialists transitioning to civilian life. Includes salary ranges $56K-$135K+, epidemiologist jobs, infection preventionist, occupational health, and certifications with costs.",
+    "keywords": "Army 68S civilian jobs, preventive medicine specialist career transition, 68S to civilian, epidemiologist salary, infection preventionist CIC certification, occupational health safety specialist, public health jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-91d-civilian-career-guide",
-    "title": "Army 91D (Power Generation Equipment Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-31",
-    "description": "Real career options for 91D Power Generation Equipment Repairers transitioning to civilian life. Includes salary ranges $58K-$110K+, generator technician careers, power plant operators, diesel mechanics, electrician paths, and Cummins/Generac/CAT opportunities.",
-    "keywords": "91D civilian jobs, power generation repairer career transition, generator technician salary, power plant electrician, diesel generator mechanic, Cummins careers",
+    "slug": "army-mos-68t-civilian-career-guide",
+    "title": "Army 68T Animal Care Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-30",
+    "description": "Real career options for Army Animal Care Specialists transitioning to civilian life. Includes salary ranges $32K-$100K+, veterinary technician, laboratory animal care, shelter management, and specialty vet tech opportunities.",
+    "keywords": "Army 68T civilian jobs, Animal Care Specialist career transition, veterinary technician salary, VTNE certification, vet tech military to civilian",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -4646,38 +6034,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-88h-civilian-career-guide",
-    "title": "Army 88H Cargo Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-30",
-    "description": "Real career options for Army 88H Cargo Specialists transitioning to civilian life. Includes salary ranges $45K-$120K+, warehouse operations, logistics coordination, supply chain management, and freight forwarding opportunities.",
-    "keywords": "88H Cargo Specialist civilian jobs, Army cargo specialist career transition, warehouse manager salary, logistics coordinator jobs, supply chain careers for veterans",
+    "slug": "army-mos-68d-civilian-career-guide",
+    "title": "Army 68D (Operating Room Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-29",
+    "description": "Real career options for Army 68D Operating Room Specialists transitioning to civilian life. Includes salary ranges $50K-$90K+, surgical tech certification (CST), hospital OR jobs, ambulatory surgery centers, and travel opportunities.",
+    "keywords": "Army 68D civilian jobs, operating room specialist career transition, surgical technologist certification CST, 68D to civilian, surgical tech salary",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-88k-civilian-career-guide",
-    "title": "Army 88K Watercraft Operator to Civilian: Complete Maritime Career Guide (2024-2025)",
-    "date": "2025-12-30",
-    "description": "Real maritime careers for Army 88K Watercraft Operators. Tugboat operator salaries $50K-$90K+, merchant marine captain earnings $80K-$140K+, port operations, inland waterways, and commercial vessel careers for veterans.",
-    "keywords": "88K Watercraft Operator civilian jobs, Army maritime career transition, tugboat operator salary, merchant mariner credentials, USCG MMC, watercraft operator jobs",
+    "slug": "army-mos-68e-civilian-career-guide",
+    "title": "Army 68E Dental Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-29",
+    "description": "Real career options for Army Dental Specialists transitioning to civilian life. Includes salary ranges $38K-$75K+, dental assistant careers, DANB certification ($425), major employers like Aspen Dental and Heartland Dental, and VA healthcare opportunities.",
+    "keywords": "Army 68E civilian jobs, dental specialist career transition, dental assistant salary, DANB certification, 68E to civilian dental career",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-88l-civilian-career-guide",
-    "title": "Army 88L Watercraft Engineer to Civilian: Complete Marine Engineering Career Guide (2024-2025)",
-    "date": "2025-12-30",
-    "description": "Real marine engineering careers for Army 88L Watercraft Engineers. Marine engineer salaries $65K-$145K+, chief engineer earnings $100K-$180K+, maritime propulsion, vessel maintenance, and technical careers for veterans.",
-    "keywords": "88L Watercraft Engineer civilian jobs, Army marine engineer career, USCG marine engineer license, third assistant engineer salary, maritime engineering jobs",
+    "slug": "army-mos-68f-civilian-career-guide",
+    "title": "Army 68F Physical Therapy Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-29",
+    "description": "Real career options for Army Physical Therapy Specialists transitioning to civilian life. Includes salary ranges $46K-$88K+, PTA careers, NPTE certification ($485+$83), major employers like ATI Physical Therapy and Select Medical, and VA healthcare opportunities.",
+    "keywords": "Army 68F civilian jobs, physical therapy specialist career transition, PTA salary, NPTE certification, 68F to civilian physical therapy career",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-88n-civilian-career-guide",
-    "title": "Army 88N Transportation Management Coordinator to Civilian: Complete Logistics Career Guide (2024-2025)",
-    "date": "2025-12-30",
-    "description": "Real logistics management careers for Army 88N Transportation Management Coordinators. Supply chain manager salaries $75K-$115K+, logistics coordinator $55K-$85K, transportation planner, operations manager careers for veterans.",
-    "keywords": "88N Transportation Management Coordinator civilian jobs, Army logistics career, supply chain manager salary, transportation coordinator jobs, logistics management veterans",
+    "slug": "army-mos-68g-civilian-career-guide",
+    "title": "Army 68G Patient Administration Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-29",
+    "description": "Real career options for Army Patient Administration Specialists transitioning to civilian life. Includes salary ranges $40K-$95K+, medical records careers, RHIT/RHIA certification ($229-$299), Epic Systems training, major employers including VA hospitals and HCA Healthcare.",
+    "keywords": "Army 68G civilian jobs, patient administration specialist career transition, medical records salary, RHIT certification, health information management, 68G to civilian healthcare administration",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -4736,38 +6124,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68q-civilian-career-guide",
-    "title": "Army 68Q (Pharmacy Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-29",
-    "description": "Real career options for Army 68Q Pharmacy Specialists transitioning to civilian life. Includes salary ranges $40K-$75K+, hospital pharmacy jobs, sterile compounding, VA positions, and PTCB certification with costs.",
-    "keywords": "Army 68Q civilian jobs, pharmacy specialist career transition, 68Q to civilian, PTCB certification cost, pharmacy technician salary, hospital pharmacy jobs, sterile compounding technician",
+    "slug": "army-mos-38a-civilian-career-guide",
+    "title": "Army 38A Civil Affairs Officer to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-28",
+    "description": "Real career options for Army Civil Affairs Officers transitioning to civilian life. Includes salary ranges $75K-$200K+, USAID, State Department, international development, NGO careers, and humanitarian program management opportunities.",
+    "keywords": "38A civilian jobs, Civil Affairs Officer career transition, USAID careers, international development jobs, NGO program manager salary, State Department careers",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68r-civilian-career-guide",
-    "title": "Army 68R (Veterinary Food Inspection Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-29",
-    "description": "Real career options for Army 68R Veterinary Food Inspection Specialists transitioning to civilian life. Includes salary ranges $42K-$94K+, USDA inspector jobs, quality assurance, food safety specialist, and certifications with costs.",
-    "keywords": "Army 68R civilian jobs, veterinary food inspection specialist career transition, 68R to civilian, USDA food inspector salary, food safety specialist jobs, quality assurance food manufacturing, ServSafe certification",
+    "slug": "army-mos-38b-civilian-career-guide",
+    "title": "Army 38B Civil Affairs Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-28",
+    "description": "Real career options for Army Civil Affairs Specialists transitioning to civilian life. Includes salary ranges $60K-$150K+, USAID contractor jobs, NGO field positions, program coordination, and humanitarian response careers.",
+    "keywords": "38B civilian jobs, Civil Affairs Specialist career transition, international development contractor jobs, NGO field officer salary, humanitarian response careers",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68s-civilian-career-guide",
-    "title": "Army 68S (Preventive Medicine Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-29",
-    "description": "Real career options for Army 68S Preventive Medicine Specialists transitioning to civilian life. Includes salary ranges $56K-$135K+, epidemiologist jobs, infection preventionist, occupational health, and certifications with costs.",
-    "keywords": "Army 68S civilian jobs, preventive medicine specialist career transition, 68S to civilian, epidemiologist salary, infection preventionist CIC certification, occupational health safety specialist, public health jobs",
+    "slug": "army-mos-38g-civilian-career-guide",
+    "title": "Army 38G Civil Affairs Planning/Operations NCO to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-28",
+    "description": "Real career options for Army 38G Civil Affairs Planning/Operations NCOs transitioning to civilian life. Includes salary ranges $85K-$180K+, senior program management, operations director, USAID chief of party, and strategic advisory roles.",
+    "keywords": "38G civilian jobs, Civil Affairs NCO career transition, senior program manager jobs, operations director salary, USAID chief of party, international development careers",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68t-civilian-career-guide",
-    "title": "Army 68T Animal Care Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-29",
-    "description": "Real career options for Army Animal Care Specialists transitioning to civilian life. Includes salary ranges $32K-$100K+, veterinary technician, laboratory animal care, shelter management, and specialty vet tech opportunities.",
-    "keywords": "Army 68T civilian jobs, Animal Care Specialist career transition, veterinary technician salary, VTNE certification, vet tech military to civilian",
+    "slug": "army-mos-42a-civilian-career-guide",
+    "title": "Army 42A Human Resources Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-28",
+    "description": "Real career options for Army 42A Human Resources Specialists transitioning to civilian life. Includes salary ranges $50K-$140K+, HR generalist, recruiter, benefits administrator careers, and SHRM/PHR certification requirements with ROI data.",
+    "keywords": "Army 42A civilian jobs, human resources specialist career transition, 42A to HR generalist, military HR to civilian, HR jobs for veterans",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -4826,38 +6214,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68d-civilian-career-guide",
-    "title": "Army 68D (Operating Room Specialist) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-28",
-    "description": "Real career options for Army 68D Operating Room Specialists transitioning to civilian life. Includes salary ranges $50K-$90K+, surgical tech certification (CST), hospital OR jobs, ambulatory surgery centers, and travel opportunities.",
-    "keywords": "Army 68D civilian jobs, operating room specialist career transition, surgical technologist certification CST, 68D to civilian, surgical tech salary",
+    "slug": "army-mos-35n-civilian-career-guide",
+    "title": "Army 35N Signals Intelligence Analyst to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-27",
+    "description": "Real career options for Army 35N SIGINT Analysts transitioning to civilian life. Includes salary ranges $90K-$180K+, NSA careers, defense contractors, cybersecurity, and technical intelligence opportunities with security clearance advantages.",
+    "keywords": "35N civilian jobs, SIGINT analyst career transition, 35N to NSA career, signals intelligence salary, technical intelligence jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68e-civilian-career-guide",
-    "title": "Army 68E Dental Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-28",
-    "description": "Real career options for Army Dental Specialists transitioning to civilian life. Includes salary ranges $38K-$75K+, dental assistant careers, DANB certification ($425), major employers like Aspen Dental and Heartland Dental, and VA healthcare opportunities.",
-    "keywords": "Army 68E civilian jobs, dental specialist career transition, dental assistant salary, DANB certification, 68E to civilian dental career",
+    "slug": "army-mos-35p-civilian-career-guide",
+    "title": "Army 35P Cryptologic Linguist to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-27",
+    "description": "Real career options for Army 35P Cryptologic Linguists transitioning to civilian life. Includes salary ranges $90K-$200K+, NSA careers, defense contractors, translation services, and language analyst opportunities with security clearance advantages.",
+    "keywords": "35P civilian jobs, cryptologic linguist career transition, 35P to NSA career, linguist salary, military translator jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68f-civilian-career-guide",
-    "title": "Army 68F Physical Therapy Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-28",
-    "description": "Real career options for Army Physical Therapy Specialists transitioning to civilian life. Includes salary ranges $46K-$88K+, PTA careers, NPTE certification ($485+$83), major employers like ATI Physical Therapy and Select Medical, and VA healthcare opportunities.",
-    "keywords": "Army 68F civilian jobs, physical therapy specialist career transition, PTA salary, NPTE certification, 68F to civilian physical therapy career",
+    "slug": "army-mos-35q-civilian-career-guide",
+    "title": "Army 35Q Cryptologic Network Warfare Specialist to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-27",
+    "description": "Real career options for Army 35Q Cyber Warriors transitioning to civilian life. Includes salary ranges $100K-$200K+, NSA careers, cybersecurity, offensive security, and cyber operations opportunities with security clearance advantages.",
+    "keywords": "35Q civilian jobs, cyber warfare specialist career transition, 35Q to NSA career, cybersecurity salary, offensive security jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-68g-civilian-career-guide",
-    "title": "Army 68G Patient Administration Specialist to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-28",
-    "description": "Real career options for Army Patient Administration Specialists transitioning to civilian life. Includes salary ranges $40K-$95K+, medical records careers, RHIT/RHIA certification ($229-$299), Epic Systems training, major employers including VA hospitals and HCA Healthcare.",
-    "keywords": "Army 68G civilian jobs, patient administration specialist career transition, medical records salary, RHIT certification, health information management, 68G to civilian healthcare administration",
+    "slug": "army-mos-35s-civilian-career-guide",
+    "title": "Army 35S Signals Collector/Analyst to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-27",
+    "description": "Real career options for Army 35S Signals Collectors transitioning to civilian life. Includes salary ranges $90K-$180K+, NSA careers, defense contractors, electronic warfare, and technical intelligence opportunities with security clearance advantages.",
+    "keywords": "35S civilian jobs, signals collector career transition, 35S to NSA career, SIGINT analyst salary, electronic warfare jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -4916,38 +6304,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-38a-civilian-career-guide",
-    "title": "Army 38A Civil Affairs Officer to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-27",
-    "description": "Real career options for Army Civil Affairs Officers transitioning to civilian life. Includes salary ranges $75K-$200K+, USAID, State Department, international development, NGO careers, and humanitarian program management opportunities.",
-    "keywords": "38A civilian jobs, Civil Affairs Officer career transition, USAID careers, international development jobs, NGO program manager salary, State Department careers",
+    "slug": "army-mos-25s-civilian-career-guide",
+    "title": "Army 25S (Satellite Communication Systems Operator-Maintainer) to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-26",
+    "description": "Real career options for Army 25S Satellite Communication Systems Operator-Maintainers transitioning to civilian satellite, RF engineering, and telecommunications careers. Salary ranges $70K-$150K+ with certification guidance.",
+    "keywords": "Army 25S civilian jobs, Satellite Communication career transition, 25S to RF engineer, satellite technician salary, telecommunications jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-38b-civilian-career-guide",
-    "title": "Army 38B Civil Affairs Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-27",
-    "description": "Real career options for Army Civil Affairs Specialists transitioning to civilian life. Includes salary ranges $60K-$150K+, USAID contractor jobs, NGO field positions, program coordination, and humanitarian response careers.",
-    "keywords": "38B civilian jobs, Civil Affairs Specialist career transition, international development contractor jobs, NGO field officer salary, humanitarian response careers",
+    "slug": "army-mos-25u-civilian-career-guide",
+    "title": "Army 25U Signal Support Systems Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-26",
+    "description": "Comprehensive career transition guide for Army 25U Signal Support Systems Specialists. Includes IT salary ranges $60K-$140K+, network administrator jobs, cybersecurity careers, top certifications (CompTIA, CCNA), and 100+ companies hiring veterans.",
+    "keywords": "Army 25U civilian jobs, Signal Support Systems Specialist career transition, 25U to IT career, network administrator veteran, CompTIA certification, military IT jobs civilian",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-38g-civilian-career-guide",
-    "title": "Army 38G Civil Affairs Planning/Operations NCO to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-27",
-    "description": "Real career options for Army 38G Civil Affairs Planning/Operations NCOs transitioning to civilian life. Includes salary ranges $85K-$180K+, senior program management, operations director, USAID chief of party, and strategic advisory roles.",
-    "keywords": "38G civilian jobs, Civil Affairs NCO career transition, senior program manager jobs, operations director salary, USAID chief of party, international development careers",
+    "slug": "army-mos-25v-civilian-career-guide",
+    "title": "Army 25V Combat Documentation/Production Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-26",
+    "description": "Comprehensive career transition guide for Army 25V Combat Documentation/Production Specialists. Includes videographer/photographer salary ranges $45K-$120K+, video editor jobs, corporate video production, media certifications (Adobe Premiere, Final Cut), and 80+ companies hiring veterans in film and media.",
+    "keywords": "Army 25V civilian jobs, Combat Documentation Specialist career transition, military videographer to civilian, video editor veteran jobs, photography careers military, Adobe certification",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-42a-civilian-career-guide",
-    "title": "Army 42A Human Resources Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-27",
-    "description": "Real career options for Army 42A Human Resources Specialists transitioning to civilian life. Includes salary ranges $50K-$140K+, HR generalist, recruiter, benefits administrator careers, and SHRM/PHR certification requirements with ROI data.",
-    "keywords": "Army 42A civilian jobs, human resources specialist career transition, 42A to HR generalist, military HR to civilian, HR jobs for veterans",
+    "slug": "army-mos-25z-civilian-career-guide",
+    "title": "Army 25Z Visual Information Operations Chief to Civilian: Senior Leadership Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-26",
+    "description": "Senior career transition guide for Army 25Z Visual Information Operations Chiefs. Includes creative director salaries $100K-$200K+, multimedia manager jobs, content strategy roles, public affairs director positions, and executive-level media careers for military visual information leaders.",
+    "keywords": "Army 25Z civilian jobs, Visual Information Operations Chief career transition, creative director military, multimedia manager veteran, public affairs director, senior media careers",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -5006,38 +6394,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-35n-civilian-career-guide",
-    "title": "Army 35N Signals Intelligence Analyst to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-26",
-    "description": "Real career options for Army 35N SIGINT Analysts transitioning to civilian life. Includes salary ranges $90K-$180K+, NSA careers, defense contractors, cybersecurity, and technical intelligence opportunities with security clearance advantages.",
-    "keywords": "35N civilian jobs, SIGINT analyst career transition, 35N to NSA career, signals intelligence salary, technical intelligence jobs",
+    "slug": "army-mos-19z-civilian-career-guide",
+    "title": "Army 19Z Armor Senior Sergeant to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-25",
+    "description": "Real career options for Army 19Z Armor Senior Sergeants transitioning to civilian life. Includes salary ranges $75K-$200K+, operations management, equipment supervision, skilled trades leadership, law enforcement command, and 100+ companies hiring.",
+    "keywords": "19Z Armor Senior Sergeant civilian jobs, armor NCO career transition, 19Z to operations manager, senior armor NCO civilian salary, Army armor leadership jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-35p-civilian-career-guide",
-    "title": "Army 35P Cryptologic Linguist to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-26",
-    "description": "Real career options for Army 35P Cryptologic Linguists transitioning to civilian life. Includes salary ranges $90K-$200K+, NSA careers, defense contractors, translation services, and language analyst opportunities with security clearance advantages.",
-    "keywords": "35P civilian jobs, cryptologic linguist career transition, 35P to NSA career, linguist salary, military translator jobs",
+    "slug": "army-mos-255a-civilian-career-guide",
+    "title": "Army 255A Information Services Technician to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2025-12-25",
+    "description": "Complete transition roadmap for Army 255A Information Services Technicians. Includes salary ranges $110K-$220K+, IT management, cybersecurity, systems administration, and tech companies hiring military IT professionals.",
+    "keywords": "Army 255A civilian jobs, Information Services Technician transition, IT manager salary, systems administrator career, network engineer jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-35q-civilian-career-guide",
-    "title": "Army 35Q Cryptologic Network Warfare Specialist to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-26",
-    "description": "Real career options for Army 35Q Cyber Warriors transitioning to civilian life. Includes salary ranges $100K-$200K+, NSA careers, cybersecurity, offensive security, and cyber operations opportunities with security clearance advantages.",
-    "keywords": "35Q civilian jobs, cyber warfare specialist career transition, 35Q to NSA career, cybersecurity salary, offensive security jobs",
+    "slug": "army-mos-25c-civilian-career-guide",
+    "title": "Army 25C (Radio Operator-Maintainer) to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-25",
+    "description": "Real career options for Army 25C Radio Operator-Maintainers transitioning to civilian telecommunications, RF technician, and communications specialist careers. Salary ranges $50K-$110K+ with certification guidance.",
+    "keywords": "Army 25C civilian jobs, Radio Operator Maintainer career transition, 25C to telecommunications, RF technician salary, communications specialist jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-35s-civilian-career-guide",
-    "title": "Army 35S Signals Collector/Analyst to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-26",
-    "description": "Real career options for Army 35S Signals Collectors transitioning to civilian life. Includes salary ranges $90K-$180K+, NSA careers, defense contractors, electronic warfare, and technical intelligence opportunities with security clearance advantages.",
-    "keywords": "35S civilian jobs, signals collector career transition, 35S to NSA career, SIGINT analyst salary, electronic warfare jobs",
+    "slug": "army-mos-25d-civilian-career-guide",
+    "title": "Army 25D (Cyber Network Defender) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-25",
+    "description": "Real career options for Army 25D Cyber Network Defenders transitioning to civilian cybersecurity careers. Includes salary ranges $85K-$310K+, SOC analyst, penetration testing, security engineering, and incident response opportunities with certification guidance.",
+    "keywords": "Army 25D civilian jobs, Cyber Network Defender career transition, 25D to cybersecurity career, SOC analyst salary, CISSP CEH certification, security clearance jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -5096,38 +6484,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-25s-civilian-career-guide",
-    "title": "Army 25S (Satellite Communication Systems Operator-Maintainer) to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-25",
-    "description": "Real career options for Army 25S Satellite Communication Systems Operator-Maintainers transitioning to civilian satellite, RF engineering, and telecommunications careers. Salary ranges $70K-$150K+ with certification guidance.",
-    "keywords": "Army 25S civilian jobs, Satellite Communication career transition, 25S to RF engineer, satellite technician salary, telecommunications jobs",
+    "slug": "army-mos-18a-civilian-career-guide",
+    "title": "Army Special Forces Officer (18A) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2025-12-24",
+    "description": "Real career options for Special Forces Officers (18A) transitioning to civilian life. Includes salary ranges $90K-$300K+, federal law enforcement, defense contracting, management consulting, and executive leadership opportunities.",
+    "keywords": "18A civilian jobs, Special Forces Officer career transition, Green Beret officer careers, SF officer to FBI, SF officer to CIA, Special Forces consulting",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-25u-civilian-career-guide",
-    "title": "Army 25U Signal Support Systems Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-25",
-    "description": "Comprehensive career transition guide for Army 25U Signal Support Systems Specialists. Includes IT salary ranges $60K-$140K+, network administrator jobs, cybersecurity careers, top certifications (CompTIA, CCNA), and 100+ companies hiring veterans.",
-    "keywords": "Army 25U civilian jobs, Signal Support Systems Specialist career transition, 25U to IT career, network administrator veteran, CompTIA certification, military IT jobs civilian",
+    "slug": "army-mos-18b-civilian-career-guide",
+    "title": "Army Special Forces Weapons Sergeant (18B) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2025-12-24",
+    "description": "Real career options for Special Forces Weapons Sergeants (18B) transitioning to civilian life. Includes salary ranges $80K-$300K+, federal law enforcement tactical units, firearms instruction, private security contracting, and executive protection opportunities.",
+    "keywords": "18B civilian jobs, Special Forces Weapons Sergeant career, Green Beret 18B careers, SF weapons sergeant to FBI, tactical trainer jobs, firearms instructor salary",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-25v-civilian-career-guide",
-    "title": "Army 25V Combat Documentation/Production Specialist to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-25",
-    "description": "Comprehensive career transition guide for Army 25V Combat Documentation/Production Specialists. Includes videographer/photographer salary ranges $45K-$120K+, video editor jobs, corporate video production, media certifications (Adobe Premiere, Final Cut), and 80+ companies hiring veterans in film and media.",
-    "keywords": "Army 25V civilian jobs, Combat Documentation Specialist career transition, military videographer to civilian, video editor veteran jobs, photography careers military, Adobe certification",
+    "slug": "army-mos-18c-civilian-career-guide",
+    "title": "Army Special Forces Engineer Sergeant (18C) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2025-12-24",
+    "description": "Real career options for Special Forces Engineer Sergeants (18C) transitioning to civilian life. Includes salary ranges $75K-$180K+, demolition, construction management, explosives engineering, project management, and federal contracting opportunities.",
+    "keywords": "18C civilian jobs, Special Forces Engineer career, Green Beret engineer jobs, demolition career, explosives engineer salary, construction management veterans",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-25z-civilian-career-guide",
-    "title": "Army 25Z Visual Information Operations Chief to Civilian: Senior Leadership Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-25",
-    "description": "Senior career transition guide for Army 25Z Visual Information Operations Chiefs. Includes creative director salaries $100K-$200K+, multimedia manager jobs, content strategy roles, public affairs director positions, and executive-level media careers for military visual information leaders.",
-    "keywords": "Army 25Z civilian jobs, Visual Information Operations Chief career transition, creative director military, multimedia manager veteran, public affairs director, senior media careers",
+    "slug": "army-mos-18d-civilian-career-guide",
+    "title": "Army Special Forces Medical Sergeant (18D) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
+    "date": "2025-12-24",
+    "description": "Real career options for Special Forces Medical Sergeants (18D) transitioning to civilian life. Includes salary ranges $60K-$180K+, paramedic, physician assistant, registered nurse, flight medic, and emergency medicine career paths.",
+    "keywords": "18D civilian jobs, Special Forces medic career, Green Beret 18D to PA, paramedic salary, physician assistant IPAP, 18D to nurse",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -5186,38 +6574,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-19z-civilian-career-guide",
-    "title": "Army 19Z Armor Senior Sergeant to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
-    "date": "2025-12-24",
-    "description": "Real career options for Army 19Z Armor Senior Sergeants transitioning to civilian life. Includes salary ranges $75K-$200K+, operations management, equipment supervision, skilled trades leadership, law enforcement command, and 100+ companies hiring.",
-    "keywords": "19Z Armor Senior Sergeant civilian jobs, armor NCO career transition, 19Z to operations manager, senior armor NCO civilian salary, Army armor leadership jobs",
+    "slug": "army-mos-15q-civilian-career-guide",
+    "title": "Army 15Q Air Traffic Control Operator to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-23",
+    "description": "Real career options for Army 15Q Air Traffic Controllers transitioning to civilian life. Includes salary ranges $50K-$225K+, FAA ATC hiring, contract tower positions, age requirements, veteran preference benefits, and direct hiring pathways.",
+    "keywords": "Army 15Q civilian jobs, air traffic controller career transition, FAA ATC salary, military ATC to civilian, air traffic controller retirement",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-255a-civilian-career-guide",
-    "title": "Army 255A Information Services Technician to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2025-12-24",
-    "description": "Complete transition roadmap for Army 255A Information Services Technicians. Includes salary ranges $110K-$220K+, IT management, cybersecurity, systems administration, and tech companies hiring military IT professionals.",
-    "keywords": "Army 255A civilian jobs, Information Services Technician transition, IT manager salary, systems administrator career, network engineer jobs",
+    "slug": "army-mos-15r-civilian-career-guide",
+    "title": "Army 15R AH-64 Attack Helicopter Repairer to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-23",
+    "description": "Real career options for Army 15R AH-64 Apache helicopter repairers transitioning to civilian life. Includes salary ranges $55K-$130K+, Boeing defense contractor positions, A&P certification paths, commercial helicopter maintenance, and specialized Apache support roles.",
+    "keywords": "Army 15R civilian jobs, AH-64 Apache mechanic career transition, helicopter mechanic salary, A&P certification military, Boeing Apache jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-25c-civilian-career-guide",
-    "title": "Army 25C (Radio Operator-Maintainer) to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-24",
-    "description": "Real career options for Army 25C Radio Operator-Maintainers transitioning to civilian telecommunications, RF technician, and communications specialist careers. Salary ranges $50K-$110K+ with certification guidance.",
-    "keywords": "Army 25C civilian jobs, Radio Operator Maintainer career transition, 25C to telecommunications, RF technician salary, communications specialist jobs",
+    "slug": "army-mos-15t-civilian-career-guide",
+    "title": "Army 15T UH-60 Black Hawk Helicopter Repairer to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-23",
+    "description": "Real career options for Army 15T UH-60 Black Hawk helicopter repairers transitioning to civilian life. Includes salary ranges $55K-$120K+, Sikorsky/Lockheed Martin careers, commercial S-76 operations, A&P certification, medical transport and offshore opportunities.",
+    "keywords": "Army 15T civilian jobs, UH-60 Black Hawk mechanic career transition, Sikorsky helicopter mechanic salary, S-76 helicopter jobs, helicopter A&P certification",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-25d-civilian-career-guide",
-    "title": "Army 25D (Cyber Network Defender) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-24",
-    "description": "Real career options for Army 25D Cyber Network Defenders transitioning to civilian cybersecurity careers. Includes salary ranges $85K-$310K+, SOC analyst, penetration testing, security engineering, and incident response opportunities with certification guidance.",
-    "keywords": "Army 25D civilian jobs, Cyber Network Defender career transition, 25D to cybersecurity career, SOC analyst salary, CISSP CEH certification, security clearance jobs",
+    "slug": "army-mos-15u-civilian-career-guide",
+    "title": "Army 15U CH-47 Chinook Helicopter Repairer to Civilian: Complete Career Transition Guide (With Salary Data)",
+    "date": "2025-12-23",
+    "description": "Real career options for Army 15U CH-47 Chinook helicopter repairers transitioning to civilian life. Includes salary ranges $55K-$130K+, Boeing defense contractor positions, heavy-lift helicopter operations, A&P certification, and specialized Chinook support careers.",
+    "keywords": "Army 15U civilian jobs, CH-47 Chinook mechanic career transition, Boeing Chinook jobs, heavy-lift helicopter mechanic salary, helicopter A&P certification",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -5276,38 +6664,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-18a-civilian-career-guide",
-    "title": "Army Special Forces Officer (18A) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2025-12-23",
-    "description": "Real career options for Special Forces Officers (18A) transitioning to civilian life. Includes salary ranges $90K-$300K+, federal law enforcement, defense contracting, management consulting, and executive leadership opportunities.",
-    "keywords": "18A civilian jobs, Special Forces Officer career transition, Green Beret officer careers, SF officer to FBI, SF officer to CIA, Special Forces consulting",
+    "slug": "army-mos-14h-civilian-career-guide",
+    "title": "Army MOS 14H (Air Defense Enhanced Early Warning System Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-22",
+    "description": "Real career options for 14H Early Warning System operators transitioning to civilian life. Includes salary ranges $55K-$130K+, radar technician, defense contracting, FAA, weather services, and aviation radar opportunities.",
+    "keywords": "14H civilian jobs, Sentinel radar operator career transition, early warning system jobs, radar technician salary, 14H to civilian career",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-18b-civilian-career-guide",
-    "title": "Army Special Forces Weapons Sergeant (18B) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2025-12-23",
-    "description": "Real career options for Special Forces Weapons Sergeants (18B) transitioning to civilian life. Includes salary ranges $80K-$300K+, federal law enforcement tactical units, firearms instruction, private security contracting, and executive protection opportunities.",
-    "keywords": "18B civilian jobs, Special Forces Weapons Sergeant career, Green Beret 18B careers, SF weapons sergeant to FBI, tactical trainer jobs, firearms instructor salary",
+    "slug": "army-mos-14s-civilian-career-guide",
+    "title": "Army MOS 14S (Air and Missile Defense Crewmember) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-22",
+    "description": "Real career options for 14S Avenger crewmembers transitioning to civilian life. Includes salary ranges $70K-$190K+, defense contracting, counter-UAS operations, security contracting, and weapon systems opportunities.",
+    "keywords": "14S civilian jobs, Avenger crewmember career transition, SHORAD operator contractor salary, Stinger missile jobs, 14S to civilian career",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-18c-civilian-career-guide",
-    "title": "Army Special Forces Engineer Sergeant (18C) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2025-12-23",
-    "description": "Real career options for Special Forces Engineer Sergeants (18C) transitioning to civilian life. Includes salary ranges $75K-$180K+, demolition, construction management, explosives engineering, project management, and federal contracting opportunities.",
-    "keywords": "18C civilian jobs, Special Forces Engineer career, Green Beret engineer jobs, demolition career, explosives engineer salary, construction management veterans",
+    "slug": "army-mos-14t-civilian-career-guide",
+    "title": "Army MOS 14T (Patriot Launching Station Operator/Maintainer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-22",
+    "description": "Real career options for 14T Patriot launcher operators transitioning to civilian life. Includes salary ranges $60K-$170K+, defense contracting, missile systems technician, hydraulic systems, and aerospace opportunities.",
+    "keywords": "14T civilian jobs, Patriot launcher operator career transition, missile technician salary, launcher maintenance jobs, 14T to civilian career",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-18d-civilian-career-guide",
-    "title": "Army Special Forces Medical Sergeant (18D) to Civilian: Complete Career Transition Guide (2025 Salary Data)",
-    "date": "2025-12-23",
-    "description": "Real career options for Special Forces Medical Sergeants (18D) transitioning to civilian life. Includes salary ranges $60K-$180K+, paramedic, physician assistant, registered nurse, flight medic, and emergency medicine career paths.",
-    "keywords": "18D civilian jobs, Special Forces medic career, Green Beret 18D to PA, paramedic salary, physician assistant IPAP, 18D to nurse",
+    "slug": "army-mos-15b-civilian-career-guide",
+    "title": "Army MOS 15B (Aircraft Powerplant Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
+    "date": "2025-12-22",
+    "description": "Real career options for 15B aircraft powerplant repairers transitioning to civilian life. Includes salary ranges $50K-$155K+, A&P mechanic, airlines, cargo, MRO, and helicopter maintenance opportunities.",
+    "keywords": "15B civilian jobs, aircraft powerplant repairer career transition, A&P mechanic salary, turbine engine mechanic jobs, 15B to civilian career",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -5366,38 +6754,38 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-15q-civilian-career-guide",
-    "title": "Army 15Q Air Traffic Control Operator to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-22",
-    "description": "Real career options for Army 15Q Air Traffic Controllers transitioning to civilian life. Includes salary ranges $50K-$225K+, FAA ATC hiring, contract tower positions, age requirements, veteran preference benefits, and direct hiring pathways.",
-    "keywords": "Army 15Q civilian jobs, air traffic controller career transition, FAA ATC salary, military ATC to civilian, air traffic controller retirement",
+    "slug": "army-mos-11c-civilian-career-guide",
+    "title": "Army 11C Indirect Fire Infantryman to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-21",
+    "description": "Real career options for Army 11C Indirect Fire Infantrymen transitioning to civilian life. Includes salary ranges $50K-$180K+, law enforcement, technical fields, skilled trades, and defense contracting with 100+ companies hiring.",
+    "keywords": "11C Indirect Fire Infantryman civilian jobs, mortar crew career transition, 11C to police, artillery veteran jobs, 11C salary civilian, Army mortar specialist transition",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-15r-civilian-career-guide",
-    "title": "Army 15R AH-64 Attack Helicopter Repairer to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-22",
-    "description": "Real career options for Army 15R AH-64 Apache helicopter repairers transitioning to civilian life. Includes salary ranges $55K-$130K+, Boeing defense contractor positions, A&P certification paths, commercial helicopter maintenance, and specialized Apache support roles.",
-    "keywords": "Army 15R civilian jobs, AH-64 Apache mechanic career transition, helicopter mechanic salary, A&P certification military, Boeing Apache jobs",
+    "slug": "army-mos-11x-civilian-career-guide",
+    "title": "Army 11X Infantry Enlistment Option to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-21",
+    "description": "Real career options for Army 11X Infantry soldiers transitioning to civilian life. Covers both 11B and 11C paths with salary ranges $50K-$180K+, law enforcement, security, skilled trades, and 100+ companies hiring.",
+    "keywords": "11X Infantry civilian jobs, Army infantry career transition, 11X to police officer, infantry veteran jobs, 11X salary civilian, Army infantry transition guide",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-15t-civilian-career-guide",
-    "title": "Army 15T UH-60 Black Hawk Helicopter Repairer to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-22",
-    "description": "Real career options for Army 15T UH-60 Black Hawk helicopter repairers transitioning to civilian life. Includes salary ranges $55K-$120K+, Sikorsky/Lockheed Martin careers, commercial S-76 operations, A&P certification, medical transport and offshore opportunities.",
-    "keywords": "Army 15T civilian jobs, UH-60 Black Hawk mechanic career transition, Sikorsky helicopter mechanic salary, S-76 helicopter jobs, helicopter A&P certification",
+    "slug": "army-mos-11z-civilian-career-guide",
+    "title": "Army 11Z Infantry Senior Sergeant to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-21",
+    "description": "Real career options for Army 11Z Infantry Senior Sergeants transitioning to civilian life. Includes salary ranges $70K-$200K+, law enforcement leadership, security management, training roles, and 100+ companies hiring.",
+    "keywords": "11Z Infantry Senior Sergeant civilian jobs, infantry NCO career transition, 11Z to police supervisor, senior NCO civilian salary, Army infantry leadership jobs",
     "excerpt": "",
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-15u-civilian-career-guide",
-    "title": "Army 15U CH-47 Chinook Helicopter Repairer to Civilian: Complete Career Transition Guide (With Salary Data)",
-    "date": "2025-12-22",
-    "description": "Real career options for Army 15U CH-47 Chinook helicopter repairers transitioning to civilian life. Includes salary ranges $55K-$130K+, Boeing defense contractor positions, heavy-lift helicopter operations, A&P certification, and specialized Chinook support careers.",
-    "keywords": "Army 15U civilian jobs, CH-47 Chinook mechanic career transition, Boeing Chinook jobs, heavy-lift helicopter mechanic salary, helicopter A&P certification",
+    "slug": "army-mos-13b-civilian-career-guide",
+    "title": "Army 13B Cannon Crewmember to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "date": "2025-12-21",
+    "description": "Real career options for Army 13B Cannon Crewmembers transitioning to civilian life. Includes salary ranges $50K-$160K+, heavy equipment operation, precision work, technical trades, law enforcement, and 100+ companies hiring.",
+    "keywords": "13B Cannon Crewmember civilian jobs, artillery crew career transition, 13B to equipment operator, field artillery veteran jobs, 13B salary civilian, Army artillery transition guide",
     "excerpt": "",
     "category": "Career Guides"
   },
@@ -5456,42 +6844,6 @@ const blogPosts = [
     "category": "Career Guides"
   },
   {
-    "slug": "army-mos-14h-civilian-career-guide",
-    "title": "Army MOS 14H (Air Defense Enhanced Early Warning System Operator) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-21",
-    "description": "Real career options for 14H Early Warning System operators transitioning to civilian life. Includes salary ranges $55K-$130K+, radar technician, defense contracting, FAA, weather services, and aviation radar opportunities.",
-    "keywords": "14H civilian jobs, Sentinel radar operator career transition, early warning system jobs, radar technician salary, 14H to civilian career",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
-    "slug": "army-mos-14s-civilian-career-guide",
-    "title": "Army MOS 14S (Air and Missile Defense Crewmember) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-21",
-    "description": "Real career options for 14S Avenger crewmembers transitioning to civilian life. Includes salary ranges $70K-$190K+, defense contracting, counter-UAS operations, security contracting, and weapon systems opportunities.",
-    "keywords": "14S civilian jobs, Avenger crewmember career transition, SHORAD operator contractor salary, Stinger missile jobs, 14S to civilian career",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
-    "slug": "army-mos-14t-civilian-career-guide",
-    "title": "Army MOS 14T (Patriot Launching Station Operator/Maintainer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-21",
-    "description": "Real career options for 14T Patriot launcher operators transitioning to civilian life. Includes salary ranges $60K-$170K+, defense contracting, missile systems technician, hydraulic systems, and aerospace opportunities.",
-    "keywords": "14T civilian jobs, Patriot launcher operator career transition, missile technician salary, launcher maintenance jobs, 14T to civilian career",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
-    "slug": "army-mos-15b-civilian-career-guide",
-    "title": "Army MOS 15B (Aircraft Powerplant Repairer) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)",
-    "date": "2025-12-21",
-    "description": "Real career options for 15B aircraft powerplant repairers transitioning to civilian life. Includes salary ranges $50K-$155K+, A&P mechanic, airlines, cargo, MRO, and helicopter maintenance opportunities.",
-    "keywords": "15B civilian jobs, aircraft powerplant repairer career transition, A&P mechanic salary, turbine engine mechanic jobs, 15B to civilian career",
-    "excerpt": "",
-    "category": "Career Guides"
-  },
-  {
     "slug": "air-force-afsc-1a2x1-civilian-career-guide",
     "title": "1A2X1 Aircraft Loadmaster to Civilian Career: Jobs, Salary & Certifications",
     "date": "2025-12-20",
@@ -5532,40 +6884,40 @@ const blogPosts = [
     "branch": "Air Force"
   },
   {
-    "slug": "army-mos-11c-civilian-career-guide",
-    "title": "Army 11C Indirect Fire Infantryman to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "slug": "how-to-use-gi-bill-maximize-education-benefits",
+    "title": "How to Use Your GI Bill and Maximize Education Benefits: Complete Guide",
     "date": "2025-12-20",
-    "description": "Real career options for Army 11C Indirect Fire Infantrymen transitioning to civilian life. Includes salary ranges $50K-$180K+, law enforcement, technical fields, skilled trades, and defense contracting with 100+ companies hiring.",
-    "keywords": "11C Indirect Fire Infantryman civilian jobs, mortar crew career transition, 11C to police, artillery veteran jobs, 11C salary civilian, Army mortar specialist transition",
+    "description": "Master your VA education benefits and maximize your GI Bill. Learn about Yellow Ribbon, housing allowance, and strategies to get most value.",
+    "keywords": "",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Education & Benefits"
   },
   {
-    "slug": "army-mos-11x-civilian-career-guide",
-    "title": "Army 11X Infantry Enlistment Option to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "slug": "how-to-use-skillbridge-internship-program",
+    "title": "How to Use SkillBridge Internship Program: Complete Application Guide",
     "date": "2025-12-20",
-    "description": "Real career options for Army 11X Infantry soldiers transitioning to civilian life. Covers both 11B and 11C paths with salary ranges $50K-$180K+, law enforcement, security, skilled trades, and 100+ companies hiring.",
-    "keywords": "11X Infantry civilian jobs, Army infantry career transition, 11X to police officer, infantry veteran jobs, 11X salary civilian, Army infantry transition guide",
+    "description": "Leverage SkillBridge to gain civilian internship experience while still in military. Step-by-step guide to applying, selecting programs, and maximizing the benefit.",
+    "keywords": "",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Career Transition"
   },
   {
-    "slug": "army-mos-11z-civilian-career-guide",
-    "title": "Army 11Z Infantry Senior Sergeant to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "slug": "how-to-use-va-home-loan-buy-house",
+    "title": "How to Use Your VA Home Loan to Buy a House: Complete Guide",
     "date": "2025-12-20",
-    "description": "Real career options for Army 11Z Infantry Senior Sergeants transitioning to civilian life. Includes salary ranges $70K-$200K+, law enforcement leadership, security management, training roles, and 100+ companies hiring.",
-    "keywords": "11Z Infantry Senior Sergeant civilian jobs, infantry NCO career transition, 11Z to police supervisor, senior NCO civilian salary, Army infantry leadership jobs",
+    "description": "Master your VA home loan benefit. Learn how to get pre-approval, choose a property, and close on your home with zero down payment.",
+    "keywords": "",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Housing & Benefits"
   },
   {
-    "slug": "army-mos-13b-civilian-career-guide",
-    "title": "Army 13B Cannon Crewmember to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)",
+    "slug": "how-to-use-vr-e-vocational-rehab-benefits",
+    "title": "How to Use VR&E Vocational Rehabilitation Benefits: Complete Guide",
     "date": "2025-12-20",
-    "description": "Real career options for Army 13B Cannon Crewmembers transitioning to civilian life. Includes salary ranges $50K-$160K+, heavy equipment operation, precision work, technical trades, law enforcement, and 100+ companies hiring.",
-    "keywords": "13B Cannon Crewmember civilian jobs, artillery crew career transition, 13B to equipment operator, field artillery veteran jobs, 13B salary civilian, Army artillery transition guide",
+    "description": "Leverage VR&E benefits for career training and education. Complete guide to vocational rehabilitation programs, eligibility, and maximizing your benefits.",
+    "keywords": "",
     "excerpt": "",
-    "category": "Career Guides"
+    "category": "Education & Benefits"
   },
   {
     "slug": "how-to-write-linkedin-profile-veterans",
@@ -5575,6 +6927,42 @@ const blogPosts = [
     "keywords": "",
     "excerpt": "",
     "category": "Career Transition"
+  },
+  {
+    "slug": "how-to-support-military-spouse-transition",
+    "title": "How to Support Your Military Spouse During Transition: Family Guide",
+    "date": "2025-12-19",
+    "description": "Military family transition, supporting spouse through transition, children's adjustment, family finances, and keeping marriage strong during transition.",
+    "keywords": "military spouse transition, family adjustment, military family resources, supporting spouse transition, family finances",
+    "excerpt": "",
+    "category": "How-To Guides"
+  },
+  {
+    "slug": "how-to-transition-military-construction-management",
+    "title": "How to Transition to Construction Management: Veteran Project Leader Guide",
+    "date": "2025-12-19",
+    "description": "Military engineering officer to construction manager, project superintendent, or general contractor. Certifications, timelines, and career progression in construction.",
+    "keywords": "construction management, military engineer, construction career, project management construction, general contractor, construction superintendent",
+    "excerpt": "",
+    "category": "How-To Guides"
+  },
+  {
+    "slug": "how-to-transition-military-cybersecurity-career",
+    "title": "How to Transition to Cybersecurity: Military IT to Security Career Path",
+    "date": "2025-12-19",
+    "description": "17C cyber ops to cybersecurity professional, Security+, CEH, incident response careers, salary expectations, and why military cyber experience is gold.",
+    "keywords": "military cybersecurity, 17C career transition, Security+ certification, CEH, cybersecurity careers, incident response",
+    "excerpt": "",
+    "category": "How-To Guides"
+  },
+  {
+    "slug": "how-to-transition-military-healthcare-careers",
+    "title": "How to Transition from Military to Healthcare: RN, PA, Physician Assistant Guide",
+    "date": "2025-12-19",
+    "description": "Combat medic to nurse, physician assistant, or healthcare administrator. Fastest paths, certification requirements, salary expectations, and accelerated programs for veterans.",
+    "keywords": "military to healthcare, combat medic transition, 68W to nurse, physician assistant veteran, healthcare careers, nursing school",
+    "excerpt": "",
+    "category": "How-To Guides"
   },
   {
     "slug": "how-to-transition-military-law-enforcement-complete",
@@ -5631,40 +7019,31 @@ const blogPosts = [
     "category": "Career Transition"
   },
   {
-    "slug": "how-to-use-gi-bill-maximize-education-benefits",
-    "title": "How to Use Your GI Bill and Maximize Education Benefits: Complete Guide",
-    "date": "2025-12-19",
-    "description": "Master your VA education benefits and maximize your GI Bill. Learn about Yellow Ribbon, housing allowance, and strategies to get most value.",
-    "keywords": "",
+    "slug": "how-to-handle-veteran-identity-crisis-transition",
+    "title": "How to Handle Veteran Identity Crisis During Transition: Finding Purpose After Military",
+    "date": "2025-12-18",
+    "description": "Identity crisis after military, losing military identity, finding new purpose, personal values beyond military, redefining yourself as veteran.",
+    "keywords": "veteran identity crisis, finding purpose after military, military identity transition, life after military service, veteran purpose",
     "excerpt": "",
-    "category": "Education & Benefits"
+    "category": "How-To Guides"
   },
   {
-    "slug": "how-to-use-skillbridge-internship-program",
-    "title": "How to Use SkillBridge Internship Program: Complete Application Guide",
-    "date": "2025-12-19",
-    "description": "Leverage SkillBridge to gain civilian internship experience while still in military. Step-by-step guide to applying, selecting programs, and maximizing the benefit.",
-    "keywords": "",
+    "slug": "how-to-increase-va-disability-rating-from-70-to-100",
+    "title": "How to Increase VA Disability Rating from 70 to 100: Complete Strategy Guide",
+    "date": "2025-12-18",
+    "description": "Strategic guide to increasing VA disability from 70% to 100%. Evidence requirements, conditions to emphasize, and TDIU alternative explained.",
+    "keywords": "increase VA rating 70 to 100, 100 percent disability, maximum rating, TDIU alternative",
     "excerpt": "",
-    "category": "Career Transition"
+    "category": "VA Claims"
   },
   {
-    "slug": "how-to-use-va-home-loan-buy-house",
-    "title": "How to Use Your VA Home Loan to Buy a House: Complete Guide",
-    "date": "2025-12-19",
-    "description": "Master your VA home loan benefit. Learn how to get pre-approval, choose a property, and close on your home with zero down payment.",
-    "keywords": "",
+    "slug": "how-to-maintain-fitness-after-military-guide",
+    "title": "How to Maintain Fitness After Military: Veteran Workout Guide (2025)",
+    "date": "2025-12-18",
+    "description": "Staying fit after leaving military, transitioning from military PT to civilian fitness, building sustainable habits, gyms, motivation, and preventing injuries.",
+    "keywords": "veteran fitness, military PT transition, staying in shape after military, workout routine, fitness goals",
     "excerpt": "",
-    "category": "Housing & Benefits"
-  },
-  {
-    "slug": "how-to-use-vr-e-vocational-rehab-benefits",
-    "title": "How to Use VR&E Vocational Rehabilitation Benefits: Complete Guide",
-    "date": "2025-12-19",
-    "description": "Leverage VR&E benefits for career training and education. Complete guide to vocational rehabilitation programs, eligibility, and maximizing your benefits.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "Education & Benefits"
+    "category": "How-To Guides"
   },
   {
     "slug": "how-to-manage-finances-after-military-budget",
@@ -5703,6 +7082,15 @@ const blogPosts = [
     "category": "Career Transition"
   },
   {
+    "slug": "how-to-read-federal-job-announcements-guide",
+    "title": "How to Read Federal Job Announcements: A Veteran's Decoder Guide",
+    "date": "2025-12-18",
+    "description": "Learn to decode federal job announcements on USAJOBS. Understand who can apply, qualification requirements, and what the announcement really tells you about the position.",
+    "keywords": "federal job announcements, USAJOBS job posting, how to read job announcement, federal job qualifications, specialized experience, who may apply federal jobs",
+    "excerpt": "",
+    "category": "federal-employment"
+  },
+  {
     "slug": "how-to-relocate-family-military-civilian-move",
     "title": "How to Relocate Your Family: Military to Civilian Move Guide",
     "date": "2025-12-18",
@@ -5721,38 +7109,29 @@ const blogPosts = [
     "category": "Entrepreneurship"
   },
   {
-    "slug": "how-to-support-military-spouse-transition",
-    "title": "How to Support Your Military Spouse During Transition: Family Guide",
-    "date": "2025-12-18",
-    "description": "Military family transition, supporting spouse through transition, children's adjustment, family finances, and keeping marriage strong during transition.",
-    "keywords": "military spouse transition, family adjustment, military family resources, supporting spouse transition, family finances",
+    "slug": "how-to-become-government-contractor-veteran",
+    "title": "How to Become a Government Contractor: Complete Veterans Guide to Defense Contracting",
+    "date": "2025-12-17",
+    "description": "Military to government contractor, defense contractor career paths, security clearance advantage, salary expectations, and how to land government contracts.",
+    "keywords": "government contractor, defense contractor, federal contracts, security clearance, contractor career, DoD contracting",
     "excerpt": "",
     "category": "How-To Guides"
   },
   {
-    "slug": "how-to-transition-military-construction-management",
-    "title": "How to Transition to Construction Management: Veteran Project Leader Guide",
-    "date": "2025-12-18",
-    "description": "Military engineering officer to construction manager, project superintendent, or general contractor. Certifications, timelines, and career progression in construction.",
-    "keywords": "construction management, military engineer, construction career, project management construction, general contractor, construction superintendent",
+    "slug": "how-to-become-project-manager-pmp-certification",
+    "title": "How to Become a Project Manager: PMP Certification Complete Guide for Veterans",
+    "date": "2025-12-17",
+    "description": "PMP certification, CAPM, Agile/Scrum certifications. Requirements, study timeline, salary expectations, and how military leadership translates to civilian project management.",
+    "keywords": "PMP certification, project manager, CAPM, Agile Scrum, project management certification, veteran project manager",
     "excerpt": "",
     "category": "How-To Guides"
   },
   {
-    "slug": "how-to-transition-military-cybersecurity-career",
-    "title": "How to Transition to Cybersecurity: Military IT to Security Career Path",
-    "date": "2025-12-18",
-    "description": "17C cyber ops to cybersecurity professional, Security+, CEH, incident response careers, salary expectations, and why military cyber experience is gold.",
-    "keywords": "military cybersecurity, 17C career transition, Security+ certification, CEH, cybersecurity careers, incident response",
-    "excerpt": "",
-    "category": "How-To Guides"
-  },
-  {
-    "slug": "how-to-transition-military-healthcare-careers",
-    "title": "How to Transition from Military to Healthcare: RN, PA, Physician Assistant Guide",
-    "date": "2025-12-18",
-    "description": "Combat medic to nurse, physician assistant, or healthcare administrator. Fastest paths, certification requirements, salary expectations, and accelerated programs for veterans.",
-    "keywords": "military to healthcare, combat medic transition, 68W to nurse, physician assistant veteran, healthcare careers, nursing school",
+    "slug": "how-to-become-real-estate-agent-veteran",
+    "title": "How to Become a Real Estate Agent: Veteran Realtor Guide (2025)",
+    "date": "2025-12-17",
+    "description": "Military to real estate license, broker career, commission structure, veteran advantage, and building client base as real estate professional.",
+    "keywords": "real estate agent veteran, realtor license, real estate career, commission income, real estate business",
     "excerpt": "",
     "category": "How-To Guides"
   },
@@ -5820,33 +7199,6 @@ const blogPosts = [
     "category": "Career Transition"
   },
   {
-    "slug": "how-to-handle-veteran-identity-crisis-transition",
-    "title": "How to Handle Veteran Identity Crisis During Transition: Finding Purpose After Military",
-    "date": "2025-12-17",
-    "description": "Identity crisis after military, losing military identity, finding new purpose, personal values beyond military, redefining yourself as veteran.",
-    "keywords": "veteran identity crisis, finding purpose after military, military identity transition, life after military service, veteran purpose",
-    "excerpt": "",
-    "category": "How-To Guides"
-  },
-  {
-    "slug": "how-to-increase-va-disability-rating-from-70-to-100",
-    "title": "How to Increase VA Disability Rating from 70 to 100: Complete Strategy Guide",
-    "date": "2025-12-17",
-    "description": "Strategic guide to increasing VA disability from 70% to 100%. Evidence requirements, conditions to emphasize, and TDIU alternative explained.",
-    "keywords": "increase VA rating 70 to 100, 100 percent disability, maximum rating, TDIU alternative",
-    "excerpt": "",
-    "category": "VA Claims"
-  },
-  {
-    "slug": "how-to-maintain-fitness-after-military-guide",
-    "title": "How to Maintain Fitness After Military: Veteran Workout Guide (2025)",
-    "date": "2025-12-17",
-    "description": "Staying fit after leaving military, transitioning from military PT to civilian fitness, building sustainable habits, gyms, motivation, and preventing injuries.",
-    "keywords": "veteran fitness, military PT transition, staying in shape after military, workout routine, fitness goals",
-    "excerpt": "",
-    "category": "How-To Guides"
-  },
-  {
     "slug": "how-to-adjust-civilian-workplace-culture-veterans",
     "title": "How to Adjust to Civilian Workplace Culture: Veterans Guide to Success",
     "date": "2025-12-16",
@@ -5901,31 +7253,31 @@ const blogPosts = [
     "category": "How-To Guides"
   },
   {
-    "slug": "how-to-become-government-contractor-veteran",
-    "title": "How to Become a Government Contractor: Complete Veterans Guide to Defense Contracting",
+    "slug": "wi-best-cities-veterans-2025",
+    "title": "Best Cities for Veterans in Wisconsin 2025: Cost of Living & Benefits",
     "date": "2025-12-16",
-    "description": "Military to government contractor, defense contractor career paths, security clearance advantage, salary expectations, and how to land government contracts.",
-    "keywords": "government contractor, defense contractor, federal contracts, security clearance, contractor career, DoD contracting",
+    "description": "Ranking of the 9 best Wisconsin cities for veterans in 2025 including Madison (#3 nationally), Milwaukee, Green Bay, Appleton, and more. Comprehensive comparison of median home prices, rent costs, property taxes, VA healthcare access, employment opportunities, and quality of life with honest pros and cons for each city.",
+    "keywords": "best cities for veterans Wisconsin, Madison veterans, Milwaukee veterans, Wisconsin cost of living veterans, Wisconsin veteran population, VA healthcare Wisconsin, veteran employment Wisconsin 2025",
     "excerpt": "",
-    "category": "How-To Guides"
+    "category": "State Benefits"
   },
   {
-    "slug": "how-to-become-project-manager-pmp-certification",
-    "title": "How to Become a Project Manager: PMP Certification Complete Guide for Veterans",
+    "slug": "wv-best-cities-veterans-2025",
+    "title": "Best Cities for Veterans in West Virginia 2025: Cost of Living & Benefits",
     "date": "2025-12-16",
-    "description": "PMP certification, CAPM, Agile/Scrum certifications. Requirements, study timeline, salary expectations, and how military leadership translates to civilian project management.",
-    "keywords": "PMP certification, project manager, CAPM, Agile Scrum, project management certification, veteran project manager",
+    "description": "Honest rankings of the best West Virginia cities for veterans including Charleston, Morgantown, Martinsburg, Huntington, Parkersburg, and Wheeling with median home prices, veteran population, proximity to VA facilities, employment opportunities, and realistic pros and cons for each location.",
+    "keywords": "best cities for veterans West Virginia, WV veteran cost of living, Charleston veterans, Morgantown veterans, Martinsburg WV veterans, West Virginia veteran housing",
     "excerpt": "",
-    "category": "How-To Guides"
+    "category": "State Benefits"
   },
   {
-    "slug": "how-to-become-real-estate-agent-veteran",
-    "title": "How to Become a Real Estate Agent: Veteran Realtor Guide (2025)",
+    "slug": "wy-best-cities-veterans-2025",
+    "title": "Best Cities for Veterans in Wyoming 2025: Cost of Living & Benefits",
     "date": "2025-12-16",
-    "description": "Military to real estate license, broker career, commission structure, veteran advantage, and building client base as real estate professional.",
-    "keywords": "real estate agent veteran, realtor license, real estate career, commission income, real estate business",
+    "description": "Comprehensive ranking of Wyoming's best cities for veterans including Cheyenne, Casper, Laramie, Gillette, Sheridan, Rock Springs, and Jackson. Detailed cost of living, median home prices, VA access, employment, outdoor recreation, and honest pros and cons for each city.",
+    "keywords": "best cities for veterans Wyoming, Cheyenne veterans, Casper veterans cost of living, Laramie Wyoming veterans, Gillette Wyoming jobs, Sheridan VA, Wyoming veteran cost of living, Jackson Hole veterans",
     "excerpt": "",
-    "category": "How-To Guides"
+    "category": "State Benefits"
   },
   {
     "slug": "wyoming-hidden-veteran-benefits",
@@ -5933,6 +7285,33 @@ const blogPosts = [
     "date": "2025-12-16",
     "description": "Explore Wyoming's exclusive veteran benefits including zero income tax, property tax exemptions, education support, and remote work advantages for military families.",
     "keywords": "",
+    "excerpt": "",
+    "category": "State Benefits"
+  },
+  {
+    "slug": "southern-pacific-veteran-benefits",
+    "title": "Southern & Pacific Veteran Benefits: Final 6 States Compared",
+    "date": "2025-12-15",
+    "description": "Deep South offers cheap living but mixed benefits. California's tax nightmare vs. world-class VA care. Hawaii is paradise if you can afford it.",
+    "keywords": "california veteran benefits, hawaii veteran benefits, alabama veteran benefits, mississippi veteran benefits, oregon veteran benefits, deep south veterans",
+    "excerpt": "",
+    "category": "State Benefits"
+  },
+  {
+    "slug": "texas-veteran-benefits-2025",
+    "title": "Texas Veteran Benefits 2025: Complete Guide to Living Tax-Free in Texas",
+    "date": "2025-12-15",
+    "description": "Texas offers massive veteran benefits: 100% property tax exemption for disabled vets, no state income tax, 150 free tuition hours, and more. Complete guide for 2025.",
+    "keywords": "Texas veteran benefits, Texas property tax exemption veterans, Hazelwood Act, Texas disabled veteran benefits",
+    "excerpt": "",
+    "category": "State Benefits"
+  },
+  {
+    "slug": "tn-best-cities-veterans-2025",
+    "title": "Best Cities in Tennessee for Veterans 2025: Cost of Living & Quality of Life",
+    "date": "2025-12-15",
+    "description": "Tennessee's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
+    "keywords": "best cities tennessee veterans, tennessee cost of living veterans, where to live tennessee military, tennessee veteran population",
     "excerpt": "",
     "category": "State Benefits"
   },
@@ -6000,29 +7379,29 @@ const blogPosts = [
     "category": "State Benefits"
   },
   {
-    "slug": "wi-best-cities-veterans-2025",
-    "title": "Best Cities for Veterans in Wisconsin 2025: Cost of Living & Benefits",
-    "date": "2025-12-15",
-    "description": "Ranking of the 9 best Wisconsin cities for veterans in 2025 including Madison (#3 nationally), Milwaukee, Green Bay, Appleton, and more. Comprehensive comparison of median home prices, rent costs, property taxes, VA healthcare access, employment opportunities, and quality of life with honest pros and cons for each city.",
-    "keywords": "best cities for veterans Wisconsin, Madison veterans, Milwaukee veterans, Wisconsin cost of living veterans, Wisconsin veteran population, VA healthcare Wisconsin, veteran employment Wisconsin 2025",
+    "slug": "nv-best-cities-veterans-2025",
+    "title": "Best Cities in Nevada for Veterans 2025: Cost of Living & Quality of Life",
+    "date": "2025-12-14",
+    "description": "Nevada's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
+    "keywords": "best cities nevada veterans, nevada cost of living veterans, where to live nevada military, nevada veteran population",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "wv-best-cities-veterans-2025",
-    "title": "Best Cities for Veterans in West Virginia 2025: Cost of Living & Benefits",
-    "date": "2025-12-15",
-    "description": "Honest rankings of the best West Virginia cities for veterans including Charleston, Morgantown, Martinsburg, Huntington, Parkersburg, and Wheeling with median home prices, veteran population, proximity to VA facilities, employment opportunities, and realistic pros and cons for each location.",
-    "keywords": "best cities for veterans West Virginia, WV veteran cost of living, Charleston veterans, Morgantown veterans, Martinsburg WV veterans, West Virginia veteran housing",
+    "slug": "ny-best-cities-veterans-2025",
+    "title": "Best Cities for Veterans in New York 2025: Cost of Living, Jobs & Communities",
+    "date": "2025-12-14",
+    "description": "Complete guide to the best New York cities for veterans: Syracuse, Buffalo, Rochester, Albany, NYC, and Watertown—with cost of living, jobs, and veteran communities.",
+    "keywords": "best cities for veterans new york, syracuse veterans, buffalo rochester albany veterans, nyc veterans cost of living",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "wy-best-cities-veterans-2025",
-    "title": "Best Cities for Veterans in Wyoming 2025: Cost of Living & Benefits",
-    "date": "2025-12-15",
-    "description": "Comprehensive ranking of Wyoming's best cities for veterans including Cheyenne, Casper, Laramie, Gillette, Sheridan, Rock Springs, and Jackson. Detailed cost of living, median home prices, VA access, employment, outdoor recreation, and honest pros and cons for each city.",
-    "keywords": "best cities for veterans Wyoming, Cheyenne veterans, Casper veterans cost of living, Laramie Wyoming veterans, Gillette Wyoming jobs, Sheridan VA, Wyoming veteran cost of living, Jackson Hole veterans",
+    "slug": "oh-best-cities-veterans-2025",
+    "title": "Best Cities in Ohio for Veterans 2025: Cost of Living & Quality of Life",
+    "date": "2025-12-14",
+    "description": "Ohio's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
+    "keywords": "best cities ohio veterans, ohio cost of living veterans, where to live ohio military, ohio veteran population",
     "excerpt": "",
     "category": "State Benefits"
   },
@@ -6090,29 +7469,29 @@ const blogPosts = [
     "category": "State Benefits"
   },
   {
-    "slug": "southern-pacific-veteran-benefits",
-    "title": "Southern & Pacific Veteran Benefits: Final 6 States Compared",
-    "date": "2025-12-14",
-    "description": "Deep South offers cheap living but mixed benefits. California's tax nightmare vs. world-class VA care. Hawaii is paradise if you can afford it.",
-    "keywords": "california veteran benefits, hawaii veteran benefits, alabama veteran benefits, mississippi veteran benefits, oregon veteran benefits, deep south veterans",
+    "slug": "mt-best-cities-veterans-2025",
+    "title": "Montana Military Retirement: Best Cities, Housing Costs & Quality of Life",
+    "date": "2025-12-13",
+    "description": "Where to retire in Montana as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
+    "keywords": "Montana best cities for veterans, Montana military retirement, Montana cost of living veterans, where to retire Montana",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "texas-veteran-benefits-2025",
-    "title": "Texas Veteran Benefits 2025: Complete Guide to Living Tax-Free in Texas",
-    "date": "2025-12-14",
-    "description": "Texas offers massive veteran benefits: 100% property tax exemption for disabled vets, no state income tax, 150 free tuition hours, and more. Complete guide for 2025.",
-    "keywords": "Texas veteran benefits, Texas property tax exemption veterans, Hazelwood Act, Texas disabled veteran benefits",
+    "slug": "nc-best-cities-veterans-2025",
+    "title": "Best Cities in North Carolina for Veterans 2025: Cost of Living & Quality of Life",
+    "date": "2025-12-13",
+    "description": "North Carolina's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
+    "keywords": "best cities north carolina veterans, north carolina cost of living veterans, where to live north carolina military, north carolina veteran population",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "tn-best-cities-veterans-2025",
-    "title": "Best Cities in Tennessee for Veterans 2025: Cost of Living & Quality of Life",
-    "date": "2025-12-14",
-    "description": "Tennessee's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
-    "keywords": "best cities tennessee veterans, tennessee cost of living veterans, where to live tennessee military, tennessee veteran population",
+    "slug": "nd-best-cities-veterans-2025",
+    "title": "Best Cities in North Dakota for Veterans 2025: Cost of Living & Quality of Life",
+    "date": "2025-12-13",
+    "description": "North Dakota's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
+    "keywords": "best cities north dakota veterans, north dakota cost of living veterans, where to live north dakota military, north dakota veteran population",
     "excerpt": "",
     "category": "State Benefits"
   },
@@ -6180,29 +7559,29 @@ const blogPosts = [
     "category": "State Benefits"
   },
   {
-    "slug": "nv-best-cities-veterans-2025",
-    "title": "Best Cities in Nevada for Veterans 2025: Cost of Living & Quality of Life",
-    "date": "2025-12-13",
-    "description": "Nevada's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
-    "keywords": "best cities nevada veterans, nevada cost of living veterans, where to live nevada military, nevada veteran population",
+    "slug": "ma-best-cities-veterans-2025",
+    "title": "Best Cities for Veterans in Massachusetts 2025: Cost of Living, Jobs & Benefits Comparison",
+    "date": "2025-12-12",
+    "description": "Comprehensive comparison of the best Massachusetts cities for veterans: Worcester, Boston suburbs, Lowell, Springfield, and Bedford. Housing costs, job markets, VA access, and veteran services analyzed.",
+    "keywords": "best cities veterans Massachusetts, Worcester veterans, Boston suburbs veterans, Massachusetts veteran housing, affordable Massachusetts cities veterans",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "ny-best-cities-veterans-2025",
-    "title": "Best Cities for Veterans in New York 2025: Cost of Living, Jobs & Communities",
-    "date": "2025-12-13",
-    "description": "Complete guide to the best New York cities for veterans: Syracuse, Buffalo, Rochester, Albany, NYC, and Watertown—with cost of living, jobs, and veteran communities.",
-    "keywords": "best cities for veterans new york, syracuse veterans, buffalo rochester albany veterans, nyc veterans cost of living",
+    "slug": "maine-hidden-veteran-benefits",
+    "title": "Maine Hidden Veteran Benefits: Property Tax Relief and Education Advantages 2025",
+    "date": "2025-12-12",
+    "description": "Uncover Maine's exclusive veteran benefits including property tax exemptions, education credits, hunting/fishing discounts, and coastal state programs for military families.",
+    "keywords": "",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "oh-best-cities-veterans-2025",
-    "title": "Best Cities in Ohio for Veterans 2025: Cost of Living & Quality of Life",
-    "date": "2025-12-13",
-    "description": "Ohio's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
-    "keywords": "best cities ohio veterans, ohio cost of living veterans, where to live ohio military, ohio veteran population",
+    "slug": "md-best-cities-veterans-2025",
+    "title": "Maryland Military Retirement: Best Cities, Housing Costs & Quality of Life",
+    "date": "2025-12-12",
+    "description": "Where to retire in Maryland as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
+    "keywords": "Maryland best cities for veterans, Maryland military retirement, Maryland cost of living veterans, where to retire Maryland",
     "excerpt": "",
     "category": "State Benefits"
   },
@@ -6270,56 +7649,56 @@ const blogPosts = [
     "category": "State Benefits"
   },
   {
-    "slug": "mt-best-cities-veterans-2025",
-    "title": "Montana Military Retirement: Best Cities, Housing Costs & Quality of Life",
-    "date": "2025-12-12",
-    "description": "Where to retire in Montana as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
-    "keywords": "Montana best cities for veterans, Montana military retirement, Montana cost of living veterans, where to retire Montana",
-    "excerpt": "",
-    "category": "State Benefits"
-  },
-  {
-    "slug": "nc-best-cities-veterans-2025",
-    "title": "Best Cities in North Carolina for Veterans 2025: Cost of Living & Quality of Life",
-    "date": "2025-12-12",
-    "description": "North Carolina's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
-    "keywords": "best cities north carolina veterans, north carolina cost of living veterans, where to live north carolina military, north carolina veteran population",
-    "excerpt": "",
-    "category": "State Benefits"
-  },
-  {
-    "slug": "nd-best-cities-veterans-2025",
-    "title": "Best Cities in North Dakota for Veterans 2025: Cost of Living & Quality of Life",
-    "date": "2025-12-12",
-    "description": "North Dakota's best cities for veterans ranked by cost of living, veteran population, amenities, and quality of life. Housing costs and city comparisons.",
-    "keywords": "best cities north dakota veterans, north dakota cost of living veterans, where to live north dakota military, north dakota veteran population",
-    "excerpt": "",
-    "category": "State Benefits"
-  },
-  {
-    "slug": "ma-best-cities-veterans-2025",
-    "title": "Best Cities for Veterans in Massachusetts 2025: Cost of Living, Jobs & Benefits Comparison",
+    "slug": "ks-best-cities-veterans-2025",
+    "title": "Best Cities for Veterans in Kansas 2025: Jobs, Housing & Quality of Life",
     "date": "2025-12-11",
-    "description": "Comprehensive comparison of the best Massachusetts cities for veterans: Worcester, Boston suburbs, Lowell, Springfield, and Bedford. Housing costs, job markets, VA access, and veteran services analyzed.",
-    "keywords": "best cities veterans Massachusetts, Worcester veterans, Boston suburbs veterans, Massachusetts veteran housing, affordable Massachusetts cities veterans",
+    "description": "Comprehensive guide to the best Kansas cities for veterans in 2025, comparing cost of living, job opportunities, VA healthcare access, and veteran communities.",
+    "keywords": "best cities Kansas veterans, Kansas veteran jobs, affordable Kansas cities, Fort Riley Manhattan veterans",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "maine-hidden-veteran-benefits",
-    "title": "Maine Hidden Veteran Benefits: Property Tax Relief and Education Advantages 2025",
+    "slug": "ky-best-cities-veterans-2025",
+    "title": "Kentucky Military Retirement: Best Cities, Housing Costs & Quality of Life",
     "date": "2025-12-11",
-    "description": "Uncover Maine's exclusive veteran benefits including property tax exemptions, education credits, hunting/fishing discounts, and coastal state programs for military families.",
+    "description": "Where to retire in Kentucky as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
+    "keywords": "Kentucky best cities for veterans, Kentucky military retirement, Kentucky cost of living veterans, where to retire Kentucky",
+    "excerpt": "",
+    "category": "State Benefits"
+  },
+  {
+    "slug": "la-best-cities-veterans-2025",
+    "title": "Best Cities for Veterans in Louisiana 2025: Comprehensive Cost & Benefits Guide",
+    "date": "2025-12-11",
+    "description": "Detailed analysis of the best Louisiana cities for veterans including New Orleans, Baton Rouge, Shreveport, and Lafayette - housing costs, jobs, VA healthcare, and quality of life.",
+    "keywords": "Louisiana best cities veterans, New Orleans veterans, Baton Rouge veterans, Louisiana veteran housing, Shreveport military",
+    "excerpt": "",
+    "category": "State Benefits"
+  },
+  {
+    "slug": "delaware-hidden-veteran-benefits",
+    "title": "Delaware Hidden Veteran Benefits: Tax Breaks and Exclusive Programs 2025",
+    "date": "2025-12-10",
+    "description": "Uncover Delaware's lesser-known veteran benefits including property tax exemptions, veteran hiring preferences, education credits, and financial assistance programs.",
     "keywords": "",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "md-best-cities-veterans-2025",
-    "title": "Maryland Military Retirement: Best Cities, Housing Costs & Quality of Life",
-    "date": "2025-12-11",
-    "description": "Where to retire in Maryland as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
-    "keywords": "Maryland best cities for veterans, Maryland military retirement, Maryland cost of living veterans, where to retire Maryland",
+    "slug": "fl-best-cities-veterans-2025",
+    "title": "Florida Military Retirement: Best Cities, Housing Costs & Quality of Life",
+    "date": "2025-12-10",
+    "description": "Where to retire in Florida as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
+    "keywords": "Florida best cities for veterans, Florida military retirement, Florida cost of living veterans, where to retire Florida",
+    "excerpt": "",
+    "category": "State Benefits"
+  },
+  {
+    "slug": "florida-veteran-benefits-2025",
+    "title": "Florida Veteran Benefits 2025: Why 1.4 Million Veterans Choose the Sunshine State",
+    "date": "2025-12-10",
+    "description": "Complete guide to Florida veteran benefits: no state income tax, full property tax exemptions, education waivers, and why 1.4M+ veterans call Florida home.",
+    "keywords": "Florida veteran benefits, Florida property tax exemption veterans, Florida veteran education benefits",
     "excerpt": "",
     "category": "State Benefits"
   },
@@ -6387,29 +7766,29 @@ const blogPosts = [
     "category": "State Benefits"
   },
   {
-    "slug": "ks-best-cities-veterans-2025",
-    "title": "Best Cities for Veterans in Kansas 2025: Jobs, Housing & Quality of Life",
-    "date": "2025-12-10",
-    "description": "Comprehensive guide to the best Kansas cities for veterans in 2025, comparing cost of living, job opportunities, VA healthcare access, and veteran communities.",
-    "keywords": "best cities Kansas veterans, Kansas veteran jobs, affordable Kansas cities, Fort Riley Manhattan veterans",
+    "slug": "alaska-hidden-veteran-benefits-2025",
+    "title": "Alaska Hidden Veteran Benefits 2025: Complete Guide to State-Specific Advantages",
+    "date": "2025-12-09",
+    "description": "Discover Alaska's overlooked veteran benefits including property tax exemptions, education benefits, hunting/fishing discounts, and healthcare programs that service members rarely know about.",
+    "keywords": "",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "ky-best-cities-veterans-2025",
-    "title": "Kentucky Military Retirement: Best Cities, Housing Costs & Quality of Life",
-    "date": "2025-12-10",
-    "description": "Where to retire in Kentucky as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
-    "keywords": "Kentucky best cities for veterans, Kentucky military retirement, Kentucky cost of living veterans, where to retire Kentucky",
+    "slug": "ar-best-cities-veterans-2025",
+    "title": "Arkansas Military Retirement: Best Cities, Housing Costs & Quality of Life",
+    "date": "2025-12-09",
+    "description": "Where to retire in Arkansas as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
+    "keywords": "Arkansas best cities for veterans, Arkansas military retirement, Arkansas cost of living veterans, where to retire Arkansas",
     "excerpt": "",
     "category": "State Benefits"
   },
   {
-    "slug": "la-best-cities-veterans-2025",
-    "title": "Best Cities for Veterans in Louisiana 2025: Comprehensive Cost & Benefits Guide",
-    "date": "2025-12-10",
-    "description": "Detailed analysis of the best Louisiana cities for veterans including New Orleans, Baton Rouge, Shreveport, and Lafayette - housing costs, jobs, VA healthcare, and quality of life.",
-    "keywords": "Louisiana best cities veterans, New Orleans veterans, Baton Rouge veterans, Louisiana veteran housing, Shreveport military",
+    "slug": "az-best-cities-veterans-2025",
+    "title": "Arizona Military Retirement: Best Cities, Housing Costs & Quality of Life",
+    "date": "2025-12-09",
+    "description": "Where to retire in Arizona as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
+    "keywords": "Arizona best cities for veterans, Arizona military retirement, Arizona cost of living veterans, where to retire Arizona",
     "excerpt": "",
     "category": "State Benefits"
   },
@@ -6477,33 +7856,6 @@ const blogPosts = [
     "category": "State Benefits"
   },
   {
-    "slug": "delaware-hidden-veteran-benefits",
-    "title": "Delaware Hidden Veteran Benefits: Tax Breaks and Exclusive Programs 2025",
-    "date": "2025-12-09",
-    "description": "Uncover Delaware's lesser-known veteran benefits including property tax exemptions, veteran hiring preferences, education credits, and financial assistance programs.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "State Benefits"
-  },
-  {
-    "slug": "fl-best-cities-veterans-2025",
-    "title": "Florida Military Retirement: Best Cities, Housing Costs & Quality of Life",
-    "date": "2025-12-09",
-    "description": "Where to retire in Florida as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
-    "keywords": "Florida best cities for veterans, Florida military retirement, Florida cost of living veterans, where to retire Florida",
-    "excerpt": "",
-    "category": "State Benefits"
-  },
-  {
-    "slug": "florida-veteran-benefits-2025",
-    "title": "Florida Veteran Benefits 2025: Why 1.4 Million Veterans Choose the Sunshine State",
-    "date": "2025-12-09",
-    "description": "Complete guide to Florida veteran benefits: no state income tax, full property tax exemptions, education waivers, and why 1.4M+ veterans call Florida home.",
-    "keywords": "Florida veteran benefits, Florida property tax exemption veterans, Florida veteran education benefits",
-    "excerpt": "",
-    "category": "State Benefits"
-  },
-  {
     "slug": "ak-best-cities-veterans-2025",
     "title": "Alaska Military Retirement: Best Cities, Housing Costs & Quality of Life",
     "date": "2025-12-08",
@@ -6522,31 +7874,34 @@ const blogPosts = [
     "category": "State Benefits"
   },
   {
-    "slug": "alaska-hidden-veteran-benefits-2025",
-    "title": "Alaska Hidden Veteran Benefits 2025: Complete Guide to State-Specific Advantages",
+    "slug": "va-rating-gerd-acid-reflux-guide",
+    "title": "VA Rating for GERD and Acid Reflux: Complete Compensation Guide",
     "date": "2025-12-08",
-    "description": "Discover Alaska's overlooked veteran benefits including property tax exemptions, education benefits, hunting/fishing discounts, and healthcare programs that service members rarely know about.",
+    "description": "Complete guide to VA GERD and acid reflux ratings, monthly compensation amounts, evidence requirements, and filing strategies for gastrointestinal disability claims.",
     "keywords": "",
     "excerpt": "",
-    "category": "State Benefits"
+    "category": "VA Benefits",
+    "branch": "Navy"
   },
   {
-    "slug": "ar-best-cities-veterans-2025",
-    "title": "Arkansas Military Retirement: Best Cities, Housing Costs & Quality of Life",
+    "slug": "va-rating-hearing-loss-compensation",
+    "title": "VA Rating for Hearing Loss: Complete Compensation and Benefits Guide",
     "date": "2025-12-08",
-    "description": "Where to retire in Arkansas as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
-    "keywords": "Arkansas best cities for veterans, Arkansas military retirement, Arkansas cost of living veterans, where to retire Arkansas",
+    "description": "Comprehensive guide to VA hearing loss ratings (10%-100%), monthly compensation amounts, evidence requirements, and successful filing strategies for audiometric claims.",
+    "keywords": "",
     "excerpt": "",
-    "category": "State Benefits"
+    "category": "VA Benefits",
+    "branch": "Navy"
   },
   {
-    "slug": "az-best-cities-veterans-2025",
-    "title": "Arizona Military Retirement: Best Cities, Housing Costs & Quality of Life",
+    "slug": "va-rating-knee-pain-compensation-rates",
+    "title": "VA Rating for Knee Pain: Compensation and Rating Guide",
     "date": "2025-12-08",
-    "description": "Where to retire in Arizona as a veteran: best cities ranked by benefits, housing costs, veteran population, and quality of life for 2025.",
-    "keywords": "Arizona best cities for veterans, Arizona military retirement, Arizona cost of living veterans, where to retire Arizona",
+    "description": "Complete guide to VA knee pain ratings from 0%-100%, monthly compensation amounts, evidence requirements, and successful filing strategies.",
+    "keywords": "",
     "excerpt": "",
-    "category": "State Benefits"
+    "category": "VA Benefits",
+    "branch": "Navy"
   },
   {
     "slug": "va-rating-migraines-headaches-guide",
@@ -6596,6 +7951,35 @@ const blogPosts = [
     "keywords": "",
     "excerpt": "",
     "category": "VA Benefits",
+    "branch": "Navy"
+  },
+  {
+    "slug": "back-pain-va-rating-guide",
+    "title": "Back Pain VA Rating Guide (2025)",
+    "date": "2025-12-07",
+    "description": "Comprehensive guide to VA back pain ratings (10%-100%), monthly compensation, evidence requirements, and proven filing strategies for lumbar spine claims.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "VA Benefits"
+  },
+  {
+    "slug": "cp-exam-back-pain-musculoskeletal-guide",
+    "title": "C&P Exam for Back Pain and Musculoskeletal Injuries: Complete Preparation",
+    "date": "2025-12-07",
+    "description": "Comprehensive guide to VA C&P exams for back pain, knee pain, and musculoskeletal conditions, what physical exams to expect, preparation strategies, and exam day tips.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "C&P Exams",
+    "branch": "Navy"
+  },
+  {
+    "slug": "cp-exam-mental-health-anxiety-depression",
+    "title": "C&P Exam for Mental Health: Anxiety and Depression Preparation Guide",
+    "date": "2025-12-07",
+    "description": "Complete guide to VA C&P exams for anxiety and depression claims, what to expect during mental health evaluations, preparation strategies, and exam day tips.",
+    "keywords": "",
+    "excerpt": "",
+    "category": "C&P Exams",
     "branch": "Navy"
   },
   {
@@ -6649,62 +8033,32 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-rating-gerd-acid-reflux-guide",
-    "title": "VA Rating for GERD and Acid Reflux: Complete Compensation Guide",
-    "date": "2025-12-07",
-    "description": "Complete guide to VA GERD and acid reflux ratings, monthly compensation amounts, evidence requirements, and filing strategies for gastrointestinal disability claims.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "VA Benefits",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-rating-hearing-loss-compensation",
-    "title": "VA Rating for Hearing Loss: Complete Compensation and Benefits Guide",
-    "date": "2025-12-07",
-    "description": "Comprehensive guide to VA hearing loss ratings (10%-100%), monthly compensation amounts, evidence requirements, and successful filing strategies for audiometric claims.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "VA Benefits",
-    "branch": "Navy"
-  },
-  {
-    "slug": "va-rating-knee-pain-compensation-rates",
-    "title": "VA Rating for Knee Pain: Compensation and Rating Guide",
-    "date": "2025-12-07",
-    "description": "Complete guide to VA knee pain ratings from 0%-100%, monthly compensation amounts, evidence requirements, and successful filing strategies.",
-    "keywords": "",
-    "excerpt": "",
-    "category": "VA Benefits",
-    "branch": "Navy"
-  },
-  {
-    "slug": "back-pain-va-rating-guide",
-    "title": "Back Pain VA Rating Guide (2025)",
+    "slug": "us-marshals-careers-veterans-guide",
+    "title": "US Marshals Service Careers for Veterans: Complete Guide",
     "date": "2025-12-06",
-    "description": "Comprehensive guide to VA back pain ratings (10%-100%), monthly compensation, evidence requirements, and proven filing strategies for lumbar spine claims.",
-    "keywords": "",
+    "description": "Comprehensive guide to US Marshals Service careers for veterans. Learn about Deputy US Marshal positions, requirements, hiring process, salary, and how military experience helps at USMS.",
+    "keywords": "US Marshals careers veterans, Deputy US Marshal veteran, USMS jobs, US Marshals hiring, US Marshals requirements, US Marshals salary, federal marshal careers",
     "excerpt": "",
-    "category": "VA Benefits"
+    "category": "federal-employment"
   },
   {
-    "slug": "cp-exam-back-pain-musculoskeletal-guide",
-    "title": "C&P Exam for Back Pain and Musculoskeletal Injuries: Complete Preparation",
+    "slug": "va-disability-burn-pit-exposure-claims",
+    "title": "VA Disability Claim for Burn Pit Exposure: Complete Guide 2025",
     "date": "2025-12-06",
-    "description": "Comprehensive guide to VA C&P exams for back pain, knee pain, and musculoskeletal conditions, what physical exams to expect, preparation strategies, and exam day tips.",
-    "keywords": "",
+    "description": "How to file VA disability claim for conditions caused by burn pit exposure. Presumptive conditions, required evidence, and approval strategies.",
+    "keywords": "burn pit exposure VA disability, burn pit presumptive conditions, PACT Act, respiratory claim",
     "excerpt": "",
-    "category": "C&P Exams",
+    "category": "VA Claims",
     "branch": "Navy"
   },
   {
-    "slug": "cp-exam-mental-health-anxiety-depression",
-    "title": "C&P Exam for Mental Health: Anxiety and Depression Preparation Guide",
+    "slug": "va-disability-burn-pit-exposure-rating-guide",
+    "title": "VA Disability Rating for Burn Pit Exposure (PACT Act): Complete Guide to Getting Your Claim Approved",
     "date": "2025-12-06",
-    "description": "Complete guide to VA C&P exams for anxiety and depression claims, what to expect during mental health evaluations, preparation strategies, and exam day tips.",
-    "keywords": "",
+    "description": "How to get VA disability rating for burn pit exposure under the PACT Act. Presumptive conditions, evidence needed, and claim tips.",
+    "keywords": "VA disability burn pit, PACT Act VA claim, toxic exposure VA rating, burn pit presumptive conditions",
     "excerpt": "",
-    "category": "C&P Exams",
+    "category": "va-disability",
     "branch": "Navy"
   },
   {
@@ -6718,24 +8072,22 @@ const blogPosts = [
     "branch": "Navy"
   },
   {
-    "slug": "va-disability-burn-pit-exposure-claims",
-    "title": "VA Disability Claim for Burn Pit Exposure: Complete Guide 2025",
+    "slug": "military-to-healthcare-it-career-guide",
+    "title": "Military to Healthcare IT: Complete Transition Guide for Veterans",
     "date": "2025-12-05",
-    "description": "How to file VA disability claim for conditions caused by burn pit exposure. Presumptive conditions, required evidence, and approval strategies.",
-    "keywords": "burn pit exposure VA disability, burn pit presumptive conditions, PACT Act, respiratory claim",
+    "description": "How to transition from military service to healthcare IT. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to healthcare IT, veteran health IT jobs, healthcare IT careers for veterans",
     "excerpt": "",
-    "category": "VA Claims",
-    "branch": "Navy"
+    "category": "industry-transition"
   },
   {
-    "slug": "va-disability-burn-pit-exposure-rating-guide",
-    "title": "VA Disability Rating for Burn Pit Exposure (PACT Act): Complete Guide to Getting Your Claim Approved",
+    "slug": "military-to-it-project-management-career-guide",
+    "title": "Military to IT Project Management: Complete Transition Guide for Veterans",
     "date": "2025-12-05",
-    "description": "How to get VA disability rating for burn pit exposure under the PACT Act. Presumptive conditions, evidence needed, and claim tips.",
-    "keywords": "VA disability burn pit, PACT Act VA claim, toxic exposure VA rating, burn pit presumptive conditions",
+    "description": "How to transition from military service to IT project management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans.",
+    "keywords": "military to IT project management, veteran project manager jobs, IT PM careers for veterans",
     "excerpt": "",
-    "category": "va-disability",
-    "branch": "Navy"
+    "category": "industry-transition"
   },
   {
     "slug": "military-skills-translator-guide",

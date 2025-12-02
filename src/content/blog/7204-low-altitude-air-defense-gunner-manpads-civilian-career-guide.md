@@ -1,7 +1,7 @@
 ---
 title: "Marine 7204 MANPADS Gunner to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-07-29"
-date: "2026-01-15"
+date: "2026-01-16"
 description: "Career transition guide for Marine MANPADS operators moving to civilian careers. Includes defense contractor training, air defense roles, federal security with $60K-$200K+ salary ranges and required certifications."
 keywords: "7204 Marine career transition, MANPADS civilian jobs, Stinger missile operator civilian career, air defense specialist jobs"
 ---

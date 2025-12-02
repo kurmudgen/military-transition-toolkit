@@ -2,7 +2,7 @@
 title: "Moving to Ohio for Veterans: Complete Cost Analysis and Financial Guide 2025"
 description: "Comprehensive relocation guide for veterans moving to Ohio including military pension tax treatment, affordable housing, job market, VA healthcare, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["Ohio", "Relocation", "Veteran Costs", "Housing", "Affordable"]
 category: "State Relocation Guides"
 featured: true

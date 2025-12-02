@@ -1,5 +1,5 @@
 ---
-date: "2026-01-22"
+date: "2026-01-23"
 ---# 3E1X1 - Heating, Ventilation, Air Conditioning & Refrigeration (HVAC/R) Career Transition Guide
 
 ## Overview

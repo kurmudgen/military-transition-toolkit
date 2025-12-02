@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-21"
 ---# GI Bill School Selection Checklist
 ## The Complete Guide to Choosing the Right School and Maximizing Your Education Benefits
 **By Jacob, Navy E6 | Formation Labs**

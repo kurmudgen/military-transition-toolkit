@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 18 Series Special Forces: $197K Contractor & Exec Security
-date: "2026-03-20"
+date: "2026-04-04"
 TARGET LENGTH: 6-8 minutes
 TARGET KEYWORDS: 18 series special forces civilian jobs, SF contractor salary, executive protection
 VIDEO FILE NAME: youtube-script-18-series-special-forces-civilian-jobs.md

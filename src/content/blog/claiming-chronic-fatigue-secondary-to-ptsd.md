@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Chronic Fatigue Syndrome Secondary to PTSD"
 description: "Guide to claiming chronic fatigue and myalgic encephalomyelitis secondary to PTSD. Medical evidence, nexus letters, and VA ratings."
-date: "2026-01-31"
+date: "2026-02-02"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Chronic Fatigue", "ME/CFS", "Secondary Conditions"]

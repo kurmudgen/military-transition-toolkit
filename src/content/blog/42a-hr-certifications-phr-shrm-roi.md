@@ -3,7 +3,7 @@ title: "42A Human Resources to SHRM, PHR, and HR Manager: Certification ROI Anal
 description: "Complete ROI analysis for 42A human resources specialists pursuing SHRM-CP, PHR, and HR management certifications"
 slug: "42a-hr-certifications-phr-shrm-roi"
 author: "Military Transition Toolkit"
-date: "2026-01-22"
+date: "2026-01-23"
 category: "Certifications"
 tags: ["42A", "Human Resources", "SHRM", "PHR", "HR Manager"]
 ---

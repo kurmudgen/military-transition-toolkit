@@ -2,7 +2,7 @@
 title: "27D Paralegal to Corporate Paralegal: Complete Transition Guide"
 description: "Expert guide for Army 27D Paralegals transitioning to corporate legal roles with salary data, certifications, specializations, and 12-month action plan."
 author: "Military Transition Toolkit"
-date: "2026-01-20"
+date: "2026-01-21"
 image: "/images/27d-paralegal.jpg"
 category: "Career Transitions"
 tags: ["27D", "Paralegal", "Legal", "Corporate"]

@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Insomnia: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-14"
+date: "2026-03-28"
 description: "How to get VA disability rating for insomnia and sleep disorders. Rating criteria, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability insomnia, insomnia VA rating, sleep disorder VA claim, insomnia C&P exam"
 category: "va-disability"

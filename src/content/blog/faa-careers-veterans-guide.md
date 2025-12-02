@@ -1,7 +1,7 @@
 ---
 title: "FAA Careers for Veterans: Complete Guide to Federal Aviation Administration"
 description: "Comprehensive guide to FAA careers for veterans. Learn about Air Traffic Controller positions, aviation safety, technical operations, hiring process, salary, and how military aviation experience helps."
-date: "2025-12-01"
+date: "2026-02-13"
 category: "federal-employment"
 keywords: "FAA careers veterans, air traffic controller veteran, FAA jobs, aviation careers veterans, FAA hiring, ATC military, FAA technical operations"
 slug: "faa-careers-veterans-guide"

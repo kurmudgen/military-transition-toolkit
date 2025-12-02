@@ -1,7 +1,7 @@
 ---
 title: "0331 Machine Gunner to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2025-12-24"
-date: "2026-01-03"
+date: "2026-01-04"
 description: "Real career options for Marine Corps 0331 Machine Gunners transitioning to civilian life. Includes salary ranges $45K-$90K+, required certifications, and Marine skills translation."
 keywords: "0331 machine gunner civilian jobs, Marine machine gunner career transition, 0331 to civilian career"
 ---

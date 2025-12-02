@@ -1,7 +1,7 @@
 ---
 title: "CIA Careers for Veterans: Complete Guide to Central Intelligence Agency"
 description: "Comprehensive guide to CIA careers for veterans. Learn about Operations Officers, Analysts, support positions, hiring process, salary, and how military experience helps at the Agency."
-date: "2025-12-01"
+date: "2026-02-02"
 category: "federal-employment"
 keywords: "CIA careers veterans, CIA jobs, CIA Operations Officer, CIA analyst veteran, intelligence careers, CIA hiring process, CIA requirements, Central Intelligence Agency jobs"
 slug: "cia-careers-veterans-guide"

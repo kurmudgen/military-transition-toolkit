@@ -1,6 +1,6 @@
 ---
 EPISODE #070: State Hunting and Fishing License Benefits for Veterans - Free Licenses Worth $1,000+
-date: "2026-03-04"
+date: "2026-03-15"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 20-22 minutes (3,000-3,300 words)

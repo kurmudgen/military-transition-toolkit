@@ -1,7 +1,7 @@
 ---
 title: "VRA (Veterans Recruitment Appointment) Guide: Non-Competitive Federal Hiring"
 description: "Complete guide to Veterans Recruitment Appointment (VRA). Learn eligibility requirements, how VRA hiring works, and strategies to get hired without competing against the public."
-date: "2025-12-01"
+date: "2026-04-02"
 category: "federal-employment"
 keywords: "VRA veterans recruitment appointment, non-competitive federal hiring, VRA eligibility, VRA federal jobs, veterans appointment authority, VRA USAJOBS"
 slug: "vra-veterans-recruitment-appointment-guide"

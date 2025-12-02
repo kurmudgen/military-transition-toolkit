@@ -1,7 +1,7 @@
 ---
 title: "Military to Maritime Industry: Complete Transition Guide for Veterans"
 description: "How to transition from military service to the maritime industry. Best ratings, credentials needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-28"
 category: "industry-transition"
 keywords: "military to maritime, veteran merchant marine jobs, maritime careers for veterans"
 slug: "military-to-maritime-industry-career-guide"

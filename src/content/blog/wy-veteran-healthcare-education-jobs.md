@@ -1,6 +1,6 @@
 ---
 title: "Wyoming Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-03-19"
+date: "2026-04-03"
 description: "Comprehensive guide to Wyoming veteran resources including Cheyenne and Sheridan VA Medical Centers, telehealth services, Veterans Home in Buffalo, University of Wyoming GI Bill benefits, employment programs, and major employers in energy, tourism, and ranching sectors."
 keywords: "Wyoming veteran healthcare, Cheyenne VA Medical Center, Sheridan VA Medical Center, Wyoming Veterans Home Buffalo, University of Wyoming GI Bill, Wyoming veteran jobs, Wyoming Veterans Commission employment, veteran unemployment Wyoming"
 slug: "wy-veteran-healthcare-education-jobs"

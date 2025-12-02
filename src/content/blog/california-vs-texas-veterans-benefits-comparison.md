@@ -1,7 +1,7 @@
 ---
 title: "California vs Texas for Veterans: Comprehensive Benefits Comparison 2025"
 description: "Detailed comparison of California vs Texas for military retirees. Analyze tax implications, cost of living, VA healthcare, and job markets for transitioning veterans."
-date: "2026-01-29"
+date: "2026-01-31"
 category: "State Comparisons"
 tags: ["California", "Texas", "Veterans Benefits", "Military Retirement Tax", "State Comparison"]
 author: "Military Transition Toolkit"

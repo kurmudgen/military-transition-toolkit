@@ -1,6 +1,6 @@
 ---
 title: "Marine 0321 Reconnaissance Marine to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
-date: "2026-01-03"
+date: "2026-01-04"
 description: "Real career options for Marine 0321 Reconnaissance Marine transitioning to civilian life. Includes salary ranges $55K-$200K+, federal law enforcement, special operations contracting, and elite tactical careers."
 keywords: "0321 Reconnaissance Marine civilian jobs, 0321 Recon career transition, Marine Recon to civilian career, special operations transition"
 ---

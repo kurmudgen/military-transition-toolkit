@@ -1,6 +1,6 @@
 ---
 EPISODE #099: Networking for Introverts - Building Professional Relationships Without the BS
-date: "2026-03-07"
+date: "2026-03-18"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Transition Tactics
 TARGET LENGTH: 18-20 minutes

@@ -1,7 +1,7 @@
 ---
 title: "Department of Energy Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to DOE careers for veterans. Learn about National Labs, NNSA, energy programs, nuclear security positions, hiring process, and how military technical experience helps at DOE."
-date: "2025-12-01"
+date: "2026-02-12"
 category: "federal-employment"
 keywords: "DOE careers veterans, Department of Energy jobs, national laboratory careers, NNSA careers, nuclear security jobs, energy careers veterans, DOE hiring"
 slug: "doe-careers-veterans-guide"

@@ -1,7 +1,7 @@
 ---
 title: "Creating a 10-Year Career Plan as a Military Spouse"
 description: "Long-term career planning despite military uncertainty. How to set direction, build portable skills, prepare for post-military life, and create career you want over time."
-date: "2025-12-02"
+date: "2026-03-22"
 category: "military-spouse"
 keywords: "military spouse career plan, long term career planning military, career goals military spouse, post military spouse career, career strategy military family"
 slug: "ten-year-career-plan-military-spouse-guide"

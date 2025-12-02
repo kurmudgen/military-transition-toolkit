@@ -1,6 +1,6 @@
 ---
 title: "Maine Veteran Benefits 2025: Property Tax, Income Tax & Financial Guide"
-date: "2026-02-19"
+date: "2026-02-24"
 description: "Complete guide to Maine veteran tax benefits: property tax exemptions up to $50K, full military retirement income tax exemption, and financial benefits for disabled veterans."
 keywords: "Maine veteran benefits, Maine property tax exemption veterans, Maine veteran income tax, Maine disabled veteran benefits"
 slug: "me-veteran-tax-benefits-2025"

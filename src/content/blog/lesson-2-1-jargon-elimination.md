@@ -1,5 +1,5 @@
 ---
-date: "2026-02-17"
+date: "2026-02-22"
 ---# Lesson 2.1: Jargon Elimination Strategy
 
 **Course:** Military Resume Mastery

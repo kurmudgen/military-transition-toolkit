@@ -1,7 +1,7 @@
 ---
 title: "Military to Physical Therapy: Complete Transition Guide for Veterans"
 description: "How to transition from military service to physical therapy. Best MOS backgrounds, degree requirements, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to physical therapy, veteran physical therapist jobs, physical therapy careers for veterans"
 slug: "military-to-physical-therapy-career-guide"

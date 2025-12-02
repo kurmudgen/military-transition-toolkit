@@ -1,7 +1,7 @@
 ---
 title: "VA Rating for GERD and Acid Reflux: Complete Compensation Guide"
 description: "Complete guide to VA GERD and acid reflux ratings, monthly compensation amounts, evidence requirements, and filing strategies for gastrointestinal disability claims."
-date: "2025-12-07"
+date: "2025-12-08"
 category: "VA Benefits"
 tags: ["gerd", "acid-reflux", "gastrointestinal", "va-rating", "disability", "claims"]
 author: "Military Transition Toolkit"

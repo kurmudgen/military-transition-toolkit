@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Somatic Symptom Disorder: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-17"
+date: "2026-03-31"
 description: "How to get VA disability rating for somatic symptom disorder. Rating criteria from 0% to 100%, evidence needed, C&P exam tips."
 keywords: "VA disability somatic symptom disorder, somatoform disorder VA rating, VA claim somatic disorder"
 category: "va-disability"

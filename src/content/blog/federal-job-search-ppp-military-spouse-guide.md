@@ -1,7 +1,7 @@
 ---
 title: "Federal Job Search for Military Spouses: PPP Hiring Guide"
 description: "Complete guide to finding federal jobs as a military spouse. USA Jobs, Priority Placement Program, GS pay scales, application strategies, and navigating the federal hiring system."
-date: "2025-12-02"
+date: "2026-02-14"
 category: "military-spouse"
 keywords: "federal jobs military spouse, USA Jobs military spouse, PPP hiring, federal employment spouse, government jobs military family"
 slug: "federal-job-search-ppp-military-spouse-guide"

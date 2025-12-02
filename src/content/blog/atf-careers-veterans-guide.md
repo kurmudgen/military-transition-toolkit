@@ -1,7 +1,7 @@
 ---
 title: "ATF Careers for Veterans: Complete Guide to Bureau of Alcohol, Tobacco, Firearms and Explosives"
 description: "Comprehensive guide to ATF careers for veterans. Learn about Special Agent, Industry Operations Inspector positions, hiring process, salary, and how military experience helps at ATF."
-date: "2025-12-01"
+date: "2026-01-26"
 category: "federal-employment"
 keywords: "ATF careers veterans, ATF special agent veteran, ATF jobs, ATF hiring process, ATF requirements, Bureau of Alcohol Tobacco Firearms Explosives careers"
 slug: "atf-careers-veterans-guide"

@@ -1,6 +1,6 @@
 ---
 EPISODE #089: Artillery Officer to Data Scientist - $135K Analytics Career
-date: "2026-03-06"
+date: "2026-03-17"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 HOST: Jacob

@@ -1,7 +1,7 @@
 ---
 title: "How to Keep Your Job Through a PCS: Complete Guide"
 description: "Strategies and scripts for negotiating with your employer when facing PCS orders. How to transition to remote work, transfer, or maintain your position through a military move."
-date: "2025-12-02"
+date: "2026-02-18"
 category: "military-spouse"
 keywords: "keep job PCS, military spouse job relocation, remote work PCS, negotiate remote military, job through military move"
 slug: "keep-job-through-pcs-guide"

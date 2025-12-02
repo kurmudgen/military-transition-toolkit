@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Agent Orange Exposure: Presumptive Conditions Guide"
 description: "Complete guide to Agent Orange presumptive conditions. Vietnam-era exposure, proven conditions, and how to file for maximum compensation."
-date: "2026-03-10"
+date: "2026-03-25"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Agent Orange Exposure", "Presumptive Conditions", "Vietnam War", "Chemical Exposure"]

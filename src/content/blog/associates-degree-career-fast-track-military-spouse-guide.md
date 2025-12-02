@@ -1,7 +1,7 @@
 ---
 title: "Associate's Degree to Career: Fast Track Options for Military Spouses"
 description: "Fast-track associate's degree programs for military spouses. Two-year degrees with immediate career payoff, online options, and paths to high-paying jobs in healthcare, IT, and business."
-date: "2025-12-02"
+date: "2026-01-26"
 category: "military-spouse"
 keywords: "military spouse associate degree, 2 year degree military spouse, fast degree program, online associate degree military, quick career degree"
 slug: "associates-degree-career-fast-track-military-spouse-guide"

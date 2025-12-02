@@ -1,5 +1,5 @@
 ---
-date: "2026-02-17"
+date: "2026-02-22"
 ---# Lesson 2.3: Power Words and Action Verbs
 
 **Course:** Military Resume Mastery

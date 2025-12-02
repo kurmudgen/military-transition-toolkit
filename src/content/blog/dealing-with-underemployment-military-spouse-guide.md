@@ -1,7 +1,7 @@
 ---
 title: "Dealing with Underemployment as a Military Spouse"
 description: "Strategies for military spouses working below their qualifications. How to cope, advance from current position, and build toward career you deserve despite circumstances."
-date: "2025-12-02"
+date: "2026-02-11"
 category: "military-spouse"
 keywords: "underemployment military spouse, overqualified military spouse, career below potential, military spouse job frustration, career advancement military"
 slug: "dealing-with-underemployment-military-spouse-guide"

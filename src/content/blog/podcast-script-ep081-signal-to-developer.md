@@ -1,6 +1,6 @@
 ---
 EPISODE #081: Army Signal Corps to Full-Stack Developer - $120K After 16-Week Bootcamp
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Success Stories
 TARGET LENGTH: 16-18 minutes

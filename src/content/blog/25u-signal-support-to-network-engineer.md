@@ -1,6 +1,6 @@
 ---
 title: "25U Signal Support Specialist to Network Engineer: Complete Career Transition Guide (2025)"
-date: "2026-01-20"
+date: "2026-01-21"
 description: "Convert your 25U experience into $85K-$130K+ network engineering career. Includes certifications (CCNA, Network+), timeline, costs, and proven transition strategies."
 keywords: "25U to network engineer, signal support civilian career, 25U CCNA certification, military network specialist jobs"
 slug: "25u-signal-support-to-network-engineer"

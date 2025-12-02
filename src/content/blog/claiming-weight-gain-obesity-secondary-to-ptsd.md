@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Weight Gain and Obesity Secondary to PTSD"
 description: "Guide to claiming weight gain/obesity as secondary to PTSD. Evidence requirements, nexus letters, rating percentages, and filing process."
-date: "2026-02-01"
+date: "2026-02-03"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Obesity", "Weight Gain", "Secondary Conditions"]

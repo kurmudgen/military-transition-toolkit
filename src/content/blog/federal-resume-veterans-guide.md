@@ -1,6 +1,6 @@
 ---
 title: "USAJOBS Federal Resume for Veterans: The Format That Actually Gets Interviews"
-date: "2026-02-11"
+date: "2026-02-14"
 description: "47% of transitioning troops target federal jobs, but USAJOBS resumes are weird (5 pages, extensive detail). Here's the exact format, keyword strategy, and veteran preference tactics that work."
 keywords: "federal resume for veterans, USAJOBS resume, veteran federal resume, how to write a federal resume, USAJOBS application tips, veteran preference, federal resume format"
 slug: "federal-resume-veterans-guide"

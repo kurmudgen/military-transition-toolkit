@@ -1,7 +1,7 @@
 ---
 title: "Military to Automotive Industry: Complete Transition Guide for Veterans"
 description: "How to transition from military service to the automotive industry. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-26"
 category: "industry-transition"
 keywords: "military to automotive, veteran automotive jobs, automotive industry careers for veterans"
 slug: "military-to-automotive-industry-career-guide"

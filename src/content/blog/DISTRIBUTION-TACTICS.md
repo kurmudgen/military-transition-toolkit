@@ -1,5 +1,5 @@
 ---
-date: "2026-02-09"
+date: "2026-02-12"
 ---# Distribution Tactics Playbook
 ## Multi-Channel Content Distribution Strategy
 

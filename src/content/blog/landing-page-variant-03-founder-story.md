@@ -1,5 +1,5 @@
 ---
-date: "2026-02-15"
+date: "2026-02-20"
 ---# Landing Page Variant 03: Founder Story
 
 ## Hero Section

@@ -1,7 +1,7 @@
 ---
 title: "Military to Financial Planning: Complete Transition Guide for Veterans"
 description: "How to transition from military service to financial planning. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to financial planning, veteran financial advisor jobs, financial planning careers for veterans"
 slug: "military-to-financial-planning-career-guide"

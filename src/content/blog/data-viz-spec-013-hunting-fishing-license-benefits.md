@@ -1,5 +1,5 @@
 ---
-date: "2026-02-05"
+date: "2026-02-07"
 ---# Data Visualization Specification #013: State Hunting and Fishing License Benefits for Veterans
 
 ## 1. Overview

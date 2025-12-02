@@ -3,7 +3,7 @@ title: "27D Legal Administrative to NALS Certified Paralegal: Legal Career ROI A
 description: "Complete ROI analysis for 27D legal administrative specialists pursuing paralegal certifications and legal profession advancement"
 slug: "27d-paralegal-certifications-roi"
 author: "Military Transition Toolkit"
-date: "2026-01-20"
+date: "2026-01-21"
 category: "Certifications"
 tags: ["27D", "Legal Administrative", "Paralegal", "NALS"]
 ---

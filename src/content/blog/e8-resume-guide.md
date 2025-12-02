@@ -1,6 +1,6 @@
 ---
 title: "E8/Senior Chief Resume: From Mess Deck to Boardroom"
-date: "2026-02-09"
+date: "2026-02-12"
 description: "E8s manage 50+ people and multi-million dollar operations. Learn how to position yourself for executive-level civilian roles worth $90K-$175K."
 keywords: "E8 resume, senior chief resume, first sergeant resume, military executive resume"
 slug: "e8-resume-guide"

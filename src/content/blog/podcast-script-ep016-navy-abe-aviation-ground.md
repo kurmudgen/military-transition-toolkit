@@ -1,6 +1,6 @@
 ---
 EPISODE #016: Navy ABE to Aviation Ground Support and Logistics
-date: "2026-02-28"
+date: "2026-03-11"
 CATEGORY: Career Transition
 TARGET LENGTH: 16-18 minutes
 KEYWORDS: Navy ABE, aviation boatswain, flight deck, aviation ground support, ramp agent

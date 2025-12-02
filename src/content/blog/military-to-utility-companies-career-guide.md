@@ -1,7 +1,7 @@
 ---
 title: "Military to Utility Companies: Complete Transition Guide for Veterans"
 description: "How to transition from military service to utility companies. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-02"
 category: "industry-transition"
 keywords: "military to utilities, veteran utility jobs, utility company careers for veterans"
 slug: "military-to-utility-companies-career-guide"

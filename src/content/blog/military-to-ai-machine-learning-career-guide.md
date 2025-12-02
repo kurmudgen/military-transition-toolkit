@@ -1,7 +1,7 @@
 ---
 title: "Military to AI/Machine Learning: Complete Transition Guide for Veterans"
 description: "How to transition from military service to AI and machine learning. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-26"
 category: "industry-transition"
 keywords: "military to AI, veteran machine learning jobs, AI careers for veterans"
 slug: "military-to-ai-machine-learning-career-guide"

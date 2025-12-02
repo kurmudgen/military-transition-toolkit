@@ -1,7 +1,7 @@
 ---
 title: "Military to IT Project Management: Complete Transition Guide for Veterans"
 description: "How to transition from military service to IT project management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2025-12-05"
 category: "industry-transition"
 keywords: "military to IT project management, veteran project manager jobs, IT PM careers for veterans"
 slug: "military-to-it-project-management-career-guide"

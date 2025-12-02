@@ -1,6 +1,6 @@
 ---
 EPISODE #100: One Year Out - The Complete Transition Timeline and Checklist [SERIES FINALE]
-date: "2026-03-07"
+date: "2026-03-18"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: Transition Tactics
 TARGET LENGTH: 22-24 minutes

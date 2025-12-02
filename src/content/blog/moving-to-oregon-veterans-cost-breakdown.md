@@ -2,7 +2,7 @@
 title: "Moving to Oregon for Veterans: Cost Breakdown and Financial Analysis 2025"
 description: "Complete relocation guide for Oregon veterans including no sales tax advantage, housing costs, outdoor lifestyle, VA healthcare, job market, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["Oregon", "Relocation", "Veteran Costs", "Housing", "Outdoor Recreation"]
 category: "State Relocation Guides"
 featured: true

@@ -1,6 +1,6 @@
 ---
 EPISODE #006: VA Tinnitus and Hearing Loss Claims - Maximum Rating Strategy
-date: "2026-02-27"
+date: "2026-03-10"
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes
 KEYWORDS: VA disability, tinnitus claim, hearing loss, VA rating, ringing ears, service connection, C&P exam, audiology

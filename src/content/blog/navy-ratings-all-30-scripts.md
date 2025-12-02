@@ -1,5 +1,5 @@
 ---
-date: "2026-02-22"
+date: "2026-03-05"
 ---# Navy Ratings - All 30 Career Transition Scripts
 
 Complete career guidance for top 30 Navy ratings transitioning to civilian careers.

@@ -1,7 +1,7 @@
 ---
 title: "TS/SCI Clearance: What It's Worth and How to Maximize It"
 description: "Complete guide to TS/SCI clearance value for veterans. Learn what TS/SCI is worth in salary, job opportunities, polygraph premiums, and how to leverage your clearance for maximum career benefit."
-date: "2025-12-01"
+date: "2026-03-23"
 category: "federal-employment"
 keywords: "TS/SCI clearance value, top secret SCI jobs, TS/SCI salary, polygraph clearance jobs, intelligence clearance careers, TS/SCI job opportunities"
 slug: "ts-sci-clearance-value-guide"

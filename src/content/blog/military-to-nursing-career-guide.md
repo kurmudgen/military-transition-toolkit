@@ -1,7 +1,7 @@
 ---
 title: "Military to Nursing (RN Programs): Complete Transition Guide for Veterans"
 description: "How to transition from military service to nursing. Best MOS backgrounds, degree programs, salary expectations, and top employers hiring veteran nurses."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to nursing, veteran RN programs, nursing careers for veterans"
 slug: "military-to-nursing-career-guide"

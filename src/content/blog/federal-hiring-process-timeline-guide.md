@@ -1,7 +1,7 @@
 ---
 title: "Federal Hiring Process Timeline: What to Expect from Application to Start Date"
 description: "Understand the federal hiring timeline from USAJOBS application to your first day. Learn typical timeframes, status meanings, and how to navigate delays in government hiring."
-date: "2025-12-01"
+date: "2026-02-14"
 category: "federal-employment"
 keywords: "federal hiring timeline, how long federal hiring, USAJOBS application status, federal job process, government hiring process, federal onboarding timeline"
 slug: "federal-hiring-process-timeline-guide"

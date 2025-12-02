@@ -1,7 +1,7 @@
 ---
 title: "National Park Service Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to NPS careers for veterans. Learn about Park Ranger, Law Enforcement, maintenance positions, hiring process, and how military experience helps in America's national parks."
-date: "2025-12-01"
+date: "2026-03-07"
 category: "federal-employment"
 keywords: "National Park Service careers veterans, NPS jobs, park ranger veteran, NPS law enforcement, national parks careers, NPS hiring, park ranger jobs"
 slug: "nps-careers-veterans-guide"

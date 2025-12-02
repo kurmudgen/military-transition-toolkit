@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Shoulder Conditions: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-16"
+date: "2026-03-31"
 description: "How to get VA disability rating for shoulder conditions. Rating criteria for limitation of motion, rotator cuff tears, and instability. Evidence needed and C&P exam tips."
 keywords: "VA disability shoulder, shoulder VA rating, rotator cuff VA claim, shoulder C&P exam, shoulder limitation motion"
 category: "va-disability"

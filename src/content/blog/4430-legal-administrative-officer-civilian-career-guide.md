@@ -1,7 +1,7 @@
 ---
 title: "4430 Legal Administrative Officer to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-04-22"
-date: "2026-01-12"
+date: "2026-01-13"
 description: "Real career options for Marine Corps 4430 Legal Administrative Officers (Warrant Officers) transitioning to civilian careers. Includes salary ranges $75K-$150K+, paths to legal operations management, paralegal management, compliance roles, and skills translation from military legal leadership."
 keywords: "4430 legal administrative officer civilian jobs, Marine Corps warrant officer legal transition, military legal management to civilian career"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Military Transition Checklist: Your Complete 12-Month Separation Timeline (2025)"
-date: "2026-02-19"
+date: "2026-03-02"
 description: "Step-by-step military separation checklist from 12 months to final out-processing. Required appointments, documents, benefits, and common mistakes to avoid."
 keywords: "military transition checklist, military separation checklist, ETS checklist"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Veterans Preference Explained: 5-Point, 10-Point, CPS, and XP Decoded"
 description: "Comprehensive guide to federal veterans preference. Learn the differences between 5-point and 10-point preference, how CPS and XP work, and how to claim your preference correctly."
-date: "2025-12-01"
+date: "2026-04-02"
 category: "federal-employment"
 keywords: "veterans preference federal jobs, 5-point preference, 10-point preference, CPS preference, XP preference, federal hiring veterans, SF-15, veterans preference eligibility"
 slug: "veterans-preference-explained-guide"

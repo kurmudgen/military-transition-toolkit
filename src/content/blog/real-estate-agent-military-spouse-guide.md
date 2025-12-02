@@ -1,7 +1,7 @@
 ---
 title: "Military Spouse to Real Estate Agent: State-by-State Guide"
 description: "Launch a real estate career as a military spouse. Navigate licensure across states, build clientele on military installations, leverage PCS moves, and create location-flexible income."
-date: "2025-12-02"
+date: "2026-03-18"
 category: "military-spouse"
 keywords: "military spouse real estate, real estate license military spouse, realtor military spouse, real estate PCS, military relocation agent"
 slug: "real-estate-agent-military-spouse-guide"

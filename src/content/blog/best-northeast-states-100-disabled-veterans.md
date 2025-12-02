@@ -1,7 +1,7 @@
 ---
 title: "Best Northeast States for 100% Disabled Veterans 2025"
 description: "Complete guide to best Northeast states for 100% disabled military retirees. Compare tax benefits, healthcare, disability support, and cost of living."
-date: "2026-01-28"
+date: "2026-01-29"
 category: "Regional Guides"
 tags: ["Disabled Veterans", "Northeast", "Military Retirement", "Tax Benefits", "Healthcare"]
 author: "Military Transition Toolkit"

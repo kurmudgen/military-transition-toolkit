@@ -1,6 +1,6 @@
 ---
 title: "68V Respiratory Specialist to Respiratory Therapist: Complete Career Guide (2025)"
-date: "2026-01-23"
+date: "2026-01-24"
 description: "Transform your 68V respiratory expertise into respiratory therapist career earning $60K-$110K+. Includes RRT certification paths, clinical advancement, and pulmonary care opportunities."
 keywords: "68V to respiratory therapist, military respiratory specialist to RRT, RRT certification, respiratory therapist salary"
 slug: "68v-respiratory-specialist-to-respiratory-therapist"

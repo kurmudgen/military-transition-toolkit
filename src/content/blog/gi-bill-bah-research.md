@@ -1,5 +1,5 @@
 ---
-date: "2026-02-12"
+date: "2026-02-16"
 ---# GI Bill BAH Calculator - Build Research
 
 ## Overview

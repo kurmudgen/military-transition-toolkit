@@ -1,5 +1,5 @@
 ---
-date: "2026-03-17"
+date: "2026-03-31"
 ---# VA Disability Rating Guide: Traumatic Brain Injury (TBI)
 
 ## Bottom Line Up Front (BLUF)

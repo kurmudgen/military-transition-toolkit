@@ -1,7 +1,7 @@
 ---
 title: "Military to Emergency Management: Complete Transition Guide for Veterans"
 description: "How to transition from military service to emergency management. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to emergency management, veteran emergency management jobs, emergency management careers for veterans"
 slug: "military-to-emergency-management-career-guide"

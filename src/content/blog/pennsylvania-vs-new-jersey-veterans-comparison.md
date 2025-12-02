@@ -1,7 +1,7 @@
 ---
 title: "Pennsylvania vs New Jersey Veterans Comparison 2025"
 description: "Compare Pennsylvania and New Jersey for military retirees. Analyze tax treatment, cost of living, VA healthcare, and Northeast employment opportunities."
-date: "2026-02-27"
+date: "2026-03-10"
 category: "State Comparisons"
 tags: ["Pennsylvania", "New Jersey", "Veterans Benefits", "Northeast", "Military Retirement"]
 author: "Military Transition Toolkit"

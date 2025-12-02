@@ -1,7 +1,7 @@
 ---
 title: "E-commerce for Military Spouses: Dropshipping vs FBA Guide"
 description: "Compare dropshipping and Amazon FBA for military spouses. Pros, cons, startup costs, PCS considerations, and realistic income expectations for each e-commerce model."
-date: "2025-12-02"
+date: "2026-02-12"
 category: "military-spouse"
 keywords: "military spouse e-commerce, dropshipping military spouse, Amazon FBA military spouse, online store PCS, e-commerce business portable"
 slug: "ecommerce-dropshipping-fba-military-spouse-guide"

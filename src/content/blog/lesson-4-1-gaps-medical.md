@@ -1,5 +1,5 @@
 ---
-date: "2026-02-18"
+date: "2026-02-23"
 ---# Lesson 4.1: Addressing Employment Gaps and Medical Issues
 
 **Course:** Military Resume Mastery

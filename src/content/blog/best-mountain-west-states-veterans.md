@@ -1,7 +1,7 @@
 ---
 title: "Best Mountain West States for Veterans 2025"
 description: "Guide to best Mountain West states for military retirees. Compare Colorado, Utah, Idaho, Montana, Wyoming for veteran benefits and outdoor recreation."
-date: "2026-01-28"
+date: "2026-01-29"
 category: "Regional Guides"
 tags: ["Mountain West", "Veterans Benefits", "Military Retirement", "Outdoor Recreation", "Colorado Utah"]
 author: "Military Transition Toolkit"

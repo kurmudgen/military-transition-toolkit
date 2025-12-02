@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-22"
 ---# TSP Rollover Decision Calculator Workbook
 ## The Complete Guide to Making the Right Choice for Your Retirement Funds
 **By Jacob, Navy E6 | Formation Labs**

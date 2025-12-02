@@ -1,7 +1,7 @@
 ---
 title: "Department of Homeland Security Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to DHS careers for veterans. Learn about CBP, TSA, ICE, Secret Service, FEMA, Coast Guard civilian, and more. Salary ranges, hiring programs, and application tips."
-date: "2025-12-01"
+date: "2026-02-11"
 category: "federal-employment"
 keywords: "DHS careers veterans, Department of Homeland Security jobs, CBP careers, TSA careers, ICE jobs, Secret Service careers, FEMA careers, homeland security jobs veterans"
 slug: "dhs-careers-veterans-guide"

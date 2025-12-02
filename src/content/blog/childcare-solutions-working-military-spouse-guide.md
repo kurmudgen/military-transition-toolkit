@@ -1,7 +1,7 @@
 ---
 title: "Childcare Solutions for Working Military Spouses: Complete Guide"
 description: "Navigate childcare challenges as a working military spouse. CDC, FCC, fee assistance programs, backup care options, and strategies for deployments and PCS moves."
-date: "2025-12-02"
+date: "2026-02-02"
 category: "military-spouse"
 keywords: "military childcare, CDC military, military spouse childcare, child care fee assistance military, working parent military spouse"
 slug: "childcare-solutions-working-military-spouse-guide"

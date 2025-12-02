@@ -1,7 +1,7 @@
 ---
 title: "Army 35Q Cryptologic Network Warfare Specialist to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-04-08"
-date: "2025-12-26"
+date: "2025-12-27"
 description: "Real career options for Army 35Q Cyber Warriors transitioning to civilian life. Includes salary ranges $100K-$200K+, NSA careers, cybersecurity, offensive security, and cyber operations opportunities with security clearance advantages."
 keywords: "35Q civilian jobs, cyber warfare specialist career transition, 35Q to NSA career, cybersecurity salary, offensive security jobs"
 ---

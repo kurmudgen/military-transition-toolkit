@@ -1,6 +1,6 @@
 ---
 EPISODE #046: Using SkillBridge for Job Offers Before You Separate
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: SkillBridge, CSP, internship, job training, military transition, DoD program

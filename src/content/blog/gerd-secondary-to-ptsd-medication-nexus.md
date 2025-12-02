@@ -1,7 +1,7 @@
 ---
 title: "GERD Secondary to PTSD: Complete Nexus and Medication Strategy Guide"
 description: "Expert guide to filing GERD as secondary to PTSD, medication nexus strategies, evidence requirements, and compensation impact calculations."
-date: "2026-02-12"
+date: "2026-02-16"
 category: "Secondary Conditions"
 tags: ["gerd", "ptsd", "secondary-condition", "nexus", "va-claims", "medication"]
 author: "Military Transition Toolkit"

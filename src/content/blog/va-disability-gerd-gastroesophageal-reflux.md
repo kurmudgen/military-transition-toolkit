@@ -1,5 +1,5 @@
 ---
-date: "2026-03-13"
+date: "2026-03-27"
 ---# VA Disability Rating Guide: GERD (Gastroesophageal Reflux Disease)
 
 ## Bottom Line Up Front (BLUF)

@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Effective Date and Back Pay: Complete Guide to Maximizing Retroactive Payments"
 description: "How VA effective dates work, back pay calculations, and strategies to maximize retroactive disability compensation. Earliest possible dates explained."
-date: "2026-03-12"
+date: "2026-03-27"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "Effective Date", "Back Pay", "Retroactive Payment", "Compensation"]

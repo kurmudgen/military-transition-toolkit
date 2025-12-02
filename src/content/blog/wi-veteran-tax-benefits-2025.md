@@ -1,6 +1,6 @@
 ---
 title: "Wisconsin Veteran Tax Benefits 2025: Property Tax, Income Tax & Exemptions"
-date: "2026-03-19"
+date: "2026-04-03"
 description: "Complete guide to Wisconsin veteran tax benefits including property tax credits up to 100% for disabled veterans, full military retirement income exemption, vehicle registration waivers, and combat pay exemptions. Includes 20-year savings projections and specific dollar amounts."
 keywords: "Wisconsin veteran tax benefits, Wisconsin property tax credit disabled veterans, Wisconsin military retirement income tax, Wisconsin veteran vehicle registration, Wisconsin veteran tax exemptions 2025"
 slug: "wi-veteran-tax-benefits-2025"

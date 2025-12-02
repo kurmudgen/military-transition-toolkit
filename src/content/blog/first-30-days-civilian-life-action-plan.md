@@ -1,7 +1,7 @@
 ---
 title: "First 30 Days of Civilian Life: Action Plan and Success Framework"
 description: "Navigate your first month as a civilian. Establish routines, build relationships, perform well, and settle into civilian life."
-date: "2026-02-11"
+date: "2026-02-15"
 author: "Military Transition Toolkit"
 category: "Post-Separation"
 tags: ["first-30-days", "post-separation", "civilian-transition", "settling-in"]

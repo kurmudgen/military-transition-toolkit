@@ -1,6 +1,6 @@
 ---
 EPISODE #076: VA Home Loan Benefits - Zero Down, No PMI, and Unlimited Lifetime Use Worth $42,000+
-date: "2026-03-05"
+date: "2026-03-16"
 PODCAST: Veteran Transition Blueprint
 CATEGORY: VA Claims & Benefits
 TARGET LENGTH: 22-24 minutes (3,300-3,600 words)

@@ -1,7 +1,7 @@
 ---
 title: "Government Contracting 101 for Veterans: Complete Guide"
 description: "Comprehensive introduction to government contracting careers for veterans. Learn how GovCon works, types of contractors, clearance requirements, and why military experience is highly valued in defense contracting."
-date: "2025-12-01"
+date: "2026-02-16"
 category: "federal-employment"
 keywords: "government contracting veterans, GovCon careers, defense contractors, federal contractors hiring veterans, government contractor jobs, cleared jobs veterans"
 slug: "government-contracting-101-veterans-guide"

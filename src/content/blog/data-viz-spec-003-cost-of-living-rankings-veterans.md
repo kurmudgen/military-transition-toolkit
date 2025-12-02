@@ -1,5 +1,5 @@
 ---
-date: "2026-02-04"
+date: "2026-02-07"
 ---# Data Visualization Specification: Cost of Living Rankings Adjusted for Veteran Benefits
 
 ## Document Information

@@ -1,6 +1,6 @@
 ---
 EPISODE #044: Cover Letters That Get Interviews - Templates and Examples for Veterans
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: cover letter, job application, military transition, ATS optimization, templates, veterans

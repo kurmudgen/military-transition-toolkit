@@ -1,7 +1,7 @@
 ---
 title: "Military to Oil & Gas: Complete Transition Guide for Veterans"
 description: "How to transition from military service to the oil and gas industry. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to oil and gas, veteran oilfield jobs, oil and gas careers for veterans"
 slug: "military-to-oil-gas-career-guide"

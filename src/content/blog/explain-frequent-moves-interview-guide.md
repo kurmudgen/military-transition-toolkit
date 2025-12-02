@@ -1,7 +1,7 @@
 ---
 title: "How to Explain Frequent Moves in Job Interviews: Military Spouse Guide"
 description: "Turn PCS moves from liability to asset in job interviews. Scripts, strategies, and responses that position military spouses as adaptable, committed professionals."
-date: "2025-12-02"
+date: "2026-02-13"
 category: "military-spouse"
 keywords: "military spouse interview, explain job gaps interview, frequent moves interview, PCS interview questions, military spouse job interview"
 slug: "explain-frequent-moves-interview-guide"

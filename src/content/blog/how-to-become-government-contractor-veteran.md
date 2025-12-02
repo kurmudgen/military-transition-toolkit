@@ -1,6 +1,6 @@
 ---
 title: "How to Become a Government Contractor: Complete Veterans Guide to Defense Contracting"
-date: "2025-12-16"
+date: "2025-12-17"
 description: "Military to government contractor, defense contractor career paths, security clearance advantage, salary expectations, and how to land government contracts."
 keywords: "government contractor, defense contractor, federal contracts, security clearance, contractor career, DoD contracting"
 slug: "how-to-become-government-contractor-veteran"

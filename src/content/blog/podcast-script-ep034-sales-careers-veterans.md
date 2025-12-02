@@ -1,6 +1,6 @@
 ---
 EPISODE #034: Sales Careers for Veterans - B2B, Medical Device, Tech Sales
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: sales careers, B2B sales, medical device sales, SaaS sales, tech sales, veterans

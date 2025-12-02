@@ -2,7 +2,7 @@
 title: "92F Petroleum Supply Specialist to Fuel Distribution Manager: Complete Transition Guide"
 description: "Expert guide for Army 92F Petroleum Supply Specialists transitioning to fuel distribution and energy sector management roles with salary data and certifications."
 author: "Military Transition Toolkit"
-date: "2026-01-24"
+date: "2026-01-25"
 image: "/images/92f-petroleum-supply.jpg"
 category: "Career Transitions"
 tags: ["92F", "Petroleum Supply", "Fuel Distribution", "Energy"]

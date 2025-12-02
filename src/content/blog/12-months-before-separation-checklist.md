@@ -1,7 +1,7 @@
 ---
 title: "12 Months Before Separation: Complete Military Transition Checklist"
 description: "Start your transition 12 months before separation. Comprehensive checklist of actions, planning, and preparation for successful civilian transition."
-date: "2026-01-17"
+date: "2026-01-18"
 author: "Military Transition Toolkit"
 category: "Transition Timeline"
 tags: ["transition-planning", "timeline", "preparation", "separation"]

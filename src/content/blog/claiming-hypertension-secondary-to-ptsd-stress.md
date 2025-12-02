@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Claim for Hypertension Secondary to PTSD: Complete Guide"
 description: "How to file VA disability claim for high blood pressure secondary to service-connected PTSD. Evidence requirements, nexus letters, and ratings."
-date: "2026-01-31"
+date: "2026-02-02"
 author: "Veteran Benefits Specialist"
 category: "VA Claims"
 tags: ["VA Disability", "PTSD", "Hypertension", "High Blood Pressure", "Secondary Conditions"]

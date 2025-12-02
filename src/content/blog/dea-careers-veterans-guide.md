@@ -1,7 +1,7 @@
 ---
 title: "DEA Careers for Veterans: Complete Guide to Drug Enforcement Administration"
 description: "Comprehensive guide to DEA careers for veterans. Learn about Special Agent positions, Diversion Investigators, Intelligence, hiring process, salary, and how military experience helps at DEA."
-date: "2025-12-01"
+date: "2026-02-11"
 category: "federal-employment"
 keywords: "DEA careers veterans, DEA special agent veteran, DEA jobs, DEA hiring process, DEA requirements, DEA salary, drug enforcement administration careers"
 slug: "dea-careers-veterans-guide"

@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 12B Combat Engineer to $85K Construction Manager 2025
-date: "2026-03-19"
+date: "2026-04-03"
 TARGET LENGTH: 7-9 minutes
 TARGET KEYWORDS: 12B combat engineer civilian jobs, construction careers veterans, civil engineer
 VIDEO FILE NAME: youtube-script-12b-combat-engineer-civilian-jobs.md

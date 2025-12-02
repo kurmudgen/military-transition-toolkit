@@ -1,7 +1,7 @@
 ---
 title: "Military to Healthcare Compliance: Complete Transition Guide for Veterans"
 description: "How to transition from military service to healthcare compliance. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-02-27"
 category: "industry-transition"
 keywords: "military to healthcare compliance, veteran healthcare compliance jobs, healthcare compliance careers for veterans"
 slug: "military-to-healthcare-compliance-career-guide"

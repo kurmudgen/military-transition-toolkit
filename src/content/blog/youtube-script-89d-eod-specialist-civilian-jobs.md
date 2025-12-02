@@ -1,6 +1,6 @@
 ---
 VIDEO TITLE: 89D EOD Specialist: $173K Bomb Technician Contractor 2025
-date: "2026-03-20"
+date: "2026-04-04"
 TARGET LENGTH: 6-8 minutes
 TARGET KEYWORDS: 89D EOD specialist civilian jobs, bomb technician salary, EOD contractor
 VIDEO FILE NAME: youtube-script-89d-eod-specialist-civilian-jobs.md

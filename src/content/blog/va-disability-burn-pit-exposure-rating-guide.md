@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Burn Pit Exposure (PACT Act): Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2025-12-05"
+date: "2025-12-06"
 description: "How to get VA disability rating for burn pit exposure under the PACT Act. Presumptive conditions, evidence needed, and claim tips."
 keywords: "VA disability burn pit, PACT Act VA claim, toxic exposure VA rating, burn pit presumptive conditions"
 category: "va-disability"

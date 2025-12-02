@@ -1,7 +1,7 @@
 ---
 title: "Lockheed Martin Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to Lockheed Martin careers for veterans. Learn about engineering, technical, and program management positions, veteran hiring programs, clearance requirements, and how to land a job at the world's largest defense contractor."
-date: "2025-12-01"
+date: "2026-02-23"
 category: "federal-employment"
 keywords: "Lockheed Martin careers veterans, Lockheed Martin jobs, defense contractor careers, F-35 careers, aerospace engineering veterans, Lockheed Martin veteran hiring"
 slug: "lockheed-martin-careers-veterans-guide"

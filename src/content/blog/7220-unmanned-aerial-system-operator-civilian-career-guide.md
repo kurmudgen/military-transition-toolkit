@@ -1,7 +1,7 @@
 ---
 title: "Marine 7220 UAS Operator to Civilian: Complete Career Transition Guide (2025 Salary Data)"
 publishDate: "2026-08-05"
-date: "2026-01-15"
+date: "2026-01-16"
 description: "Career transition guide for Marine UAS operators moving to civilian drone careers. Includes commercial drone pilot, defense contractor, mapping/surveying roles with $60K-$185K+ salary ranges and FAA Part 107 requirements."
 keywords: "7220 Marine career transition, UAS operator civilian jobs, military drone pilot civilian career, commercial drone pilot salary"
 ---

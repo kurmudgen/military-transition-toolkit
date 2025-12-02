@@ -1,7 +1,7 @@
 ---
 title: "Arizona vs Nevada Veterans Comparison: Complete Guide 2025"
 description: "Compare Arizona and Nevada for military retirees. Analyze military retirement tax, cost of living, VA healthcare, and retirement benefits for veterans."
-date: "2026-01-25"
+date: "2026-01-26"
 category: "State Comparisons"
 tags: ["Arizona", "Nevada", "Veterans Benefits", "Military Retirement", "Southwest"]
 author: "Military Transition Toolkit"

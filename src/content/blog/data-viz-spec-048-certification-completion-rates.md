@@ -1,5 +1,5 @@
 ---
-date: "2026-02-08"
+date: "2026-02-11"
 ---# Data Visualization Specification #048: Certification Completion Rates
 
 ## Overview

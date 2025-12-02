@@ -1,7 +1,7 @@
 ---
 title: "Military to Pharmaceutical Sales: Complete Transition Guide for Veterans"
 description: "How to transition from military service to pharmaceutical sales. Best MOS backgrounds, certifications needed, salary expectations, and top employers hiring veterans."
-date: "2025-12-01"
+date: "2026-03-01"
 category: "industry-transition"
 keywords: "military to pharmaceutical sales, veteran pharma sales jobs, pharmaceutical sales careers for veterans"
 slug: "military-to-pharmaceutical-sales-career-guide"

@@ -1,7 +1,7 @@
 ---
 title: "Sleep Apnea Secondary to PTSD: Complete Filing Guide and Nexus Strategy"
 description: "Expert guide to filing sleep apnea as a secondary condition to PTSD, including nexus requirements, evidence strategies, and compensation calculations."
-date: "2026-03-08"
+date: "2026-03-21"
 category: "Secondary Conditions"
 tags: ["sleep-apnea", "ptsd", "secondary-condition", "nexus", "va-claims", "disability"]
 author: "Military Transition Toolkit"

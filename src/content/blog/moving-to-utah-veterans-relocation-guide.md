@@ -2,7 +2,7 @@
 title: "Moving to Utah for Veterans: Relocation Guide and Complete Cost Analysis 2025"
 description: "Comprehensive veteran relocation guide to Utah including favorable income taxes, housing market, outdoor recreation, job market growth, VA healthcare, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-21"
+date: "2026-03-04"
 tags: ["Utah", "Relocation", "Veteran Costs", "Housing", "Outdoor Recreation"]
 category: "State Relocation Guides"
 featured: true

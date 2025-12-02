@@ -1,5 +1,5 @@
 ---
-date: "2026-02-17"
+date: "2026-02-22"
 ---# Lesson 1.2: Identifying Your Transferable Skills
 
 **Course:** Military Resume Mastery

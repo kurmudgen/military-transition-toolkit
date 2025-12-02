@@ -1,7 +1,7 @@
 ---
 title: "Army MOS 14S (Air and Missile Defense Crewmember) to Civilian: Your Complete Career Transition Roadmap (With Salary Data)"
 publishDate: "2026-01-07"
-date: "2025-12-21"
+date: "2025-12-22"
 description: "Real career options for 14S Avenger crewmembers transitioning to civilian life. Includes salary ranges $70K-$190K+, defense contracting, counter-UAS operations, security contracting, and weapon systems opportunities."
 keywords: "14S civilian jobs, Avenger crewmember career transition, SHORAD operator contractor salary, Stinger missile jobs, 14S to civilian career"
 ---

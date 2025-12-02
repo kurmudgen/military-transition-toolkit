@@ -1,7 +1,7 @@
 ---
 title: "VA Disability Rating for Migraines: Complete Guide to Getting Your Claim Approved"
 publishDate: "2025-11-30"
-date: "2026-03-15"
+date: "2026-03-29"
 description: "How to get VA disability rating for migraines and headaches. Rating criteria from 0% to 50%, evidence needed, C&P exam tips, and secondary conditions."
 keywords: "VA disability migraines, migraines VA rating, headaches C&P exam, VA claim migraines, migraine disability rating"
 category: "va-disability"

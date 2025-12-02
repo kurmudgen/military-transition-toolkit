@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-21"
 ---# Terminal Leave Decision Calculator Workbook
 ## Should You Sell Back Leave or Take Terminal Leave?
 **By Jacob, Navy E6 | Formation Labs**

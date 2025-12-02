@@ -1,7 +1,7 @@
 ---
 title: "Army 15T UH-60 Black Hawk Helicopter Repairer to Civilian: Complete Career Transition Guide (With Salary Data)"
 publishDate: "2026-01-21"
-date: "2025-12-22"
+date: "2025-12-23"
 description: "Real career options for Army 15T UH-60 Black Hawk helicopter repairers transitioning to civilian life. Includes salary ranges $55K-$120K+, Sikorsky/Lockheed Martin careers, commercial S-76 operations, A&P certification, medical transport and offshore opportunities."
 keywords: "Army 15T civilian jobs, UH-60 Black Hawk mechanic career transition, Sikorsky helicopter mechanic salary, S-76 helicopter jobs, helicopter A&P certification"
 ---

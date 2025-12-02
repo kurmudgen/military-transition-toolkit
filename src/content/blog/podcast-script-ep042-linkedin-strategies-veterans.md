@@ -1,6 +1,6 @@
 ---
 EPISODE #042: LinkedIn Strategies for Veteran Job Seekers - Profile Optimization to Recruiter Messages
-date: "2026-03-02"
+date: "2026-03-13"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: LinkedIn, profile optimization, recruiter search, networking, veterans, Open to Work

@@ -1,5 +1,5 @@
 ---
-date: "2026-02-16"
+date: "2026-02-21"
 ---# State-by-State Property Tax Guide for Veterans
 ## Complete 2025 Exemption Comparison
 **By Jacob, Navy E6 | Formation Labs**

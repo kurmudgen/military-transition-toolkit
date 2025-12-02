@@ -1,7 +1,7 @@
 ---
 title: "ManTech Careers for Veterans: Complete Guide"
 description: "Comprehensive guide to ManTech careers for veterans. Learn about IT services, cyber operations, intelligence positions, veteran hiring programs, clearance requirements, and how to land jobs at this defense contractor."
-date: "2025-12-01"
+date: "2026-02-24"
 category: "federal-employment"
 keywords: "ManTech careers veterans, ManTech jobs, cyber operations careers, intelligence contractor jobs, ManTech veteran hiring, cleared IT jobs"
 slug: "mantech-careers-veterans-guide"

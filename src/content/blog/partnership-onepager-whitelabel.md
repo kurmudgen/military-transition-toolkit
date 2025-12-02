@@ -1,6 +1,6 @@
 ---
 DOCUMENT: White-Label Solution One-Pager
-date: "2026-02-26"
+date: "2026-03-09"
 TYPE: One-Pager
 AUDIENCE: Large Organizations (VSOs, Corporations, Government)
 PAGES: 1

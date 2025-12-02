@@ -2,7 +2,7 @@
 title: "Moving to Arizona for Veterans: Complete Guide and Cost Analysis 2025"
 description: "Comprehensive veteran relocation guide to Arizona including desert lifestyle, military installations, housing costs, VA healthcare, job market, retirement benefits, and financial planning."
 author: "Military Transition Toolkit"
-date: "2026-02-20"
+date: "2026-03-03"
 tags: ["Arizona", "Relocation", "Veteran Costs", "Desert Lifestyle", "Military"]
 category: "State Relocation Guides"
 featured: true

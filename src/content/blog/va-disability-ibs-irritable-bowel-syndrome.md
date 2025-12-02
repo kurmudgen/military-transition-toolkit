@@ -1,5 +1,5 @@
 ---
-date: "2026-03-14"
+date: "2026-03-28"
 ---# VA Disability Rating Guide: Irritable Bowel Syndrome (IBS)
 
 ## Bottom Line Up Front (BLUF)

@@ -2,7 +2,7 @@
 title: "91M Bradley Mechanic to Maintenance Supervisor: Career Transition Guide"
 description: "Complete guide for Army 91M Bradley Vehicle Mechanics transitioning to maintenance supervisor and engineering roles with salary data and advancement pathways."
 author: "Military Transition Toolkit"
-date: "2026-01-24"
+date: "2026-01-25"
 image: "/images/91m-bradley-mechanic.jpg"
 category: "Career Transitions"
 tags: ["91M", "Bradley Mechanic", "Maintenance Supervisor", "Engineering"]

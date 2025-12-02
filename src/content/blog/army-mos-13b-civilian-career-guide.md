@@ -1,7 +1,7 @@
 ---
 title: "Army 13B Cannon Crewmember to Civilian: Complete Career Transition Guide (2024-2025 Salary Data)"
 publishDate: "2025-12-17"
-date: "2025-12-20"
+date: "2025-12-21"
 description: "Real career options for Army 13B Cannon Crewmembers transitioning to civilian life. Includes salary ranges $50K-$160K+, heavy equipment operation, precision work, technical trades, law enforcement, and 100+ companies hiring."
 keywords: "13B Cannon Crewmember civilian jobs, artillery crew career transition, 13B to equipment operator, field artillery veteran jobs, 13B salary civilian, Army artillery transition guide"
 slug: "army-mos-13b-civilian-career-guide"

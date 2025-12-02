@@ -1,6 +1,6 @@
 ---
 EPISODE #037: Salary Negotiation Tactics - Getting $10K+ More Without Losing the Offer
-date: "2026-03-01"
+date: "2026-03-12"
 CATEGORY: Career Transition
 TARGET LENGTH: 18-20 minutes
 KEYWORDS: salary negotiation, job offer, counteroffer, veterans, market research, anchoring

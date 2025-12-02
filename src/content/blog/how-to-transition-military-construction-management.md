@@ -1,6 +1,6 @@
 ---
 title: "How to Transition to Construction Management: Veteran Project Leader Guide"
-date: "2025-12-18"
+date: "2025-12-19"
 description: "Military engineering officer to construction manager, project superintendent, or general contractor. Certifications, timelines, and career progression in construction."
 keywords: "construction management, military engineer, construction career, project management construction, general contractor, construction superintendent"
 slug: "how-to-transition-military-construction-management"

@@ -1,6 +1,6 @@
 ---
 title: "Washington Veteran Healthcare, Education & Jobs: Complete 2025 Guide"
-date: "2026-03-18"
+date: "2026-04-02"
 description: "Comprehensive 2025 guide to Washington veteran healthcare (VA Puget Sound, Spokane, Walla Walla with addresses and phones), education benefits (100% tuition waivers for dependents, state programs), employment with Microsoft/Amazon/Boeing, JBLM transition support, and state veteran homes."
 keywords: "VA Puget Sound Healthcare, Spokane VA Medical Center, Washington veteran education benefits, tuition waiver veterans Washington, Microsoft veteran hiring, Amazon veteran jobs, Boeing veteran employment, JBLM transition, Washington state veteran homes, UW veteran benefits, WSU veteran programs"
 slug: "wa-veteran-healthcare-education-jobs"
