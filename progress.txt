@@ -38,19 +38,19 @@
 [x] 29. How to Transfer Professional Licenses During PCS
 [x] 30. Continuing Education While PCSing: Online Options
 
-## BATCH 4 - JOB SEARCH & EMPLOYMENT (10)
-[ ] 31. Military Spouse Preference Hiring: How It Actually Works
-[ ] 32. Federal Job Search for Military Spouses (PPP Hiring)
-[ ] 33. Resume Writing for Military Spouses (Addressing Gaps)
-[ ] 34. How to Explain Frequent Moves in Job Interviews
-[ ] 35. Best Companies Hiring Military Spouses (2025)
-[ ] 36. MSEP (Military Spouse Employment Partnership) Guide
-[ ] 37. Finding Remote Work That Survives PCS Moves
-[ ] 38. LinkedIn Profile for Military Spouses (Examples)
-[ ] 39. Networking as a Military Spouse (Digital + Local)
-[ ] 40. How to Negotiate Remote Work Accommodation
+## BATCH 4 - JOB SEARCH & EMPLOYMENT (10) ✓ COMPLETE
+[x] 31. Military Spouse Preference Hiring: How It Actually Works
+[x] 32. Federal Job Search for Military Spouses (PPP Hiring)
+[x] 33. Resume Writing for Military Spouses (Addressing Gaps)
+[x] 34. How to Explain Frequent Moves in Job Interviews
+[x] 35. Best Companies Hiring Military Spouses (2025)
+[x] 36. MSEP (Military Spouse Employment Partnership) Guide
+[x] 37. Finding Remote Work That Survives PCS Moves
+[x] 38. LinkedIn Profile for Military Spouses (Examples)
+[x] 39. Networking as a Military Spouse (Digital + Local)
+[x] 40. How to Negotiate Remote Work Accommodation
 
-## BATCH 5 - PCS & LIFESTYLE (10)
+## BATCH 5 - PCS & LIFESTYLE (10) - IN PROGRESS
 [ ] 41. Career Continuity Through PCS Moves: Complete Strategy
 [ ] 42. How to Keep Your Job Through a PCS
 [ ] 43. Childcare Solutions for Working Military Spouses
@@ -63,6 +63,6 @@
 [ ] 50. Creating a 10-Year Career Plan as a Military Spouse
 
 ## Progress Summary
-Completed: 30/50
-Current Batch: 4
-Last Commit: Batch 3 complete
+Completed: 40/50
+Current Batch: 5
+Last Commit: Batch 4 complete
