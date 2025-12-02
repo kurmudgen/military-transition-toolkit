@@ -25,17 +25,17 @@ BATCH 2 - RESUME & APPLICATION (10/10): COMPLETE
 [X] 19. Cover Letter Template for Veterans (5 Industries)
 [X] 20. How to Tailor Your Resume for Different Industries
 
-BATCH 3 - JOB SEARCH STRATEGY (0/10):
-[ ] 21. Hidden Job Market: How Veterans Find Unadvertised Jobs
-[ ] 22. Best Job Boards for Veterans (Ranked and Reviewed)
-[ ] 23. How to Use USAJOBS Effectively: Complete Guide
-[ ] 24. Company Research Before Applying: Veteran's Checklist
-[ ] 25. How to Find Hiring Managers and Skip HR
-[ ] 26. Cold Email Templates for Veterans Reaching Out to Companies
-[ ] 27. Networking Events for Veterans: What to Attend
-[ ] 28. How to Use Alumni Networks for Job Search
-[ ] 29. Informational Interview Guide for Veterans
-[ ] 30. How to Follow Up After Applying (Without Being Annoying)
+BATCH 3 - JOB SEARCH STRATEGY (10/10): COMPLETE
+[X] 21. Hidden Job Market: How Veterans Find Unadvertised Jobs
+[X] 22. Best Job Boards for Veterans (Ranked and Reviewed)
+[X] 23. How to Use USAJOBS Effectively: Complete Guide
+[X] 24. Company Research Before Applying: Veteran's Checklist
+[X] 25. How to Find Hiring Managers and Skip HR
+[X] 26. Cold Email Templates for Veterans Reaching Out to Companies
+[X] 27. Networking Events for Veterans: What to Attend
+[X] 28. How to Use Alumni Networks for Job Search
+[X] 29. Informational Interview Guide for Veterans
+[X] 30. How to Follow Up After Applying (Without Being Annoying)
 
 BATCH 4 - INTERVIEW PREPARATION (0/10):
 [ ] 31. "Tell Me About Yourself" - Perfect Answer for Veterans
@@ -61,5 +61,5 @@ BATCH 5 - FIRST 90 DAYS & CULTURE (0/10):
 [ ] 49. Performance Review Tips for Veterans in First Civilian Job
 [ ] 50. 90-Day Plan for Veterans in New Civilian Job
 
-OVERALL PROGRESS: 20/50 Guides Complete (40%)
-Last Updated: Batch 2 Complete - Committing
+OVERALL PROGRESS: 30/50 Guides Complete (60%)
+Last Updated: Batch 3 Complete - Committing
