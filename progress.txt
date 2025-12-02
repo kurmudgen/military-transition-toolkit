@@ -14,29 +14,29 @@
 [x] 9. Military Spouse to Graphic Designer: Portfolio Building Guide
 [x] 10. Military Spouse to Project Manager: Remote Certification Path
 
-## BATCH 2 - ENTREPRENEURSHIP (10)
-[ ] 11. Starting an Online Business as a Military Spouse
-[ ] 12. E-commerce for Military Spouses: Dropshipping vs FBA
-[ ] 13. Freelance Writing for Military Spouses: Getting First Clients
-[ ] 14. Virtual Bookkeeping Business for Military Spouses
-[ ] 15. Social Media Management for Military Spouses
-[ ] 16. Photography Business for Military Spouses (On-Base Clients)
-[ ] 17. Consulting Business for Military Spouses
-[ ] 18. Etsy Shop Success for Military Spouses
-[ ] 19. Coaching Business for Military Spouses
-[ ] 20. Home-Based Bakery for Military Spouses (Base Regulations)
+## BATCH 2 - ENTREPRENEURSHIP (10) ✓ COMPLETE
+[x] 11. Starting an Online Business as a Military Spouse
+[x] 12. E-commerce for Military Spouses: Dropshipping vs FBA
+[x] 13. Freelance Writing for Military Spouses: Getting First Clients
+[x] 14. Virtual Bookkeeping Business for Military Spouses
+[x] 15. Social Media Management for Military Spouses
+[x] 16. Photography Business for Military Spouses (On-Base Clients)
+[x] 17. Consulting Business for Military Spouses
+[x] 18. Etsy Shop Success for Military Spouses
+[x] 19. Coaching Business for Military Spouses
+[x] 20. Home-Based Bakery for Military Spouses (Base Regulations)
 
-## BATCH 3 - EDUCATION & CERTIFICATIONS (10)
-[ ] 21. MyCAA Spouse Education Benefits: Complete Guide 2025
-[ ] 22. Best Online Degrees for Military Spouses (Fully Remote)
-[ ] 23. Certifications Under $4,000 Covered by MyCAA
-[ ] 24. How to Choose a Career Field as a Military Spouse
-[ ] 25. Associate's Degree to Career: Fast Track Options
-[ ] 26. Using Spouse GI Bill Benefits (Chapter 35 & Transfer)
-[ ] 27. Free Career Training for Military Spouses (All Programs)
-[ ] 28. Licensure Portability for Military Spouses by State
-[ ] 29. How to Transfer Professional Licenses During PCS
-[ ] 30. Continuing Education While PCSing: Online Options
+## BATCH 3 - EDUCATION & CERTIFICATIONS (10) ✓ COMPLETE
+[x] 21. MyCAA Spouse Education Benefits: Complete Guide 2025
+[x] 22. Best Online Degrees for Military Spouses (Fully Remote)
+[x] 23. Certifications Under $4,000 Covered by MyCAA
+[x] 24. How to Choose a Career Field as a Military Spouse
+[x] 25. Associate's Degree to Career: Fast Track Options
+[x] 26. Using Spouse GI Bill Benefits (Chapter 35 & Transfer)
+[x] 27. Free Career Training for Military Spouses (All Programs)
+[x] 28. Licensure Portability for Military Spouses by State
+[x] 29. How to Transfer Professional Licenses During PCS
+[x] 30. Continuing Education While PCSing: Online Options
 
 ## BATCH 4 - JOB SEARCH & EMPLOYMENT (10)
 [ ] 31. Military Spouse Preference Hiring: How It Actually Works
@@ -63,6 +63,6 @@
 [ ] 50. Creating a 10-Year Career Plan as a Military Spouse
 
 ## Progress Summary
-Completed: 10/50
-Current Batch: 2
-Last Commit: Batch 1 complete
+Completed: 30/50
+Current Batch: 4
+Last Commit: Batch 3 complete
