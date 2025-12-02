@@ -49,17 +49,17 @@ BATCH 4 - INTERVIEW PREPARATION (10/10): COMPLETE
 [X] 39. Questions Veterans Should Ask in Interviews
 [X] 40. How to Negotiate Salary as a Veteran (With Scripts)
 
-BATCH 5 - FIRST 90 DAYS & CULTURE (0/10):
-[ ] 41. First Week at Your Civilian Job: Veteran's Survival Guide
-[ ] 42. How to Decode Civilian Workplace Culture
-[ ] 43. Corporate Jargon Translation Guide for Veterans
-[ ] 44. Email Etiquette for Veterans in Corporate America
-[ ] 45. How to Build Relationships at Work Without Military Camaraderie
-[ ] 46. Imposter Syndrome for Veterans: How to Overcome It
-[ ] 47. When to Mention Your Military Service at Work
-[ ] 48. How to Ask for Help in Civilian Workplace
-[ ] 49. Performance Review Tips for Veterans in First Civilian Job
-[ ] 50. 90-Day Plan for Veterans in New Civilian Job
+BATCH 5 - FIRST 90 DAYS & CULTURE (10/10): COMPLETE
+[X] 41. First Week at Your Civilian Job: Veteran's Survival Guide
+[X] 42. How to Decode Civilian Workplace Culture
+[X] 43. Corporate Jargon Translation Guide for Veterans
+[X] 44. Email Etiquette for Veterans in Corporate America
+[X] 45. How to Build Relationships at Work Without Military Camaraderie
+[X] 46. Imposter Syndrome for Veterans: How to Overcome It
+[X] 47. When to Mention Your Military Service at Work
+[X] 48. How to Ask for Help in Civilian Workplace
+[X] 49. Performance Review Tips for Veterans in First Civilian Job
+[X] 50. 90-Day Plan for Veterans in New Civilian Job
 
-OVERALL PROGRESS: 40/50 Guides Complete (80%)
-Last Updated: Batch 4 Complete - Committing
+OVERALL PROGRESS: 50/50 Guides Complete (100%)
+Last Updated: ALL BATCHES COMPLETE
