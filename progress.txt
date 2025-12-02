@@ -1,0 +1,68 @@
+# Military Spouse Career Guides - Progress Tracker
+# Started: 2025-12-02
+# Target: 50 guides
+
+## BATCH 1 - PORTABLE CAREERS (10) ✓ COMPLETE
+[x] 1. Best Remote Careers for Military Spouses (2025)
+[x] 2. Military Spouse to Registered Nurse: Complete Career Path
+[x] 3. Military Spouse to Software Developer: Self-Taught Guide
+[x] 4. Military Spouse to Virtual Assistant: Complete Business Guide
+[x] 5. Military Spouse to Teacher: Licensing Across States
+[x] 6. Military Spouse to Teletherapy Counselor: Complete Guide
+[x] 7. Military Spouse to Real Estate Agent: State-by-State Guide
+[x] 8. Military Spouse to Medical Coder: Work from Home Career
+[x] 9. Military Spouse to Graphic Designer: Portfolio Building Guide
+[x] 10. Military Spouse to Project Manager: Remote Certification Path
+
+## BATCH 2 - ENTREPRENEURSHIP (10)
+[ ] 11. Starting an Online Business as a Military Spouse
+[ ] 12. E-commerce for Military Spouses: Dropshipping vs FBA
+[ ] 13. Freelance Writing for Military Spouses: Getting First Clients
+[ ] 14. Virtual Bookkeeping Business for Military Spouses
+[ ] 15. Social Media Management for Military Spouses
+[ ] 16. Photography Business for Military Spouses (On-Base Clients)
+[ ] 17. Consulting Business for Military Spouses
+[ ] 18. Etsy Shop Success for Military Spouses
+[ ] 19. Coaching Business for Military Spouses
+[ ] 20. Home-Based Bakery for Military Spouses (Base Regulations)
+
+## BATCH 3 - EDUCATION & CERTIFICATIONS (10)
+[ ] 21. MyCAA Spouse Education Benefits: Complete Guide 2025
+[ ] 22. Best Online Degrees for Military Spouses (Fully Remote)
+[ ] 23. Certifications Under $4,000 Covered by MyCAA
+[ ] 24. How to Choose a Career Field as a Military Spouse
+[ ] 25. Associate's Degree to Career: Fast Track Options
+[ ] 26. Using Spouse GI Bill Benefits (Chapter 35 & Transfer)
+[ ] 27. Free Career Training for Military Spouses (All Programs)
+[ ] 28. Licensure Portability for Military Spouses by State
+[ ] 29. How to Transfer Professional Licenses During PCS
+[ ] 30. Continuing Education While PCSing: Online Options
+
+## BATCH 4 - JOB SEARCH & EMPLOYMENT (10)
+[ ] 31. Military Spouse Preference Hiring: How It Actually Works
+[ ] 32. Federal Job Search for Military Spouses (PPP Hiring)
+[ ] 33. Resume Writing for Military Spouses (Addressing Gaps)
+[ ] 34. How to Explain Frequent Moves in Job Interviews
+[ ] 35. Best Companies Hiring Military Spouses (2025)
+[ ] 36. MSEP (Military Spouse Employment Partnership) Guide
+[ ] 37. Finding Remote Work That Survives PCS Moves
+[ ] 38. LinkedIn Profile for Military Spouses (Examples)
+[ ] 39. Networking as a Military Spouse (Digital + Local)
+[ ] 40. How to Negotiate Remote Work Accommodation
+
+## BATCH 5 - PCS & LIFESTYLE (10)
+[ ] 41. Career Continuity Through PCS Moves: Complete Strategy
+[ ] 42. How to Keep Your Job Through a PCS
+[ ] 43. Childcare Solutions for Working Military Spouses
+[ ] 44. Time Management for Military Spouses Balancing Everything
+[ ] 45. Building a Career During Deployment
+[ ] 46. Financial Planning for Military Spouse Careers
+[ ] 47. How to Build Professional Network Despite Moves
+[ ] 48. Dealing with Underemployment as a Military Spouse
+[ ] 49. Mental Health and Career Stress for Military Spouses
+[ ] 50. Creating a 10-Year Career Plan as a Military Spouse
+
+## Progress Summary
+Completed: 10/50
+Current Batch: 2
+Last Commit: Batch 1 complete
