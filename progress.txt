@@ -37,17 +37,17 @@ BATCH 3 - JOB SEARCH STRATEGY (10/10): COMPLETE
 [X] 29. Informational Interview Guide for Veterans
 [X] 30. How to Follow Up After Applying (Without Being Annoying)
 
-BATCH 4 - INTERVIEW PREPARATION (0/10):
-[ ] 31. "Tell Me About Yourself" - Perfect Answer for Veterans
-[ ] 32. How to Explain Military Experience in Civilian Terms
-[ ] 33. STAR Method Interview Answers for Veterans (20 Examples)
-[ ] 34. Interview Questions Veterans Always Get (And How to Answer)
-[ ] 35. How to Answer "Why Should We Hire You?" as a Veteran
-[ ] 36. Behavioral Interview Prep for Transitioning Service Members
-[ ] 37. Technical Interview Prep for Veterans Entering Tech
-[ ] 38. What to Wear to Interviews as a Veteran (By Industry)
-[ ] 39. Questions Veterans Should Ask in Interviews
-[ ] 40. How to Negotiate Salary as a Veteran (With Scripts)
+BATCH 4 - INTERVIEW PREPARATION (10/10): COMPLETE
+[X] 31. "Tell Me About Yourself" - Perfect Answer for Veterans
+[X] 32. How to Explain Military Experience in Civilian Terms
+[X] 33. STAR Method Interview Answers for Veterans (20 Examples)
+[X] 34. Interview Questions Veterans Always Get (And How to Answer)
+[X] 35. How to Answer "Why Should We Hire You?" as a Veteran
+[X] 36. Behavioral Interview Prep for Transitioning Service Members
+[X] 37. Technical Interview Prep for Veterans Entering Tech
+[X] 38. What to Wear to Interviews as a Veteran (By Industry)
+[X] 39. Questions Veterans Should Ask in Interviews
+[X] 40. How to Negotiate Salary as a Veteran (With Scripts)
 
 BATCH 5 - FIRST 90 DAYS & CULTURE (0/10):
 [ ] 41. First Week at Your Civilian Job: Veteran's Survival Guide
@@ -61,5 +61,5 @@ BATCH 5 - FIRST 90 DAYS & CULTURE (0/10):
 [ ] 49. Performance Review Tips for Veterans in First Civilian Job
 [ ] 50. 90-Day Plan for Veterans in New Civilian Job
 
-OVERALL PROGRESS: 30/50 Guides Complete (60%)
-Last Updated: Batch 3 Complete - Committing
+OVERALL PROGRESS: 40/50 Guides Complete (80%)
+Last Updated: Batch 4 Complete - Committing
