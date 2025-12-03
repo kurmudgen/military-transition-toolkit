@@ -15,16 +15,16 @@
 [x] 10. Tutorial Assistance with GI Bill: Getting Extra Help
 
 ## BATCH 2 - HEALTHCARE (10)
-[ ] 11. VA Healthcare Enrollment: Priority Groups Explained
-[ ] 12. VA Community Care: When VA Pays for Outside Doctors
-[ ] 13. TRICARE vs VA Healthcare: Which to Use When
-[ ] 14. VA Dental Benefits: What's Covered and What's Not
-[ ] 15. VA Mental Health Services: Complete Access Guide
-[ ] 16. VA Telehealth: How to Use Virtual Care
-[ ] 17. VA Caregiver Program: Support for Family Caregivers
-[ ] 18. VA Prosthetics: Getting Equipment and Devices
-[ ] 19. VA Prescription Benefits: Mail Order and Copays
-[ ] 20. VA Emergency Care: What's Covered Outside VA
+[x] 11. VA Healthcare Enrollment: Priority Groups Explained
+[x] 12. VA Community Care: When VA Pays for Outside Doctors
+[x] 13. TRICARE vs VA Healthcare: Which to Use When
+[x] 14. VA Dental Benefits: What's Covered and What's Not
+[x] 15. VA Mental Health Services: Complete Access Guide
+[x] 16. VA Telehealth: How to Use Virtual Care
+[x] 17. VA Caregiver Program: Support for Family Caregivers
+[x] 18. VA Prosthetics: Getting Equipment and Devices
+[x] 19. VA Prescription Benefits: Mail Order and Copays
+[x] 20. VA Emergency Care: What's Covered Outside VA
 
 ## BATCH 3 - DISABILITY (10)
 [ ] 21. VA Disability Back Pay: How It's Calculated
@@ -63,5 +63,5 @@
 [ ] 50. State Veterans Benefits: How to Stack with Federal
 
 ---
-Progress: 10/50 complete
+Progress: 20/50 complete
 Last updated: 2025-12-03
