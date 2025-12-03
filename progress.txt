@@ -14,17 +14,17 @@
 [X] 9. Oracle Careers for Veterans
 [X] 10. Salesforce Careers for Veterans
 
-## BATCH 2 - DEFENSE CONTRACTORS (10)
-[ ] 11. Boeing Careers for Veterans
-[ ] 12. Lockheed Martin Careers for Veterans
-[ ] 13. Raytheon Technologies Careers for Veterans
-[ ] 14. Northrop Grumman Careers for Veterans
-[ ] 15. General Dynamics Careers for Veterans
-[ ] 16. BAE Systems Careers for Veterans
-[ ] 17. L3Harris Technologies Careers for Veterans
-[ ] 18. Huntington Ingalls Industries Careers for Veterans
-[ ] 19. SAIC Careers for Veterans
-[ ] 20. Leidos Careers for Veterans
+## BATCH 2 - DEFENSE CONTRACTORS (10) ✓ COMPLETED
+[X] 11. Boeing Careers for Veterans
+[X] 12. Lockheed Martin Careers for Veterans
+[X] 13. Raytheon Technologies Careers for Veterans
+[X] 14. Northrop Grumman Careers for Veterans
+[X] 15. General Dynamics Careers for Veterans
+[X] 16. BAE Systems Careers for Veterans
+[X] 17. L3Harris Technologies Careers for Veterans
+[X] 18. Huntington Ingalls Industries Careers for Veterans
+[X] 19. SAIC Careers for Veterans
+[X] 20. Leidos Careers for Veterans
 
 ## BATCH 3 - LOGISTICS & TRANSPORTATION (10)
 [ ] 21. UPS Careers for Veterans
@@ -63,5 +63,5 @@
 [ ] 50. Halliburton Careers for Veterans
 
 ---
-Progress: 10/50 completed
+Progress: 20/50 completed
 Last updated: 2025-12-03
