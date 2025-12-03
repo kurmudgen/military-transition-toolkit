@@ -1,0 +1,67 @@
+# Company Veteran Hiring Guides Progress Tracker
+# Started: 2025-12-03
+# Total: 50 guides
+
+## BATCH 1 - BIG TECH (10) ✓ COMPLETED
+[X] 1. Amazon Careers for Veterans
+[X] 2. Google Careers for Veterans
+[X] 3. Microsoft Careers for Veterans
+[X] 4. Apple Careers for Veterans
+[X] 5. Meta (Facebook) Careers for Veterans
+[X] 6. Tesla Careers for Veterans
+[X] 7. Intel Careers for Veterans
+[X] 8. IBM Careers for Veterans
+[X] 9. Oracle Careers for Veterans
+[X] 10. Salesforce Careers for Veterans
+
+## BATCH 2 - DEFENSE CONTRACTORS (10)
+[ ] 11. Boeing Careers for Veterans
+[ ] 12. Lockheed Martin Careers for Veterans
+[ ] 13. Raytheon Technologies Careers for Veterans
+[ ] 14. Northrop Grumman Careers for Veterans
+[ ] 15. General Dynamics Careers for Veterans
+[ ] 16. BAE Systems Careers for Veterans
+[ ] 17. L3Harris Technologies Careers for Veterans
+[ ] 18. Huntington Ingalls Industries Careers for Veterans
+[ ] 19. SAIC Careers for Veterans
+[ ] 20. Leidos Careers for Veterans
+
+## BATCH 3 - LOGISTICS & TRANSPORTATION (10)
+[ ] 21. UPS Careers for Veterans
+[ ] 22. FedEx Careers for Veterans
+[ ] 23. Amazon Logistics Careers for Veterans
+[ ] 24. Union Pacific Railroad Careers for Veterans
+[ ] 25. BNSF Railway Careers for Veterans
+[ ] 26. J.B. Hunt Transport Careers for Veterans
+[ ] 27. Schneider National Careers for Veterans
+[ ] 28. XPO Logistics Careers for Veterans
+[ ] 29. C.H. Robinson Careers for Veterans
+[ ] 30. DHL Careers for Veterans
+
+## BATCH 4 - RETAIL & SERVICES (10)
+[ ] 31. Walmart Careers for Veterans
+[ ] 32. Target Careers for Veterans
+[ ] 33. Home Depot Careers for Veterans
+[ ] 34. Lowe's Careers for Veterans
+[ ] 35. Costco Careers for Veterans
+[ ] 36. Starbucks Careers for Veterans
+[ ] 37. CVS Health Careers for Veterans
+[ ] 38. Walgreens Careers for Veterans
+[ ] 39. Bank of America Careers for Veterans
+[ ] 40. JPMorgan Chase Careers for Veterans
+
+## BATCH 5 - HEALTHCARE & ENERGY (10)
+[ ] 41. UnitedHealth Group Careers for Veterans
+[ ] 42. Kaiser Permanente Careers for Veterans
+[ ] 43. HCA Healthcare Careers for Veterans
+[ ] 44. Chevron Careers for Veterans
+[ ] 45. ExxonMobil Careers for Veterans
+[ ] 46. Duke Energy Careers for Veterans
+[ ] 47. NextEra Energy Careers for Veterans
+[ ] 48. ConocoPhillips Careers for Veterans
+[ ] 49. Schlumberger Careers for Veterans
+[ ] 50. Halliburton Careers for Veterans
+
+---
+Progress: 10/50 completed
+Last updated: 2025-12-03
