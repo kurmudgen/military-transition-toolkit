@@ -1,0 +1,67 @@
+# VA Benefits & Programs Deep Dive Guides - Progress Tracker
+# Total: 50 Guides
+# Started: 2025-12-03
+
+## BATCH 1 - EDUCATION BENEFITS (10)
+[x] 1. Post-9/11 GI Bill: Complete Guide to Maximizing Benefits
+[x] 2. Montgomery GI Bill: When to Use vs Post-9/11
+[x] 3. Yellow Ribbon Program: Complete School List and Guide
+[x] 4. GI Bill Housing Allowance (BAH): Rates and Rules
+[x] 5. GI Bill for Flight Training: Complete Aviation Guide
+[x] 6. Chapter 35 DEA: Education Benefits for Dependents
+[x] 7. Chapter 33 Transfer: How to Give GI Bill to Family
+[x] 8. Vocational Rehab (VR&E Chapter 31): Complete Guide
+[x] 9. Work-Study Program with GI Bill: Earn While Learning
+[x] 10. Tutorial Assistance with GI Bill: Getting Extra Help
+
+## BATCH 2 - HEALTHCARE (10)
+[ ] 11. VA Healthcare Enrollment: Priority Groups Explained
+[ ] 12. VA Community Care: When VA Pays for Outside Doctors
+[ ] 13. TRICARE vs VA Healthcare: Which to Use When
+[ ] 14. VA Dental Benefits: What's Covered and What's Not
+[ ] 15. VA Mental Health Services: Complete Access Guide
+[ ] 16. VA Telehealth: How to Use Virtual Care
+[ ] 17. VA Caregiver Program: Support for Family Caregivers
+[ ] 18. VA Prosthetics: Getting Equipment and Devices
+[ ] 19. VA Prescription Benefits: Mail Order and Copays
+[ ] 20. VA Emergency Care: What's Covered Outside VA
+
+## BATCH 3 - DISABILITY (10)
+[ ] 21. VA Disability Back Pay: How It's Calculated
+[ ] 22. Temporary 100% Disability Rating: When You Qualify
+[ ] 23. TDIU (Total Disability Individual Unemployability) Guide
+[ ] 24. SMC (Special Monthly Compensation): Extra Benefits
+[ ] 25. VA Disability and Social Security: Can You Get Both?
+[ ] 26. Dependency and Indemnity Compensation (DIC) for Survivors
+[ ] 27. Aid and Attendance: Extra Benefits for Care Needs
+[ ] 28. Presumptive Service Connection: Gulf War, Vietnam, Burn Pits
+[ ] 29. VA Math: How Combined Ratings Actually Work
+[ ] 30. Increase Your VA Rating: When and How to File
+
+## BATCH 4 - HOUSING & LOANS (10)
+[ ] 31. VA Home Loan: Complete First-Time Buyer Guide
+[ ] 32. VA Loan Funding Fee: Who Pays and Who's Exempt
+[ ] 33. VA Cash-Out Refinance: Accessing Home Equity
+[ ] 34. VA IRRRL: Streamline Refinance Guide
+[ ] 35. VA Loan with Bad Credit: Minimum Requirements
+[ ] 36. VA Adapted Housing Grants: SAH and SHA Explained
+[ ] 37. VA Specially Adapted Housing: Building Modifications
+[ ] 38. Native American Direct Loan (NADL) Program
+[ ] 39. VA Loan for Manufactured Homes: What's Covered
+[ ] 40. VA Loan Certificate of Eligibility: How to Get It
+
+## BATCH 5 - EMPLOYMENT & OTHER (10)
+[ ] 41. VA Veteran Readiness and Employment (Chapter 31): Career Counseling
+[ ] 42. Veterans Preference in Federal Hiring: How It Works
+[ ] 43. Unemployability Benefits (IU): When You Can't Work
+[ ] 44. VA Pension: Non-Service Connected Benefits
+[ ] 45. Veterans ID Cards: Which One Do You Need?
+[ ] 46. VGLI (Veterans Group Life Insurance): Keep Your Coverage
+[ ] 47. Burial Benefits: VA Cemeteries and Allowances
+[ ] 48. VA Fiduciary Program: Help Managing Benefits
+[ ] 49. VA Debt: Payment Plans and Financial Hardship
+[ ] 50. State Veterans Benefits: How to Stack with Federal
+
+---
+Progress: 10/50 complete
+Last updated: 2025-12-03
