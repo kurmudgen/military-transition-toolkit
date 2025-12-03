@@ -1,0 +1,68 @@
+# Company Hiring Guides - Progress Tracker
+# Target: 50 Guides Total
+
+## Batch 1: Big Tech (10/10) ✓ COMPLETED
+1. [x] Amazon Careers for Veterans: AWS, Logistics, Operations
+2. [x] Google Careers for Veterans: Engineering, Cloud, Sales
+3. [x] Microsoft Careers for Veterans: Azure, MSSA Program
+4. [x] Apple Careers for Veterans: Retail, Engineering, AppleCare
+5. [x] Meta Careers for Veterans: Engineering, Security, Sales
+6. [x] Tesla Careers for Veterans: Manufacturing, Energy, Autopilot
+7. [x] Intel Careers for Veterans: Manufacturing, Engineering
+8. [x] IBM Careers for Veterans: Consulting, Cloud, Security
+9. [x] Oracle Careers for Veterans: Cloud, Database, Sales
+10. [x] Salesforce Careers for Veterans: Vetforce Program, Sales
+
+## Batch 2: Defense Contractors (10/10) ✓ COMPLETED
+11. [x] Boeing Careers for Veterans: Engineering, Manufacturing
+12. [x] Lockheed Martin Careers for Veterans: Engineering, IT
+13. [x] Raytheon Careers for Veterans: Engineering, Cybersecurity
+14. [x] Northrop Grumman Careers for Veterans: Engineering, Space
+15. [x] General Dynamics Careers for Veterans: IT, Engineering
+16. [x] BAE Systems Careers for Veterans: Engineering, Shipbuilding
+17. [x] L3Harris Careers for Veterans: Communications, Intelligence
+18. [x] Huntington Ingalls Careers for Veterans: Shipbuilding
+19. [x] SAIC Careers for Veterans: IT, Consulting, Engineering
+20. [x] Leidos Careers for Veterans: IT, Health, Engineering
+
+## Batch 3: Logistics & Transportation (10/10) ✓ COMPLETED
+21. [x] UPS Careers for Veterans: Drivers, Management, Operations
+22. [x] FedEx Careers for Veterans: Drivers, Pilots, Operations
+23. [x] Amazon Logistics Careers for Veterans: Delivery, Warehousing
+24. [x] Union Pacific Careers for Veterans: Conductors, Engineering
+25. [x] BNSF Railway Careers for Veterans: Train Crew, Mechanical
+26. [x] J.B. Hunt Careers for Veterans: Drivers, Logistics
+27. [x] Schneider Careers for Veterans: Drivers, Operations
+28. [x] XPO Logistics Careers for Veterans: Drivers, Warehouse
+29. [x] C.H. Robinson Careers for Veterans: Logistics, Operations
+30. [x] DHL Careers for Veterans: Drivers, Operations, Management
+
+## Batch 4: Retail & Services (10/10) ✓ COMPLETED
+31. [x] Walmart Careers for Veterans: Management, Distribution
+32. [x] Target Careers for Veterans: Store Leadership, Distribution
+33. [x] Home Depot Careers for Veterans: Retail, Distribution
+34. [x] Lowe's Careers for Veterans: Store Operations, Distribution
+35. [x] Costco Careers for Veterans: Warehouse, Management
+36. [x] Starbucks Careers for Veterans: Retail, Management
+37. [x] CVS Health Careers for Veterans: Pharmacy, Retail, Health
+38. [x] Walgreens Careers for Veterans: Pharmacy, Retail, Health
+39. [x] Bank of America Careers for Veterans: Finance, Technology
+40. [x] JPMorgan Chase Careers for Veterans: Finance, Technology
+
+## Batch 5: Healthcare & Energy (10/10) ✓ COMPLETED
+41. [x] UnitedHealth Group Careers for Veterans: Optum, Clinical
+42. [x] Kaiser Permanente Careers for Veterans: Healthcare, IT
+43. [x] HCA Healthcare Careers for Veterans: Hospital, Clinical
+44. [x] Chevron Careers for Veterans: Oil & Gas, Engineering
+45. [x] ExxonMobil Careers for Veterans: Energy, Engineering
+46. [x] Duke Energy Careers for Veterans: Utilities
+47. [x] NextEra Energy Careers for Veterans: Renewables
+48. [x] ConocoPhillips Careers for Veterans: Petroleum
+49. [x] Schlumberger Careers for Veterans: Oilfield Services
+50. [x] Halliburton Careers for Veterans: Energy Services
+
+---
+TOTAL COMPLETED: 50/50 (100%)
+All batches complete!
+
+Generated: December 2025
