@@ -15,16 +15,16 @@
 [X] 10. Georgia
 
 ## Batch 2 (11-20): Hawaii through Maryland
-[ ] 11. Hawaii
-[ ] 12. Idaho
-[ ] 13. Illinois
-[ ] 14. Indiana
-[ ] 15. Iowa
-[ ] 16. Kansas
-[ ] 17. Kentucky
-[ ] 18. Louisiana
-[ ] 19. Maine
-[ ] 20. Maryland
+[X] 11. Hawaii
+[X] 12. Idaho
+[X] 13. Illinois
+[X] 14. Indiana
+[X] 15. Iowa
+[X] 16. Kansas
+[X] 17. Kentucky
+[X] 18. Louisiana
+[X] 19. Maine
+[X] 20. Maryland
 
 ## Batch 3 (21-30): Massachusetts through New Hampshire
 [ ] 21. Massachusetts
@@ -65,7 +65,7 @@
 ---
 COMMITS:
 - [X] Batch 1 committed
-- [ ] Batch 2 committed
+- [X] Batch 2 committed
 - [ ] Batch 3 committed
 - [ ] Batch 4 committed
 - [ ] Batch 5 committed
