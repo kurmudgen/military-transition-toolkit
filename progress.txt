@@ -17,16 +17,16 @@ BATCH 1 - MENTAL HEALTH SECONDARY (10):
 [X] 10. Depression Secondary to Service-Connected Disability
 
 BATCH 2 - ORTHOPEDIC SECONDARY (10):
-[ ] 11. Knee Pain Secondary to Back Condition
-[ ] 12. Hip Pain Secondary to Knee Condition
-[ ] 13. Ankle Problems Secondary to Leg Injury
-[ ] 14. Shoulder Pain Secondary to Neck Condition
-[ ] 15. Lower Back Pain Secondary to Knee Injury
-[ ] 16. Foot Problems Secondary to Ankle Injury
-[ ] 17. Wrist Pain Secondary to Shoulder Condition
-[ ] 18. Neck Pain Secondary to Lower Back Condition
-[ ] 19. Sciatica Secondary to Lower Back Pain
-[ ] 20. Plantar Fasciitis Secondary to Knee/Ankle Issues
+[X] 11. Knee Pain Secondary to Back Condition
+[X] 12. Hip Pain Secondary to Knee Condition
+[X] 13. Ankle Problems Secondary to Leg Injury
+[X] 14. Shoulder Pain Secondary to Neck Condition
+[X] 15. Lower Back Pain Secondary to Knee Injury
+[X] 16. Foot Problems Secondary to Ankle Injury
+[X] 17. Wrist Pain Secondary to Shoulder Condition
+[X] 18. Neck Pain Secondary to Lower Back Condition
+[X] 19. Sciatica Secondary to Lower Back Pain
+[X] 20. Plantar Fasciitis Secondary to Knee/Ankle Issues
 
 BATCH 3 - METABOLIC/MEDICATION SECONDARY (10):
 [ ] 21. Type 2 Diabetes Secondary to PTSD Medications
@@ -67,3 +67,4 @@ BATCH 5 - OTHER COMMON SECONDARY (10):
 PROGRESS LOG:
 -------------
 2025-12-04: Batch 1 complete (10 guides) - Mental Health Secondary
+2025-12-04: Batch 2 complete (10 guides) - Orthopedic Secondary
