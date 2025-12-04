@@ -14,17 +14,17 @@
 [x] 9. Best Cities for Veteran UX Designers
 [x] 10. Best Cities for Veteran Database Administrators
 
-## BATCH 2 - SKILLED TRADES (11-20)
-[ ] 11. Best Cities for Veteran Electricians
-[ ] 12. Best Cities for Veteran Plumbers
-[ ] 13. Best Cities for Veteran HVAC Technicians
-[ ] 14. Best Cities for Veteran Welders
-[ ] 15. Best Cities for Veteran Construction Workers
-[ ] 16. Best Cities for Veteran Mechanics
-[ ] 17. Best Cities for Veteran Heavy Equipment Operators
-[ ] 18. Best Cities for Veteran Carpenters
-[ ] 19. Best Cities for Veteran Linemen
-[ ] 20. Best Cities for Veteran Industrial Maintenance
+## BATCH 2 - SKILLED TRADES (11-20) ✅ COMPLETE
+[x] 11. Best Cities for Veteran Electricians
+[x] 12. Best Cities for Veteran Plumbers
+[x] 13. Best Cities for Veteran HVAC Technicians
+[x] 14. Best Cities for Veteran Welders
+[x] 15. Best Cities for Veteran Construction Workers
+[x] 16. Best Cities for Veteran Mechanics
+[x] 17. Best Cities for Veteran Heavy Equipment Operators
+[x] 18. Best Cities for Veteran Carpenters
+[x] 19. Best Cities for Veteran Linemen
+[x] 20. Best Cities for Veteran Industrial Maintenance
 
 ## BATCH 3 - HEALTHCARE (21-30)
 [ ] 21. Best Cities for Veteran Nurses
@@ -65,3 +65,5 @@
 ## PROGRESS LOG
 - Started: 2025-12-04
 - Batch 1 completed: 2025-12-04 (10 guides)
+- Batch 2 completed: 2025-12-04 (10 guides)
+
