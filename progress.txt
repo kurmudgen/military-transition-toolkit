@@ -1,0 +1,69 @@
+VA Secondary Conditions Guides - Progress Tracker
+================================================
+
+Started: 2025-12-04
+Target: 50 guides total
+
+BATCH 1 - MENTAL HEALTH SECONDARY (10):
+[X] 1. Depression Secondary to PTSD
+[X] 2. Anxiety Secondary to PTSD
+[X] 3. Insomnia Secondary to PTSD
+[X] 4. Erectile Dysfunction Secondary to PTSD
+[X] 5. Depression Secondary to Chronic Pain
+[X] 6. Anxiety Secondary to Tinnitus
+[X] 7. PTSD Secondary to TBI
+[X] 8. Insomnia Secondary to Chronic Pain
+[X] 9. Migraine Headaches Secondary to TBI
+[X] 10. Depression Secondary to Service-Connected Disability
+
+BATCH 2 - ORTHOPEDIC SECONDARY (10):
+[ ] 11. Knee Pain Secondary to Back Condition
+[ ] 12. Hip Pain Secondary to Knee Condition
+[ ] 13. Ankle Problems Secondary to Leg Injury
+[ ] 14. Shoulder Pain Secondary to Neck Condition
+[ ] 15. Lower Back Pain Secondary to Knee Injury
+[ ] 16. Foot Problems Secondary to Ankle Injury
+[ ] 17. Wrist Pain Secondary to Shoulder Condition
+[ ] 18. Neck Pain Secondary to Lower Back Condition
+[ ] 19. Sciatica Secondary to Lower Back Pain
+[ ] 20. Plantar Fasciitis Secondary to Knee/Ankle Issues
+
+BATCH 3 - METABOLIC/MEDICATION SECONDARY (10):
+[ ] 21. Type 2 Diabetes Secondary to PTSD Medications
+[ ] 22. Weight Gain/Obesity Secondary to Mental Health Meds
+[ ] 23. High Blood Pressure Secondary to PTSD
+[ ] 24. High Cholesterol Secondary to Diabetes
+[ ] 25. Sleep Apnea Secondary to PTSD
+[ ] 26. Sleep Apnea Secondary to Weight Gain
+[ ] 27. GERD Secondary to Medications
+[ ] 28. Hypertension Secondary to Sleep Apnea
+[ ] 29. Erectile Dysfunction Secondary to Medications
+[ ] 30. Chronic Fatigue Secondary to Sleep Apnea
+
+BATCH 4 - PAIN & MOBILITY SECONDARY (10):
+[ ] 31. Chronic Pain Secondary to Any Service-Connected Injury
+[ ] 32. Limited Range of Motion Secondary to Arthritis
+[ ] 33. Gait Disturbance Secondary to Knee/Hip/Ankle Issues
+[ ] 34. Balance Problems Secondary to TBI
+[ ] 35. Radiculopathy Secondary to Spinal Condition
+[ ] 36. Carpal Tunnel Secondary to Repetitive Strain
+[ ] 37. Tendonitis Secondary to Joint Condition
+[ ] 38. Bursitis Secondary to Joint Injury
+[ ] 39. Degenerative Disc Disease Secondary to Back Injury
+[ ] 40. Arthritis Secondary to Joint Injury
+
+BATCH 5 - OTHER COMMON SECONDARY (10):
+[ ] 41. IBS Secondary to PTSD/Anxiety
+[ ] 42. Migraines Secondary to Neck Injury
+[ ] 43. Tinnitus Secondary to Hearing Loss
+[ ] 44. Hearing Loss Secondary to Tinnitus
+[ ] 45. Skin Conditions Secondary to Medications
+[ ] 46. Peripheral Neuropathy Secondary to Diabetes
+[ ] 47. Coronary Artery Disease Secondary to Diabetes
+[ ] 48. Kidney Disease Secondary to Diabetes/Hypertension
+[ ] 49. Vision Problems Secondary to TBI
+[ ] 50. Respiratory Issues Secondary to Burn Pit Exposure
+
+PROGRESS LOG:
+-------------
+2025-12-04: Batch 1 complete (10 guides) - Mental Health Secondary
