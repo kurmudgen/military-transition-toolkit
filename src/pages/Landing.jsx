@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import AnnouncementBanner from '../components/AnnouncementBanner'
 import PublicNav from '../components/Navigation/PublicNav'
+import InteractivePreview from '../components/InteractivePreview'
 import { useAuth } from '../contexts/AuthContext'
 
 export default function Landing() {
@@ -14,36 +15,126 @@ export default function Landing() {
       <PublicNav currentPage="/" />
 
       {/* Hero Section */}
-      <div className="max-w-6xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-          Military Transition Toolkit
+      <div className="max-w-6xl mx-auto px-4 py-12 md:py-16 text-center">
+        {/* Social Proof Badges */}
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-full text-sm">
+            <span className="text-green-400">✓</span>
+            <span className="text-slate-300">Trusted by 90+ transitioning service members</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-full text-sm">
+            <span className="text-blue-400">🎖️</span>
+            <span className="text-slate-300">Built by a Veteran, For Veterans</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 bg-green-900/30 border border-green-700 rounded-full text-sm">
+            <span className="text-green-400">💚</span>
+            <span className="text-green-300 font-semibold">100% Free Forever</span>
+          </div>
+        </div>
+
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          Your Complete Military Transition Toolkit
         </h1>
 
-        <p className="text-xl text-slate-300 mb-6 max-w-3xl mx-auto">
-          Navigate your transition with VA claims tracking, state benefits comparison, and comprehensive planning tools
+        <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
+          Don't leave money on the table. Get organized, file winning VA claims, and plan your future with confidence.
         </p>
 
-        <p className="text-lg font-semibold text-yellow-400 mb-8">
-          Currently Free - Mission: Stay Free Forever
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+        {/* Primary CTA */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           {!user ? (
             <>
-              <Link to="/signup" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
-                Get Started Free
-              </Link>
-              <Link to="/about" className="px-8 py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
-                Our Mission
+              <Link to="/signup" className="px-10 py-5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold rounded-xl text-xl transition-all shadow-xl hover:shadow-blue-500/25 hover:scale-105">
+                Start Planning Your Transition - Free
               </Link>
             </>
           ) : (
-            <Link to="/app" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold rounded-lg text-lg transition-colors shadow-lg">
+            <Link to="/app" className="px-10 py-5 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-xl text-xl transition-all shadow-xl hover:shadow-blue-500/25">
               Go to Dashboard →
             </Link>
           )}
         </div>
+
+        {/* Trust Indicators */}
+        {!user && (
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>No credit card required</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              <span>Your data is secure</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
+              <span>No spam, ever</span>
+            </div>
+          </div>
+        )}
       </div>
+
+      {/* Benefits Section - Outcome Focused */}
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Benefit 1 - VA Claims */}
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-green-500/50 transition-colors">
+            <div className="flex items-start gap-4">
+              <div className="text-3xl">📋</div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Build winning VA claims with organized evidence tracking</h3>
+                <p className="text-green-400 font-semibold mb-2">Average 50% rating = $1,075/month for life</p>
+                <p className="text-slate-400 text-sm">Track conditions, gather evidence, generate personal statements - everything in one place</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Benefit 2 - Resume */}
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-purple-500/50 transition-colors">
+            <div className="flex items-start gap-4">
+              <div className="text-3xl">📄</div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Translate your MOS to civilian careers that actually pay</h3>
+                <p className="text-purple-400 font-semibold mb-2">Resume builder with military-to-civilian language</p>
+                <p className="text-slate-400 text-sm">Stop confusing recruiters with military jargon - we translate it for you</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Benefit 3 - State Benefits */}
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500/50 transition-colors">
+            <div className="flex items-start gap-4">
+              <div className="text-3xl">🗺️</div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Discover state veteran benefits worth $50k+ you didn't know existed</h3>
+                <p className="text-blue-400 font-semibold mb-2">All 50 states, personalized to your situation</p>
+                <p className="text-slate-400 text-sm">Compare taxes, education, healthcare, and job markets to find your perfect state</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Benefit 4 - Timeline */}
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-yellow-500/50 transition-colors">
+            <div className="flex items-start gap-4">
+              <div className="text-3xl">📅</div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Plan your entire transition timeline in one place</h3>
+                <p className="text-yellow-400 font-semibold mb-2">Personalized checklist based on your separation date</p>
+                <p className="text-slate-400 text-sm">Never miss a deadline - from 24 months out to your first day as a civilian</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Interactive Preview Section */}
+      <InteractivePreview />
 
       {/* Mission & Sustainability Section */}
       <div className="max-w-4xl mx-auto px-4 py-16">
@@ -90,91 +181,33 @@ export default function Landing() {
         </div>
       </div>
 
-      {/* Try Our Tools Section - Moved Higher */}
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Try Our Tools - No Signup Required
+      {/* Quick Links to Free Tools */}
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            More Free Tools - No Signup Required
           </h2>
-          <p className="text-xl text-slate-300">
-            Explore our toolkit with these free previews
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* State Benefits */}
-          <Link to="/state-benefits" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">🗺️</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              State Benefits Comparison
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Browse veteran benefits across all 50 states. See tax advantages, education benefits, and more.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              Explore States →
-            </span>
+        <div className="grid md:grid-cols-4 gap-4">
+          <Link to="/state-benefits" className="group bg-slate-800 hover:bg-slate-700 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all text-center">
+            <div className="text-3xl mb-2">🗺️</div>
+            <h3 className="text-sm font-bold text-white group-hover:text-blue-400">State Benefits</h3>
           </Link>
 
-          {/* Retirement Calculator */}
-          <Link to="/public/retirement-calculator" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">💰</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Retirement Pay Calculator
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Calculate your estimated retirement pay. Try our basic calculator with High-3 and BRS systems.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              Calculate Pay →
-            </span>
+          <Link to="/public/retirement-calculator" className="group bg-slate-800 hover:bg-slate-700 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all text-center">
+            <div className="text-3xl mb-2">💰</div>
+            <h3 className="text-sm font-bold text-white group-hover:text-blue-400">Retirement Calculator</h3>
           </Link>
 
-          {/* Resource Library */}
-          <Link to="/public/resources" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">📚</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Resource Library
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Access 60+ curated resources for career planning, VA benefits, education, and more.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              Browse Resources →
-            </span>
+          <Link to="/public/resources" className="group bg-slate-800 hover:bg-slate-700 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all text-center">
+            <div className="text-3xl mb-2">📚</div>
+            <h3 className="text-sm font-bold text-white group-hover:text-blue-400">60+ Resources</h3>
           </Link>
 
-          {/* Sample Checklist */}
-          <Link to="/public/sample-checklist" className="group bg-slate-800 hover:bg-slate-700 rounded-xl p-6 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div className="text-4xl mb-3">✅</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Sample Transition Checklist
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Preview our comprehensive 20+ year retirement timeline with detailed action items.
-            </p>
-            <span className="text-blue-400 text-sm font-semibold">
-              View Checklist →
-            </span>
-          </Link>
-
-          {/* NEW: VA Claims Builder Demo */}
-          <Link to="/demo/va-claims" className="group bg-gradient-to-br from-blue-900/40 to-indigo-900/40 hover:from-blue-800/50 hover:to-indigo-800/50 rounded-xl p-6 border-2 border-blue-500 hover:border-blue-400 transition-all lg:col-span-2">
-            <div className="text-4xl mb-3">📋</div>
-            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-              Try VA Claims Builder
-            </h3>
-            <p className="text-slate-300 mb-4">
-              Build a complete VA disability claim with condition-specific tracking. See how it works before signing up.
-            </p>
-            <div className="flex items-center gap-2">
-              <span className="text-blue-400 text-sm font-semibold">
-                Try Demo →
-              </span>
-              <span className="px-2 py-1 bg-yellow-500/20 border border-yellow-500 text-yellow-400 text-xs font-bold rounded">
-                FEATURED
-              </span>
-            </div>
+          <Link to="/demo/va-claims" className="group bg-slate-800 hover:bg-slate-700 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all text-center">
+            <div className="text-3xl mb-2">📋</div>
+            <h3 className="text-sm font-bold text-white group-hover:text-blue-400">VA Claims Demo</h3>
           </Link>
         </div>
       </div>
@@ -400,23 +433,34 @@ export default function Landing() {
       {/* CTA Section */}
       <div className="max-w-4xl mx-auto px-4 py-16 text-center">
         <h2 className="text-4xl font-bold text-white mb-6">
-          {!user ? 'Start Planning Your Transition Today' : 'Ready to Continue Your Transition?'}
+          {!user ? 'Ready to Take Control of Your Transition?' : 'Ready to Continue Your Transition?'}
         </h2>
         <p className="text-xl text-slate-300 mb-8">
-          Built by veterans who've been through this process. We know what you're going through.
+          Join 90+ service members who are already using MTT to plan their future.
         </p>
         {!user ? (
           <>
-            <Link to="/signup" className="inline-block px-12 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-xl font-bold rounded-lg transition-colors shadow-lg">
-              Get Started Free →
+            <Link to="/signup" className="inline-block px-12 py-5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white text-xl font-bold rounded-xl transition-all shadow-xl hover:shadow-blue-500/25 hover:scale-105">
+              Create Your Free Account →
             </Link>
-            <p className="text-slate-400 text-sm mt-4">
-              100% free • No credit card required
-            </p>
+            <div className="flex flex-wrap justify-center gap-6 mt-6 text-sm text-slate-400">
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span>100% free forever</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span>No credit card required</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-400">✓</span>
+                <span>Built by veterans</span>
+              </div>
+            </div>
           </>
         ) : (
           <>
-            <Link to="/app" className="inline-block px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold rounded-lg transition-colors shadow-lg">
+            <Link to="/app" className="inline-block px-12 py-5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white text-xl font-bold rounded-xl transition-all shadow-xl hover:shadow-blue-500/25">
               Go to Your Dashboard →
             </Link>
             <p className="text-slate-400 text-sm mt-4">
