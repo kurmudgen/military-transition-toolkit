@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { isPromoModeActive } from '../utils/promoConfig'
 import { useAuth } from '../contexts/AuthContext'
 import { AUTH_LOADING_TIMEOUT } from '../utils/constants'
+import { syncOnboardingWithExistingData } from '../hooks/useOnboardingProgress'
 import {
   getVAConditions,
   createVACondition,
@@ -208,6 +209,8 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
   // Set page title
   useEffect(() => {
     document.title = 'VA Disability Claims Tracker - Organize Evidence, Track C&P Exams | Military Transition Toolkit'
+    // Sync onboarding progress when visiting VA claims
+    syncOnboardingWithExistingData()
   }, [])
 
   // Timeout for unauthenticated users - show auth prompt after timeout

@@ -3,6 +3,10 @@ import { Link, useNavigate } from 'react-router-dom'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import RemindersWidget from '../components/RemindersWidget'
 import ReferralCard from '../components/ReferralCard'
+import WelcomeBanner from '../components/WelcomeBanner'
+import GettingStartedChecklist from '../components/GettingStartedChecklist'
+import FeatureAnnouncementBanner from '../components/FeatureAnnouncementBanner'
+import { useOnboardingProgress, syncOnboardingWithExistingData } from '../hooks/useOnboardingProgress'
 import { useAuth } from '../contexts/AuthContext'
 import { getUserProfile, completeOnboarding } from '../services/profileService'
 import {
@@ -39,6 +43,18 @@ export default function Home() {
   const [upcomingTasks, setUpcomingTasks] = useState([])
   const [referralCode, setReferralCode] = useState('')
   const [referralCount, setReferralCount] = useState(0)
+
+  // Onboarding progress tracking
+  const {
+    progress: onboardingProgress,
+    bannerDismissed,
+    completedCount: onboardingCompletedCount,
+    totalCount: onboardingTotalCount,
+    shouldShowChecklist,
+    isNewUser,
+    markComplete: markOnboardingComplete,
+    dismissBanner
+  } = useOnboardingProgress()
 
   // Load user profile from Supabase (with localStorage fallback)
   useEffect(() => {
@@ -159,6 +175,18 @@ export default function Home() {
     }, 10000)
     return () => clearInterval(interval)
   }, [])
+
+  // Sync onboarding progress with existing data on mount
+  useEffect(() => {
+    syncOnboardingWithExistingData()
+  }, [])
+
+  // Mark separation date as complete when it's set
+  useEffect(() => {
+    if (separationDate && !onboardingProgress.separationDateSet) {
+      markOnboardingComplete('separationDateSet')
+    }
+  }, [separationDate, onboardingProgress.separationDateSet, markOnboardingComplete])
 
   const handleSetup = async (situation) => {
     // Save to Supabase
@@ -846,6 +874,34 @@ export default function Home() {
           Settings
         </button>
       </div>
+
+      {/* Feature Announcement Banner - Shows for all users until dismissed */}
+      <FeatureAnnouncementBanner />
+
+      {/* Welcome Banner - Shows for new users until dismissed */}
+      {!bannerDismissed && isNewUser && (
+        <WelcomeBanner
+          userName={userName}
+          onDismiss={dismissBanner}
+        />
+      )}
+
+      {/* Getting Started Checklist - Shows until 3+ items complete */}
+      {shouldShowChecklist && (
+        <GettingStartedChecklist
+          progress={onboardingProgress}
+          completedCount={onboardingCompletedCount}
+          totalCount={onboardingTotalCount}
+          separationDate={separationDate}
+          onMarkComplete={(itemId) => {
+            markOnboardingComplete(itemId)
+            // If the item is separation date, open the settings modal
+            if (itemId === 'separationDateSet' && !separationDate) {
+              setShowSetup(true)
+            }
+          }}
+        />
+      )}
 
       {/* User Type Selector - Prominent */}
       <div className="bg-gradient-to-br from-slate-800 to-slate-900 dark:from-slate-900 dark:to-black rounded-xl shadow-2xl p-6 sm:p-8 mb-8 border border-slate-700 dark:border-slate-600">

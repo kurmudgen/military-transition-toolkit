@@ -1,13 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import StateBenefitsComparison from './StateBenefitsComparison';
 import PersonalizedCalculator from '../../components/StateBenefits/PersonalizedCalculator';
 import MovingCostCalculator from '../../components/StateBenefits/MovingCostCalculator';
 import { statesData, stateRankings } from '../../data/stateBenefitsData';
 import PublicNav from '../../components/Navigation/PublicNav';
+import { syncOnboardingWithExistingData } from '../../hooks/useOnboardingProgress';
 
 export default function StateBenefitsIndex() {
   const [activeTab, setActiveTab] = useState('comparison');
+
+  // Mark state benefits as viewed for onboarding progress
+  useEffect(() => {
+    syncOnboardingWithExistingData();
+  }, []);
 
   // Main content component (reused for both authenticated and public views)
   const StateBenefitsContent = () => (

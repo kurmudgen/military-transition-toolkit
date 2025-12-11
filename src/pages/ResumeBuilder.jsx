@@ -6,6 +6,7 @@ import UseProfileButton from '../components/UseProfileButton'
 import { isPromoModeActive } from '../utils/promoConfig'
 import { useAuth } from '../contexts/AuthContext'
 import { AUTH_LOADING_TIMEOUT } from '../utils/constants'
+import { syncOnboardingWithExistingData } from '../hooks/useOnboardingProgress'
 import {
   SKILL_TRANSLATIONS,
   MOS_TRANSLATIONS,
@@ -85,6 +86,9 @@ export default function ResumeBuilder({ previewMode = false }) {
     document.title = 'Military to Civilian Resume Builder - Translate MOS to Job Titles | Military Transition Toolkit'
     trackPageView('Resume Builder')
     loadSavedResumes()
+
+    // Sync onboarding progress when visiting resume builder
+    syncOnboardingWithExistingData()
   }, [])
 
   // Timeout for unauthenticated users - show auth prompt after timeout

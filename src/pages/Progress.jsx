@@ -8,6 +8,7 @@ import {
   MILESTONE_CATEGORIES
 } from '../utils/progressTracking'
 import { trackPageView } from '../utils/analytics'
+import { syncOnboardingWithExistingData } from '../hooks/useOnboardingProgress'
 
 // Celebration animation component
 function CelebrationModal({ onClose, categoryName }) {
@@ -42,6 +43,10 @@ export default function Progress({ previewMode = false }) {
     document.title = 'Progress Dashboard - Military Transition Toolkit'
     trackPageView('Progress Dashboard')
     loadProgress()
+
+    // Mark transition assessment as complete for onboarding
+    localStorage.setItem('progressVisited', 'true')
+    syncOnboardingWithExistingData()
   }, [])
 
   const loadProgress = () => {
