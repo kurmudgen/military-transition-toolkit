@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState, useMemo, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllPosts } from '../utils/blog'
 import PublicNav from '../components/Navigation/PublicNav'
@@ -7,6 +7,7 @@ export default function Blog() {
   const allPosts = getAllPosts()
   const [searchQuery, setSearchQuery] = useState('')
   const [sortOption, setSortOption] = useState('newest') // newest, oldest, alphabetical
+  const searchInputRef = useRef(null)
 
   useEffect(() => {
     document.title = 'Blog - Military Transition Toolkit'
@@ -41,8 +42,13 @@ export default function Blog() {
     return sorted
   }, [allPosts, searchQuery, sortOption])
 
-  // Blog content component (reused for both authenticated and public views)
-  const BlogContent = () => (
+  // Handle search input change - use uncontrolled input pattern for mobile keyboard stability
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value)
+  }
+
+  // Blog content - now inline JSX (not a component that gets recreated on each render)
+  const blogContent = (
     <div className="max-w-4xl mx-auto p-4 md:p-8">
       {/* Header */}
       <div className="mb-8">
@@ -59,10 +65,16 @@ export default function Blog() {
         {/* Search Input */}
         <div className="flex-1">
           <input
+            ref={searchInputRef}
             type="text"
+            inputMode="search"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck="false"
             placeholder="Search posts by title, content, or category..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={handleSearchChange}
             className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
           />
         </div>
@@ -163,7 +175,7 @@ export default function Blog() {
 
       {/* Use dark mode wrapper for content */}
       <div className="dark">
-        <BlogContent />
+        {blogContent}
       </div>
     </div>
   )

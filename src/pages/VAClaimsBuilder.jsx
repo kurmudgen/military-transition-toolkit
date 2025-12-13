@@ -16,68 +16,6 @@ import {
 } from '../services/vaService'
 import { VA_CONDITIONS_LIBRARY, getConditionData } from '../data/vaConditions'
 
-// Helper function to match condition names to library data
-const getConditionLibraryData = (conditionName) => {
-  // Try exact match first
-  let data = getConditionData(conditionName)
-  if (data) return data
-
-  // Try to match base condition (remove left/right/upper/lower/etc)
-  const normalized = conditionName
-    .replace(/^(Left|Right|Upper|Lower)\s+/i, '')
-    .replace(/\s*\(.*?\)/g, '') // Remove parentheses content
-    .trim()
-
-  // Check common mappings
-  const mappings = {
-    'knee pain/injury': 'Knee Pain',
-    'knee pain': 'Knee Pain',
-    'back pain lumbar spine': 'Low Back Pain',
-    'lower back pain': 'Low Back Pain',
-    'low back pain': 'Low Back Pain',
-    'neck pain cervical spine': 'Neck Pain (Cervical Spine)',
-    'neck pain': 'Neck Pain (Cervical Spine)',
-    'shoulder injury': 'Shoulder Pain',
-    'shoulder pain': 'Shoulder Pain',
-    'ankle/foot condition': 'Ankle Pain',
-    'ankle pain': 'Ankle Pain',
-    'hip condition': 'Hip Pain',
-    'hip pain': 'Hip Pain',
-    'ptsd': 'PTSD (Post-Traumatic Stress Disorder)',
-    'major depressive disorder': 'Depression',
-    'depression': 'Depression',
-    'anxiety disorder': 'Generalized Anxiety Disorder',
-    'anxiety': 'Generalized Anxiety Disorder',
-    'generalized anxiety disorder': 'Generalized Anxiety Disorder',
-    'tinnitus': 'Tinnitus',
-    'hearing loss': 'Hearing Loss',
-    'scars': 'Scars',
-    'sleep apnea': 'Sleep Apnea',
-    'asthma': 'Asthma',
-    'ibs': 'IBS (Irritable Bowel Syndrome)',
-    'gerd': 'GERD (Acid Reflux)',
-    'migraine headaches': 'Migraine Headaches',
-    'traumatic brain injury': 'TBI (Traumatic Brain Injury)',
-    'tbi': 'TBI (Traumatic Brain Injury)',
-    'hypertension': 'Hypertension (High Blood Pressure)',
-    'diabetes': 'Diabetes'
-  }
-
-  const mappedName = mappings[normalized.toLowerCase()]
-  if (mappedName) {
-    data = getConditionData(mappedName)
-    if (data) return data
-  }
-
-  // Return generic default if no match
-  return {
-    category: 'Other',
-    commonSymptoms: ['Pain', 'Discomfort', 'Difficulty with daily activities'],
-    functionalLimitations: ['Impact on work', 'Impact on daily activities', 'Impact on quality of life'],
-    evidenceTypes: ['Medical records', 'Service medical records', 'Treatment documentation']
-  }
-}
-
 // Condition categories and their conditions
 const CONDITION_CATEGORIES = {
   musculoskeletal: {
@@ -160,6 +98,406 @@ const CONDITION_CATEGORIES = {
       'Hypertension (high blood pressure)',
       'Diabetes (Type 2)'
     ]
+  }
+}
+
+// Category-specific symptoms and treatments
+// These provide realistic options based on condition category
+const CATEGORY_SYMPTOMS = {
+  musculoskeletal: [
+    'Constant or frequent pain',
+    'Sharp pain with certain movements',
+    'Dull, aching pain',
+    'Pain that radiates to other areas',
+    'Stiffness (especially in morning)',
+    'Swelling or inflammation',
+    'Reduced range of motion',
+    'Muscle weakness',
+    'Grinding or popping sounds',
+    'Difficulty walking or standing',
+    'Pain that worsens with activity',
+    'Numbness or tingling'
+  ],
+  mentalHealth: [
+    'Nightmares or flashbacks',
+    'Intrusive memories of traumatic events',
+    'Avoidance of reminders of trauma',
+    'Difficulty sleeping or insomnia',
+    'Hypervigilance or being easily startled',
+    'Irritability or angry outbursts',
+    'Difficulty concentrating',
+    'Feeling detached or emotionally numb',
+    'Persistent sadness or hopelessness',
+    'Loss of interest in activities',
+    'Anxiety or panic attacks',
+    'Difficulty in relationships',
+    'Social withdrawal or isolation'
+  ],
+  hearing: [
+    'Ringing in ears (tinnitus)',
+    'Buzzing or humming sounds',
+    'Difficulty understanding speech',
+    'Difficulty hearing in noisy environments',
+    'Need to ask people to repeat themselves',
+    'Turning up TV/radio volume',
+    'Difficulty hearing phone conversations',
+    'Ear pain or pressure',
+    'Dizziness or vertigo',
+    'Sensitivity to loud sounds'
+  ],
+  neurological: [
+    'Chronic headaches',
+    'Migraine with visual disturbances',
+    'Sensitivity to light (photophobia)',
+    'Sensitivity to sound',
+    'Nausea during headaches',
+    'Memory problems',
+    'Difficulty concentrating',
+    'Dizziness or balance issues',
+    'Numbness or tingling',
+    'Seizures',
+    'Vision changes',
+    'Speech difficulties'
+  ],
+  respiratory: [
+    'Shortness of breath',
+    'Wheezing',
+    'Chronic cough',
+    'Waking up gasping for air',
+    'Loud snoring',
+    'Daytime fatigue or sleepiness',
+    'Morning headaches',
+    'Difficulty breathing during exercise',
+    'Need for inhaler or CPAP',
+    'Chest tightness'
+  ],
+  skin: [
+    'Visible scarring',
+    'Itching or irritation',
+    'Pain at scar site',
+    'Skin discoloration',
+    'Raised or keloid scarring',
+    'Limited movement due to scarring',
+    'Recurring skin breakouts',
+    'Dry or flaking skin',
+    'Sensitivity to touch',
+    'Burning sensation'
+  ],
+  digestive: [
+    'Chronic heartburn or acid reflux',
+    'Stomach pain or cramping',
+    'Nausea',
+    'Bloating or gas',
+    'Diarrhea',
+    'Constipation',
+    'Difficulty swallowing',
+    'Vomiting',
+    'Loss of appetite',
+    'Unintentional weight changes',
+    'Blood in stool',
+    'Urgency to use bathroom'
+  ],
+  other: [
+    'Fatigue',
+    'Pain',
+    'Discomfort',
+    'Difficulty with daily activities',
+    'Need for ongoing treatment',
+    'Impact on work performance',
+    'Reduced quality of life'
+  ]
+}
+
+const CATEGORY_TREATMENTS = {
+  musculoskeletal: [
+    'Physical therapy',
+    'Prescription pain medications',
+    'Over-the-counter pain relievers',
+    'Steroid injections',
+    'Joint injections',
+    'Surgery',
+    'Chiropractic care',
+    'Brace, splint, or support device',
+    'Heat or ice therapy',
+    'Massage therapy',
+    'TENS unit',
+    'Mobility aids (cane, walker)'
+  ],
+  mentalHealth: [
+    'Individual therapy/counseling',
+    'Group therapy',
+    'Psychiatric medication',
+    'Cognitive Behavioral Therapy (CBT)',
+    'EMDR therapy',
+    'Inpatient treatment program',
+    'Crisis intervention',
+    'Peer support groups',
+    'Medication management',
+    'Telehealth therapy sessions'
+  ],
+  hearing: [
+    'Hearing aids',
+    'Audiologist appointments',
+    'Tinnitus masking devices',
+    'Sound therapy',
+    'Hearing protection',
+    'Ear surgery',
+    'Medication for symptoms',
+    'Vestibular rehabilitation'
+  ],
+  neurological: [
+    'Prescription migraine medication',
+    'Preventive medications',
+    'Botox injections for migraines',
+    'Physical therapy',
+    'Occupational therapy',
+    'Speech therapy',
+    'Cognitive rehabilitation',
+    'Neurological specialist care',
+    'MRI or CT imaging',
+    'Pain management'
+  ],
+  respiratory: [
+    'CPAP machine',
+    'BiPAP machine',
+    'Inhaler (rescue)',
+    'Inhaler (maintenance)',
+    'Nebulizer treatments',
+    'Oxygen therapy',
+    'Pulmonologist care',
+    'Sleep study',
+    'Pulmonary function tests',
+    'Allergy medications'
+  ],
+  skin: [
+    'Topical creams or ointments',
+    'Scar revision surgery',
+    'Laser treatment',
+    'Steroid injections',
+    'Dermatologist care',
+    'Prescription skin medications',
+    'Wound care',
+    'Moisturizers or emollients'
+  ],
+  digestive: [
+    'Prescription acid reducers (PPIs)',
+    'Antacids',
+    'Anti-diarrheal medications',
+    'Laxatives or stool softeners',
+    'Dietary modifications',
+    'Gastroenterologist care',
+    'Endoscopy or colonoscopy',
+    'Prescription medications for IBS',
+    'Probiotics'
+  ],
+  other: [
+    'Prescription medications',
+    'Specialist care',
+    'Physical therapy',
+    'Lifestyle modifications',
+    'Regular monitoring',
+    'Medical devices'
+  ]
+}
+
+const CATEGORY_LIMITATIONS = {
+  musculoskeletal: [
+    'Cannot stand for more than 30 minutes',
+    'Cannot walk more than a quarter mile',
+    'Cannot lift more than 10-20 pounds',
+    'Difficulty bending or stooping',
+    'Cannot run or jog',
+    'Cannot climb stairs without difficulty',
+    'Difficulty getting in/out of car',
+    'Cannot perform physical job duties',
+    'Need frequent breaks during activity',
+    'Difficulty with household chores',
+    'Cannot exercise normally',
+    'Difficulty sleeping due to pain'
+  ],
+  mentalHealth: [
+    'Difficulty maintaining employment',
+    'Difficulty maintaining relationships',
+    'Cannot be in crowded places',
+    'Avoid certain situations or triggers',
+    'Difficulty making decisions',
+    'Cannot handle stress like before',
+    'Miss work due to symptoms',
+    'Difficulty with daily routines',
+    'Cannot concentrate on tasks',
+    'Difficulty driving',
+    'Social isolation',
+    'Unable to enjoy previously liked activities'
+  ],
+  hearing: [
+    'Difficulty communicating in groups',
+    'Cannot hear phone conversations clearly',
+    'Difficulty at work due to hearing',
+    'Cannot hear alarms or warnings',
+    'Difficulty following conversations',
+    'Social withdrawal due to hearing difficulty',
+    'Need for closed captioning',
+    'Difficulty hearing in background noise'
+  ],
+  neurological: [
+    'Must rest in dark room during episodes',
+    'Miss work due to headaches',
+    'Cannot drive during episodes',
+    'Difficulty concentrating on work',
+    'Memory problems affecting daily life',
+    'Cannot tolerate bright lights',
+    'Limited by unpredictable episodes',
+    'Difficulty with cognitive tasks'
+  ],
+  respiratory: [
+    'Cannot exercise vigorously',
+    'Difficulty with physical activities',
+    'Must use CPAP every night',
+    'Cannot sleep without equipment',
+    'Daytime fatigue affects work',
+    'Cannot participate in sports',
+    'Difficulty at high altitudes',
+    'Limited by breathing equipment needs'
+  ],
+  skin: [
+    'Self-conscious about appearance',
+    'Pain limits movement',
+    'Cannot wear certain clothing',
+    'Avoid social situations',
+    'Difficulty with physical contact',
+    'Need to avoid sun exposure',
+    'Limited range of motion from scarring'
+  ],
+  digestive: [
+    'Must stay near bathroom',
+    'Cannot eat many foods',
+    'Miss work due to symptoms',
+    'Cannot travel easily',
+    'Difficulty with social eating',
+    'Must eat small, frequent meals',
+    'Sleep disrupted by symptoms',
+    'Cannot enjoy restaurants'
+  ],
+  other: [
+    'Impact on daily activities',
+    'Difficulty with work duties',
+    'Reduced quality of life',
+    'Need for ongoing care',
+    'Activity limitations'
+  ]
+}
+
+// Helper function to get category from condition name
+const getConditionCategory = (conditionName) => {
+  for (const [categoryKey, categoryData] of Object.entries(CONDITION_CATEGORIES)) {
+    if (categoryData.conditions.some(c =>
+      c.toLowerCase() === conditionName.toLowerCase() ||
+      conditionName.toLowerCase().includes(c.toLowerCase().replace(/\s*\(.*?\)/g, '').trim()) ||
+      c.toLowerCase().includes(conditionName.toLowerCase().replace(/\s*\(.*?\)/g, '').trim())
+    )) {
+      return categoryKey
+    }
+    // Check if the condition contains the category name
+    if (conditionName.toLowerCase().includes(categoryData.name.toLowerCase())) {
+      return categoryKey
+    }
+  }
+  // Check for keywords to determine category
+  const lowerName = conditionName.toLowerCase()
+  if (lowerName.includes('knee') || lowerName.includes('back') || lowerName.includes('shoulder') ||
+      lowerName.includes('hip') || lowerName.includes('ankle') || lowerName.includes('neck') ||
+      lowerName.includes('elbow') || lowerName.includes('wrist') || lowerName.includes('arthritis') ||
+      lowerName.includes('plantar') || lowerName.includes('foot')) {
+    return 'musculoskeletal'
+  }
+  if (lowerName.includes('ptsd') || lowerName.includes('depression') || lowerName.includes('anxiety') ||
+      lowerName.includes('sleep') || lowerName.includes('adjustment') || lowerName.includes('mental')) {
+    return 'mentalHealth'
+  }
+  if (lowerName.includes('tinnitus') || lowerName.includes('hearing') || lowerName.includes('ear') ||
+      lowerName.includes('sinus') || lowerName.includes('rhinitis')) {
+    return 'hearing'
+  }
+  if (lowerName.includes('migraine') || lowerName.includes('headache') || lowerName.includes('tbi') ||
+      lowerName.includes('brain') || lowerName.includes('neuropathy') || lowerName.includes('radiculopathy')) {
+    return 'neurological'
+  }
+  if (lowerName.includes('apnea') || lowerName.includes('asthma') || lowerName.includes('respiratory') ||
+      lowerName.includes('breathing') || lowerName.includes('lung')) {
+    return 'respiratory'
+  }
+  if (lowerName.includes('scar') || lowerName.includes('acne') || lowerName.includes('eczema') ||
+      lowerName.includes('psoriasis') || lowerName.includes('skin')) {
+    return 'skin'
+  }
+  if (lowerName.includes('gerd') || lowerName.includes('ibs') || lowerName.includes('reflux') ||
+      lowerName.includes('bowel') || lowerName.includes('hemorrhoid') || lowerName.includes('digestive')) {
+    return 'digestive'
+  }
+  return 'other'
+}
+
+// Helper function to match condition names to library data
+const getConditionLibraryData = (conditionName) => {
+  // Try exact match first
+  let data = getConditionData(conditionName)
+  if (data) return data
+
+  // Try to match base condition (remove left/right/upper/lower/etc)
+  const normalized = conditionName
+    .replace(/^(Left|Right|Upper|Lower)\s+/i, '')
+    .replace(/\s*\(.*?\)/g, '') // Remove parentheses content
+    .trim()
+
+  // Check common mappings
+  const mappings = {
+    'knee pain/injury': 'Knee Pain',
+    'knee pain': 'Knee Pain',
+    'back pain lumbar spine': 'Low Back Pain',
+    'lower back pain': 'Low Back Pain',
+    'low back pain': 'Low Back Pain',
+    'neck pain cervical spine': 'Neck Pain (Cervical Spine)',
+    'neck pain': 'Neck Pain (Cervical Spine)',
+    'shoulder injury': 'Shoulder Pain',
+    'shoulder pain': 'Shoulder Pain',
+    'ankle/foot condition': 'Ankle Pain',
+    'ankle pain': 'Ankle Pain',
+    'hip condition': 'Hip Pain',
+    'hip pain': 'Hip Pain',
+    'ptsd': 'PTSD (Post-Traumatic Stress Disorder)',
+    'major depressive disorder': 'Depression',
+    'depression': 'Depression',
+    'anxiety disorder': 'Generalized Anxiety Disorder',
+    'anxiety': 'Generalized Anxiety Disorder',
+    'generalized anxiety disorder': 'Generalized Anxiety Disorder',
+    'tinnitus': 'Tinnitus',
+    'hearing loss': 'Hearing Loss',
+    'scars': 'Scars',
+    'sleep apnea': 'Sleep Apnea',
+    'asthma': 'Asthma',
+    'ibs': 'IBS (Irritable Bowel Syndrome)',
+    'gerd': 'GERD (Acid Reflux)',
+    'migraine headaches': 'Migraine Headaches',
+    'traumatic brain injury': 'TBI (Traumatic Brain Injury)',
+    'tbi': 'TBI (Traumatic Brain Injury)',
+    'hypertension': 'Hypertension (High Blood Pressure)',
+    'diabetes': 'Diabetes'
+  }
+
+  const mappedName = mappings[normalized.toLowerCase()]
+  if (mappedName) {
+    data = getConditionData(mappedName)
+    if (data) return data
+  }
+
+  // Use category-based data as fallback (much better than generic!)
+  const category = getConditionCategory(conditionName)
+  return {
+    category: CONDITION_CATEGORIES[category]?.name || 'Other',
+    commonSymptoms: CATEGORY_SYMPTOMS[category] || CATEGORY_SYMPTOMS.other,
+    functionalLimitations: CATEGORY_LIMITATIONS[category] || CATEGORY_LIMITATIONS.other,
+    treatments: CATEGORY_TREATMENTS[category] || CATEGORY_TREATMENTS.other,
+    evidenceTypes: ['Medical records', 'Service medical records', 'Treatment documentation']
   }
 }
 
@@ -915,47 +1253,115 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
     const statements = {}
     selectedConditions.forEach(condition => {
       const details = conditionDetails[condition] || {}
-      const symptoms = Object.keys(details.symptoms || {}).filter(s => details.symptoms[s]).join(', ')
-      const treatments = Object.keys(details.treatment || {}).filter(t => details.treatment[t]).join(', ')
-      const limitations = Object.keys(details.limitations || {}).filter(l => details.limitations[l]).join(', ')
+      const symptomList = Object.keys(details.symptoms || {}).filter(s => details.symptoms[s])
+      const treatmentList = Object.keys(details.treatment || {}).filter(t => details.treatment[t])
+      const limitationList = Object.keys(details.limitations || {}).filter(l => details.limitations[l])
 
-      let statement = `${condition}`
-
-      if (details.incident) {
-        statement += ` due to ${details.incident} during service`
-      }
-
-      if (details.startDate) {
-        statement += ` starting ${details.startDate}`
-      }
-
-      statement += '.'
-
-      if (symptoms) {
-        statement += ` Current symptoms include ${symptoms}`
-        if (details.frequency) {
-          statement += ` occurring ${details.frequency}`
+      // Format date for natural reading
+      const formatDate = (dateStr) => {
+        if (!dateStr) return null
+        const parts = dateStr.split('-')
+        if (parts.length === 2) {
+          const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                          'July', 'August', 'September', 'October', 'November', 'December']
+          return `${months[parseInt(parts[1]) - 1]} ${parts[0]}`
         }
-        statement += '.'
+        return dateStr
       }
 
-      if (details.painLevel) {
-        statement += ` Pain rated ${details.painLevel}/10 on average.`
+      // Format list for natural reading (Oxford comma, "and" before last item)
+      const formatList = (items) => {
+        if (!items || items.length === 0) return ''
+        if (items.length === 1) return items[0].toLowerCase()
+        if (items.length === 2) return `${items[0].toLowerCase()} and ${items[1].toLowerCase()}`
+        const last = items[items.length - 1]
+        const rest = items.slice(0, -1)
+        return `${rest.map(i => i.toLowerCase()).join(', ')}, and ${last.toLowerCase()}`
       }
 
-      if (limitations) {
-        statement += ` Condition causes functional limitations including ${limitations}.`
+      // Build a natural, personal statement
+      let paragraphs = []
+
+      // Opening paragraph - describe what happened and when
+      let opening = `I am claiming ${condition}`
+      if (details.startDate) {
+        opening += ` which began in ${formatDate(details.startDate)}`
+      }
+      if (details.incident) {
+        opening += details.startDate ? '. ' : ' as a result of '
+        if (!details.startDate) {
+          opening += `${details.incident.charAt(0).toLowerCase() + details.incident.slice(1)}`
+        } else {
+          opening += `This condition developed as a result of ${details.incident.charAt(0).toLowerCase() + details.incident.slice(1)}`
+        }
+      }
+      opening += '.'
+      paragraphs.push(opening)
+
+      // Symptoms paragraph - describe current suffering
+      if (symptomList.length > 0) {
+        let symptomPara = 'I continue to experience '
+        if (symptomList.length <= 3) {
+          symptomPara += formatList(symptomList)
+        } else {
+          // Group symptoms more naturally for longer lists
+          symptomPara += formatList(symptomList.slice(0, 4))
+          if (symptomList.length > 4) {
+            symptomPara += `, among other symptoms`
+          }
+        }
+        if (details.frequency) {
+          symptomPara += ` on a ${details.frequency.toLowerCase()} basis`
+        }
+        symptomPara += '.'
+        if (details.painLevel) {
+          symptomPara += ` On an average day, my pain level is ${details.painLevel} out of 10.`
+        }
+        if (details.worsening) {
+          symptomPara += ` My symptoms are made worse by ${details.worsening.toLowerCase()}.`
+        }
+        if (details.customSymptom) {
+          symptomPara += ` I also experience ${details.customSymptom.toLowerCase()}.`
+        }
+        paragraphs.push(symptomPara)
       }
 
-      if (treatments) {
-        statement += ` Treatment includes ${treatments}.`
+      // Functional limitations paragraph - describe daily impact
+      if (limitationList.length > 0) {
+        let limitPara = 'This condition significantly affects my daily life. '
+        if (limitationList.length <= 2) {
+          limitPara += `I ${formatList(limitationList.map(l => l.replace(/^Cannot /i, 'cannot ').replace(/^Difficulty /i, 'have difficulty ')))}.`
+        } else {
+          // More natural description for multiple limitations
+          limitPara += `Specifically, I ${limitationList.slice(0, 3).map(l =>
+            l.toLowerCase().replace(/^cannot /i, 'cannot ').replace(/^difficulty /i, 'have difficulty ')
+          ).join(', ')}`
+          if (limitationList.length > 3) {
+            limitPara += `, and ${limitationList.length - 3} other functional limitations`
+          }
+          limitPara += '.'
+        }
+        paragraphs.push(limitPara)
       }
 
-      if (details.worsening) {
-        statement += ` Condition worsens with ${details.worsening}.`
+      // Treatment paragraph - show ongoing medical care
+      if (treatmentList.length > 0) {
+        let treatPara = 'I have sought treatment for this condition'
+        if (treatmentList.length <= 3) {
+          treatPara += `, including ${formatList(treatmentList)}.`
+        } else {
+          treatPara += `. My treatment history includes ${formatList(treatmentList.slice(0, 4))}`
+          if (treatmentList.length > 4) {
+            treatPara += `, as well as other interventions`
+          }
+          treatPara += '.'
+        }
+        treatPara += ' Despite treatment, my symptoms persist.'
+        paragraphs.push(treatPara)
       }
 
-      statements[condition] = statement
+      // Combine paragraphs with proper spacing
+      statements[condition] = paragraphs.join('\n\n')
     })
     setGeneratedStatements(statements)
   }
@@ -1710,7 +2116,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
                         {Object.entries(generatedStatements).map(([condition, statement], idx) => (
                           <div key={condition} className="pb-4 border-b border-gray-200 last:border-0">
                             <p className="font-semibold text-gray-800 mb-2">{idx + 1}. {condition}</p>
-                            <p className="text-gray-700 leading-relaxed">{statement}</p>
+                            <p className="text-gray-700 leading-relaxed whitespace-pre-line">{statement}</p>
                           </div>
                         ))}
                       </div>
