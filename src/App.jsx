@@ -99,6 +99,9 @@ function App() {
           {/* Demo pages (no login required, interactive with sample data) */}
           <Route path="/demo/va-claims" element={<VAClaimsBuilder demoMode />} />
 
+          {/* Public VA Claims Builder (no login required, saves to localStorage) */}
+          <Route path="/va-claims" element={<VAClaimsBuilder guestMode />} />
+
           {/* Public informational pages (no login required) */}
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />

@@ -190,7 +190,12 @@ const SECONDARY_SUGGESTIONS = {
   ]
 }
 
-export default function VAClaimsBuilder({ previewMode = false, demoMode = false }) {
+// localStorage keys for guest mode
+const GUEST_VA_CONDITIONS_KEY = 'vaClaimsGuestConditions'
+const GUEST_VA_DETAILS_KEY = 'vaClaimsGuestDetails'
+const GUEST_VA_EVIDENCE_KEY = 'vaClaimsGuestEvidence'
+
+export default function VAClaimsBuilder({ previewMode = false, demoMode = false, guestMode = false }) {
   const { user } = useAuth()
   const [activeTab, setActiveTab] = useState('builder') // builder, evidence
   const [selectedConditions, setSelectedConditions] = useState([])
@@ -205,6 +210,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
   const [error, setError] = useState(null)
   const [conditionIdMap, setConditionIdMap] = useState({}) // Maps condition names to database IDs
   const [showAuthPrompt, setShowAuthPrompt] = useState(false)
+  const [showSaveModal, setShowSaveModal] = useState(false) // Modal for guest users trying to save
 
   // Set page title
   useEffect(() => {
@@ -214,8 +220,9 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
   }, [])
 
   // Timeout for unauthenticated users - show auth prompt after timeout
+  // Skip this for demo mode and guest mode
   useEffect(() => {
-    if (!user && !demoMode && loading) {
+    if (!user && !demoMode && !guestMode && loading) {
       const timer = setTimeout(() => {
         setLoading(false)
         setShowAuthPrompt(true)
@@ -223,7 +230,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
 
       return () => clearTimeout(timer)
     }
-  }, [user, demoMode, loading])
+  }, [user, demoMode, guestMode, loading])
 
   // Load data from Supabase database or demo data
   useEffect(() => {
@@ -410,6 +417,31 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
         return
       }
 
+      // Guest mode - load from localStorage
+      if (guestMode) {
+        try {
+          const savedConditions = localStorage.getItem(GUEST_VA_CONDITIONS_KEY)
+          const savedDetails = localStorage.getItem(GUEST_VA_DETAILS_KEY)
+          const savedEvidence = localStorage.getItem(GUEST_VA_EVIDENCE_KEY)
+
+          if (savedConditions) {
+            setSelectedConditions(JSON.parse(savedConditions))
+          }
+          if (savedDetails) {
+            setConditionDetails(JSON.parse(savedDetails))
+          }
+          if (savedEvidence) {
+            setEvidenceTracking(JSON.parse(savedEvidence))
+          }
+
+          console.log('✓ Guest data loaded from localStorage')
+        } catch (err) {
+          console.error('Error loading guest data from localStorage:', err)
+        }
+        setLoading(false)
+        return
+      }
+
       // Normal database loading for non-demo mode
       try {
         setLoading(true)
@@ -499,13 +531,32 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
     }
 
     loadVAData()
-  }, [demoMode])
+  }, [demoMode, guestMode])
+
+  // Auto-save to localStorage in guest mode whenever data changes
+  useEffect(() => {
+    if (guestMode && !loading) {
+      try {
+        localStorage.setItem(GUEST_VA_CONDITIONS_KEY, JSON.stringify(selectedConditions))
+        localStorage.setItem(GUEST_VA_DETAILS_KEY, JSON.stringify(conditionDetails))
+        localStorage.setItem(GUEST_VA_EVIDENCE_KEY, JSON.stringify(evidenceTracking))
+      } catch (err) {
+        console.error('Error saving to localStorage:', err)
+      }
+    }
+  }, [guestMode, loading, selectedConditions, conditionDetails, evidenceTracking])
 
   // Helper function to save condition to database
   const saveConditionToDatabase = async (conditionName, details, isNew = false) => {
     // In demo mode, show upgrade prompt instead of saving
     if (demoMode) {
       alert('Sign up to save your claims permanently!\n\nDemo mode lets you try the tool, but your data won\'t be saved. Create a free account to save your VA claims securely in the cloud.')
+      return
+    }
+
+    // In guest mode, data is auto-saved to localStorage
+    // Just return without database save - the useEffect handles localStorage
+    if (guestMode) {
       return
     }
 
@@ -555,8 +606,9 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
 
   // Helper function to delete condition from database
   const deleteConditionFromDatabase = async (conditionName) => {
-    // In demo mode, data only exists in local state - no database action needed
-    if (demoMode) {
+    // In demo mode or guest mode, data only exists in local state - no database action needed
+    // Guest mode auto-saves to localStorage via useEffect
+    if (demoMode || guestMode) {
       return
     }
 
@@ -601,6 +653,31 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
       setGeneratedStatements(null)
       setExpandedCategories({})
       setExpandedEvidence({})
+
+      return
+    }
+
+    // In guest mode, clear local state and localStorage
+    if (guestMode) {
+      const confirmed = window.confirm(
+        'Clear all your VA claims data?\n\nThis will delete all conditions and evidence you\'ve entered. This cannot be undone.'
+      )
+
+      if (!confirmed) return
+
+      // Clear all local state
+      setSelectedConditions([])
+      setConditionDetails({})
+      setEvidenceTracking({})
+      setConditionIdMap({})
+      setGeneratedStatements(null)
+      setExpandedCategories({})
+      setExpandedEvidence({})
+
+      // Clear localStorage
+      localStorage.removeItem(GUEST_VA_CONDITIONS_KEY)
+      localStorage.removeItem(GUEST_VA_DETAILS_KEY)
+      localStorage.removeItem(GUEST_VA_EVIDENCE_KEY)
 
       return
     }
@@ -1072,6 +1149,80 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false 
             >
               Create Free Account
             </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Guest Mode Banner */}
+      {guestMode && (
+        <div className="mb-6 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg p-4 shadow-lg">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-start gap-3 flex-1">
+              <div className="text-3xl">📋</div>
+              <div>
+                <h3 className="text-lg font-bold text-white mb-1">Your Progress is Auto-Saved Locally</h3>
+                <p className="text-blue-100 text-sm">
+                  Your data is saved in your browser. Create a free account to sync across devices and access from anywhere.
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={() => setShowSaveModal(true)}
+              className="px-4 py-2 bg-white hover:bg-gray-100 text-blue-700 font-semibold rounded-lg transition-colors whitespace-nowrap"
+            >
+              Save to Account
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Save Modal for Guest Users */}
+      {showSaveModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6">
+            <div className="text-center mb-6">
+              <div className="text-5xl mb-4">💾</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Save Your Progress</h3>
+              <p className="text-gray-600">
+                Create a free account to save your VA claims data permanently and access it from any device.
+              </p>
+            </div>
+
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center gap-3 text-sm text-gray-600">
+                <span className="text-green-500">✓</span>
+                <span>Access your claims from any device</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-gray-600">
+                <span className="text-green-500">✓</span>
+                <span>Secure cloud backup of all your data</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-gray-600">
+                <span className="text-green-500">✓</span>
+                <span>100% free - no credit card required</span>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <Link
+                to="/signup"
+                className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold text-center transition-colors"
+              >
+                Sign Up Free
+              </Link>
+              <Link
+                to="/login"
+                className="block w-full bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-6 rounded-lg font-semibold text-center transition-colors"
+              >
+                Already have an account? Log In
+              </Link>
+              <button
+                onClick={() => setShowSaveModal(false)}
+                className="block w-full text-gray-500 hover:text-gray-700 py-2 text-sm text-center"
+              >
+                Continue Without Saving
+              </button>
+            </div>
           </div>
         </div>
       )}

@@ -328,3 +328,105 @@ export const migrateVADataFromLocalStorage = async () => {
     console.error('Error migrating VA data:', error)
   }
 }
+
+// Sync guest mode data from localStorage to user's account
+// Called after user signs up or logs in
+export const syncGuestVADataToAccount = async () => {
+  const GUEST_VA_CONDITIONS_KEY = 'vaClaimsGuestConditions'
+  const GUEST_VA_DETAILS_KEY = 'vaClaimsGuestDetails'
+  const GUEST_VA_EVIDENCE_KEY = 'vaClaimsGuestEvidence'
+
+  try {
+    const user = await getCurrentUser()
+    if (!user) return { success: false, message: 'No authenticated user' }
+
+    // Check if there's guest data to sync
+    const guestConditions = localStorage.getItem(GUEST_VA_CONDITIONS_KEY)
+    const guestDetails = localStorage.getItem(GUEST_VA_DETAILS_KEY)
+
+    if (!guestConditions) {
+      return { success: true, message: 'No guest data to sync', count: 0 }
+    }
+
+    const conditions = JSON.parse(guestConditions)
+    const details = guestDetails ? JSON.parse(guestDetails) : {}
+    const evidence = localStorage.getItem(GUEST_VA_EVIDENCE_KEY)
+    const evidenceData = evidence ? JSON.parse(evidence) : {}
+
+    if (conditions.length === 0) {
+      return { success: true, message: 'No guest data to sync', count: 0 }
+    }
+
+    const conditionMap = {} // Map condition names to new database IDs
+
+    // Create each condition in the database
+    for (const conditionName of conditions) {
+      const conditionDetail = details[conditionName] || {}
+
+      const created = await createVACondition({
+        condition_name: conditionName,
+        category: conditionDetail.category || '',
+        description: conditionDetail.description || '',
+        start_date: conditionDetail.startDate || null,
+        incident_description: conditionDetail.incident || '',
+        symptoms: conditionDetail.symptoms || {},
+        frequency: conditionDetail.frequency || '',
+        worsening_factors: conditionDetail.worsening || '',
+        treatment_history: conditionDetail.treatment || {},
+        functional_limitations: conditionDetail.limitations || {},
+        pain_level: conditionDetail.painLevel || '',
+        service_connected: conditionDetail.serviceConnected !== false,
+        estimated_rating: conditionDetail.estimatedRating || '',
+        notes: conditionDetail.notes || ''
+      })
+
+      conditionMap[conditionName] = created.id
+    }
+
+    // Sync evidence for each condition
+    for (const [conditionName, condEvidence] of Object.entries(evidenceData)) {
+      const conditionId = conditionMap[conditionName]
+      if (!conditionId || !condEvidence) continue
+
+      // Sync required evidence
+      if (condEvidence.required) {
+        for (const [type, data] of Object.entries(condEvidence.required)) {
+          if (data && Object.keys(data).length > 0) {
+            await createVAEvidence({
+              condition_id: conditionId,
+              evidence_type: type,
+              status: data.status || 'pending',
+              details: data,
+              notes: data.notes || ''
+            })
+          }
+        }
+      }
+
+      // Sync recommended evidence
+      if (condEvidence.recommended) {
+        for (const [type, data] of Object.entries(condEvidence.recommended)) {
+          if (data && Object.keys(data).length > 0) {
+            await createVAEvidence({
+              condition_id: conditionId,
+              evidence_type: type,
+              status: data.status || 'pending',
+              details: data
+            })
+          }
+        }
+      }
+    }
+
+    // Clear guest data from localStorage after successful sync
+    localStorage.removeItem(GUEST_VA_CONDITIONS_KEY)
+    localStorage.removeItem(GUEST_VA_DETAILS_KEY)
+    localStorage.removeItem(GUEST_VA_EVIDENCE_KEY)
+
+    console.log(`✓ Synced ${conditions.length} VA claims from guest to account`)
+    return { success: true, message: `Synced ${conditions.length} conditions`, count: conditions.length }
+  } catch (error) {
+    console.error('Error syncing guest VA data:', error)
+    return { success: false, message: error.message, count: 0 }
+  }
+}

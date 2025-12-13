@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react'
 import { supabase } from '../lib/supabase'
 import { useNavigate } from 'react-router-dom'
-import { migrateAllDataToSupabase } from '../utils/dataMigration'
+import { migrateAllDataToSupabase, syncGuestDataToAccount } from '../utils/dataMigration'
 import { auditService } from '../services/auditService'
 
 const AuthContext = createContext({})
@@ -272,12 +272,14 @@ export const AuthProvider = ({ children }) => {
       // This handles the code exchange completion
       setLoading(false)
 
-      // Run migration on sign in
+      // Run migration and sync guest data on sign in
       if (_event === 'SIGNED_IN' && session?.user) {
         try {
           await migrateAllDataToSupabase()
+          // Always sync guest data (handles VA claims from guest mode)
+          await syncGuestDataToAccount()
         } catch (err) {
-          console.error('Migration failed:', err)
+          console.error('Migration/sync failed:', err)
         }
       }
     })

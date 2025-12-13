@@ -1,7 +1,7 @@
 import { migrateFromLocalStorage as migrateUser } from '../services/userService'
 import { migrateResumeFromLocalStorage } from '../services/resumeService'
 import { migrateJobsFromLocalStorage } from '../services/jobService'
-import { migrateVADataFromLocalStorage } from '../services/vaService'
+import { migrateVADataFromLocalStorage, syncGuestVADataToAccount } from '../services/vaService'
 import { migrateAppointmentsFromLocalStorage } from '../services/appointmentService'
 import { migrateChecklistsFromLocalStorage } from '../services/checklistService'
 import { migrateResourcesFromLocalStorage } from '../services/resourceService'
@@ -135,6 +135,39 @@ export const migrateAllDataToSupabase = async () => {
     return { success: true, results, alreadyCompleted: false }
   } catch (error) {
     console.error('Migration failed:', error)
+    return { success: false, error: error.message, results }
+  }
+}
+
+/**
+ * Sync guest mode data to user's account
+ * This should run on EVERY login, not just first migration
+ * It handles data created in guest mode before logging in
+ */
+export const syncGuestDataToAccount = async () => {
+  console.log('Checking for guest data to sync...')
+
+  const results = {
+    vaData: { success: false, error: null, count: 0 }
+  }
+
+  try {
+    // Sync VA Claims guest data
+    try {
+      const vaResult = await syncGuestVADataToAccount()
+      results.vaData.success = vaResult.success
+      results.vaData.count = vaResult.count || 0
+      if (vaResult.count > 0) {
+        console.log(`✓ Synced ${vaResult.count} VA conditions from guest mode`)
+      }
+    } catch (error) {
+      results.vaData.error = error.message
+      console.error('✗ VA guest data sync failed:', error)
+    }
+
+    return { success: true, results }
+  } catch (error) {
+    console.error('Guest data sync failed:', error)
     return { success: false, error: error.message, results }
   }
 }
