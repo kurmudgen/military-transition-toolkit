@@ -102,6 +102,9 @@ function App() {
           {/* Public VA Claims Builder (no login required, saves to localStorage) */}
           <Route path="/va-claims" element={<VAClaimsBuilder guestMode />} />
 
+          {/* Public Resume Builder (no login required, saves to localStorage) */}
+          <Route path="/resume-builder" element={<ResumeBuilder guestMode />} />
+
           {/* Public informational pages (no login required) */}
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />

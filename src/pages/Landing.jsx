@@ -84,52 +84,76 @@ export default function Landing() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-6">
           {/* Benefit 1 - VA Claims */}
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-green-500/50 transition-colors">
+          <Link
+            to="/va-claims"
+            className="block bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-green-500/50 transition-colors group"
+          >
             <div className="flex items-start gap-4">
               <div className="text-3xl">📋</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Build winning VA claims with organized evidence tracking</h3>
                 <p className="text-green-400 font-semibold mb-2">Average 50% rating = $1,075/month for life</p>
-                <p className="text-slate-400 text-sm">Track conditions, gather evidence, generate personal statements - everything in one place</p>
+                <p className="text-slate-400 text-sm mb-3">Track conditions, gather evidence, generate personal statements - everything in one place</p>
+                <span className="text-green-400 font-semibold text-sm group-hover:underline">
+                  Try it free →
+                </span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Benefit 2 - Resume */}
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-purple-500/50 transition-colors">
+          <Link
+            to="/resume-builder"
+            className="block bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-purple-500/50 transition-colors group"
+          >
             <div className="flex items-start gap-4">
               <div className="text-3xl">📄</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Translate your MOS to civilian careers that actually pay</h3>
                 <p className="text-purple-400 font-semibold mb-2">Resume builder with military-to-civilian language</p>
-                <p className="text-slate-400 text-sm">Stop confusing recruiters with military jargon - we translate it for you</p>
+                <p className="text-slate-400 text-sm mb-3">Stop confusing recruiters with military jargon - we translate it for you</p>
+                <span className="text-purple-400 font-semibold text-sm group-hover:underline">
+                  Try it free →
+                </span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Benefit 3 - State Benefits */}
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500/50 transition-colors">
+          <Link
+            to="/state-benefits"
+            className="block bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-blue-500/50 transition-colors group"
+          >
             <div className="flex items-start gap-4">
               <div className="text-3xl">🗺️</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Discover state veteran benefits worth $50k+ you didn't know existed</h3>
                 <p className="text-blue-400 font-semibold mb-2">All 50 states, personalized to your situation</p>
-                <p className="text-slate-400 text-sm">Compare taxes, education, healthcare, and job markets to find your perfect state</p>
+                <p className="text-slate-400 text-sm mb-3">Compare taxes, education, healthcare, and job markets to find your perfect state</p>
+                <span className="text-blue-400 font-semibold text-sm group-hover:underline">
+                  Compare states →
+                </span>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Benefit 4 - Timeline */}
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-yellow-500/50 transition-colors">
+          <Link
+            to={user ? "/app/retirement" : "/signup"}
+            className="block bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 border border-slate-700 hover:border-yellow-500/50 transition-colors group"
+          >
             <div className="flex items-start gap-4">
               <div className="text-3xl">📅</div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Plan your entire transition timeline in one place</h3>
                 <p className="text-yellow-400 font-semibold mb-2">Personalized checklist based on your separation date</p>
-                <p className="text-slate-400 text-sm">Never miss a deadline - from 24 months out to your first day as a civilian</p>
+                <p className="text-slate-400 text-sm mb-3">Never miss a deadline - from 24 months out to your first day as a civilian</p>
+                <span className="text-yellow-400 font-semibold text-sm group-hover:underline">
+                  Start planning →
+                </span>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 

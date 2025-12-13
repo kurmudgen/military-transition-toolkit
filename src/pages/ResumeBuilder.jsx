@@ -29,7 +29,12 @@ import {
   deleteResume as deleteResumeDB
 } from '../services/resumeService'
 
-export default function ResumeBuilder({ previewMode = false }) {
+// localStorage keys for guest mode
+const GUEST_RESUME_DATA_KEY = 'resumeBuilderGuestData'
+const GUEST_RESUME_TEMPLATE_KEY = 'resumeBuilderGuestTemplate'
+const GUEST_RESUME_STEP_KEY = 'resumeBuilderGuestStep'
+
+export default function ResumeBuilder({ previewMode = false, guestMode = false }) {
   const { user } = useAuth()
 
   // Database loading/saving states
@@ -37,6 +42,7 @@ export default function ResumeBuilder({ previewMode = false }) {
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState(null)
   const [showAuthPrompt, setShowAuthPrompt] = useState(false)
+  const [showSaveModal, setShowSaveModal] = useState(false) // Modal for guest users trying to save/export
 
   const [currentStep, setCurrentStep] = useState(1)
   const [template, setTemplate] = useState('chronological')
@@ -92,8 +98,9 @@ export default function ResumeBuilder({ previewMode = false }) {
   }, [])
 
   // Timeout for unauthenticated users - show auth prompt after timeout
+  // Skip this for guest mode
   useEffect(() => {
-    if (!user && loading) {
+    if (!user && !guestMode && loading) {
       const timer = setTimeout(() => {
         setLoading(false)
         setShowAuthPrompt(true)
@@ -101,7 +108,7 @@ export default function ResumeBuilder({ previewMode = false }) {
 
       return () => clearTimeout(timer)
     }
-  }, [user, loading])
+  }, [user, guestMode, loading])
 
   const loadSavedResumes = async () => {
     try {
@@ -156,6 +163,44 @@ export default function ResumeBuilder({ previewMode = false }) {
       setLoading(false)
     }
   }
+
+  // Guest mode - load from localStorage on mount
+  useEffect(() => {
+    if (guestMode) {
+      try {
+        const savedData = localStorage.getItem(GUEST_RESUME_DATA_KEY)
+        const savedTemplate = localStorage.getItem(GUEST_RESUME_TEMPLATE_KEY)
+        const savedStep = localStorage.getItem(GUEST_RESUME_STEP_KEY)
+
+        if (savedData) {
+          setResumeData(JSON.parse(savedData))
+        }
+        if (savedTemplate) {
+          setTemplate(savedTemplate)
+        }
+        if (savedStep) {
+          setCurrentStep(parseInt(savedStep, 10))
+        }
+        console.log('✓ Guest resume data loaded from localStorage')
+      } catch (err) {
+        console.error('Error loading guest resume data:', err)
+      }
+      setLoading(false)
+    }
+  }, [guestMode])
+
+  // Auto-save to localStorage in guest mode whenever data changes
+  useEffect(() => {
+    if (guestMode && !loading) {
+      try {
+        localStorage.setItem(GUEST_RESUME_DATA_KEY, JSON.stringify(resumeData))
+        localStorage.setItem(GUEST_RESUME_TEMPLATE_KEY, template)
+        localStorage.setItem(GUEST_RESUME_STEP_KEY, currentStep.toString())
+      } catch (err) {
+        console.error('Error saving guest resume data:', err)
+      }
+    }
+  }, [guestMode, loading, resumeData, template, currentStep])
 
   const handleAutoFillFromProfile = () => {
     const profile = getProfileData()
@@ -355,6 +400,12 @@ export default function ResumeBuilder({ previewMode = false }) {
   }
 
   const saveResume = async () => {
+    // In guest mode, show signup modal instead of saving
+    if (guestMode) {
+      setShowSaveModal(true)
+      return
+    }
+
     try {
       setSaving(true)
       setError(null)
@@ -454,6 +505,12 @@ export default function ResumeBuilder({ previewMode = false }) {
   }
 
   const exportToPDF = () => {
+    // In guest mode, show signup modal instead of exporting
+    if (guestMode) {
+      setShowSaveModal(true)
+      return
+    }
+
     // Generate and download PDF
     trackButtonClick('Resume Builder - Export PDF')
     try {
@@ -618,6 +675,84 @@ export default function ResumeBuilder({ previewMode = false }) {
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
               <span className="text-blue-700 dark:text-blue-300 font-medium">Saving to secure cloud storage...</span>
+            </div>
+          </div>
+        )}
+
+        {/* Guest Mode Banner */}
+        {guestMode && (
+          <div className="mb-6 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg p-4 shadow-lg">
+            <div className="flex items-start justify-between gap-4">
+              <div className="flex items-start gap-3 flex-1">
+                <div className="text-3xl">📝</div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">Your Progress is Auto-Saved Locally</h3>
+                  <p className="text-blue-100 text-sm">
+                    Your resume data is saved in your browser. Create a free account to export as PDF and access from anywhere.
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowSaveModal(true)}
+                className="px-4 py-2 bg-white hover:bg-gray-100 text-blue-700 font-semibold rounded-lg transition-colors whitespace-nowrap"
+              >
+                Save to Account
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Save/Export Modal for Guest Users */}
+        {showSaveModal && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full p-6">
+              <div className="text-center mb-6">
+                <div className="text-5xl mb-4">📄</div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Save & Export Your Resume</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Create a free account to save your resume permanently and export as PDF.
+                </p>
+              </div>
+
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-green-500">✓</span>
+                  <span>Export as professional PDF</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-green-500">✓</span>
+                  <span>Access your resume from any device</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-green-500">✓</span>
+                  <span>Save multiple resume versions</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-green-500">✓</span>
+                  <span>100% free - no credit card required</span>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                <Link
+                  to="/signup"
+                  className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold text-center transition-colors"
+                >
+                  Sign Up Free
+                </Link>
+                <Link
+                  to="/login"
+                  className="block w-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 py-3 px-6 rounded-lg font-semibold text-center transition-colors"
+                >
+                  Already have an account? Log In
+                </Link>
+                <button
+                  onClick={() => setShowSaveModal(false)}
+                  className="block w-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 py-2 text-sm text-center"
+                >
+                  Continue Without Saving
+                </button>
+              </div>
             </div>
           </div>
         )}

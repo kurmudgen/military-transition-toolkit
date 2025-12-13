@@ -111,7 +111,7 @@ export default function PublicNav({ currentPage = '' }) {
             Career
           </div>
           <Link
-            to="/app/resume-builder"
+            to={user ? "/app/resume-builder" : "/resume-builder"}
             className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
             onClick={() => setToolsOpen(false)}
           >
@@ -476,7 +476,7 @@ export default function PublicNav({ currentPage = '' }) {
                     Transition Checklist
                   </Link>
                   <Link
-                    to="/app/resume-builder"
+                    to={user ? "/app/resume-builder" : "/resume-builder"}
                     className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
