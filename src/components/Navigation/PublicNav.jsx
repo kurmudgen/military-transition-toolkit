@@ -78,7 +78,7 @@ export default function PublicNav({ currentPage = '' }) {
             VA & Medical
           </div>
           <Link
-            to="/app/va-claims"
+            to={user ? "/app/va-claims-builder" : "/va-claims"}
             className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
             onClick={() => setToolsOpen(false)}
           >
@@ -348,9 +348,12 @@ export default function PublicNav({ currentPage = '' }) {
               Progress
             </AuthAwareLink>
 
-            <AuthAwareLink to="/app/va-claims" requiresAuth={true}>
+            <Link
+              to={user ? "/app/va-claims-builder" : "/va-claims"}
+              className="text-slate-300 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-700/50 transition-colors"
+            >
               VA Claims
-            </AuthAwareLink>
+            </Link>
           </div>
 
           {/* Right side - Auth buttons */}
@@ -442,24 +445,22 @@ export default function PublicNav({ currentPage = '' }) {
               </Link>
 
               {user && (
-                <>
-                  <Link
-                    to="/app/progress"
-                    className="block px-3 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Progress
-                  </Link>
-
-                  <Link
-                    to="/app/va-claims"
-                    className="block px-3 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    VA Claims
-                  </Link>
-                </>
+                <Link
+                  to="/app/progress"
+                  className="block px-3 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Progress
+                </Link>
               )}
+
+              <Link
+                to={user ? "/app/va-claims-builder" : "/va-claims"}
+                className="block px-3 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                VA Claims
+              </Link>
 
               {/* Mobile Tools Section */}
               <details className="group">
