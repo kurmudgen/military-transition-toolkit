@@ -141,7 +141,7 @@ export default function PublicNav({ currentPage = '' }) {
             Retirement & Pay
           </div>
           <Link
-            to="/retirement-calculator"
+            to="/public/retirement-calculator"
             className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
             onClick={() => setToolsOpen(false)}
           >
@@ -149,7 +149,7 @@ export default function PublicNav({ currentPage = '' }) {
             <span>Retirement Calculator</span>
           </Link>
           <Link
-            to="/terminal-leave-calculator"
+            to="/calculator/terminal-leave"
             className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
             onClick={() => setToolsOpen(false)}
           >
@@ -206,67 +206,9 @@ export default function PublicNav({ currentPage = '' }) {
   )
 
   const renderResourcesDropdown = () => (
-    <div className="absolute left-0 top-full pt-2 w-64 z-50">
+    <div className="absolute left-0 top-full pt-2 w-56 z-50">
       <div className="bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2">
-        {/* Career Guides Section */}
         <div className="px-4 py-2">
-          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
-            Career Guides
-          </div>
-          <Link
-            to="/blog?filter=army-mos"
-            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
-            onClick={() => setResourcesOpen(false)}
-          >
-            <span className="mr-3">🪖</span>
-            <span>Army MOS Guides</span>
-          </Link>
-          <Link
-            to="/blog?filter=air-force-afsc"
-            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
-            onClick={() => setResourcesOpen(false)}
-          >
-            <span className="mr-3">✈️</span>
-            <span>Air Force AFSC Guides</span>
-          </Link>
-          <Link
-            to="/blog?filter=navy-rate"
-            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
-            onClick={() => setResourcesOpen(false)}
-          >
-            <span className="mr-3">⚓</span>
-            <span>Navy Rate Guides</span>
-          </Link>
-          <Link
-            to="/blog?filter=marine-mos"
-            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
-            onClick={() => setResourcesOpen(false)}
-          >
-            <span className="mr-3">🦅</span>
-            <span>Marine Corps MOS Guides</span>
-          </Link>
-        </div>
-
-        <div className="border-t border-slate-700 my-2"></div>
-
-        {/* Additional Resources */}
-        <div className="px-4 py-2">
-          <Link
-            to="/resources"
-            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
-            onClick={() => setResourcesOpen(false)}
-          >
-            <span className="mr-3">📚</span>
-            <span>Resource Library</span>
-          </Link>
-          <Link
-            to="/recommended-services"
-            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
-            onClick={() => setResourcesOpen(false)}
-          >
-            <span className="mr-3">⭐</span>
-            <span>Recommended Services</span>
-          </Link>
           <Link
             to="/blog"
             className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
@@ -274,6 +216,14 @@ export default function PublicNav({ currentPage = '' }) {
           >
             <span className="mr-3">✍️</span>
             <span>Blog & Guides</span>
+          </Link>
+          <Link
+            to="/resources"
+            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
+            onClick={() => setResourcesOpen(false)}
+          >
+            <span className="mr-3">🔗</span>
+            <span>Partner Resources</span>
           </Link>
         </div>
       </div>
@@ -483,11 +433,18 @@ export default function PublicNav({ currentPage = '' }) {
                     Resume Translator
                   </Link>
                   <Link
-                    to="/retirement-calculator"
+                    to="/public/retirement-calculator"
                     className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Retirement Calculator
+                  </Link>
+                  <Link
+                    to="/calculator/terminal-leave"
+                    className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Terminal Leave Calculator
                   </Link>
                 </div>
               </details>
@@ -499,25 +456,18 @@ export default function PublicNav({ currentPage = '' }) {
                 </summary>
                 <div className="pl-6 space-y-1 mt-2">
                   <Link
-                    to="/blog?filter=army-mos"
+                    to="/blog"
                     className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Army MOS Guides
-                  </Link>
-                  <Link
-                    to="/blog?filter=air-force-afsc"
-                    className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Air Force Guides
+                    Blog & Guides
                   </Link>
                   <Link
                     to="/resources"
                     className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Resource Library
+                    Partner Resources
                   </Link>
                 </div>
               </details>
