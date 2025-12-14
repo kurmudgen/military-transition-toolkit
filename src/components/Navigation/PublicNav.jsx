@@ -206,8 +206,50 @@ export default function PublicNav({ currentPage = '' }) {
   )
 
   const renderResourcesDropdown = () => (
-    <div className="absolute left-0 top-full pt-2 w-56 z-50">
+    <div className="absolute left-0 top-full pt-2 w-64 z-50">
       <div className="bg-slate-800 rounded-lg shadow-xl border border-slate-700 py-2">
+        {/* Career Guides Section */}
+        <div className="px-4 py-2">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+            Career Guides
+          </div>
+          <Link
+            to="/blog?category=army-career"
+            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
+            onClick={() => setResourcesOpen(false)}
+          >
+            <span className="mr-3">🪖</span>
+            <span>Army MOS Guides</span>
+          </Link>
+          <Link
+            to="/blog?category=air-force-career"
+            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
+            onClick={() => setResourcesOpen(false)}
+          >
+            <span className="mr-3">✈️</span>
+            <span>Air Force AFSC Guides</span>
+          </Link>
+          <Link
+            to="/blog?category=navy-career"
+            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
+            onClick={() => setResourcesOpen(false)}
+          >
+            <span className="mr-3">⚓</span>
+            <span>Navy Rate Guides</span>
+          </Link>
+          <Link
+            to="/blog?category=marine-career"
+            className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
+            onClick={() => setResourcesOpen(false)}
+          >
+            <span className="mr-3">🦅</span>
+            <span>Marine Corps MOS Guides</span>
+          </Link>
+        </div>
+
+        <div className="border-t border-slate-700 my-2"></div>
+
+        {/* Additional Resources */}
         <div className="px-4 py-2">
           <Link
             to="/blog"
@@ -215,14 +257,14 @@ export default function PublicNav({ currentPage = '' }) {
             onClick={() => setResourcesOpen(false)}
           >
             <span className="mr-3">✍️</span>
-            <span>Blog & Guides</span>
+            <span>All Blog Posts</span>
           </Link>
           <Link
             to="/resources"
             className="flex items-center px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-colors"
             onClick={() => setResourcesOpen(false)}
           >
-            <span className="mr-3">🔗</span>
+            <span className="mr-3">⭐</span>
             <span>Trusted Resources</span>
           </Link>
         </div>
@@ -455,19 +497,51 @@ export default function PublicNav({ currentPage = '' }) {
                   Resources
                 </summary>
                 <div className="pl-6 space-y-1 mt-2">
+                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider px-3 py-1">
+                    Career Guides
+                  </div>
+                  <Link
+                    to="/blog?category=army-career"
+                    className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Army MOS Guides
+                  </Link>
+                  <Link
+                    to="/blog?category=air-force-career"
+                    className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Air Force AFSC Guides
+                  </Link>
+                  <Link
+                    to="/blog?category=navy-career"
+                    className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Navy Rate Guides
+                  </Link>
+                  <Link
+                    to="/blog?category=marine-career"
+                    className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Marine Corps MOS Guides
+                  </Link>
+                  <div className="border-t border-slate-700 my-2"></div>
                   <Link
                     to="/blog"
                     className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Blog & Guides
+                    All Blog Posts
                   </Link>
                   <Link
                     to="/resources"
                     className="block px-3 py-2 text-sm text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Partner Resources
+                    Trusted Resources
                   </Link>
                 </div>
               </details>
