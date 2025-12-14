@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
 import RequireProfile from './components/RequireProfile'
@@ -65,6 +65,7 @@ function App() {
           {/* Auth pages */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/register" element={<Navigate to="/signup" replace />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/auth/reset-password" element={<ResetPassword />} />
           <Route path="/auth/callback" element={<AuthCallback />} />
@@ -96,8 +97,8 @@ function App() {
           <Route path="/preview/progress" element={<Progress previewMode />} />
           <Route path="/preview/reminders" element={<Reminders previewMode />} />
 
-          {/* Demo pages (no login required, interactive with sample data) */}
-          <Route path="/demo/va-claims" element={<VAClaimsBuilder demoMode />} />
+          {/* Demo pages - redirect to guest mode */}
+          <Route path="/demo/va-claims" element={<Navigate to="/va-claims" replace />} />
 
           {/* Public VA Claims Builder (no login required, saves to localStorage) */}
           <Route path="/va-claims" element={<VAClaimsBuilder guestMode />} />
@@ -108,6 +109,16 @@ function App() {
           {/* Public informational pages (no login required) */}
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
+
+          {/* Redirects for common 404s and malformed URLs */}
+          <Route path="/contact" element={<Navigate to="/about" replace />} />
+          <Route path="/donate" element={<Navigate to="/about" replace />} />
+          <Route path="/support" element={<Navigate to="/about" replace />} />
+          <Route path="/va-claimsIf" element={<Navigate to="/va-claims" replace />} />
+          <Route path="/va-claims-builder" element={<Navigate to="/va-claims" replace />} />
+          <Route path="/signin" element={<Navigate to="/login" replace />} />
+          <Route path="/sign-up" element={<Navigate to="/signup" replace />} />
+          <Route path="/sign-in" element={<Navigate to="/login" replace />} />
 
           {/* Protected application routes with Layout */}
           <Route
