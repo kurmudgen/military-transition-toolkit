@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import UseProfileButton from '../components/UseProfileButton'
 import { getProfileData, getServiceInfo, getLocationInfo } from '../utils/profileAutoFill'
 import { isPromoModeActive } from '../utils/promoConfig'
+import PublicNav from '../components/Navigation/PublicNav'
 
 // 2025 Base Pay Data - Retirement Years Only (20-30 years)
 // Source: 2025 Active Duty Pay Table effective April 1, 2025
@@ -344,10 +345,12 @@ export default function RetirementCalculator({ publicMode = false }) {
     const basicResults = calculateRetirement()
 
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-8">
-        <div className="max-w-4xl mx-auto px-4">
-          {/* Free Features Banner */}
-          <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+        <PublicNav currentPage="/public/retirement-calculator" />
+        <div className="py-8">
+          <div className="max-w-4xl mx-auto px-4">
+            {/* Free Features Banner */}
+            <div className="mb-8 bg-gradient-to-r from-green-600 to-green-800 rounded-2xl p-8 text-white text-center shadow-2xl">
             <h2 className="text-3xl font-bold mb-4">Retirement Calculator</h2>
             <p className="text-xl text-green-100 mb-2">
               100% Free for All Servicemembers and Veterans
@@ -639,6 +642,7 @@ export default function RetirementCalculator({ publicMode = false }) {
             </div>
           </div>
 
+          </div>
         </div>
       </div>
     )
