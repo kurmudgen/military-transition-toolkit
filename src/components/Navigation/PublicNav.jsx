@@ -223,7 +223,7 @@ export default function PublicNav({ currentPage = '' }) {
             onClick={() => setResourcesOpen(false)}
           >
             <span className="mr-3">🔗</span>
-            <span>Partner Resources</span>
+            <span>Trusted Resources</span>
           </Link>
         </div>
       </div>
