@@ -28,7 +28,8 @@
       "Bash(nul)",
       "Bash(python generate_js_files.py:*)",
       "Bash(dir /s /b srcdata*career* srcutils*career* srchooks*career* 2)",
-      "Bash(node test-translator.js:*)"
+      "Bash(node test-translator.js:*)",
+      "Bash(npm audit:*)"
     ],
     "deny": [],
     "ask": []
