@@ -1,4 +1,4 @@
-import { supabase, getCurrentUser, isPremiumUser } from '../lib/supabase'
+import { supabase, getCurrentUser } from '../lib/supabase'
 
 /**
  * Job Service
@@ -33,14 +33,7 @@ export const saveJob = async (jobData) => {
   const user = await getCurrentUser()
   if (!user) throw new Error('No authenticated user')
 
-  // Check if user is free tier and has reached limit
-  const isPremium = await isPremiumUser()
-  if (!isPremium) {
-    const existingJobs = await getSavedJobs()
-    if (existingJobs.length >= 5) {
-      throw new Error('Free tier users can save up to 5 jobs. Upgrade to Premium for unlimited saved jobs.')
-    }
-  }
+  // All features free - no limits on saved jobs
 
   const { data, error } = await supabase
     .from('saved_jobs')

@@ -1,4 +1,4 @@
-import { supabase, getCurrentUser, isPremiumUser } from '../lib/supabase'
+import { supabase, getCurrentUser } from '../lib/supabase'
 import { auditService } from './auditService'
 
 /**
@@ -79,14 +79,7 @@ export const createResume = async (resumeData) => {
   const user = await getCurrentUser()
   if (!user) throw new Error('No authenticated user')
 
-  // Check if user is free tier and already has a resume
-  const isPremium = await isPremiumUser()
-  if (!isPremium) {
-    const existingResumes = await getAllResumes()
-    if (existingResumes.length >= 1) {
-      throw new Error('Free tier users can only create 1 resume. Upgrade to Premium for unlimited resumes.')
-    }
-  }
+  // All features free - no limits on resumes
 
   const { data, error } = await supabase
     .from('resumes')

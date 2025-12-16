@@ -222,7 +222,12 @@ export default function Layout() {
               Built by veterans, for veterans • 100% privacy-focused • Open and honest
             </p>
             <p className="text-slate-500 text-xs">
-              © 2025 Military Transition Toolkit | Not affiliated with or endorsed by the U.S. Department of Defense
+              © 2025 Military Transition Toolkit
+            </p>
+            <p className="text-slate-600 text-xs mt-2 max-w-2xl mx-auto">
+              This website is not affiliated with, endorsed by, or connected to the U.S. Department of Defense,
+              Department of Veterans Affairs, or any government agency. Information provided is for educational
+              purposes only. Always verify with official sources and consult accredited professionals.
             </p>
           </div>
         </div>

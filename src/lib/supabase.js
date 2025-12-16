@@ -35,20 +35,11 @@ export const getCurrentUser = async () => {
   return user
 }
 
-// Helper function to check if user is premium
+// All features are free - returns true for any authenticated user
 export const isPremiumUser = async () => {
   if (!supabase) return false
   const user = await getCurrentUser()
-  if (!user) return false
-
-  const { data } = await supabase
-    .from('user_subscriptions')
-    .select('status, plan_id')
-    .eq('user_id', user.id)
-    .eq('status', 'active')
-    .single()
-
-  return !!data
+  return !!user // All authenticated users have full access
 }
 
 // Helper function to get user's subscription details

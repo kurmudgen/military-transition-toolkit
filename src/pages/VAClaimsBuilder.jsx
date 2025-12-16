@@ -886,9 +886,9 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
 
   // Helper function to save condition to database
   const saveConditionToDatabase = async (conditionName, details, isNew = false) => {
-    // In demo mode, show upgrade prompt instead of saving
+    // In demo mode, prompt user to create free account
     if (demoMode) {
-      alert('Sign up to save your claims permanently!\n\nDemo mode lets you try the tool, but your data won\'t be saved. Create a free account to save your VA claims securely in the cloud.')
+      alert('Create a free account to save your claims!\n\nDemo mode lets you try the tool, but your data won\'t be saved. Sign up free to save your VA claims securely.')
       return
     }
 
@@ -1697,6 +1697,34 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
           </p>
         </div>
 
+        {/* VSO Guidance Section */}
+        <div className="bg-blue-900/50 border border-blue-500 rounded-lg p-4 mb-6">
+          <h3 className="text-lg font-semibold text-blue-300 mb-2">
+            📋 Important: Before Filing Your VA Claim
+          </h3>
+          <ul className="space-y-2 text-gray-300">
+            <li>
+              <strong className="text-white">✓ Use a FREE Veterans Service Organization (VSO)</strong><br/>
+              <span className="text-sm">VFW, DAV, American Legion, and others provide free accredited help with claims.</span>
+            </li>
+            <li>
+              <strong className="text-white">✓ NEVER pay for help with an initial claim</strong><br/>
+              <span className="text-sm">VSOs do this for free. Paying is unnecessary and often predatory.</span>
+            </li>
+            <li>
+              <strong className="text-white">✓ Only use VA-accredited professionals</strong><br/>
+              <span className="text-sm">If you ever need paid help (appeals, complex cases), verify accreditation at{' '}
+                <a href="https://www.va.gov/ogc/apps/accreditation/index.asp" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">
+                  va.gov/ogc/apps/accreditation
+                </a>
+              </span>
+            </li>
+          </ul>
+          <p className="text-sm text-gray-400 mt-3">
+            This tool helps you organize your claim - it does NOT replace free VSO assistance.
+          </p>
+        </div>
+
         {/* Demo Banner or Privacy Warning */}
         {demoMode ? (
           <div className="mb-6 p-6 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg shadow-lg border-2 border-purple-400">
@@ -2425,6 +2453,21 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
 
                               {/* Nexus Letter */}
                               <div className="mb-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                                {/* Nexus Letter Info Box */}
+                                <div className="mb-3 p-3 bg-amber-50 border border-amber-200 rounded text-sm">
+                                  <p className="font-semibold text-amber-800 mb-1">ℹ️ Do You Need a Nexus Letter?</p>
+                                  <p className="text-amber-700 text-xs mb-2">
+                                    <strong>You MAY need one if:</strong> Service records don't clearly document the condition,
+                                    you're claiming a secondary condition, or the connection to service isn't obvious.
+                                  </p>
+                                  <p className="text-amber-700 text-xs mb-2">
+                                    <strong>You likely DON'T need one if:</strong> Condition is well-documented in service records
+                                    or it's a presumptive condition (Agent Orange, burn pits, etc.).
+                                  </p>
+                                  <p className="text-amber-600 text-xs">
+                                    ⚠️ <strong>Ask your VSO before paying for a nexus letter</strong> - they can tell you if you actually need one.
+                                  </p>
+                                </div>
                                 <div className="flex items-start">
                                   <input
                                     type="checkbox"
@@ -2494,6 +2537,16 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
 
                               {/* Buddy Statements */}
                               <div className="mb-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                                {/* Buddy Statement Info Box */}
+                                <div className="mb-3 p-3 bg-green-50 border border-green-200 rounded text-sm">
+                                  <p className="font-semibold text-green-800 mb-1">ℹ️ What is a Buddy Statement?</p>
+                                  <p className="text-green-700 text-xs mb-2">
+                                    A written statement from someone who witnessed your condition, injury, or its effects.
+                                    <strong> Cost: FREE</strong> - these are just personal statements, not paid services.
+                                  </p>
+                                  <p className="text-green-700 text-xs mb-1"><strong>Good for:</strong> Verifying incidents not fully documented, describing symptoms others observed, supporting conditions that developed over time.</p>
+                                  <p className="text-green-700 text-xs"><strong>Who can write one:</strong> Fellow service members, family members who witnessed symptoms, anyone with firsthand knowledge.</p>
+                                </div>
                                 <label className="block font-semibold text-gray-900 mb-2">Buddy Statements</label>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                                   <div>

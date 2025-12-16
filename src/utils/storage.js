@@ -3,40 +3,8 @@ import { supabase } from '../lib/supabase'
 /**
  * Storage Utility Functions
  * Handles data persistence with localStorage for public features
- * and Supabase for premium features
+ * and Supabase for logged-in users (all features free)
  */
-
-/**
- * Verify subscription server-side (SECURITY: prevents client-side bypass)
- * @returns {Promise<Object>} - { hasActiveSubscription, tier, status }
- */
-async function verifySubscriptionServerSide() {
-  try {
-    const { data: { session } } = await supabase.auth.getSession()
-
-    if (!session?.access_token) {
-      return { hasActiveSubscription: false, tier: 'free', status: 'none' }
-    }
-
-    const response = await fetch('/api/verify-subscription', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${session.access_token}`,
-        'Content-Type': 'application/json'
-      }
-    })
-
-    if (!response.ok) {
-      throw new Error('Subscription verification failed')
-    }
-
-    return await response.json()
-  } catch (error) {
-    console.error('Subscription verification error:', error)
-    // Fail closed - if we can't verify, assume no subscription
-    return { hasActiveSubscription: false, tier: 'free', status: 'error' }
-  }
-}
 
 /**
  * Public tables that use localStorage
@@ -52,7 +20,7 @@ const PUBLIC_TABLES = [
 /**
  * Save data with appropriate storage backend
  * - Public tools use localStorage
- * - Premium features require subscription and use Supabase
+ * - Logged-in users get free cloud storage via Supabase
  *
  * @param {string} table - Table/storage key name
  * @param {Object|Array} data - Data to save
@@ -81,7 +49,7 @@ export const saveData = async (table, data, user = null) => {
         return {
           success: false,
           error: 'localStorage_quota_exceeded',
-          message: 'Browser storage is full. Upgrade to Premium for unlimited cloud storage.'
+          message: 'Browser storage is full. Please clear some browser data or create an account for free cloud storage.'
         }
       }
       return {
@@ -92,19 +60,7 @@ export const saveData = async (table, data, user = null) => {
     }
   }
 
-  // Premium features require subscription (server-side verification)
-  const subscriptionStatus = await verifySubscriptionServerSide()
-  if (!subscriptionStatus.hasActiveSubscription) {
-    return {
-      success: false,
-      error: 'subscription_required',
-      message: 'Upgrade to Premium to save your data to the cloud',
-      upgradeUrl: '/pricing',
-      currentTier: subscriptionStatus.tier
-    }
-  }
-
-  // Save to Supabase for premium users
+  // Save to Supabase for logged-in users (all features free)
   try {
     // Get user from session (server-verified)
     const { data: { session } } = await supabase.auth.getSession()
@@ -185,18 +141,7 @@ export const loadData = async (table, user = null) => {
     }
   }
 
-  // Premium features require subscription (server-side verification)
-  const subscriptionStatus = await verifySubscriptionServerSide()
-  if (!subscriptionStatus.hasActiveSubscription) {
-    return {
-      success: false,
-      error: 'subscription_required',
-      message: 'Upgrade to Premium to access your saved data',
-      currentTier: subscriptionStatus.tier
-    }
-  }
-
-  // Load from Supabase for premium users
+  // Load from Supabase for logged-in users (all features free)
   try {
     // Get user from session (server-verified)
     const { data: { session } } = await supabase.auth.getSession()
@@ -261,18 +206,7 @@ export const deleteData = async (table, id = null, user = null) => {
     }
   }
 
-  // Premium features require subscription (server-side verification)
-  const subscriptionStatus = await verifySubscriptionServerSide()
-  if (!subscriptionStatus.hasActiveSubscription) {
-    return {
-      success: false,
-      error: 'subscription_required',
-      message: 'Upgrade to Premium to manage your data',
-      currentTier: subscriptionStatus.tier
-    }
-  }
-
-  // Delete from Supabase for premium users
+  // Delete from Supabase for logged-in users (all features free)
   try {
     // Get user from session (server-verified)
     const { data: { session } } = await supabase.auth.getSession()
