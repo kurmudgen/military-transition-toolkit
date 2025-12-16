@@ -91,7 +91,7 @@ export default function AIAssistant() {
       ]
     }
     return tips[path] || [
-      'All your data stays on your device - we have zero access',
+      'Your data is securely stored in your account',
       'Export backups regularly from the Settings page',
       'Use the search in Resources to find specific information'
     ]

@@ -22,7 +22,7 @@ export default function Privacy() {
                 <strong className="text-white">Your privacy is our foundation.</strong>
               </p>
               <p>
-                Military Transition Toolkit is built with military-grade security and end-to-end encryption. We use zero-knowledge architecture, which means we cannot read your data even if we wanted to. Your information is encrypted on your device before it reaches our servers, and only you have the decryption keys.
+                Military Transition Toolkit protects your data with industry-standard security measures. Your information is stored securely in our cloud database with encryption at rest (AES-256), encrypted connections (HTTPS/TLS), and row-level security ensuring only you can access your data.
               </p>
             </section>
 
@@ -51,12 +51,12 @@ export default function Privacy() {
               <div className="bg-green-900/20 border-l-4 border-green-500 rounded p-4 mb-4">
                 <h3 className="text-lg font-semibold text-white mb-2">🔒 Data Isolation & Privacy</h3>
                 <p className="text-sm mb-2">
-                  Every user's data is completely isolated at the database level. Even our own administrators cannot access your personal information, VA claims, medical records, or any sensitive data without explicit permission.
+                  Every user's data is isolated at the database level through row-level security (RLS). This means database queries automatically filter to show only your data.
                 </p>
                 <ul className="text-sm space-y-1 ml-4 list-disc">
-                  <li>Zero cross-user data access (enforced at database level)</li>
-                  <li>Your medical records and VA claims are protected by HIPAA-grade security</li>
+                  <li>Row-level security prevents cross-user data access</li>
                   <li>We never sell or share your personal data with third parties</li>
+                  <li><strong>Important:</strong> This is a planning tool, not a medical records system. Do not store detailed protected health information.</li>
                 </ul>
               </div>
             </section>
@@ -75,16 +75,15 @@ export default function Privacy() {
               </div>
 
               <div className="mb-6">
-                <h3 className="text-xl font-semibold text-white mb-3">What We DON'T Collect</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">What We DON'T Collect or Sell</h3>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Your decrypted personal data (we mathematically cannot access it)</li>
-                  <li>Detailed military service records</li>
-                  <li>Financial calculations or amounts</li>
-                  <li>Content of your disability claims or medical information</li>
-                  <li>Specific appointment details or calendar entries</li>
                   <li>Device identifiers or precise location data</li>
                   <li>Behavioral tracking across other websites</li>
+                  <li>We never sell any user data to third parties</li>
                 </ul>
+                <p className="mt-3 text-sm text-yellow-400">
+                  <strong>Note:</strong> Data you enter (VA claims, appointments, notes) is stored in our database. Use this as a planning tool - we recommend NOT entering detailed medical records or sensitive health information.
+                </p>
               </div>
             </section>
 
@@ -114,30 +113,22 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">4. Data Security</h2>
               <p className="mb-4">
-                We implement industry-leading security practices to protect your information:
+                We implement industry-standard security practices to protect your information:
               </p>
 
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <span className="text-green-400 flex-shrink-0">✓</span>
                   <div>
-                    <strong className="text-white">End-to-End Encryption:</strong>
-                    <span className="text-sm block">Your data is encrypted on your device using AES-256 encryption before being sent to our servers. We never have access to your unencrypted data.</span>
+                    <strong className="text-white">Encryption at Rest (AES-256):</strong>
+                    <span className="text-sm block">Your data is encrypted in our database using AES-256 encryption, the same standard used by banks and government agencies.</span>
                   </div>
                 </div>
 
                 <div className="flex gap-3">
                   <span className="text-green-400 flex-shrink-0">✓</span>
                   <div>
-                    <strong className="text-white">Zero-Knowledge Architecture:</strong>
-                    <span className="text-sm block">Your encryption keys are derived from your password and never leave your device. We cannot decrypt your data even if compelled by law enforcement.</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-3">
-                  <span className="text-green-400 flex-shrink-0">✓</span>
-                  <div>
-                    <strong className="text-white">HTTPS/TLS Encryption:</strong>
+                    <strong className="text-white">HTTPS/TLS Encryption in Transit:</strong>
                     <span className="text-sm block">All connections use SSL/TLS encryption to prevent eavesdropping during transmission.</span>
                   </div>
                 </div>
@@ -145,16 +136,24 @@ export default function Privacy() {
                 <div className="flex gap-3">
                   <span className="text-green-400 flex-shrink-0">✓</span>
                   <div>
-                    <strong className="text-white">Secure Cloud Storage:</strong>
-                    <span className="text-sm block">Encrypted data is stored in SOC 2 compliant data centers with physical and network security.</span>
+                    <strong className="text-white">Row-Level Security:</strong>
+                    <span className="text-sm block">Database policies ensure you can only access your own data. Other users cannot see your information.</span>
                   </div>
                 </div>
 
                 <div className="flex gap-3">
                   <span className="text-green-400 flex-shrink-0">✓</span>
                   <div>
-                    <strong className="text-white">Regular Security Audits:</strong>
-                    <span className="text-sm block">We conduct regular security reviews and promptly apply security updates.</span>
+                    <strong className="text-white">SOC 2 Compliant Infrastructure:</strong>
+                    <span className="text-sm block">Our database provider (Supabase) maintains SOC 2 Type II certification with regular security audits.</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3">
+                  <span className="text-green-400 flex-shrink-0">✓</span>
+                  <div>
+                    <strong className="text-white">Secure Authentication:</strong>
+                    <span className="text-sm block">Passwords are hashed (never stored in plain text) and we support secure session management.</span>
                   </div>
                 </div>
               </div>
@@ -198,7 +197,7 @@ export default function Privacy() {
 
                 <div className="bg-slate-900/50 rounded-lg p-4">
                   <h3 className="font-semibold text-white mb-2">Right to Privacy</h3>
-                  <p className="text-sm">Zero-knowledge encryption ensures complete privacy - we cannot access your data</p>
+                  <p className="text-sm">Row-level security and encryption protect your data from unauthorized access</p>
                 </div>
               </div>
             </section>
@@ -226,10 +225,10 @@ export default function Privacy() {
                 <div className="bg-slate-900/50 rounded-lg p-4">
                   <h3 className="font-semibold text-white mb-2">Cloud Storage Provider (Supabase)</h3>
                   <p className="text-sm mb-2">
-                    Purpose: Store encrypted user data securely
+                    Purpose: Store user data securely with encryption at rest
                   </p>
                   <p className="text-sm">
-                    What they store: Your encrypted data (unreadable without your keys), account metadata
+                    What they store: Your account data, transition planning data, protected by row-level security
                   </p>
                 </div>
               </div>
@@ -281,7 +280,7 @@ export default function Privacy() {
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li><strong className="text-white">GDPR (European Union):</strong> We use privacy-by-design principles and provide full data control rights</li>
                 <li><strong className="text-white">CCPA (California):</strong> We don't sell personal information and provide full transparency</li>
-                <li><strong className="text-white">Other Jurisdictions:</strong> Our end-to-end encryption model exceeds most privacy requirements globally</li>
+                <li><strong className="text-white">Other Jurisdictions:</strong> Our security measures meet or exceed most privacy requirements globally</li>
               </ul>
             </section>
 
@@ -292,9 +291,9 @@ export default function Privacy() {
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>We will notify affected users within 72 hours</li>
-                <li>Your encrypted data remains protected by your encryption keys</li>
+                <li>Data encrypted at rest provides an additional layer of protection</li>
                 <li>We will provide clear guidance on any necessary actions</li>
-                <li>Zero-knowledge encryption means your personal data cannot be decrypted even in a breach</li>
+                <li>We recommend changing your password if notified of a breach</li>
               </ul>
             </section>
 
@@ -328,12 +327,12 @@ export default function Privacy() {
                   <strong className="text-white">In Plain English:</strong>
                 </p>
                 <ul className="space-y-2 text-sm">
-                  <li>✓ End-to-end encrypted cloud storage - we mathematically cannot decrypt your data</li>
-                  <li>✓ Zero-knowledge architecture protects your privacy</li>
+                  <li>✓ Your data is stored securely in our cloud database with AES-256 encryption</li>
+                  <li>✓ Row-level security ensures only you can access your data</li>
                   <li>✓ We only track anonymous page views for site improvement</li>
-                  <li>✓ You have complete control over your information</li>
+                  <li>✓ You have complete control over your information - export or delete anytime</li>
                   <li>✓ We'll never sell your data - 100% free for all servicemembers and veterans</li>
-                  <li>✓ Military-grade security protects your transition planning</li>
+                  <li>✓ This is a planning tool - don't store detailed medical records here</li>
                   <li>✓ 100% free - optional donations welcome but never required</li>
                 </ul>
               </div>

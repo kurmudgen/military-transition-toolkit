@@ -1687,7 +1687,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
             How Do I Organize My VA Disability Claim Evidence?
           </p>
           <p>
-            Track your claimed conditions, upload medical records, manage C&P exam appointments, and organize nexus letters in one place. We don't file claims for you - we give you the tools to file them yourself, with confidence.
+            Track your claimed conditions, organize evidence notes, manage C&P exam appointments, and plan nexus letters in one place. We don't file claims for you - we give you the tools to file them yourself, with confidence.
           </p>
           <p>
             Think of this like TurboTax for VA claims. TurboTax doesn't file your taxes FOR you - it helps YOU file them correctly. Our VA Claims Tracker does the same: it's a software tool that organizes your evidence, tracks deadlines, and ensures you don't miss critical steps.
@@ -1751,7 +1751,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
                 <h3 className="text-sm font-medium text-blue-800">Privacy & Security</h3>
                 <div className="mt-2 text-sm text-blue-700">
                   <p>
-                    🔒 Your sensitive medical and personal information is <strong>securely stored in the cloud</strong> with bank-level encryption. Your data is <strong>automatically backed up</strong> and accessible from any device. We use row-level security to ensure complete data isolation - only you can access your VA claims information.
+                    🔒 Your data is <strong>securely stored in the cloud</strong> with AES-256 encryption and row-level security. <strong>Important:</strong> This is a planning tool - we recommend tracking claim status and notes here, but keeping detailed medical records in HIPAA-compliant systems.
                   </p>
                 </div>
               </div>

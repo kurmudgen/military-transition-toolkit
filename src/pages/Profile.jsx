@@ -671,7 +671,7 @@ export default function Profile() {
             <div>
               <p className="text-blue-900 dark:text-blue-300 text-sm font-semibold">Privacy First</p>
               <p className="text-blue-800 dark:text-blue-400 text-sm">
-                All profile data is stored locally on your device. We have zero access to your information. Your data never leaves your computer.
+                Your profile is securely stored in your account with AES-256 encryption. Only you can access your profile data through the app.
               </p>
             </div>
           </div>

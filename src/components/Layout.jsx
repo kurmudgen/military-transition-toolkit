@@ -103,10 +103,10 @@ export default function Layout() {
           <div className="text-center mb-8">
             <p className="text-slate-300 text-sm mb-2 flex items-center justify-center gap-2 flex-wrap">
               <span className="text-lg">🔒</span>
-              <strong>Your Privacy:</strong> End-to-end encrypted cloud storage
+              <strong>Your Privacy:</strong> Secure cloud storage with AES-256 encryption
             </p>
             <p className="text-slate-400 text-xs">
-              Military-grade encryption • Secure cloud backup • Access from any device
+              AES-256 encryption • Secure cloud backup • Access from any device
             </p>
           </div>
 

@@ -391,7 +391,7 @@ export default function AppointmentsTracking({ previewMode = false }) {
               <h3 className="text-sm font-medium text-blue-800">Privacy & Security</h3>
               <div className="mt-2 text-sm text-blue-700">
                 <p>
-                  🔒 Your medical appointments and health information are <strong>securely stored in the cloud</strong> with bank-level encryption. Your data is <strong>automatically backed up</strong> and accessible from any device. We use row-level security to ensure only you can access your appointments.
+                  🔒 Your appointments are <strong>securely stored in the cloud</strong> with AES-256 encryption and row-level security. <strong>Important:</strong> Use this to track appointment dates and notes - keep detailed medical records in HIPAA-compliant systems.
                 </p>
               </div>
             </div>

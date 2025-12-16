@@ -434,17 +434,17 @@ export default function Landing() {
             Military-Grade Privacy & Security
           </h2>
           <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
-            Your data is protected with end-to-end encryption and zero-knowledge architecture.
-            We mathematically cannot access your information - only you hold the keys.
+            Your data is protected with AES-256 encryption at rest, secure HTTPS connections,
+            and row-level security ensuring only you can access your information.
           </p>
           <div className="grid md:grid-cols-3 gap-4 text-left max-w-2xl mx-auto">
             <div className="flex gap-2">
               <span className="text-green-400">✓</span>
-              <span className="text-slate-300 text-sm">End-to-end encryption</span>
+              <span className="text-slate-300 text-sm">AES-256 encryption</span>
             </div>
             <div className="flex gap-2">
               <span className="text-green-400">✓</span>
-              <span className="text-slate-300 text-sm">Zero-knowledge security</span>
+              <span className="text-slate-300 text-sm">Row-level security</span>
             </div>
             <div className="flex gap-2">
               <span className="text-green-400">✓</span>

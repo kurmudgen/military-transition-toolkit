@@ -43,7 +43,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                Yes! All users get secure cloud backup with military-grade encryption. Your data is automatically backed up and protected. Only you can access your information - we use zero-knowledge encryption so even we can't read your data.
+                Yes! All users get secure cloud backup with AES-256 encryption at rest. Your data is automatically backed up and protected. Row-level security ensures only you can access your information.
               </div>
             </details>
 
@@ -60,8 +60,8 @@ export default function FAQ() {
                 <ul className="list-disc list-inside mt-2 space-y-1">
                   <li>Encrypted at rest in secure cloud storage (AES-256)</li>
                   <li>HTTPS/TLS encryption in transit</li>
-                  <li>Zero-knowledge architecture (we can't read your data)</li>
                   <li>Row-level security (only you can access your data)</li>
+                  <li>SOC 2 Type II certified infrastructure (Supabase)</li>
                   <li>Regular security audits and updates</li>
                 </ul>
               </div>
@@ -76,7 +76,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                <p><strong>All users:</strong> Your data is stored in our secure cloud database with bank-level encryption (AES-256). Your data is protected by row-level security, ensuring only you can access your information. We use zero-knowledge architecture, meaning we cannot decrypt or read your personal information.</p>
+                <p><strong>All users:</strong> Your data is stored in our secure cloud database with AES-256 encryption at rest. Your data is protected by row-level security, ensuring only you can access your information through the app.</p>
               </div>
             </details>
 
@@ -89,7 +89,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                <strong>All users:</strong> Your data is automatically backed up to the cloud. Sign in from any device to restore your information. However, if you forget your login credentials and don't have recovery options set up, we cannot recover your data due to our zero-knowledge encryption.
+                <strong>All users:</strong> Your data is automatically backed up to the cloud. Sign in from any device to restore your information. If you forget your login credentials, use the password reset feature to regain access.
               </div>
             </details>
 
@@ -184,7 +184,7 @@ export default function FAQ() {
                 </svg>
               </summary>
               <div className="p-4 pt-0 text-slate-300">
-                We use bank-level encryption with zero-knowledge architecture, which means we literally cannot read your data even if we wanted to. Your data is encrypted in our database with row-level security, and only you have access to your information. All data is transmitted over HTTPS/TLS and stored with AES-256 encryption.
+                We use industry-standard security: AES-256 encryption at rest, HTTPS/TLS encryption in transit, and row-level security ensuring only you can access your data through the app. We never sell your data, and we're veteran-owned so we understand the sensitivity of transition planning information. This is a planning tool - we recommend not storing detailed medical records here.
               </div>
             </details>
 
