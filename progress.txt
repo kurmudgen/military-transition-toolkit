@@ -1,0 +1,83 @@
+# Blog Post Generation Progress
+
+Started: 2025-12-17
+Target: 50 VA Claims & Military Transition Blog Posts
+
+## Status Legend
+- [x] = Completed
+- [-] = Already Exists
+- [ ] = To Be Created
+
+## BATCH 1: VA CLAIMS CONDITION GUIDES (15 posts)
+
+1. [-] va-rating-sleep-apnea-guide.md - EXISTS as va-disability-sleep-apnea-rating-guide.md
+2. [-] va-rating-anxiety-guide.md - EXISTS as va-disability-generalized-anxiety-disorder-rating-guide.md
+3. [-] va-rating-depression-guide.md - EXISTS as va-disability-major-depressive-disorder-rating-guide.md
+4. [-] va-rating-gerd-acid-reflux-guide.md - EXISTS as va-disability-gerd-rating-guide.md
+5. [-] va-rating-hip-pain-guide.md - EXISTS as va-disability-hip-conditions-rating-guide.md
+6. [-] va-rating-neck-pain-cervical-spine.md - EXISTS as va-disability-cervical-strain-rating-guide.md
+7. [-] va-rating-sinusitis-rhinitis-guide.md - EXISTS as va-disability-sinusitis-rhinitis-rating-guide.md
+8. [-] va-rating-hypertension-guide.md - EXISTS as va-disability-hypertension-rating-guide.md
+9. [-] va-rating-diabetes-guide.md - EXISTS as va-disability-diabetes-type-2-rating-guide.md
+10. [-] va-rating-scars-guide.md - EXISTS as va-disability-scars-rating-guide.md
+11. [-] va-rating-radiculopathy-guide.md - EXISTS as va-disability-radiculopathy-rating-guide.md
+12. [-] va-rating-carpal-tunnel-guide.md - EXISTS as va-disability-carpal-tunnel-syndrome-rating-guide.md
+13. [-] va-rating-erectile-dysfunction-guide.md - EXISTS as va-disability-erectile-dysfunction-rating-guide.md
+14. [-] va-rating-irritable-bowel-syndrome.md - EXISTS as va-disability-irritable-bowel-syndrome-rating-guide.md
+15. [-] va-secondary-conditions-guide.md - EXISTS as va-secondary-conditions-guide-2025.md
+
+## BATCH 2: C&P EXAM GUIDES (10 posts)
+
+16. [-] cp-exam-ptsd-mental-health-guide.md - EXISTS as cp-exam-ptsd-what-to-expect-preparation.md
+17. [-] cp-exam-back-pain-spine-guide.md - EXISTS as cp-exam-back-pain-musculoskeletal-guide.md
+18. [ ] cp-exam-knee-conditions-guide.md - TO BE CREATED
+19. [-] cp-exam-sleep-apnea-guide.md - EXISTS as cp-exam-sleep-apnea-dbq-questions.md
+20. [ ] cp-exam-general-tips-veterans.md - TO BE CREATED
+21. [ ] cp-exam-what-to-bring-checklist.md - TO BE CREATED
+22. [ ] cp-exam-mistakes-to-avoid.md - TO BE CREATED
+23. [ ] cp-exam-dbq-forms-explained.md - TO BE CREATED
+
+## BATCH 3: VA CLAIMS PROCESS (10 posts)
+
+24. [ ] va-claim-intent-to-file-guide.md
+25. [ ] va-claim-fully-developed-claims-guide.md
+26. [ ] va-claim-buddy-statements-guide.md
+27. [ ] va-claim-personal-statement-guide.md
+28. [ ] va-claim-nexus-letter-how-to-get.md
+29. [ ] va-claim-denial-appeal-guide.md
+30. [ ] va-claim-higher-level-review-guide.md
+31. [ ] va-claim-supplemental-claim-guide.md
+32. [ ] va-claim-board-veterans-appeals-guide.md
+33. [ ] va-claim-effective-date-backpay-guide.md
+
+## BATCH 4: MILITARY TRANSITION (10 posts)
+
+34. [ ] military-transition-timeline-checklist.md
+35. [ ] military-transition-resume-writing-guide.md
+36. [ ] military-transition-interview-tips.md
+37. [ ] military-transition-networking-strategies.md
+38. [ ] military-transition-linkedin-optimization.md
+39. [ ] military-transition-salary-negotiation.md
+40. [ ] military-transition-security-clearance-jobs.md
+41. [ ] military-transition-federal-hiring-guide.md
+42. [ ] military-transition-gi-bill-comparison.md
+43. [ ] military-transition-voc-rehab-guide.md
+
+## BATCH 5: SPECIALIZED TOPICS (7 posts)
+
+44. [ ] va-tdiu-total-disability-individual-unemployability.md
+45. [ ] va-special-monthly-compensation-guide.md
+46. [ ] va-combined-rating-calculator-explained.md
+47. [ ] va-pact-act-burn-pit-claims-guide.md
+48. [ ] va-presumptive-conditions-complete-list.md
+49. [ ] va-mst-military-sexual-trauma-claims.md
+50. [ ] va-mental-health-increase-rating-guide.md
+
+## Progress Summary
+
+Posts Already Existing: 17
+Posts To Create: 33
+Posts Completed: 0
+Total Target: 50
+
+Last Updated: 2025-12-17
