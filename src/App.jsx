@@ -11,7 +11,7 @@ import Landing from './pages/Landing'
 import GettingStarted from './pages/GettingStarted'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
-import ResourcesPartners from './pages/ResourcesPartners'
+// ResourcesPartners replaced by full Resources library for all users
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import TerminalLeaveCalculator from './pages/TerminalLeaveCalculator'
@@ -60,7 +60,7 @@ function App() {
           <Route path="/getting-started" element={<GettingStarted />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/resources" element={<ResourcesPartners />} />
+          <Route path="/resources" element={<Resources />} />
 
           {/* Auth pages */}
           <Route path="/login" element={<Login />} />
