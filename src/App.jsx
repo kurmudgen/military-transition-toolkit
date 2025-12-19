@@ -15,6 +15,7 @@ import Privacy from './pages/Privacy'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import TerminalLeaveCalculator from './pages/TerminalLeaveCalculator'
+import VACombinedRatingCalculator from './pages/VACombinedRatingCalculator'
 
 // Auth pages
 import Login from './pages/auth/Login'
@@ -76,6 +77,8 @@ function App() {
 
           {/* Calculator pages (public access) */}
           <Route path="/calculator/terminal-leave" element={<TerminalLeaveCalculator />} />
+          <Route path="/calculator/va-combined-rating" element={<VACombinedRatingCalculator />} />
+          <Route path="/calculator/va-disability" element={<VACombinedRatingCalculator />} />
 
           {/* State Benefits Tool (public access - browsing free, saving requires account) */}
           <Route path="/state-benefits" element={<StateBenefitsIndex />} />
