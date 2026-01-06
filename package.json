@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-blog-index": "node scripts/generate-blog-index.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "generate-all": "npm run generate-blog-index && npm run generate-sitemap"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

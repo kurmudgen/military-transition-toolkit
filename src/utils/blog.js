@@ -7109,6 +7109,16 @@ const blogPosts = [
     "category": "Entrepreneurship"
   },
   {
+    "slug": "va-combined-rating-math-explained",
+    "title": "How VA Combined Ratings Work (It's Not Simple Addition)",
+    "date": "2025-12-18",
+    "description": "Complete guide to VA disability math and combined ratings. Learn why 50% + 30% doesn't equal 80%, how the bilateral factor works, and how to calculate your actual rating.",
+    "keywords": "VA math, VA combined rating, VA disability calculator, how VA calculates ratings, bilateral factor, whole person concept",
+    "excerpt": "",
+    "category": "VA Claims",
+    "branch": "Navy"
+  },
+  {
     "slug": "how-to-become-government-contractor-veteran",
     "title": "How to Become a Government Contractor: Complete Veterans Guide to Defense Contracting",
     "date": "2025-12-17",
