@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/getting-started",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
