@@ -37,7 +37,7 @@ export default function Landing() {
         </h1>
 
         <p className="text-xl text-slate-300 mb-6 max-w-3xl mx-auto">
-          Don't leave money on the table. Get organized, file winning VA claims, and plan your future with confidence.
+          For active duty, separating service members, and veterans. Get organized, file winning VA claims, and plan your future with confidence.
         </p>
 
         {/* Situation Selector */}
@@ -62,11 +62,11 @@ export default function Landing() {
             </button>
             <button
               onClick={() => document.getElementById('already-veteran')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-5 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-blue-500 text-white font-medium rounded-lg transition-all flex items-center gap-2 group"
+              className="px-5 py-3 bg-blue-900/50 hover:bg-blue-800/60 border border-blue-500 hover:border-blue-400 text-white font-medium rounded-lg transition-all flex items-center gap-2 group"
             >
-              <span className="text-blue-400">🏠</span>
-              <span>Already a Veteran</span>
-              <span className="text-slate-500 group-hover:text-blue-400 transition-colors">→</span>
+              <span className="text-blue-400">🎗️</span>
+              <span>Veteran (Already Out)</span>
+              <span className="text-blue-400 group-hover:text-blue-300 transition-colors">→</span>
             </button>
           </div>
         </div>
