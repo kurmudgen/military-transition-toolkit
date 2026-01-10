@@ -36,9 +36,40 @@ export default function Landing() {
           Your Complete Military Transition Toolkit
         </h1>
 
-        <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
+        <p className="text-xl text-slate-300 mb-6 max-w-3xl mx-auto">
           Don't leave money on the table. Get organized, file winning VA claims, and plan your future with confidence.
         </p>
+
+        {/* Situation Selector */}
+        <div className="mb-8">
+          <p className="text-slate-400 text-sm mb-3">What's your situation?</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <button
+              onClick={() => document.getElementById('timeline-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-5 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-yellow-500 text-white font-medium rounded-lg transition-all flex items-center gap-2 group"
+            >
+              <span className="text-yellow-400">🎖️</span>
+              <span>Retiring (20+ years)</span>
+              <span className="text-slate-500 group-hover:text-yellow-400 transition-colors">→</span>
+            </button>
+            <button
+              onClick={() => document.getElementById('interactive-demo')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-5 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-green-500 text-white font-medium rounded-lg transition-all flex items-center gap-2 group"
+            >
+              <span className="text-green-400">📋</span>
+              <span>Separating (ETS/Medical)</span>
+              <span className="text-slate-500 group-hover:text-green-400 transition-colors">→</span>
+            </button>
+            <button
+              onClick={() => document.getElementById('already-veteran')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-5 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-600 hover:border-blue-500 text-white font-medium rounded-lg transition-all flex items-center gap-2 group"
+            >
+              <span className="text-blue-400">🏠</span>
+              <span>Already a Veteran</span>
+              <span className="text-slate-500 group-hover:text-blue-400 transition-colors">→</span>
+            </button>
+          </div>
+        </div>
 
         {/* Primary CTA */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
@@ -49,9 +80,13 @@ export default function Landing() {
               </Link>
             </>
           ) : (
-            <Link to="/app" className="px-10 py-5 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-xl text-xl transition-all shadow-xl hover:shadow-blue-500/25">
-              Go to Dashboard →
-            </Link>
+            <a
+              href="#interactive-demo"
+              onClick={(e) => { e.preventDefault(); document.getElementById('interactive-demo')?.scrollIntoView({ behavior: 'smooth' }); }}
+              className="px-10 py-5 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-xl text-xl transition-all shadow-xl hover:shadow-blue-500/25 cursor-pointer"
+            >
+              Try the Free Tools →
+            </a>
           )}
         </div>
 
@@ -79,6 +114,9 @@ export default function Landing() {
           </div>
         )}
       </div>
+
+      {/* Interactive Preview Section - MOVED UP for immediate visibility */}
+      <InteractivePreview />
 
       {/* Benefits Section - Outcome Focused */}
       <div className="max-w-6xl mx-auto px-4 py-12">
@@ -156,9 +194,6 @@ export default function Landing() {
           </Link>
         </div>
       </div>
-
-      {/* Interactive Preview Section */}
-      <InteractivePreview />
 
       {/* Mission & Sustainability Section */}
       <div className="max-w-4xl mx-auto px-4 py-16">
@@ -269,7 +304,7 @@ export default function Landing() {
       </div>
 
       {/* Already Separated Section */}
-      <div className="max-w-6xl mx-auto px-4 py-16">
+      <div id="already-veteran" className="max-w-6xl mx-auto px-4 py-16">
         <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 md:p-12 border-2 border-blue-600">
           <div className="text-center mb-8">
             <div className="inline-block px-4 py-2 bg-blue-600/30 text-blue-200 rounded-full text-sm font-semibold mb-4">
@@ -333,7 +368,7 @@ export default function Landing() {
 
         <div className="space-y-8">
           {/* Feature 1 */}
-          <div className="flex flex-col md:flex-row items-center gap-8 bg-white dark:bg-slate-800 rounded-lg p-8 border border-gray-200 dark:border-slate-700 shadow-lg">
+          <div id="timeline-section" className="flex flex-col md:flex-row items-center gap-8 bg-white dark:bg-slate-800 rounded-lg p-8 border border-gray-200 dark:border-slate-700 shadow-lg">
             <div className="flex-1">
               <div className="inline-block px-3 py-1 bg-blue-600/20 text-blue-400 rounded text-sm font-semibold mb-3">
                 Timeline Checklists
