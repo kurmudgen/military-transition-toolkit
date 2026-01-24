@@ -27,7 +27,7 @@ export default function Landing() {
                 Privacy
               </Link>
             </div>
-            <p>© 2025 Military Transition Toolkit</p>
+            <p>© 2026 Military Transition Toolkit</p>
           </div>
         </div>
       </footer>

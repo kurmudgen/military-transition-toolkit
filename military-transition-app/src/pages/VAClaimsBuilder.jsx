@@ -715,11 +715,6 @@ export default function VAClaimsBuilder() {
           <h1 className="text-3xl font-bold text-gray-900">
             VA Claims Builder
           </h1>
-          {isPromoActive() && (
-            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
-              🎖️ Launch Special - FREE
-            </span>
-          )}
         </div>
         <p className="text-gray-600 mb-6">
           Build comprehensive claim statements and track evidence for your VA disability application

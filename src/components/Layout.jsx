@@ -212,17 +212,12 @@ export default function Layout() {
           <div className="text-center space-y-2 pt-6 border-t border-slate-700">
             <p className="text-slate-400 text-xs flex items-center justify-center gap-2 flex-wrap">
               <span>Available on web now</span>
-              <span>•</span>
-              <span className="inline-flex items-center gap-1">
-                <span>📱</span>
-                <span className="text-blue-400 font-medium">iOS app coming Spring 2026</span>
-              </span>
             </p>
             <p className="text-slate-500 text-xs">
               Built by veterans, for veterans • 100% privacy-focused • Open and honest
             </p>
             <p className="text-slate-500 text-xs">
-              © 2025 Military Transition Toolkit
+              © 2026 Military Transition Toolkit
             </p>
             <p className="text-slate-600 text-xs mt-2 max-w-2xl mx-auto">
               This website is not affiliated with, endorsed by, or connected to the U.S. Department of Defense,

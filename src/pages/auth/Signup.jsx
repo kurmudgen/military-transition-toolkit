@@ -113,7 +113,7 @@ export default function Signup() {
             <div className="mt-3 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700 rounded-lg">
               <p className="text-green-700 dark:text-green-300 text-sm font-semibold flex items-center gap-2">
                 <span>✓</span>
-                Referred by a battle buddy! You're both Founding Members.
+                Referred by a battle buddy!
               </p>
             </div>
           )}

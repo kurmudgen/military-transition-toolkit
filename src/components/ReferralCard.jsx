@@ -96,9 +96,8 @@ export default function ReferralCard({ referralCode, referralCount }) {
           {referralCount > 0 && (
             <div className="text-right">
               <p className="text-green-400 font-semibold flex items-center gap-1">
-                ✓ Founding Member
+                ✓ Thank you for sharing!
               </p>
-              <p className="text-slate-400 text-xs">Thank you for sharing!</p>
             </div>
           )}
         </div>

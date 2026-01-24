@@ -10,7 +10,7 @@ export default function Privacy() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-slate-800 rounded-lg shadow-xl p-8 border border-slate-700">
           <h1 className="text-4xl font-bold text-white mb-4">Privacy Policy</h1>
-          <p className="text-slate-400 text-sm mb-8">Last Updated: January 2025</p>
+          <p className="text-slate-400 text-sm mb-8">Last Updated: January 2026</p>
 
           <div className="space-y-8 text-slate-300">
             <section className="bg-blue-900/20 border-l-4 border-blue-500 rounded p-6">

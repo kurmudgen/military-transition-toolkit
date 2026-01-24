@@ -482,11 +482,6 @@ export default function RetirementCalculator({ publicMode = false }) {
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
             Military Retirement Pay Calculator
           </h1>
-          {isPromoActive() && (
-            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
-              🎖️ Launch Special - FREE
-            </span>
-          )}
         </div>
         <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
           Calculate your estimated retirement pay, VA disability compensation, and total income

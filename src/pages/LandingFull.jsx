@@ -20,7 +20,7 @@ export default function Landing() {
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-full text-sm">
             <span className="text-green-400">✓</span>
-            <span className="text-slate-300">Trusted by 90+ transitioning service members</span>
+            <span className="text-slate-300">Trusted by 100+ transitioning service members</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-full text-sm">
             <span className="text-blue-400">🎖️</span>
@@ -495,7 +495,7 @@ export default function Landing() {
           {!user ? 'Ready to Take Control of Your Transition?' : 'Ready to Continue Your Transition?'}
         </h2>
         <p className="text-xl text-slate-300 mb-8">
-          Join 90+ service members who are already using MTT to plan their future.
+          Join 100+ service members who are already using MTT to plan their future.
         </p>
         {!user ? (
           <>
@@ -565,7 +565,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="border-t border-gray-200 dark:border-slate-700 pt-6 text-center text-gray-600 dark:text-slate-400 text-sm">
-            <p>© 2025 Military Transition Toolkit. All rights reserved.</p>
+            <p>© 2026 Military Transition Toolkit. All rights reserved.</p>
           </div>
         </div>
       </footer>
