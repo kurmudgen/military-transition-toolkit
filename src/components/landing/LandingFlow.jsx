@@ -28,7 +28,7 @@ export default function LandingFlow() {
       <div className="text-center max-w-2xl px-4">
         <Link
           to={user ? '/app' : '/login'}
-          className="inline-block text-slate-400 hover:text-slate-200 text-sm mb-6 transition-colors"
+          className="inline-block text-slate-300 hover:text-white text-sm mb-6 px-4 py-1.5 rounded-full bg-slate-800/60 hover:bg-slate-700/60 transition-all"
         >
           {user ? 'Go to Dashboard' : 'Log in'} &rarr;
         </Link>
