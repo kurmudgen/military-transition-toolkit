@@ -656,11 +656,6 @@ export default function RetirementCalculator({ publicMode = false }) {
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
             How Do I Calculate My Military Retirement Pay?
           </h1>
-          {isPromoModeActive() && (
-            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
-              🎖️ Launch Special - FREE
-            </span>
-          )}
         </div>
         <div className="text-gray-600 dark:text-gray-400 mb-8 space-y-3">
           <p className="text-lg">
@@ -1357,11 +1352,6 @@ export default function RetirementCalculator({ publicMode = false }) {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
             VA Disability Compensation Calculator
           </h2>
-          {isPromoModeActive() && (
-            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
-              🎖️ Launch Special - FREE
-            </span>
-          )}
         </div>
         <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
           Calculate your monthly VA disability compensation based on your rating and dependents

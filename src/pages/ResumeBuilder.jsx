@@ -607,11 +607,6 @@ export default function ResumeBuilder({ previewMode = false, guestMode = false }
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-3">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Resume Builder</h1>
-            {isPromoModeActive() && (
-              <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
-                🎖️ Launch Special - FREE
-              </span>
-            )}
           </div>
           <div className="text-gray-600 dark:text-gray-400 space-y-3">
             <p className="text-lg font-semibold text-gray-900 dark:text-white">

@@ -260,11 +260,6 @@ export default function JobSearch({ previewMode = false }) {
       <div>
         <div className="flex items-center gap-3">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Job Search</h1>
-          {isPromoModeActive() && (
-            <span className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-green-600 to-green-500 text-white text-xs font-semibold rounded-full shadow-lg">
-              🎖️ Launch Special - FREE
-            </span>
-          )}
         </div>
         <p className="mt-2 text-gray-600 dark:text-gray-300">
           Find veteran-friendly job opportunities and track your applications
