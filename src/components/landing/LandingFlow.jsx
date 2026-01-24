@@ -26,14 +26,12 @@ export default function LandingFlow() {
   if (stage === 'initial') {
     return (
       <div className="text-center max-w-2xl px-4">
-        {user && (
-          <Link
-            to="/app"
-            className="inline-block text-slate-400 hover:text-slate-200 text-sm mb-6 transition-colors"
-          >
-            Go to Dashboard &rarr;
-          </Link>
-        )}
+        <Link
+          to={user ? '/app' : '/login'}
+          className="inline-block text-slate-400 hover:text-slate-200 text-sm mb-6 transition-colors"
+        >
+          {user ? 'Go to Dashboard' : 'Log in'} &rarr;
+        </Link>
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-12">
           Getting out?
         </h1>
