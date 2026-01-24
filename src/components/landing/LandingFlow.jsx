@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
+import { useAuth } from '../../contexts/AuthContext'
 
 // Track clicks for analytics (console.log for now)
 const trackClick = (category, action) => {
@@ -9,6 +10,7 @@ const trackClick = (category, action) => {
 export default function LandingFlow() {
   const [stage, setStage] = useState('initial') // 'initial' | 'retiring' | 'separating' | 'veteran'
   const navigate = useNavigate()
+  const { user } = useAuth()
 
   const handleInitialChoice = (choice) => {
     trackClick('initial_selection', choice)
@@ -24,6 +26,14 @@ export default function LandingFlow() {
   if (stage === 'initial') {
     return (
       <div className="text-center max-w-2xl px-4">
+        {user && (
+          <Link
+            to="/app"
+            className="inline-block text-slate-400 hover:text-slate-200 text-sm mb-6 transition-colors"
+          >
+            Go to Dashboard &rarr;
+          </Link>
+        )}
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-12">
           Getting out?
         </h1>
