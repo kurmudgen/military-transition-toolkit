@@ -340,6 +340,9 @@ export default function Retirement({ publicMode = false, sampleMode = false }) {
                 Log In
               </a>
             </div>
+            <p className="text-blue-200 text-xs mt-4">
+              Free account required to save your progress
+            </p>
           </div>
 
           {/* Header */}
@@ -411,6 +414,9 @@ export default function Retirement({ publicMode = false, sampleMode = false }) {
             >
               Create Free Account
             </a>
+            <p className="text-blue-200 text-xs mt-4">
+              Free account required to save your progress
+            </p>
           </div>
         </div>
       </div>

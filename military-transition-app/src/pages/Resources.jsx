@@ -330,6 +330,9 @@ export default function Resources({ publicMode = false }) {
                 Log In
               </a>
             </div>
+            <p className="text-blue-200 text-xs mt-4">
+              Free account required to save favorites and add resources
+            </p>
           </div>
         </div>
       )}
@@ -491,12 +494,15 @@ export default function Resources({ publicMode = false }) {
             Reset All Filters
           </button>
           {publicMode && (
-            <a
-              href="/signup"
-              className="px-6 py-2 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors"
-            >
-              Sign Up to Add & Rate Resources
-            </a>
+            <div className="flex flex-col items-center gap-1">
+              <a
+                href="/signup"
+                className="px-6 py-2 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors"
+              >
+                Sign Up to Add & Rate Resources
+              </a>
+              <span className="text-gray-500 dark:text-gray-400 text-xs">Free account required</span>
+            </div>
           )}
         </div>
 

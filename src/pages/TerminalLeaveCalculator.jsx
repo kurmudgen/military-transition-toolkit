@@ -477,6 +477,9 @@ export default function TerminalLeaveCalculator() {
               Read Full Terminal Leave Guide
             </Link>
           </div>
+          <p className="text-blue-200 text-xs mt-4">
+            Free account required to save calculations
+          </p>
         </div>
       </div>
       </div>

@@ -568,6 +568,9 @@ export default function ResumeBuilder({ previewMode = false, guestMode = false }
               >
                 Create Free Account
               </Link>
+              <p className="text-gray-500 dark:text-gray-400 text-xs mt-2 text-center">
+                Free account required to save your resume
+              </p>
               <Link
                 to="/"
                 className="block text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 text-sm py-2"
@@ -735,6 +738,9 @@ export default function ResumeBuilder({ previewMode = false, guestMode = false }
                 >
                   Sign Up Free
                 </Link>
+                <p className="text-gray-500 dark:text-gray-400 text-xs text-center">
+                  Free account required to save your resume
+                </p>
                 <Link
                   to="/login"
                   className="block w-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 py-3 px-6 rounded-lg font-semibold text-center transition-colors"

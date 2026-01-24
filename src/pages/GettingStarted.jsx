@@ -141,6 +141,9 @@ export default function GettingStarted() {
           <p className="text-blue-200 text-sm mt-4">
             100% free • No credit card required • All features included
           </p>
+          <p className="text-blue-300 text-xs mt-2">
+            Free account required to save your progress
+          </p>
         </div>
       </div>
 

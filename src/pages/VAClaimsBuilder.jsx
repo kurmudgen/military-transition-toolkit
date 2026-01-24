@@ -1502,6 +1502,9 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
             >
               Create Free Account
             </Link>
+            <p className="text-gray-500 text-xs mt-2 text-center">
+              Free account required to save your claims
+            </p>
             <Link
               to="/"
               className="block text-gray-500 hover:text-gray-700 text-sm py-2"
@@ -1549,12 +1552,15 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
                 </p>
               </div>
             </div>
-            <Link
-              to="/signup"
-              className="px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg transition-colors whitespace-nowrap"
-            >
-              Create Free Account
-            </Link>
+            <div className="flex flex-col items-end gap-1">
+              <Link
+                to="/signup"
+                className="px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-lg transition-colors whitespace-nowrap"
+              >
+                Create Free Account
+              </Link>
+              <span className="text-gray-500 text-xs">Free account required to save</span>
+            </div>
           </div>
         </div>
       )}
@@ -1616,6 +1622,9 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
               >
                 Sign Up Free
               </Link>
+              <p className="text-gray-500 text-xs text-center">
+                Free account required to save your claims
+              </p>
               <Link
                 to="/login"
                 className="block w-full bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-6 rounded-lg font-semibold text-center transition-colors"
@@ -1745,7 +1754,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
                 <p className="text-white font-semibold text-sm mb-3">
                   💡 Explore both the <span className="underline">Claims Builder</span> and <span className="underline">Evidence Tracker</span> tabs to see the full system in action.
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 items-center">
                   <a
                     href="/signup"
                     className="inline-flex items-center px-5 py-2.5 bg-white text-purple-700 font-bold rounded-lg hover:bg-purple-50 transition-colors shadow-md"
@@ -1758,6 +1767,7 @@ export default function VAClaimsBuilder({ previewMode = false, demoMode = false,
                   >
                     ← Back to Home
                   </a>
+                  <span className="text-purple-200 text-xs">Free account required to save</span>
                 </div>
               </div>
             </div>

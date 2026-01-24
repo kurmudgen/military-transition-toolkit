@@ -326,6 +326,9 @@ export default function RetirementCalculator({ publicMode = false }) {
                 Log In
               </a>
             </div>
+            <p className="text-blue-200 text-xs mt-4">
+              Free account required to save calculations and access all features
+            </p>
           </div>
 
           {/* Simple Calculator Card */}
@@ -468,6 +471,9 @@ export default function RetirementCalculator({ publicMode = false }) {
             >
               Create Free Account
             </a>
+            <p className="text-blue-200 text-xs mt-4">
+              Free account required to save your progress
+            </p>
           </div>
         </div>
       </div>

@@ -54,6 +54,9 @@ export default function LandingFlow() {
         <p className="text-slate-400 text-sm">
           Built by a veteran. 100% free.
         </p>
+        <p className="text-slate-500 text-xs mt-4">
+          Free account required to save your progress
+        </p>
       </div>
     )
   }
@@ -114,6 +117,9 @@ export default function LandingFlow() {
             <span className="text-green-500">✓</span> Personalized timeline
           </span>
         </div>
+        <p className="text-slate-500 text-xs mt-6">
+          Free account required to save your progress
+        </p>
       </div>
     )
   }
@@ -174,6 +180,9 @@ export default function LandingFlow() {
             <span className="text-green-500">✓</span> Takes 2 minutes
           </span>
         </div>
+        <p className="text-slate-500 text-xs mt-6">
+          Free account required to save your progress
+        </p>
       </div>
     )
   }
@@ -231,6 +240,9 @@ export default function LandingFlow() {
             <span className="text-green-500">✓</span> 60+ curated resources
           </span>
         </div>
+        <p className="text-slate-500 text-xs mt-6">
+          Free account required to save your progress
+        </p>
       </div>
     )
   }
