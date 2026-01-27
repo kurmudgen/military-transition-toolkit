@@ -287,7 +287,7 @@ Veterans bring world-class leadership, technical skills, problem-solving, and wo
 **For Veteran Career Development Support:**
 Military Transition Toolkit provides ongoing career guidance for veteran hires.
 
-**Contact:** jacob@formationlabs.io | militarytransitiontoolkit.com
+**Contact:** jacob@formationlabs.dev | militarytransitiontoolkit.com
 
 ---
 

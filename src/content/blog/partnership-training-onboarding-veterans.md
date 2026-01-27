@@ -452,7 +452,7 @@ Veteran onboarding requires intentionality, cultural competency, and structured 
 **For Comprehensive Veteran Support:**
 Partner with Military Transition Toolkit to provide your veteran hires with ongoing career development resources.
 
-**Contact:** jacob@formationlabs.io | militarytransitiontoolkit.com
+**Contact:** jacob@formationlabs.dev | militarytransitiontoolkit.com
 
 ---
 

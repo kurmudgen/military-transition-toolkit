@@ -1529,11 +1529,11 @@ The founder witnessed firsthand the challenges servicemembers face during transi
 
 **Installation Partnerships:**
 Jacob Kurm, Founder
-jacob@formationlabs.io
+jacob@formationlabs.dev
 [Phone number]
 
 **Technical Questions:**
-support@formationlabs.io
+contact@formationlabs.dev
 
 **Platform Information:**
 militarytransitiontoolkit.com
@@ -1822,12 +1822,12 @@ What should we agree on as next steps today?"
 **Jacob Kurm**
 Founder, Formation Labs LLC
 
-**Email:** jacob@formationlabs.io
+**Email:** jacob@formationlabs.dev
 **Phone:** [Phone number]
 **Website:** militarytransitiontoolkit.com
 
 **For Installation Partnerships:**
-installations@formationlabs.io
+contact@formationlabs.dev
 
 **Schedule a Follow-Up Meeting:**
 [Calendly link or meeting scheduler URL]
@@ -2033,7 +2033,7 @@ Medium installation, $60,000 investment, 1,000 annual transitions: If just 5% (5
 
 **Contact:**
 Jacob Kurm, Founder, Formation Labs LLC
-jacob@formationlabs.io | [Phone]
+jacob@formationlabs.dev | [Phone]
 militarytransitiontoolkit.com
 
 ---
@@ -2124,7 +2124,7 @@ militarytransitiontoolkit.com
 
 **Contact:**
 **Jacob Kurm**, Founder
-jacob@formationlabs.io | [Phone]
+jacob@formationlabs.dev | [Phone]
 militarytransitiontoolkit.com
 
 ---
@@ -2282,8 +2282,8 @@ militarytransitiontoolkit.com/installations
 [Calendly link]
 
 **Contact Us:**
-jacob@formationlabs.io
-installations@formationlabs.io
+jacob@formationlabs.dev
+contact@formationlabs.dev
 [Phone number]
 
 **Download Full Proposal:**

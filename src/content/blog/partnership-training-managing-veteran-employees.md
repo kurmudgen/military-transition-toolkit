@@ -393,7 +393,7 @@ Managing veteran employees effectively requires:
 **For Ongoing Veteran Employee Support:**
 Partner with Military Transition Toolkit to provide career development resources.
 
-**Contact:** jacob@formationlabs.io | militarytransitiontoolkit.com
+**Contact:** jacob@formationlabs.dev | militarytransitiontoolkit.com
 
 ---
 

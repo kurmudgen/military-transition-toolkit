@@ -25,7 +25,7 @@ export default function FeatureAnnouncementBanner() {
   }
 
   const handleFeedback = () => {
-    window.location.href = 'mailto:jacob@formationlabs.io?subject=Onboarding%20Checklist%20Feedback'
+    window.location.href = 'mailto:jacob@formationlabs.dev?subject=Onboarding%20Checklist%20Feedback'
   }
 
   if (dismissed) return null

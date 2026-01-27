@@ -132,7 +132,7 @@ FILE NAME: partnership-proposal-educational-site-license.md
 
 ## Next Steps
 
-**Contact:** Jacob Kurm | jacob@formationlabs.io | [Phone]
+**Contact:** Jacob Kurm | jacob@formationlabs.dev | [Phone]
 **Timeline:** Review (Week 1-2), Contract (Week 3), Launch (Week 4-6)
 
 ---

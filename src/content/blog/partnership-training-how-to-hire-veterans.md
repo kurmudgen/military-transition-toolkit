@@ -685,7 +685,7 @@ Hiring veterans is both a competitive advantage and a societal good. Veterans br
 **For Partnership with Military Transition Toolkit:**
 Contact Formation Labs to provide your veteran hires with comprehensive career development support that improves retention and outcomes.
 
-**Contact:** jacob@formationlabs.io | militarytransitiontoolkit.com
+**Contact:** jacob@formationlabs.dev | militarytransitiontoolkit.com
 
 ---
 

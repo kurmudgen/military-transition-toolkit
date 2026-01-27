@@ -228,7 +228,7 @@ Formation Labs proposes integrating Military Transition Toolkit as a digital enh
 ## Contact
 
 **Jacob Kurm**, Founder, Formation Labs LLC
-Email: jacob@formationlabs.io | installations@formationlabs.io
+Email: jacob@formationlabs.dev | contact@formationlabs.dev
 Phone: [Phone] | Website: militarytransitiontoolkit.com
 
 ---

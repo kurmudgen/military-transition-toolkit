@@ -125,7 +125,7 @@ FILE NAME: partnership-onepager-vso.md
 ### **Ready to Learn More?**
 
 **Schedule a Demo:**
-jacob@formationlabs.io | [Phone]
+jacob@formationlabs.dev | [Phone]
 **Website:** militarytransitiontoolkit.com
 **Calendly:** [Link]
 
@@ -288,7 +288,7 @@ Pilot program with success-based pricing (50% refund if metrics not met). Test b
 **Jacob Kurm**, Founder
 Formation Labs LLC
 
-**Email:** jacob@formationlabs.io
+**Email:** jacob@formationlabs.dev
 **Phone:** [Phone Number]
 **Website:** militarytransitiontoolkit.com
 

@@ -116,7 +116,7 @@ Ongoing: Optimization
 ## **Contact**
 
 **Jacob Kurm**, Founder
-jacob@formationlabs.io | installations@formationlabs.io
+jacob@formationlabs.dev | contact@formationlabs.dev
 [Phone] | militarytransitiontoolkit.com
 
 ---

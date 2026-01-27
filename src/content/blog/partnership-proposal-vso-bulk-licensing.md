@@ -393,11 +393,11 @@ Typically required:
 **Primary Contact:**
 Jacob Kurm, Founder
 Formation Labs LLC
-Email: jacob@formationlabs.io
+Email: jacob@formationlabs.dev
 Phone: [Phone]
 
 **Proposal Questions:**
-partnerships@formationlabs.io
+contact@formationlabs.dev
 
 **Schedule Meeting:**
 [Calendly link]

@@ -352,7 +352,7 @@ Student veterans bring valuable experience, maturity, and determination to campu
 **For Comprehensive Career Support:**
 Partner with Military Transition Toolkit to provide student veterans with career development resources.
 
-**Contact:** jacob@formationlabs.io | militarytransitiontoolkit.com
+**Contact:** jacob@formationlabs.dev | militarytransitiontoolkit.com
 
 ---
 

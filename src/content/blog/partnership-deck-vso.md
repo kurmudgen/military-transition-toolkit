@@ -998,7 +998,7 @@ What questions do you have, and what would you need to see to move forward with 
 **Jacob Kurm**
 Founder, Formation Labs LLC
 
-**Email:** jacob@formationlabs.io
+**Email:** jacob@formationlabs.dev
 **Phone:** [Phone number]
 **Website:** militarytransitiontoolkit.com
 
@@ -1131,7 +1131,7 @@ Medium VSO investing $75,000/year serving 15,000 members: If just 1% (150 member
 
 **Contact:**
 Jacob Kurm, Founder
-jacob@formationlabs.io | [Phone]
+jacob@formationlabs.dev | [Phone]
 militarytransitiontoolkit.com
 
 ---
@@ -1201,7 +1201,7 @@ Attract younger, tech-savvy post-9/11 veterans
 
 **Contact for Demo:**
 **Jacob Kurm**, Founder, Formation Labs LLC
-jacob@formationlabs.io | [Phone]
+jacob@formationlabs.dev | [Phone]
 militarytransitiontoolkit.com
 
 ---
@@ -1313,7 +1313,7 @@ militarytransitiontoolkit.com/demo
 [Calendly link]
 
 **Contact Us:**
-jacob@formationlabs.io
+jacob@formationlabs.dev
 [Phone number]
 
 **Download Full Proposal:**

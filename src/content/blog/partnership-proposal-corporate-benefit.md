@@ -202,7 +202,7 @@ Comprehensive digital career development platform provided to all veteran hires 
 **Week 3-6:** Implementation
 **Ongoing:** Partnership operations
 
-**Contact:** Jacob Kurm | jacob@formationlabs.io | [Phone]
+**Contact:** Jacob Kurm | jacob@formationlabs.dev | [Phone]
 
 ---
 

@@ -248,8 +248,8 @@ FILE NAME: partnership-onepager-whitelabel.md
 **Jacob Kurm**, Founder
 Formation Labs LLC
 
-**Email:** jacob@formationlabs.io
-**Enterprise Solutions:** enterprise@formationlabs.io
+**Email:** jacob@formationlabs.dev
+**Enterprise Solutions:** contact@formationlabs.dev
 **Phone:** [Phone]
 **Website:** militarytransitiontoolkit.com
 

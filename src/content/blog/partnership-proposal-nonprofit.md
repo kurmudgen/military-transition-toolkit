@@ -254,7 +254,7 @@ FILE NAME: partnership-proposal-nonprofit.md
 
 **Jacob Kurm**, Founder
 Formation Labs LLC
-Email: jacob@formationlabs.io | nonprofits@formationlabs.io
+Email: jacob@formationlabs.dev | contact@formationlabs.dev
 Phone: [Phone]
 Website: militarytransitiontoolkit.com
 
