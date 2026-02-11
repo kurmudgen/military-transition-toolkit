@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { LESSONS, LESSON_CATEGORIES } from '../data/financialEducationData'
+import { useGamification } from '../hooks/useGamification'
 
 const DIFFICULTY_STYLES = {
   beginner: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300',
@@ -10,6 +11,7 @@ const DIFFICULTY_STYLES = {
 
 export default function FinancialEducation() {
   const navigate = useNavigate()
+  const { awardXP } = useGamification()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedDifficulty, setSelectedDifficulty] = useState('all')
   const [expandedLesson, setExpandedLesson] = useState(null)
@@ -27,11 +29,13 @@ export default function FinancialEducation() {
   }, [selectedCategory, selectedDifficulty])
 
   function toggleComplete(lessonId) {
-    const updated = completedLessons.includes(lessonId)
-      ? completedLessons.filter((id) => id !== lessonId)
-      : [...completedLessons, lessonId]
+    const isCompleting = !completedLessons.includes(lessonId)
+    const updated = isCompleting
+      ? [...completedLessons, lessonId]
+      : completedLessons.filter((id) => id !== lessonId)
     setCompletedLessons(updated)
     localStorage.setItem('mtt_completed_lessons', JSON.stringify(updated))
+    if (isCompleting) awardXP('lesson_read')
   }
 
   const totalLessons = LESSONS.length

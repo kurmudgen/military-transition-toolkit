@@ -3,6 +3,7 @@ import { getSavingsData, saveSavingsData, GOAL_TEMPLATES, generateGoalId } from 
 import { calculateEmergencyFundTarget, calculateEmergencyFundMonths, calculateTimeToGoal } from '../utils/financialCalculations'
 import { getEmergencyFundStatus } from '../utils/financialValidation'
 import { formatCurrency, formatDuration, formatGoalProgress } from '../utils/formatters'
+import { useGamification } from '../hooks/useGamification'
 
 const TYPE_LABELS = {
   emergency: 'Emergency',
@@ -24,6 +25,7 @@ const STATUS_STYLES = {
 }
 
 export default function SavingsGoals() {
+  const { awardXP } = useGamification()
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
@@ -130,6 +132,7 @@ export default function SavingsGoals() {
 
     persist({ ...data, goals: newGoals })
     resetGoalForm()
+    if (!editingGoal) awardXP('savings_goal_created')
   }
 
   function deleteGoal(id) {
@@ -138,8 +141,12 @@ export default function SavingsGoals() {
 
   function updateGoalAmount(id, amount) {
     const num = parseFloat(amount) || 0
+    const goal = data.goals.find((g) => g.id === id)
+    const wasBelow = goal && goal.currentAmount < goal.targetAmount
     const newGoals = data.goals.map((g) => (g.id === id ? { ...g, currentAmount: num } : g))
     persist({ ...data, goals: newGoals })
+    if (wasBelow && num >= (goal?.targetAmount || 0) && num > 0) awardXP('savings_goal_reached')
+    else if (num > (goal?.currentAmount || 0)) awardXP('savings_contribution')
   }
 
   // ─── Computed Values ───────────────────────────────────────────────

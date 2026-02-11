@@ -2,8 +2,10 @@ import { useState, useEffect, useMemo, useCallback } from 'react'
 import { getBudget, saveBudget, DEFAULT_CATEGORIES, generateCategoryId } from '../services/budgetService'
 import { calculate503020, calculateBudgetVariance } from '../utils/financialCalculations'
 import { formatCurrency, formatChangeIndicator } from '../utils/formatters'
+import { useGamification } from '../hooks/useGamification'
 
 export default function BudgetBuilder() {
+  const { awardXP } = useGamification()
   const [budget, setBudget] = useState(null)
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
@@ -40,7 +42,9 @@ export default function BudgetBuilder() {
 
   function updateIncome(value) {
     const val = Math.max(0, Number(value) || 0)
+    const wasZero = income === 0
     save({ ...budget, current_month: { ...currentMonth, income: val } })
+    if (wasZero && val > 0) awardXP('budget_created')
   }
 
   function updateCategory(id, field, value) {

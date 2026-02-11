@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import RemindersWidget from '../components/RemindersWidget'
+import XPBar from '../components/XPBar'
+import CelebrationModal from '../components/CelebrationModal'
+import { useGamification } from '../hooks/useGamification'
 
 // Tips that rotate
 const TIPS = [
@@ -24,6 +27,7 @@ export default function Home() {
   const [currentTip, setCurrentTip] = useState(0)
   const [isEditingDate, setIsEditingDate] = useState(false)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
+  const { progress: gamProgress, rank, nextRank, celebration, dismissCelebration } = useGamification()
 
   // Load user setup from localStorage
   useEffect(() => {
@@ -554,6 +558,9 @@ export default function Home() {
   // Main Dashboard View
   return (
     <div className="px-4 py-6 sm:px-0 max-w-7xl mx-auto">
+      {/* Gamification Celebration Overlay */}
+      <CelebrationModal celebration={celebration} onDismiss={dismissCelebration} />
+
       {/* Success Message */}
       {showSuccessMessage && (
         <div className="mb-6 bg-green-50 dark:bg-green-900/20 border-2 border-green-500 dark:border-green-600 rounded-xl p-6 text-center shadow-lg">
@@ -586,6 +593,9 @@ export default function Home() {
             <p className="text-gray-600 dark:text-gray-400 text-lg">
               Let's get your VA claims filed and approved.
             </p>
+            <div className="mt-3 max-w-md">
+              <XPBar xp={gamProgress?.xp || 0} rank={rank} nextRank={nextRank} />
+            </div>
           </div>
 
           {/* Tip of the Day */}
@@ -715,6 +725,9 @@ export default function Home() {
                 {userSetup === 'separation' && 'Separation (<20 Years) Track'}
                 {userSetup === 'planning' && 'Post-Separation Planning'}
               </p>
+              <div className="mt-2 max-w-md">
+                <XPBar xp={gamProgress?.xp || 0} rank={rank} nextRank={nextRank} />
+              </div>
             </div>
         <button
           onClick={() => setShowSetup(true)}

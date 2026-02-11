@@ -11,6 +11,7 @@ import {
   updateGoal,
   deleteGoal,
 } from '../services/professionalDevService'
+import { useGamification } from '../hooks/useGamification'
 
 const TABS = ['skills', 'certifications', 'goals']
 
@@ -27,6 +28,7 @@ const SKILL_CATEGORIES = [
 ]
 
 export default function ProfessionalDev() {
+  const { awardXP } = useGamification()
   const [activeTab, setActiveTab] = useState('skills')
   const [skills, setSkills] = useState([])
   const [certifications, setCertifications] = useState([])
@@ -61,6 +63,7 @@ export default function ProfessionalDev() {
       setSkills((prev) => [...prev, { ...skill, id: `local-${Date.now()}` }])
     }
     setSaving(false)
+    awardXP('skill_added')
   }
 
   async function handleUpdateSkill(updated) {
@@ -94,9 +97,11 @@ export default function ProfessionalDev() {
       setCertifications((prev) => [...prev, { ...cert, id: `local-${Date.now()}` }])
     }
     setSaving(false)
+    awardXP('certification_started')
   }
 
   async function handleUpdateCert(updated) {
+    const wasPreviouslyEarned = certifications.find((c) => c.id === updated.id)?.status === 'earned'
     setSaving(true)
     try {
       const result = await updateCertification(updated)
@@ -105,6 +110,7 @@ export default function ProfessionalDev() {
       setCertifications((prev) => prev.map((c) => (c.id === updated.id ? updated : c)))
     }
     setSaving(false)
+    if (updated.status === 'earned' && !wasPreviouslyEarned) awardXP('certification_earned')
   }
 
   async function handleDeleteCert(id) {

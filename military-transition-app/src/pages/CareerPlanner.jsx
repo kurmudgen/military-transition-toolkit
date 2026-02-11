@@ -11,10 +11,12 @@ import {
 } from '../data/careerData'
 import { getCareerPlan, saveAssessmentAnswers, toggleBookmark } from '../services/careerPlannerService'
 import { formatCurrency } from '../utils/formatters'
+import { useGamification } from '../hooks/useGamification'
 
 const TABS = ['assessment', 'results', 'explore', 'bookmarks']
 
 export default function CareerPlanner() {
+  const { awardXP } = useGamification()
   const [activeTab, setActiveTab] = useState('assessment')
   const [answers, setAnswers] = useState({})
   const [bookmarks, setBookmarks] = useState([])
@@ -96,9 +98,11 @@ export default function CareerPlanner() {
     }
     setSaving(false)
     setActiveTab('results')
+    awardXP('career_assessment_completed')
   }
 
   async function handleToggleBookmark(careerId) {
+    const isAdding = !bookmarks.includes(careerId)
     // Optimistic update
     setBookmarks((prev) =>
       prev.includes(careerId)
@@ -111,6 +115,7 @@ export default function CareerPlanner() {
     } catch {
       // revert on failure would be nice but non-critical
     }
+    if (isAdding) awardXP('career_bookmarked')
   }
 
   function handleResetAssessment() {

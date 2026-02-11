@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react'
 import { getDebtData, saveDebtData, simulatePayoff, generateDebtId } from '../services/debtService'
 import { isPredatoryAPR, getAPRRiskLevel } from '../utils/financialValidation'
 import { formatCurrency, formatDuration, formatAPR } from '../utils/formatters'
+import { useGamification } from '../hooks/useGamification'
 
 const DEBT_TYPES = [
   { value: 'credit_card', label: 'Credit Card' },
@@ -13,6 +14,7 @@ const DEBT_TYPES = [
 ]
 
 export default function DebtManager() {
+  const { awardXP } = useGamification()
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
@@ -91,6 +93,7 @@ export default function DebtManager() {
       : [...debts, debt]
     save({ ...data, debts: updated })
     resetForm()
+    if (!editingId) awardXP('debt_added')
   }
 
   function deleteDebt(id) {

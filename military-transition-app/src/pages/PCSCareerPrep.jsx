@@ -9,8 +9,10 @@ import {
   getPCSChecklistProgress,
   togglePCSChecklistItem,
 } from '../services/pcsChecklistService'
+import { useGamification } from '../hooks/useGamification'
 
 export default function PCSCareerPrep() {
+  const { awardXP } = useGamification()
   const [progress, setProgress] = useState({})
   const [loading, setLoading] = useState(true)
   const [spouseFilter, setSpouseFilter] = useState(false)
@@ -33,6 +35,7 @@ export default function PCSCareerPrep() {
   }, [])
 
   async function handleToggle(itemId) {
+    const wasChecked = progress[itemId]
     const prev = { ...progress }
     // Optimistic update
     setProgress((p) => ({ ...p, [itemId]: !p[itemId] }))
@@ -42,6 +45,7 @@ export default function PCSCareerPrep() {
       // Revert on failure
       setProgress(prev)
     }
+    if (!wasChecked) awardXP('pcs_checklist_item')
   }
 
   // Filtered items per timeframe
