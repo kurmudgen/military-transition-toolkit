@@ -56,6 +56,11 @@ export default function Layout() {
     { to: '/app/appointments', label: 'Appointments & Tracking' },
     { to: '/app/resume-builder', label: 'Resume Builder' },
     { to: '/app/job-search', label: 'Job Search' },
+    { to: '/app/pay-calculator', label: 'Pay Calculator' },
+    { to: '/app/career-planner', label: 'Career Planner' },
+    { to: '/app/professional-dev', label: 'Professional Development' },
+    { to: '/app/licensing', label: 'Licensing Navigator' },
+    { to: '/app/pcs-career-prep', label: 'PCS Career Prep' },
     { to: '/app/profile', label: 'Profile' },
     { to: '/app/settings', label: 'Settings' },
     { to: '/app/faq', label: 'FAQ' },
@@ -68,6 +73,7 @@ export default function Layout() {
     { to: '/app/progress', label: 'Progress' },
     { to: '/app/resources', label: 'Resources' },
     { to: '/app/va-claims-builder', label: 'VA Claims', highlighted: true }, // Highlighted for separated veterans
+    { to: '/app/career-planner', label: 'Career Tools' },
     { to: '/app/settings', label: 'Settings' }
   ]
 

@@ -40,6 +40,11 @@ import Settings from './pages/Settings'
 import Account from './pages/Account'
 import FAQ from './pages/FAQ'
 import About from './pages/About'
+import PayCalculator from './pages/PayCalculator'
+import CareerPlanner from './pages/CareerPlanner'
+import ProfessionalDev from './pages/ProfessionalDev'
+import LicensingNavigator from './pages/LicensingNavigator'
+import PCSCareerPrep from './pages/PCSCareerPrep'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -97,6 +102,11 @@ function App() {
           <Route path="account" element={<Account />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="about" element={<About />} />
+          <Route path="pay-calculator" element={<PayCalculator />} />
+          <Route path="career-planner" element={<CareerPlanner />} />
+          <Route path="professional-dev" element={<ProfessionalDev />} />
+          <Route path="licensing" element={<LicensingNavigator />} />
+          <Route path="pcs-career-prep" element={<PCSCareerPrep />} />
         </Route>
 
         {/* Catch all 404 */}
