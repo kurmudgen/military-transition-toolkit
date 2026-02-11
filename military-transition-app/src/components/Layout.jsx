@@ -67,6 +67,7 @@ export default function Layout() {
     { to: '/app/tsp-calculator', label: 'TSP Calculator' },
     { to: '/app/cost-of-living', label: 'Cost of Living' },
     { to: '/app/financial-education', label: 'Financial Education' },
+    { to: '/app/achievements', label: 'Achievements' },
     { to: '/app/profile', label: 'Profile' },
     { to: '/app/settings', label: 'Settings' },
     { to: '/app/faq', label: 'FAQ' },

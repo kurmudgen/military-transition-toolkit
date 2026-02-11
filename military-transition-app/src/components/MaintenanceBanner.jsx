@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 // Flip this to false to hide the banner without removing the component
-const SHOW_MAINTENANCE_BANNER = true
+const SHOW_MAINTENANCE_BANNER = false
 
 const STORAGE_KEY = 'mtt_maintenance_dismissed'
 

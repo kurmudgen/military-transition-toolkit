@@ -51,6 +51,7 @@ import SavingsGoals from './pages/SavingsGoals'
 import TSPCalculator from './pages/TSPCalculator'
 import CostOfLiving from './pages/CostOfLiving'
 import FinancialEducation from './pages/FinancialEducation'
+import Achievements from './pages/Achievements'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -119,6 +120,7 @@ function App() {
           <Route path="tsp-calculator" element={<TSPCalculator />} />
           <Route path="cost-of-living" element={<CostOfLiving />} />
           <Route path="financial-education" element={<FinancialEducation />} />
+          <Route path="achievements" element={<Achievements />} />
         </Route>
 
         {/* Catch all 404 */}
