@@ -136,7 +136,12 @@ const initProgress = () => {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(initialData))
     return initialData
   }
-  return JSON.parse(stored)
+  try {
+    return JSON.parse(stored)
+  } catch {
+    localStorage.removeItem(PROGRESS_KEY)
+    return initProgress()
+  }
 }
 
 // Get all progress data

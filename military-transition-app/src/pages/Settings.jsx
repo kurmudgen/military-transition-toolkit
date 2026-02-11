@@ -9,6 +9,7 @@ import { getUserSubscription, createCustomerPortalSession } from '../services/su
 import { STRIPE_PLANS, getPlanById } from '../lib/stripe'
 import { auditService } from '../services/auditService'
 import { accountDeletionService } from '../services/accountDeletionService'
+import { useCSRF } from '../hooks/useCSRF'
 import { useTone } from '../hooks/useTone'
 import { TONE_OPTIONS } from '../services/toneAdapter'
 
@@ -27,6 +28,7 @@ export default function Settings() {
   const [deletingAccount, setDeletingAccount] = useState(false)
   const navigate = useNavigate()
   const { signOut, timeoutEnabled, setTimeoutEnabled } = useAuth()
+  const { csrfToken } = useCSRF()
   const { tone, setTone, copy } = useTone()
 
   useEffect(() => {
@@ -251,7 +253,7 @@ export default function Settings() {
       setDeletingAccount(true)
       setImportStatus('Deleting account... This may take a moment.')
 
-      const result = await accountDeletionService.deleteAccount()
+      const result = await accountDeletionService.deleteAccount(csrfToken)
 
       if (result.success) {
         setImportStatus('✓ Account deleted successfully. Redirecting to login...')
@@ -329,7 +331,7 @@ export default function Settings() {
       trackButtonClick('Manage Subscription')
 
       console.log('Creating customer portal session...')
-      const portalUrl = await createCustomerPortalSession()
+      const portalUrl = await createCustomerPortalSession(csrfToken)
       console.log('Portal URL received:', portalUrl)
 
       if (!portalUrl) {

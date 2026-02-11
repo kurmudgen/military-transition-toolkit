@@ -4,6 +4,7 @@ import { UserCircleIcon, CreditCardIcon, BellIcon } from '@heroicons/react/24/ou
 import { useAuth } from '../contexts/AuthContext'
 import { getUserSubscription, createCustomerPortalSession } from '../services/subscriptionService'
 import { STRIPE_PLANS, getPlanById } from '../lib/stripe'
+import { useCSRF } from '../hooks/useCSRF'
 
 export default function Account() {
   const { user, signOut } = useAuth()
@@ -11,6 +12,7 @@ export default function Account() {
   const [subscription, setSubscription] = useState(null)
   const [loading, setLoading] = useState(true)
   const [managingBilling, setManagingBilling] = useState(false)
+  const { csrfToken } = useCSRF()
 
   useEffect(() => {
     loadSubscription()
@@ -30,7 +32,7 @@ export default function Account() {
   const handleManageBilling = async () => {
     try {
       setManagingBilling(true)
-      const portalUrl = await createCustomerPortalSession()
+      const portalUrl = await createCustomerPortalSession(csrfToken)
       window.location.href = portalUrl
     } catch (error) {
       console.error('Error opening billing portal:', error)

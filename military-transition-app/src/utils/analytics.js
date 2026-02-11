@@ -26,7 +26,12 @@ const initAnalytics = () => {
     localStorage.setItem(ANALYTICS_KEY, JSON.stringify(initialData))
     return initialData
   }
-  return JSON.parse(stored)
+  try {
+    return JSON.parse(stored)
+  } catch {
+    localStorage.removeItem(ANALYTICS_KEY)
+    return { events: [], sessions: [], startDate: new Date().toISOString() }
+  }
 }
 
 // Track an event

@@ -13,6 +13,24 @@ const supabase = createClient(
 )
 
 export default async function handler(req, res) {
+  // CORS headers
+  const allowedOrigins = [
+    'https://militarytransitiontoolkit.com',
+    'https://www.militarytransitiontoolkit.com',
+    process.env.NODE_ENV === 'development' ? 'http://localhost:5173' : null
+  ].filter(Boolean)
+
+  const origin = req.headers.origin
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin)
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
+  res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type, X-CSRF-Token')
+
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end()
+  }
+
   // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })

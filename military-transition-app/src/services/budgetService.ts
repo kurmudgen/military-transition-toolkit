@@ -107,6 +107,12 @@ export async function saveBudget(budgetData: BudgetData): Promise<void> {
   const user = await getCurrentUser()
   if (!user || !supabase) throw new Error('No authenticated user')
 
+  // Input validation: reject negative values
+  if (budgetData.current_month.income < 0) throw new Error('Income cannot be negative')
+  for (const cat of budgetData.current_month.categories) {
+    if (cat.planned < 0 || cat.actual < 0) throw new Error('Budget amounts cannot be negative')
+  }
+
   const { error } = await supabase
     .from('budgets')
     .upsert(

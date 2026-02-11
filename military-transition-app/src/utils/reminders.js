@@ -23,7 +23,12 @@ const initReminders = () => {
     localStorage.setItem(REMINDERS_KEY, JSON.stringify(initialData))
     return initialData
   }
-  return JSON.parse(stored)
+  try {
+    return JSON.parse(stored)
+  } catch {
+    localStorage.removeItem(REMINDERS_KEY)
+    return { reminders: [], lastUpdated: new Date().toISOString() }
+  }
 }
 
 // Get all reminders

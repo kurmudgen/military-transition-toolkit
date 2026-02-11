@@ -78,6 +78,13 @@ export async function saveSavingsData(savingsData: SavingsData): Promise<void> {
   const user = await getCurrentUser()
   if (!user || !supabase) throw new Error('No authenticated user')
 
+  // Input validation: reject negative values
+  if (savingsData.emergency_fund.currentBalance < 0) throw new Error('Emergency fund balance cannot be negative')
+  if (savingsData.emergency_fund.monthlyExpenses < 0) throw new Error('Monthly expenses cannot be negative')
+  for (const goal of savingsData.goals) {
+    if (goal.targetAmount < 0 || goal.currentAmount < 0) throw new Error('Savings amounts cannot be negative')
+  }
+
   const { error } = await supabase
     .from('savings_goals')
     .upsert(

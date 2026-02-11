@@ -67,6 +67,14 @@ export async function saveDebtData(debtData: DebtData): Promise<void> {
   const user = await getCurrentUser()
   if (!user || !supabase) throw new Error('No authenticated user')
 
+  // Input validation: reject negative / unreasonable values
+  for (const debt of debtData.debts) {
+    if (debt.balance < 0) throw new Error('Debt balance cannot be negative')
+    if (debt.interestRate < 0 || debt.interestRate > 1) throw new Error('Interest rate must be between 0 and 1')
+    if (debt.minimumPayment < 0) throw new Error('Minimum payment cannot be negative')
+  }
+  if (debtData.extra_monthly_payment < 0) throw new Error('Extra payment cannot be negative')
+
   const { error } = await supabase
     .from('debt_tracking')
     .upsert(

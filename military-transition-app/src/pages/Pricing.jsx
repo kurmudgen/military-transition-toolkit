@@ -4,6 +4,7 @@ import { isPromoActive, getTimeRemaining, PRICING, shouldHidePaymentUI } from '.
 import { trackPageView, trackButtonClick } from '../utils/analytics'
 import { createCheckoutSession } from '../services/subscriptionService'
 import { getCurrentUser } from '../lib/supabase'
+import { useCSRF } from '../hooks/useCSRF'
 
 export default function Pricing() {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining())
@@ -11,6 +12,7 @@ export default function Pricing() {
   const [showCancelMessage, setShowCancelMessage] = useState(false)
   const promoActive = isPromoActive()
   const paymentUIHidden = shouldHidePaymentUI()
+  const { csrfToken } = useCSRF()
 
   useEffect(() => {
     trackPageView('/pricing')
@@ -81,7 +83,7 @@ export default function Pricing() {
         throw new Error('Invalid plan selected')
       }
 
-      const checkoutUrl = await createCheckoutSession(priceId)
+      const checkoutUrl = await createCheckoutSession(priceId, csrfToken)
 
       // Redirect to Stripe checkout
       window.location.href = checkoutUrl

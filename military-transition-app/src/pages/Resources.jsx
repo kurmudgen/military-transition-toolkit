@@ -9,6 +9,7 @@ import {
   updateCustomResource,
   deleteCustomResource
 } from '../services/resourceService'
+import { validateURL } from '../utils/validation'
 
 export default function Resources({ publicMode = false }) {
   const [resources, setResources] = useState([])
@@ -94,6 +95,13 @@ export default function Resources({ publicMode = false }) {
   const handleAddResource = async () => {
     if (!formData.title || !formData.url) return
 
+    // Validate URL to prevent javascript: / data: XSS
+    const urlCheck = validateURL(formData.url)
+    if (!urlCheck.valid) {
+      setError(urlCheck.error)
+      return
+    }
+
     try {
       setSaving(true)
       setError(null)
@@ -122,6 +130,13 @@ export default function Resources({ publicMode = false }) {
 
   const handleUpdateResource = async () => {
     if (!editingResource || !formData.title || !formData.url) return
+
+    // Validate URL to prevent javascript: / data: XSS
+    const urlCheck = validateURL(formData.url)
+    if (!urlCheck.valid) {
+      setError(urlCheck.error)
+      return
+    }
 
     try {
       setSaving(true)
