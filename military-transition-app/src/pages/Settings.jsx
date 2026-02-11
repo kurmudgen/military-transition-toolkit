@@ -9,6 +9,8 @@ import { getUserSubscription, createCustomerPortalSession } from '../services/su
 import { STRIPE_PLANS, getPlanById } from '../lib/stripe'
 import { auditService } from '../services/auditService'
 import { accountDeletionService } from '../services/accountDeletionService'
+import { useTone } from '../hooks/useTone'
+import { TONE_OPTIONS } from '../services/toneAdapter'
 
 export default function Settings() {
   const [importStatus, setImportStatus] = useState('')
@@ -25,6 +27,7 @@ export default function Settings() {
   const [deletingAccount, setDeletingAccount] = useState(false)
   const navigate = useNavigate()
   const { signOut, timeoutEnabled, setTimeoutEnabled } = useAuth()
+  const { tone, setTone, copy } = useTone()
 
   useEffect(() => {
     document.title = 'Settings - Military Transition Toolkit'
@@ -514,6 +517,50 @@ export default function Settings() {
               <p className="text-blue-400 text-sm">
                 💡 Your dashboard will automatically update to show the most relevant features for your status. Reload the page after changing to see the updated view.
               </p>
+            </div>
+          </div>
+
+          {/* Tone Preference */}
+          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+            <h2 className="text-2xl font-semibold text-white mb-4">🎙️ Communication Tone</h2>
+            <p className="text-slate-300 mb-4">
+              Choose how the app talks to you. This changes encouragement messages, tips, and feedback across the app.
+            </p>
+
+            <div className="space-y-3">
+              {TONE_OPTIONS.map((option) => (
+                <label
+                  key={option.value}
+                  className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                    tone === option.value
+                      ? 'border-blue-500 bg-blue-900/20'
+                      : 'border-slate-600 hover:border-blue-400'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="tone"
+                    value={option.value}
+                    checked={tone === option.value}
+                    onChange={() => setTone(option.value)}
+                    className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500"
+                  />
+                  <div className="ml-3">
+                    <span className="block text-base font-semibold text-white">
+                      {option.label}
+                    </span>
+                    <span className="block text-sm text-slate-400 mt-1">
+                      {option.description}
+                    </span>
+                  </div>
+                </label>
+              ))}
+            </div>
+
+            {/* Preview */}
+            <div className="mt-4 p-4 bg-slate-700 rounded-lg">
+              <p className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wider">Preview</p>
+              <p className="text-white text-sm italic">{copy('dashboard_greeting')}</p>
             </div>
           </div>
 
