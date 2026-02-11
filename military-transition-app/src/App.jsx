@@ -3,6 +3,7 @@ import { AuthProvider } from './contexts/AuthContext'
 import ProtectedRoute from './components/ProtectedRoute'
 import Layout from './components/Layout'
 import SessionTimeoutWarning from './components/SessionTimeoutWarning'
+import MaintenanceBanner from './components/MaintenanceBanner'
 
 // Marketing pages
 import Landing from './pages/Landing'
@@ -44,6 +45,7 @@ import NotFound from './pages/NotFound'
 function App() {
   return (
     <AuthProvider>
+      <MaintenanceBanner />
       <SessionTimeoutWarning />
       <Routes>
         {/* Marketing pages without auth */}

@@ -1,0 +1,14 @@
+MTT Phase 1 — Utilities, Data Files, and TypeScript Setup
+=========================================================
+
+Pre-Build: DONE — build succeeds (chunk size warning only, not an error)
+
+Task 0: Maintenance Banner — IN PROGRESS
+Task 1: TypeScript Support — PENDING
+Task 2: Financial Calculations — PENDING
+Task 3: Financial Validation — PENDING
+Task 4: Formatters — PENDING
+Task 5: Learning Resources Data — PENDING
+Task 6: Housing Data — PENDING
+Task 7: Predatory Lending Data — PENDING
+Task 8: Licensing Data — PENDING
