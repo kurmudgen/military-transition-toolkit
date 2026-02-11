@@ -123,3 +123,35 @@ After 2 failed fix attempts on the same issue, STOP and run a diagnostic:
 
 - Just refresh: component, page, or style changes
 - Restart: .env.local, config files (next.config, tailwind.config, vite.config)
+
+---
+
+## Security Patterns (Feb 2026 Audit)
+
+### CSRF: Build It AND Wire It
+- Building CSRF middleware + hook is not enough — every page calling state-changing APIs must import and use useCSRF()
+- Audit checklist: grep for every service function that accepts a csrfToken param → verify callers pass it
+
+### Input Validation: Validate at Service Boundary
+- Service functions that write to database should validate before upsert (reject negative financial values, invalid rates)
+- URL validation: always use `new URL()` + protocol allowlist (http/https only) before storing user-supplied URLs
+- validateURL() already existed in utils/validation.js — the issue was not importing it where needed
+
+### JSON.parse: Always Wrap localStorage Reads
+- localStorage data can be corrupted by browser extensions, manual edits, or quota issues
+- Every `JSON.parse(localStorage.getItem(...))` should be in try/catch with graceful fallback
+- Init functions that call JSON.parse should clear corrupted data and re-initialize
+
+### Gamification: Client-Side Trust
+- Client-side XP/achievement systems are inherently manipulable via dev tools
+- Acceptable if gamification is cosmetic only (no premium features gated behind ranks)
+- For real enforcement: move award logic to Supabase Edge Functions, add CHECK constraints on XP columns
+
+### CORS: Every Endpoint Needs Headers
+- When adding new API endpoints, always copy CORS boilerplate from existing endpoints
+- Audit checklist: compare every file in api/ directory for consistent CORS + OPTIONS handling
+
+### npm audit: Run Regularly
+- Schedule `npm audit` checks monthly — vulnerabilities appear in transitive dependencies
+- `npm audit fix` (no --force) is safe for non-breaking updates
+- Breaking changes (--force) require manual testing of affected features
