@@ -45,6 +45,12 @@ import CareerPlanner from './pages/CareerPlanner'
 import ProfessionalDev from './pages/ProfessionalDev'
 import LicensingNavigator from './pages/LicensingNavigator'
 import PCSCareerPrep from './pages/PCSCareerPrep'
+import BudgetBuilder from './pages/BudgetBuilder'
+import DebtManager from './pages/DebtManager'
+import SavingsGoals from './pages/SavingsGoals'
+import TSPCalculator from './pages/TSPCalculator'
+import CostOfLiving from './pages/CostOfLiving'
+import FinancialEducation from './pages/FinancialEducation'
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -107,6 +113,12 @@ function App() {
           <Route path="professional-dev" element={<ProfessionalDev />} />
           <Route path="licensing" element={<LicensingNavigator />} />
           <Route path="pcs-career-prep" element={<PCSCareerPrep />} />
+          <Route path="budget" element={<BudgetBuilder />} />
+          <Route path="debt-manager" element={<DebtManager />} />
+          <Route path="savings" element={<SavingsGoals />} />
+          <Route path="tsp-calculator" element={<TSPCalculator />} />
+          <Route path="cost-of-living" element={<CostOfLiving />} />
+          <Route path="financial-education" element={<FinancialEducation />} />
         </Route>
 
         {/* Catch all 404 */}

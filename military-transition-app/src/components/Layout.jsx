@@ -61,6 +61,12 @@ export default function Layout() {
     { to: '/app/professional-dev', label: 'Professional Development' },
     { to: '/app/licensing', label: 'Licensing Navigator' },
     { to: '/app/pcs-career-prep', label: 'PCS Career Prep' },
+    { to: '/app/budget', label: 'Budget Builder' },
+    { to: '/app/debt-manager', label: 'Debt Manager' },
+    { to: '/app/savings', label: 'Savings Goals' },
+    { to: '/app/tsp-calculator', label: 'TSP Calculator' },
+    { to: '/app/cost-of-living', label: 'Cost of Living' },
+    { to: '/app/financial-education', label: 'Financial Education' },
     { to: '/app/profile', label: 'Profile' },
     { to: '/app/settings', label: 'Settings' },
     { to: '/app/faq', label: 'FAQ' },
@@ -74,6 +80,7 @@ export default function Layout() {
     { to: '/app/resources', label: 'Resources' },
     { to: '/app/va-claims-builder', label: 'VA Claims', highlighted: true }, // Highlighted for separated veterans
     { to: '/app/career-planner', label: 'Career Tools' },
+    { to: '/app/budget', label: 'Financial' },
     { to: '/app/settings', label: 'Settings' }
   ]
 
