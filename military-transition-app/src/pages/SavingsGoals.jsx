@@ -4,6 +4,7 @@ import { calculateEmergencyFundTarget, calculateEmergencyFundMonths, calculateTi
 import { getEmergencyFundStatus } from '../utils/financialValidation'
 import { formatCurrency, formatDuration, formatGoalProgress } from '../utils/formatters'
 import { useGamification } from '../hooks/useGamification'
+import RecommendedPartners from '../components/RecommendedPartners'
 
 const TYPE_LABELS = {
   emergency: 'Emergency',
@@ -603,6 +604,9 @@ export default function SavingsGoals() {
           ))}
         </div>
       </div>
+
+      {/* Recommended Resources */}
+      <RecommendedPartners context="savings" limit={3} />
 
       {/* Disclaimer */}
       <p className="text-xs text-center text-gray-400 dark:text-gray-500 pb-4">

@@ -3,6 +3,7 @@ import { getDebtData, saveDebtData, simulatePayoff, generateDebtId } from '../se
 import { isPredatoryAPR, getAPRRiskLevel } from '../utils/financialValidation'
 import { formatCurrency, formatDuration, formatAPR } from '../utils/formatters'
 import { useGamification } from '../hooks/useGamification'
+import RecommendedPartners from '../components/RecommendedPartners'
 
 const DEBT_TYPES = [
   { value: 'credit_card', label: 'Credit Card' },
@@ -374,6 +375,9 @@ export default function DebtManager() {
           )}
         </div>
       </div>
+
+      {/* Recommended Resources */}
+      <RecommendedPartners context="debt" limit={3} />
 
       {/* Disclaimer */}
       <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg p-4">

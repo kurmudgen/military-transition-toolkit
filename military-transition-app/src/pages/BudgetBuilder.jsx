@@ -3,6 +3,7 @@ import { getBudget, saveBudget, DEFAULT_CATEGORIES, generateCategoryId } from '.
 import { calculate503020, calculateBudgetVariance } from '../utils/financialCalculations'
 import { formatCurrency, formatChangeIndicator } from '../utils/formatters'
 import { useGamification } from '../hooks/useGamification'
+import RecommendedPartners from '../components/RecommendedPartners'
 
 export default function BudgetBuilder() {
   const { awardXP } = useGamification()
@@ -377,6 +378,9 @@ export default function BudgetBuilder() {
               Allocate 50% of take-home pay to needs (housing, food, insurance), 30% to wants (entertainment, dining), and 20% to savings and extra debt payments. Military members often have lower needs due to BAH and BAS.
             </p>
           </div>
+
+          {/* Recommended Resources */}
+          <RecommendedPartners context="budget" limit={3} />
         </div>
       </div>
     </div>

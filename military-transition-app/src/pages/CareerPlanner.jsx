@@ -12,6 +12,7 @@ import {
 import { getCareerPlan, saveAssessmentAnswers, toggleBookmark } from '../services/careerPlannerService'
 import { formatCurrency } from '../utils/formatters'
 import { useGamification } from '../hooks/useGamification'
+import RecommendedPartners from '../components/RecommendedPartners'
 
 const TABS = ['assessment', 'results', 'explore', 'bookmarks']
 
@@ -210,6 +211,9 @@ export default function CareerPlanner() {
           setExpandedCareer={setExpandedCareer}
         />
       )}
+
+      {/* Recommended Resources */}
+      <RecommendedPartners context="career" limit={3} />
     </div>
   )
 }

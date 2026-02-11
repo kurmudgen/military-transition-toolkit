@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { COST_OF_LIVING_CITIES, CATEGORIES, CATEGORY_LABELS, REGION_LABELS } from '../data/costOfLivingData'
 import { formatCurrency } from '../utils/formatters'
+import RecommendedPartners from '../components/RecommendedPartners'
 
 const INDEX_COLOR = (val) => {
   if (val <= 85) return 'text-green-600 dark:text-green-400'
@@ -295,6 +296,9 @@ export default function CostOfLiving() {
           ))}
         </div>
       </div>
+
+      {/* Recommended Resources */}
+      <RecommendedPartners context="cost_of_living" limit={3} />
 
       {/* Disclaimer */}
       <p className="text-xs text-center text-gray-400 dark:text-gray-500 pb-4">

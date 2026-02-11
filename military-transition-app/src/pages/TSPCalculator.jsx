@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { calculateTSPGrowth, calculateTSPContribution, calculateMilitaryRetirementPay } from '../utils/financialCalculations'
 import { formatCurrency, formatCurrencyCompact } from '../utils/formatters'
+import RecommendedPartners from '../components/RecommendedPartners'
 
 const TSP_FUNDS = [
   { symbol: 'G', name: 'Government Securities', risk: 'Low', historicalReturn: 0.035, desc: 'US Treasury securities. Lowest risk, lowest return. Capital is guaranteed.' },
@@ -464,6 +465,9 @@ export default function TSPCalculator() {
           </div>
         )}
       </div>
+
+      {/* Recommended Resources */}
+      <RecommendedPartners context="tsp" limit={3} />
 
       {/* Disclaimer */}
       <p className="text-xs text-center text-gray-400 dark:text-gray-500 pb-4">

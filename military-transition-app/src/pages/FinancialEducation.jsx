@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { LESSONS, LESSON_CATEGORIES } from '../data/financialEducationData'
 import { useGamification } from '../hooks/useGamification'
+import RecommendedPartners from '../components/RecommendedPartners'
 
 const DIFFICULTY_STYLES = {
   beginner: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300',
@@ -269,6 +270,9 @@ export default function FinancialEducation() {
           ))}
         </div>
       </div>
+
+      {/* Recommended Resources */}
+      <RecommendedPartners context="education" limit={3} />
 
       {/* Disclaimer */}
       <p className="text-xs text-center text-gray-400 dark:text-gray-500 pb-4">
