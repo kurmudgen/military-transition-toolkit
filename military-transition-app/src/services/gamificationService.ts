@@ -108,7 +108,7 @@ export interface GamificationProgress {
   completed_missions: string[]
   completed_milestones: string[]
   badges: string[]
-  stats: Record<string, number>
+  stats: Record<string, unknown>
 }
 
 function createDefault(): GamificationProgress {
@@ -194,6 +194,57 @@ async function saveProgress(progress: GamificationProgress): Promise<void> {
     .single()
 }
 
+// ─── XP Deduplication ────────────────────────────────────────────────
+
+// Actions that should only award XP once (no target needed)
+const ONE_TIME_ACTIONS = new Set([
+  'career_assessment_completed',
+  'budget_created',
+  'profile_completed',
+  'first_tool_used',
+  'checklist_fully_completed',
+])
+
+// Actions that are always repeatable (never deduplicated)
+const REPEATABLE_ACTIONS = new Set([
+  'daily_login',
+  'streak_bonus_7',
+  'streak_bonus_30',
+  'streak_bonus_90',
+  'savings_contribution',
+  'budget_month_completed',
+])
+
+/**
+ * Build a dedup key for an action+target combination.
+ * Returns null if the action should not be deduplicated.
+ */
+function dedupKey(action: string, target?: string): string | null {
+  if (REPEATABLE_ACTIONS.has(action)) return null
+  if (target) return `${action}:${target}`
+  if (ONE_TIME_ACTIONS.has(action)) return action
+  // Actions with no target that aren't in ONE_TIME or REPEATABLE:
+  // treat as target-required (dedup on action alone as fallback)
+  return action
+}
+
+/**
+ * Check if an action+target has already been awarded.
+ * Awarded keys are stored in stats._awarded (object of string→1).
+ */
+function isAlreadyAwarded(stats: Record<string, unknown>, key: string): boolean {
+  const awarded = stats._awarded as Record<string, number> | undefined
+  return awarded ? Boolean(awarded[key]) : false
+}
+
+/**
+ * Mark an action+target as awarded in stats._awarded.
+ */
+function markAwarded(stats: Record<string, unknown>, key: string): void {
+  if (!stats._awarded) stats._awarded = {} as Record<string, number>
+  ;(stats._awarded as Record<string, number>)[key] = 1
+}
+
 // ─── Core Actions ────────────────────────────────────────────────────
 
 export interface AwardResult {
@@ -204,19 +255,46 @@ export interface AwardResult {
   previousRank: RankInfo
   newMissions: string[]      // mission IDs just completed
   newMilestones: string[]    // milestone IDs just earned
+  skipped: boolean           // true if XP was skipped due to deduplication
 }
 
+/**
+ * Award XP for an action. An optional `target` identifies the specific item
+ * (e.g. checklist item ID, lesson ID, debt ID) to prevent double-counting.
+ */
 export async function awardXP(
   action: string,
-  progress: GamificationProgress
+  progress: GamificationProgress,
+  target?: string
 ): Promise<{ updatedProgress: GamificationProgress; result: AwardResult }> {
   const xpGain = XP_VALUES[action] || 0
   const previousRank = getRankForXP(progress.xp)
 
+  // ── Deduplication check ──
+  const dKey = dedupKey(action, target)
+  if (dKey && isAlreadyAwarded(progress.stats, dKey)) {
+    return {
+      updatedProgress: progress,
+      result: {
+        xpGained: 0,
+        newTotalXP: progress.xp,
+        leveledUp: false,
+        newRank: null,
+        previousRank,
+        newMissions: [],
+        newMilestones: [],
+        skipped: true,
+      },
+    }
+  }
+
   // Update stats
-  const stats = { ...progress.stats }
-  stats[action] = (stats[action] || 0) + 1
-  stats.total_actions = (stats.total_actions || 0) + 1
+  const stats: Record<string, unknown> = { ...progress.stats }
+  stats[action] = ((stats[action] as number) || 0) + 1
+  stats.total_actions = ((stats.total_actions as number) || 0) + 1
+
+  // Mark as awarded for deduplication
+  if (dKey) markAwarded(stats, dKey)
 
   // Track first tool usage
   const toolActions = ['budget_created', 'debt_added', 'savings_goal_created', 'career_assessment_completed']
@@ -240,7 +318,7 @@ export async function awardXP(
   for (const mission of MISSIONS) {
     if (completedMissions.includes(mission.id)) continue
     const allMet = mission.requirements.every(
-      (req) => (stats[req.action] || 0) >= req.count
+      (req) => ((stats[req.action] as number) || 0) >= req.count
     )
     if (allMet) {
       completedMissions.push(mission.id)
@@ -254,7 +332,7 @@ export async function awardXP(
   const badges = [...progress.badges]
   for (const ms of MILESTONES) {
     if (completedMilestones.includes(ms.id)) continue
-    if ((stats[ms.statKey] || 0) >= ms.threshold) {
+    if (((stats[ms.statKey] as number) || 0) >= ms.threshold) {
       completedMilestones.push(ms.id)
       newMilestoneIds.push(ms.id)
       if (!badges.includes(ms.badge)) badges.push(ms.badge)
@@ -300,6 +378,7 @@ export async function awardXP(
       previousRank,
       newMissions,
       newMilestones: newMilestoneIds,
+      skipped: false,
     },
   }
 }
@@ -356,13 +435,13 @@ export async function checkStreak(
 // ─── Mission Helpers ─────────────────────────────────────────────────
 
 export function getMissionProgress(
-  stats: Record<string, number>
+  stats: Record<string, unknown>
 ): Array<{ mission: typeof MISSIONS[number]; progress: number; total: number; complete: boolean }> {
   return MISSIONS.map((mission) => {
     let completed = 0
     const total = mission.requirements.length
     for (const req of mission.requirements) {
-      if ((stats[req.action] || 0) >= req.count) completed++
+      if (((stats[req.action] as number) || 0) >= req.count) completed++
     }
     return { mission, progress: completed, total, complete: completed === total }
   })

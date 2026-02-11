@@ -36,7 +36,7 @@ interface UseGamificationReturn {
   missions: ReturnType<typeof getMissionProgress>
   celebration: Celebration | null
   dismissCelebration: () => void
-  awardXP: (action: string) => Promise<void>
+  awardXP: (action: string, target?: string) => Promise<void>
 }
 
 export function useGamification(): UseGamificationReturn {
@@ -96,10 +96,11 @@ export function useGamification(): UseGamificationReturn {
     setActiveCelebration(null)
   }, [])
 
-  const awardXP = useCallback(async (action: string) => {
+  const awardXP = useCallback(async (action: string, target?: string) => {
     if (!progress) return
     try {
-      const { updatedProgress, result } = await awardXPService(action, progress)
+      const { updatedProgress, result } = await awardXPService(action, progress, target)
+      if (result.skipped) return
       setProgress(updatedProgress)
 
       // Queue celebrations for significant events
