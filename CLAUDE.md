@@ -74,3 +74,11 @@ All routes are wrapped in a shared Layout component (src/components/Layout.jsx:1
 - React Router's `<Link>` for navigation
 - `<Outlet>` in Layout for nested route rendering
 - Responsive design with Tailwind breakpoints (sm, md, lg)
+
+## Agent Rules
+- Read ~/knowledge/LESSONS_LEARNED.md for accumulated patterns and fixes if it exists
+- Git commit every 5-10 completed items
+- Never modify .env or .env.local files without asking
+- Never run destructive database commands (DROP, DELETE, ALTER) without approval
+- Run `npm run build` before finishing to catch errors
+- Write clear PR descriptions explaining what changed and why
